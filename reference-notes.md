@@ -15,3 +15,7 @@ The upper editorial reference confirms a white-to-silver split composition with 
 The middle reference sections preserve the full-height central seam while allowing concise large-format messaging to sit on a low-contrast image field. Stadium Supply will adapt this into a restrained blue, bone, and ink palette with captions that describe football culture rather than the reference campaign.
 
 The closing reference confirms a direct, bottom-anchored drop call to action. The Stadium Supply hero will use this same confidence through an oversized “New arrivals” treatment and an action that leads to the shoppable catalog.
+
+The public Stadium Supply information highlight confirms that orders are processed weekly, payment is required in full before processing, delivery is estimated at 10–15 business days, and refunds or exchanges are not guaranteed due to the nature of the products. Product detail copy should keep these policy points available without presenting unverified shipping guarantees.
+
+The public price-list highlight specifies South African Rand prices: fan-version football jerseys are **R450**, player-version jerseys are **R650**, retro jerseys are **R700**, and kiddies sets are **R400**. Add-ons for sleeves, patches, or printing are each **R50**. Product cards must use these verified category price points rather than invented prices.

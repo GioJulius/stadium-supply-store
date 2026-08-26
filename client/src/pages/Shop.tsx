@@ -1,19 +1,24 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { ProductCard } from "@/components/ProductCard";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
+import { filterAndSortProducts, type CatalogFilter, type CatalogSortMode } from "@/lib/catalog";
 import { trpc } from "@/lib/trpc";
-import { LoaderCircle } from "lucide-react";
+import { ArrowDownUp, LoaderCircle } from "lucide-react";
 import { useMemo, useState } from "react";
 
-const filters = ["All pieces", "Football", "New arrivals", "Manchester United"];
+const filters = [
+  { label: "All pieces", key: "all" },
+  { label: "Fan version", key: "fan" },
+  { label: "Player version", key: "player" },
+  { label: "Retro", key: "retro" },
+  { label: "New arrivals", key: "new" },
+];
 
 export default function Shop() {
   const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: 24 });
-  const [activeFilter, setActiveFilter] = useState("All pieces");
-  const filteredProducts = useMemo(() => activeFilter === "All pieces" ? products : products.filter(product => (
-    product.tags.some(tag => tag.toLowerCase().includes(activeFilter.toLowerCase().replace(" arrivals", ""))) ||
-    (product.productType ?? "").toLowerCase().includes(activeFilter.toLowerCase())
-  )), [activeFilter, products]);
+  const [activeFilter, setActiveFilter] = useState<CatalogFilter>("all");
+  const [sortMode, setSortMode] = useState<CatalogSortMode>("featured");
+  const filteredProducts = useMemo(() => filterAndSortProducts(products, activeFilter, sortMode), [activeFilter, products, sortMode]);
 
   return (
     <div className="store-page store-page--light">
@@ -27,13 +32,16 @@ export default function Shop() {
         <section className="shop-grid-section">
           <div className="shop-toolbar">
             <p>{String(filteredProducts.length).padStart(2, "0")} pieces available</p>
-            <div className="filter-strip" aria-label="Filter products">
-              {filters.map(filter => <button className={activeFilter === filter ? "is-active" : ""} key={filter} onClick={() => setActiveFilter(filter)}>{filter}</button>)}
+            <div className="catalog-controls">
+              <div className="filter-strip" aria-label="Filter products">
+                {filters.map(filter => <button className={activeFilter === filter.key ? "is-active" : ""} key={filter.key} onClick={() => setActiveFilter(filter.key as CatalogFilter)}>{filter.label}</button>)}
+              </div>
+              <label className="sort-control"><ArrowDownUp size={13} /><span>Sort</span><select value={sortMode} onChange={event => setSortMode(event.target.value as CatalogSortMode)} aria-label="Sort kits"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name-asc">Name: A–Z</option></select></label>
             </div>
           </div>
           {isLoading ? <div className="shop-loading"><LoaderCircle className="spin" size={28} /> Curating the archive</div> : filteredProducts.length ? (
             <div className="shop-product-grid">{filteredProducts.map(product => <ProductCard key={product.id} product={product} />)}</div>
-          ) : <div className="shop-empty"><p>No pieces are in this part of the archive right now.</p><button onClick={() => setActiveFilter("All pieces")}>View all pieces</button></div>}
+          ) : <div className="shop-empty"><p>No pieces are in this part of the archive right now.</p><button onClick={() => setActiveFilter("all")}>View all pieces</button></div>}
         </section>
       </main>
       <StoreFooter />

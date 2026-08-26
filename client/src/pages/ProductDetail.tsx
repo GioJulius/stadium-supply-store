@@ -16,10 +16,13 @@ function detailFromTags(product: Product) {
 
 function ProductView({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
+  const [selectedVariantId, setSelectedVariantId] = useState(product.variants[0]?.id ?? "");
   const { addItem, loading } = useCart();
-  const variant = product.variants[0];
+  const variant = product.variants.find(candidate => candidate.id === selectedVariantId) ?? product.variants[0];
   const image = product.images[0];
   const { size, condition } = detailFromTags(product);
+  const sizeOptions = product.options.find(option => option.name.toLowerCase() === "size")?.values ?? [];
+  const selectedSize = variant?.selectedOptions.find(option => option.name.toLowerCase() === "size")?.value;
   return (
     <main className="product-detail">
       <Link href="/shop" className="product-back"><ArrowLeft size={15} /> Back to archive</Link>
@@ -32,9 +35,10 @@ function ProductView({ product }: { product: Product }) {
           <p className="product-description">{product.description || "A carefully sourced piece from the Stadium Supply archive."}</p>
           <dl className="product-specs">
             <div><dt>Condition</dt><dd>{condition}</dd></div>
-            <div><dt>Size</dt><dd>{size}</dd></div>
+            <div><dt>Size</dt><dd>{sizeOptions.length ? "Small–XL" : size}</dd></div>
             <div><dt>Source</dt><dd>Imported</dd></div>
           </dl>
+          {sizeOptions.length > 0 && <div className="size-picker"><p className="eyebrow">Select size <span>{selectedSize}</span></p><div>{sizeOptions.map(option => { const matchingVariant = product.variants.find(candidate => candidate.selectedOptions.some(selected => selected.name.toLowerCase() === "size" && selected.value === option)); return <button key={option} className={matchingVariant?.id === variant?.id ? "is-selected" : ""} disabled={!matchingVariant || !matchingVariant.availableForSale} onClick={() => matchingVariant && setSelectedVariantId(matchingVariant.id)}>{option}</button>; })}</div></div>}
           <div className="product-purchase">
             <div className="quantity-control quantity-control--large">
               <button onClick={() => setQuantity(Math.max(1, quantity - 1))} aria-label="Decrease quantity"><Minus size={15} /></button><span>{quantity}</span><button onClick={() => setQuantity(quantity + 1)} aria-label="Increase quantity"><Plus size={15} /></button>
