@@ -90,7 +90,10 @@
 - [x] Create one reviewed Manchester United 2023/24 Training Top with both grouped images, R450 price tier, and S–XL variants.
 - [x] Create one reviewed Arsenal 2022/23 Away product with both grouped images, R450 price tier, and S–XL variants.
 - [x] Attach the supplied Real Madrid 2012/13 Third image to its existing matching product without creating a duplicate listing.
+- [x] Attach all supplied Liverpool Third, Real Madrid Beckham, Germany Home Player, AC Milan Home, Manchester United Away, and Inter Miami Home grouped images to their confirmed existing products.
 - [x] Create one reviewed Manchester United 1990/92 Away retro product with both grouped images, R700 price tier, and S–XL variants.
+- [x] Create one reviewed Juventus 1997/98 Home retro product with both grouped images, R700 price tier, and purchasable S–XL variants.
+- [x] Create one reviewed Arsenal 2005/06 Home Henry 14 retro product with both grouped images, R700 price tier, and purchasable S–XL variants.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
