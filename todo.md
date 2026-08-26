@@ -49,3 +49,5 @@
 - [x] Import editable default fan-version kit listings through Drop 63 at R450 with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 64 at R450 with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 65 at R450 with Small–XL options.
+- [x] Import editable default fan-version kit listings through Drop 66 at R450 with Small–XL options.
+- [x] Import editable default fan-version kit listings through Drop 67 at R450 with Small–XL options.
