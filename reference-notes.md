@@ -19,3 +19,5 @@ The closing reference confirms a direct, bottom-anchored drop call to action. Th
 The public Stadium Supply information highlight confirms that orders are processed weekly, payment is required in full before processing, delivery is estimated at 10–15 business days, and refunds or exchanges are not guaranteed due to the nature of the products. Product detail copy should keep these policy points available without presenting unverified shipping guarantees.
 
 The public price-list highlight specifies South African Rand prices: fan-version football jerseys are **R450**, player-version jerseys are **R650**, retro jerseys are **R700**, and kiddies sets are **R400**. Add-ons for sleeves, patches, or printing are each **R50**. Product cards must use these verified category price points rather than invented prices.
+
+After the expanded Shopify catalog resolves, the storefront renders the first 24 available pieces in its initial grid while preserving category filters and sorting controls. This confirms the catalog has a deliberate paginated first-page presentation even as the active Shopify product count grows.
