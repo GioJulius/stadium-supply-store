@@ -33,3 +33,4 @@
 - [ ] Create the remaining supplied kit groups as individually editable generic Drop 07+ Shopify listings with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 22 at R450 with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 49 at R450 with Small–XL options.
+- [x] Import editable default fan-version kit listings through Drop 50 at R450 with Small–XL options.
