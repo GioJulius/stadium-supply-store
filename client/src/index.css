@@ -1,177 +1,51 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px); --radius-md: calc(var(--radius) - 2px); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background); --color-foreground: var(--foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground); --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground); --color-destructive: var(--destructive); --color-destructive-foreground: var(--destructive-foreground); --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring);
 }
 
-:root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
-}
+:root { --radius: 0; --background: oklch(0.97 0.006 84); --foreground: oklch(0.15 0.01 260); --card: oklch(0.985 0.004 84); --card-foreground: oklch(0.15 0.01 260); --popover: oklch(0.985 0.004 84); --popover-foreground: oklch(0.15 0.01 260); --primary: oklch(0.2 0.04 254); --primary-foreground: oklch(0.98 0.003 80); --secondary: oklch(0.9 0.015 247); --secondary-foreground: oklch(0.2 0.04 254); --muted: oklch(0.92 0.007 84); --muted-foreground: oklch(0.45 0.02 250); --accent: oklch(0.66 0.19 245); --accent-foreground: oklch(0.98 0.003 80); --destructive: oklch(0.57 0.22 28); --destructive-foreground: oklch(0.98 0.003 80); --border: oklch(0.2 0.04 254 / 16%); --input: oklch(0.2 0.04 254 / 16%); --ring: oklch(0.58 0.18 245); }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
+  * { border-color: var(--border); }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: "Manrope", Arial, sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  button { color: inherit; font: inherit; }
+  button:not(:disabled), a[href] { cursor: pointer; }
+  button:focus-visible, a:focus-visible { outline: 2px solid #2491e2; outline-offset: 4px; }
 }
 
-@layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
+.store-page { overflow: hidden; background: #f8f7f1; min-height: 100vh; }
+.site-header { height: 78px; background: #f8f7f1; position: relative; z-index: 20; border-bottom: 1px solid rgba(18, 25, 44, .16); }
+.site-header--home { background: transparent; border-color: rgba(255,255,255,.32); color: #fff; position: absolute; width: 100%; }
+.site-header__inner { max-width: 1600px; height: 100%; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.brand-lockup { text-transform: uppercase; font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 21px; line-height: .75; letter-spacing: -.5px; text-align: center; display: grid; }
+.header-control { display: inline-flex; gap: 8px; align-items: center; background: transparent; padding: 0; border: 0; font-family: "DM Mono", monospace; font-size: 10px; text-transform: uppercase; letter-spacing: .05em; }
+.header-control--cart { justify-self: end; }.header-control--cart b { font-weight: 500; color: inherit; opacity: .65; }
+.desktop-nav { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 24px; font-family: "DM Mono", monospace; font-size: 10px; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }.desktop-nav a { opacity: .72; transition: opacity .18s ease; }.desktop-nav a:hover { opacity: 1; }
 
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
+.menu-panel, .cart-drawer { position: fixed; z-index: 50; inset: 0; pointer-events: none; }.menu-panel--open, .cart-drawer--open { pointer-events: auto; }.menu-panel__backdrop, .cart-drawer__backdrop { position: absolute; inset: 0; border: 0; background: rgba(4, 12, 25, 0); transition: background .26s ease; }.menu-panel--open .menu-panel__backdrop, .cart-drawer--open .cart-drawer__backdrop { background: rgba(4,12,25,.42); }
+.menu-panel__surface { height: 100%; width: min(490px, 94vw); background: #13233d; color: #f8f7f1; padding: 30px 32px; position: relative; transform: translateX(-102%); transition: transform .32s cubic-bezier(.23,1,.32,1); display: flex; flex-direction: column; }.menu-panel--open .menu-panel__surface { transform: translateX(0); }.menu-panel__top { display:flex; justify-content:space-between; align-items:center; }.icon-button { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid currentColor; background: transparent; border-radius: 50%; }.menu-panel__nav { display:grid; margin: auto 0; }.menu-panel__nav a { border-top:1px solid rgba(255,255,255,.28); padding: 17px 0; font: 600 clamp(36px, 5vw, 65px)/.85 "Barlow Condensed", sans-serif; text-transform: uppercase; display:flex; gap:16px; }.menu-panel__nav a span { font: 10px "DM Mono", monospace; padding-top: 5px; }.menu-panel__meta { display:flex; align-items:end; justify-content:space-between; font-size:12px; line-height:1.45; }.menu-panel__meta a { font-family:"DM Mono",monospace; font-size:10px; text-transform:uppercase; }
 
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
-  }
+.hero-section { min-height: min(830px, 100vh); height: max(650px, 100vh); background:#1d82c8; color:#fff; position:relative; overflow:hidden; }.hero-section__image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; transform: scale(1.02); }.hero-section__veil { position:absolute; inset:0; background: linear-gradient(90deg, rgba(3,13,32,.76) 0%, rgba(3,13,32,.24) 50%, rgba(3,13,32,.12) 100%), linear-gradient(0deg, rgba(3,13,32,.47), transparent 44%); }.hero-section__frame { pointer-events:none; position:absolute; inset: 105px 32px 28px; border-left:1px solid rgba(255,255,255,.42); border-right:1px solid rgba(255,255,255,.42); display:flex; justify-content:space-between; }.hero-section__frame span { width:8px; height:8px; background:#fff; border-radius:50%; margin:-4px -4px; }.hero-section__meta { position:absolute; top:105px; left:57px; right:57px; font:10px "DM Mono",monospace; text-transform:uppercase; display:flex; justify-content:space-between; letter-spacing:.08em; }.hero-section__content { position:absolute; left: 7.5vw; bottom:70px; }.hero-section__kicker { font:600 14px/1.05 "Barlow Condensed",sans-serif; letter-spacing:.055em; text-transform:uppercase; margin:0 0 18px; }.hero-section h1, .shop-intro h1, .section-heading h2, .manifesto-section h2, .assurance-section h2, .instagram-section h2 { font:800 clamp(76px, 11.5vw, 178px)/.72 "Barlow Condensed",sans-serif; letter-spacing:-.052em; text-transform:uppercase; margin:0; }.hero-section h1 em, .shop-intro em, .section-heading em, .manifesto-section em, .assurance-section em, .instagram-section em { font-weight:600; }.hero-cta { margin-top:32px; width:215px; border-top:1px solid rgba(255,255,255,.8); padding-top:11px; display:flex; justify-content:space-between; font:11px "DM Mono",monospace; text-transform:uppercase; }.hero-section__side { position:absolute; right:35px; bottom:34px; writing-mode:vertical-rl; transform:rotate(180deg); font:10px "DM Mono",monospace; letter-spacing:.06em; }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
-  }
-}
+.moving-line { padding:13px 0; color:#f8f7f1; background:#10213c; overflow:hidden; border-bottom:1px solid #f8f7f1; }.moving-line div { display:flex; gap:31px; white-space:nowrap; width:max-content; animation: marquee 24s linear infinite; text-transform:uppercase; font:600 21px/1 "Barlow Condensed",sans-serif; letter-spacing:.03em; }.moving-line i { color:#44a2e9; font-style:normal; }
+.section-index, .eyebrow { font: 10px/1.3 "DM Mono", monospace; text-transform: uppercase; letter-spacing:.055em; }
+.latest-section { padding:105px 32px 120px; max-width:1600px; margin:auto; }.section-heading { display:grid; grid-template-columns: 1fr 2fr; margin-bottom:50px; }.section-heading h2 { font-size:clamp(66px, 9.3vw, 145px); }.section-heading > div > p { max-width:250px; margin:23px 0 0; font-size:13px; line-height:1.5; }.latest-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:1px; background:transparent; }.product-card { min-width:0; display:block; background:#f8f7f1; transition:background .2s ease; }.product-card:hover { background:#eef4f7; }.product-card__visual { position:relative; aspect-ratio:.8; overflow:hidden; background:#dce7ec; }.product-card__visual img { width:100%;height:100%;object-fit:cover; transition: transform .46s cubic-bezier(.23,1,.32,1); }.product-card:hover .product-card__visual img { transform:scale(1.045); }.product-card__fallback { height:100%; display:grid;place-items:center;font:700 42px/.78 "Barlow Condensed",sans-serif;text-transform:uppercase;text-align:center; }.product-card__badge { position:absolute; top:11px; left:11px; padding:5px 6px; color:#f8f7f1; background:#10213c; font:9px "DM Mono",monospace; text-transform:uppercase; }.product-card__arrow { position:absolute; right:12px; top:12px; width:30px; height:30px; display:grid; place-items:center; border:1px solid rgba(255,255,255,.7); border-radius:50%; color:#fff; }.product-card__details { padding:14px 13px 18px; min-height:103px; display:flex; justify-content:space-between; gap:10px; }.product-card__details p { margin:0 0 5px; font:9px "DM Mono",monospace; text-transform:uppercase; opacity:.65; }.product-card__details h3 { margin:0; font:600 19px/.95 "Barlow Condensed",sans-serif; text-transform:uppercase; max-width:190px; }.product-card__details strong { font:10px "DM Mono",monospace; font-weight:500; white-space:nowrap; }.outline-cta, .shop-empty button, .shop-empty a { display:flex; align-items:center; justify-content:space-between; gap:15px; border-bottom:1px solid currentColor; padding-bottom:8px; margin:60px 0 0 auto; width:fit-content; background:transparent; border-top:0;border-left:0;border-right:0; font:10px "DM Mono",monospace; text-transform:uppercase; }
+.manifesto-section { min-height:680px; background:#10213c; color:#f8f7f1; position:relative; padding:85px 8vw; display:grid; grid-template-columns: 1fr 2fr; grid-template-rows:auto 1fr; overflow:hidden; }.manifesto-section__number { position:absolute; right:-.03em; top:-.14em; color:rgba(130,186,226,.14); font:900 clamp(280px,48vw,700px)/.7 "Barlow Condensed",sans-serif; }.manifesto-section .eyebrow, .manifesto-section h2, .manifesto-section__copy { z-index:1; }.manifesto-section h2 { align-self:center; font-size:clamp(72px,10vw,148px); }.manifesto-section__copy { align-self:end; max-width:330px; margin-left:auto; font-size:13px; line-height:1.65; }.manifesto-section__copy p { margin:0 0 28px; }.manifesto-section__copy a { border-bottom:1px solid #fff; padding-bottom:7px; font:10px "DM Mono",monospace; text-transform:uppercase; display:inline-flex; align-items:center; gap:8px; }
+.collections-section { padding:105px 32px; max-width:1600px; margin:auto; }.collections-section__top { display:flex; justify-content:space-between; padding-bottom:32px; border-bottom:1px solid rgba(18,25,44,.3); font-size:13px; }.collections-section__top > p:last-child { max-width:220px; margin:0; }.collection-tiles { display:grid; grid-template-columns:1.15fr .85fr 1fr; min-height:450px; }.collection-tile { padding:23px; display:flex; flex-direction:column; color:#f8f7f1; position:relative; overflow:hidden; transition:filter .2s ease; }.collection-tile:hover { filter:brightness(1.15); }.collection-tile:nth-child(2) { border-left:1px solid rgba(248,247,241,.3); border-right:1px solid rgba(248,247,241,.3); }.collection-tile span { font:10px "DM Mono",monospace; }.collection-tile h3 { margin:auto 0 0; font:700 clamp(48px,6vw,95px)/.76 "Barlow Condensed",sans-serif; letter-spacing:-.04em; text-transform:uppercase; }.collection-tile svg { position:absolute;top:23px;right:23px; }.collection-tile--one { background:linear-gradient(160deg,#17345b,#3a86be); }.collection-tile--two { background:linear-gradient(160deg,#d7302f,#741b27); }.collection-tile--three { background:linear-gradient(160deg,#b5a16e,#17233b); }
+.assurance-section { display:grid;grid-template-columns:1.1fr 1.9fr; background:#ddeaf0; padding:95px 8vw; gap:40px; }.assurance-section h2 { font-size:clamp(68px,9vw,130px);margin-top:23px; }.assurance-list { border-top:1px solid rgba(18,25,44,.25); }.assurance-list article { display:grid; grid-template-columns:36px 1fr 1fr; align-items:center; min-height:128px; border-bottom:1px solid rgba(18,25,44,.25); }.assurance-list h3 { text-transform:uppercase; font:600 24px/.9 "Barlow Condensed",sans-serif; margin:0; }.assurance-list p { margin:0; max-width:225px; font-size:12px;line-height:1.45; }.instagram-section { background:#1a91dc; color:#f8f7f1; min-height:470px; padding:65px 8vw; display:flex; flex-direction:column; position:relative; overflow:hidden; }.instagram-section:before { content:"SS"; position:absolute; right:-20px; bottom:-135px; font:900 470px/.7 "Barlow Condensed",sans-serif; color:rgba(255,255,255,.13); letter-spacing:-.1em; }.instagram-section__stamp { z-index:1; display:flex;gap:9px;align-items:center;font:10px "DM Mono",monospace;text-transform:uppercase; }.instagram-section h2 { z-index:1; font-size:clamp(75px,12vw,170px); margin:auto 0; }.instagram-section > a { z-index:1; margin-left:auto; border-bottom:1px solid #fff; padding-bottom:9px; display:flex;gap:10px;align-items:center; font:10px "DM Mono",monospace;text-transform:uppercase; }
+.site-footer { background:#10213c; color:#f8f7f1; padding:46px 32px 27px; min-height:230px; display:grid; grid-template-columns:1fr 1fr 1fr; align-items:end; }.site-footer__brand { font:800 clamp(45px,6vw,86px)/.72 "Barlow Condensed",sans-serif; text-transform:uppercase; }.site-footer__meta, .site-footer__legal { font:10px/1.5 "DM Mono",monospace; text-transform:uppercase; }.site-footer__meta p { margin:0 0 15px; }.site-footer__meta a { border-bottom:1px solid currentColor;padding-bottom:3px; }.site-footer__legal { text-align:right; opacity:.65; }
+
+.shop-intro { max-width:1600px; padding:130px 32px 66px; margin:auto; display:grid;grid-template-columns:1fr 2fr; align-items:end; }.shop-intro h1 { font-size:clamp(88px,13.8vw,205px); }.shop-intro > p:last-child { max-width:290px; margin:0 0 12px auto; font-size:13px;line-height:1.58; }.shop-grid-section { max-width:1600px;padding:0 32px 100px;margin:auto; }.shop-toolbar { display:flex;align-items:end;justify-content:space-between;border-top:1px solid rgba(18,25,44,.3);padding:13px 0 19px; }.shop-toolbar > p { margin:0;font:10px "DM Mono",monospace;text-transform:uppercase; }.filter-strip { display:flex;gap:10px;flex-wrap:wrap;justify-content:end; }.filter-strip button { border:0;background:transparent;font:10px "DM Mono",monospace;text-transform:uppercase;padding:0 0 3px;border-bottom:1px solid transparent; }.filter-strip button.is-active { border-color:currentColor; }.shop-product-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:transparent; }.shop-loading,.product-loading { min-height:300px;display:grid;place-items:center;gap:12px;align-content:center;font:10px "DM Mono",monospace;text-transform:uppercase; }.product-loading--compact { min-height:220px; }.spin { animation:spin 1s linear infinite; }.shop-empty { min-height:260px;display:grid;place-content:center;text-align:center;font-size:14px; }.shop-empty button,.shop-empty a { margin:21px auto 0; }.product-detail { max-width:1600px;margin:auto;padding:33px 32px 100px; }.product-back { display:inline-flex;gap:8px;align-items:center;font:10px "DM Mono",monospace;text-transform:uppercase;padding-bottom:6px;border-bottom:1px solid currentColor;margin-bottom:29px; }.product-detail__grid { display:grid;grid-template-columns:1.3fr .7fr;gap:6.5vw; }.product-detail__image { aspect-ratio:.78;background:#dce7ec;position:relative;overflow:hidden; }.product-detail__image img { width:100%;height:100%;object-fit:cover; }.product-detail__image > span { position:absolute;bottom:13px;right:13px;color:#fff;font:10px "DM Mono",monospace; }.product-detail__content { padding:13px 0;align-self:center; }.product-detail__content h1 { margin:15px 0 12px;font:700 clamp(45px,5vw,80px)/.82 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:-.035em; }.product-price { margin:0 0 32px;font:12px "DM Mono",monospace; }.product-description { max-width:430px;font-size:14px;line-height:1.6; }.product-specs { margin:36px 0 30px;border-top:1px solid rgba(18,25,44,.25); }.product-specs div { display:flex;justify-content:space-between;border-bottom:1px solid rgba(18,25,44,.25);padding:10px 0;font-size:11px; }.product-specs dt { font-family:"DM Mono",monospace;text-transform:uppercase; }.product-specs dd { margin:0; }.product-purchase { display:flex;gap:10px; }.quantity-control { height:35px;border:1px solid rgba(18,25,44,.3);display:flex;align-items:center; }.quantity-control button { border:0;background:transparent;width:32px;height:100%;display:grid;place-items:center; }.quantity-control span { min-width:21px;text-align:center;font:10px "DM Mono",monospace; }.quantity-control--large { height:49px; }.quantity-control--large button { width:41px; }.add-button,.checkout-button { flex:1;min-height:49px;border:0;background:#10213c;color:#f8f7f1;display:flex;align-items:center;justify-content:space-between;padding:0 17px;font:10px "DM Mono",monospace;text-transform:uppercase; }.add-button:disabled,.checkout-button:disabled { opacity:.45;cursor:not-allowed; }.product-assurance { display:flex;gap:9px;border-top:1px solid rgba(18,25,44,.25);margin-top:31px;padding-top:15px; }.product-assurance p { margin:0;font-size:11px;line-height:1.45; }.product-loading,.product-missing { min-height:65vh; }.product-missing { display:grid;place-content:center;text-align:center;gap:18px; }.product-missing a { font:10px "DM Mono",monospace;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:6px; }
+
+.cart-drawer__surface { width:min(480px,100%);height:100%;position:absolute;right:0;background:#f8f7f1;color:#10213c;transform:translateX(102%);transition:transform .32s cubic-bezier(.23,1,.32,1);display:flex;flex-direction:column;padding:23px 23px 25px; }.cart-drawer--open .cart-drawer__surface { transform:translateX(0); }.cart-drawer__header { display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid rgba(18,25,44,.22);padding-bottom:17px; }.cart-drawer__header h2 { margin:7px 0 0;font:700 39px/.8 "Barlow Condensed",sans-serif;text-transform:uppercase; }.cart-drawer__items { flex:1;overflow:auto; }.cart-empty { height:100%;display:grid;place-content:center;text-align:center;gap:16px;font-size:14px; }.cart-empty p { max-width:190px;line-height:1.5; }.cart-empty button,.text-link { border:0;background:transparent;padding:0;border-bottom:1px solid currentColor;width:max-content;margin:auto;font:10px "DM Mono",monospace;text-transform:uppercase; }.cart-item { display:grid;grid-template-columns:94px 1fr;gap:13px;padding:15px 0;border-bottom:1px solid rgba(18,25,44,.18); }.cart-item__image { aspect-ratio:.8;background:#dce7ec;overflow:hidden;display:grid;place-items:center;font:700 25px "Barlow Condensed",sans-serif; }.cart-item__image img { width:100%;height:100%;object-fit:cover; }.cart-item__content { display:grid;grid-template-columns:1fr auto;align-content:start;gap:6px; }.cart-item h3 { margin:0;font:600 20px/.85 "Barlow Condensed",sans-serif;text-transform:uppercase; }.cart-item p { margin:4px 0 0;font:9px "DM Mono",monospace;text-transform:uppercase; }.cart-item strong { font:10px "DM Mono",monospace;font-weight:500; }.cart-item__actions { grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;margin-top:7px; }.cart-item__actions .text-link { margin:0;font-size:9px; }.cart-drawer__footer { border-top:1px solid rgba(18,25,44,.25);padding-top:15px; }.cart-total { display:flex;justify-content:space-between;font:10px "DM Mono",monospace;text-transform:uppercase; }.cart-drawer__footer > p { margin:9px 0 15px;font-size:10px;line-height:1.4;opacity:.65; }.checkout-button { width:100%; }
+
+@keyframes marquee { to { transform:translateX(-35%); } } @keyframes spin { to { transform:rotate(360deg); } }
+@media (max-width: 850px) { .site-header__inner { padding:0 17px; }.desktop-nav{display:none}.site-header {height:67px}.hero-section {height:760px;min-height:760px}.hero-section__image{object-position:55% center}.hero-section__frame{inset:86px 17px 19px}.hero-section__meta{top:87px;left:32px;right:32px}.hero-section__content{left:32px;bottom:48px}.hero-section h1{font-size:104px}.hero-section__side{right:20px;bottom:21px}.latest-section,.collections-section{padding:75px 17px}.section-heading{grid-template-columns:1fr;gap:26px;margin-bottom:36px}.section-heading h2{font-size:88px}.section-heading > div > p{margin:17px 0 0}.latest-grid,.shop-product-grid{grid-template-columns:repeat(2,1fr)}.product-card__details{min-height:95px;padding:11px 10px 14px}.product-card__details h3{font-size:18px}.product-card__details strong{font-size:9px}.manifesto-section{min-height:570px;padding:65px 32px;grid-template-columns:1fr;grid-template-rows:auto 1fr auto}.manifesto-section h2{font-size:82px}.manifesto-section__copy{margin-left:0;max-width:290px}.collections-section__top{display:block}.collections-section__top>p:last-child{margin:14px 0 0}.collection-tiles{grid-template-columns:1fr;min-height:0}.collection-tile{min-height:235px}.collection-tile:nth-child(2){border:0;border-top:1px solid rgba(248,247,241,.3);border-bottom:1px solid rgba(248,247,241,.3)}.collection-tile h3{font-size:62px}.assurance-section{grid-template-columns:1fr;padding:75px 32px;gap:40px}.assurance-section h2{font-size:83px}.assurance-list article{grid-template-columns:28px 1fr;gap:8px;padding:18px 0;min-height:0}.assurance-list p{grid-column:2;max-width:280px}.instagram-section{min-height:410px;padding:55px 32px}.instagram-section h2{font-size:91px}.site-footer{grid-template-columns:1fr 1fr;padding:35px 17px 23px;min-height:255px}.site-footer__meta{align-self:start;padding-top:8px}.site-footer__legal{grid-column:1/-1;text-align:left;align-self:end}.shop-intro{padding:106px 17px 50px;display:block}.shop-intro h1{font-size:86px;letter-spacing:-.06em;margin:28px 0;overflow-wrap:anywhere}.shop-intro>p:last-child{margin:0;max-width:270px}.shop-grid-section{padding:0 17px 70px}.shop-toolbar{display:block}.filter-strip{justify-content:start;margin-top:16px;gap:9px 15px}.product-detail{padding:22px 17px 70px}.product-detail__grid{grid-template-columns:1fr;gap:26px}.product-detail__content{padding:0}.product-detail__content h1{font-size:59px}.product-detail__image{aspect-ratio:.84}.cart-drawer__surface{padding:20px 17px 18px}.cart-drawer__header h2{font-size:35px} }
+@media (prefers-reduced-motion: reduce) { *,*:before,*:after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
