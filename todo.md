@@ -86,6 +86,9 @@
 - [x] Create one reviewed New Zealand 2024/25 Home Player Version product with its supplied image, R650 price tier, and S–XL variants.
 - [x] Create one reviewed Italy 2026 Home product with all three grouped images, R450 price tier, and S–XL variants.
 - [x] Create one reviewed Manchester United 1992/94 Home retro product with its supplied image, R700 price tier, and S–XL variants.
+- [x] Create one reviewed Netherlands 2026/27 Home product with its supplied image, R450 price tier, and S–XL variants.
+- [x] Create one reviewed Manchester United 2023/24 Training Top with both grouped images, R450 price tier, and S–XL variants.
+- [x] Create one reviewed Arsenal 2022/23 Away product with both grouped images, R450 price tier, and S–XL variants.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
