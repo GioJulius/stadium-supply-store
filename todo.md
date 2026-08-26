@@ -78,7 +78,9 @@
 - [x] Replace 59 uniquely mapped generic Drop titles, descriptions, tags, handles, and price tiers with reviewed kit-specific product information.
 - [ ] Resolve the remaining held same-kit, variant-tier, and media-consolidation candidates before renaming or archiving their listings.
 - [x] Consolidate the confirmed PSG 2024/25 Fourth D. Doué 14 duplicate under one retained Shopify product and archive its duplicate record.
+- [x] Verify the retained PSG 2024/25 Fourth D. Doué 14 record contains combined media, reviewed Player Version pricing, and all Small–XL variants.
 - [ ] Attach every source image in each confirmed multi-image kit group to its retained Shopify product record.
+- [x] Create one reviewed Real Madrid 2025/26 Home Player Version product with its two grouped images, R650 price tier, and S–XL variants.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
