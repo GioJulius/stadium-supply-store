@@ -19,14 +19,15 @@
 - [ ] Map each supplied gallery image to its individual Shopify product and verified category price.
 - [x] Add the autoplaying campaign video section directly beneath the hero.
 - [x] Implement kit filtering and price-based sorting in the shoppable product section.
-- [ ] Exercise the live catalog controls, card links, size selection, and cart flow at desktop and mobile breakpoints.
+- [ ] Verify product-card navigation from the catalog and repeat the live filter, size, and cart flow at a mobile breakpoint.
 - [ ] Map the verified highlight price categories to each individual supplied product image.
 - [x] Add Small–XL Shopify variant selection to the product pages.
 - [ ] Review and group the additional supplied product imagery and second product video into catalog listings.
-- [ ] Upload the additional supplied catalog media for Shopify and storefront use.
+- [ ] Attach the uploaded remaining kit media to its corresponding Shopify import workflow.
 - [ ] Import the remaining supplied kit groups into Shopify with the final title, price category, and Small–XL inventory setup.
-- [ ] Review and prepare the latest supplied product images, web assets, and campaign video for catalog use.
+- [ ] Review and group the final supplied image batch before catalog import.
 - [ ] Add the latest supplied kit set to the shoppable catalog experience.
 - [x] Create a named Mbeumo 19 kit listing from the confirmed supplied product image.
 - [x] Add per-card size-selection affordances where a kit is available in multiple sizes.
 - [ ] Assign the remaining supplied kit groups to the approved default fan-version category at R450.
+- [ ] Create the remaining supplied kit groups as individually editable generic Drop 07+ Shopify listings with Small–XL options.
