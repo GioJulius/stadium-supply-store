@@ -1,7 +1,7 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { ProductCard } from "@/components/ProductCard";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
-import { filterAndSortProducts, type CatalogFilter, type CatalogSortMode } from "@/lib/catalog";
+import { filterAndSortProducts, isCustomerFacingMappedProduct, type CatalogFilter, type CatalogSortMode } from "@/lib/catalog";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownUp, LoaderCircle } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -18,7 +18,8 @@ export default function Shop() {
   const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: 24 });
   const [activeFilter, setActiveFilter] = useState<CatalogFilter>("all");
   const [sortMode, setSortMode] = useState<CatalogSortMode>("featured");
-  const filteredProducts = useMemo(() => filterAndSortProducts(products, activeFilter, sortMode), [activeFilter, products, sortMode]);
+  const mappedProducts = useMemo(() => products.filter(isCustomerFacingMappedProduct), [products]);
+  const filteredProducts = useMemo(() => filterAndSortProducts(mappedProducts, activeFilter, sortMode), [activeFilter, mappedProducts, sortMode]);
 
   return (
     <div className="store-page store-page--light">

@@ -3,6 +3,20 @@ import type { Product } from "@shared/commerce/types";
 export type CatalogFilter = "all" | "fan" | "player" | "retro" | "new";
 export type CatalogSortMode = "featured" | "price-asc" | "price-desc" | "name-asc";
 
+const CUSTOMER_FACING_BASELINE_HANDLES = new Set([
+  "stadium-supply-fan-jersey-drop-01",
+  "mbeumo-19-black-kit",
+]);
+
+/**
+ * A product is customer-facing only after its storefront lead media has been
+ * reconciled to a supplied asset. Generic drops from 07 onward are covered by
+ * the reconciliation register; the two named records below have confirmed media.
+ */
+export function isCustomerFacingMappedProduct(product: Product): boolean {
+  return CUSTOMER_FACING_BASELINE_HANDLES.has(product.handle) || product.tags.includes("Editable Drop");
+}
+
 export function filterAndSortProducts(products: Product[], filter: CatalogFilter, sort: CatalogSortMode): Product[] {
   const matching = filter === "all" ? products : products.filter(product => {
     const searchable = [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase();

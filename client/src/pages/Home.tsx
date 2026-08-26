@@ -1,6 +1,7 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { ProductCard } from "@/components/ProductCard";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
+import { isCustomerFacingMappedProduct } from "@/lib/catalog";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownRight, ArrowUpRight, Check, Instagram, LoaderCircle } from "lucide-react";
 import { Link } from "wouter";
@@ -9,7 +10,8 @@ const HERO_IMAGE = "/manus-storage/stadium-supply-hero-final_f598692b.webp";
 
 export default function Home() {
   const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: 8 });
-  const latest = products.slice(0, 4);
+  const mappedProducts = products.filter(isCustomerFacingMappedProduct);
+  const latest = mappedProducts.slice(0, 4);
 
   return (
     <div className="store-page">
@@ -69,7 +71,7 @@ export default function Home() {
             <p className="section-index">04 / The visual edit</p>
             <div><h2 id="source-gallery-heading">In the<br /><em>rotation.</em></h2><p>Freshly sourced football culture, shown exactly as it arrives at Stadium Supply.</p></div>
           </div>
-          {isLoading ? <div className="product-loading product-loading--compact">Loading the rotation</div> : <div className="source-gallery__products">{products.map(product => <ProductCard key={product.id} product={product} />)}</div>}
+          {isLoading ? <div className="product-loading product-loading--compact">Loading the rotation</div> : <div className="source-gallery__products">{mappedProducts.map(product => <ProductCard key={product.id} product={product} />)}</div>}
         </section>
 
         <section className="assurance-section">

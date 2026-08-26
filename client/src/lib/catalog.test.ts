@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Product } from "@shared/commerce/types";
-import { filterAndSortProducts } from "./catalog";
+import { filterAndSortProducts, isCustomerFacingMappedProduct } from "./catalog";
 
 const product = (title: string, amount: string, tags: string[]): Product => ({
   id: title,
@@ -30,5 +30,13 @@ describe("filterAndSortProducts", () => {
 
   it("orders product cards by price when requested", () => {
     expect(filterAndSortProducts(products, "all", "price-desc").map(item => item.title)).toEqual(["Retro Kit", "Player Kit", "Fan Kit"]);
+  });
+
+  it("only exposes reconciled generic drops and approved named records", () => {
+    const genericDrop = { ...products[1], tags: ["Football", "Editable Drop"], handle: "stadium-supply-fan-jersey-drop-07" };
+    const namedBaseline = { ...products[1], handle: "mbeumo-19-black-kit" };
+    expect(isCustomerFacingMappedProduct(genericDrop)).toBe(true);
+    expect(isCustomerFacingMappedProduct(namedBaseline)).toBe(true);
+    expect(isCustomerFacingMappedProduct(products[0])).toBe(false);
   });
 });

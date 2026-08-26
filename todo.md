@@ -54,3 +54,18 @@
 - [x] Import editable default fan-version kit listings through Drop 68 at R450 with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 69 at R450 with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 70 at R450 with Small–XL options.
+- [x] Audit the current Shopify catalog for product count, default-drop records, size variants, media status, and duplicate risks.
+- [x] Complete a duplicate-risk pass across current product titles, handles, and lead-media records.
+- [x] Create an initial Shopify inventory register for the existing active catalog.
+- [ ] Obtain merchant approval for the final kit identity and price category of each reconciled or explicitly unmapped media group.
+- [x] Create a complete product-mapping register covering every supplied image and video group, including explicitly unmapped assets.
+- [x] Link each existing generic Drop listing to its exact supplied media group or mark it for merchant review.
+- [x] Enumerate all supplied product-media groups and flag their mapping status in a review register.
+- [ ] Maintain the no-new-generic-product rule until merchant identity mapping is approved.
+- [x] Stop generic bulk creation until each new product is present in the mapping register.
+- [x] Document the retain, review, and do-not-import normalization decisions for the existing Shopify catalog.
+- [ ] Reconcile existing generic default-drop listings with the mapping register and identify edit or archive actions.
+- [x] Filter storefront gallery and catalog views to mapped Shopify products, then revalidate desktop and mobile rendering.
+- [ ] Verify complete browse, filter, product, size, cart, and checkout journeys on desktop and mobile.
+- [x] Verify the desktop mapped-product browse, filter, product, size selection, cart add, and cart removal journey.
+- [ ] Exercise the mapped-product interaction journey on a mobile device or equivalent mobile browser session.
