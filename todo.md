@@ -99,6 +99,9 @@
 - [x] Create one reviewed Arsenal 2024/25 Training Hoodie with both grouped images, R450 price tier, and purchasable S–XL variants.
 - [x] Create one reviewed Arsenal 2024/25 Training Top with both grouped images, R450 price tier, and purchasable S–XL variants.
 - [x] Create one reviewed South Africa 2026/27 Home Player Version product with all grouped images, R650 price tier, and purchasable S–XL variants.
+- [x] Create one reviewed South Africa 2025/26 Home retro product with both grouped images, R700 price tier, and purchasable S–XL variants.
+- [x] Create one reviewed Brazil 2024/25 Home Neymar Jr 10 product with all grouped images, R450 price tier, and purchasable S–XL variants.
+- [x] Create one reviewed Brazil 2026 Away Neymar Jr 10 Player Version product with all grouped images, R650 price tier, and purchasable S–XL variants.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
