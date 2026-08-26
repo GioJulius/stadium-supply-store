@@ -34,8 +34,10 @@ describe("filterAndSortProducts", () => {
 
   it("only exposes reconciled generic drops and approved named records", () => {
     const genericDrop = { ...products[1], tags: ["Football", "Editable Drop"], handle: "stadium-supply-fan-jersey-drop-07" };
+    const renamedMappedKit = { ...products[1], tags: ["Football", "Mapped Media"], handle: "juventus-2025-26-home-jersey" };
     const namedBaseline = { ...products[1], handle: "mbeumo-19-black-kit" };
     expect(isCustomerFacingMappedProduct(genericDrop)).toBe(true);
+    expect(isCustomerFacingMappedProduct(renamedMappedKit)).toBe(true);
     expect(isCustomerFacingMappedProduct(namedBaseline)).toBe(true);
     expect(isCustomerFacingMappedProduct(products[0])).toBe(false);
   });

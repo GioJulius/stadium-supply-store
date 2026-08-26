@@ -14,7 +14,7 @@ const CUSTOMER_FACING_BASELINE_HANDLES = new Set([
  * the reconciliation register; the two named records below have confirmed media.
  */
 export function isCustomerFacingMappedProduct(product: Product): boolean {
-  return CUSTOMER_FACING_BASELINE_HANDLES.has(product.handle) || product.tags.includes("Editable Drop");
+  return CUSTOMER_FACING_BASELINE_HANDLES.has(product.handle) || product.tags.includes("Editable Drop") || product.tags.includes("Mapped Media");
 }
 
 export function filterAndSortProducts(products: Product[], filter: CatalogFilter, sort: CatalogSortMode): Product[] {

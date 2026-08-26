@@ -1,0 +1,1546 @@
+{
+  "updates": [
+    {
+      "group_id": "1778609838",
+      "product_id": "gid://shopify/Product/9380460069079",
+      "existing_handle": "stadium-supply-fan-jersey-drop-07",
+      "new_handle": "juventus-2025-26-home-jersey",
+      "title": "Juventus 2025/26 Home Jersey",
+      "description_html": "<p><strong>Juventus 2025/26 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49644980011223",
+        "gid://shopify/ProductVariant/49644980207831",
+        "gid://shopify/ProductVariant/49644980240599",
+        "gid://shopify/ProductVariant/49644980273367"
+      ]
+    },
+    {
+      "group_id": "1778609888",
+      "product_id": "gid://shopify/Product/9380460429527",
+      "existing_handle": "stadium-supply-fan-jersey-drop-08",
+      "new_handle": "liverpool-2025-26-third-jersey",
+      "title": "Liverpool 2025/26 Third Jersey",
+      "description_html": "<p><strong>Liverpool 2025/26 Third Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49644980961495",
+        "gid://shopify/ProductVariant/49644981354711",
+        "gid://shopify/ProductVariant/49644981387479",
+        "gid://shopify/ProductVariant/49644981420247"
+      ]
+    },
+    {
+      "group_id": "1778610197",
+      "product_id": "gid://shopify/Product/9380462166231",
+      "existing_handle": "stadium-supply-fan-jersey-drop-09",
+      "new_handle": "real-madrid-2006-07-away-jersey-beckham-23",
+      "title": "Real Madrid 2006/07 Away Jersey Beckham 23",
+      "description_html": "<p><strong>Real Madrid 2006/07 Away Jersey Beckham 23</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49644983648471",
+        "gid://shopify/ProductVariant/49644983746775",
+        "gid://shopify/ProductVariant/49644983779543",
+        "gid://shopify/ProductVariant/49644983812311"
+      ]
+    },
+    {
+      "group_id": "1778612202",
+      "product_id": "gid://shopify/Product/9380464558295",
+      "existing_handle": "stadium-supply-fan-jersey-drop-12",
+      "new_handle": "manchester-city-2025-26-away-jersey",
+      "title": "Manchester City 2025/26 Away Jersey",
+      "description_html": "<p><strong>Manchester City 2025/26 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645043613911",
+        "gid://shopify/ProductVariant/49645052854487",
+        "gid://shopify/ProductVariant/49645052887255",
+        "gid://shopify/ProductVariant/49645052920023"
+      ]
+    },
+    {
+      "group_id": "1778612267",
+      "product_id": "gid://shopify/Product/9380465213655",
+      "existing_handle": "stadium-supply-fan-jersey-drop-13",
+      "new_handle": "england-2024-25-home-jersey",
+      "title": "England 2024/25 Home Jersey",
+      "description_html": "<p><strong>England 2024/25 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645073170647",
+        "gid://shopify/ProductVariant/49645073465559",
+        "gid://shopify/ProductVariant/49645073498327",
+        "gid://shopify/ProductVariant/49645073531095"
+      ]
+    },
+    {
+      "group_id": "1778612288",
+      "product_id": "gid://shopify/Product/9380465672407",
+      "existing_handle": "stadium-supply-fan-jersey-drop-14",
+      "new_handle": "fc-barcelona-2024-25-home-jersey",
+      "title": "FC Barcelona 2024/25 Home Jersey",
+      "description_html": "<p><strong>FC Barcelona 2024/25 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645074251991",
+        "gid://shopify/ProductVariant/49645074710743",
+        "gid://shopify/ProductVariant/49645074743511",
+        "gid://shopify/ProductVariant/49645074776279"
+      ]
+    },
+    {
+      "group_id": "1778612468",
+      "product_id": "gid://shopify/Product/9380473766103",
+      "existing_handle": "stadium-supply-fan-jersey-drop-19",
+      "new_handle": "paris-saint-germain-2024-25-fourth-jersey-d-doue-14",
+      "title": "Paris Saint-Germain 2024/25 Fourth Jersey D. DOUE 14",
+      "description_html": "<p><strong>Paris Saint-Germain 2024/25 Fourth Jersey D. DOUE 14</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645099778263",
+        "gid://shopify/ProductVariant/49645099974871",
+        "gid://shopify/ProductVariant/49645100007639",
+        "gid://shopify/ProductVariant/49645100040407"
+      ]
+    },
+    {
+      "group_id": "1778612469",
+      "product_id": "gid://shopify/Product/9380473929943",
+      "existing_handle": "stadium-supply-fan-jersey-drop-20",
+      "new_handle": "paris-saint-germain-2024-25-fourth-jersey-d-doue-14",
+      "title": "Paris Saint-Germain 2024/25 Fourth Jersey D. DOU\u00c9 14",
+      "description_html": "<p><strong>Paris Saint-Germain 2024/25 Fourth Jersey D. DOU\u00c9 14</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645100368087",
+        "gid://shopify/ProductVariant/49645103907031",
+        "gid://shopify/ProductVariant/49645103939799",
+        "gid://shopify/ProductVariant/49645103972567"
+      ]
+    },
+    {
+      "group_id": "1778612818",
+      "product_id": "gid://shopify/Product/9380466000087",
+      "existing_handle": "stadium-supply-fan-jersey-drop-16",
+      "new_handle": "portugal-2025-26-home-jersey",
+      "title": "Portugal 2025/26 Home Jersey",
+      "description_html": "<p><strong>Portugal 2025/26 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645075431639",
+        "gid://shopify/ProductVariant/49645075824855",
+        "gid://shopify/ProductVariant/49645075857623",
+        "gid://shopify/ProductVariant/49645075890391"
+      ]
+    },
+    {
+      "group_id": "1778612913",
+      "product_id": "gid://shopify/Product/9380466229463",
+      "existing_handle": "stadium-supply-fan-jersey-drop-17",
+      "new_handle": "manchester-united-2026-27-third-jersey",
+      "title": "Manchester United 2026/27 Third Jersey",
+      "description_html": "<p><strong>Manchester United 2026/27 Third Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645076283607",
+        "gid://shopify/ProductVariant/49645076480215",
+        "gid://shopify/ProductVariant/49645076512983",
+        "gid://shopify/ProductVariant/49645076545751"
+      ]
+    },
+    {
+      "group_id": "1778613000",
+      "product_id": "gid://shopify/Product/9380474061015",
+      "existing_handle": "stadium-supply-fan-jersey-drop-21",
+      "new_handle": "germany-2024-25-home-jersey",
+      "title": "Germany 2024/25 Home Jersey",
+      "description_html": "<p><strong>Germany 2024/25 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645104169175",
+        "gid://shopify/ProductVariant/49645104496855",
+        "gid://shopify/ProductVariant/49645104529623",
+        "gid://shopify/ProductVariant/49645104562391"
+      ]
+    },
+    {
+      "group_id": "1778613131",
+      "product_id": "gid://shopify/Product/9380474257623",
+      "existing_handle": "stadium-supply-fan-jersey-drop-22",
+      "new_handle": "ac-milan-2007-08-home-jersey",
+      "title": "AC Milan 2007/08 Home Jersey",
+      "description_html": "<p><strong>AC Milan 2007/08 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645105021143",
+        "gid://shopify/ProductVariant/49645105053911",
+        "gid://shopify/ProductVariant/49645105086679",
+        "gid://shopify/ProductVariant/49645105119447"
+      ]
+    },
+    {
+      "group_id": "1778613338",
+      "product_id": "gid://shopify/Product/9380474454231",
+      "existing_handle": "stadium-supply-fan-jersey-drop-23",
+      "new_handle": "manchester-united-1993-95-away-jersey",
+      "title": "Manchester United 1993/95 Away Jersey",
+      "description_html": "<p><strong>Manchester United 1993/95 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645105479895",
+        "gid://shopify/ProductVariant/49645105578199",
+        "gid://shopify/ProductVariant/49645105610967",
+        "gid://shopify/ProductVariant/49645105643735"
+      ]
+    },
+    {
+      "group_id": "1778613513",
+      "product_id": "gid://shopify/Product/9380474978519",
+      "existing_handle": "stadium-supply-fan-jersey-drop-24",
+      "new_handle": "inter-miami-2024-25-home-jersey",
+      "title": "Inter Miami 2024/25 Home Jersey",
+      "description_html": "<p><strong>Inter Miami 2024/25 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645106364631",
+        "gid://shopify/ProductVariant/49645106594007",
+        "gid://shopify/ProductVariant/49645106626775",
+        "gid://shopify/ProductVariant/49645106659543"
+      ]
+    },
+    {
+      "group_id": "1778613624",
+      "product_id": "gid://shopify/Product/9380475207895",
+      "existing_handle": "stadium-supply-fan-jersey-drop-25",
+      "new_handle": "arsenal-2025-26-third-jersey",
+      "title": "Arsenal 2025/26 Third Jersey",
+      "description_html": "<p><strong>Arsenal 2025/26 Third Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645108068567",
+        "gid://shopify/ProductVariant/49645120389335",
+        "gid://shopify/ProductVariant/49645120422103",
+        "gid://shopify/ProductVariant/49645120454871"
+      ]
+    },
+    {
+      "group_id": "1778613658",
+      "product_id": "gid://shopify/Product/9380475601111",
+      "existing_handle": "stadium-supply-fan-jersey-drop-26",
+      "new_handle": "germany-2026-27-away-jersey",
+      "title": "Germany 2026/27 Away Jersey",
+      "description_html": "<p><strong>Germany 2026/27 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645122060503",
+        "gid://shopify/ProductVariant/49645122486487",
+        "gid://shopify/ProductVariant/49645122519255",
+        "gid://shopify/ProductVariant/49645122552023"
+      ]
+    },
+    {
+      "group_id": "1778614154",
+      "product_id": "gid://shopify/Product/9380475797719",
+      "existing_handle": "stadium-supply-fan-jersey-drop-28",
+      "new_handle": "manchester-united-2018-19-away-jersey",
+      "title": "Manchester United 2018/19 Away Jersey",
+      "description_html": "<p><strong>Manchester United 2018/19 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645126844631",
+        "gid://shopify/ProductVariant/49645127074007",
+        "gid://shopify/ProductVariant/49645127106775",
+        "gid://shopify/ProductVariant/49645127139543"
+      ]
+    },
+    {
+      "group_id": "1778614390",
+      "product_id": "gid://shopify/Product/9380477305047",
+      "existing_handle": "stadium-supply-fan-jersey-drop-30",
+      "new_handle": "france-2006-07-away-jersey-zidane-10",
+      "title": "France 2006/07 Away Jersey ZIDANE 10",
+      "description_html": "<p><strong>France 2006/07 Away Jersey ZIDANE 10</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645145817303",
+        "gid://shopify/ProductVariant/49645145915607",
+        "gid://shopify/ProductVariant/49645145948375",
+        "gid://shopify/ProductVariant/49645145981143"
+      ]
+    },
+    {
+      "group_id": "1778614617",
+      "product_id": "gid://shopify/Product/9380477501655",
+      "existing_handle": "stadium-supply-fan-jersey-drop-31",
+      "new_handle": "liverpool-2025-26-third-goalkeeper-jersey",
+      "title": "Liverpool 2025/26 Third Goalkeeper Jersey",
+      "description_html": "<p><strong>Liverpool 2025/26 Third Goalkeeper Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645146734807",
+        "gid://shopify/ProductVariant/49645146800343",
+        "gid://shopify/ProductVariant/49645146833111",
+        "gid://shopify/ProductVariant/49645146865879"
+      ]
+    },
+    {
+      "group_id": "1778614655",
+      "product_id": "gid://shopify/Product/9380477665495",
+      "existing_handle": "stadium-supply-fan-jersey-drop-32",
+      "new_handle": "chelsea-2025-26-home-jersey",
+      "title": "Chelsea 2025/26 Home Jersey",
+      "description_html": "<p><strong>Chelsea 2025/26 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645147848919",
+        "gid://shopify/ProductVariant/49645148078295",
+        "gid://shopify/ProductVariant/49645148111063",
+        "gid://shopify/ProductVariant/49645148143831"
+      ]
+    },
+    {
+      "group_id": "1778614734",
+      "product_id": "gid://shopify/Product/9380477796567",
+      "existing_handle": "stadium-supply-fan-jersey-drop-33",
+      "new_handle": "inter-miami-cf-2025-training-top",
+      "title": "Inter Miami CF 2025 Training Top",
+      "description_html": "<p><strong>Inter Miami CF 2025 Training Top</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645148471511",
+        "gid://shopify/ProductVariant/49645148602583",
+        "gid://shopify/ProductVariant/49645148635351",
+        "gid://shopify/ProductVariant/49645148668119"
+      ]
+    },
+    {
+      "group_id": "1778614814",
+      "product_id": "gid://shopify/Product/9380477927639",
+      "existing_handle": "stadium-supply-fan-jersey-drop-34",
+      "new_handle": "barcelona-2024-25-away-jersey-lamine-yamal-19",
+      "title": "Barcelona 2024/25 Away Jersey Lamine Yamal 19",
+      "description_html": "<p><strong>Barcelona 2024/25 Away Jersey Lamine Yamal 19</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645148930263",
+        "gid://shopify/ProductVariant/49645148963031",
+        "gid://shopify/ProductVariant/49645148995799",
+        "gid://shopify/ProductVariant/49645149028567"
+      ]
+    },
+    {
+      "group_id": "1778614892",
+      "product_id": "gid://shopify/Product/9380479369431",
+      "existing_handle": "stadium-supply-fan-jersey-drop-35",
+      "new_handle": "arsenal-2024-25-home-jersey",
+      "title": "Arsenal 2024/25 Home Jersey",
+      "description_html": "<p><strong>Arsenal 2024/25 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645156237527",
+        "gid://shopify/ProductVariant/49645156270295",
+        "gid://shopify/ProductVariant/49645156303063",
+        "gid://shopify/ProductVariant/49645156335831"
+      ]
+    },
+    {
+      "group_id": "1778615990",
+      "product_id": "gid://shopify/Product/9380479434967",
+      "existing_handle": "stadium-supply-fan-jersey-drop-36",
+      "new_handle": "orlando-pirates-2026-27-training-kit",
+      "title": "Orlando Pirates 2026/27 Training Kit",
+      "description_html": "<p><strong>Orlando Pirates 2026/27 Training Kit</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645158367447",
+        "gid://shopify/ProductVariant/49645158400215",
+        "gid://shopify/ProductVariant/49645158432983",
+        "gid://shopify/ProductVariant/49645158465751"
+      ]
+    },
+    {
+      "group_id": "1778616077",
+      "product_id": "gid://shopify/Product/9380479566039",
+      "existing_handle": "stadium-supply-fan-jersey-drop-37",
+      "new_handle": "arsenal-2024-25-third-long-sleeve-jersey",
+      "title": "Arsenal 2024/25 Third Long Sleeve Jersey",
+      "description_html": "<p><strong>Arsenal 2024/25 Third Long Sleeve Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645158727895",
+        "gid://shopify/ProductVariant/49645158924503",
+        "gid://shopify/ProductVariant/49645158957271",
+        "gid://shopify/ProductVariant/49645158990039"
+      ]
+    },
+    {
+      "group_id": "1778616448",
+      "product_id": "gid://shopify/Product/9380479631575",
+      "existing_handle": "stadium-supply-fan-jersey-drop-38",
+      "new_handle": "manchester-united-2007-08-away-jersey-ronaldo-7",
+      "title": "Manchester United 2007/08 Away Jersey RONALDO 7",
+      "description_html": "<p><strong>Manchester United 2007/08 Away Jersey RONALDO 7</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645159022807",
+        "gid://shopify/ProductVariant/49645159055575",
+        "gid://shopify/ProductVariant/49645159088343",
+        "gid://shopify/ProductVariant/49645159121111"
+      ]
+    },
+    {
+      "group_id": "1778616524",
+      "product_id": "gid://shopify/Product/9380480024791",
+      "existing_handle": "stadium-supply-fan-jersey-drop-39",
+      "new_handle": "club-brugge-2025-26-home-jersey",
+      "title": "Club Brugge 2025/26 Home Jersey",
+      "description_html": "<p><strong>Club Brugge 2025/26 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645161644247",
+        "gid://shopify/ProductVariant/49645161742551",
+        "gid://shopify/ProductVariant/49645161775319",
+        "gid://shopify/ProductVariant/49645161808087"
+      ]
+    },
+    {
+      "group_id": "1778616604",
+      "product_id": "gid://shopify/Product/9380480286935",
+      "existing_handle": "stadium-supply-fan-jersey-drop-40",
+      "new_handle": "galatasaray-2025-26-away-jersey",
+      "title": "Galatasaray 2025/26 Away Jersey",
+      "description_html": "<p><strong>Galatasaray 2025/26 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645162168535",
+        "gid://shopify/ProductVariant/49645162234071",
+        "gid://shopify/ProductVariant/49645162266839",
+        "gid://shopify/ProductVariant/49645162299607"
+      ]
+    },
+    {
+      "group_id": "1778616728",
+      "product_id": "gid://shopify/Product/9380480385239",
+      "existing_handle": "stadium-supply-fan-jersey-drop-41",
+      "new_handle": "paris-saint-germain-2021-22-away-jersey",
+      "title": "Paris Saint-Germain 2021/22 Away Jersey",
+      "description_html": "<p><strong>Paris Saint-Germain 2021/22 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645162463447",
+        "gid://shopify/ProductVariant/49645162496215",
+        "gid://shopify/ProductVariant/49645162528983",
+        "gid://shopify/ProductVariant/49645162561751"
+      ]
+    },
+    {
+      "group_id": "1778616861",
+      "product_id": "gid://shopify/Product/9380480483543",
+      "existing_handle": "stadium-supply-fan-jersey-drop-42",
+      "new_handle": "germany-2024-25-home-jersey-muller-13",
+      "title": "Germany 2024/25 Home Jersey M\u00dcLLER 13",
+      "description_html": "<p><strong>Germany 2024/25 Home Jersey M\u00dcLLER 13</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645162692823",
+        "gid://shopify/ProductVariant/49645163512023",
+        "gid://shopify/ProductVariant/49645163544791",
+        "gid://shopify/ProductVariant/49645163577559"
+      ]
+    },
+    {
+      "group_id": "1778617016",
+      "product_id": "gid://shopify/Product/9380480680151",
+      "existing_handle": "stadium-supply-fan-jersey-drop-43",
+      "new_handle": "portugal-2025-26-home-jersey-ronaldo-7",
+      "title": "Portugal 2025/26 Home Jersey Ronaldo 7",
+      "description_html": "<p><strong>Portugal 2025/26 Home Jersey Ronaldo 7</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645163708631",
+        "gid://shopify/ProductVariant/49645163774167",
+        "gid://shopify/ProductVariant/49645163806935",
+        "gid://shopify/ProductVariant/49645163839703"
+      ]
+    },
+    {
+      "group_id": "1778617340",
+      "product_id": "gid://shopify/Product/9380480745687",
+      "existing_handle": "stadium-supply-fan-jersey-drop-44",
+      "new_handle": "fc-barcelona-2016-17-away-jersey",
+      "title": "FC Barcelona 2016/17 Away Jersey",
+      "description_html": "<p><strong>FC Barcelona 2016/17 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645163872471",
+        "gid://shopify/ProductVariant/49645163970775",
+        "gid://shopify/ProductVariant/49645164003543",
+        "gid://shopify/ProductVariant/49645164036311"
+      ]
+    },
+    {
+      "group_id": "1778617473",
+      "product_id": "gid://shopify/Product/9380480876759",
+      "existing_handle": "stadium-supply-fan-jersey-drop-45",
+      "new_handle": "chelsea-2024-25-away-jersey",
+      "title": "Chelsea 2024/25 Away Jersey",
+      "description_html": "<p><strong>Chelsea 2024/25 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645164134615",
+        "gid://shopify/ProductVariant/49645164167383",
+        "gid://shopify/ProductVariant/49645164200151",
+        "gid://shopify/ProductVariant/49645164232919"
+      ]
+    },
+    {
+      "group_id": "1778617784",
+      "product_id": "gid://shopify/Product/9380453843159",
+      "existing_handle": "mbeumo-19-black-kit",
+      "new_handle": "manchester-united-2025-26-third-jersey-mbeumo-19",
+      "title": "Manchester United 2025/26 Third Jersey Mbeumo 19",
+      "description_html": "<p><strong>Manchester United 2025/26 Third Jersey Mbeumo 19</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49644960383191",
+        "gid://shopify/ProductVariant/49644960678103",
+        "gid://shopify/ProductVariant/49644960710871",
+        "gid://shopify/ProductVariant/49644960743639"
+      ]
+    },
+    {
+      "group_id": "1778618509",
+      "product_id": "gid://shopify/Product/9380480942295",
+      "existing_handle": "stadium-supply-fan-jersey-drop-46",
+      "new_handle": "manchester-united-2007-08-home-jersey",
+      "title": "Manchester United 2007/08 Home Jersey",
+      "description_html": "<p><strong>Manchester United 2007/08 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645164331223",
+        "gid://shopify/ProductVariant/49645164462295",
+        "gid://shopify/ProductVariant/49645164495063",
+        "gid://shopify/ProductVariant/49645164527831"
+      ]
+    },
+    {
+      "group_id": "1778618714",
+      "product_id": "gid://shopify/Product/9380481302743",
+      "existing_handle": "stadium-supply-fan-jersey-drop-47",
+      "new_handle": "paris-saint-germain-2025-26-fourth-jersey",
+      "title": "Paris Saint-Germain 2025/26 Fourth Jersey",
+      "description_html": "<p><strong>Paris Saint-Germain 2025/26 Fourth Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645164822743",
+        "gid://shopify/ProductVariant/49645164888279",
+        "gid://shopify/ProductVariant/49645164921047",
+        "gid://shopify/ProductVariant/49645164953815"
+      ]
+    },
+    {
+      "group_id": "1778618830",
+      "product_id": "gid://shopify/Product/9380481466583",
+      "existing_handle": "stadium-supply-fan-jersey-drop-48",
+      "new_handle": "france-2006-07-home-jersey-zidane-10",
+      "title": "France 2006/07 Home Jersey Zidane 10",
+      "description_html": "<p><strong>France 2006/07 Home Jersey Zidane 10</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645165314263",
+        "gid://shopify/ProductVariant/49645165347031",
+        "gid://shopify/ProductVariant/49645165379799",
+        "gid://shopify/ProductVariant/49645165412567"
+      ]
+    },
+    {
+      "group_id": "1778618937",
+      "product_id": "gid://shopify/Product/9380481597655",
+      "existing_handle": "stadium-supply-fan-jersey-drop-49",
+      "new_handle": "liverpool-2025-26-third-jersey-m-salah-11",
+      "title": "Liverpool 2025/26 Third Jersey M. SALAH 11",
+      "description_html": "<p><strong>Liverpool 2025/26 Third Jersey M. SALAH 11</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645165609175",
+        "gid://shopify/ProductVariant/49645165904087",
+        "gid://shopify/ProductVariant/49645165936855",
+        "gid://shopify/ProductVariant/49645165969623"
+      ]
+    },
+    {
+      "group_id": "1778619028",
+      "product_id": "gid://shopify/Product/9380481827031",
+      "existing_handle": "stadium-supply-fan-jersey-drop-50",
+      "new_handle": "real-madrid-2012-13-third-jersey",
+      "title": "Real Madrid 2012/13 Third Jersey",
+      "description_html": "<p><strong>Real Madrid 2012/13 Third Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645166461143",
+        "gid://shopify/ProductVariant/49645166526679",
+        "gid://shopify/ProductVariant/49645166559447",
+        "gid://shopify/ProductVariant/49645166592215"
+      ]
+    },
+    {
+      "group_id": "1778619148",
+      "product_id": "gid://shopify/Product/9380481990871",
+      "existing_handle": "stadium-supply-fan-jersey-drop-51",
+      "new_handle": "brazil-2026-27-away-jersey",
+      "title": "Brazil 2026/27 Away Jersey",
+      "description_html": "<p><strong>Brazil 2026/27 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645167083735",
+        "gid://shopify/ProductVariant/49645167116503",
+        "gid://shopify/ProductVariant/49645167149271",
+        "gid://shopify/ProductVariant/49645167182039"
+      ]
+    },
+    {
+      "group_id": "1778619185",
+      "product_id": "gid://shopify/Product/9380482056407",
+      "existing_handle": "stadium-supply-fan-jersey-drop-52",
+      "new_handle": "fijian-7s-2025-26-home-jersey",
+      "title": "Fijian 7s 2025/26 Home Jersey",
+      "description_html": "<p><strong>Fijian 7s 2025/26 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645167313111",
+        "gid://shopify/ProductVariant/49645167575255",
+        "gid://shopify/ProductVariant/49645167608023",
+        "gid://shopify/ProductVariant/49645167640791"
+      ]
+    },
+    {
+      "group_id": "1778619295",
+      "product_id": "gid://shopify/Product/9380482351319",
+      "existing_handle": "stadium-supply-fan-jersey-drop-53",
+      "new_handle": "arsenal-2023-24-home-jersey",
+      "title": "Arsenal 2023/24 Home Jersey",
+      "description_html": "<p><strong>Arsenal 2023/24 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645171081431",
+        "gid://shopify/ProductVariant/49645171114199",
+        "gid://shopify/ProductVariant/49645171146967",
+        "gid://shopify/ProductVariant/49645171179735"
+      ]
+    },
+    {
+      "group_id": "1778619398",
+      "product_id": "gid://shopify/Product/9380482678999",
+      "existing_handle": "stadium-supply-fan-jersey-drop-54",
+      "new_handle": "chelsea-2011-12-home-jersey",
+      "title": "Chelsea 2011/12 Home Jersey",
+      "description_html": "<p><strong>Chelsea 2011/12 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645171704023",
+        "gid://shopify/ProductVariant/49645171769559",
+        "gid://shopify/ProductVariant/49645171802327",
+        "gid://shopify/ProductVariant/49645171835095"
+      ]
+    },
+    {
+      "group_id": "1778619608",
+      "product_id": "gid://shopify/Product/9380482941143",
+      "existing_handle": "stadium-supply-fan-jersey-drop-55",
+      "new_handle": "liverpool-1995-96-away-jersey",
+      "title": "Liverpool 1995/96 Away Jersey",
+      "description_html": "<p><strong>Liverpool 1995/96 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Retro</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Retro",
+        "Size S-XL"
+      ],
+      "price": "700.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645175603415",
+        "gid://shopify/ProductVariant/49645175636183",
+        "gid://shopify/ProductVariant/49645175668951",
+        "gid://shopify/ProductVariant/49645175701719"
+      ]
+    },
+    {
+      "group_id": "1778619691",
+      "product_id": "gid://shopify/Product/9380483268823",
+      "existing_handle": "stadium-supply-fan-jersey-drop-56",
+      "new_handle": "real-madrid-2024-25-home-jersey-bellingham-5",
+      "title": "Real Madrid 2024/25 Home Jersey Bellingham 5",
+      "description_html": "<p><strong>Real Madrid 2024/25 Home Jersey Bellingham 5</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645176258775",
+        "gid://shopify/ProductVariant/49645176357079",
+        "gid://shopify/ProductVariant/49645176389847",
+        "gid://shopify/ProductVariant/49645176422615"
+      ]
+    },
+    {
+      "group_id": "1778619724",
+      "product_id": "gid://shopify/Product/9380483432663",
+      "existing_handle": "stadium-supply-fan-jersey-drop-57",
+      "new_handle": "psg-2024-25-training-jacket",
+      "title": "PSG 2024/25 Training Jacket",
+      "description_html": "<p><strong>PSG 2024/25 Training Jacket</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645176684759",
+        "gid://shopify/ProductVariant/49645176750295",
+        "gid://shopify/ProductVariant/49645176783063",
+        "gid://shopify/ProductVariant/49645176815831"
+      ]
+    },
+    {
+      "group_id": "1778620106",
+      "product_id": "gid://shopify/Product/9380483727575",
+      "existing_handle": "stadium-supply-fan-jersey-drop-58",
+      "new_handle": "red-bull-racing-2021-22-training-jersey",
+      "title": "Red Bull Racing 2021/22 Training Jersey",
+      "description_html": "<p><strong>Red Bull Racing 2021/22 Training Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645177405655",
+        "gid://shopify/ProductVariant/49645177733335",
+        "gid://shopify/ProductVariant/49645177766103",
+        "gid://shopify/ProductVariant/49645177798871"
+      ]
+    },
+    {
+      "group_id": "1778620107",
+      "product_id": "gid://shopify/Product/9380483825879",
+      "existing_handle": "stadium-supply-fan-jersey-drop-59",
+      "new_handle": "red-bull-racing-2021-22-training-polo",
+      "title": "Red Bull Racing 2021/22 Training Polo",
+      "description_html": "<p><strong>Red Bull Racing 2021/22 Training Polo</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645177929943",
+        "gid://shopify/ProductVariant/49645178028247",
+        "gid://shopify/ProductVariant/49645178061015",
+        "gid://shopify/ProductVariant/49645178093783"
+      ]
+    },
+    {
+      "group_id": "1778620156",
+      "product_id": "gid://shopify/Product/9380484022487",
+      "existing_handle": "stadium-supply-fan-jersey-drop-60",
+      "new_handle": "manchester-city-2024-25-training-tracksuit",
+      "title": "Manchester City 2024/25 Training Tracksuit",
+      "description_html": "<p><strong>Manchester City 2024/25 Training Tracksuit</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645178912983",
+        "gid://shopify/ProductVariant/49645179011287",
+        "gid://shopify/ProductVariant/49645179044055",
+        "gid://shopify/ProductVariant/49645179076823"
+      ]
+    },
+    {
+      "group_id": "1778620328",
+      "product_id": "gid://shopify/Product/9380484317399",
+      "existing_handle": "stadium-supply-fan-jersey-drop-61",
+      "new_handle": "paris-saint-germain-2025-26-fifth-jersey",
+      "title": "Paris Saint-Germain 2025/26 Fifth Jersey",
+      "description_html": "<p><strong>Paris Saint-Germain 2025/26 Fifth Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Player Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Player Version",
+        "Size S-XL"
+      ],
+      "price": "650.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645180158167",
+        "gid://shopify/ProductVariant/49645180190935",
+        "gid://shopify/ProductVariant/49645180223703",
+        "gid://shopify/ProductVariant/49645180256471"
+      ]
+    },
+    {
+      "group_id": "1778620892",
+      "product_id": "gid://shopify/Product/9380484382935",
+      "existing_handle": "stadium-supply-fan-jersey-drop-62",
+      "new_handle": "south-africa-2026-27-away-jersey",
+      "title": "South Africa 2026/27 Away Jersey",
+      "description_html": "<p><strong>South Africa 2026/27 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645182320855",
+        "gid://shopify/ProductVariant/49645182484695",
+        "gid://shopify/ProductVariant/49645182517463",
+        "gid://shopify/ProductVariant/49645182550231"
+      ]
+    },
+    {
+      "group_id": "1787264076",
+      "product_id": "gid://shopify/Product/9380484481239",
+      "existing_handle": "stadium-supply-fan-jersey-drop-63",
+      "new_handle": "chiefs-2026-27-home-jersey",
+      "title": "Chiefs 2026/27 Home Jersey",
+      "description_html": "<p><strong>Chiefs 2026/27 Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645182615767",
+        "gid://shopify/ProductVariant/49645182648535",
+        "gid://shopify/ProductVariant/49645182681303",
+        "gid://shopify/ProductVariant/49645182714071"
+      ]
+    },
+    {
+      "group_id": "1787264134",
+      "product_id": "gid://shopify/Product/9380485431511",
+      "existing_handle": "stadium-supply-fan-jersey-drop-64",
+      "new_handle": "blues-2026-30th-anniversary-home-jersey",
+      "title": "Blues 2026 30th Anniversary Home Jersey",
+      "description_html": "<p><strong>Blues 2026 30th Anniversary Home Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645184057559",
+        "gid://shopify/ProductVariant/49645184418007",
+        "gid://shopify/ProductVariant/49645184450775",
+        "gid://shopify/ProductVariant/49645184483543"
+      ]
+    },
+    {
+      "group_id": "1787264190",
+      "product_id": "gid://shopify/Product/9380486086871",
+      "existing_handle": "stadium-supply-fan-jersey-drop-65",
+      "new_handle": "scotland-2024-25-away-jersey",
+      "title": "Scotland 2024/25 Away Jersey",
+      "description_html": "<p><strong>Scotland 2024/25 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645185269975",
+        "gid://shopify/ProductVariant/49645185401047",
+        "gid://shopify/ProductVariant/49645185433815",
+        "gid://shopify/ProductVariant/49645185466583"
+      ]
+    },
+    {
+      "group_id": "1787264273",
+      "product_id": "gid://shopify/Product/9380487200983",
+      "existing_handle": "stadium-supply-fan-jersey-drop-67",
+      "new_handle": "nottingham-forest-2025-26-away-jersey",
+      "title": "Nottingham Forest 2025/26 Away Jersey",
+      "description_html": "<p><strong>Nottingham Forest 2025/26 Away Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645187825879",
+        "gid://shopify/ProductVariant/49645187956951",
+        "gid://shopify/ProductVariant/49645187989719",
+        "gid://shopify/ProductVariant/49645188022487"
+      ]
+    },
+    {
+      "group_id": "1787264447",
+      "product_id": "gid://shopify/Product/9380487987415",
+      "existing_handle": "stadium-supply-fan-jersey-drop-68",
+      "new_handle": "bayern-munich-2024-25-third-jersey",
+      "title": "Bayern Munich 2024/25 Third Jersey",
+      "description_html": "<p><strong>Bayern Munich 2024/25 Third Jersey</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645188972759",
+        "gid://shopify/ProductVariant/49645189038295",
+        "gid://shopify/ProductVariant/49645189071063",
+        "gid://shopify/ProductVariant/49645189103831"
+      ]
+    },
+    {
+      "group_id": "1787264493",
+      "product_id": "gid://shopify/Product/9380488806615",
+      "existing_handle": "stadium-supply-fan-jersey-drop-69",
+      "new_handle": "liverpool-2025-26-training-hoodie",
+      "title": "Liverpool 2025/26 Training Hoodie",
+      "description_html": "<p><strong>Liverpool 2025/26 Training Hoodie</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645189857495",
+        "gid://shopify/ProductVariant/49645189890263",
+        "gid://shopify/ProductVariant/49645189923031",
+        "gid://shopify/ProductVariant/49645189955799"
+      ]
+    },
+    {
+      "group_id": "1787264582",
+      "product_id": "gid://shopify/Product/9380489298135",
+      "existing_handle": "stadium-supply-fan-jersey-drop-70",
+      "new_handle": "arsenal-2024-25-goalkeeper-jersey-raya-1",
+      "title": "Arsenal 2024/25 Goalkeeper Jersey RAYA 1",
+      "description_html": "<p><strong>Arsenal 2024/25 Goalkeeper Jersey RAYA 1</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49645190676695",
+        "gid://shopify/ProductVariant/49645190774999",
+        "gid://shopify/ProductVariant/49645190807767",
+        "gid://shopify/ProductVariant/49645190840535"
+      ]
+    },
+    {
+      "group_id": "1787265257",
+      "product_id": "gid://shopify/Product/9380452663511",
+      "existing_handle": "stadium-supply-fan-jersey-drop-01",
+      "new_handle": "arsenal-2023-24-training-hoodie",
+      "title": "Arsenal 2023/24 Training Hoodie",
+      "description_html": "<p><strong>Arsenal 2023/24 Training Hoodie</strong></p><p>Curated by Stadium Supply. This product has been matched to its supplied kit media and is offered in Small through XL.</p><ul><li>Category: Fan Version</li><li>Condition: Curated condition</li><li>Source: Stadium Supply archive</li></ul>",
+      "tags": [
+        "Stadium Supply",
+        "Mapped Media",
+        "Fan Version",
+        "Size S-XL"
+      ],
+      "price": "450.00",
+      "variant_ids": [
+        "gid://shopify/ProductVariant/49644945113303",
+        "gid://shopify/ProductVariant/49644946030807",
+        "gid://shopify/ProductVariant/49644946063575",
+        "gid://shopify/ProductVariant/49644946096343"
+      ]
+    }
+  ],
+  "held_for_consolidation_review": [
+    {
+      "group_id": "1778612126",
+      "title": "Manchester United 2024/25 Home Jersey",
+      "tier": "Fan Version",
+      "confidence": "High",
+      "duplicates": "`1787266021`",
+      "handle": "stadium-supply-fan-jersey-drop-10",
+      "product": {
+        "id": "gid://shopify/Product/9380462657751",
+        "handle": "stadium-supply-fan-jersey-drop-10",
+        "title": "Stadium Supply Fan Jersey \u2014 Drop 10",
+        "tags": [
+          "Editable Drop",
+          "Fan Version",
+          "Football",
+          "New Arrival"
+        ],
+        "variants": {
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/49644988137687",
+              "title": "S",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49644988399831",
+              "title": "M",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49644988432599",
+              "title": "L",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49644988465367",
+              "title": "XL",
+              "price": "450.00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group_id": "1778612159",
+      "title": "Arsenal 2026/27 Home Jersey",
+      "tier": "Fan Version",
+      "confidence": "High",
+      "duplicates": "`1787266231`",
+      "handle": "stadium-supply-fan-jersey-drop-11",
+      "product": {
+        "id": "gid://shopify/Product/9380463083735",
+        "handle": "stadium-supply-fan-jersey-drop-11",
+        "title": "Stadium Supply Fan Jersey \u2014 Drop 11",
+        "tags": [
+          "Editable Drop",
+          "Fan Version",
+          "Football",
+          "New Arrival"
+        ],
+        "variants": {
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/49644992725207",
+              "title": "S",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49644999704791",
+              "title": "M",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49644999737559",
+              "title": "L",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49644999770327",
+              "title": "XL",
+              "price": "450.00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group_id": "1778612775",
+      "title": "Liverpool 2025/26 Away Jersey",
+      "tier": "Player Version",
+      "confidence": "High",
+      "duplicates": "`1778614289`",
+      "handle": "stadium-supply-fan-jersey-drop-15",
+      "product": {
+        "id": "gid://shopify/Product/9380465869015",
+        "handle": "stadium-supply-fan-jersey-drop-15",
+        "title": "Stadium Supply Fan Jersey \u2014 Drop 15",
+        "tags": [
+          "Editable Drop",
+          "Fan Version",
+          "Football",
+          "New Arrival"
+        ],
+        "variants": {
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/49645075005655",
+              "title": "S",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645075038423",
+              "title": "M",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645075071191",
+              "title": "L",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645075103959",
+              "title": "XL",
+              "price": "450.00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group_id": "1778613045",
+      "title": "Liverpool 2025/26 Home Jersey",
+      "tier": "Fan Version",
+      "confidence": "High",
+      "duplicates": "`1778614059`",
+      "handle": "stadium-supply-fan-jersey-drop-18",
+      "product": {
+        "id": "gid://shopify/Product/9380466393303",
+        "handle": "stadium-supply-fan-jersey-drop-18",
+        "title": "Stadium Supply Fan Jersey \u2014 Drop 18",
+        "tags": [
+          "Editable Drop",
+          "Fan Version",
+          "Football",
+          "New Arrival"
+        ],
+        "variants": {
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/49645077037271",
+              "title": "S",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645077790935",
+              "title": "M",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645077823703",
+              "title": "L",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645077856471",
+              "title": "XL",
+              "price": "450.00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group_id": "1778614059",
+      "title": "Liverpool 2025/26 Home Jersey",
+      "tier": "Player Version",
+      "confidence": "High",
+      "duplicates": "`1778613045`",
+      "handle": "stadium-supply-fan-jersey-drop-27",
+      "product": {
+        "id": "gid://shopify/Product/9380475666647",
+        "handle": "stadium-supply-fan-jersey-drop-27",
+        "title": "Stadium Supply Fan Jersey \u2014 Drop 27",
+        "tags": [
+          "Editable Drop",
+          "Fan Version",
+          "Football",
+          "New Arrival"
+        ],
+        "variants": {
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/49645122879703",
+              "title": "S",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645126090967",
+              "title": "M",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645126123735",
+              "title": "L",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645126156503",
+              "title": "XL",
+              "price": "450.00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group_id": "1778614289",
+      "title": "Liverpool 2025/26 Away Jersey",
+      "tier": "Fan Version",
+      "confidence": "High",
+      "duplicates": "`1778612775`",
+      "handle": "stadium-supply-fan-jersey-drop-29",
+      "product": {
+        "id": "gid://shopify/Product/9380475896023",
+        "handle": "stadium-supply-fan-jersey-drop-29",
+        "title": "Stadium Supply Fan Jersey \u2014 Drop 29",
+        "tags": [
+          "Editable Drop",
+          "Fan Version",
+          "Football",
+          "New Arrival"
+        ],
+        "variants": {
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/49645128286423",
+              "title": "S",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645145293015",
+              "title": "M",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645145325783",
+              "title": "L",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645145358551",
+              "title": "XL",
+              "price": "450.00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group_id": "1787264234",
+      "title": "Paris Saint-Germain 2018/19 Third Jersey Neymar Jr 10",
+      "tier": "Fan Version",
+      "confidence": "High",
+      "duplicates": "`1787265008`",
+      "handle": "stadium-supply-fan-jersey-drop-66",
+      "product": {
+        "id": "gid://shopify/Product/9380486807767",
+        "handle": "stadium-supply-fan-jersey-drop-66",
+        "title": "Stadium Supply Fan Jersey \u2014 Drop 66",
+        "tags": [
+          "Editable Drop",
+          "Fan Version",
+          "Football",
+          "New Arrival"
+        ],
+        "variants": {
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/49645186384087",
+              "title": "S",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645186449623",
+              "title": "M",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645186482391",
+              "title": "L",
+              "price": "450.00"
+            },
+            {
+              "id": "gid://shopify/ProductVariant/49645186515159",
+              "title": "XL",
+              "price": "450.00"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

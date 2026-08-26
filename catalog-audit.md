@@ -27,6 +27,10 @@ The catalog-wide review covered all 72 active products in two Shopify pages. The
 | Mbeumo 19 Black Kit | R450.00 | S–XL | 1 Shopify-hosted product image | Named product with a confirmed supplied image. |
 | Stadium Supply Fan Jersey — Drop 70 | R450.00 | S–XL | 1 Shopify-hosted product image | Provisional generic record with editable title and tags. |
 
+## Storefront verification update
+
+After the reviewed product updates, the live development catalog completed its Shopify query and displayed **24 mapped customer-facing products** in the first catalog page. The visible titles now include reviewed kit-specific names such as AC Milan 2007/08 Home Jersey, Arsenal 2023/24 Home Jersey, Arsenal 2024/25 Goalkeeper Jersey RAYA 1, Bayern Munich 2024/25 Third Jersey, and France 2006/07 Home Jersey Zidane 10. Price tiers render as R450, R650, and R700 according to the reviewed Fan Version, Player Version, and Retro tags.
+
 ## Controlled next steps
 
 The next step is not to create more generic products. Instead, the supplied images will be grouped into identifiable kit records in a mapping register. Each mapped group will identify its Shopify product, price tier, media file, title, and size availability. Only after that register is reviewed will existing generic records be renamed or new items created.

@@ -69,3 +69,18 @@
 - [ ] Verify complete browse, filter, product, size, cart, and checkout journeys on desktop and mobile.
 - [x] Verify the desktop mapped-product browse, filter, product, size selection, cart add, and cart removal journey.
 - [ ] Exercise the mapped-product interaction journey on a mobile device or equivalent mobile browser session.
+- [x] Inventory every supplied product-media group and identify which files belong to the same kit.
+- [x] Identify the club, season, kit type, and player personalization shown in each supplied product group.
+- [ ] Assign a real Shopify product record to every identified media group, creating only missing targets after duplicate review.
+- [ ] Replace all proposed target handles in the consolidation register with confirmed Shopify product IDs and handles.
+- [ ] Verify duplicate and merge actions against every image in each grouped product set before catalog consolidation.
+- [x] Replace generic Drop titles and descriptions with reviewed kit-specific product information.
+- [x] Replace 59 uniquely mapped generic Drop titles, descriptions, tags, handles, and price tiers with reviewed kit-specific product information.
+- [ ] Resolve the remaining held same-kit, variant-tier, and media-consolidation candidates before renaming or archiving their listings.
+- [x] Consolidate the confirmed PSG 2024/25 Fourth D. Doué 14 duplicate under one retained Shopify product and archive its duplicate record.
+- [ ] Attach every source image in each confirmed multi-image kit group to its retained Shopify product record.
+- [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
+- [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
+- [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
+- [ ] Verify that renamed Mapped Media products remain visible in customer-facing storefront discovery.
+- [x] Verify that renamed Mapped Media products remain visible in customer-facing storefront discovery.
