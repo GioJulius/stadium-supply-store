@@ -31,3 +31,4 @@
 - [x] Add per-card size-selection affordances where a kit is available in multiple sizes.
 - [ ] Assign the remaining supplied kit groups to the approved default fan-version category at R450.
 - [ ] Create the remaining supplied kit groups as individually editable generic Drop 07+ Shopify listings with Small–XL options.
+- [x] Import editable default fan-version kit listings through Drop 22 at R450 with Small–XL options.
