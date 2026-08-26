@@ -83,6 +83,9 @@
 - [ ] Attach all supplied image and video views for each confirmed kit group to its single retained Shopify product, without omitting close-ups or back views.
 - [x] Create one reviewed Real Madrid 2025/26 Home Player Version product with its two grouped images, R650 price tier, and S–XL variants.
 - [x] Create one reviewed Paris Saint-Germain 2024/25 Home product with both grouped images, R450 price tier, and S–XL variants.
+- [x] Create one reviewed New Zealand 2024/25 Home Player Version product with its supplied image, R650 price tier, and S–XL variants.
+- [x] Create one reviewed Italy 2026 Home product with all three grouped images, R450 price tier, and S–XL variants.
+- [x] Create one reviewed Manchester United 1992/94 Home retro product with its supplied image, R700 price tier, and S–XL variants.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
