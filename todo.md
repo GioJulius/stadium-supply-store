@@ -11,3 +11,7 @@
 - [x] Add brand storytelling for new arrivals, authenticity, value, and Instagram follow-through.
 - [x] Add and run focused storefront and commerce integration tests.
 - [x] Verify desktop and mobile visual presentation, navigation, cart, and checkout handoff.
+- [x] Review the newly supplied product media and confirm the final hero asset.
+- [x] Upload the supplied hero and selected product photography to project-managed asset storage.
+- [x] Update the storefront hero and gallery imagery with the approved supplied media.
+- [x] Validate the updated hero and product presentation across responsive breakpoints.
