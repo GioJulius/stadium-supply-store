@@ -121,6 +121,12 @@ body { font-family:"Manrope",Arial,sans-serif; }
 /* Shared page-edge alignment for the social call-to-action and footer content. */
 .instagram-section > a { margin-left:0; align-self:flex-start; }
 .site-footer__meta { justify-self:start; align-self:end; }
+@media (min-width:851px) and (max-width:1100px) {
+  .site-footer { grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:18px 30px; min-height:190px; padding:32px clamp(24px,4vw,42px) 25px; }
+  .site-footer__brand { grid-row:span 2; align-self:end; }
+  .site-footer__meta { align-self:end; }
+  .site-footer__legal { grid-column:2; text-align:left; align-self:start; }
+}
 @media (max-width:850px) {
   .site-footer { grid-template-columns:1fr; gap:24px; padding:35px 17px 27px; }
   .site-footer__meta, .site-footer__legal { justify-self:start; align-self:start; text-align:left; padding-top:0; }

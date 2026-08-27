@@ -167,3 +167,6 @@
 - [x] Remove the Home-page section marked “REMOVE THIS SECTION” and verify the remaining editorial page flow.
 - [x] Validate the visual-editor header spacing changes and replace invalid or non-responsive values with a stable responsive layout.
 - [x] Align the requested Home-page CTA and footer text blocks to the shared responsive page grid.
+- [x] Tighten the footer layout and spacing specifically for tablet-width screens.
+- [x] Confirm Shopify sales-channel publication readiness and apply the owner-authorized go-live action without modifying catalog data.
+- [x] Publish the owner-approved remaining customer-facing Stadium Supply products to Shopify Online Store and verify the resulting channel assignments.
