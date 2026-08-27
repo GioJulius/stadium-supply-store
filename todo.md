@@ -115,6 +115,9 @@
 - [x] Consolidate the two PSG 2018/19 Neymar Third supplied groups into one retained Shopify product with all four images.
 - [x] Keep the distinct Manchester United 2024/25 standard and Lifestyler home jerseys separate; create the Lifestyler product with all supplied images and purchasable S–XL variants.
 - [x] Keep the distinct Arsenal 2024/25 short-sleeve fan and long-sleeve authentic home jerseys separate; create the authentic product with all supplied images and purchasable S–XL variants.
+- [x] Audit the initial controlled-product batch and restore missing purchasable Small variants so every reviewed listing offers S–XL.
+- [x] Attach all supplied Barcelona 2024/25 Away Lamine Yamal images to the existing single Shopify product gallery.
+- [x] Attach all supplied Liverpool 2025/26 Training Hoodie images to the existing single Shopify product gallery.
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
