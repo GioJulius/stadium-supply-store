@@ -9,3 +9,7 @@ Completed recent full-gallery groups include Barcelona 2024/25 Away Lamine Yamal
 Two original source videos remain outstanding rather than being replaced or silently omitted: the Manchester United 2015/16 Presentation Jacket MP4 and South Africa 2026/27 Away MP4. Shopify rejected the available video-host URL for the first product; both require Shopify-compatible direct video ingestion before the group can be called fully complete.
 
 Confirmed non-duplicate decisions remain in force: PSG 2018/19 Neymar Third groups are one retained four-image product; Manchester United 2024/25 standard and Lifestyler home editions stay separate; Arsenal 2024/25 short-sleeve fan and long-sleeve authentic editions stay separate; Liverpool fan/player editions stay separate.
+
+## Storefront validation
+
+On 2026-08-27, the live development storefront was checked at desktop and mobile breakpoints. The catalog rendered the reviewed product cards, price tags, filters, and product routes. The AC Milan 2007/08 Home product detail page loaded its selected image, R700 price, S–XL picker, and add-to-bag action. On mobile, the product was added to the bag, the bag count changed from `00` to `01`, and the test item was then removed successfully, restoring the empty bag state. Checkout was intentionally not opened because no purchase or submission was requested.

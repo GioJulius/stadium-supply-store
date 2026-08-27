@@ -145,8 +145,9 @@
 - [x] Make the Manchester United 2024/25 Home Small variant purchasable to match the remaining Small–XL size range.
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
 - [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
-- [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
-- [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
-- [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
-- [ ] Verify that renamed Mapped Media products remain visible in customer-facing storefront discovery.
+- [ ] Attach the supplied Manchester United 1992/94 Home retro MP4 once a Shopify-compatible direct video source is available.
+- [x] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
+- [x] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
+- [x] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
+- [x] Verify that renamed Mapped Media products remain visible in customer-facing storefront discovery.
 - [x] Verify that renamed Mapped Media products remain visible in customer-facing storefront discovery.
