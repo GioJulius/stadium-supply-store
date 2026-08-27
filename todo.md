@@ -123,6 +123,9 @@
 - [x] Attach all supplied Paris Saint-Germain 2025/26 Fifth jersey images to the existing single Shopify product gallery.
 - [x] Attach all supplied Germany 2024/25 Home Müller images to the existing single Shopify product gallery.
 - [x] Attach all supplied Portugal 2025/26 Home Ronaldo images to the existing single Shopify product gallery.
+- [x] Attach all supplied FC Barcelona 2016/17 Away images to the existing single Shopify product gallery.
+- [x] Attach all supplied Arsenal 2024/25 Goalkeeper RAYA images to the existing single Shopify product gallery.
+- [x] Attach all supplied Liverpool 1995/96 Away retro images to the existing single Shopify product gallery.
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
 - [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
