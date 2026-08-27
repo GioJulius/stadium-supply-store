@@ -117,3 +117,12 @@ body { font-family:"Manrope",Arial,sans-serif; }
   .product-detail__content h1 { font-size:28px; }
   .product-detail__thumbnails { grid-template-columns:repeat(6,1fr); gap:5px; }
 }
+
+/* Shared page-edge alignment for the social call-to-action and footer content. */
+.instagram-section > a { margin-left:0; align-self:flex-start; }
+.site-footer__meta { justify-self:start; align-self:end; }
+@media (max-width:850px) {
+  .site-footer { grid-template-columns:1fr; gap:24px; padding:35px 17px 27px; }
+  .site-footer__meta, .site-footer__legal { justify-self:start; align-self:start; text-align:left; padding-top:0; }
+  .site-footer__legal { grid-column:auto; }
+}

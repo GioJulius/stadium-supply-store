@@ -166,3 +166,4 @@
 - [x] Add or update unit tests for catalog visibility and visual-content selection, then verify desktop and mobile storefront behavior.
 - [x] Remove the Home-page section marked “REMOVE THIS SECTION” and verify the remaining editorial page flow.
 - [x] Validate the visual-editor header spacing changes and replace invalid or non-responsive values with a stable responsive layout.
+- [x] Align the requested Home-page CTA and footer text blocks to the shared responsive page grid.
