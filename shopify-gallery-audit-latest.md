@@ -40,3 +40,7 @@ With the owner’s confirmation, the same test cart was taken to the secure Shop
 ## Active catalog retrieval
 
 On 2026-08-27, the active Shopify catalog was retrieved through three pages: 50 records, 50 records, and 2 records, for a total of **102 active products**. This retrieval was saved as the current reference for final catalog reconciliation. Historic `Stadium Supply Fan Jersey — Drop NN` labels in the consolidation register identify the original import lineage; the corresponding active Shopify records were subsequently renamed to the reviewed kit identities.
+
+## Storefront visibility refresh
+
+On 2026-08-27, the storefront catalog page size was raised to Shopify’s supported 250-product request ceiling. The active customer-facing archive now resolves **96 approved pieces**—the expected count after treating the two confirmed duplicate pairs as single retained listings and excluding the unapproved legacy records. Product cards now show the lead image, a second-image hover preview when present, and a gallery-view count. On product pages, the lead image is compact enough for size, quantity, add-to-bag, and checkout controls to remain visible without scrolling through an oversized gallery; all additional supplied still images are available as selectable thumbnails.

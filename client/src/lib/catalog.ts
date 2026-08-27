@@ -3,6 +3,9 @@ import type { Product } from "@shared/commerce/types";
 export type CatalogFilter = "all" | "fan" | "player" | "retro" | "new";
 export type CatalogSortMode = "featured" | "price-asc" | "price-desc" | "name-asc";
 
+/** Shopify Storefront supports up to 250 products in a single catalog request. */
+export const STOREFRONT_CATALOG_PAGE_SIZE = 250;
+
 const CUSTOMER_FACING_BASELINE_HANDLES = new Set([
   "stadium-supply-fan-jersey-drop-01",
   "mbeumo-19-black-kit",

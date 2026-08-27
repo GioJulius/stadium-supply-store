@@ -275,7 +275,7 @@ export type ListProductsOptions = {
 export async function listProducts(
   options: ListProductsOptions = {}
 ): Promise<Product[]> {
-  const first = options.first ?? 24;
+  const first = options.first ?? 250;
 
   if (options.collectionHandle) {
     const data = await storefrontFetch<{

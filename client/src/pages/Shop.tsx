@@ -1,7 +1,7 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { ProductCard } from "@/components/ProductCard";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
-import { filterAndSortProducts, isCustomerFacingMappedProduct, type CatalogFilter, type CatalogSortMode } from "@/lib/catalog";
+import { filterAndSortProducts, isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE, type CatalogFilter, type CatalogSortMode } from "@/lib/catalog";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownUp, LoaderCircle } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -15,7 +15,7 @@ const filters = [
 ];
 
 export default function Shop() {
-  const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: 24 });
+  const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_PAGE_SIZE });
   const [activeFilter, setActiveFilter] = useState<CatalogFilter>("all");
   const [sortMode, setSortMode] = useState<CatalogSortMode>("featured");
   const mappedProducts = useMemo(() => products.filter(isCustomerFacingMappedProduct), [products]);

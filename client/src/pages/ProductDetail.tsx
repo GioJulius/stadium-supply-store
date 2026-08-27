@@ -17,17 +17,21 @@ function detailFromTags(product: Product) {
 function ProductView({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
   const [selectedVariantId, setSelectedVariantId] = useState(product.variants[0]?.id ?? "");
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const { addItem, loading } = useCart();
   const variant = product.variants.find(candidate => candidate.id === selectedVariantId) ?? product.variants[0];
-  const image = product.images[0];
+  const image = product.images[selectedImageIndex] ?? product.images[0];
   const { size, condition } = detailFromTags(product);
   const sizeOptions = product.options.find(option => option.name.toLowerCase() === "size")?.values ?? [];
   const selectedSize = variant?.selectedOptions.find(option => option.name.toLowerCase() === "size")?.value;
   return (
     <main className="product-detail">
       <Link href="/shop" className="product-back"><ArrowLeft size={15} /> Back to archive</Link>
-      <div className="product-detail__grid">
-        <div className="product-detail__image">{image ? <img src={image.url} alt={image.altText ?? product.title} /> : <div>Stadium Supply</div>}<span>01 / 01</span></div>
+        <div className="product-detail__grid">
+        <div className="product-detail__media">
+          <div className="product-detail__image">{image ? <img src={image.url} alt={image.altText ?? product.title} /> : <div>Stadium Supply</div>}<span>{String(selectedImageIndex + 1).padStart(2, "0")} / {String(product.images.length || 1).padStart(2, "0")}</span></div>
+          {product.images.length > 1 ? <div className="product-detail__thumbnails" aria-label="Product image gallery">{product.images.map((galleryImage, index) => <button key={galleryImage.url} type="button" className={index === selectedImageIndex ? "is-selected" : ""} aria-label={`View image ${index + 1} of ${product.images.length}`} onClick={() => setSelectedImageIndex(index)}><img src={galleryImage.url} alt="" /></button>)}</div> : null}
+        </div>
         <section className="product-detail__content">
           <p className="eyebrow">{product.vendor || "Stadium Supply"} / {product.productType || "Football kit"}</p>
           <h1>{product.title}</h1>

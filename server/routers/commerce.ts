@@ -38,7 +38,7 @@ export const commerceRouter = router({
       .input(
         z
           .object({
-            first: z.number().int().min(1).max(100).optional(),
+            first: z.number().int().min(1).max(250).optional(),
             collectionHandle: z.string().min(1).optional(),
           })
           .optional()

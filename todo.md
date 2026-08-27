@@ -157,3 +157,10 @@
 - [x] Perform and record a post-consolidation checkout-handoff verification from the cart on desktop and mobile without completing a purchase.
 - [x] Record the approval basis for each identified kit group, distinguishing direct owner approval from accepted identity inferences.
 - [x] Create a final image-by-image duplicate-audit record covering every grouped product set, including merge and distinct decisions.
+- [x] Audit every supplied image group against active storefront visibility and identify why only a limited catalog subset is rendered.
+- [x] Make every approved customer-facing Shopify product visible in the shop and home-product sections without reintroducing duplicate listings.
+- [x] Reduce product-gallery footprint and keep size, quantity, add-to-bag, and checkout controls comfortably reachable on desktop and mobile.
+- [x] Replace the Home page Shop by Story colour treatments with real supplied Stadium Supply imagery and accessible overlays.
+- [x] Upload and apply the supplied Akira Expanded font across the storefront typography system with sensible fallbacks.
+- [x] Add restrained, reduced-motion-safe scroll text effects to selected editorial content blocks.
+- [x] Add or update unit tests for catalog visibility and visual-content selection, then verify desktop and mobile storefront behavior.

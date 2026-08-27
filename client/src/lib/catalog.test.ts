@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Product } from "@shared/commerce/types";
-import { filterAndSortProducts, isCustomerFacingMappedProduct } from "./catalog";
+import { filterAndSortProducts, isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "./catalog";
 
 const product = (title: string, amount: string, tags: string[]): Product => ({
   id: title,
@@ -40,5 +40,9 @@ describe("filterAndSortProducts", () => {
     expect(isCustomerFacingMappedProduct(renamedMappedKit)).toBe(true);
     expect(isCustomerFacingMappedProduct(namedBaseline)).toBe(true);
     expect(isCustomerFacingMappedProduct(products[0])).toBe(false);
+  });
+
+  it("requests the Shopify-supported full storefront catalog page", () => {
+    expect(STOREFRONT_CATALOG_PAGE_SIZE).toBe(250);
   });
 });
