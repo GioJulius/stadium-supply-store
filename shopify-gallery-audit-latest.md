@@ -10,6 +10,8 @@ Two original source videos remain outstanding rather than being replaced or sile
 
 The Manchester United 1992/94 Home Retro MP4 was also tested on 2026-08-27 using Shopify's `productCreateMedia` mutation with a freshly uploaded public MP4 URL. Shopify returned **“Invalid video url”** for `originalSource`, confirming that the available public-upload route is not accepted for product-video ingestion. The remaining three MP4 assets are therefore preserved as outstanding rather than substituted; a Shopify-compatible direct video source or staged-video-upload route is required to attach them.
 
+**Approved pending status:** The store owner confirmed on 2026-08-27 that all three product-video attachments should remain pending for now. The completed image catalog stays live; no video was removed, replaced, or represented as attached.
+
 Confirmed non-duplicate decisions remain in force: PSG 2018/19 Neymar Third groups are one retained four-image product; Manchester United 2024/25 standard and Lifestyler home editions stay separate; Arsenal 2024/25 short-sleeve fan and long-sleeve authentic editions stay separate; Liverpool fan/player editions stay separate.
 
 ## Storefront validation

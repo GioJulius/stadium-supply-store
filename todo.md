@@ -146,6 +146,7 @@
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
 - [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
 - [ ] Attach the supplied Manchester United 1992/94 Home retro MP4 once a Shopify-compatible direct video source is available.
+- [ ] Retain the three supplied product MP4 files as user-approved pending items until a Shopify-compatible video-ingestion route is available.
 - [x] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [x] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [x] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
