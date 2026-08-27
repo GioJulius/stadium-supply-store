@@ -165,3 +165,4 @@
 - [x] Add restrained, reduced-motion-safe scroll text effects to selected editorial content blocks.
 - [x] Add or update unit tests for catalog visibility and visual-content selection, then verify desktop and mobile storefront behavior.
 - [x] Remove the Home-page section marked “REMOVE THIS SECTION” and verify the remaining editorial page flow.
+- [x] Validate the visual-editor header spacing changes and replace invalid or non-responsive values with a stable responsive layout.
