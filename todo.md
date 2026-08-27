@@ -135,6 +135,7 @@
 - [x] Attach all supplied Arsenal 2023/24 Home images to the existing single Shopify product gallery.
 - [x] Attach all supplied PSG 2024/25 Training Jacket images to the existing single Shopify product gallery.
 - [x] Attach all supplied Nottingham Forest 2025/26 Away images to the existing single Shopify product gallery.
+- [x] Attach all supplied Bayern Munich 2024/25 Third images to the existing single Shopify product gallery.
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
 - [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
