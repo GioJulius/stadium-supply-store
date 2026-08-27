@@ -130,6 +130,7 @@
 - [x] Attach all supplied Galatasaray 2025/26 Away images to the existing single Shopify product gallery.
 - [x] Attach all supplied Club Brugge 2025/26 Home images to the existing single Shopify product gallery.
 - [x] Attach all supplied Manchester United 2007/08 Home retro images to the existing single Shopify product gallery.
+- [x] Attach all supplied Paris Saint-Germain 2025/26 Fourth images to the existing single Shopify product gallery.
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
 - [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
