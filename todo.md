@@ -142,6 +142,7 @@
 - [x] Attach all supplied Arsenal 2023/24 Training Hoodie images to the existing single Shopify product gallery.
 - [x] Attach all supplied Liverpool 2025/26 Third M. Salah images to the existing single Shopify product gallery.
 - [x] Attach all supplied Brazil 2026/27 Away images to the existing single Shopify product gallery.
+- [x] Make the Manchester United 2024/25 Home Small variant purchasable to match the remaining Small–XL size range.
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
 - [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
