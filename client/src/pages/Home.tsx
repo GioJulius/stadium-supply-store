@@ -88,16 +88,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="source-gallery" aria-labelledby="source-gallery-heading">
-          <div className="source-gallery__heading scroll-reveal" data-scroll-reveal>
-            <p className="section-index">04 / The visual edit</p>
-            <div><h2 id="source-gallery-heading">In the<br /><em>rotation.</em></h2><p>Freshly sourced football culture, shown exactly as it arrives at Stadium Supply.</p></div>
-          </div>
-          {isLoading ? <div className="product-loading product-loading--compact">Loading the rotation</div> : <div className="source-gallery__products">{mappedProducts.map(product => <ProductCard key={product.id} product={product} />)}</div>}
-        </section>
-
         <section className="assurance-section">
-          <div className="assurance-section__heading"><p className="section-index">05 / Our standard</p><h2>Keep it<br /><em>authentic.</em></h2></div>
+          <div className="assurance-section__heading"><p className="section-index">04 / Our standard</p><h2>Keep it<br /><em>authentic.</em></h2></div>
           <div className="assurance-list">
             <article><Check size={18} /><h3>Curated condition</h3><p>Clear grading and honest detail, piece by piece.</p></article>
             <article><Check size={18} /><h3>Global sourcing</h3><p>Original sport culture found across eras and borders.</p></article>
