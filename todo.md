@@ -143,10 +143,10 @@
 - [x] Attach all supplied Liverpool 2025/26 Third M. Salah images to the existing single Shopify product gallery.
 - [x] Attach all supplied Brazil 2026/27 Away images to the existing single Shopify product gallery.
 - [x] Make the Manchester United 2024/25 Home Small variant purchasable to match the remaining Small–XL size range.
-- [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
-- [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
-- [ ] Attach the supplied Manchester United 1992/94 Home retro MP4 once a Shopify-compatible direct video source is available.
-- [ ] Retain the three supplied product MP4 files as user-approved pending items until a Shopify-compatible video-ingestion route is available.
+- [x] Defer the supplied Manchester United 2015/16 Presentation Jacket MP4 at the owner’s instruction; do not pursue video ingestion now.
+- [x] Defer the supplied South Africa 2026/27 Away MP4 at the owner’s instruction; do not pursue video ingestion now.
+- [x] Defer the supplied Manchester United 1992/94 Home retro MP4 at the owner’s instruction; do not pursue video ingestion now.
+- [x] Finalize the owner-directed video deferral record without affecting the completed image catalog.
 - [x] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [x] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [x] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
