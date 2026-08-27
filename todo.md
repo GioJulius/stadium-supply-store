@@ -118,7 +118,11 @@
 - [x] Audit the initial controlled-product batch and restore missing purchasable Small variants so every reviewed listing offers S–XL.
 - [x] Attach all supplied Barcelona 2024/25 Away Lamine Yamal images to the existing single Shopify product gallery.
 - [x] Attach all supplied Liverpool 2025/26 Training Hoodie images to the existing single Shopify product gallery.
+- [x] Attach all supplied still images for the South Africa 2026/27 Away jersey to its existing single Shopify product gallery.
+- [x] Attach all supplied France 2006/07 Home Zidane images to the existing single Shopify product gallery.
+- [x] Attach all supplied Paris Saint-Germain 2025/26 Fifth jersey images to the existing single Shopify product gallery.
 - [ ] Attach the supplied Manchester United 2015/16 Presentation Jacket MP4 once a Shopify-compatible direct video source is available.
+- [ ] Attach the supplied South Africa 2026/27 Away MP4 once a Shopify-compatible direct video source is available.
 - [ ] Apply safe naming and price-tier updates to held fan-versus-player records that are confirmed distinct products.
 - [ ] Combine multi-image product sets under one Shopify listing and archive any confirmed duplicate listings.
 - [ ] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
