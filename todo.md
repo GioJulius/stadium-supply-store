@@ -170,3 +170,5 @@
 - [x] Tighten the footer layout and spacing specifically for tablet-width screens.
 - [x] Confirm Shopify sales-channel publication readiness and apply the owner-authorized go-live action without modifying catalog data.
 - [x] Publish the owner-approved remaining customer-facing Stadium Supply products to Shopify Online Store and verify the resulting channel assignments.
+- [x] Remove the owner-authorized Shopify storefront password without changing catalog, payment, shipping, or domain settings.
+- [x] Verify that the native Shopify Online Store is publicly reachable after password removal.

@@ -47,6 +47,10 @@ On 2026-08-27, Shopify confirmed that the **Online Store** publication channel w
 
 An independent post-batch read confirmed that the Real Madrid 2026/27 Home Jersey — Player Version is published to both the existing **Manus** channel and Shopify’s **Online Store** channel. This confirms the Online Store assignment is active for the reviewed catalog without replacing the deployed Stadium Supply storefront.
 
+## Public storefront access
+
+On 2026-08-27, the owner-authorized Shopify **Private mode** setting was turned off and saved in Online Store Preferences. Shopify confirmed: “Online store is open to everyone” and “Access to your online store is no longer restricted.” A public navigation check completed without encountering a password page; the store’s configured routing directed the request to the existing public Stadium Supply storefront.
+
 ## Storefront visibility refresh
 
 On 2026-08-27, the storefront catalog page size was raised to Shopify’s supported 250-product request ceiling. The active customer-facing archive now resolves **96 approved pieces**—the expected count after treating the two confirmed duplicate pairs as single retained listings and excluding the unapproved legacy records. Product cards now show the lead image, a second-image hover preview when present, and a gallery-view count. On product pages, the lead image is compact enough for size, quantity, add-to-bag, and checkout controls to remain visible without scrolling through an oversized gallery; all additional supplied still images are available as selectable thumbnails.
