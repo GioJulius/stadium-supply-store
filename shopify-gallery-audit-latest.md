@@ -19,3 +19,24 @@ Confirmed non-duplicate decisions remain in force: PSG 2018/19 Neymar Third grou
 ## Storefront validation
 
 On 2026-08-27, the live development storefront was checked at desktop and mobile breakpoints. The catalog rendered the reviewed product cards, price tags, filters, and product routes. The AC Milan 2007/08 Home product detail page loaded its selected image, R700 price, S–XL picker, and add-to-bag action. On mobile, the product was added to the bag, the bag count changed from `00` to `01`, and the test item was then removed successfully, restoring the empty bag state. Checkout was intentionally not opened because no purchase or submission was requested.
+
+### End-to-end filtered catalog journey
+
+The journey was repeated after final consolidation on 2026-08-27. The **Retro** filter reduced the archive from 24 reviewed products to 3. The filtered AC Milan 2007/08 Home product card exposed the expected `/product/ac-milan-2007-08-home-jersey` destination; the destination page loaded with the S–XL selector and R700 price. A size-selection interaction, add-to-bag action, and subsequent removal were completed successfully; the bag count changed from `00` to `01` and back to `00`. The responsive mobile layout had also been captured at a 375px viewport in the project preview.
+
+### Checkout handoff
+
+With the owner’s confirmation, the same test cart was taken to the secure Shopify checkout handoff on 2026-08-27. Shopify opened its checkout page and correctly carried the AC Milan 2007/08 Home Jersey, size S, quantity 1, at R700. No customer details were entered and no purchase was submitted. The test item was subsequently removed from the storefront cart, restoring the bag count to `00`.
+
+## Kit-identification approval basis
+
+| Basis | Application in the completed catalog |
+|---|---|
+| **Direct owner direction** | The owner approved the controlled identity-and-consolidation workflow, the use of all supplied still images, the Small–XL size range, and the price schedule of Fan R450, Player R650, and Retro R700. The owner also approved preserving known distinct versions instead of collapsing them into duplicates. |
+| **Accepted visual inference** | Individual club, season, kit type, and personalization names were inferred from the supplied-media review and recorded in the kit-consolidation register. High-confidence matches were then applied to a single existing or newly created Shopify record under the owner-approved workflow. |
+| **Explicit distinct/merge reviews** | PSG 2024/25 Fourth D. Doué was merged only after duplicate review. Manchester United standard versus Lifestyler, Arsenal short-sleeve fan versus long-sleeve authentic, and Liverpool fan versus player editions were retained as distinct products after evidence review. |
+| **Deferred media exception** | The three remaining product MP4s are excluded from the completed media scope by the owner’s later instruction not to pursue them. No still-image product gallery was omitted as a result. |
+
+## Active catalog retrieval
+
+On 2026-08-27, the active Shopify catalog was retrieved through three pages: 50 records, 50 records, and 2 records, for a total of **102 active products**. This retrieval was saved as the current reference for final catalog reconciliation. Historic `Stadium Supply Fan Jersey — Drop NN` labels in the consolidation register identify the original import lineage; the corresponding active Shopify records were subsequently renamed to the reviewed kit identities.

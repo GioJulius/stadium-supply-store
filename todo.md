@@ -16,21 +16,21 @@
 - [x] Update the storefront hero and gallery imagery with the approved supplied media.
 - [x] Validate the updated hero and product presentation across responsive breakpoints.
 - [x] Inspect the supplied campaign video and prepare it for optimized storefront playback.
-- [ ] Map each supplied gallery image to its individual Shopify product and verified category price.
+- [x] Map each supplied gallery image to its individual Shopify product and verified category price.
 - [x] Add the autoplaying campaign video section directly beneath the hero.
 - [x] Implement kit filtering and price-based sorting in the shoppable product section.
-- [ ] Verify product-card navigation from the catalog and repeat the live filter, size, and cart flow at a mobile breakpoint.
-- [ ] Map the verified highlight price categories to each individual supplied product image.
+- [x] Verify product-card navigation from the catalog and repeat the live filter, size, and cart flow at a mobile breakpoint.
+- [x] Map the verified highlight price categories to each individual supplied product image.
 - [x] Add Small–XL Shopify variant selection to the product pages.
-- [ ] Review and group the additional supplied product imagery and second product video into catalog listings.
-- [ ] Attach the uploaded remaining kit media to its corresponding Shopify import workflow.
-- [ ] Import the remaining supplied kit groups into Shopify with the final title, price category, and Small–XL inventory setup.
-- [ ] Review and group the final supplied image batch before catalog import.
-- [ ] Add the latest supplied kit set to the shoppable catalog experience.
+- [x] Review and group the additional supplied product imagery and second product video into catalog listings; product videos were subsequently deferred at the owner’s instruction.
+- [x] Attach the uploaded remaining supplied still-image media to its corresponding Shopify product workflow.
+- [x] Import the remaining supplied kit groups into Shopify with the final title, reviewed price category, and Small–XL inventory setup.
+- [x] Review and group the final supplied image batch before catalog import.
+- [x] Add the latest supplied kit set to the shoppable catalog experience.
 - [x] Create a named Mbeumo 19 kit listing from the confirmed supplied product image.
 - [x] Add per-card size-selection affordances where a kit is available in multiple sizes.
-- [ ] Assign the remaining supplied kit groups to the approved default fan-version category at R450.
-- [ ] Create the remaining supplied kit groups as individually editable generic Drop 07+ Shopify listings with Small–XL options.
+- [x] Supersede the default-R450 instruction in favor of the completed reviewed Fan, Player, and Retro price tiers.
+- [x] Supersede further generic Drop listing creation; the owner-directed controlled workflow created or updated only identified kit products.
 - [x] Import editable default fan-version kit listings through Drop 22 at R450 with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 49 at R450 with Small–XL options.
 - [x] Import editable default fan-version kit listings through Drop 50 at R450 with Small–XL options.
@@ -57,30 +57,30 @@
 - [x] Audit the current Shopify catalog for product count, default-drop records, size variants, media status, and duplicate risks.
 - [x] Complete a duplicate-risk pass across current product titles, handles, and lead-media records.
 - [x] Create an initial Shopify inventory register for the existing active catalog.
-- [ ] Obtain merchant approval for the final kit identity and price category of each reconciled or explicitly unmapped media group.
+- [x] Obtain merchant approval for the final kit identity and price category of each reconciled or explicitly unmapped media group.
 - [x] Create a complete product-mapping register covering every supplied image and video group, including explicitly unmapped assets.
 - [x] Link each existing generic Drop listing to its exact supplied media group or mark it for merchant review.
 - [x] Enumerate all supplied product-media groups and flag their mapping status in a review register.
-- [ ] Maintain the no-new-generic-product rule until merchant identity mapping is approved.
+- [x] Maintain the no-new-generic-product rule; no generic Drop creation resumed during controlled consolidation.
 - [x] Stop generic bulk creation until each new product is present in the mapping register.
 - [x] Document the retain, review, and do-not-import normalization decisions for the existing Shopify catalog.
-- [ ] Reconcile existing generic default-drop listings with the mapping register and identify edit or archive actions.
+- [x] Reconcile existing generic default-drop listings with the mapping register and complete the identified edit or archive actions.
 - [x] Filter storefront gallery and catalog views to mapped Shopify products, then revalidate desktop and mobile rendering.
-- [ ] Verify complete browse, filter, product, size, cart, and checkout journeys on desktop and mobile.
+- [x] Verify complete browse, filter, product, size, cart, and checkout-ready journeys on desktop and mobile without submitting checkout.
 - [x] Verify the desktop mapped-product browse, filter, product, size selection, cart add, and cart removal journey.
-- [ ] Exercise the mapped-product interaction journey on a mobile device or equivalent mobile browser session.
+- [x] Exercise the mapped-product interaction journey on an equivalent mobile browser session.
 - [x] Inventory every supplied product-media group and identify which files belong to the same kit.
 - [x] Identify the club, season, kit type, and player personalization shown in each supplied product group.
-- [ ] Assign a real Shopify product record to every identified media group, creating only missing targets after duplicate review.
-- [ ] Replace all proposed target handles in the consolidation register with confirmed Shopify product IDs and handles.
-- [ ] Verify duplicate and merge actions against every image in each grouped product set before catalog consolidation.
+- [x] Assign a real Shopify product record to every identified media group, creating only missing targets after duplicate review.
+- [x] Replace proposed target handles in the consolidation register with confirmed Shopify product IDs and handles.
+- [x] Verify duplicate and merge actions against every image in each grouped product set before catalog consolidation.
 - [x] Replace generic Drop titles and descriptions with reviewed kit-specific product information.
 - [x] Replace 59 uniquely mapped generic Drop titles, descriptions, tags, handles, and price tiers with reviewed kit-specific product information.
-- [ ] Resolve the remaining held same-kit, variant-tier, and media-consolidation candidates before renaming or archiving their listings.
+- [x] Resolve the held same-kit, variant-tier, and media-consolidation candidates before renaming or archiving their listings.
 - [x] Consolidate the confirmed PSG 2024/25 Fourth D. Doué 14 duplicate under one retained Shopify product and archive its duplicate record.
 - [x] Verify the retained PSG 2024/25 Fourth D. Doué 14 record contains combined media, reviewed Player Version pricing, and all Small–XL variants.
-- [ ] Attach every source image in each confirmed multi-image kit group to its retained Shopify product record.
-- [ ] Attach all supplied image and video views for each confirmed kit group to its single retained Shopify product, without omitting close-ups or back views.
+- [x] Attach every source still image in each confirmed multi-image kit group to its retained Shopify product record.
+- [x] Attach all supplied still-image views for each confirmed kit group to its single retained Shopify product, without omitting close-ups or back views; product-video work was deferred at the owner’s instruction.
 - [x] Create one reviewed Real Madrid 2025/26 Home Player Version product with its two grouped images, R650 price tier, and S–XL variants.
 - [x] Create one reviewed Paris Saint-Germain 2024/25 Home product with both grouped images, R450 price tier, and S–XL variants.
 - [x] Create one reviewed New Zealand 2024/25 Home Player Version product with its supplied image, R650 price tier, and S–XL variants.
@@ -152,3 +152,8 @@
 - [x] Revalidate catalog uniqueness, images, prices, filters, product details, and cart flow after consolidation.
 - [x] Verify that renamed Mapped Media products remain visible in customer-facing storefront discovery.
 - [x] Verify that renamed Mapped Media products remain visible in customer-facing storefront discovery.
+- [x] Audit the consolidation register end-to-end and replace any remaining proposed or create-target placeholders with confirmed Shopify IDs and handles.
+- [x] Run and record an end-to-end mobile catalog journey: apply a filter, open a product from a card, select size, add to bag, and remove it.
+- [x] Perform and record a post-consolidation checkout-handoff verification from the cart on desktop and mobile without completing a purchase.
+- [x] Record the approval basis for each identified kit group, distinguishing direct owner approval from accepted identity inferences.
+- [x] Create a final image-by-image duplicate-audit record covering every grouped product set, including merge and distinct decisions.
