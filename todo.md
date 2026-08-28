@@ -172,3 +172,18 @@
 - [x] Publish the owner-approved remaining customer-facing Stadium Supply products to Shopify Online Store and verify the resulting channel assignments.
 - [x] Remove the owner-authorized Shopify storefront password without changing catalog, payment, shipping, or domain settings.
 - [x] Verify that the native Shopify Online Store is publicly reachable after password removal.
+- [ ] Inspect Shopify payment-provider status, checkout eligibility, and any prerequisites for live card processing.
+- [ ] Configure available non-sensitive payment settings and document any owner-only identity, banking, or verification requirements.
+- [ ] Verify a non-purchasing checkout flow reaches a payment step without submitting an order or entering sensitive payment data.
+- [ ] Recover the Payfast merchant signup from the incorrect verification address without accessing or creating the mistyped Gmail account.
+- [ ] Resume Payfast activation and non-purchasing checkout validation after the client confirms the corrected email is verified.
+- [ ] Collect the Payfast Merchant ID, Merchant Key, and any provider-required passphrase through owner-controlled entry, without sharing secrets in chat.
+- [ ] Install and activate Payfast through Shopify Payments, then verify the payment option in a non-purchasing checkout flow.
+- [ ] Audit every active product against the client’s revised pricing matrix, eligible size range, and product-type taxonomy.
+- [ ] Update soccer Fan, Player, Retro, Kiddies, Rugby, F1, training, tracksuit, jacket, hoodie, and adult-set prices according to the supplied client matrix.
+- [ ] Extend product size options according to the client’s product-specific size ranges without removing currently sellable variants.
+- [ ] Add team, country, sport, and product-type navigation filters comparable to the client’s referenced category structure.
+- [ ] Add optional customer customization choices for eligible products: badge, name and number, and long sleeve where available.
+- [ ] Verify revised prices, size options, category discovery, customization selections, cart totals, and payment-ready checkout behavior without completing a purchase.
+- [ ] Create a private GitHub repository and push the Stadium Supply project source with sensitive/generated files excluded.
+- [ ] Verify the pushed repository contents and report the private repository URL.
