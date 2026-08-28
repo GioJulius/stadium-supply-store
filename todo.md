@@ -187,3 +187,4 @@
 - [ ] Verify revised prices, size options, category discovery, customization selections, cart totals, and payment-ready checkout behavior without completing a purchase.
 - [x] Create a private GitHub repository and push the Stadium Supply project source with sensitive/generated files excluded.
 - [x] Verify the pushed repository contents and report the private repository URL.
+- [x] Change the Stadium Supply GitHub repository visibility from private to public and verify the result.
