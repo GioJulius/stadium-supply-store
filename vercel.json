@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "vite build --config vite.config.vercel.ts",
+  "outputDirectory": "dist/public",
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "framework": null,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/server" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
