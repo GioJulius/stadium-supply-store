@@ -11,8 +11,8 @@ import { Link } from "wouter";
 const HERO_VIDEO = "/media/hero-jerseys-in-the-sun.mp4";
 const HERO_POSTER = "/media/hero-jerseys-in-the-sun.jpg";
 const HERO_ALT = "Football jerseys swaying on a line in bright sunlight";
-const CAMPAIGN_VIDEO = "/media/campaign-rotation.mp4";
-const CAMPAIGN_POSTER = "/media/campaign-rotation.jpg";
+const CAMPAIGN_IMAGE = "/media/campaign-kits.webp";
+const CAMPAIGN_ALT = "Five models in national team kits on a rooftop above a floodlit stadium at dusk";
 
 /**
  * The hero plays a looping film, but only when the visitor hasn't asked for
@@ -92,7 +92,6 @@ export default function Home() {
   useScrollReveals();
   const prefersReducedMotion = usePrefersReducedMotion();
   const heroVideoRef = useAutoplayInView(!prefersReducedMotion);
-  const campaignVideoRef = useAutoplayInView(!prefersReducedMotion);
 
   return (
     <div className="store-page">
@@ -128,18 +127,7 @@ export default function Home() {
         </section>
 
         <section className="campaign-video" aria-labelledby="campaign-video-heading">
-          <video
-            ref={campaignVideoRef}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster={CAMPAIGN_POSTER}
-            aria-label="Stadium Supply campaign film"
-          >
-            <source src={CAMPAIGN_VIDEO} type="video/mp4" />
-          </video>
+          <img src={CAMPAIGN_IMAGE} alt={CAMPAIGN_ALT} loading="lazy" decoding="async" />
           <div className="campaign-video__veil" />
           <div className="campaign-video__content">
             <p className="section-index">Campaign / 01</p>
