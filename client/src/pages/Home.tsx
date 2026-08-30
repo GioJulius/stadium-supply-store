@@ -5,12 +5,14 @@ import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/l
 import { STORY_TILES } from "@/lib/storyTiles";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownRight, ArrowUpRight, Check, Instagram, LoaderCircle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 
 const HERO_VIDEO = "/media/hero-jerseys-in-the-sun.mp4";
 const HERO_POSTER = "/media/hero-jerseys-in-the-sun.jpg";
 const HERO_ALT = "Football jerseys swaying on a line in bright sunlight";
+const CAMPAIGN_VIDEO = "/media/campaign-rotation.mp4";
+const CAMPAIGN_POSTER = "/media/campaign-rotation.jpg";
 
 /**
  * The hero plays a looping film, but only when the visitor hasn't asked for
@@ -28,6 +30,38 @@ function usePrefersReducedMotion() {
     return () => query.removeEventListener("change", sync);
   }, []);
   return reduced;
+}
+
+/**
+ * Chrome suspends a muted autoplaying video that isn't on screen at load and
+ * does NOT restart it when the visitor scrolls down — the section just sits on
+ * a frozen frame. Drive playback off an IntersectionObserver instead: play on
+ * entry, pause on exit (which also stops decoding work for a section nobody is
+ * looking at). `enabled: false` leaves the element parked on its poster, which
+ * is what reduced-motion visitors get.
+ */
+function useAutoplayInView(enabled: boolean) {
+  const ref = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+    if (!enabled) {
+      video.pause();
+      return;
+    }
+    const play = () => void video.play().catch(() => {});
+    if (!("IntersectionObserver" in window)) {
+      play();
+      return;
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => (entry.isIntersecting ? play() : video.pause()),
+      { threshold: 0.1 },
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [enabled]);
+  return ref;
 }
 
 function useScrollReveals() {
@@ -57,6 +91,8 @@ export default function Home() {
   const latest = mappedProducts.slice(0, 4);
   useScrollReveals();
   const prefersReducedMotion = usePrefersReducedMotion();
+  const heroVideoRef = useAutoplayInView(!prefersReducedMotion);
+  const campaignVideoRef = useAutoplayInView(!prefersReducedMotion);
 
   return (
     <div className="store-page">
@@ -67,6 +103,7 @@ export default function Home() {
             <img className="hero-section__image" src={HERO_POSTER} alt={HERO_ALT} />
           ) : (
             <video
+              ref={heroVideoRef}
               className="hero-section__image"
               autoPlay
               muted
@@ -91,8 +128,17 @@ export default function Home() {
         </section>
 
         <section className="campaign-video" aria-labelledby="campaign-video-heading">
-          <video autoPlay muted loop playsInline preload="metadata" aria-label="Manchester United track jacket campaign film">
-            <source src="/manus-storage/stadium-supply-campaign_ee0bc722.mp4" type="video/mp4" />
+          <video
+            ref={campaignVideoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={CAMPAIGN_POSTER}
+            aria-label="Stadium Supply campaign film"
+          >
+            <source src={CAMPAIGN_VIDEO} type="video/mp4" />
           </video>
           <div className="campaign-video__veil" />
           <div className="campaign-video__content">
