@@ -117,3 +117,9 @@ client/public/__manus__/version.json
 *.zip
 *.tar.gz
 .manus-logs/
+
+# local import working files (large media, not for the repo)
+import/
+build.log
+dev.log
+VERCEL_ENV_PASTE.txt
