@@ -248,7 +248,7 @@ const CART_FRAGMENT = /* GraphQL */ `
               product {
                 handle
                 title
-                images(first: 1) {
+                images(first: 2) {
                   edges { node { url altText width height } }
                 }
               }

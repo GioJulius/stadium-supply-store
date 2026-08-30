@@ -99,6 +99,23 @@ function normalizeImage(i: RawImage): Image {
   return { url: i.url, altText: i.altText ?? null, width: i.width, height: i.height };
 }
 
+/**
+ * The supplier ships each gallery as `<batch>_01.jpg` … `<batch>_08.jpg`, and
+ * `_01` is always the size chart, not the garment. Shopify keeps that upload
+ * order, so left alone every card, hover preview, and product page leads with a
+ * measurement table. Demote it: the first real product shot (`_02`) becomes the
+ * lead image and the chart moves to the end of the gallery, where a shopper
+ * looks for it. Galleries that don't use the supplier naming are untouched.
+ */
+const SIZE_CHART_FILENAME = /\/\d{4,}_0*1\.(?:jpe?g|png|webp)(?:$|\?)/i;
+
+export function orderGalleryImages<T extends { url: string }>(images: T[]): T[] {
+  if (images.length < 2) return images;
+  const charts = images.filter(i => SIZE_CHART_FILENAME.test(i.url));
+  if (charts.length === 0 || charts.length === images.length) return images;
+  return [...images.filter(i => !SIZE_CHART_FILENAME.test(i.url)), ...charts];
+}
+
 function normalizeSelectedOption(o: RawSelectedOption): SelectedOption {
   return { name: o.name, value: o.value };
 }
@@ -128,7 +145,7 @@ export function normalizeProduct(p: RawProduct): Product {
     productType: p.productType || null,
     vendor: p.vendor || null,
     tags: p.tags ?? [],
-    images: p.images.edges.map(e => normalizeImage(e.node)),
+    images: orderGalleryImages(p.images.edges.map(e => normalizeImage(e.node))),
     priceRange: {
       min: normalizeMoney(p.priceRange.minVariantPrice),
       max: normalizeMoney(p.priceRange.maxVariantPrice),
@@ -149,7 +166,7 @@ export function normalizeCollection(c: RawCollection): Collection {
 }
 
 function normalizeCartItem(line: RawCartLine): CartItem {
-  const img = line.merchandise.product.images.edges[0]?.node ?? null;
+  const img = orderGalleryImages(line.merchandise.product.images.edges.map(e => e.node))[0] ?? null;
   return {
     lineId: line.id,
     variantId: line.merchandise.id,

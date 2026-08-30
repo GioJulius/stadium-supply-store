@@ -123,3 +123,4 @@ import/
 build.log
 dev.log
 VERCEL_ENV_PASTE.txt
+.vercel

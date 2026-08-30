@@ -60421,6 +60421,13 @@ function normalizeMoney(m) {
 function normalizeImage(i) {
   return { url: i.url, altText: i.altText ?? null, width: i.width, height: i.height };
 }
+var SIZE_CHART_FILENAME = /\/\d{4,}_0*1\.(?:jpe?g|png|webp)(?:$|\?)/i;
+function orderGalleryImages(images) {
+  if (images.length < 2) return images;
+  const charts = images.filter((i) => SIZE_CHART_FILENAME.test(i.url));
+  if (charts.length === 0 || charts.length === images.length) return images;
+  return [...images.filter((i) => !SIZE_CHART_FILENAME.test(i.url)), ...charts];
+}
 function normalizeSelectedOption(o) {
   return { name: o.name, value: o.value };
 }
@@ -60447,7 +60454,7 @@ function normalizeProduct(p) {
     productType: p.productType || null,
     vendor: p.vendor || null,
     tags: p.tags ?? [],
-    images: p.images.edges.map((e) => normalizeImage(e.node)),
+    images: orderGalleryImages(p.images.edges.map((e) => normalizeImage(e.node))),
     priceRange: {
       min: normalizeMoney(p.priceRange.minVariantPrice),
       max: normalizeMoney(p.priceRange.maxVariantPrice)
@@ -60466,7 +60473,7 @@ function normalizeCollection(c) {
   };
 }
 function normalizeCartItem(line) {
-  const img = line.merchandise.product.images.edges[0]?.node ?? null;
+  const img = orderGalleryImages(line.merchandise.product.images.edges.map((e) => e.node))[0] ?? null;
   return {
     lineId: line.id,
     variantId: line.merchandise.id,
@@ -60676,7 +60683,7 @@ var CART_FRAGMENT = (
               product {
                 handle
                 title
-                images(first: 1) {
+                images(first: 2) {
                   edges { node { url altText width height } }
                 }
               }
