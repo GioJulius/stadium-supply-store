@@ -5,10 +5,30 @@ import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/l
 import { STORY_TILES } from "@/lib/storyTiles";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownRight, ArrowUpRight, Check, Instagram, LoaderCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
-const HERO_IMAGE = "/manus-storage/stadium-supply-hero-final_f598692b.webp";
+const HERO_VIDEO = "/media/hero-jerseys-in-the-sun.mp4";
+const HERO_POSTER = "/media/hero-jerseys-in-the-sun.jpg";
+const HERO_ALT = "Football jerseys swaying on a line in bright sunlight";
+
+/**
+ * The hero plays a looping film, but only when the visitor hasn't asked for
+ * less motion — `prefers-reduced-motion` viewers get the poster frame as a
+ * still. Evaluated on mount rather than at module scope, and kept subscribed,
+ * so toggling the OS setting mid-visit swaps the hero without a reload.
+ */
+function usePrefersReducedMotion() {
+  const [reduced, setReduced] = useState(false);
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const sync = () => setReduced(query.matches);
+    sync();
+    query.addEventListener("change", sync);
+    return () => query.removeEventListener("change", sync);
+  }, []);
+  return reduced;
+}
 
 function useScrollReveals() {
   useEffect(() => {
@@ -36,13 +56,29 @@ export default function Home() {
   const mappedProducts = products.filter(isCustomerFacingMappedProduct);
   const latest = mappedProducts.slice(0, 4);
   useScrollReveals();
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   return (
     <div className="store-page">
       <StoreHeader />
       <main>
         <section className="hero-section">
-          <img className="hero-section__image" src={HERO_IMAGE} alt="Two white football jerseys suspended against a bright blue sky" />
+          {prefersReducedMotion ? (
+            <img className="hero-section__image" src={HERO_POSTER} alt={HERO_ALT} />
+          ) : (
+            <video
+              className="hero-section__image"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              poster={HERO_POSTER}
+              aria-label={HERO_ALT}
+            >
+              <source src={HERO_VIDEO} type="video/mp4" />
+            </video>
+          )}
           <div className="hero-section__veil" />
           <div className="hero-section__frame" aria-hidden="true"><span /><span /><span /><span /></div>
           <div className="hero-section__meta"><p>001 / SS-26</p><p>Curated sport culture</p></div>
