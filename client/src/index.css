@@ -58,7 +58,7 @@
 video.hero-section__image { background:#1d82c8; pointer-events:none; }
 
 /* Stadium Supply type and media refinements */
-@font-face { font-family: "Akira Expanded"; src: url("/manus-storage/akira-expanded-demo_a1430817.otf") format("opentype"); font-style: normal; font-weight: 400 900; font-display: swap; }
+@font-face { font-family: "Akira Expanded"; src: url("/fonts/akira-expanded.otf") format("opentype"); font-style: normal; font-weight: 400 900; font-display: swap; }
 
 :root { --font-stadium: "Akira Expanded", "Barlow Condensed", sans-serif; }
 body { font-family:"Manrope",Arial,sans-serif; }

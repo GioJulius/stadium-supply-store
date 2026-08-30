@@ -9,19 +9,19 @@ export const STORY_TILES: StoryTile[] = [
   {
     number: "01",
     lines: ["Club", "football"],
-    image: "/manus-storage/story-club-football_40df61c4.jpg",
+    image: "/media/story-club-football.jpg",
     alt: "Juventus football jersey from the Stadium Supply archive",
   },
   {
     number: "02",
     lines: ["National", "colours"],
-    image: "/manus-storage/story-national-colours_c271d1a7.jpg",
+    image: "/media/story-national-colours.jpg",
     alt: "Portugal national team jersey from the Stadium Supply archive",
   },
   {
     number: "03",
     lines: ["Retro", "icons"],
-    image: "/manus-storage/story-retro-icons_435412c3.jpg",
+    image: "/media/story-retro-icons.jpg",
     alt: "France Zidane retro jersey from the Stadium Supply archive",
   },
 ];
