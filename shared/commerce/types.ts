@@ -72,6 +72,16 @@ export type Collection = {
   image: Image | null;
 };
 
+/**
+ * Shirt personalisation a shopper asked for on one cart line. Carried on the
+ * Shopify cart line as custom attributes, so it survives the handoff to the
+ * hosted checkout and lands on the order for whoever does the printing.
+ */
+export type Personalisation = {
+  name: string;
+  number: string;
+};
+
 export type CartItem = {
   /** Cart-line identifier — required for update/remove. */
   lineId: string;
@@ -83,6 +93,8 @@ export type CartItem = {
   unitPrice: Money;
   quantity: number;
   lineTotal: Money;
+  /** null when the shopper took the shirt as it comes. */
+  personalisation: Personalisation | null;
 };
 
 export type Cart = {

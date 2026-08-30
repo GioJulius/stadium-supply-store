@@ -57,6 +57,21 @@
    keeps the section on-brand for the frame before the first video frame decodes. */
 video.hero-section__image { background:#1d82c8; pointer-events:none; }
 
+/* Name-and-number printing, offered on fan shirts only. Sits between the size
+   picker and the buy row so the choice is made before the shopper commits. */
+.personalisation { border-top:1px solid rgba(18,25,44,.25); margin:0 0 22px; padding:14px 0 0; }
+.personalisation__toggle { display:flex; align-items:center; gap:9px; font:10px "DM Mono",monospace; text-transform:uppercase; cursor:pointer; }
+.personalisation__toggle input { width:15px; height:15px; accent-color:#10213c; }
+.personalisation__fields { display:flex; gap:10px; margin-top:13px; }
+.personalisation__fields label { display:flex; flex-direction:column; gap:5px; }
+.personalisation__fields label:first-child { flex:1; }
+.personalisation__fields label:last-child { width:82px; }
+.personalisation__fields input { height:41px; border:1px solid rgba(18,25,44,.3); background:transparent; padding:0 11px; font:600 15px "Barlow Condensed",sans-serif; letter-spacing:.06em; text-transform:uppercase; color:inherit; }
+.personalisation__fields input:focus-visible { outline:2px solid #1a91dc; outline-offset:-1px; }
+.personalisation__fields small { font:9px "DM Mono",monospace; opacity:.6; }
+.personalisation__hint { margin:11px 0 0; font-size:11px; line-height:1.45; opacity:.72; }
+.cart-item__print { margin:4px 0 0; font:9px "DM Mono",monospace; text-transform:uppercase; opacity:.75; }
+
 /* Stadium Supply type and media refinements */
 @font-face { font-family: "Akira Expanded"; src: url("/fonts/akira-expanded.otf") format("opentype"); font-style: normal; font-weight: 400 900; font-display: swap; }
 

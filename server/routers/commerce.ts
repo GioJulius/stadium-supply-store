@@ -19,11 +19,56 @@ import {
   removeCartLines,
   updateCartLines,
 } from "../_core/shopify";
+import {
+  PERSONALISATION_NAME_KEY,
+  PERSONALISATION_NUMBER_KEY,
+} from "../_core/shopifyNormalize";
 import { publicProcedure, router } from "../_core/trpc";
+
+/**
+ * Shirt personalisation. Validated here rather than trusted from the client,
+ * because whatever lands in these fields gets printed onto a garment: the
+ * charset is limited to what a print shop can set, the name is capped at the
+ * width of a shirt back, and the number is 1-2 digits like a real squad number.
+ */
+const personalisationSchema = z
+  .object({
+    name: z
+      .string()
+      .trim()
+      .max(12)
+      .regex(/^[A-Za-z .'-]*$/, "Letters, spaces, apostrophes and hyphens only")
+      .default(""),
+    number: z
+      .string()
+      .trim()
+      .regex(/^(|[0-9]|[1-9][0-9])$/, "0-99")
+      .default(""),
+  })
+  .refine(p => p.name !== "" || p.number !== "", {
+    message: "Personalisation needs a name or a number",
+  });
 
 const cartLineInputSchema = z.object({
   variantId: z.string().min(1),
   quantity: z.number().int().min(1).max(99),
+  personalisation: personalisationSchema.optional(),
+});
+
+/** Map validated personalisation onto the cart-line attributes Shopify stores. */
+function toLineAttributes(line: z.infer<typeof cartLineInputSchema>) {
+  const p = line.personalisation;
+  if (!p) return undefined;
+  const attributes: Array<{ key: string; value: string }> = [];
+  if (p.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
+  if (p.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
+  return attributes;
+}
+
+const toCartLine = (line: z.infer<typeof cartLineInputSchema>) => ({
+  variantId: line.variantId,
+  quantity: line.quantity,
+  attributes: toLineAttributes(line),
 });
 
 const cartLineUpdateSchema = z.object({
@@ -68,7 +113,7 @@ export const commerceRouter = router({
     create: publicProcedure
       .input(z.object({ lines: z.array(cartLineInputSchema).min(1).max(50) }))
       .mutation(async ({ input }) => {
-        return createCart(input.lines);
+        return createCart(input.lines.map(toCartLine));
       }),
     get: publicProcedure
       .input(z.object({ cartId: z.string().min(1) }))
@@ -83,7 +128,7 @@ export const commerceRouter = router({
         })
       )
       .mutation(async ({ input }) => {
-        return addCartLines(input.cartId, input.lines);
+        return addCartLines(input.cartId, input.lines.map(toCartLine));
       }),
     updateLines: publicProcedure
       .input(

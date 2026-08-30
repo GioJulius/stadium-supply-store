@@ -1,5 +1,5 @@
 import { trpc } from "@/lib/trpc";
-import type { Cart } from "@shared/commerce/types";
+import type { Cart, Personalisation } from "@shared/commerce/types";
 import {
   createContext,
   ReactNode,
@@ -40,7 +40,7 @@ type CartContextValue = {
   itemCount: number;
   openCart: () => void;
   closeCart: () => void;
-  addItem: (variantId: string, quantity?: number) => Promise<void>;
+  addItem: (variantId: string, quantity?: number, personalisation?: Personalisation) => Promise<void>;
   updateQuantity: (lineId: string, quantity: number) => Promise<void>;
   removeItem: (lineId: string) => Promise<void>;
   clearCart: () => void;
@@ -95,12 +95,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const closeCart = useCallback(() => setIsOpen(false), []);
 
   const addItem = useCallback(
-    async (variantId: string, quantity: number = 1) => {
+    async (variantId: string, quantity: number = 1, personalisation?: Personalisation) => {
       setLoading(true);
       try {
         if (!cartId || !cart) {
           const created = await utils.client.commerce.cart.create.mutate({
-            lines: [{ variantId, quantity }],
+            lines: [{ variantId, quantity, personalisation }],
           });
           setCart(created);
           setCartId(created.id);
@@ -108,7 +108,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         } else {
           const updated = await utils.client.commerce.cart.addLines.mutate({
             cartId,
-            lines: [{ variantId, quantity }],
+            lines: [{ variantId, quantity, personalisation }],
           });
           setCart(updated);
         }

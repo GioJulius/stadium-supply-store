@@ -35,3 +35,20 @@ export function filterAndSortProducts(products: Product[], filter: CatalogFilter
     return 0;
   });
 }
+
+/**
+ * Fan-version shirts can be printed with the buyer's own name and number.
+ * Player and authentic versions are excluded — those ship in the official
+ * player spec — as is anything that isn't a shirt (tracksuits, jackets,
+ * hoodies, kids kits, polos, shorts). Matching is on the title, productType
+ * and tags together, because the catalogue expresses "fan version" in all
+ * three depending on which import lineage a listing came from.
+ */
+const NON_SHIRT = /hood|sweatshirt|jacket|windbreaker|tracksuit|training|half-zip|polo|shorts|pants|kids|t-shirt|anthem|presentation|kit \+/i;
+
+export function isPersonalisable(product: Product): boolean {
+  const haystack = [product.title, product.productType ?? "", ...product.tags].join(" ");
+  if (NON_SHIRT.test(haystack)) return false;
+  if (/player version|authentic/i.test(haystack)) return false;
+  return /fan version|fan jersey/i.test(haystack);
+}

@@ -124,3 +124,6 @@ build.log
 dev.log
 VERCEL_ENV_PASTE.txt
 .vercel
+.dupcheck/
+catalog-full.json
+dup-*.json

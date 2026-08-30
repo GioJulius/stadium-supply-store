@@ -60472,6 +60472,14 @@ function normalizeCollection(c) {
     image: c.image ? normalizeImage(c.image) : null
   };
 }
+var PERSONALISATION_NAME_KEY = "Name on shirt";
+var PERSONALISATION_NUMBER_KEY = "Number on shirt";
+function normalizePersonalisation(line) {
+  const read = (key) => (line.attributes ?? []).find((a) => a.key === key)?.value?.trim() ?? "";
+  const name = read(PERSONALISATION_NAME_KEY);
+  const number4 = read(PERSONALISATION_NUMBER_KEY);
+  return name || number4 ? { name, number: number4 } : null;
+}
 function normalizeCartItem(line) {
   const img = orderGalleryImages(line.merchandise.product.images.edges.map((e) => e.node))[0] ?? null;
   return {
@@ -60483,7 +60491,8 @@ function normalizeCartItem(line) {
     image: img ? normalizeImage(img) : null,
     unitPrice: normalizeMoney(line.merchandise.price),
     quantity: line.quantity,
-    lineTotal: normalizeMoney(line.cost.totalAmount)
+    lineTotal: normalizeMoney(line.cost.totalAmount),
+    personalisation: normalizePersonalisation(line)
   };
 }
 function withChannelParam(checkoutUrl) {
@@ -60674,6 +60683,7 @@ var CART_FRAGMENT = (
         node {
           id
           quantity
+          attributes { key value }
           cost { totalAmount { ...MoneyFields } }
           merchandise {
             ... on ProductVariant {
@@ -60767,6 +60777,13 @@ async function getCollectionByHandle(handle) {
   }
   return normalizeCollection(data.collection);
 }
+function toShopifyLine(l) {
+  return {
+    merchandiseId: l.variantId,
+    quantity: l.quantity,
+    ...l.attributes?.length ? { attributes: l.attributes } : {}
+  };
+}
 async function createCart(lines) {
   const data = await storefrontFetch(
     `${CART_FRAGMENT}
@@ -60778,7 +60795,7 @@ async function createCart(lines) {
      }`,
     {
       input: {
-        lines: lines.map((l) => ({ merchandiseId: l.variantId, quantity: l.quantity }))
+        lines: lines.map(toShopifyLine)
       }
     }
   );
@@ -60805,7 +60822,7 @@ async function addCartLines(cartId, lines) {
      }`,
     {
       cartId,
-      lines: lines.map((l) => ({ merchandiseId: l.variantId, quantity: l.quantity }))
+      lines: lines.map(toShopifyLine)
     }
   );
   return unwrapCart(data.cartLinesAdd, "cartLinesAdd");
@@ -60841,9 +60858,29 @@ async function removeCartLines(cartId, lineIds) {
 }
 
 // server/routers/commerce.ts
+var personalisationSchema = external_exports.object({
+  name: external_exports.string().trim().max(12).regex(/^[A-Za-z .'-]*$/, "Letters, spaces, apostrophes and hyphens only").default(""),
+  number: external_exports.string().trim().regex(/^(|[0-9]|[1-9][0-9])$/, "0-99").default("")
+}).refine((p) => p.name !== "" || p.number !== "", {
+  message: "Personalisation needs a name or a number"
+});
 var cartLineInputSchema = external_exports.object({
   variantId: external_exports.string().min(1),
-  quantity: external_exports.number().int().min(1).max(99)
+  quantity: external_exports.number().int().min(1).max(99),
+  personalisation: personalisationSchema.optional()
+});
+function toLineAttributes(line) {
+  const p = line.personalisation;
+  if (!p) return void 0;
+  const attributes = [];
+  if (p.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
+  if (p.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
+  return attributes;
+}
+var toCartLine = (line) => ({
+  variantId: line.variantId,
+  quantity: line.quantity,
+  attributes: toLineAttributes(line)
 });
 var cartLineUpdateSchema = external_exports.object({
   lineId: external_exports.string().min(1),
@@ -60874,7 +60911,7 @@ var commerceRouter = router({
   }),
   cart: router({
     create: publicProcedure.input(external_exports.object({ lines: external_exports.array(cartLineInputSchema).min(1).max(50) })).mutation(async ({ input }) => {
-      return createCart(input.lines);
+      return createCart(input.lines.map(toCartLine));
     }),
     get: publicProcedure.input(external_exports.object({ cartId: external_exports.string().min(1) })).query(async ({ input }) => {
       return getCart(input.cartId);
@@ -60885,7 +60922,7 @@ var commerceRouter = router({
         lines: external_exports.array(cartLineInputSchema).min(1).max(50)
       })
     ).mutation(async ({ input }) => {
-      return addCartLines(input.cartId, input.lines);
+      return addCartLines(input.cartId, input.lines.map(toCartLine));
     }),
     updateLines: publicProcedure.input(
       external_exports.object({

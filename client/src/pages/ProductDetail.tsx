@@ -1,6 +1,7 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
+import { isPersonalisable } from "@/lib/catalog";
 import { formatMoney } from "@/lib/format";
 import { trpc } from "@/lib/trpc";
 import type { Product } from "@shared/commerce/types";
@@ -14,8 +15,20 @@ function detailFromTags(product: Product) {
   return { size, condition };
 }
 
+/**
+ * Mirrors the server-side rules in `commerce.ts`: letters and a couple of
+ * punctuation marks for the name, a squad number of 0-99. Enforced here only
+ * so the shopper is corrected while typing — the router validates again before
+ * anything reaches Shopify.
+ */
+const NAME_PATTERN = /^[A-Za-z .'-]*$/;
+const NAME_MAX = 12;
+
 function ProductView({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
+  const [wantsPersonalisation, setWantsPersonalisation] = useState(false);
+  const [printName, setPrintName] = useState("");
+  const [printNumber, setPrintNumber] = useState("");
   const [selectedVariantId, setSelectedVariantId] = useState(product.variants[0]?.id ?? "");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const { addItem, loading } = useCart();
@@ -24,6 +37,13 @@ function ProductView({ product }: { product: Product }) {
   const { size, condition } = detailFromTags(product);
   const sizeOptions = product.options.find(option => option.name.toLowerCase() === "size")?.values ?? [];
   const selectedSize = variant?.selectedOptions.find(option => option.name.toLowerCase() === "size")?.value;
+  const personalisable = isPersonalisable(product);
+  // An opted-in shopper who has typed nothing yet gets the plain shirt rather
+  // than a blocked button — the form is an offer, not a required step.
+  const personalisation =
+    personalisable && wantsPersonalisation && (printName.trim() || printNumber.trim())
+      ? { name: printName.trim(), number: printNumber.trim() }
+      : undefined;
   return (
     <main className="product-detail">
       <Link href="/shop" className="product-back"><ArrowLeft size={15} /> Back to archive</Link>
@@ -43,11 +63,60 @@ function ProductView({ product }: { product: Product }) {
             <div><dt>Source</dt><dd>Imported</dd></div>
           </dl>
           {sizeOptions.length > 0 && <div className="size-picker"><p className="eyebrow">Select size <span>{selectedSize}</span></p><div>{sizeOptions.map(option => { const matchingVariant = product.variants.find(candidate => candidate.selectedOptions.some(selected => selected.name.toLowerCase() === "size" && selected.value === option)); return <button key={option} className={matchingVariant?.id === variant?.id ? "is-selected" : ""} disabled={!matchingVariant || !matchingVariant.availableForSale} onClick={() => matchingVariant && setSelectedVariantId(matchingVariant.id)}>{option}</button>; })}</div></div>}
+          {personalisable && (
+            <div className="personalisation">
+              <label className="personalisation__toggle">
+                <input
+                  type="checkbox"
+                  checked={wantsPersonalisation}
+                  onChange={event => setWantsPersonalisation(event.target.checked)}
+                />
+                <span>Print my name and number — free</span>
+              </label>
+              {wantsPersonalisation && (
+                <div className="personalisation__fields">
+                  <label>
+                    <span className="eyebrow">Name on back</span>
+                    <input
+                      type="text"
+                      value={printName}
+                      maxLength={NAME_MAX}
+                      placeholder="SURNAME"
+                      autoComplete="off"
+                      onChange={event => {
+                        const next = event.target.value.toUpperCase();
+                        if (NAME_PATTERN.test(next)) setPrintName(next);
+                      }}
+                    />
+                    <small>{printName.length}/{NAME_MAX}</small>
+                  </label>
+                  <label>
+                    <span className="eyebrow">Number</span>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      value={printNumber}
+                      placeholder="10"
+                      autoComplete="off"
+                      onChange={event => {
+                        const next = event.target.value.replace(/\D/g, "").slice(0, 2);
+                        setPrintNumber(next);
+                      }}
+                    />
+                    <small>0-99</small>
+                  </label>
+                </div>
+              )}
+              {wantsPersonalisation && !personalisation && (
+                <p className="personalisation__hint">Add a name or a number, or untick to take the shirt as it comes.</p>
+              )}
+            </div>
+          )}
           <div className="product-purchase">
             <div className="quantity-control quantity-control--large">
               <button onClick={() => setQuantity(Math.max(1, quantity - 1))} aria-label="Decrease quantity"><Minus size={15} /></button><span>{quantity}</span><button onClick={() => setQuantity(quantity + 1)} aria-label="Increase quantity"><Plus size={15} /></button>
             </div>
-            <button className="add-button" disabled={!variant?.availableForSale || loading} onClick={() => variant && addItem(variant.id, quantity)}>
+            <button className="add-button" disabled={!variant?.availableForSale || loading} onClick={() => variant && addItem(variant.id, quantity, personalisation)}>
               {variant?.availableForSale ? "Add to bag" : "Sold out"}<span>↗</span>
             </button>
           </div>

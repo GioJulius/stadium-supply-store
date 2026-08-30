@@ -28,6 +28,11 @@ export function CartDrawer() {
                 <div>
                   <h3>{item.productTitle}</h3>
                   {item.variantTitle !== "Default Title" && <p>{item.variantTitle}</p>}
+                  {item.personalisation && (
+                    <p className="cart-item__print">
+                      Printed: {[item.personalisation.name, item.personalisation.number].filter(Boolean).join(" ")}
+                    </p>
+                  )}
                 </div>
                 <strong>{formatMoney(item.lineTotal)}</strong>
                 <div className="cart-item__actions">

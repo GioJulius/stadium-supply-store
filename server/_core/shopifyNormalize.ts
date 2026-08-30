@@ -16,6 +16,7 @@
 import type {
   Cart,
   CartItem,
+  Personalisation,
   Collection,
   Image,
   Money,
@@ -68,6 +69,7 @@ export type RawCollection = {
 export type RawCartLine = {
   id: string;
   quantity: number;
+  attributes?: Array<{ key: string; value: string | null }>;
   cost: { totalAmount: RawMoney };
   merchandise: {
     id: string;
@@ -165,6 +167,22 @@ export function normalizeCollection(c: RawCollection): Collection {
   };
 }
 
+/**
+ * Personalisation round-trips as two cart-line attributes. A line counts as
+ * personalised when at least one of them carries text — a shopper may want a
+ * number with no name, or the reverse.
+ */
+export const PERSONALISATION_NAME_KEY = "Name on shirt";
+export const PERSONALISATION_NUMBER_KEY = "Number on shirt";
+
+function normalizePersonalisation(line: RawCartLine): Personalisation | null {
+  const read = (key: string) =>
+    (line.attributes ?? []).find(a => a.key === key)?.value?.trim() ?? "";
+  const name = read(PERSONALISATION_NAME_KEY);
+  const number = read(PERSONALISATION_NUMBER_KEY);
+  return name || number ? { name, number } : null;
+}
+
 function normalizeCartItem(line: RawCartLine): CartItem {
   const img = orderGalleryImages(line.merchandise.product.images.edges.map(e => e.node))[0] ?? null;
   return {
@@ -177,6 +195,7 @@ function normalizeCartItem(line: RawCartLine): CartItem {
     unitPrice: normalizeMoney(line.merchandise.price),
     quantity: line.quantity,
     lineTotal: normalizeMoney(line.cost.totalAmount),
+    personalisation: normalizePersonalisation(line),
   };
 }
 

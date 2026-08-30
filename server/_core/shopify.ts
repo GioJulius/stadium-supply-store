@@ -239,6 +239,7 @@ const CART_FRAGMENT = /* GraphQL */ `
         node {
           id
           quantity
+          attributes { key value }
           cost { totalAmount { ...MoneyFields } }
           merchandise {
             ... on ProductVariant {
@@ -358,13 +359,30 @@ export async function getCollectionByHandle(handle: string): Promise<Collection>
 // Cart
 // ---------------------------------------------------------------------------
 
-export type CartLineInput = { variantId: string; quantity: number };
+/**
+ * `attributes` carries shirt personalisation. Shopify treats cart-line custom
+ * attributes as free text that follows the line through checkout and onto the
+ * order, which is exactly what the print shop needs to see.
+ */
+export type CartLineInput = {
+  variantId: string;
+  quantity: number;
+  attributes?: Array<{ key: string; value: string }>;
+};
 export type CartLineUpdate = { lineId: string; quantity: number };
 
 type CartMutationResponse<K extends string> = Record<
   K,
   { cart: RawCart | null; userErrors: ShopifyUserError[] }
 >;
+
+function toShopifyLine(l: CartLineInput) {
+  return {
+    merchandiseId: l.variantId,
+    quantity: l.quantity,
+    ...(l.attributes?.length ? { attributes: l.attributes } : {}),
+  };
+}
 
 export async function createCart(lines: CartLineInput[]): Promise<Cart> {
   const data = await storefrontFetch<CartMutationResponse<"cartCreate">>(
@@ -377,7 +395,7 @@ export async function createCart(lines: CartLineInput[]): Promise<Cart> {
      }`,
     {
       input: {
-        lines: lines.map(l => ({ merchandiseId: l.variantId, quantity: l.quantity })),
+        lines: lines.map(toShopifyLine),
       },
     }
   );
@@ -409,7 +427,7 @@ export async function addCartLines(
      }`,
     {
       cartId,
-      lines: lines.map(l => ({ merchandiseId: l.variantId, quantity: l.quantity })),
+      lines: lines.map(toShopifyLine),
     }
   );
   return unwrapCart(data.cartLinesAdd, "cartLinesAdd");
