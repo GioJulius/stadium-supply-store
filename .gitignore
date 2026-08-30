@@ -127,3 +127,5 @@ VERCEL_ENV_PASTE.txt
 .dupcheck/
 catalog-full.json
 dup-*.json
+checklist.html
+catalog-after.json
