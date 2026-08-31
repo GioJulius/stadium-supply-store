@@ -1,5 +1,6 @@
 import { useCart } from "@/contexts/CartContext";
 import { formatMoney } from "@/lib/format";
+import { PRINTING_FEE_HANDLE } from "@/lib/storeInfo";
 import { Minus, Plus, X } from "lucide-react";
 
 export function CartDrawer() {
@@ -21,7 +22,22 @@ export function CartDrawer() {
         <div className="cart-drawer__items">
           {items.length === 0 ? (
             <div className="cart-empty"><p>Your bag is waiting for its first kit.</p><button onClick={closeCart}>Continue browsing</button></div>
-          ) : items.map(item => (
+          ) : items.map(item => {
+            // The printing fee is derived from how many personalised shirts the
+            // bag holds, so it gets no quantity stepper and no remove link —
+            // untick the printing on the shirt and it leaves by itself.
+            const isFee = item.productHandle === PRINTING_FEE_HANDLE;
+            return isFee ? (
+              <article className="cart-item cart-item--fee" key={item.lineId}>
+                <div className="cart-item__content">
+                  <div>
+                    <h3>{item.productTitle}</h3>
+                    <p>{item.quantity} × {formatMoney(item.unitPrice)}</p>
+                  </div>
+                  <strong>{formatMoney(item.lineTotal)}</strong>
+                </div>
+              </article>
+            ) : (
             <article className="cart-item" key={item.lineId}>
               <div className="cart-item__image">{item.image ? <img src={item.image.url} alt={item.image.altText ?? item.productTitle} /> : <span>SS</span>}</div>
               <div className="cart-item__content">
@@ -45,7 +61,8 @@ export function CartDrawer() {
                 </div>
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
 
         <div className="cart-drawer__footer">

@@ -3,6 +3,7 @@ import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
 import { isPersonalisable } from "@/lib/catalog";
+import { PRINTING_FEE_LABEL } from "@/lib/storeInfo";
 import { formatMoney } from "@/lib/format";
 import { trpc } from "@/lib/trpc";
 import type { Product } from "@shared/commerce/types";
@@ -74,7 +75,7 @@ function ProductView({ product }: { product: Product }) {
                   checked={wantsPersonalisation}
                   onChange={event => setWantsPersonalisation(event.target.checked)}
                 />
-                <span>Print my name and number — free</span>
+                <span>Print my name and number <b>{PRINTING_FEE_LABEL}</b></span>
               </label>
               {wantsPersonalisation && (
                 <div className="personalisation__fields">

@@ -202,3 +202,10 @@ body { font-family:"Manrope",Arial,sans-serif; }
   .process-step { padding:34px 22px 38px; }
   .size-guide { grid-template-columns:1fr; gap:26px; padding:52px 22px 62px; }
 }
+
+/* The printing fee is a derived line: no thumbnail, no stepper, no remove. */
+.cart-item--fee { grid-template-columns: 1fr; }
+.cart-item--fee .cart-item__content { padding-left: 0; }
+.cart-item--fee h3 { font-size: 15px; }
+.cart-item--fee p { margin: 4px 0 0; font: 400 10px "DM Mono", monospace; letter-spacing: .04em; opacity: .6; }
+.personalisation__toggle b { font-family: "DM Mono", monospace; font-size: 10px; font-weight: 500; letter-spacing: .05em; opacity: .75; }

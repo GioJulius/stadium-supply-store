@@ -23,6 +23,7 @@ import {
   PERSONALISATION_NAME_KEY,
   PERSONALISATION_NUMBER_KEY,
 } from "../_core/shopifyNormalize";
+import { reconcilePrintingFee } from "../_core/printingFee";
 import { publicProcedure, router } from "../_core/trpc";
 
 /**
@@ -113,7 +114,7 @@ export const commerceRouter = router({
     create: publicProcedure
       .input(z.object({ lines: z.array(cartLineInputSchema).min(1).max(50) }))
       .mutation(async ({ input }) => {
-        return createCart(input.lines.map(toCartLine));
+        return reconcilePrintingFee(await createCart(input.lines.map(toCartLine)));
       }),
     get: publicProcedure
       .input(z.object({ cartId: z.string().min(1) }))
@@ -128,7 +129,7 @@ export const commerceRouter = router({
         })
       )
       .mutation(async ({ input }) => {
-        return addCartLines(input.cartId, input.lines.map(toCartLine));
+        return reconcilePrintingFee(await addCartLines(input.cartId, input.lines.map(toCartLine)));
       }),
     updateLines: publicProcedure
       .input(
@@ -151,7 +152,7 @@ export const commerceRouter = router({
           cart = await removeCartLines(input.cartId, toRemove);
         }
         if (!cart) cart = await getCart(input.cartId);
-        return cart;
+        return reconcilePrintingFee(cart);
       }),
     removeLines: publicProcedure
       .input(
@@ -161,7 +162,7 @@ export const commerceRouter = router({
         })
       )
       .mutation(async ({ input }) => {
-        return removeCartLines(input.cartId, input.lineIds);
+        return reconcilePrintingFee(await removeCartLines(input.cartId, input.lineIds));
       }),
   }),
 });

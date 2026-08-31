@@ -61,3 +61,11 @@ export const SIZE_NOTES: SizeNote[] = [
     body: "Message us on Instagram with your usual size and the kit you're after and we'll tell you exactly which one to take.",
   },
 ];
+
+/**
+ * Name-and-number printing is a real R50 line in the cart, not a free extra.
+ * The handle is shared so the drawer can tell the fee apart from a garment and
+ * render it as the derived charge it is.
+ */
+export const PRINTING_FEE_HANDLE = "name-number-printing";
+export const PRINTING_FEE_LABEL = "+R50";

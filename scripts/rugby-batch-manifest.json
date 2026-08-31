@@ -1,0 +1,37 @@
+{
+  "note": "Rugby batch supplied by the client on 31 Aug 2026 as 30 photographs. Identified by crest and sponsor. R22 was dropped: it is the jersey already listed as south-africa-2025-26-springboks-home-rugby-jersey. R18/R25 and R19/R23 are each one jersey photographed twice, so they import as a single product with both photos.",
+  "pricing": { "jersey": "700.00", "vest": "600.00", "jacket": "1200.00", "kids": "550.00" },
+  "sizes": {
+    "adult": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    "kids": ["2-3", "4-5", "6-7", "8-9", "10-11"]
+  },
+  "products": [
+    { "photos": [0],     "title": "South Africa Springboks Home Rugby Jersey", "tier": "jersey", "team": "South Africa", "note": "FNB, gold sleeve panels" },
+    { "photos": [1],     "title": "South Africa Springboks Away Rugby Jersey", "tier": "jersey", "team": "South Africa", "note": "MTN white" },
+    { "photos": [2],     "title": "South Africa Springboks MTN Collared Rugby Jersey", "tier": "jersey", "team": "South Africa" },
+    { "photos": [9],     "title": "South Africa Springboks Away Rugby Jersey (Protea Print)", "tier": "jersey", "team": "South Africa" },
+    { "photos": [10],    "title": "South Africa Springboks Home Rugby Jersey (Protea Print)", "tier": "jersey", "team": "South Africa" },
+    { "photos": [21],    "title": "South Africa Springboks Rugby Polo", "tier": "jersey", "team": "South Africa" },
+    { "photos": [29],    "title": "South Africa Springboks Kids Rugby Kit", "tier": "kids", "team": "South Africa", "note": "shirt and shorts" },
+    { "photos": [3],     "title": "New Zealand All Blacks Home Rugby Jersey", "tier": "jersey", "team": "New Zealand", "note": "black collar, tonal fern" },
+    { "photos": [25, 18],"title": "New Zealand All Blacks Home Rugby Jersey (White Collar)", "tier": "jersey", "team": "New Zealand" },
+    { "photos": [19, 23],"title": "New Zealand All Blacks Away Rugby Jersey", "tier": "jersey", "team": "New Zealand", "note": "white, black collar" },
+    { "photos": [7],     "title": "New Zealand All Blacks Toyota Rugby Jersey", "tier": "jersey", "team": "New Zealand", "note": "pink and black fern print" },
+    { "photos": [26],    "title": "Maori All Blacks Rugby Jersey", "tier": "jersey", "team": "New Zealand" },
+    { "photos": [27],    "title": "Maori All Blacks Rau Tau Rugby Jersey", "tier": "jersey", "team": "New Zealand" },
+    { "photos": [24],    "title": "New Zealand All Blacks Training Vest", "tier": "vest", "team": "New Zealand", "note": "INEOS" },
+    { "photos": [28],    "title": "New Zealand All Blacks Track Jacket", "tier": "jacket", "team": "New Zealand" },
+    { "photos": [16],    "title": "Ireland Home Rugby Jersey", "tier": "jersey", "team": "Ireland" },
+    { "photos": [17],    "title": "Ireland Rugby Training Vest", "tier": "vest", "team": "Ireland" },
+    { "photos": [5],     "title": "Australia Wallabies First Nations Rugby Jersey (Orange)", "tier": "jersey", "team": "Australia" },
+    { "photos": [6],     "title": "Australia Wallabies First Nations Rugby Jersey (White)", "tier": "jersey", "team": "Australia" },
+    { "photos": [4],     "title": "France Retro Rugby Jersey", "tier": "jersey", "team": "France", "note": "FFR, pale blue" },
+    { "photos": [11],    "title": "Stade Toulousain Away Rugby Jersey", "tier": "jersey", "team": "Stade Toulousain" },
+    { "photos": [8],     "title": "Crusaders 30th Anniversary Home Rugby Jersey", "tier": "jersey", "team": "Crusaders" },
+    { "photos": [13],    "title": "Crusaders Away Rugby Jersey", "tier": "jersey", "team": "Crusaders" },
+    { "photos": [15],    "title": "Crusaders 30th Anniversary Alternate Rugby Jersey", "tier": "jersey", "team": "Crusaders" },
+    { "photos": [12],    "title": "Chiefs Home Rugby Jersey", "tier": "jersey", "team": "Chiefs" },
+    { "photos": [20],    "title": "Chiefs Away Rugby Jersey", "tier": "jersey", "team": "Chiefs" },
+    { "photos": [14],    "title": "Hurricanes Home Rugby Jersey", "tier": "jersey", "team": "Hurricanes", "note": "Kubota yellow" }
+  ]
+}

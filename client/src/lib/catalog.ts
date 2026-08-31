@@ -55,7 +55,8 @@ export function filterAndSortProducts(
 }
 
 /**
- * Fan-version shirts can be printed with the buyer's own name and number.
+ * Fan-version shirts can be printed with the buyer's own name and number for
+ * R50, charged as its own cart line — see `server/_core/printingFee.ts`.
  * Player and authentic versions are excluded — those ship in the official
  * player spec — as is anything that isn't a shirt (tracksuits, jackets,
  * hoodies, kids kits, polos, shorts). Matching is on the title, productType
