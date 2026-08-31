@@ -14,7 +14,12 @@
  * a stale promise.
  */
 
-export type NavLeaf = { label: string; q: string };
+export type NavLeaf = {
+  label: string;
+  q: string;
+  /** Term that disqualifies a match — "Retro" means retro football, not retro rugby. */
+  not?: string;
+};
 export type NavGroup = { label: string; children: (NavLeaf | NavGroup)[] };
 export type NavNode = NavLeaf | NavGroup;
 export type NavSection = { label: string; href?: string; children?: NavNode[] };
@@ -83,14 +88,12 @@ export const SHOP_MENU: NavSection[] = [
       { label: "World Cup", q: "world cup" },
     ],
   },
-  {
-    label: "Retro & Rugby",
-    children: [
-      { label: "Retro icons", q: "retro" },
-      { label: "Rugby", q: "rugby" },
-      { label: "Formula 1", q: "f1" },
-    ],
-  },
+  // The client asked for retro football and rugby to be separate destinations
+  // with their own links rather than one shared drawer. Retro excludes rugby so
+  // the retro rugby shirts stay with the rest of the rugby.
+  { label: "Retro Football", href: "/shop?q=retro&not=rugby&label=Retro%20Football" },
+  { label: "Rugby", href: "/shop?q=rugby&label=Rugby" },
+  { label: "Formula 1", href: "/shop?q=f1&label=Formula%201" },
   {
     label: "Training & Outerwear",
     children: [
@@ -107,5 +110,6 @@ export const SHOP_MENU: NavSection[] = [
 ];
 
 export function leafHref(leaf: NavLeaf): string {
-  return `/shop?q=${encodeURIComponent(leaf.q)}&label=${encodeURIComponent(leaf.label)}`;
+  const not = leaf.not ? `&not=${encodeURIComponent(leaf.not)}` : "";
+  return `/shop?q=${encodeURIComponent(leaf.q)}${not}&label=${encodeURIComponent(leaf.label)}`;
 }

@@ -2,7 +2,7 @@ import { useCart } from "@/contexts/CartContext";
 import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/lib/catalog";
 import { isGroup, leafHref, SHOP_MENU, type NavNode } from "@/lib/navigation";
 import { trpc } from "@/lib/trpc";
-import { Menu, Minus, Plus, ShoppingBag, X } from "lucide-react";
+import { Menu, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
 
@@ -58,6 +58,40 @@ function MenuBranch({ node, depth, counts, onNavigate }: { node: NavNode; depth:
   );
 }
 
+/**
+ * Free-text search over the archive. It submits to the same `/shop?q=` route
+ * the menu links use, so a typed term and a tapped club end up in exactly the
+ * same filter — there is no second search implementation to keep in step.
+ */
+function SearchForm({ onSubmit, autoFocus = false }: { onSubmit?: () => void; autoFocus?: boolean }) {
+  const [term, setTerm] = useState("");
+  const [, navigate] = useLocation();
+  return (
+    <form
+      className="store-search"
+      role="search"
+      onSubmit={event => {
+        event.preventDefault();
+        const value = term.trim();
+        if (!value) return;
+        navigate(`/shop?q=${encodeURIComponent(value)}&label=${encodeURIComponent(value)}`);
+        setTerm("");
+        onSubmit?.();
+      }}
+    >
+      <Search size={15} strokeWidth={1.8} aria-hidden="true" />
+      <input
+        type="search"
+        value={term}
+        autoFocus={autoFocus}
+        onChange={event => setTerm(event.target.value)}
+        placeholder="Search kits, clubs, players"
+        aria-label="Search the archive"
+      />
+    </form>
+  );
+}
+
 export function StoreHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { itemCount, openCart } = useCart();
@@ -80,7 +114,7 @@ export function StoreHeader() {
       .map(product => [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase());
     const walk = (nodes: NavNode[]) => nodes.forEach(node => {
       if (isGroup(node)) walk(node.children);
-      else tally.set(node.q, haystacks.filter(text => text.includes(node.q)).length);
+      else tally.set(node.q, haystacks.filter(text => text.includes(node.q) && !(node.not && text.includes(node.not))).length);
     });
     SHOP_MENU.forEach(section => section.children && walk(section.children));
     return tally;
@@ -121,6 +155,7 @@ export function StoreHeader() {
             {links.map(link => (
               <Link key={link.href} href={link.href}>{link.label}</Link>
             ))}
+            <SearchForm />
           </nav>
 
           <button className="header-control header-control--cart" onClick={openCart} aria-label={`Open cart with ${itemCount} items`}>
@@ -138,6 +173,7 @@ export function StoreHeader() {
             <span className="eyebrow">Navigation</span>
             <button onClick={closeMenu} className="icon-button" aria-label="Close menu"><X size={23} /></button>
           </div>
+          <SearchForm onSubmit={closeMenu} />
           <nav className="menu-tree" aria-label="Shop navigation">
             {SHOP_MENU.map(section =>
               section.href ? (

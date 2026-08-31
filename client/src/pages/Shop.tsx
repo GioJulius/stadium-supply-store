@@ -24,11 +24,12 @@ export default function Shop() {
   // (`label`) so the heading reads back the club the visitor actually clicked.
   const [searchParams] = useSearchParams();
   const query = searchParams.get("q") ?? "";
+  const exclude = searchParams.get("not") ?? "";
   const queryLabel = searchParams.get("label") ?? query;
   const mappedProducts = useMemo(() => products.filter(isCustomerFacingMappedProduct), [products]);
   const filteredProducts = useMemo(
-    () => filterAndSortProducts(mappedProducts, activeFilter, sortMode, query),
-    [activeFilter, mappedProducts, sortMode, query],
+    () => filterAndSortProducts(mappedProducts, activeFilter, sortMode, query, exclude),
+    [activeFilter, mappedProducts, sortMode, query, exclude],
   );
 
   return (

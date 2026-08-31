@@ -39,9 +39,17 @@ export function filterAndSortProducts(
   filter: CatalogFilter,
   sort: CatalogSortMode,
   query = "",
+  exclude = "",
 ): Product[] {
   const term = query.trim().toLowerCase();
-  const queried = term ? products.filter(product => searchableText(product).includes(term)) : products;
+  const without = exclude.trim().toLowerCase();
+  const queried = products.filter(product => {
+    const text = searchableText(product);
+    if (term && !text.includes(term)) return false;
+    // "Retro" means retro football; the retro rugby shirts belong to Rugby.
+    if (without && text.includes(without)) return false;
+    return true;
+  });
   const matching = filter === "all" ? queried : queried.filter(product => searchableText(product).includes(filter));
 
   return [...matching].sort((a, b) => {
@@ -59,15 +67,29 @@ export function filterAndSortProducts(
  * R50, charged as its own cart line — see `server/_core/printingFee.ts`.
  * Player and authentic versions are excluded — those ship in the official
  * player spec — as is anything that isn't a shirt (tracksuits, jackets,
- * hoodies, kids kits, polos, shorts). Matching is on the title, productType
- * and tags together, because the catalogue expresses "fan version" in all
- * three depending on which import lineage a listing came from.
+ * hoodies, polos, and shorts sold on their own). Kids kits DO print — the set
+ * includes a shirt. Matching is on the title, productType and tags together,
+ * because the catalogue expresses "fan version" in all three depending on
+ * which import lineage a listing came from.
  */
-const NON_SHIRT = /hood|sweatshirt|jacket|windbreaker|tracksuit|training|half-zip|polo|shorts|pants|kids|t-shirt|anthem|presentation|kit \+/i;
+const NON_SHIRT = /hood|sweatshirt|jacket|windbreaker|tracksuit|training|half-zip|polo|pants|t-shirt|anthem|presentation/i;
+
+/**
+ * Shorts on their own cannot take a name and number, but a kit or a set that
+ * includes shorts can, because the shirt in it prints like any other. Two
+ * plain tests rather than one lookahead regex, because the intent is the point.
+ */
+function isShortsOnly(haystack: string): boolean {
+  return /shorts/i.test(haystack) && !/\b(kit|set)\b/i.test(haystack);
+}
 
 export function isPersonalisable(product: Product): boolean {
   const haystack = [product.title, product.productType ?? "", ...product.tags].join(" ");
   if (NON_SHIRT.test(haystack)) return false;
+  if (isShortsOnly(haystack)) return false;
   if (/player version|authentic/i.test(haystack)) return false;
+  // Kids kits are sold as sets rather than as "fan version", so they never
+  // matched the wording test below even though the shirt prints the same way.
+  if (/kids|kiddies/i.test(haystack)) return true;
   return /fan version|fan jersey/i.test(haystack);
 }

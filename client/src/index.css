@@ -209,3 +209,21 @@ body { font-family:"Manrope",Arial,sans-serif; }
 .cart-item--fee h3 { font-size: 15px; }
 .cart-item--fee p { margin: 4px 0 0; font: 400 10px "DM Mono", monospace; letter-spacing: .04em; opacity: .6; }
 .personalisation__toggle b { font-family: "DM Mono", monospace; font-size: 10px; font-weight: 500; letter-spacing: .05em; opacity: .75; }
+
+/* ---- Search --------------------------------------------------------------
+   Sits in the desktop nav strip and at the top of the mobile drawer. Inherits
+   colour so it reads on the transparent home header and the solid one alike. */
+.store-search { display:flex; align-items:center; gap:7px; border-bottom:1px solid currentColor; padding-bottom:4px; opacity:.72; transition:opacity .18s ease; }
+.store-search:focus-within, .store-search:hover { opacity:1; }
+.store-search svg { flex:none; }
+.store-search input { width:150px; background:none; border:0; padding:0; color:inherit; font:400 11px "DM Mono",monospace; letter-spacing:.02em; }
+.store-search input::placeholder { color:currentColor; opacity:.55; }
+.store-search input:focus { outline:none; }
+.store-search input::-webkit-search-cancel-button { -webkit-appearance:none; }
+
+/* In the drawer it is a full-width field rather than a nav-strip affordance. */
+.menu-panel__surface > .store-search { margin:20px 0 4px; padding-bottom:11px; border-bottom:1px solid rgba(255,255,255,.28); opacity:1; }
+.menu-panel__surface > .store-search input { width:100%; font-size:14px; font-family:"Manrope",sans-serif; }
+.menu-panel__surface > .store-search + .menu-tree { margin-top:8px; }
+
+@media (max-width:850px) { .store-search { display:none; } .menu-panel__surface > .store-search { display:flex; } }
