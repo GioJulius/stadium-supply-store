@@ -1,4 +1,4 @@
-import { SIZE_NOTES } from "@/lib/storeInfo";
+import { SIZE_NOTES, WHATSAPP_URL } from "@/lib/storeInfo";
 import { X } from "lucide-react";
 import { useEffect } from "react";
 
@@ -12,6 +12,9 @@ export function SizeGuideContent() {
           <p>{note.body}</p>
         </article>
       ))}
+      <a className="size-guide__whatsapp" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
+        Ask us on WhatsApp <span aria-hidden="true">&#8599;</span>
+      </a>
     </div>
   );
 }

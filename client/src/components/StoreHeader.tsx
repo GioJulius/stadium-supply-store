@@ -1,6 +1,7 @@
 import { useCart } from "@/contexts/CartContext";
 import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/lib/catalog";
 import { isGroup, leafHref, SHOP_MENU, type NavNode } from "@/lib/navigation";
+import { INSTAGRAM_URL, REVIEWS_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { trpc } from "@/lib/trpc";
 import { Menu, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
@@ -176,7 +177,11 @@ export function StoreHeader() {
           <SearchForm onSubmit={closeMenu} />
           <nav className="menu-tree" aria-label="Shop navigation">
             {SHOP_MENU.map(section =>
-              section.href ? (
+              section.href && section.external ? (
+                <a key={section.label} href={section.href} target="_blank" rel="noreferrer" className="menu-tree__top-link" onClick={closeMenu}>
+                  {section.label} <span aria-hidden="true">&#8599;</span>
+                </a>
+              ) : section.href ? (
                 <Link key={section.label} href={section.href} className="menu-tree__top-link" onClick={closeMenu}>
                   {section.label}
                 </Link>
@@ -193,7 +198,7 @@ export function StoreHeader() {
           </nav>
           <div className="menu-panel__meta">
             <p>From the stands<br />to the streets.</p>
-            <a href="https://www.instagram.com/stadium.supply/" target="_blank" rel="noreferrer">Instagram ↗</a>
+            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">WhatsApp ↗</a>
           </div>
         </div>
       </aside>
@@ -208,7 +213,9 @@ export function StoreFooter() {
       <div className="site-footer__meta">
         <p>Curated football culture<br />from every era.</p>
         <Link href="/how-it-works">How it works ↗</Link>
-        <a href="https://www.instagram.com/stadium.supply/" target="_blank" rel="noreferrer">Follow @stadium.supply ↗</a>
+        <a href={REVIEWS_URL} target="_blank" rel="noreferrer">Read our reviews ↗</a>
+        <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a>
+        <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Follow @stadium.supply ↗</a>
       </div>
       <div className="site-footer__legal">© {new Date().getFullYear()} Stadium Supply<br />All rights reserved.</div>
     </footer>

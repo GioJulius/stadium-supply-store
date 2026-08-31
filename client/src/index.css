@@ -227,3 +227,6 @@ body { font-family:"Manrope",Arial,sans-serif; }
 .menu-panel__surface > .store-search + .menu-tree { margin-top:8px; }
 
 @media (max-width:850px) { .store-search { display:none; } .menu-panel__surface > .store-search { display:flex; } }
+
+.size-guide__whatsapp { grid-column:1/-1; background:#f8f7f1; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 26px; font:400 10px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.06em; }
+.size-guide__whatsapp:hover { background:#fff; }

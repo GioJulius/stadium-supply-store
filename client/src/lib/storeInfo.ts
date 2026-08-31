@@ -58,7 +58,7 @@ export const SIZE_NOTES: SizeNote[] = [
   },
   {
     title: "Still unsure?",
-    body: "Message us on Instagram with your usual size and the kit you're after and we'll tell you exactly which one to take.",
+    body: "Message us on WhatsApp with your usual size and the kit you're after and we'll tell you exactly which one to take.",
   },
 ];
 
@@ -69,3 +69,13 @@ export const SIZE_NOTES: SizeNote[] = [
  */
 export const PRINTING_FEE_HANDLE = "name-number-printing";
 export const PRINTING_FEE_LABEL = "+R50";
+
+/**
+ * Where the shop actually talks to people. WhatsApp is the channel the client
+ * runs on — the number is the one published in their own Instagram bio — so
+ * it is what we point shoppers at when they need a person rather than a page.
+ */
+export const WHATSAPP_URL = "https://wa.me/27688307605";
+export const INSTAGRAM_URL = "https://www.instagram.com/stadium.supply/";
+/** The shop's "reviews" story highlight — real buyers, in their own words. */
+export const REVIEWS_URL = "https://www.instagram.com/stories/highlights/17856584361642350/";

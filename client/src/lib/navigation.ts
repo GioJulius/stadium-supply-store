@@ -14,6 +14,8 @@
  * a stale promise.
  */
 
+import { REVIEWS_URL } from "./storeInfo";
+
 export type NavLeaf = {
   label: string;
   q: string;
@@ -22,7 +24,13 @@ export type NavLeaf = {
 };
 export type NavGroup = { label: string; children: (NavLeaf | NavGroup)[] };
 export type NavNode = NavLeaf | NavGroup;
-export type NavSection = { label: string; href?: string; children?: NavNode[] };
+export type NavSection = {
+  label: string;
+  href?: string;
+  children?: NavNode[];
+  /** Leaves the site — rendered as a plain anchor rather than through the router. */
+  external?: boolean;
+};
 
 export function isGroup(node: NavNode): node is NavGroup {
   return "children" in node;
@@ -106,6 +114,7 @@ export const SHOP_MENU: NavSection[] = [
   },
   { label: "Kids", href: "/shop?q=kids&label=Kids" },
   { label: "How it works", href: "/how-it-works" },
+  { label: "Reviews", href: REVIEWS_URL, external: true },
   { label: "Shop all", href: "/shop" },
 ];
 
