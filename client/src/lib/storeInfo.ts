@@ -69,6 +69,8 @@ export const SIZE_NOTES: SizeNote[] = [
  */
 export const PRINTING_FEE_HANDLE = "name-number-printing";
 export const PRINTING_FEE_LABEL = "+R50";
+export const BADGE_FEE_HANDLE = "competition-badge";
+export const BADGE_FEE_LABEL = "+R50";
 
 /**
  * Where the shop actually talks to people. WhatsApp is the channel the client
@@ -79,3 +81,30 @@ export const WHATSAPP_URL = "https://wa.me/27688307605";
 export const INSTAGRAM_URL = "https://www.instagram.com/stadium.supply/";
 /** The shop's "reviews" story highlight — real buyers, in their own words. */
 export const REVIEWS_URL = "https://www.instagram.com/stories/highlights/17856584361642350/";
+
+
+/**
+ * Shipping, in the terms the client gave: one flat courier rate to the door,
+ * on top of the 10-15 business day import wait the process page explains.
+ * Saying the number plainly is what stops "how much is delivery" arriving in
+ * the WhatsApp inbox all day.
+ */
+export const SHIPPING_RATE = "R100";
+export const SHIPPING_NOTES: SizeNote[] = [
+  {
+    title: "What it costs",
+    body: "A flat R100 to your door, anywhere in South Africa. You will see it added at checkout — there is nothing else to pay on delivery.",
+  },
+  {
+    title: "Who delivers",
+    body: "Every order ships with The Courier Guy, door to door, with tracking sent to you once your parcel is collected.",
+  },
+  {
+    title: "How long it takes",
+    body: "We order from our supplier within 24 hours of your payment. Stock usually reaches us in 10-15 business days, then your parcel goes out the same week it lands.",
+  },
+  {
+    title: "Where we ship",
+    body: "South Africa only for now. If you are outside the country, message us on WhatsApp and we will quote you.",
+  },
+];

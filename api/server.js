@@ -60473,6 +60473,7 @@ function normalizeCollection(c) {
   };
 }
 var PERSONALISATION_NAME_KEY = "Name on shirt";
+var BADGE_KEY = "Badge";
 var PERSONALISATION_NUMBER_KEY = "Number on shirt";
 function normalizePersonalisation(line) {
   const read = (key) => (line.attributes ?? []).find((a) => a.key === key)?.value?.trim() ?? "";
@@ -60492,7 +60493,10 @@ function normalizeCartItem(line) {
     unitPrice: normalizeMoney(line.merchandise.price),
     quantity: line.quantity,
     lineTotal: normalizeMoney(line.cost.totalAmount),
-    personalisation: normalizePersonalisation(line)
+    personalisation: normalizePersonalisation(line),
+    // Raw attributes ride along so the add-on reconciler can read flags like
+    // the badge without a second shape to keep in step.
+    attributes: Object.fromEntries((line.attributes ?? []).map((a) => [a.key, a.value ?? ""]))
   };
 }
 function withChannelParam(checkoutUrl) {
@@ -60857,35 +60861,47 @@ async function removeCartLines(cartId, lineIds) {
   return unwrapCart(data.cartLinesRemove, "cartLinesRemove");
 }
 
-// server/_core/printingFee.ts
+// server/_core/addonFees.ts
 var PRINTING_FEE_HANDLE = "name-number-printing";
-var feeVariantIdPromise = null;
-async function feeVariantId() {
-  if (!feeVariantIdPromise) {
-    feeVariantIdPromise = getProductByHandle(PRINTING_FEE_HANDLE).then((product) => product.variants[0]?.id ?? null).catch((error46) => {
-      console.error("[printingFee] could not resolve the fee variant", error46);
-      feeVariantIdPromise = null;
-      return null;
-    });
+var BADGE_FEE_HANDLE = "competition-badge";
+var ADDONS = [
+  { handle: PRINTING_FEE_HANDLE, wants: (item) => Boolean(item.personalisation) },
+  { handle: BADGE_FEE_HANDLE, wants: (item) => item.attributes?.[BADGE_KEY] === "Yes" }
+];
+var ADDON_HANDLES = new Set(ADDONS.map((a) => a.handle));
+var variantIds = /* @__PURE__ */ new Map();
+async function feeVariantId(handle) {
+  if (!variantIds.has(handle)) {
+    variantIds.set(
+      handle,
+      getProductByHandle(handle).then((product) => product.variants[0]?.id ?? null).catch((error46) => {
+        console.error(`[addonFees] could not resolve ${handle}`, error46);
+        variantIds.delete(handle);
+        return null;
+      })
+    );
   }
-  return feeVariantIdPromise;
+  return variantIds.get(handle);
 }
-var isFeeLine = (item) => item.productHandle === PRINTING_FEE_HANDLE;
-function chargeableQuantity(cart) {
-  return cart.items.reduce(
-    (total, item) => item.personalisation && !isFeeLine(item) ? total + item.quantity : total,
+async function reconcileAddonFees(cart) {
+  let current = cart;
+  for (const addon of ADDONS) {
+    if (!current) return current;
+    current = await reconcileOne(current, addon);
+  }
+  return current;
+}
+async function reconcileOne(cart, addon) {
+  const wanted = cart.items.reduce(
+    (total, item) => !ADDON_HANDLES.has(item.productHandle) && addon.wants(item) ? total + item.quantity : total,
     0
   );
-}
-async function reconcilePrintingFee(cart) {
-  if (!cart) return cart;
-  const wanted = chargeableQuantity(cart);
-  const existing = cart.items.find(isFeeLine);
+  const existing = cart.items.find((item) => item.productHandle === addon.handle);
   if (wanted === 0) {
     if (!existing) return cart;
     return removeCartLines(cart.id, [existing.lineId]);
   }
-  const variantId = await feeVariantId();
+  const variantId = await feeVariantId(addon.handle);
   if (!variantId) return cart;
   if (!existing) return addCartLines(cart.id, [{ variantId, quantity: wanted }]);
   if (existing.quantity === wanted) return cart;
@@ -60902,15 +60918,17 @@ var personalisationSchema = external_exports.object({
 var cartLineInputSchema = external_exports.object({
   variantId: external_exports.string().min(1),
   quantity: external_exports.number().int().min(1).max(99),
-  personalisation: personalisationSchema.optional()
+  personalisation: personalisationSchema.optional(),
+  /** The client's paid competition badge — R50, charged per shirt. */
+  badge: external_exports.boolean().optional()
 });
 function toLineAttributes(line) {
   const p = line.personalisation;
-  if (!p) return void 0;
   const attributes = [];
-  if (p.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
-  if (p.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
-  return attributes;
+  if (p?.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
+  if (p?.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
+  if (line.badge) attributes.push({ key: BADGE_KEY, value: "Yes" });
+  return attributes.length ? attributes : void 0;
 }
 var toCartLine = (line) => ({
   variantId: line.variantId,
@@ -60946,7 +60964,7 @@ var commerceRouter = router({
   }),
   cart: router({
     create: publicProcedure.input(external_exports.object({ lines: external_exports.array(cartLineInputSchema).min(1).max(50) })).mutation(async ({ input }) => {
-      return reconcilePrintingFee(await createCart(input.lines.map(toCartLine)));
+      return reconcileAddonFees(await createCart(input.lines.map(toCartLine)));
     }),
     get: publicProcedure.input(external_exports.object({ cartId: external_exports.string().min(1) })).query(async ({ input }) => {
       return getCart(input.cartId);
@@ -60957,7 +60975,7 @@ var commerceRouter = router({
         lines: external_exports.array(cartLineInputSchema).min(1).max(50)
       })
     ).mutation(async ({ input }) => {
-      return reconcilePrintingFee(await addCartLines(input.cartId, input.lines.map(toCartLine)));
+      return reconcileAddonFees(await addCartLines(input.cartId, input.lines.map(toCartLine)));
     }),
     updateLines: publicProcedure.input(
       external_exports.object({
@@ -60975,7 +60993,7 @@ var commerceRouter = router({
         cart = await removeCartLines(input.cartId, toRemove);
       }
       if (!cart) cart = await getCart(input.cartId);
-      return reconcilePrintingFee(cart);
+      return reconcileAddonFees(cart);
     }),
     removeLines: publicProcedure.input(
       external_exports.object({
@@ -60983,7 +61001,7 @@ var commerceRouter = router({
         lineIds: external_exports.array(external_exports.string().min(1)).min(1).max(50)
       })
     ).mutation(async ({ input }) => {
-      return reconcilePrintingFee(await removeCartLines(input.cartId, input.lineIds));
+      return reconcileAddonFees(await removeCartLines(input.cartId, input.lineIds));
     })
   })
 });

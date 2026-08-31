@@ -95,6 +95,8 @@ export type CartItem = {
   lineTotal: Money;
   /** null when the shopper took the shirt as it comes. */
   personalisation: Personalisation | null;
+  /** Every cart-line custom attribute, keyed as Shopify stores them. */
+  attributes: Record<string, string>;
 };
 
 export type Cart = {

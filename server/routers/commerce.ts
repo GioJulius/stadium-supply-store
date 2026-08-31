@@ -22,8 +22,9 @@ import {
 import {
   PERSONALISATION_NAME_KEY,
   PERSONALISATION_NUMBER_KEY,
+  BADGE_KEY,
 } from "../_core/shopifyNormalize";
-import { reconcilePrintingFee } from "../_core/printingFee";
+import { reconcileAddonFees } from "../_core/addonFees";
 import { publicProcedure, router } from "../_core/trpc";
 
 /**
@@ -54,16 +55,18 @@ const cartLineInputSchema = z.object({
   variantId: z.string().min(1),
   quantity: z.number().int().min(1).max(99),
   personalisation: personalisationSchema.optional(),
+  /** The client's paid competition badge — R50, charged per shirt. */
+  badge: z.boolean().optional(),
 });
 
 /** Map validated personalisation onto the cart-line attributes Shopify stores. */
 function toLineAttributes(line: z.infer<typeof cartLineInputSchema>) {
   const p = line.personalisation;
-  if (!p) return undefined;
   const attributes: Array<{ key: string; value: string }> = [];
-  if (p.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
-  if (p.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
-  return attributes;
+  if (p?.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
+  if (p?.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
+  if (line.badge) attributes.push({ key: BADGE_KEY, value: "Yes" });
+  return attributes.length ? attributes : undefined;
 }
 
 const toCartLine = (line: z.infer<typeof cartLineInputSchema>) => ({
@@ -114,7 +117,7 @@ export const commerceRouter = router({
     create: publicProcedure
       .input(z.object({ lines: z.array(cartLineInputSchema).min(1).max(50) }))
       .mutation(async ({ input }) => {
-        return reconcilePrintingFee(await createCart(input.lines.map(toCartLine)));
+        return reconcileAddonFees(await createCart(input.lines.map(toCartLine)));
       }),
     get: publicProcedure
       .input(z.object({ cartId: z.string().min(1) }))
@@ -129,7 +132,7 @@ export const commerceRouter = router({
         })
       )
       .mutation(async ({ input }) => {
-        return reconcilePrintingFee(await addCartLines(input.cartId, input.lines.map(toCartLine)));
+        return reconcileAddonFees(await addCartLines(input.cartId, input.lines.map(toCartLine)));
       }),
     updateLines: publicProcedure
       .input(
@@ -152,7 +155,7 @@ export const commerceRouter = router({
           cart = await removeCartLines(input.cartId, toRemove);
         }
         if (!cart) cart = await getCart(input.cartId);
-        return reconcilePrintingFee(cart);
+        return reconcileAddonFees(cart);
       }),
     removeLines: publicProcedure
       .input(
@@ -162,7 +165,7 @@ export const commerceRouter = router({
         })
       )
       .mutation(async ({ input }) => {
-        return reconcilePrintingFee(await removeCartLines(input.cartId, input.lineIds));
+        return reconcileAddonFees(await removeCartLines(input.cartId, input.lineIds));
       }),
   }),
 });

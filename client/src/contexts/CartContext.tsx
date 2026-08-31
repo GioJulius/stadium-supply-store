@@ -40,7 +40,7 @@ type CartContextValue = {
   itemCount: number;
   openCart: () => void;
   closeCart: () => void;
-  addItem: (variantId: string, quantity?: number, personalisation?: Personalisation) => Promise<void>;
+  addItem: (variantId: string, quantity?: number, personalisation?: Personalisation, badge?: boolean) => Promise<void>;
   updateQuantity: (lineId: string, quantity: number) => Promise<void>;
   removeItem: (lineId: string) => Promise<void>;
   clearCart: () => void;
@@ -95,12 +95,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const closeCart = useCallback(() => setIsOpen(false), []);
 
   const addItem = useCallback(
-    async (variantId: string, quantity: number = 1, personalisation?: Personalisation) => {
+    async (variantId: string, quantity: number = 1, personalisation?: Personalisation, badge?: boolean) => {
       setLoading(true);
       try {
         if (!cartId || !cart) {
           const created = await utils.client.commerce.cart.create.mutate({
-            lines: [{ variantId, quantity, personalisation }],
+            lines: [{ variantId, quantity, personalisation, badge }],
           });
           setCart(created);
           setCartId(created.id);
@@ -108,7 +108,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         } else {
           const updated = await utils.client.commerce.cart.addLines.mutate({
             cartId,
-            lines: [{ variantId, quantity, personalisation }],
+            lines: [{ variantId, quantity, personalisation, badge }],
           });
           setCart(updated);
         }

@@ -1,6 +1,6 @@
 import { useCart } from "@/contexts/CartContext";
 import { formatMoney } from "@/lib/format";
-import { PRINTING_FEE_HANDLE } from "@/lib/storeInfo";
+import { BADGE_FEE_HANDLE, PRINTING_FEE_HANDLE } from "@/lib/storeInfo";
 import { Minus, Plus, X } from "lucide-react";
 
 export function CartDrawer() {
@@ -23,10 +23,10 @@ export function CartDrawer() {
           {items.length === 0 ? (
             <div className="cart-empty"><p>Your bag is waiting for its first kit.</p><button onClick={closeCart}>Continue browsing</button></div>
           ) : items.map(item => {
-            // The printing fee is derived from how many personalised shirts the
-            // bag holds, so it gets no quantity stepper and no remove link —
-            // untick the printing on the shirt and it leaves by itself.
-            const isFee = item.productHandle === PRINTING_FEE_HANDLE;
+            // Add-on fees are derived from how many shirts asked for them, so
+            // they get no quantity stepper and no remove link — untick the
+            // extra on the shirt and the charge leaves by itself.
+            const isFee = item.productHandle === PRINTING_FEE_HANDLE || item.productHandle === BADGE_FEE_HANDLE;
             return isFee ? (
               <article className="cart-item cart-item--fee" key={item.lineId}>
                 <div className="cart-item__content">

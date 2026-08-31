@@ -173,6 +173,8 @@ export function normalizeCollection(c: RawCollection): Collection {
  * number with no name, or the reverse.
  */
 export const PERSONALISATION_NAME_KEY = "Name on shirt";
+/** Set to "Yes" when the shopper asked for the paid competition badge. */
+export const BADGE_KEY = "Badge";
 export const PERSONALISATION_NUMBER_KEY = "Number on shirt";
 
 function normalizePersonalisation(line: RawCartLine): Personalisation | null {
@@ -196,6 +198,9 @@ function normalizeCartItem(line: RawCartLine): CartItem {
     quantity: line.quantity,
     lineTotal: normalizeMoney(line.cost.totalAmount),
     personalisation: normalizePersonalisation(line),
+    // Raw attributes ride along so the add-on reconciler can read flags like
+    // the badge without a second shape to keep in step.
+    attributes: Object.fromEntries((line.attributes ?? []).map(a => [a.key, a.value ?? ""])),
   };
 }
 

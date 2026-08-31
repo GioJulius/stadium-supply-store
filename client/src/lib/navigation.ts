@@ -49,6 +49,7 @@ export const SHOP_MENU: NavSection[] = [
           { label: "Liverpool", q: "liverpool" },
           { label: "Arsenal", q: "arsenal" },
           { label: "Chelsea", q: "chelsea" },
+          { label: "Tottenham Hotspur", q: "tottenham" },
           { label: "Manchester City", q: "manchester city" },
           { label: "Nottingham Forest", q: "nottingham" },
         ],
@@ -114,6 +115,8 @@ export const SHOP_MENU: NavSection[] = [
   },
   { label: "Kids", href: "/shop?q=kids&label=Kids" },
   { label: "How it works", href: "/how-it-works" },
+  { label: "Shipping", href: "/shipping" },
+  { label: "Contact", href: "/contact" },
   { label: "Reviews", href: REVIEWS_URL, external: true },
   { label: "Shop all", href: "/shop" },
 ];

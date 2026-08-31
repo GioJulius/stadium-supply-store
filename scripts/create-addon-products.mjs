@@ -1,6 +1,6 @@
 /**
- * Creates the "Name & Number Printing" product that carries the R50
- * personalisation charge.
+ * Creates the add-on products that carry the client's paid extras: R50 name and
+ * number printing, and a R50 competition badge.
  *
  * Printing used to be free, so it rode along as cart-line attributes with no
  * money attached. Charging for it needs something Shopify can actually price,
@@ -31,8 +31,25 @@ const ENDPOINT = `https://${env.SHOPIFY_STORE_DOMAIN}/admin/api/2025-04/graphql.
 const TOKEN = env.SHOPIFY_ADMIN_API_ACCESS_TOKEN;
 const APPLY = process.argv.includes("--apply");
 
-const HANDLE = "name-number-printing";
-const PRICE = "50.00";
+/**
+ * The paid add-ons from the client's 27 Aug price list. Each is a real product
+ * so Shopify can price it; the cart carries one line per add-on, reconciled
+ * server-side from what the shopper actually asked for.
+ */
+const ADDONS = [
+  {
+    handle: "name-number-printing",
+    price: "50.00",
+    title: "Name & Number Printing",
+    description: "Adds your chosen name and squad number to the back of your shirt. Charged once per personalised shirt.",
+  },
+  {
+    handle: "competition-badge",
+    price: "50.00",
+    title: "Competition Badge",
+    description: "Adds the official competition badge to the sleeve of your shirt. Charged once per shirt.",
+  },
+];
 
 async function gql(query, variables = {}) {
   for (let attempt = 0; ; attempt++) {
@@ -53,7 +70,7 @@ async function gql(query, variables = {}) {
 
 const FIND = `query($h:String!){ productByHandle(handle:$h){ id status variants(first:1){edges{node{id price inventoryItem{tracked}}}} resourcePublicationsV2(first:10){edges{node{publication{id name} isPublished}}} } }`;
 
-async function run() {
+async function run(HANDLE, PRICE, TITLE, DESCRIPTION) {
   let product = (await gql(FIND, { h: HANDLE })).productByHandle;
 
   if (!product) {
@@ -66,14 +83,13 @@ async function run() {
       `mutation($input:ProductInput!){ productCreate(input:$input){ product{ id variants(first:1){edges{node{id price inventoryItem{tracked}}}} } userErrors{field message} } }`,
       {
         input: {
-          title: "Name & Number Printing",
+          title: TITLE,
           handle: HANDLE,
           status: "ACTIVE",
           productType: "Service",
           vendor: "Stadium Supply",
           tags: ["Printing Fee"],
-          descriptionHtml:
-            "<p>Adds your chosen name and squad number to the back of your shirt. Charged once per personalised shirt.</p>",
+          descriptionHtml: `<p>${DESCRIPTION}</p>`,
         },
       },
     );
@@ -117,4 +133,4 @@ async function run() {
   console.log(`\n${APPLY ? "applied" : "dry run"} — product ${product.id}, variant ${variant.id}`);
 }
 
-await run();
+for (const a of ADDONS) await run(a.handle, a.price, a.title, a.description);

@@ -3,7 +3,7 @@ import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
 import { isPersonalisable } from "@/lib/catalog";
-import { PRINTING_FEE_LABEL } from "@/lib/storeInfo";
+import { BADGE_FEE_LABEL, PRINTING_FEE_LABEL } from "@/lib/storeInfo";
 import { formatMoney } from "@/lib/format";
 import { trpc } from "@/lib/trpc";
 import type { Product } from "@shared/commerce/types";
@@ -34,6 +34,7 @@ function ProductView({ product }: { product: Product }) {
   const [selectedVariantId, setSelectedVariantId] = useState(product.variants[0]?.id ?? "");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
+  const [wantsBadge, setWantsBadge] = useState(false);
   const { addItem, loading } = useCart();
   const variant = product.variants.find(candidate => candidate.id === selectedVariantId) ?? product.variants[0];
   const image = product.images[selectedImageIndex] ?? product.images[0];
@@ -67,6 +68,12 @@ function ProductView({ product }: { product: Product }) {
             <div><dt>Source</dt><dd>Imported</dd></div>
           </dl>
           {sizeOptions.length > 0 && <div className="size-picker"><p className="eyebrow">Select size <span>{selectedSize}</span><button type="button" className="size-picker__guide" onClick={() => setSizeGuideOpen(true)}>Size guide</button></p><div>{sizeOptions.map(option => { const matchingVariant = product.variants.find(candidate => candidate.selectedOptions.some(selected => selected.name.toLowerCase() === "size" && selected.value === option)); return <button key={option} className={matchingVariant?.id === variant?.id ? "is-selected" : ""} disabled={!matchingVariant || !matchingVariant.availableForSale} onClick={() => matchingVariant && setSelectedVariantId(matchingVariant.id)}>{option}</button>; })}</div></div>}
+          {personalisable && (
+            <label className="personalisation__toggle personalisation__toggle--badge">
+              <input type="checkbox" checked={wantsBadge} onChange={event => setWantsBadge(event.target.checked)} />
+              <span>Add the competition badge <b>{BADGE_FEE_LABEL}</b></span>
+            </label>
+          )}
           {personalisable && (
             <div className="personalisation">
               <label className="personalisation__toggle">
@@ -120,7 +127,7 @@ function ProductView({ product }: { product: Product }) {
             <div className="quantity-control quantity-control--large">
               <button onClick={() => setQuantity(Math.max(1, quantity - 1))} aria-label="Decrease quantity"><Minus size={15} /></button><span>{quantity}</span><button onClick={() => setQuantity(quantity + 1)} aria-label="Increase quantity"><Plus size={15} /></button>
             </div>
-            <button className="add-button" disabled={!variant?.availableForSale || loading} onClick={() => variant && addItem(variant.id, quantity, personalisation)}>
+            <button className="add-button" disabled={!variant?.availableForSale || loading} onClick={() => variant && addItem(variant.id, quantity, personalisation, wantsBadge)}>
               {variant?.availableForSale ? "Add to bag" : "Sold out"}<span>↗</span>
             </button>
           </div>

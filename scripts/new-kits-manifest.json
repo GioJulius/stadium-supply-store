@@ -1,0 +1,12 @@
+{
+  "note": "The six kits Stadium Supply posted to Instagram on 30 Aug 2026, downloaded from those posts into 'stadium supply media' as stadium.supply_*.jpg. Fan vs player comes from the client's own captions; prices then follow the 27 Aug price list (fan R500, +R100 long sleeve, player R650) rather than being guessed.",
+  "sizes": { "fan": ["S","M","L","XL","2XL","3XL","4XL"], "player": ["S","M","L","XL","2XL"] },
+  "products": [
+    { "title": "Spain 2026 World Cup Champions Jersey", "photos": [0], "tier": "fan", "price": "500.00", "type": "Soccer Fan Version", "tags": ["Spain","World Cup","Fan Version"], "caption": "Spain 2026 World Cup Champions" },
+    { "title": "2026/27 Real Madrid Third Jersey Player Version", "photos": [1,2,3], "tier": "player", "price": "650.00", "type": "Soccer Player Version", "tags": ["Real Madrid","Player Version"], "caption": "Real Madrid Third kit 26/27 Player version" },
+    { "title": "2026/27 Tottenham Hotspur Home Jersey Player Version", "photos": [4,5], "tier": "player", "price": "650.00", "type": "Soccer Player Version", "tags": ["Tottenham","Player Version"], "caption": "Tottenham Home 26/27 Player version" },
+    { "title": "2026/27 Manchester City Goalkeeper Jersey", "photos": [6,7], "tier": "fan", "price": "500.00", "type": "Soccer Fan Version", "tags": ["Manchester City","Fan Version"], "caption": "Manchester City Goalkeeper Kit 26/27" },
+    { "title": "2026/27 FC Barcelona Away Jersey Player Version", "photos": [8,9,10,11], "tier": "player", "price": "650.00", "type": "Soccer Player Version", "tags": ["FC Barcelona","Player Version"], "caption": "Barcelona Away 26/27 Player Version" },
+    { "title": "2026/27 Manchester United Away Long Sleeve Jersey", "photos": [12,13], "tier": "fan", "price": "600.00", "type": "Soccer Fan Version Long Sleeve", "tags": ["Manchester United","Fan Version"], "caption": "Manchester United Away 26/27 Fan version Long sleeve" }
+  ]
+}
