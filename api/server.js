@@ -60454,6 +60454,7 @@ function normalizeProduct(p) {
     productType: p.productType || null,
     vendor: p.vendor || null,
     tags: p.tags ?? [],
+    publishedAt: p.publishedAt ?? null,
     images: orderGalleryImages(p.images.edges.map((e) => normalizeImage(e.node))),
     priceRange: {
       min: normalizeMoney(p.priceRange.minVariantPrice),
@@ -60643,6 +60644,7 @@ var PRODUCT_FRAGMENT = (
     productType
     vendor
     tags
+    publishedAt
     options { name values }
     priceRange {
       minVariantPrice { ...MoneyFields }

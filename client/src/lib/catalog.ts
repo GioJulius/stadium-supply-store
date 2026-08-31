@@ -1,7 +1,7 @@
 import type { Product } from "@shared/commerce/types";
 
 export type CatalogFilter = "all" | "fan" | "player" | "retro" | "new";
-export type CatalogSortMode = "featured" | "price-asc" | "price-desc" | "name-asc";
+export type CatalogSortMode = "latest" | "price-asc" | "price-desc" | "name-asc";
 
 /** Shopify Storefront supports up to 250 products in a single catalog request. */
 export const STOREFRONT_CATALOG_PAGE_SIZE = 250;
@@ -27,6 +27,28 @@ export function isCustomerFacingMappedProduct(product: Product): boolean {
  */
 function searchableText(product: Product): string {
   return [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase();
+}
+
+/**
+ * How recently a listing went live. Shopify's `publishedAt` is the only date
+ * the storefront gets, and it tracks when we put a kit up — which is within a
+ * day or two of the client posting it, so it stands in for "newest release"
+ * closely enough to order a shop by.
+ */
+function publishedTime(product: Product): number {
+  const t = product.publishedAt ? Date.parse(product.publishedAt) : NaN;
+  return Number.isNaN(t) ? 0 : t;
+}
+
+/**
+ * Kits the client photographed for Instagram are their own current stock and
+ * the ones they are actively promoting, so those lead the shop; the listings
+ * built from supplier stock photos follow. This is an ordering rule only —
+ * nothing on the page says where a photograph came from, because that is our
+ * business and not the shopper's.
+ */
+function isInstagramSourced(product: Product): boolean {
+  return product.tags.some(tag => /^ig-post-|^ig-drop-|^instagram/i.test(tag));
 }
 
 /**
@@ -58,7 +80,7 @@ export function filterAndSortProducts(
     if (sort === "price-asc") return aPrice - bPrice;
     if (sort === "price-desc") return bPrice - aPrice;
     if (sort === "name-asc") return a.title.localeCompare(b.title);
-    return 0;
+    return compareByFreshness(a, b);
   });
 }
 
@@ -81,6 +103,19 @@ const NON_SHIRT = /hood|sweatshirt|jacket|windbreaker|tracksuit|training|half-zi
  */
 function isShortsOnly(haystack: string): boolean {
   return /shorts/i.test(haystack) && !/\b(kit|set)\b/i.test(haystack);
+}
+
+/**
+ * The default order: the client's own Instagram stock first, then everything
+ * else, and newest first within each. Used by the shop grid and by the home
+ * page's latest drop, so both agree on what "new" means.
+ */
+export function compareByFreshness(a: Product, b: Product): number {
+  const bySource = Number(isInstagramSourced(b)) - Number(isInstagramSourced(a));
+  if (bySource !== 0) return bySource;
+  const byDate = publishedTime(b) - publishedTime(a);
+  if (byDate !== 0) return byDate;
+  return a.title.localeCompare(b.title);
 }
 
 export function isPersonalisable(product: Product): boolean {

@@ -14,8 +14,6 @@
  * a stale promise.
  */
 
-import { REVIEWS_URL } from "./storeInfo";
-
 export type NavLeaf = {
   label: string;
   q: string;
@@ -117,7 +115,7 @@ export const SHOP_MENU: NavSection[] = [
   { label: "How it works", href: "/how-it-works" },
   { label: "Shipping", href: "/shipping" },
   { label: "Contact", href: "/contact" },
-  { label: "Reviews", href: REVIEWS_URL, external: true },
+  { label: "Reviews", href: "/reviews" },
   { label: "Shop all", href: "/shop" },
 ];
 

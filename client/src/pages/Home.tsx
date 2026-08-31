@@ -1,7 +1,7 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { ProductCard } from "@/components/ProductCard";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
-import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/lib/catalog";
+import { compareByFreshness, isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/lib/catalog";
 import { STORY_TILES } from "@/lib/storyTiles";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownRight, ArrowUpRight, Check, Instagram, LoaderCircle } from "lucide-react";
@@ -133,7 +133,9 @@ function useScrollReveals() {
 export default function Home() {
   const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_PAGE_SIZE });
   const mappedProducts = products.filter(isCustomerFacingMappedProduct);
-  const latest = mappedProducts.slice(0, 4);
+  // "Latest drop" has to actually be the latest: the client's own Instagram
+  // stock first, newest first within it.
+  const latest = [...mappedProducts].sort(compareByFreshness).slice(0, 4);
   useScrollReveals();
   const prefersReducedMotion = usePrefersReducedMotion();
   const heroVideoRef = useAutoplayInView(!prefersReducedMotion);

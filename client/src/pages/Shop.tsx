@@ -19,7 +19,7 @@ const filters = [
 export default function Shop() {
   const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_PAGE_SIZE });
   const [activeFilter, setActiveFilter] = useState<CatalogFilter>("all");
-  const [sortMode, setSortMode] = useState<CatalogSortMode>("featured");
+  const [sortMode, setSortMode] = useState<CatalogSortMode>("latest");
   // The menu navigates by free-text term (`q`) and carries the wording it used
   // (`label`) so the heading reads back the club the visitor actually clicked.
   const [searchParams] = useSearchParams();
@@ -57,7 +57,7 @@ export default function Shop() {
               <div className="filter-strip" aria-label="Filter products">
                 {filters.map(filter => <button className={activeFilter === filter.key ? "is-active" : ""} key={filter.key} onClick={() => setActiveFilter(filter.key as CatalogFilter)}>{filter.label}</button>)}
               </div>
-              <label className="sort-control"><ArrowDownUp size={13} /><span>Sort</span><select value={sortMode} onChange={event => setSortMode(event.target.value as CatalogSortMode)} aria-label="Sort kits"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name-asc">Name: A–Z</option></select></label>
+              <label className="sort-control"><ArrowDownUp size={13} /><span>Sort</span><select value={sortMode} onChange={event => setSortMode(event.target.value as CatalogSortMode)} aria-label="Sort kits"><option value="latest">Newest first</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name-asc">Name: A–Z</option></select></label>
             </div>
           </div>
           {isLoading ? <div className="shop-loading"><LoaderCircle className="spin" size={28} /> Curating the archive</div> : filteredProducts.length ? (

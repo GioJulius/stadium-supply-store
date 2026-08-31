@@ -1,7 +1,7 @@
 import { useCart } from "@/contexts/CartContext";
 import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/lib/catalog";
 import { isGroup, leafHref, SHOP_MENU, type NavNode } from "@/lib/navigation";
-import { INSTAGRAM_URL, REVIEWS_URL, WHATSAPP_URL } from "@/lib/storeInfo";
+import { INSTAGRAM_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { trpc } from "@/lib/trpc";
 import { Menu, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
@@ -213,7 +213,7 @@ export function StoreFooter() {
       <div className="site-footer__meta">
         <p>Curated football culture<br />from every era.</p>
         <Link href="/how-it-works">How it works ↗</Link>
-        <a href={REVIEWS_URL} target="_blank" rel="noreferrer">Read our reviews ↗</a>
+        <Link href="/reviews">Read our reviews ↗</Link>
         <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a>
         <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Follow @stadium.supply ↗</a>
       </div>

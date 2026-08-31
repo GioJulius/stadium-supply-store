@@ -52,6 +52,7 @@ export type RawProduct = {
   productType: string | null;
   vendor: string | null;
   tags: string[];
+  publishedAt: string | null;
   options: RawProductOption[];
   priceRange: { minVariantPrice: RawMoney; maxVariantPrice: RawMoney };
   images: Edges<RawImage>;
@@ -147,6 +148,7 @@ export function normalizeProduct(p: RawProduct): Product {
     productType: p.productType || null,
     vendor: p.vendor || null,
     tags: p.tags ?? [],
+    publishedAt: p.publishedAt ?? null,
     images: orderGalleryImages(p.images.edges.map(e => normalizeImage(e.node))),
     priceRange: {
       min: normalizeMoney(p.priceRange.minVariantPrice),

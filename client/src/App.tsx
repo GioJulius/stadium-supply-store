@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { CartProvider } from "@/contexts/CartContext";
 import Contact from "@/pages/Contact";
+import Reviews from "@/pages/Reviews";
 import HowItWorks from "@/pages/HowItWorks";
 import Shipping from "@/pages/Shipping";
 import NotFound from "@/pages/NotFound";
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/shipping" component={Shipping} />
       <Route path="/contact" component={Contact} />
+      <Route path="/reviews" component={Reviews} />
       <Route path="/product/:handle" component={ProductDetail} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

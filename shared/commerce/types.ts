@@ -56,6 +56,8 @@ export type Product = {
   productType: string | null;
   vendor: string | null;
   tags: string[];
+  /** When the product went live on the sales channel — drives "newest first". */
+  publishedAt: string | null;
   images: Image[];
   /** Min / max across all variants — useful for "from $X" pricing. */
   priceRange: { min: Money; max: Money };

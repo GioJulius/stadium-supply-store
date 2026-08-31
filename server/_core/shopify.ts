@@ -199,6 +199,7 @@ const PRODUCT_FRAGMENT = /* GraphQL */ `
     productType
     vendor
     tags
+    publishedAt
     options { name values }
     priceRange {
       minVariantPrice { ...MoneyFields }
