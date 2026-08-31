@@ -60,6 +60,7 @@ export const SHOP_MENU: NavSection[] = [
         label: "Rest of the world",
         children: [
           { label: "Inter Miami", q: "inter miami" },
+          { label: "Club Brugge", q: "brugge" },
           { label: "Galatasaray", q: "galatasaray" },
           { label: "Orlando Pirates", q: "orlando pirates" },
         ],
