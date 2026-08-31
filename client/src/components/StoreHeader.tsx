@@ -1,7 +1,7 @@
 import { useCart } from "@/contexts/CartContext";
 import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/lib/catalog";
 import { isGroup, leafHref, SHOP_MENU, type NavNode } from "@/lib/navigation";
-import { INSTAGRAM_URL, WHATSAPP_URL } from "@/lib/storeInfo";
+import { INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { trpc } from "@/lib/trpc";
 import { Menu, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
@@ -215,7 +215,8 @@ export function StoreFooter() {
         <Link href="/how-it-works">How it works ↗</Link>
         <Link href="/reviews">Read our reviews ↗</Link>
         <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a>
-        <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Follow @stadium.supply ↗</a>
+        <a href={TIKTOK_URL} target="_blank" rel="noreferrer">TikTok @stadium_supply ↗</a>
+        <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram @stadium.supply ↗</a>
       </div>
       <div className="site-footer__legal">© {new Date().getFullYear()} Stadium Supply<br />All rights reserved.</div>
     </footer>

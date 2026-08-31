@@ -58,7 +58,7 @@ export const SIZE_NOTES: SizeNote[] = [
   },
   {
     title: "Still unsure?",
-    body: "Message us on WhatsApp with your usual size and the kit you're after and we'll tell you exactly which one to take.",
+    body: "Message us on WhatsApp with your usual size and the kit you're after and we'll tell you exactly which one to take. You can also see the kits on and moving on our TikTok.",
   },
 ];
 
@@ -79,6 +79,10 @@ export const BADGE_FEE_LABEL = "+R50";
  */
 export const WHATSAPP_URL = "https://wa.me/27688307605";
 export const INSTAGRAM_URL = "https://www.instagram.com/stadium.supply/";
+/** Their largest audience — 16.4K followers, ahead of Instagram. */
+export const TIKTOK_URL = "https://www.tiktok.com/@stadium_supply";
+/** Published on the TikTok profile, for people who would rather write than chat. */
+export const EMAIL_ADDRESS = "stadiumsupply@outlook.com";
 /** The shop's "reviews" story highlight — real buyers, in their own words. */
 export const REVIEWS_URL = "https://www.instagram.com/stories/highlights/17856584361642350/";
 

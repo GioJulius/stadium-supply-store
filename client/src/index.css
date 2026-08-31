@@ -228,17 +228,21 @@ body { font-family:"Manrope",Arial,sans-serif; }
 
 @media (max-width:850px) { .store-search { display:none; } .menu-panel__surface > .store-search { display:flex; } }
 
-.size-guide__whatsapp { grid-column:1/-1; background:#f8f7f1; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 26px; font:400 10px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.06em; }
-.size-guide__whatsapp:hover { background:#fff; }
+/* Two ways out of a sizing doubt: ask a person, or watch the kit move. */
+.size-guide__links { grid-column:1/-1; background:#f8f7f1; display:grid; grid-template-columns:1fr 1fr; gap:1px; }
+.size-guide__links a { background:#f8f7f1; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 26px; font:400 10px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.06em; }
+.size-guide__links a:hover { background:#fff; }
+@media (max-width:520px) { .size-guide__links { grid-template-columns:1fr; } }
 
 /* ---- Contact ------------------------------------------------------------- */
-.contact-section { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(18,25,44,.16); border-top:1px solid rgba(18,25,44,.16); border-bottom:1px solid rgba(18,25,44,.16); }
+.contact-section { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(18,25,44,.16); border-top:1px solid rgba(18,25,44,.16); border-bottom:1px solid rgba(18,25,44,.16); }
 .contact-card { background:#f8f7f1; padding:40px 30px 44px; display:flex; flex-direction:column; gap:12px; transition:background .18s ease; }
 .contact-card:hover { background:#fff; }
 .contact-card__detail { margin:0; font-size:14.5px; line-height:1.6; opacity:.78; flex:1; }
 .contact-card span { display:inline-flex; align-items:center; gap:7px; font:400 10px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.06em; border-bottom:1px solid currentColor; padding-bottom:4px; align-self:flex-start; }
 .personalisation__toggle--badge { margin-bottom:10px; }
-@media (max-width:860px) { .contact-section { grid-template-columns:1fr; } .contact-card { padding:30px 22px 34px; } }
+@media (max-width:1100px) { .contact-section { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:640px) { .contact-section { grid-template-columns:1fr; } .contact-card { padding:30px 22px 34px; } }
 
 /* ---- Mobile headline fit -------------------------------------------------
    "AUTHENTIC." and "MOVEMENT." are single unbreakable words, so their
