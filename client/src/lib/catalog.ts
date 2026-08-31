@@ -20,11 +20,29 @@ export function isCustomerFacingMappedProduct(product: Product): boolean {
   return CUSTOMER_FACING_BASELINE_HANDLES.has(product.handle) || product.tags.includes("Editable Drop") || product.tags.includes("Mapped Media");
 }
 
-export function filterAndSortProducts(products: Product[], filter: CatalogFilter, sort: CatalogSortMode): Product[] {
-  const matching = filter === "all" ? products : products.filter(product => {
-    const searchable = [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase();
-    return searchable.includes(filter);
-  });
+/**
+ * Club identity is spread across title, product type and tags — which one
+ * carries it depends on the import lineage the listing came from — so every
+ * catalogue search reads all three as one string.
+ */
+function searchableText(product: Product): string {
+  return [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase();
+}
+
+/**
+ * `query` is the free-text term behind a menu link (a club, a competition, a
+ * garment type); `filter` is the version chip on the shop toolbar. They
+ * compose, so "Arsenal" + "Retro" narrows rather than replaces.
+ */
+export function filterAndSortProducts(
+  products: Product[],
+  filter: CatalogFilter,
+  sort: CatalogSortMode,
+  query = "",
+): Product[] {
+  const term = query.trim().toLowerCase();
+  const queried = term ? products.filter(product => searchableText(product).includes(term)) : products;
+  const matching = filter === "all" ? queried : queried.filter(product => searchableText(product).includes(filter));
 
   return [...matching].sort((a, b) => {
     const aPrice = Number(a.priceRange.min.amount);

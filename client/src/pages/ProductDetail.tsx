@@ -1,4 +1,5 @@
 import { CartDrawer } from "@/components/CartDrawer";
+import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
 import { isPersonalisable } from "@/lib/catalog";
@@ -31,6 +32,7 @@ function ProductView({ product }: { product: Product }) {
   const [printNumber, setPrintNumber] = useState("");
   const [selectedVariantId, setSelectedVariantId] = useState(product.variants[0]?.id ?? "");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
   const { addItem, loading } = useCart();
   const variant = product.variants.find(candidate => candidate.id === selectedVariantId) ?? product.variants[0];
   const image = product.images[selectedImageIndex] ?? product.images[0];
@@ -46,6 +48,7 @@ function ProductView({ product }: { product: Product }) {
       : undefined;
   return (
     <main className="product-detail">
+      <SizeGuideDialog open={sizeGuideOpen} onClose={() => setSizeGuideOpen(false)} />
       <Link href="/shop" className="product-back"><ArrowLeft size={15} /> Back to archive</Link>
         <div className="product-detail__grid">
         <div className="product-detail__media">
@@ -62,7 +65,7 @@ function ProductView({ product }: { product: Product }) {
             <div><dt>Size</dt><dd>{sizeOptions.length ? "Small–XL" : size}</dd></div>
             <div><dt>Source</dt><dd>Imported</dd></div>
           </dl>
-          {sizeOptions.length > 0 && <div className="size-picker"><p className="eyebrow">Select size <span>{selectedSize}</span></p><div>{sizeOptions.map(option => { const matchingVariant = product.variants.find(candidate => candidate.selectedOptions.some(selected => selected.name.toLowerCase() === "size" && selected.value === option)); return <button key={option} className={matchingVariant?.id === variant?.id ? "is-selected" : ""} disabled={!matchingVariant || !matchingVariant.availableForSale} onClick={() => matchingVariant && setSelectedVariantId(matchingVariant.id)}>{option}</button>; })}</div></div>}
+          {sizeOptions.length > 0 && <div className="size-picker"><p className="eyebrow">Select size <span>{selectedSize}</span><button type="button" className="size-picker__guide" onClick={() => setSizeGuideOpen(true)}>Size guide</button></p><div>{sizeOptions.map(option => { const matchingVariant = product.variants.find(candidate => candidate.selectedOptions.some(selected => selected.name.toLowerCase() === "size" && selected.value === option)); return <button key={option} className={matchingVariant?.id === variant?.id ? "is-selected" : ""} disabled={!matchingVariant || !matchingVariant.availableForSale} onClick={() => matchingVariant && setSelectedVariantId(matchingVariant.id)}>{option}</button>; })}</div></div>}
           {personalisable && (
             <div className="personalisation">
               <label className="personalisation__toggle">

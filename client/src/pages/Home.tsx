@@ -33,12 +33,25 @@ function usePrefersReducedMotion() {
 }
 
 /**
- * Chrome suspends a muted autoplaying video that isn't on screen at load and
- * does NOT restart it when the visitor scrolls down — the section just sits on
- * a frozen frame. Drive playback off an IntersectionObserver instead: play on
- * entry, pause on exit (which also stops decoding work for a section nobody is
- * looking at). `enabled: false` leaves the element parked on its poster, which
- * is what reduced-motion visitors get.
+ * Getting the hero film to actually play on a phone takes more than `autoPlay`.
+ *
+ * Safari decides whether a video may start without a tap by reading the `muted`
+ * *attribute* off the markup, and React only ever sets the `muted` *property* —
+ * so the attribute is absent and iOS blocks the play. Stamping it on via the ref
+ * before the first play attempt is what makes autoplay legal there.
+ *
+ * Chrome has a different failure: it suspends a muted autoplaying video that
+ * wasn't on screen at load and does NOT restart it when the visitor scrolls
+ * down, so the section sits on a frozen frame. Driving playback off an
+ * IntersectionObserver fixes that and stops decoding work for a section nobody
+ * is looking at.
+ *
+ * When a browser refuses anyway — iOS Low Power Mode blocks autoplay outright,
+ * whatever the markup says — we retry once on the visitor's first touch or
+ * scroll, which counts as the gesture the refusal was asking for.
+ *
+ * `enabled: false` leaves the element parked on its poster, which is what
+ * reduced-motion visitors get.
  */
 function useAutoplayInView(enabled: boolean) {
   const ref = useRef<HTMLVideoElement>(null);
@@ -49,17 +62,49 @@ function useAutoplayInView(enabled: boolean) {
       video.pause();
       return;
     }
-    const play = () => void video.play().catch(() => {});
+
+    // React sets muted as a property only; iOS reads the attribute.
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+
+    let released = false;
+    const onGesture = () => {
+      if (released) return;
+      released = true;
+      window.removeEventListener("touchstart", onGesture);
+      window.removeEventListener("scroll", onGesture);
+      window.removeEventListener("pointerdown", onGesture);
+      void video.play().catch(() => {});
+    };
+    const armGestureRetry = () => {
+      window.addEventListener("touchstart", onGesture, { once: true, passive: true });
+      window.addEventListener("pointerdown", onGesture, { once: true, passive: true });
+      window.addEventListener("scroll", onGesture, { once: true, passive: true });
+    };
+    const play = () => {
+      // A phone that dropped the source to save data has nothing to play yet.
+      if (video.readyState === 0) video.load();
+      void video.play().catch(armGestureRetry);
+    };
+
     if (!("IntersectionObserver" in window)) {
       play();
-      return;
+      return () => onGesture();
     }
     const observer = new IntersectionObserver(
       ([entry]) => (entry.isIntersecting ? play() : video.pause()),
       { threshold: 0.1 },
     );
     observer.observe(video);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      released = true;
+      window.removeEventListener("touchstart", onGesture);
+      window.removeEventListener("pointerdown", onGesture);
+      window.removeEventListener("scroll", onGesture);
+    };
   }, [enabled]);
   return ref;
 }

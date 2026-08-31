@@ -5,6 +5,8 @@ import { filterAndSortProducts, isCustomerFacingMappedProduct, STOREFRONT_CATALO
 import { trpc } from "@/lib/trpc";
 import { ArrowDownUp, LoaderCircle } from "lucide-react";
 import { useMemo, useState } from "react";
+import { Link, useSearchParams } from "wouter";
+import { X } from "lucide-react";
 
 const filters = [
   { label: "All pieces", key: "all" },
@@ -18,8 +20,16 @@ export default function Shop() {
   const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_PAGE_SIZE });
   const [activeFilter, setActiveFilter] = useState<CatalogFilter>("all");
   const [sortMode, setSortMode] = useState<CatalogSortMode>("featured");
+  // The menu navigates by free-text term (`q`) and carries the wording it used
+  // (`label`) so the heading reads back the club the visitor actually clicked.
+  const [searchParams] = useSearchParams();
+  const query = searchParams.get("q") ?? "";
+  const queryLabel = searchParams.get("label") ?? query;
   const mappedProducts = useMemo(() => products.filter(isCustomerFacingMappedProduct), [products]);
-  const filteredProducts = useMemo(() => filterAndSortProducts(mappedProducts, activeFilter, sortMode), [activeFilter, mappedProducts, sortMode]);
+  const filteredProducts = useMemo(
+    () => filterAndSortProducts(mappedProducts, activeFilter, sortMode, query),
+    [activeFilter, mappedProducts, sortMode, query],
+  );
 
   return (
     <div className="store-page store-page--light">
@@ -27,8 +37,17 @@ export default function Shop() {
       <main>
         <section className="shop-intro">
           <p className="section-index">02 / The archive</p>
-          <h1>Football,<br /><em>collected.</em></h1>
-          <p>Rare shirts, cult classics, and contemporary drops selected for the way they carry the game beyond matchday.</p>
+          {query ? (
+            <>
+              <h1>{queryLabel},<br /><em>collected.</em></h1>
+              <Link href="/shop" className="shop-intro__clear">Clear filter <X size={14} /></Link>
+            </>
+          ) : (
+            <>
+              <h1>Football,<br /><em>collected.</em></h1>
+              <p>Rare shirts, cult classics, and contemporary drops selected for the way they carry the game beyond matchday.</p>
+            </>
+          )}
         </section>
         <section className="shop-grid-section">
           <div className="shop-toolbar">
@@ -42,7 +61,7 @@ export default function Shop() {
           </div>
           {isLoading ? <div className="shop-loading"><LoaderCircle className="spin" size={28} /> Curating the archive</div> : filteredProducts.length ? (
             <div className="shop-product-grid">{filteredProducts.map(product => <ProductCard key={product.id} product={product} />)}</div>
-          ) : <div className="shop-empty"><p>No pieces are in this part of the archive right now.</p><button onClick={() => setActiveFilter("all")}>View all pieces</button></div>}
+          ) : <div className="shop-empty"><p>No pieces are in this part of the archive right now.</p>{activeFilter !== "all" ? <button onClick={() => setActiveFilter("all")}>View all pieces</button> : <Link href="/shop">Browse the whole archive</Link>}</div>}
         </section>
       </main>
       <StoreFooter />
