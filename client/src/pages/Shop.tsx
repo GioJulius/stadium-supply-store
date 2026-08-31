@@ -1,6 +1,6 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { ProductCard } from "@/components/ProductCard";
-import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
+import { SearchForm, StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { filterAndSortProducts, isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE, type CatalogFilter, type CatalogSortMode } from "@/lib/catalog";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownUp, LoaderCircle } from "lucide-react";
@@ -51,6 +51,7 @@ export default function Shop() {
           )}
         </section>
         <section className="shop-grid-section">
+          <SearchForm className="store-search--shop" />
           <div className="shop-toolbar">
             <p>{String(filteredProducts.length).padStart(2, "0")} pieces available</p>
             <div className="catalog-controls">

@@ -64,12 +64,12 @@ function MenuBranch({ node, depth, counts, onNavigate }: { node: NavNode; depth:
  * the menu links use, so a typed term and a tapped club end up in exactly the
  * same filter — there is no second search implementation to keep in step.
  */
-function SearchForm({ onSubmit, autoFocus = false }: { onSubmit?: () => void; autoFocus?: boolean }) {
+export function SearchForm({ onSubmit, autoFocus = false, className = "" }: { onSubmit?: () => void; autoFocus?: boolean; className?: string }) {
   const [term, setTerm] = useState("");
   const [, navigate] = useLocation();
   return (
     <form
-      className="store-search"
+      className={`store-search ${className}`}
       role="search"
       onSubmit={event => {
         event.preventDefault();

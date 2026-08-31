@@ -302,3 +302,47 @@ body { font-family:"Manrope",Arial,sans-serif; }
   .review-card--wide blockquote, .review-card--tall blockquote { font-size:18px; }
   .reviews-empty { padding:52px 26px 66px; }
 }
+
+/* The header search is a small affordance in the nav strip; on the shop itself
+   it needs to read as the primary way to find a kit, so it gets full width and
+   a real field size. */
+.store-search--shop { display:flex; width:100%; margin:0 0 26px; padding-bottom:13px; opacity:1; border-bottom:1px solid rgba(18,25,44,.28); }
+.store-search--shop svg { width:18px; height:18px; opacity:.55; }
+.store-search--shop input { width:100%; font:400 16px/1.2 "Manrope",sans-serif; letter-spacing:0; }
+.store-search--shop input::placeholder { opacity:.45; }
+@media (max-width:620px) { .store-search--shop { margin-bottom:20px; } .store-search--shop input { font-size:15px; } }
+
+/* ---- Section backgrounds -------------------------------------------------
+   Both sections were flat brand colour. They now carry a photograph, but the
+   brand colour stays as a tint over it rather than being replaced: the image
+   sits under a colour wash plus a gradient that deepens toward the text, so
+   the headline keeps its contrast at any crop and the sections still read as
+   part of the same site rather than as two stock photos.
+
+   The photograph is decorative, so it goes in CSS rather than markup — there
+   is nothing for a screen reader to announce. */
+.manifesto-section, .instagram-section { background-size: cover; background-position: center; background-repeat: no-repeat; isolation: isolate; }
+
+.manifesto-section {
+  background-image:
+    linear-gradient(100deg, rgba(16,33,60,.94) 0%, rgba(16,33,60,.78) 42%, rgba(16,33,60,.62) 100%),
+    url("/media/section-kit-is-never-just-a-kit.jpg");
+}
+.instagram-section {
+  background-image:
+    linear-gradient(180deg, rgba(26,145,220,.86) 0%, rgba(20,110,170,.90) 55%, rgba(14,74,116,.94) 100%),
+    url("/media/section-follow-the-movement.jpg");
+}
+
+/* The oversized "02" and "SS" watermarks were tuned against flat colour and
+   fight the photograph; softened so the image reads instead. */
+.manifesto-section__number { color: rgba(150,196,232,.10); }
+.instagram-section:before { color: rgba(255,255,255,.09); }
+
+@media (max-width: 620px) {
+  /* A cover crop on a tall narrow box would otherwise put the shirt straight
+     behind the headline. Hold the quiet side of each frame instead, so the
+     photograph reads as depth behind the type rather than competing with it. */
+  .manifesto-section { background-position: 88% center; }
+  .instagram-section { background-position: 60% center; }
+}
