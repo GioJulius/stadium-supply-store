@@ -3,44 +3,46 @@ import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { REVIEWS, reviewHref, type Review } from "@/lib/reviews";
 import { REVIEWS_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { ArrowUpRight, Quote } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "wouter";
 
 /**
- * Reuses the reveal-on-scroll the rest of the site already uses rather than
- * pulling in a motion library for one page — the cards then enter exactly like
- * every other section instead of in a style of their own.
+ * Reveals the grid as one unit rather than observing each card.
+ *
+ * Watching twelve cards individually left four of them permanently invisible:
+ * a card whose row is skipped past, or which never reaches the observer's
+ * threshold, simply never gets its class and stays at opacity 0. Missing
+ * animation is a shrug; a missing review is lost social proof, so the grid
+ * itself is the single trigger and every card follows it on a stagger.
  */
-function useScrollReveals() {
+function useRevealOnce<T extends HTMLElement>(ref: React.RefObject<T | null>) {
   useEffect(() => {
-    const nodes = Array.from(document.querySelectorAll<HTMLElement>("[data-scroll-reveal]"));
+    const node = ref.current;
+    if (!node) return;
+    const reveal = () => node.classList.add("is-revealed");
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced || !("IntersectionObserver" in window)) {
-      nodes.forEach(n => n.classList.add("is-revealed"));
-      return;
-    }
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-revealed");
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.15 });
-    nodes.forEach(n => observer.observe(n));
-    return () => observer.disconnect();
-  }, []);
+    if (reduced || !("IntersectionObserver" in window)) { reveal(); return; }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      reveal();
+      observer.disconnect();
+    }, { threshold: 0.05 });
+    observer.observe(node);
+    // Whatever happens, the reviews are on screen shortly after arrival.
+    const failsafe = window.setTimeout(reveal, 1200);
+    return () => { observer.disconnect(); window.clearTimeout(failsafe); };
+  }, [ref]);
 }
 
 function ReviewCard({ review, index }: { review: Review; index: number }) {
   return (
     <a
-      className={`review-card review-card--${review.size ?? "normal"} scroll-reveal`}
+      className={`review-card review-card--${review.size ?? "normal"}`}
       href={reviewHref(review)}
       target="_blank"
       rel="noreferrer"
-      data-scroll-reveal
       // Staggered by index so the grid resolves in reading order.
-      style={{ transitionDelay: `${Math.min(index, 8) * 60}ms` }}
+      style={{ transitionDelay: `${Math.min(index, 9) * 55}ms` }}
     >
       <Quote size={20} aria-hidden="true" />
       <blockquote>{review.quote}</blockquote>
@@ -56,7 +58,8 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
 }
 
 export default function Reviews() {
-  useScrollReveals();
+  const gridRef = useRef<HTMLElement>(null);
+  useRevealOnce(gridRef);
   const hasReviews = REVIEWS.length > 0;
 
   return (
@@ -70,7 +73,7 @@ export default function Reviews() {
         </section>
 
         {hasReviews ? (
-          <section className="reviews-grid">
+          <section className="reviews-grid" ref={gridRef}>
             {REVIEWS.map((review, index) => (
               <ReviewCard key={`${review.handle}-${index}`} review={review} index={index} />
             ))}
