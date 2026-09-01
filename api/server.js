@@ -60475,6 +60475,7 @@ function normalizeCollection(c) {
 }
 var PERSONALISATION_NAME_KEY = "Name on shirt";
 var BADGE_KEY = "Badge";
+var BADGE_CHOICE_KEY = "Badge type";
 var PERSONALISATION_NUMBER_KEY = "Number on shirt";
 function normalizePersonalisation(line) {
   const read = (key) => (line.attributes ?? []).find((a) => a.key === key)?.value?.trim() ?? "";
@@ -60922,7 +60923,9 @@ var cartLineInputSchema = external_exports.object({
   quantity: external_exports.number().int().min(1).max(99),
   personalisation: personalisationSchema.optional(),
   /** The client's paid competition badge — R50, charged per shirt. */
-  badge: external_exports.boolean().optional()
+  badge: external_exports.boolean().optional(),
+  /** Which competition badge, free text so an unlisted one still gets ordered. */
+  badgeChoice: external_exports.string().trim().max(40).optional()
 });
 function toLineAttributes(line) {
   const p = line.personalisation;
@@ -60930,6 +60933,7 @@ function toLineAttributes(line) {
   if (p?.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
   if (p?.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
   if (line.badge) attributes.push({ key: BADGE_KEY, value: "Yes" });
+  if (line.badge && line.badgeChoice) attributes.push({ key: BADGE_CHOICE_KEY, value: line.badgeChoice });
   return attributes.length ? attributes : void 0;
 }
 var toCartLine = (line) => ({

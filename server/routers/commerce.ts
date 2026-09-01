@@ -23,6 +23,7 @@ import {
   PERSONALISATION_NAME_KEY,
   PERSONALISATION_NUMBER_KEY,
   BADGE_KEY,
+  BADGE_CHOICE_KEY,
 } from "../_core/shopifyNormalize";
 import { reconcileAddonFees } from "../_core/addonFees";
 import { publicProcedure, router } from "../_core/trpc";
@@ -57,6 +58,8 @@ const cartLineInputSchema = z.object({
   personalisation: personalisationSchema.optional(),
   /** The client's paid competition badge — R50, charged per shirt. */
   badge: z.boolean().optional(),
+  /** Which competition badge, free text so an unlisted one still gets ordered. */
+  badgeChoice: z.string().trim().max(40).optional(),
 });
 
 /** Map validated personalisation onto the cart-line attributes Shopify stores. */
@@ -66,6 +69,8 @@ function toLineAttributes(line: z.infer<typeof cartLineInputSchema>) {
   if (p?.name) attributes.push({ key: PERSONALISATION_NAME_KEY, value: p.name.toUpperCase() });
   if (p?.number) attributes.push({ key: PERSONALISATION_NUMBER_KEY, value: p.number });
   if (line.badge) attributes.push({ key: BADGE_KEY, value: "Yes" });
+  // Only meaningful alongside the badge itself, so it is never sent on its own.
+  if (line.badge && line.badgeChoice) attributes.push({ key: BADGE_CHOICE_KEY, value: line.badgeChoice });
   return attributes.length ? attributes : undefined;
 }
 

@@ -84,6 +84,13 @@ video.hero-section__image { background:#1d82c8; pointer-events:none; }
 .personalisation__fields input { height:41px; border:1px solid rgba(18,25,44,.3); background:transparent; padding:0 11px; font:600 15px "Barlow Condensed",sans-serif; letter-spacing:.06em; text-transform:uppercase; color:inherit; }
 .personalisation__fields input:focus-visible { outline:2px solid #1a91dc; outline-offset:-1px; }
 .personalisation__fields small { font:9px "DM Mono",monospace; opacity:.6; }
+/* The badge block reuses the printing fields, but its controls are both
+   full-width: the shared `label:last-child` rule sizes a shirt NUMBER at 82px,
+   which would squash a competition name down to nothing. */
+.personalisation--badge .personalisation__fields { flex-wrap:wrap; }
+.personalisation--badge .personalisation__fields label { flex:1 1 190px; width:auto; }
+.personalisation--badge select { height:41px; border:1px solid rgba(18,25,44,.3); background:transparent; padding:0 8px; font:600 15px "Barlow Condensed",sans-serif; letter-spacing:.06em; text-transform:uppercase; color:inherit; border-radius:0; }
+.personalisation--badge select:focus-visible { outline:2px solid #1a91dc; outline-offset:-1px; }
 .personalisation__hint { margin:11px 0 0; font-size:11px; line-height:1.45; opacity:.72; }
 .cart-item__print { margin:4px 0 0; font:9px "DM Mono",monospace; text-transform:uppercase; opacity:.75; }
 

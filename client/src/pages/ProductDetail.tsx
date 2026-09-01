@@ -3,7 +3,7 @@ import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
 import { isPersonalisable } from "@/lib/catalog";
-import { BADGE_FEE_LABEL, PRINTING_FEE_LABEL } from "@/lib/storeInfo";
+import { BADGE_FEE_LABEL, BADGE_OPTIONS, PRINTING_FEE_LABEL } from "@/lib/storeInfo";
 import { formatMoney } from "@/lib/format";
 import { trpc } from "@/lib/trpc";
 import type { Product } from "@shared/commerce/types";
@@ -35,6 +35,8 @@ function ProductView({ product }: { product: Product }) {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
   const [wantsBadge, setWantsBadge] = useState(false);
+  const [badgeChoice, setBadgeChoice] = useState<string>(BADGE_OPTIONS[0]);
+  const [badgeOther, setBadgeOther] = useState("");
   const { addItem, loading } = useCart();
   const variant = product.variants.find(candidate => candidate.id === selectedVariantId) ?? product.variants[0];
   const image = product.images[selectedImageIndex] ?? product.images[0];
@@ -48,6 +50,10 @@ function ProductView({ product }: { product: Product }) {
     personalisable && wantsPersonalisation && (printName.trim() || printNumber.trim())
       ? { name: printName.trim(), number: printNumber.trim() }
       : undefined;
+  // "Other" is a prompt, not an answer — what the shopper typed is what the
+  // packer needs, and if they typed nothing the line carries no choice at all.
+  const badgeSelection =
+    badgeChoice === "Other" ? (badgeOther.trim() || undefined) : badgeChoice;
   return (
     <main className="product-detail">
       <SizeGuideDialog open={sizeGuideOpen} onClose={() => setSizeGuideOpen(false)} />
@@ -69,10 +75,41 @@ function ProductView({ product }: { product: Product }) {
           </dl>
           {sizeOptions.length > 0 && <div className="size-picker"><p className="eyebrow">Select size <span>{selectedSize}</span><button type="button" className="size-picker__guide" onClick={() => setSizeGuideOpen(true)}>Size guide</button></p><div>{sizeOptions.map(option => { const matchingVariant = product.variants.find(candidate => candidate.selectedOptions.some(selected => selected.name.toLowerCase() === "size" && selected.value === option)); return <button key={option} className={matchingVariant?.id === variant?.id ? "is-selected" : ""} disabled={!matchingVariant || !matchingVariant.availableForSale} onClick={() => matchingVariant && setSelectedVariantId(matchingVariant.id)}>{option}</button>; })}</div></div>}
           {personalisable && (
-            <label className="personalisation__toggle personalisation__toggle--badge">
-              <input type="checkbox" checked={wantsBadge} onChange={event => setWantsBadge(event.target.checked)} />
-              <span>Add the competition badge <b>{BADGE_FEE_LABEL}</b></span>
-            </label>
+            <div className="personalisation personalisation--badge">
+              <label className="personalisation__toggle personalisation__toggle--badge">
+                <input type="checkbox" checked={wantsBadge} onChange={event => setWantsBadge(event.target.checked)} />
+                <span>Add the competition badge <b>{BADGE_FEE_LABEL}</b></span>
+              </label>
+              {wantsBadge && (
+                <div className="personalisation__fields">
+                  <label>
+                    <span className="eyebrow">Which badge</span>
+                    <select
+                      value={badgeChoice}
+                      onChange={event => {
+                        setBadgeChoice(event.target.value);
+                        if (event.target.value !== "Other") setBadgeOther("");
+                      }}
+                    >
+                      {BADGE_OPTIONS.map(option => <option key={option} value={option}>{option}</option>)}
+                    </select>
+                  </label>
+                  {badgeChoice === "Other" && (
+                    <label>
+                      <span className="eyebrow">Tell us which</span>
+                      <input
+                        type="text"
+                        value={badgeOther}
+                        maxLength={40}
+                        placeholder="e.g. Copa del Rey"
+                        autoComplete="off"
+                        onChange={event => setBadgeOther(event.target.value)}
+                      />
+                    </label>
+                  )}
+                </div>
+              )}
+            </div>
           )}
           {personalisable && (
             <div className="personalisation">
@@ -127,7 +164,7 @@ function ProductView({ product }: { product: Product }) {
             <div className="quantity-control quantity-control--large">
               <button onClick={() => setQuantity(Math.max(1, quantity - 1))} aria-label="Decrease quantity"><Minus size={15} /></button><span>{quantity}</span><button onClick={() => setQuantity(quantity + 1)} aria-label="Increase quantity"><Plus size={15} /></button>
             </div>
-            <button className="add-button" disabled={!variant?.availableForSale || loading} onClick={() => variant && addItem(variant.id, quantity, personalisation, wantsBadge)}>
+            <button className="add-button" disabled={!variant?.availableForSale || loading} onClick={() => variant && addItem(variant.id, quantity, personalisation, wantsBadge, badgeSelection)}>
               {variant?.availableForSale ? "Add to bag" : "Sold out"}<span>↗</span>
             </button>
           </div>

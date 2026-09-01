@@ -177,6 +177,12 @@ export function normalizeCollection(c: RawCollection): Collection {
 export const PERSONALISATION_NAME_KEY = "Name on shirt";
 /** Set to "Yes" when the shopper asked for the paid competition badge. */
 export const BADGE_KEY = "Badge";
+/**
+ * Which competition badge, kept separate from the "Yes" above so the add-on
+ * reconciler keeps one flag to test and the fee never depends on the shopper
+ * having chosen a competition. Reaches the packer on the Shopify order line.
+ */
+export const BADGE_CHOICE_KEY = "Badge type";
 export const PERSONALISATION_NUMBER_KEY = "Number on shirt";
 
 function normalizePersonalisation(line: RawCartLine): Personalisation | null {

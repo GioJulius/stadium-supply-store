@@ -70,6 +70,31 @@ export const SIZE_NOTES: SizeNote[] = [
 export const PRINTING_FEE_HANDLE = "name-number-printing";
 export const PRINTING_FEE_LABEL = "+R50";
 export const BADGE_FEE_HANDLE = "competition-badge";
+
+/**
+ * Cart-line attribute keys, mirroring `server/_core/shopifyNormalize.ts` the
+ * same way BADGE_FEE_HANDLE mirrors the reconciler's copy. Read-only here: the
+ * client renders what the server wrote, it never sets these itself.
+ */
+export const BADGE_KEY = "Badge";
+export const BADGE_CHOICE_KEY = "Badge type";
+
+/**
+ * The competition badges the client can actually source. "Other" stays on the
+ * list because the supplier stocks more than this and a shopper who knows what
+ * they want should not be turned away by a dropdown that has not heard of it.
+ */
+export const BADGE_OPTIONS = [
+  "Premier League",
+  "UEFA Champions League",
+  "UEFA Europa League",
+  "La Liga",
+  "Serie A",
+  "Bundesliga",
+  "Ligue 1",
+  "FIFA Club World Cup",
+  "Other",
+] as const;
 export const BADGE_FEE_LABEL = "+R50";
 
 /**

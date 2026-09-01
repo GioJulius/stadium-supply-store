@@ -1,6 +1,6 @@
 import { useCart } from "@/contexts/CartContext";
 import { formatMoney } from "@/lib/format";
-import { BADGE_FEE_HANDLE, PRINTING_FEE_HANDLE } from "@/lib/storeInfo";
+import { BADGE_CHOICE_KEY, BADGE_FEE_HANDLE, BADGE_KEY, PRINTING_FEE_HANDLE } from "@/lib/storeInfo";
 import { Minus, Plus, X } from "lucide-react";
 
 export function CartDrawer() {
@@ -47,6 +47,11 @@ export function CartDrawer() {
                   {item.personalisation && (
                     <p className="cart-item__print">
                       Printed: {[item.personalisation.name, item.personalisation.number].filter(Boolean).join(" ")}
+                    </p>
+                  )}
+                  {item.attributes?.[BADGE_KEY] === "Yes" && (
+                    <p className="cart-item__print">
+                      Badge: {item.attributes[BADGE_CHOICE_KEY] || "to be confirmed"}
                     </p>
                   )}
                 </div>
