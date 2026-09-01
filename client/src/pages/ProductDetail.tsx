@@ -2,7 +2,7 @@ import { CartDrawer } from "@/components/CartDrawer";
 import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
-import { isPersonalisable } from "@/lib/catalog";
+import { isPersonalisable, paragraphsFrom } from "@/lib/catalog";
 import { BADGE_FEE_LABEL, BADGE_OPTIONS, PRINTING_FEE_LABEL } from "@/lib/storeInfo";
 import { formatMoney } from "@/lib/format";
 import { trpc } from "@/lib/trpc";
@@ -44,6 +44,11 @@ function ProductView({ product }: { product: Product }) {
   const sizeOptions = product.options.find(option => option.name.toLowerCase() === "size")?.values ?? [];
   const selectedSize = variant?.selectedOptions.find(option => option.name.toLowerCase() === "size")?.value;
   const personalisable = isPersonalisable(product);
+  // Shopify's plain `description` strips the tags without putting anything back,
+  // so four paragraphs arrive as one run-on sentence. Read the paragraphs out of
+  // the HTML field instead — the text is extracted rather than injected, so no
+  // markup from the admin reaches the page.
+  const descriptionParagraphs = paragraphsFrom(product.descriptionHtml, product.description);
   // An opted-in shopper who has typed nothing yet gets the plain shirt rather
   // than a blocked button — the form is an offer, not a required step.
   const personalisation =
@@ -67,7 +72,9 @@ function ProductView({ product }: { product: Product }) {
           <p className="eyebrow">{product.vendor || "Stadium Supply"} / {product.productType || "Football kit"}</p>
           <h1>{product.title}</h1>
           <p className="product-price">{formatMoney(variant?.price ?? product.priceRange.min)}</p>
-          <p className="product-description">{product.description || "A carefully sourced piece from the Stadium Supply archive."}</p>
+          {descriptionParagraphs.length
+            ? descriptionParagraphs.map(paragraph => <p key={paragraph} className="product-description">{paragraph}</p>)
+            : <p className="product-description">A carefully sourced piece from the Stadium Supply archive.</p>}
           <dl className="product-specs">
             <div><dt>Condition</dt><dd>{condition}</dd></div>
             <div><dt>Size</dt><dd>{sizeOptions.length ? "Small–XL" : size}</dd></div>

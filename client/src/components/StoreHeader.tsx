@@ -214,6 +214,10 @@ export function StoreFooter() {
         <p>Curated football culture<br />from every era.</p>
         <Link href="/how-it-works">How it works ↗</Link>
         <Link href="/reviews">Read our reviews ↗</Link>
+        <Link href="/shipping">Shipping ↗</Link>
+        <Link href="/returns">Returns &amp; refunds ↗</Link>
+        <Link href="/privacy">Privacy ↗</Link>
+        <Link href="/terms">Terms ↗</Link>
         <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a>
         <a href={TIKTOK_URL} target="_blank" rel="noreferrer">TikTok @stadium_supply ↗</a>
         <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram @stadium.supply ↗</a>

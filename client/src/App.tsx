@@ -6,6 +6,7 @@ import Reviews from "@/pages/Reviews";
 import HowItWorks from "@/pages/HowItWorks";
 import Shipping from "@/pages/Shipping";
 import NotFound from "@/pages/NotFound";
+import Policy from "@/pages/Policy";
 import ProductDetail from "@/pages/ProductDetail";
 import Shop from "@/pages/Shop";
 import { Route, Switch } from "wouter";
@@ -23,6 +24,9 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/reviews" component={Reviews} />
       <Route path="/product/:handle" component={ProductDetail} />
+      <Route path="/returns">{() => <Policy slug="returns" />}</Route>
+      <Route path="/privacy">{() => <Policy slug="privacy" />}</Route>
+      <Route path="/terms">{() => <Policy slug="terms" />}</Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

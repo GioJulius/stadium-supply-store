@@ -111,7 +111,8 @@
     "start": "NODE_ENV=production node dist/index.js",
     "test": "vitest run",
     "build:api": "esbuild server/vercelEntry.ts --platform=node --bundle --format=esm --outfile=api/server.js --target=node20 --log-level=warning --banner:js=\"import{createRequire as __cr}from'module';const require=__cr(import.meta.url);\"",
-    "build:vercel": "vite build --config vite.config.vercel.ts && npm run build:api"
+    "build:vercel": "vite build --config vite.config.vercel.ts && node scripts/prerender-seo.mjs && npm run build:api",
+    "seo": "node scripts/prerender-seo.mjs"
   },
   "type": "module",
   "version": "1.0.0"

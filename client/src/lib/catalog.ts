@@ -128,3 +128,25 @@ export function isPersonalisable(product: Product): boolean {
   if (/kids|kiddies/i.test(haystack)) return true;
   return /fan version|fan jersey/i.test(haystack);
 }
+
+/**
+ * Split a Shopify description into display paragraphs.
+ *
+ * `descriptionHtml` is the only field that still knows where the breaks were;
+ * the plain `description` has had its tags removed with nothing in their place.
+ * Text is extracted from the markup, never injected as HTML, so an unexpected
+ * tag from the Shopify admin renders as inert text rather than as markup.
+ */
+export function paragraphsFrom(html: string | null | undefined, fallback = ""): string[] {
+  const source = (html ?? "").trim();
+  if (!source) return fallback.trim() ? [fallback.trim()] : [];
+  return source
+    .split(/<\/(?:p|div|li)>|<br\s*\/?>/i)
+    .map(chunk => chunk.replace(/<[^>]*>/g, ""))
+    .map(chunk => chunk
+      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+      .replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+}

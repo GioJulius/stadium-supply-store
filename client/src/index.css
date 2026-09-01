@@ -364,3 +364,11 @@ body { font-family:"Manrope",Arial,sans-serif; }
   .manifesto-section { background-position: 88% center; }
   .instagram-section { background-position: 60% center; }
 }
+
+/* --- Policy pages (returns, privacy, terms) --- */
+.policy { max-width:760px; margin:0 auto; padding:0 var(--page-gutter,24px) 90px; }
+.policy__section { margin-bottom:38px; }
+.policy__section h2 { font:600 clamp(19px,2.4vw,25px)/1.2 "Barlow Condensed",sans-serif; letter-spacing:.02em; text-transform:uppercase; margin:0 0 12px; }
+.policy__section p { font:15px/1.68 "Barlow",sans-serif; opacity:.86; margin:0 0 13px; max-width:66ch; }
+.policy .size-guide__whatsapp { display:inline-flex; margin-top:6px; }
+@media (max-width:620px){ .policy__section { margin-bottom:30px; } .policy__section p { font-size:14.5px; } }
