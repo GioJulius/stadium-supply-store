@@ -16,9 +16,17 @@
  * Product pages also carry Product JSON-LD, which is what puts a price and
  * stock state in a Google result rather than a bare blue link.
  *
- * Failure here must NEVER break a deploy: if Shopify is unreachable or the
- * credentials are missing, product pages are skipped with a warning and the
- * static routes, robots.txt and sitemap.xml are still written.
+ * The product data comes from a COMMITTED snapshot, not from a live call at
+ * build time. The first deploy of this script proved why: Vercel's build step
+ * has no Shopify credentials, so the fetch failed silently and shipped a
+ * sitemap with 9 urls instead of 206, with every product page falling back to
+ * the generic shell. Reading a snapshot makes the build deterministic, offline
+ * and secret-free. Running this locally refreshes the snapshot, so the flow is
+ * "change the catalogue, run `npm run seo`, commit".
+ *
+ * Failure here must NEVER break a deploy: with no snapshot and no credentials,
+ * product pages are skipped with a warning and the static routes, robots.txt
+ * and sitemap.xml are still written.
  *
  * Usage: node scripts/prerender-seo.mjs [outDir]   (default dist/public)
  */
@@ -136,11 +144,13 @@ console.log(`prerender-seo: ${STATIC_ROUTES.length} static routes`);
 
 // ---- Product pages ---------------------------------------------------------
 
+const SNAPSHOT = new URL("./seo-snapshot.json", import.meta.url);
+
 let products = [];
 const domain = env.SHOPIFY_STORE_DOMAIN;
 const token = env.SHOPIFY_ADMIN_API_ACCESS_TOKEN;
 if (!domain || !token) {
-  console.warn("prerender-seo: no Shopify credentials — skipping product pages");
+  console.log("prerender-seo: no Shopify credentials — using the committed snapshot");
 } else {
   try {
     const Q = `query($c:String){products(first:100,after:$c){pageInfo{hasNextPage endCursor}edges{node{
@@ -159,8 +169,20 @@ if (!domain || !token) {
       products.push(...j.data.products.edges.map(e => e.node));
       cursor = j.data.products.pageInfo.hasNextPage ? j.data.products.pageInfo.endCursor : null;
     } while (cursor);
+    writeFileSync(SNAPSHOT, JSON.stringify(products, null, 1));
+    console.log(`prerender-seo: refreshed snapshot from Shopify (${products.length} products)`);
   } catch (err) {
-    console.warn(`prerender-seo: product fetch failed (${err.message}) — skipping product pages`);
+    console.warn(`prerender-seo: live fetch failed (${err.message}) — falling back to the snapshot`);
+    products = [];
+  }
+}
+
+if (!products.length) {
+  try {
+    products = JSON.parse(readFileSync(SNAPSHOT, "utf8"));
+    console.log(`prerender-seo: snapshot loaded (${products.length} products)`);
+  } catch {
+    console.warn("prerender-seo: no snapshot on disk — product pages will be skipped");
     products = [];
   }
 }
