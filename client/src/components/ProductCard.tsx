@@ -18,8 +18,10 @@ export function ProductCard({ product, featured = false }: { product: Product; f
       <div className="product-card__visual">
         {image ? <img src={image.url} alt={image.altText ?? product.title} /> : <div className="product-card__fallback">Stadium<br />Supply</div>}
         {alternateImage ? <img className="product-card__image--alternate" src={alternateImage.url} alt="" aria-hidden="true" /> : null}
-        <span className="product-card__badge">{productBadge(product)}</span>
-        <span className="product-card__price-tag">{formatMoney(minPrice)}</span>
+        <div className="product-card__toprow">
+          <span className="product-card__badge">{productBadge(product)}</span>
+          <span className="product-card__price-tag">{formatMoney(minPrice)}</span>
+        </div>
         {product.images.length > 1 ? <span className="product-card__gallery-count">{String(product.images.length).padStart(2, "0")} views</span> : null}
         <span className="product-card__quick">Shop this kit</span>
         <span className="product-card__arrow"><ArrowUpRight size={19} /></span>
