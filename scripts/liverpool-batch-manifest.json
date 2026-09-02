@@ -1,0 +1,187 @@
+{
+  "note": "Liverpool batch supplied by the client on 1 Sep 2026 as 38 photographs (media/WhatsApp Image 2026-09-01 at 10.00.31-10.03.47 PM) with a price caption on almost every message. Kits identified from the shirt itself and confirmed against the published kit record: the plain red / cream / sea-green adidas set is 2025-26 home, away and third; the white shirt with the adidas Trefoil and the heritage Liver bird is the 2026-27 away, unveiled 28 Jul 2026. Photo #3 and #4 are the front and back of one reversible retro jacket.",
+  "priceNote": "Prices are the client's own captions, read off the chat screenshots. They land exactly on the standing tier table in client-pricing-and-sizing-audit.md: fan R500 (S-4XL), fan long sleeve R600 (S-4XL), player R650 (S-2XL), player long sleeve R750, retro R700, hoodie/half-zip R850, jacket R1000, training set R700. The two kids kits arrived without a caption and use the standing kids tier, R450.",
+  "sizes": {
+    "fan": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "player": ["S", "M", "L", "XL", "2XL"],
+    "playerXL4": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "adult": ["S", "M", "L", "XL", "2XL"],
+    "kids": ["2-3", "4-5", "6-7", "8-9", "10-11"]
+  },
+  "heldBack": [
+    { "photo": 6,  "reason": "cream AXA windbreaker — already listed twice as liverpool-2024-25-windbreaker-jacket-axa (R1000) and liverpool-2025-26-training-jacket (R450)" },
+    { "photo": 10, "reason": "teal hoodie — already listed twice as liverpool-2024-25-training-hoodie-teal (R850) and liverpool-2025-26-training-hoodie (R450)" },
+    { "photo": 21, "reason": "25/26 third fan shirt — already listed as liverpool-2025-26-third-jersey at R450/S-XL; needs a price and size correction, not a second listing" },
+    { "photo": 22, "reason": "25/26 away fan long sleeve — already listed as liverpool-2025-26-away-long-sleeve-jersey at R600" },
+    { "photo": 23, "reason": "25/26 away fan shirt — already listed as liverpool-2025-26-away-jersey at R450/S-XL" },
+    { "photo": 25, "reason": "25/26 home fan long sleeve — already listed as liverpool-2025-26-home-long-sleeve-jersey at R600" },
+    { "photo": 26, "reason": "25/26 home fan shirt — already listed as liverpool-2025-26-home-jersey at R450/S-XL" },
+    { "photo": 27, "reason": "25/26 home player long sleeve — liverpool-2025-26-home-jersey-player (R650) shows a long sleeve; may be this exact garment" },
+    { "photo": 28, "reason": "25/26 home player shirt — may be the short-sleeve half of liverpool-2025-26-home-jersey-player (R650)" },
+    { "photo": 36, "reason": "black/red AXA quarter-zip set — may be 2026-27-liverpool-half-zip-training-set (R850), whose only photo is a close crop of a black zip" }
+  ],
+  "products": [
+    {
+      "photos": [1],
+      "title": "Liverpool 2025/26 Training Tracksuit (Red)",
+      "tier": "adult", "price": "1000.00", "productType": "Jacket / Windbreaker", "sizes": "adult",
+      "blurb": "Full tracksuit — red adidas track jacket with white shoulder stripes and the Liver bird on the chest, paired with black tapered pants carrying white side stripes and a white Liver bird on the thigh. Stand collar, full-length zip, zipped hand pockets."
+    },
+    {
+      "photos": [2],
+      "title": "Liverpool AXA Training Quarter-Zip Set (White)",
+      "tier": "adult", "price": "850.00", "productType": "Half-Zip Training Top", "sizes": "adult",
+      "blurb": "Training top and pants. The top is white with black raglan sleeves and shoulder blocks, the red AXA wordmark across the chest beneath the Liver bird, and a short zip at the collar. The black pants carry white side stripes and a red Liver bird."
+    },
+    {
+      "photos": [3, 4],
+      "title": "Liverpool Retro Carlsberg Track Jacket (Green)",
+      "tier": "adult", "price": "1000.00", "productType": "Jacket / Windbreaker", "sizes": "adult",
+      "blurb": "Retro-cut adidas track jacket in dark green and black, with white chevron stripes across the chest and down the sleeves. The club's heritage shield sits on the right chest and the adidas wordmark on the left; the back carries a large adidas and Carlsberg print. Stand collar, full-length zip, elasticated hem."
+    },
+    {
+      "photos": [5],
+      "title": "Liverpool Pre-Match Shirt (Black Check)",
+      "tier": "fan", "price": "500.00", "productType": "Soccer Fan Version", "sizes": "fan",
+      "blurb": "Pre-match shirt in black with a deep red pixelated check breaking across the body, white shoulder stripes and Standard Chartered across the chest. Crew neck, Expedia on the right sleeve."
+    },
+    {
+      "photos": [7],
+      "title": "Liverpool AXA Windbreaker (Black)",
+      "tier": "adult", "price": "1000.00", "productType": "Jacket / Windbreaker", "sizes": "adult",
+      "blurb": "Lightweight woven windbreaker in black with white side panels and red shoulder stripes, the Liver bird and a red AXA wordmark on the left chest. Stand collar, full-length zip, elasticated cuffs."
+    },
+    {
+      "photos": [8],
+      "title": "Liverpool Training Hoodie (Black)",
+      "tier": "adult", "price": "850.00", "productType": "Hoodie", "sizes": "adult",
+      "blurb": "Pullover hoodie in black with a white adidas mark on the left chest, the Liver bird opposite, and a single white stripe running down each sleeve. Kangaroo pocket, brushed fleece back, ribbed cuffs and hem."
+    },
+    {
+      "photos": [9],
+      "title": "Liverpool Training Hoodie (Red)",
+      "tier": "adult", "price": "850.00", "productType": "Hoodie", "sizes": "adult",
+      "blurb": "Pullover hoodie in red with a white adidas mark on the left chest, the Liver bird opposite, and a single white stripe running down each sleeve. Kangaroo pocket, brushed fleece back, ribbed cuffs and hem."
+    },
+    {
+      "photos": [11],
+      "title": "Liverpool 2026/27 Away Shirt (Fan Version)",
+      "tier": "fan", "price": "500.00", "productType": "Soccer Fan Version", "sizes": "fan",
+      "blurb": "The 2026/27 away shirt, built on a white base with red detailing and drawing on the club's mid-1980s away shirts. The adidas Trefoil returns on the left chest alongside a heritage Liver bird crest, with Standard Chartered across the front and Expedia on the sleeve. Red ribbed collar and cuffs."
+    },
+    {
+      "photos": [12],
+      "title": "Liverpool Retro Carlsberg Long Sleeve Shirt (Green/White)",
+      "tier": "adult", "price": "800.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Long-sleeve retro shirt split vertically between white and dark green, with black and white stripes running the length of each sleeve and Carlsberg across the chest. Buttoned placket collar and the club's heritage shield on the right."
+    },
+    {
+      "photos": [13],
+      "title": "Liverpool 2026/27 Away Shirt (Player Version)",
+      "tier": "player", "price": "650.00", "productType": "Soccer Player Version", "sizes": "player",
+      "blurb": "Player-cut 2026/27 away shirt on a white base with red detailing, the returning adidas Trefoil and the heritage Liver bird crest. Standard Chartered across the front, Expedia on the sleeve. Slimmer through the body than the fan version."
+    },
+    {
+      "photos": [14],
+      "title": "Liverpool 2026/27 Away Long Sleeve Shirt (Fan Version)",
+      "tier": "fan", "price": "600.00", "productType": "Soccer Fan Version Long Sleeve", "sizes": "fan",
+      "blurb": "Long-sleeve 2026/27 away shirt, white with red detailing, the adidas Trefoil and heritage Liver bird crest. Standard Chartered across the front, red stripes on the shoulders and red ribbed cuffs."
+    },
+    {
+      "photos": [15],
+      "title": "Liverpool 2026/27 Away Long Sleeve Shirt (Player Version)",
+      "tier": "player", "price": "750.00", "productType": "Soccer Player Version", "sizes": "player",
+      "blurb": "Player-cut long-sleeve 2026/27 away shirt in white with red detailing, the adidas Trefoil and heritage Liver bird crest. Red stripes run the full length of both sleeves to a red cuff. Slimmer through the body than the fan version."
+    },
+    {
+      "photos": [16],
+      "title": "Liverpool AXA Training Kit (Black)",
+      "tier": "adult", "price": "700.00", "productType": "Training Top & Shorts", "sizes": "adult",
+      "blurb": "Training shirt and shorts. The shirt is black with white side panels, red shoulder stripes and the red AXA wordmark across the chest below the Liver bird. Matching black shorts with red stripes, a white flash and a red Liver bird."
+    },
+    {
+      "photos": [17],
+      "title": "Liverpool Retro Shirt (Black and Gold)",
+      "tier": "adult", "price": "500.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Retro-cut shirt in black with a tonal all-over pattern, finished with gold piping down the front and gold shoulder stripes. Black polo collar, the adidas Trefoil on the left chest and a gold Liver bird opposite."
+    },
+    {
+      "photos": [18],
+      "title": "Liverpool AXA Training Kit (Cream)",
+      "tier": "adult", "price": "700.00", "productType": "Training Top & Shorts", "sizes": "adult",
+      "blurb": "Training shirt and shorts. The shirt is cream with black side panels, red shoulder stripes and the red AXA wordmark across the chest below the Liver bird. Matching black shorts with red stripes, a cream flash and a red Liver bird."
+    },
+    {
+      "photos": [19],
+      "title": "Liverpool 2025/26 Third Long Sleeve Shirt (Player Version)",
+      "tier": "player", "price": "750.00", "productType": "Soccer Player Version", "sizes": "player",
+      "blurb": "Player-cut long-sleeve 2025/26 third shirt on the season's sea-green base, with the adidas Trefoil, white shoulder stripes and Standard Chartered across the chest. White ribbed cuffs and a black-trimmed V-neck."
+    },
+    {
+      "photos": [20],
+      "title": "Liverpool 2025/26 Third Long Sleeve Shirt (Fan Version)",
+      "tier": "fan", "price": "600.00", "productType": "Soccer Fan Version Long Sleeve", "sizes": "fan",
+      "blurb": "Long-sleeve 2025/26 third shirt on a sea-green base with black and white trim at the collar and cuffs, white shoulder stripes and Standard Chartered across the chest. The adidas Trefoil sits on the left, the club shield opposite."
+    },
+    {
+      "photos": [24],
+      "title": "Liverpool 2025/26 Away Long Sleeve Shirt (Player Version)",
+      "tier": "player", "price": "750.00", "productType": "Soccer Player Version", "sizes": "player",
+      "blurb": "Player-cut long-sleeve 2025/26 away shirt on the season's cream off-white base with red and black detailing. Red stripes run the full length of both sleeves to a black cuff, with Standard Chartered across the chest and Expedia on the sleeve."
+    },
+    {
+      "photos": [29],
+      "title": "Liverpool Home Shirt (Nike)",
+      "tier": "fan", "price": "550.00", "productType": "Soccer Fan Version", "sizes": "fan",
+      "blurb": "Red home shirt from the club's Nike era, with a white ribbed crew collar and matching white sleeve cuffs. The Nike swoosh sits on the left chest, the Liver bird opposite, Standard Chartered across the front and Expedia on the sleeve."
+    },
+    {
+      "photos": [30],
+      "title": "Liverpool 1989/91 Candy Retro Shirt",
+      "tier": "adult", "price": "700.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Reissue of the 1989–91 home shirt — red with the white speckled shard print adidas used across the front and sleeves, a white ribbed collar and the Candy sponsor across the chest. One of the club's most recognisable adidas shirts."
+    },
+    {
+      "photos": [31],
+      "title": "Liverpool 1996/97 Reebok Retro Away Shirt (Ecru)",
+      "tier": "adult", "price": "700.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Reissue of the ecru Reebok away shirt, with red and green ribbed trim at the collar and cuffs, the oval club crest on the right chest and Carlsberg across the front."
+    },
+    {
+      "photos": [32],
+      "title": "Liverpool Retro Away Shirt (Carlsberg, Green Chevron)",
+      "tier": "adult", "price": "700.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Retro away shirt in white with dark green sleeves and bold black chevrons sweeping across the body. Green polo collar with black trim, the adidas mark and club shield at the chest and Carlsberg across the front."
+    },
+    {
+      "photos": [33],
+      "title": "Liverpool Retro Away Shirt (Carlsberg, Navy Panel)",
+      "tier": "adult", "price": "700.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Retro away shirt in white with deep navy sleeve and side panels, navy shoulder stripes and a red-trimmed collar. The Liver bird sits on the right chest with Carlsberg across the front."
+    },
+    {
+      "photos": [34],
+      "title": "Liverpool Crown Paints Retro Away Shirt",
+      "tier": "adult", "price": "700.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Reissue of the white Crown Paints away shirt from the club's 1980s adidas run, with red trim at the V-neck and cuffs, red shoulder stripes, the adidas Trefoil on the left chest and the Liver bird opposite."
+    },
+    {
+      "photos": [35],
+      "title": "Liverpool 2006/07 Carlsberg Retro Away Shirt (Yellow)",
+      "tier": "adult", "price": "700.00", "productType": "Soccer Retro", "sizes": "adult",
+      "blurb": "Reissue of the 2006/07 away shirt — bold yellow with red trim on the V-neck collar, red adidas stripes on the shoulders and fine red accent lines across the torso, with Carlsberg across the chest."
+    },
+    {
+      "photos": [37],
+      "title": "Liverpool 2025/26 Away Kids Kit",
+      "tier": "kids", "price": "450.00", "productType": "Kids Kit", "sizes": "kids",
+      "blurb": "Kids shirt and shorts in the 2025/26 away colours — cream off-white shirt with red and black trim at the collar and cuffs, Standard Chartered across the chest, paired with black shorts carrying a red flash and the Liver bird."
+    },
+    {
+      "photos": [38],
+      "title": "Liverpool 2026/27 Away Kids Kit",
+      "tier": "kids", "price": "450.00", "productType": "Kids Kit", "sizes": "kids",
+      "blurb": "Kids shirt and shorts in the 2026/27 away colours — white shirt with red detailing, the adidas Trefoil and heritage Liver bird crest, paired with red shorts with white side stripes."
+    }
+  ]
+}

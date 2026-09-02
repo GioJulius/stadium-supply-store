@@ -1,0 +1,57 @@
+{
+  "note": "F1 team outerwear supplied by the client on 31 Aug 2026 as nine photographs (media/WhatsApp Image 2026-08-31 at 3.58.50-52 PM). Identified from the sponsor set and team livery on each garment, which dates them to the 2025 season. Nine photos resolve to seven products: the Ferrari zip jacket was sent twice (studio front and mannequin front) and the navy Red Bull back view belongs to the zip-through hoodie, whose body and sleeves are the same navy.",
+  "pricing": { "outerwear": "1200.00" },
+  "priceNote": "R1,200 across the batch on the client's instruction (31 Aug 2026). This sits above the standing tier table in client-pricing-and-sizing-audit.md, which puts hoodies and half-zips at R850 and jacket/windbreaker at R1,000 — these are team-issue F1 pieces and are priced as their own tier.",
+  "sizes": ["S", "M", "L", "XL", "2XL"],
+  "products": [
+    {
+      "files": ["WhatsApp Image 2026-08-31 at 3.58.50 PM (3).jpeg", "WhatsApp Image 2026-08-31 at 3.58.51 PM (1).jpeg"],
+      "title": "Scuderia Ferrari 2025 Team Track Jacket",
+      "team": "Ferrari",
+      "productType": "Jacket / Windbreaker",
+      "blurb": "Full-zip track jacket in Ferrari's Rosso Corsa with white shoulder yokes and twin piping down each sleeve. Carries the 2025 partner set — HP on the left chest, the Scuderia shield opposite, with Shell, IBM, UniCredit and CEVA Logistics beneath, and the Puma cat above the pocket. Stand collar, full-length zip, unlined."
+    },
+    {
+      "files": ["WhatsApp Image 2026-08-31 at 3.58.50 PM (1).jpeg"],
+      "title": "Scuderia Ferrari 2025 Team Hoodie",
+      "team": "Ferrari",
+      "productType": "Hoodie",
+      "blurb": "Pullover hoodie in Rosso Corsa with a white chest panel and white sleeve stripes running to the cuff. Same 2025 partner set as the team jacket — HP, Shell and IBM to the left, the Scuderia shield, UniCredit and CEVA Logistics to the right — with Pirelli and Richard Mille marks on the sleeves. Brushed fleece back, ribbed cuffs and hem."
+    },
+    {
+      "files": ["WhatsApp Image 2026-08-31 at 3.58.50 PM.jpeg"],
+      "title": "McLaren F1 2025 Team Hoodie",
+      "team": "McLaren",
+      "productType": "Hoodie",
+      "blurb": "Papaya and anthracite pullover hoodie in the McLaren 2025 team cut — dark upper body and hood, papaya block from the chest line down, papaya raglan shoulders. Carries the speedmark, DP World, OKX, Dell Technologies, Android and Mastercard, with Pirelli and Richard Mille on the sleeves. Brushed fleece back, ribbed cuffs and hem."
+    },
+    {
+      "files": ["WhatsApp Image 2026-08-31 at 3.58.51 PM (2).jpeg", "WhatsApp Image 2026-08-31 at 3.58.50 PM (2).jpeg"],
+      "title": "Oracle Red Bull Racing 2025 Team Zip Hoodie",
+      "team": "Red Bull Racing",
+      "productType": "Jacket / Windbreaker",
+      "blurb": "Full-zip hooded team top in Red Bull blue with navy sleeves, side panels and hood. Front carries TAG Heuer, Mobil 1, Oracle and Carlyle to the left, the Oracle Red Bull Racing lockup, Gate.io and Ford Racing to the right; the charging bulls sit on the shoulder and again across the back above a Mobil 1 print. Zipped hand pockets, ribbed cuffs and hem."
+    },
+    {
+      "files": ["WhatsApp Image 2026-08-31 at 3.58.51 PM.jpeg"],
+      "title": "Oracle Red Bull Racing 2025 Team Hoodie",
+      "team": "Red Bull Racing",
+      "productType": "Hoodie",
+      "blurb": "Pullover team hoodie in Red Bull blue with navy sleeves, navy hood and navy side panels. Front carries TAG Heuer, Mobil 1, Oracle and Carlyle opposite the Oracle Red Bull Racing lockup, Gate.io and Ford Racing, with the charging bulls on the shoulder and sponsor marks down both sleeves. Ribbed cuffs and hem."
+    },
+    {
+      "files": ["WhatsApp Image 2026-08-31 at 3.58.52 PM.jpeg"],
+      "title": "Mercedes-AMG Petronas 2025 Team Hoodie",
+      "team": "Mercedes",
+      "productType": "Hoodie",
+      "blurb": "Black pullover hoodie in the Mercedes-AMG Petronas team cut, with silver shoulder flashes and the three stripes below the neck. Carries the 2025 partner set — the three-pointed star and AMG beside UBS, CrowdStrike, Snapdragon and Signify to the left, Petronas, INEOS, TeamViewer and HPE to the right, with IWC and Marriott Bonvoy on the sleeve. Kangaroo pocket, ribbed cuffs and hem."
+    },
+    {
+      "files": ["WhatsApp Image 2026-08-31 at 3.58.51 PM (3).jpeg"],
+      "title": "Mercedes-AMG Petronas 2025 Team Half-Zip Top",
+      "team": "Mercedes",
+      "productType": "Half-Zip Training Top",
+      "blurb": "Black quarter-zip training top with a short stand collar and white shoulder stripes. Front carries the three-pointed star, AMG, UBS, CrowdStrike, Snapdragon and Signify opposite Petronas, INEOS, TeamViewer and HPE, with sponsor marks down both sleeves. Panelled body seam at the waist, ribbed cuffs and hem."
+    }
+  ]
+}

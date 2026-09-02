@@ -267,6 +267,7 @@ const CART_FRAGMENT = /* GraphQL */ `
 // ---------------------------------------------------------------------------
 
 type Edges<T> = { edges: Array<{ node: T }> };
+type Paged<T> = Edges<T> & { pageInfo?: { hasNextPage: boolean; endCursor: string | null } };
 
 export type ListProductsOptions = {
   first?: number;
@@ -274,10 +275,13 @@ export type ListProductsOptions = {
   collectionHandle?: string;
 };
 
+/** Shopify's Storefront API refuses a page larger than 250. */
+const PAGE_SIZE = 250;
+
 export async function listProducts(
   options: ListProductsOptions = {}
 ): Promise<Product[]> {
-  const first = options.first ?? 250;
+  const first = options.first ?? Infinity;
 
   if (options.collectionHandle) {
     const data = await storefrontFetch<{
@@ -291,22 +295,34 @@ export async function listProducts(
            }
          }
        }`,
-      { handle: options.collectionHandle, first }
+      { handle: options.collectionHandle, first: Math.min(PAGE_SIZE, first) }
     );
     if (!data.collection) return [];
     return data.collection.products.edges.map(e => normalizeProduct(e.node));
   }
 
-  const data = await storefrontFetch<{ products: Edges<RawProduct> }>(
-    `${PRODUCT_FRAGMENT}
-     query listProducts($first: Int!) {
-       products(first: $first, sortKey: TITLE) {
-         edges { node { ...ProductFields } }
-       }
-     }`,
-    { first }
-  );
-  return data.products.edges.map(e => normalizeProduct(e.node));
+  // The Storefront API caps a page at 250. The catalogue passed that in Sep 2026,
+  // so an unpaginated query silently dropped every product past the 250th title.
+  // Walk the cursor until Shopify says there is no more, or until `first` is met.
+  const out: Product[] = [];
+  let cursor: string | null = null;
+  do {
+    const page: number = Math.min(PAGE_SIZE, first - out.length);
+    const data: { products: Paged<RawProduct> } = await storefrontFetch<{ products: Paged<RawProduct> }>(
+      `${PRODUCT_FRAGMENT}
+       query listProducts($first: Int!, $cursor: String) {
+         products(first: $first, after: $cursor, sortKey: TITLE) {
+           pageInfo { hasNextPage endCursor }
+           edges { node { ...ProductFields } }
+         }
+       }`,
+      { first: page, cursor }
+    );
+    out.push(...data.products.edges.map(e => normalizeProduct(e.node)));
+    const info = data.products.pageInfo;
+    cursor = info?.hasNextPage ? info.endCursor : null;
+  } while (cursor && out.length < first);
+  return out;
 }
 
 export async function getProductByHandle(handle: string): Promise<Product> {

@@ -60712,10 +60712,11 @@ var CART_FRAGMENT = (
   }
 `
 );
+var PAGE_SIZE = 250;
 async function listProducts(options = {}) {
-  const first = options.first ?? 250;
+  const first = options.first ?? Infinity;
   if (options.collectionHandle) {
-    const data2 = await storefrontFetch(
+    const data = await storefrontFetch(
       `${PRODUCT_FRAGMENT}
        query productsByCollection($handle: String!, $first: Int!) {
          collection(handle: $handle) {
@@ -60724,21 +60725,30 @@ async function listProducts(options = {}) {
            }
          }
        }`,
-      { handle: options.collectionHandle, first }
+      { handle: options.collectionHandle, first: Math.min(PAGE_SIZE, first) }
     );
-    if (!data2.collection) return [];
-    return data2.collection.products.edges.map((e) => normalizeProduct(e.node));
+    if (!data.collection) return [];
+    return data.collection.products.edges.map((e) => normalizeProduct(e.node));
   }
-  const data = await storefrontFetch(
-    `${PRODUCT_FRAGMENT}
-     query listProducts($first: Int!) {
-       products(first: $first, sortKey: TITLE) {
-         edges { node { ...ProductFields } }
-       }
-     }`,
-    { first }
-  );
-  return data.products.edges.map((e) => normalizeProduct(e.node));
+  const out = [];
+  let cursor = null;
+  do {
+    const page = Math.min(PAGE_SIZE, first - out.length);
+    const data = await storefrontFetch(
+      `${PRODUCT_FRAGMENT}
+       query listProducts($first: Int!, $cursor: String) {
+         products(first: $first, after: $cursor, sortKey: TITLE) {
+           pageInfo { hasNextPage endCursor }
+           edges { node { ...ProductFields } }
+         }
+       }`,
+      { first: page, cursor }
+    );
+    out.push(...data.products.edges.map((e) => normalizeProduct(e.node)));
+    const info = data.products.pageInfo;
+    cursor = info?.hasNextPage ? info.endCursor : null;
+  } while (cursor && out.length < first);
+  return out;
 }
 async function getProductByHandle(handle) {
   const data = await storefrontFetch(
