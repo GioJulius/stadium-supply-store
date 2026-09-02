@@ -52,7 +52,7 @@
 
 .moving-line { padding:13px 0; color:#f8f7f1; background:#10213c; overflow:hidden; border-bottom:1px solid #f8f7f1; }.moving-line div { display:flex; gap:31px; white-space:nowrap; width:max-content; animation: marquee 24s linear infinite; text-transform:uppercase; font:600 21px/1 "Barlow Condensed",sans-serif; letter-spacing:.03em; }.moving-line i { color:#44a2e9; font-style:normal; }
 .section-index, .eyebrow { font: 10px/1.3 "DM Mono", monospace; text-transform: uppercase; letter-spacing:.055em; }
-.latest-section { padding:105px 32px 120px; max-width:1600px; margin:auto; }.section-heading { display:grid; grid-template-columns: 1fr 2fr; margin-bottom:50px; }.section-heading h2 { font-size:clamp(66px, 9.3vw, 145px); }.section-heading > div > p { max-width:250px; margin:23px 0 0; font-size:13px; line-height:1.5; }.latest-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:1px; background:transparent; }.product-card { min-width:0; display:block; background:#f8f7f1; transition:background .2s ease; }.product-card:hover { background:#eef4f7; }.product-card__visual { position:relative; aspect-ratio:.8; overflow:hidden; background:#dce7ec; }.product-card__visual img { width:100%;height:100%;object-fit:cover; transition: transform .46s cubic-bezier(.23,1,.32,1); }.product-card:hover .product-card__visual img { transform:scale(1.045); }.product-card__fallback { height:100%; display:grid;place-items:center;font:700 42px/.78 "Barlow Condensed",sans-serif;text-transform:uppercase;text-align:center; }.product-card__badge,.product-card__price-tag { position:absolute; top:11px; padding:5px 6px; color:#f8f7f1; background:#10213c; font:9px "DM Mono",monospace; text-transform:uppercase; }.product-card__badge { left:11px; }.product-card__price-tag { right:11px; background:#f8f7f1; color:#10213c; }.product-card__quick { position:absolute; left:11px; bottom:11px; transform:translateY(12px); opacity:0; transition:opacity .2s ease,transform .2s ease; padding:7px 8px; background:#1a91dc; color:#fff; font:9px "DM Mono",monospace; text-transform:uppercase; }.product-card:hover .product-card__quick { transform:translateY(0); opacity:1; }.product-card__arrow { position:absolute; right:12px; top:42px; width:30px; height:30px; display:grid; place-items:center; border:1px solid rgba(255,255,255,.7); border-radius:50%; color:#fff; }.product-card__details { padding:14px 13px 18px; min-height:114px; display:flex; justify-content:space-between; gap:10px; }.product-card__details p { margin:0 0 5px; font:9px "DM Mono",monospace; text-transform:uppercase; opacity:.65; }.product-card__details h3 { margin:0; font:600 19px/.95 "Barlow Condensed",sans-serif; text-transform:uppercase; max-width:190px; }.product-card__sizes { display:block; margin-top:9px; font:8px "DM Mono",monospace; text-transform:uppercase; opacity:.68; white-space:nowrap; }.product-card__details strong { font:10px "DM Mono",monospace; font-weight:500; white-space:nowrap; }.outline-cta, .shop-empty button, .shop-empty a { display:flex; align-items:center; justify-content:space-between; gap:15px; border-bottom:1px solid currentColor; padding-bottom:8px; margin:60px 0 0 auto; width:fit-content; background:transparent; border-top:0;border-left:0;border-right:0; font:10px "DM Mono",monospace; text-transform:uppercase; }
+.latest-section { padding:105px 32px 120px; max-width:1600px; margin:auto; }.section-heading { display:grid; grid-template-columns: 1fr 2fr; margin-bottom:50px; }.section-heading h2 { font-size:clamp(66px, 9.3vw, 145px); }.section-heading > div > p { max-width:250px; margin:23px 0 0; font-size:13px; line-height:1.5; }.latest-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:1px; background:transparent; }.product-card { min-width:0; display:block; background:#f8f7f1; transition:background .2s ease; }.product-card:hover { background:#eef4f7; }.product-card__visual { position:relative; aspect-ratio:.8; overflow:hidden; background:#dce7ec; }.product-card__visual img { width:100%;height:100%;object-fit:cover; transition: transform .46s cubic-bezier(.23,1,.32,1); }.product-card:hover .product-card__visual img { transform:scale(1.045); }.product-card__fallback { height:100%; display:grid;place-items:center;font:700 42px/.78 "Barlow Condensed",sans-serif;text-transform:uppercase;text-align:center; }.product-card__badge,.product-card__price-tag { position:absolute; top:11px; padding:5px 6px; color:#f8f7f1; background:#10213c; font:9px "DM Mono",monospace; text-transform:uppercase; }.product-card__badge { left:11px; }.product-card__price-tag { right:11px; background:#f8f7f1; color:#10213c; }.product-card__quick { position:absolute; left:11px; bottom:11px; transform:translateY(12px); opacity:0; transition:opacity .2s ease,transform .2s ease; padding:7px 8px; background:#1a91dc; color:#fff; font:9px "DM Mono",monospace; text-transform:uppercase; }.product-card:hover .product-card__quick { transform:translateY(0); opacity:1; }.product-card__arrow { position:absolute; right:12px; top:42px; width:30px; height:30px; display:grid; place-items:center; border:1px solid rgba(255,255,255,.7); border-radius:50%; color:#fff; }.product-card__details { padding:14px 13px 18px; min-height:114px; display:flex; justify-content:space-between; gap:10px; }.product-card__details h3 { margin:0; font:600 19px/.95 "Barlow Condensed",sans-serif; text-transform:uppercase; max-width:190px; }.product-card__details strong { font:10px "DM Mono",monospace; font-weight:500; white-space:nowrap; }.outline-cta, .shop-empty button, .shop-empty a { display:flex; align-items:center; justify-content:space-between; gap:15px; border-bottom:1px solid currentColor; padding-bottom:8px; margin:60px 0 0 auto; width:fit-content; background:transparent; border-top:0;border-left:0;border-right:0; font:10px "DM Mono",monospace; text-transform:uppercase; }
 .manifesto-section { min-height:680px; background:#10213c; color:#f8f7f1; position:relative; padding:85px 8vw; display:grid; grid-template-columns: 1fr 2fr; grid-template-rows:auto 1fr; overflow:hidden; }.manifesto-section__number { position:absolute; right:-.03em; top:-.14em; color:rgba(130,186,226,.14); font:900 clamp(280px,48vw,700px)/.7 "Barlow Condensed",sans-serif; }.manifesto-section .eyebrow, .manifesto-section h2, .manifesto-section__copy { z-index:1; }.manifesto-section h2 { align-self:center; font-size:clamp(72px,10vw,148px); }.manifesto-section__copy { align-self:end; max-width:330px; margin-left:auto; font-size:13px; line-height:1.65; }.manifesto-section__copy p { margin:0 0 28px; }.manifesto-section__copy a { border-bottom:1px solid #fff; padding-bottom:7px; font:10px "DM Mono",monospace; text-transform:uppercase; display:inline-flex; align-items:center; gap:8px; }
 .collections-section { padding:105px 32px; max-width:1600px; margin:auto; }.collections-section__top { display:flex; justify-content:space-between; padding-bottom:32px; border-bottom:1px solid rgba(18,25,44,.3); font-size:13px; }.collections-section__top > p:last-child { max-width:220px; margin:0; }.collection-tiles { display:grid; grid-template-columns:1.15fr .85fr 1fr; min-height:450px; }.collection-tile { padding:23px; display:flex; flex-direction:column; color:#f8f7f1; position:relative; overflow:hidden; transition:filter .2s ease; }.collection-tile:hover { filter:brightness(1.15); }.collection-tile:nth-child(2) { border-left:1px solid rgba(248,247,241,.3); border-right:1px solid rgba(248,247,241,.3); }.collection-tile span { font:10px "DM Mono",monospace; }.collection-tile h3 { margin:auto 0 0; font:700 clamp(48px,6vw,95px)/.76 "Barlow Condensed",sans-serif; letter-spacing:-.04em; text-transform:uppercase; }.collection-tile svg { position:absolute;top:23px;right:23px; }.collection-tile--one { background:linear-gradient(160deg,#17345b,#3a86be); }.collection-tile--two { background:linear-gradient(160deg,#d7302f,#741b27); }.collection-tile--three { background:linear-gradient(160deg,#b5a16e,#17233b); }
 .source-gallery { background:#10213c; color:#f8f7f1; padding:100px 32px 120px; }.source-gallery__heading { max-width:1600px; margin:0 auto 54px; display:grid; grid-template-columns:1fr 2fr; }.source-gallery__heading h2 { margin:0; font:800 clamp(66px,9.3vw,145px)/.72 "Barlow Condensed",sans-serif; letter-spacing:-.052em; text-transform:uppercase; }.source-gallery__heading h2 em { font-weight:600; }.source-gallery__heading > div > p { max-width:260px; margin:23px 0 0; font-size:13px; line-height:1.5; }.source-gallery__products { max-width:1600px; margin:0 auto; display:grid; grid-template-columns:repeat(5,1fr); gap:1px; }.source-gallery__products .product-card { background:#f8f7f1; color:#10213c; }.source-gallery__products .product-card:nth-child(3n + 2) { margin-top:55px; }.source-gallery__products .product-card:nth-child(4n) { margin-top:25px; }
@@ -431,3 +431,52 @@ body { font-family:"Manrope",Arial,sans-serif; }
   .shop-pagination { gap:13px; margin-top:34px; }
   .shop-pagination ol { gap:7px; }
 }
+
+/* --- Small UI text --- */
+/* The 8-10px "DM Mono" caption was doing too many jobs: it set the card badges,
+   the price, the gallery count, the shop toolbar, the filter strip and the
+   pagination. At that size a monospace face reads as a technical label rather
+   than as shop furniture, and the tracking made short words look sparse. These
+   move to the same system stack Shopify's own themes use for interface text —
+   it costs no extra webfont, matches what shoppers see at checkout, and reads
+   cleanly at 11px where the mono did not. The display face (Akira Expanded) and
+   the body copy are untouched; this is only the small stuff. */
+:root {
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.product-card__badge,
+.product-card__price-tag,
+.product-card__quick,
+.product-card__gallery-count,
+.product-card__details strong,
+.shop-toolbar p,
+.filter-strip button,
+.sort-control,
+.sort-control select,
+.shop-pagination,
+.outline-cta, .shop-empty button, .shop-empty a {
+  font-family:var(--font-ui);
+  letter-spacing:.02em;
+}
+.product-card__badge,
+.product-card__quick,
+.product-card__gallery-count { font-size:10px; font-weight:500; }
+.product-card__price-tag { font-size:12px; font-weight:600; letter-spacing:0; }
+.product-card__details strong { font-size:16px; font-weight:600; letter-spacing:-.01em; }
+.shop-toolbar p, .filter-strip button, .sort-control, .shop-pagination { font-size:11px; }
+
+/* With the vendor line and the size list gone the details block only carries the
+   title and the price, so it no longer needs the height that held three rows. */
+.product-card__details { min-height:0; align-items:baseline; padding:13px 13px 16px; }
+.product-card__details h3 { max-width:none; }
+
+@media (max-width:850px) {
+  .product-card__details { min-height:0; padding:11px 10px 13px; }
+  .product-card__details strong { font-size:14px; }
+  .product-card__price-tag { font-size:11px; }
+}
+
+/* Prev/Next carry a chevron so the direction reads before the word does — and
+   on a phone, where the row tightens, the arrow is the part that survives. */
+.shop-pagination > button { display:inline-flex; align-items:center; gap:5px; }
+.shop-pagination > button svg { display:block; }

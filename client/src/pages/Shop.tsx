@@ -3,7 +3,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { SearchForm, StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { filterAndSortProducts, isCustomerFacingMappedProduct, SHOP_PAGE_SIZE, STOREFRONT_CATALOG_FETCH_LIMIT, type CatalogFilter, type CatalogSortMode } from "@/lib/catalog";
 import { trpc } from "@/lib/trpc";
-import { ArrowDownUp, LoaderCircle } from "lucide-react";
+import { ArrowDownUp, ChevronLeft, ChevronRight, LoaderCircle } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "wouter";
 import { X } from "lucide-react";
@@ -107,7 +107,9 @@ export default function Shop() {
               <div className="shop-product-grid">{visibleProducts.map(product => <ProductCard key={product.id} product={product} />)}</div>
               {pageCount > 1 ? (
                 <nav className="shop-pagination" aria-label="Archive pages">
-                  <button onClick={() => setPage(currentPage - 1)} disabled={currentPage === 1}>Previous</button>
+                  <button onClick={() => setPage(currentPage - 1)} disabled={currentPage === 1}>
+                    <ChevronLeft size={15} aria-hidden="true" /> Previous
+                  </button>
                   <ol>
                     {pageNumbers(currentPage, pageCount).map((entry, i) => entry === "gap"
                       ? <li key={`gap-${i}`} className="shop-pagination__gap" aria-hidden="true">…</li>
@@ -119,7 +121,9 @@ export default function Shop() {
                           >{String(entry).padStart(2, "0")}</button>
                         </li>)}
                   </ol>
-                  <button onClick={() => setPage(currentPage + 1)} disabled={currentPage === pageCount}>Next</button>
+                  <button onClick={() => setPage(currentPage + 1)} disabled={currentPage === pageCount}>
+                    Next <ChevronRight size={15} aria-hidden="true" />
+                  </button>
                 </nav>
               ) : null}
             </>

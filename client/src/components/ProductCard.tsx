@@ -13,7 +13,6 @@ export function ProductCard({ product, featured = false }: { product: Product; f
   const image = product.images[0];
   const alternateImage = product.images[1];
   const minPrice = product.priceRange.min;
-  const sizeValues = product.options.find(option => option.name.toLowerCase() === "size")?.values;
   return (
     <Link href={`/product/${product.handle}`} className={`product-card ${featured ? "product-card--featured" : ""}`}>
       <div className="product-card__visual">
@@ -26,7 +25,7 @@ export function ProductCard({ product, featured = false }: { product: Product; f
         <span className="product-card__arrow"><ArrowUpRight size={19} /></span>
       </div>
       <div className="product-card__details">
-        <div><p>{product.vendor || "Stadium Supply"}</p><h3>{product.title}</h3>{sizeValues?.length ? <span className="product-card__sizes">Sizes {sizeValues.join(" · ")}</span> : null}</div>
+        <h3>{product.title}</h3>
         <strong>{formatMoney(minPrice)}</strong>
       </div>
     </Link>
