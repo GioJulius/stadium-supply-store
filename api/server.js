@@ -60960,7 +60960,7 @@ var commerceRouter = router({
   products: router({
     list: publicProcedure.input(
       external_exports.object({
-        first: external_exports.number().int().min(1).max(250).optional(),
+        first: external_exports.number().int().min(1).max(1e3).optional(),
         collectionHandle: external_exports.string().min(1).optional()
       }).optional()
     ).query(async ({ input }) => {

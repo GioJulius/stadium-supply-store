@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Product } from "@shared/commerce/types";
-import { filterAndSortProducts, isCustomerFacingMappedProduct, paragraphsFrom, STOREFRONT_CATALOG_PAGE_SIZE } from "./catalog";
+import { filterAndSortProducts, isCustomerFacingMappedProduct, paragraphsFrom, STOREFRONT_CATALOG_FETCH_LIMIT } from "./catalog";
 
 const product = (title: string, amount: string, tags: string[]): Product => ({
   id: title,
@@ -42,8 +42,8 @@ describe("filterAndSortProducts", () => {
     expect(isCustomerFacingMappedProduct(products[0])).toBe(false);
   });
 
-  it("requests the Shopify-supported full storefront catalog page", () => {
-    expect(STOREFRONT_CATALOG_PAGE_SIZE).toBe(250);
+  it("asks for more than one Shopify page, so the catalogue is not truncated at 250", () => {
+    expect(STOREFRONT_CATALOG_FETCH_LIMIT).toBeGreaterThan(250);
   });
 });
 

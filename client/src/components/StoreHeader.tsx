@@ -1,5 +1,5 @@
 import { useCart } from "@/contexts/CartContext";
-import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_PAGE_SIZE } from "@/lib/catalog";
+import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
 import { isGroup, leafHref, SHOP_MENU, type NavNode } from "@/lib/navigation";
 import { INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { trpc } from "@/lib/trpc";
@@ -104,7 +104,7 @@ export function StoreHeader() {
   // costs no extra request. Only fetched once the drawer has been opened —
   // an untouched menu shouldn't pull 250 products on every first paint.
   const { data: products = [] } = trpc.commerce.products.list.useQuery(
-    { first: STOREFRONT_CATALOG_PAGE_SIZE },
+    { first: STOREFRONT_CATALOG_FETCH_LIMIT },
     { enabled: menuOpen },
   );
   const counts = useMemo(() => {
