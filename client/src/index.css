@@ -480,3 +480,13 @@ body { font-family:"Manrope",Arial,sans-serif; }
    on a phone, where the row tightens, the arrow is the part that survives. */
 .shop-pagination > button { display:inline-flex; align-items:center; gap:5px; }
 .shop-pagination > button svg { display:block; }
+
+/* Product types run as long as "Soccer Fan Version Long Sleeve", which at the
+   larger UI size ran under the price tag on a narrow card. Cap the badge to the
+   space left beside the price and ellipsis the overflow, so the two never
+   collide however long the type name is. */
+.product-card__badge {
+  max-width:calc(100% - 104px);
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+@media (max-width:850px) { .product-card__badge { max-width:calc(100% - 92px); } }
