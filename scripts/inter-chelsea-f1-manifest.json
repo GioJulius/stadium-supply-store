@@ -1377,7 +1377,16 @@
    "price": "500.00",
    "productType": "Fan Version",
    "sizes": "fan",
-   "blurb": "Iron Grey with a black horizontal band across the chest edged in blue, the betsson.sport wordmark in Tour Yellow, a yellow swoosh and the gold and blue monogram crest. Drawn from the 1997-98 third shirt."
+   "blurb": "Iron Grey with a black horizontal band across the chest edged in blue, the betsson.sport wordmark in Tour Yellow, a yellow swoosh and the gold and blue monogram crest. Drawn from the 1997-98 third shirt.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/252858738",
+    "files": [
+     "252858738_0.jpg",
+     "252858738_1.jpg",
+     "252858738_2.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -1390,7 +1399,16 @@
    "price": "650.00",
    "productType": "Player Version",
    "sizes": "player",
-   "blurb": "Player-version cut of the 26/27 third shirt: Iron Grey with a tonal texture through the body, the black chest band with a blue edge, the betsson.sport wordmark in Tour Yellow, a white INTER collar tab and the monogram crest."
+   "blurb": "Player-version cut of the 26/27 third shirt: Iron Grey with a tonal texture through the body, the black chest band with a blue edge, the betsson.sport wordmark in Tour Yellow, a white INTER collar tab and the monogram crest.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/252858018",
+    "files": [
+     "252858018_0.jpg",
+     "252858018_1.jpg",
+     "252858018_2.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -1423,8 +1441,17 @@
    "price": "450.00",
    "productType": "Kids Kit",
    "sizes": "kids",
-   "blurb": "Kids' shirt and shorts. The shirt carries the black and deep red checkerboard graphic of the 26/27 third kit with white shoulder stripes and the Standard Chartered wordmark; paired with black shorts with white side stripes and the Liver bird."
+   "blurb": "Kids' shirt and shorts. The shirt carries the black and deep red checkerboard graphic of the 26/27 third kit with white shoulder stripes and the Standard Chartered wordmark; paired with black shorts with white side stripes and the Liver bird.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/252859244",
+    "files": [
+     "252859244_0.jpg",
+     "252859244_1.jpg",
+     "252859244_2.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   }
  ],
- "supplierNote": "Each product below with a supplierPhotos block was matched by eye to an album in the ezfashion supplier catalogue, and up to three extra studio photographs were pulled from it (front, back and a detail crop) to sit after the client photographs. Supplier size charts and images repeated across albums were filtered out. 48 of the 77 products have supplier extras; the rest had no confident match in the catalogue and ship with the client photographs alone."
+ "supplierNote": "Each product below with a supplierPhotos block was matched by eye to an album in the ezfashion supplier catalogue, and up to three extra studio photographs were pulled from it (front, back and a detail crop) to sit after the client photographs. Supplier size charts and images repeated across albums were filtered out. 48 of the 77 products have supplier extras; the rest had no confident match in the catalogue and ship with the client photographs alone. Three products (Inter 26/27 third fan and player, Liverpool 26/27 third kids) were matched to the wrong albums on the first pass: the gallery crawl paired each album id with the FOLLOWING card title, because the card markup puts title before href. Re-crawled with the corrected parse, confirmed against each album's own <title>, verified by eye, and appended with scripts/append-supplier-media.mjs."
 }
