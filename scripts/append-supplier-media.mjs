@@ -38,9 +38,24 @@ const SUPPLIER_DIR = "C:/Users/MR GLOBAL/Desktop/GioGlobal/stadium supply media/
 
 /** handle -> supplier files to append, in order. */
 const WORK = {
-  "inter-milan-2026-27-third-jersey": ["252858738_0.jpg", "252858738_1.jpg", "252858738_2.jpg"],
-  "inter-milan-2026-27-third-jersey-player-version": ["252858018_0.jpg", "252858018_1.jpg", "252858018_2.jpg"],
-  "liverpool-2026-27-third-kids-kit": ["252859244_0.jpg", "252859244_1.jpg", "252859244_2.jpg"],
+  // Second pass, 3 Sep: the 25 products that shipped with client photos only.
+  // Eleven matched an album by eye; the rest are garments this supplier does
+  // not carry, so they keep the client photographs alone.
+  "chelsea-2025-26-home-jersey-player-version": ["196970198_1.jpg", "196970198_2.jpg", "196970198_3.jpg"],
+  "chelsea-2025-26-home-long-sleeve-jersey": ["203700163_1.jpg", "203700163_2.jpg", "203700163_3.jpg"],
+  "chelsea-full-zip-tracksuit-black-blue": ["212969319_1.jpg", "212969319_2.jpg", "212969319_3.jpg"],
+  "chelsea-retro-track-jacket-navy": ["215393783_1.jpg", "215393783_2.jpg", "215393783_3.jpg"],
+  "chelsea-retro-track-jacket-royal-blue": ["224260083_1.jpg", "224260083_3.jpg", "224260083_4.jpg"],
+  "mercedes-amg-petronas-2026-team-shirt-blue": ["252011863_1.jpg", "252011863_2.jpg", "252011863_3.jpg"],
+  "inter-milan-2008-09-away-retro-jersey": ["181809523_1.jpg", "181809523_2.jpg", "181809523_3.jpg"],
+  "inter-milan-retro-pirelli-crewneck-sweatshirt": ["224260128_1.jpg", "224260128_2.jpg", "224260128_4.jpg"],
+  "inter-milan-2002-03-home-retro-jersey": ["165359496_1.jpg", "165359496_2.jpg", "165359496_3.jpg"],
+  "inter-milan-1997-98-home-retro-jersey": ["169014272_1.jpg", "169014272_2.jpg", "169014272_3.jpg"],
+  "inter-milan-2025-26-half-zip-training-tracksuit-royal-blue": ["235376258_1.jpg", "235376258_2.jpg", "235376258_3.jpg"],
+  // NOT included: inter-milan-training-hoodie-black. Album 217376060 is a
+  // multi-colourway hoodie listing and its photographs are a swoosh crop, a
+  // crest crop and a RED hoodie — the same trap that made this album fail the
+  // eye-check on the first pass.
 };
 
 async function gql(query, variables = {}) {

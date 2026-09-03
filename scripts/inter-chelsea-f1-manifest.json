@@ -124,6 +124,13 @@
     74
    ],
    "question": "Inter 2004/05 third and 1995/96 away were re-dated from the supplier album labels; the Umbro short-sleeve striped home is listed as 1997/98 because Inter moved from Umbro to Nike in 1998."
+  },
+  {
+   "photos": [
+    76,
+    77
+   ],
+   "question": "Inter white away with the Nike Total 90 collar tab is listed as 2008/09, but its photographs match supplier album 181809523 exactly and that album is labelled \"0405 season\" — and Total 90 is a mid-2000s mark. Likely 2004/05. Left as imported rather than renaming a live listing; say the word and I will correct the title (the handle can stay, so no URL breaks)."
   }
  ],
  "products": [
@@ -291,7 +298,16 @@
    "price": "650.00",
    "productType": "Player Version",
    "sizes": "player",
-   "blurb": "Royal blue with a tonal geometric stadium print across the body, a white and red trimmed collar, white side flashes and the arched CHELSEA roundel crest. Player-version cut."
+   "blurb": "Royal blue with a tonal geometric stadium print across the body, a white and red trimmed collar, white side flashes and the arched CHELSEA roundel crest. Player-version cut.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/196970198",
+    "files": [
+     "196970198_1.jpg",
+     "196970198_2.jpg",
+     "196970198_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -302,7 +318,16 @@
    "price": "600.00",
    "productType": "Fan Version",
    "sizes": "fan",
-   "blurb": "Long-sleeve cut of the 25/26 home shirt - royal blue with the tonal stadium print, a red-lined collar and white flank panels."
+   "blurb": "Long-sleeve cut of the 25/26 home shirt - royal blue with the tonal stadium print, a red-lined collar and white flank panels.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/203700163",
+    "files": [
+     "203700163_1.jpg",
+     "203700163_2.jpg",
+     "203700163_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -517,7 +542,16 @@
    "price": "1000.00",
    "productType": "Tracksuit",
    "sizes": "adult",
-   "blurb": "Black full-zip tracksuit with a royal blue zip line and a blue shoulder block, the club crest on the chest and a matching crest on the thigh of the black pants."
+   "blurb": "Black full-zip tracksuit with a royal blue zip line and a blue shoulder block, the club crest on the chest and a matching crest on the thigh of the black pants.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/212969319",
+    "files": [
+     "212969319_1.jpg",
+     "212969319_2.jpg",
+     "212969319_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -528,7 +562,16 @@
    "price": "1000.00",
    "productType": "Jacket / Windbreaker",
    "sizes": "adult",
-   "blurb": "Navy adidas full-zip track jacket with white shoulder stripes running down each sleeve, a stand collar, zipped hand pockets and the club crest on the right chest."
+   "blurb": "Navy adidas full-zip track jacket with white shoulder stripes running down each sleeve, a stand collar, zipped hand pockets and the club crest on the right chest.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/215393783",
+    "files": [
+     "215393783_1.jpg",
+     "215393783_2.jpg",
+     "215393783_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -539,7 +582,16 @@
    "price": "1000.00",
    "productType": "Jacket / Windbreaker",
    "sizes": "adult",
-   "blurb": "Royal blue full-zip track jacket with a tonal pattern through the body, a stand collar, elasticated cuffs and hem, and the rampant lion on the chest."
+   "blurb": "Royal blue full-zip track jacket with a tonal pattern through the body, a stand collar, elasticated cuffs and hem, and the rampant lion on the chest.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/224260083",
+    "files": [
+     "224260083_1.jpg",
+     "224260083_3.jpg",
+     "224260083_4.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -795,7 +847,16 @@
    "price": "650.00",
    "productType": "F1 Jersey",
    "sizes": "adult",
-   "blurb": "Royal blue shirt with a white ribbed collar and cuffs, the full sponsor row on the chest, the adidas Trefoil on the back beneath PETRONAS CROWDSTRIKE, and a fine tonal stripe through the fabric."
+   "blurb": "Royal blue shirt with a white ribbed collar and cuffs, the full sponsor row on the chest, the adidas Trefoil on the back beneath PETRONAS CROWDSTRIKE, and a fine tonal stripe through the fabric.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/252011863",
+    "files": [
+     "252011863_1.jpg",
+     "252011863_2.jpg",
+     "252011863_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -907,7 +968,16 @@
    "price": "700.00",
    "productType": "Retro",
    "sizes": "adult",
-   "blurb": "Nike white shirt with royal blue shoulder and side panels, a blue V-neck carrying the Total 90 roundel, the black PIRELLI wordmark and the 1908 roundel crest."
+   "blurb": "Nike white shirt with royal blue shoulder and side panels, a blue V-neck carrying the Total 90 roundel, the black PIRELLI wordmark and the 1908 roundel crest.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/181809523",
+    "files": [
+     "181809523_1.jpg",
+     "181809523_2.jpg",
+     "181809523_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -1073,7 +1143,16 @@
    "price": "850.00",
    "productType": "Sweatshirt",
    "sizes": "adult",
-   "blurb": "Royal blue crewneck sweatshirt with a bold white and black chevron across the chest, the white PIRELLI wordmark beneath it, the monogram crest at the neck and twin white and black bands on each sleeve."
+   "blurb": "Royal blue crewneck sweatshirt with a bold white and black chevron across the chest, the white PIRELLI wordmark beneath it, the monogram crest at the neck and twin white and black bands on each sleeve.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/224260128",
+    "files": [
+     "224260128_1.jpg",
+     "224260128_2.jpg",
+     "224260128_4.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -1232,7 +1311,16 @@
    "price": "700.00",
    "productType": "Retro",
    "sizes": "adult",
-   "blurb": "Nike black and blue striped shirt with black sleeves, gold flank piping and a gold swoosh, the white PIRELLI wordmark across the chest and the gold-ringed 1908 crest."
+   "blurb": "Nike black and blue striped shirt with black sleeves, gold flank piping and a gold swoosh, the white PIRELLI wordmark across the chest and the gold-ringed 1908 crest.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/165359496",
+    "files": [
+     "165359496_1.jpg",
+     "165359496_2.jpg",
+     "165359496_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -1244,7 +1332,16 @@
    "price": "700.00",
    "productType": "Retro",
    "sizes": "adult",
-   "blurb": "Umbro black and blue striped shirt with a tonal repeat print through the black stripes, a black and white trimmed polo collar, the gold star and crest, and the white PIRELLI wordmark."
+   "blurb": "Umbro black and blue striped shirt with a tonal repeat print through the black stripes, a black and white trimmed polo collar, the gold star and crest, and the white PIRELLI wordmark.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/169014272",
+    "files": [
+     "169014272_1.jpg",
+     "169014272_2.jpg",
+     "169014272_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
@@ -1277,7 +1374,16 @@
    "price": "850.00",
    "productType": "Half-Zip Training Set",
    "sizes": "adult",
-   "blurb": "Half-zip training top and pants. The royal blue top carries the QATAR AIRWAYS wordmark and the monogram crest on the chest and an arched INTER across the back; paired with navy tapered pants with a blue side stripe and crest."
+   "blurb": "Half-zip training top and pants. The royal blue top carries the QATAR AIRWAYS wordmark and the monogram crest on the chest and an arched INTER across the back; paired with navy tapered pants with a blue side stripe and crest.",
+   "supplierPhotos": {
+    "album": "https://ezfashion.x.yupoo.com/albums/235376258",
+    "files": [
+     "235376258_1.jpg",
+     "235376258_2.jpg",
+     "235376258_3.jpg"
+    ],
+    "appendedAfterImport": true
+   }
   },
   {
    "photos": [
