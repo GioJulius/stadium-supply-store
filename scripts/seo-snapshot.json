@@ -11927,7 +11927,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:34Z",
+  "updatedAt": "2026-09-04T16:34:34Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/252322756_01.jpg?v=1788537483"
   },
@@ -11955,7 +11955,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:35Z",
+  "updatedAt": "2026-09-04T16:40:43Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/251843384_01.jpg?v=1788537504"
   },
@@ -11983,7 +11983,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:35Z",
+  "updatedAt": "2026-09-04T16:44:56Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/251437261_01.jpg?v=1788537526"
   },
@@ -12011,7 +12011,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:36Z",
+  "updatedAt": "2026-09-04T16:43:55Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/251436981_01.jpg?v=1788537548"
   },
@@ -12039,7 +12039,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:36Z",
+  "updatedAt": "2026-09-04T16:54:44Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/250247874_01.jpg?v=1788537570"
   },
@@ -12067,7 +12067,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:37Z",
+  "updatedAt": "2026-09-04T16:37:01Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/249718268_01.jpg?v=1788537592"
   },
@@ -12095,7 +12095,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:38Z",
+  "updatedAt": "2026-09-04T16:44:33Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/249717753_01.jpg?v=1788537615"
   },
@@ -12123,7 +12123,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:38Z",
+  "updatedAt": "2026-09-04T16:45:16Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248415182_01.jpg?v=1788537637"
   },
@@ -12151,7 +12151,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:39Z",
+  "updatedAt": "2026-09-04T16:47:53Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248415056_01.jpg?v=1788537659"
   },
@@ -12179,7 +12179,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:39Z",
+  "updatedAt": "2026-09-04T16:50:38Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248415001_01.jpg?v=1788537681"
   },
@@ -12207,7 +12207,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T16:04:40Z",
+  "updatedAt": "2026-09-04T16:49:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248414899_01.jpg?v=1788537702"
   },
@@ -12216,6 +12216,2700 @@
     {
      "node": {
       "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2005-06-ac-milan-white-half-zip-training-set",
+  "title": "2005/06 AC Milan white Half-Zip Training Set",
+  "description": "",
+  "productType": "Half-zip training tracksuit",
+  "tags": [
+   "AC Milan",
+   "Half-zip training tracksuit",
+   "Mapped Media",
+   "supplier-212988582",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:49:48Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/212988582_01.jpg?v=1788544258"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2006-07-ac-milan-home-retro-fan-version",
+  "title": "2006/07 AC Milan Home Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "AC Milan",
+   "Mapped Media",
+   "Soccer Retro/Vintage",
+   "supplier-182233927",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T17:51:23Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182233927_01.jpg?v=1788544280"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2009-10-ac-milan-away-retro-fan-version",
+  "title": "2009/10 AC Milan Away Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "AC Milan",
+   "Mapped Media",
+   "Soccer Retro/Vintage",
+   "supplier-182233845",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:35:40Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182233845_01.jpg?v=1788544301"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "1988-netherlands-away-retro-kids-kit",
+  "title": "1988 Netherlands Away Retro Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "Kiddies soccer set",
+   "Mapped Media",
+   "Other",
+   "supplier-186947267",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:44:54Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/186947267_01.jpg?v=1788544323"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "1988-netherlands-home-retro-kids-kit",
+  "title": "1988 Netherlands Home Retro Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "Kiddies soccer set",
+   "Mapped Media",
+   "Other",
+   "supplier-186947273",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:44:37Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/186947273_01.jpg?v=1788544346"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "1994-italy-away-retro-fan-version",
+  "title": "1994 Italy Away Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Retro/Vintage",
+   "supplier-182235655",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:42:53Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182235655_01.jpg?v=1788544368"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "1996-italy-away-retro-fan-version",
+  "title": "1996 Italy Away Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Retro/Vintage",
+   "supplier-181809510",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:49:04Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181809510_01.jpg?v=1788544390"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "1998-netherlands-away-retro-fan-version",
+  "title": "1998 Netherlands Away Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Retro/Vintage",
+   "supplier-180881148",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:43:47Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/180881148_01.jpg?v=1788544412"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "1998-netherlands-home-retro-fan-version",
+  "title": "1998 Netherlands Home Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Retro/Vintage",
+   "supplier-181945778",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:48:29Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181945778_01.jpg?v=1788544436"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2006-italy-home-retro-kids-kit",
+  "title": "2006 Italy Home Retro Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "Kiddies soccer set",
+   "Mapped Media",
+   "Other",
+   "supplier-186947276",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:54:54Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/186947276_01.jpg?v=1788544459"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2006-italy-goalkeeper-retro-fan-version",
+  "title": "2006 Italy Goalkeeper Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Retro/Vintage",
+   "supplier-181809572",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:00:29Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181809572_01.jpg?v=1788544481"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2010-netherlands-away-retro-fan-version",
+  "title": "2010 Netherlands Away Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Retro/Vintage",
+   "supplier-200246886",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:45:46Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/200246886_01.jpg?v=1788544504"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2012-italy-home-retro-fan-version",
+  "title": "2012 Italy Home Retro Fan Version",
+  "description": "",
+  "productType": "Soccer Retro/Vintage",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Retro/Vintage",
+   "supplier-195725487",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:43:18Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/195725487_01.jpg?v=1788544532"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2024-uefa-italy-home-player-version",
+  "title": "2024 UEFA Italy Home Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Player Version",
+   "supplier-162684643",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:01:26Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/162684643_01.jpg?v=1788544558"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2024-uefa-netherlands-home-fan-version",
+  "title": "2024 UEFA Netherlands Home Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-162679048",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:00:32Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/162679048_01.jpg?v=1788544586"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-away-fan-version",
+  "title": "2026 World Cup Netherlands Away Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Soccer Fan Version",
+   "supplier-227844592",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:53:41Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/227844592_01.jpg?v=1788544605"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-away-kids-kit",
+  "title": "2026 World Cup Netherlands Away Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "Kiddies soccer set",
+   "Mapped Media",
+   "supplier-235031011",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:47:08Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/235031011_01.jpg?v=1788544624"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-away-player-version",
+  "title": "2026 World Cup Netherlands Away Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Soccer Player Version",
+   "supplier-227844404",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T17:57:29Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/227844404_01.jpg?v=1788544643"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-goalkeeper-fan-version",
+  "title": "2026 World Cup Netherlands Goalkeeper Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Soccer Fan Version",
+   "supplier-239341630",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:58:05Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/239341630_01.jpg?v=1788544666"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-half-zip-training-set",
+  "title": "2026 World Cup Netherlands Half-Zip Training Set",
+  "description": "",
+  "productType": "Half-zip training tracksuit",
+  "tags": [
+   "Half-zip training tracksuit",
+   "Mapped Media",
+   "supplier-235397757",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:52:03Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/235397757_01.jpg?v=1788544683"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-home-kids-kit",
+  "title": "2026 World Cup Netherlands Home Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "Kiddies soccer set",
+   "Mapped Media",
+   "supplier-233462468",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:56:19Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/233462468_01.jpg?v=1788544703"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-home-long-sleeve-fan-version",
+  "title": "2026 World Cup Netherlands Home Long Sleeve Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Soccer Fan Version",
+   "supplier-240045173",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:58:57Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/240045173_01.jpg?v=1788544725"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-home-player-version",
+  "title": "2026 World Cup Netherlands Home Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Soccer Player Version",
+   "supplier-227844556",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:58:24Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/227844556_01.jpg?v=1788544744"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-world-cup-netherlands-concept-version-fan-version",
+  "title": "2026 World Cup Netherlands Concept Version Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Soccer Fan Version",
+   "supplier-236765269",
+   "supplier-stock",
+   "World Cup"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T17:59:29Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/236765269_01.jpg?v=1788544766"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-italy-away-long-sleeve-player-version",
+  "title": "2026 Italy Away Long Sleeve Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Player Version",
+   "supplier-236040088",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:00:32Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/236040088_01.jpg?v=1788544787"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "750.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-italy-half-zip-training-set",
+  "title": "2026 Italy Half-Zip Training Set",
+  "description": "",
+  "productType": "Half-zip training tracksuit",
+  "tags": [
+   "Half-zip training tracksuit",
+   "Mapped Media",
+   "Other",
+   "supplier-235379604",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:59:34Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/235379604_01.jpg?v=1788544806"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-italy-away-fan-version",
+  "title": "2026 Italy Away Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-216429288",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:06Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/216429288_01.jpg?v=1788544828"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-italy-home-fan-version",
+  "title": "2026 Italy Home Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-215918867",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:43:11Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215918867_01.jpg?v=1788544850"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-italy-home-kids-kit",
+  "title": "2026 Italy Home Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "Kiddies soccer set",
+   "Mapped Media",
+   "Other",
+   "supplier-216431574",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:01:12Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/216431574_01.jpg?v=1788544871"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-italy-home-player-version",
+  "title": "2026 Italy Home Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Player Version",
+   "supplier-215918880",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:53:23Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215918880_01.jpg?v=1788544894"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2026-italy-training-set-fan-version",
+  "title": "2026 Italy Training Set Fan Version",
+  "description": "",
+  "productType": "Training top and shorts",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "supplier-219350792",
+   "supplier-stock",
+   "Training top and shorts"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:50:53Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/219350792_01.jpg?v=1788544917"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2024-25-italy-concept-version-player-version",
+  "title": "2024/25 Italy Concept Version Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Player Version",
+   "supplier-181393547",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:57Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181393547_01.jpg?v=1788544941"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2024-25-italy-special-edition-fan-version",
+  "title": "2024/25 Italy Special Edition Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-169014250",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:56:00Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/169014250_01.jpg?v=1788544962"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2024-25-tottenham-hotspur-f-c-player-version",
+  "title": "2024/25 Tottenham Hotspur F.C. Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Player Version",
+   "supplier-166371543",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:59:29Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/166371543_01.jpg?v=1788544984"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-ac-milan-away-player-version1",
+  "title": "2025/26 AC Milan Away Player version1",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "AC Milan",
+   "Mapped Media",
+   "Soccer Player Version",
+   "supplier-203699927",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:03:30Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/203699927_01.jpg?v=1788545006"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-ac-milan-half-zip-training-set",
+  "title": "2025/26 AC Milan Half-Zip Training Set",
+  "description": "",
+  "productType": "Half-zip training tracksuit",
+  "tags": [
+   "AC Milan",
+   "Half-zip training tracksuit",
+   "Mapped Media",
+   "supplier-212988310",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:49:34Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/212988310_01.jpg?v=1788545020"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-ac-milan-sweatshirt-long-sleeve",
+  "title": "2025/26 AC Milan Sweatshirt Long Sleeve",
+  "description": "",
+  "productType": "Hoodie",
+  "tags": [
+   "AC Milan",
+   "Hoodie",
+   "Mapped Media",
+   "supplier-224260122",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:55:11Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/224260122_01.jpg?v=1788545039"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "950.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-ac-milan-third-kids-kit",
+  "title": "2025/26 AC Milan Third Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "AC Milan",
+   "Kiddies soccer set",
+   "Mapped Media",
+   "supplier-209464466",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:33Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/209464466_01.jpg?v=1788545060"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-ac-milan-windbreaker",
+  "title": "2025/26 AC Milan Windbreaker",
+  "description": "",
+  "productType": "Windbreaker or jacket",
+  "tags": [
+   "AC Milan",
+   "Mapped Media",
+   "supplier-215393739",
+   "supplier-stock",
+   "Windbreaker or jacket"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:59:09Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215393739_01.jpg?v=1788545079"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-galatasaray-s-k-away-fan-version",
+  "title": "2025/26 Galatasaray S.K. Away Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-202932358",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:05:11Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/202932358_01.jpg?v=1788545102"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-galatasaray-s-k-away-player-version",
+  "title": "2025/26 Galatasaray S.K. Away Player Version",
+  "description": "",
+  "productType": "Soccer Player Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Player Version",
+   "supplier-208448613",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:05:29Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/208448613_01.jpg?v=1788545123"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-galatasaray-s-k-home-fan-version",
+  "title": "2025/26 Galatasaray S.K. Home Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-202932345",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:45:47Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/202932345_01.jpg?v=1788545144"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-galatasaray-s-k-third-fan-version",
+  "title": "2025/26 Galatasaray S.K. Third Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-206522344",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:56:20Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/206522344_01.jpg?v=1788545167"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-inter-miami-cf-third-kids-kit",
+  "title": "2025/26 Inter Miami CF Third Kids Kit",
+  "description": "",
+  "productType": "Kiddies soccer set",
+  "tags": [
+   "Kiddies soccer set",
+   "Mapped Media",
+   "Other",
+   "supplier-190101246",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:57:02Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/190101246_01.jpg?v=1788545189"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-italy-concept-version-fan-version",
+  "title": "2025/26 Italy Concept Version Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-211242767",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:06:54Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/211242767_01.jpg?v=1788545211"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-italy-retro-windbreaker",
+  "title": "2025/26 Italy Retro Windbreaker",
+  "description": "",
+  "productType": "Windbreaker or jacket",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "supplier-220066154",
+   "supplier-stock",
+   "Windbreaker or jacket"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:07:15Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/220066154_01.jpg?v=1788545231"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-italy-sweatshirt-long-sleeve",
+  "title": "2025/26 Italy Sweatshirt Long Sleeve",
+  "description": "",
+  "productType": "Hoodie",
+  "tags": [
+   "Hoodie",
+   "Mapped Media",
+   "Other",
+   "supplier-220066123",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:20Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/220066123_01.jpg?v=1788545250"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "950.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-italy-windbreaker",
+  "title": "2025/26 Italy Windbreaker",
+  "description": "",
+  "productType": "Windbreaker or jacket",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "supplier-215393797",
+   "supplier-stock",
+   "Windbreaker or jacket"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:56:44Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215393797_01.jpg?v=1788545269"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-netherlands-windbreaker",
+  "title": "2025/26 Netherlands Windbreaker",
+  "description": "",
+  "productType": "Windbreaker or jacket",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "supplier-215393807",
+   "supplier-stock",
+   "Windbreaker or jacket"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:01:54Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215393807_01.jpg?v=1788545290"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "2025-26-nottingham-forest-fc-away-fan-version",
+  "title": "2025/26 Nottingham Forest FC Away Fan Version",
+  "description": "",
+  "productType": "Soccer Fan Version",
+  "tags": [
+   "Mapped Media",
+   "Other",
+   "Soccer Fan Version",
+   "supplier-200246601",
+   "supplier-stock"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:59:42Z",
+  "featuredImage": null,
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2025-26-away-fan-version",
+  "title": "Aston Villa 2025/26 Away Fan Version",
+  "description": "The black away shirt with pale blue collar trim, Betano across the chest and the Villans script inside the neck.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Aston Villa",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T18:59:46Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a01_2.jpg?v=1788548374"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2025-26-home-fan-version",
+  "title": "Aston Villa 2025/26 Home Fan Version",
+  "description": "Claret with pale blue sleeves and the 1874 mark on the back of the neck.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Aston Villa",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:00:07Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a02_2.jpg?v=1788548395"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2025-26-third-fan-version-villa-foundation",
+  "title": "Aston Villa 2025/26 Third Fan Version — Villa Foundation",
+  "description": "The pale marbled third shirt carrying Aston Villa Foundation, printed for the Istanbul final on 20 May 2026.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Aston Villa",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:00:57Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a03_5.jpg?v=1788548407"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2026-27-home-fan-version",
+  "title": "Aston Villa 2026/27 Home Fan Version",
+  "description": "Claret with a pale blue polo collar and the lion on the chest — front, collar and back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Aston Villa",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:00:28Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/L1.jpg?v=1788548416"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2026-27-home-player-version",
+  "title": "Aston Villa 2026/27 Home Player Version",
+  "description": "The slim player cut of the claret home shirt, with the pale blue polo collar.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Player Version",
+  "tags": [
+   "Aston Villa",
+   "Mapped Media",
+   "Player Version",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:00:38Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a08_1.jpg?v=1788548427"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2026-27-home-long-sleeve-player-version",
+  "title": "Aston Villa 2026/27 Home Long Sleeve Player Version",
+  "description": "Long sleeve player cut of the claret home shirt.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Player Version",
+  "tags": [
+   "Aston Villa",
+   "Mapped Media",
+   "Player Version",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:01:20Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a09_1.jpg?v=1788548441"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "750.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2026-27-third-fan-version",
+  "title": "Aston Villa 2026/27 Third Fan Version",
+  "description": "The pale blue third shirt with the swirled pattern and Visit Rwanda across the chest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Aston Villa",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:01:20Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a10_2.jpg?v=1788548466"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-2026-27-home-kids-kit",
+  "title": "Aston Villa 2026/27 Home Kids Kit",
+  "description": "Claret shirt and pale blue shorts, sold as a set.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Kids Kit",
+  "tags": [
+   "Aston Villa",
+   "Kids Kit",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:01:31Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a07_5.jpg?v=1788548481"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "aston-villa-1993-95-home-retro-fan-version",
+  "title": "Aston Villa 1993/95 Home Retro Fan Version",
+  "description": "The asics claret and blue striped shirt with the müller block on the chest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "Aston Villa",
+   "Mapped Media",
+   "Retro",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:01:37Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a12_2.jpg?v=1788548492"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "brighton-and-hove-albion-2025-26-away-fan-version",
+  "title": "Brighton & Hove Albion 2025/26 Away Fan Version",
+  "description": "The lilac away shirt with American Express across the chest and We Are Brighton inside the neck.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Brighton & Hove Albion",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:01:59Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a04_2.jpg?v=1788548503"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "brighton-and-hove-albion-2026-27-home-fan-version",
+  "title": "Brighton & Hove Albion 2026/27 Home Fan Version",
+  "description": "Blue with white pinstripes, the seagull crest and American Express.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Brighton & Hove Albion",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:02:09Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a14_1.jpg?v=1788548517"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "brighton-and-hove-albion-2026-27-away-player-version",
+  "title": "Brighton & Hove Albion 2026/27 Away Player Version",
+  "description": "The white away shirt with fine blue pinstripes, in the slim player cut, marked We Are Brighton 1901-2026.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Player Version",
+  "tags": [
+   "Brighton & Hove Albion",
+   "Mapped Media",
+   "Player Version",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:02:13Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a11_2.jpg?v=1788548529"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "650.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "crystal-palace-2025-26-home-fan-version",
+  "title": "Crystal Palace 2025/26 Home Fan Version",
+  "description": "The red and blue stripes with NET88 across the chest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Crystal Palace",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:02:27Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a06_2.jpg?v=1788548540"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "crystal-palace-2025-26-away-fan-version",
+  "title": "Crystal Palace 2025/26 Away Fan Version",
+  "description": "The gold away shirt with the tonal pattern and NET88 across the chest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Crystal Palace",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:02:39Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a05_3.jpg?v=1788548550"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "crystal-palace-2026-27-away-fan-version",
+  "title": "Crystal Palace 2026/27 Away Fan Version",
+  "description": "White with the red and blue sash, Macron made.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Crystal Palace",
+   "Fan Version",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:02:47Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/a13_2.jpg?v=1788548560"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-2026-home-long-sleeve-fan-version",
+  "title": "Germany 2026 Home Long Sleeve Fan Version",
+  "description": "The white home shirt with the black, red and gold chevron across the chest, in long sleeve.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Germany",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:02:59Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z05.jpg?v=1788548567"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-2026-27-away-long-sleeve-fan-version",
+  "title": "Germany 2026/27 Away Long Sleeve Fan Version",
+  "description": "The navy away shirt with mint trim, in long sleeve.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Germany",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:06Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z06.jpg?v=1788548573"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-2026-home-kids-kit",
+  "title": "Germany 2026 Home Kids Kit",
+  "description": "White shirt with the chevron and black shorts, sold as a set.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Kids Kit",
+  "tags": [
+   "Germany",
+   "Kids Kit",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:07Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z16.jpg?v=1788548577"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-2026-27-away-kids-kit",
+  "title": "Germany 2026/27 Away Kids Kit",
+  "description": "Navy shirt and mint shorts, sold as a set.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Kids Kit",
+  "tags": [
+   "Germany",
+   "Kids Kit",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:07Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z15.jpg?v=1788548581"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-2026-goalkeeper-fan-version",
+  "title": "Germany 2026 Goalkeeper Fan Version",
+  "description": "The pink and purple goalkeeper shirt with the four-star crest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Germany",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:18Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z30.jpg?v=1788548585"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-1990-home-retro-fan-version",
+  "title": "Germany 1990 Home Retro Fan Version",
+  "description": "The 1990 white shirt with the black, red and gold chevron and a black collar — the adidas Originals reissue.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "Germany",
+   "Mapped Media",
+   "Retro",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:05Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z14.jpg?v=1788548593"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-1994-home-retro-fan-version",
+  "title": "Germany 1994 Home Retro Fan Version",
+  "description": "The 1994 white shirt with the red, black and gold diamond print across the chest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "Germany",
+   "Mapped Media",
+   "Retro",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:26Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z10.jpg?v=1788548597"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-2014-away-retro-fan-version",
+  "title": "Germany 2014 Away Retro Fan Version",
+  "description": "The 2014 black and red hooped away shirt.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "Germany",
+   "Mapped Media",
+   "Retro",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:07Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z09.jpg?v=1788548601"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "east-germany-1988-away-retro-fan-version",
+  "title": "East Germany 1988 Away Retro Fan Version",
+  "description": "The pale blue DDR shirt with the tonal chevron print, front and back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "East Germany",
+   "Mapped Media",
+   "Retro",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:34Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z12.jpg?v=1788548608"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-black-leisure-t-shirt-fan-version",
+  "title": "Germany Black Leisure T-Shirt Fan Version",
+  "description": "Black tee with the red and gold flash on each shoulder and the adidas Originals trefoil.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Germany",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:36Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z32.jpg?v=1788548613"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-black-training-set",
+  "title": "Germany Black Training Set",
+  "description": "Black training top with red sleeves and matching shorts.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Training Set",
+  "tags": [
+   "Germany",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b",
+   "Training Set"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:47Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z17.jpg?v=1788548617"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-white-training-set",
+  "title": "Germany White Training Set",
+  "description": "White training top with red sleeves and black shorts.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Training Set",
+  "tags": [
+   "Germany",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b",
+   "Training Set"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:47Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z18.jpg?v=1788548621"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-black-half-zip-training-set",
+  "title": "Germany Black Half-Zip Training Set",
+  "description": "Black half-zip top with the red and gold sleeve flash, and matching trousers.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Half-Zip Training Set",
+  "tags": [
+   "Germany",
+   "Half-Zip Training Set",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:39Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z19.jpg?v=1788548625"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-white-half-zip-training-set",
+  "title": "Germany White Half-Zip Training Set",
+  "description": "White half-zip top with the red and gold sleeve flash, and black trousers.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Half-Zip Training Set",
+  "tags": [
+   "Germany",
+   "Half-Zip Training Set",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:03:56Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z20.jpg?v=1788548629"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-black-and-red-half-zip-training-set",
+  "title": "Germany Black and Red Half-Zip Training Set",
+  "description": "Black half-zip top with red panels, and black trousers with white stripes.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Half-Zip Training Set",
+  "tags": [
+   "Germany",
+   "Half-Zip Training Set",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:06Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z21.jpg?v=1788548634"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-2026-windbreaker",
+  "title": "Germany 2026 Windbreaker",
+  "description": "Cream windbreaker with gold shoulder flashes and dark red sleeves.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Jacket / Windbreaker",
+  "tags": [
+   "Germany",
+   "Jacket / Windbreaker",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:07Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z26.jpg?v=1788548642"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-1994-retro-windbreaker",
+  "title": "Germany 1994 Retro Windbreaker",
+  "description": "White windbreaker carrying the 1994 diamond print across the chest and shoulders.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Jacket / Windbreaker",
+  "tags": [
+   "Germany",
+   "Jacket / Windbreaker",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:19Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z25.jpg?v=1788548648"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-1990-retro-windbreaker",
+  "title": "Germany 1990 Retro Windbreaker",
+  "description": "White windbreaker with the 1990 chevron across the chest, front and back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Jacket / Windbreaker",
+  "tags": [
+   "Germany",
+   "Jacket / Windbreaker",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:27Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z34.jpg?v=1788548653"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "germany-green-retro-windbreaker",
+  "title": "Germany Green Retro Windbreaker",
+  "description": "The green, black, red and gold retro windbreaker — front, back and collar.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Jacket / Windbreaker",
+  "tags": [
+   "Germany",
+   "Jacket / Windbreaker",
+   "Mapped Media",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:28Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z27.jpg?v=1788548660"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2026-home-fan-version",
+  "title": "Spain 2026 Home Fan Version",
+  "description": "The red home shirt with navy raglan sleeves, gold pinstripes and the two-star crest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:09Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z55.jpg?v=1788548665"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2026-home-long-sleeve-fan-version",
+  "title": "Spain 2026 Home Long Sleeve Fan Version",
+  "description": "Long sleeve of the red home shirt with the two-star crest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:37Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z54.jpg?v=1788548671"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2026-home-champions-long-sleeve-fan-version",
+  "title": "Spain 2026 Home Champions Long Sleeve Fan Version",
+  "description": "The red home shirt in long sleeve, printed CAMPEONES 26 in gold across the back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:07Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z38.jpg?v=1788548678"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2026-away-fan-version",
+  "title": "Spain 2026 Away Fan Version",
+  "description": "The cream away shirt with dark red and gold trim and the two-star crest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:04:57Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z51.jpg?v=1788548684"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2026-away-long-sleeve-fan-version",
+  "title": "Spain 2026 Away Long Sleeve Fan Version",
+  "description": "Long sleeve of the cream away shirt.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:38Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z49.jpg?v=1788548689"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "600.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2026-away-kids-kit",
+  "title": "Spain 2026 Away Kids Kit",
+  "description": "Cream shirt and dark red shorts, sold as a set.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Kids Kit",
+  "tags": [
+   "Kids Kit",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:07Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z50.jpg?v=1788548693"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "450.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2026-away-fan-version-floral-embroidery",
+  "title": "Spain 2026 Away Fan Version — Floral Embroidery",
+  "description": "The cream away shirt with the floral embroidery down the chest, shown close up.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:06Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z48.jpg?v=1788548699"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-1994-home-retro-fan-version",
+  "title": "Spain 1994 Home Retro Fan Version",
+  "description": "The 1994 red shirt with the navy and gold diamond flash down one side.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "Mapped Media",
+   "Retro",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:09Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z58.jpg?v=1788548703"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2010-world-cup-final-retro-fan-version",
+  "title": "Spain 2010 World Cup Final Retro Fan Version",
+  "description": "The navy shirt printed Netherlands Spain, July 11 2010, Johannesburg.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "Mapped Media",
+   "Retro",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:17Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z59.jpg?v=1788548706"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-2010-12-away-retro-fan-version",
+  "title": "Spain 2010/12 Away Retro Fan Version",
+  "description": "The white away shirt with the red and gold shoulder stripes and the world champions patch.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Retro",
+  "tags": [
+   "Mapped Media",
+   "Retro",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:17Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z57.jpg?v=1788548711"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "700.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-lake-blue-half-zip-training-set",
+  "title": "Spain Lake Blue Half-Zip Training Set",
+  "description": "Pale blue half-zip top with navy panels and navy trousers.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Half-Zip Training Set",
+  "tags": [
+   "Half-Zip Training Set",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:26Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z44.jpg?v=1788548715"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "850.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-white-retro-tracksuit-set",
+  "title": "Spain White Retro Tracksuit Set",
+  "description": "Cream track jacket with a dark red collar, and matching dark red trousers.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Jacket / Windbreaker",
+  "tags": [
+   "Jacket / Windbreaker",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:26Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z41.jpg?v=1788548719"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "spain-navy-retro-windbreaker",
+  "title": "Spain Navy Retro Windbreaker",
+  "description": "The navy, red and gold retro windbreaker, front and back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Jacket / Windbreaker",
+  "tags": [
+   "Jacket / Windbreaker",
+   "Mapped Media",
+   "Spain",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:37Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z46.jpg?v=1788548724"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "1000.00",
+      "availableForSale": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "handle": "south-africa-gold-home-fan-version",
+  "title": "South Africa Gold Home Fan Version",
+  "description": "The Kappa gold shirt with the black and white banded panels and the SAFA crest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
+  "productType": "Fan Version",
+  "tags": [
+   "Fan Version",
+   "Mapped Media",
+   "South Africa",
+   "supplied-batch-2026-09-04b"
+  ],
+  "status": "ACTIVE",
+  "updatedAt": "2026-09-04T19:05:34Z",
+  "featuredImage": {
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z02.jpg?v=1788548730"
+  },
+  "variants": {
+   "edges": [
+    {
+     "node": {
+      "price": "500.00",
       "availableForSale": true
      }
     }
