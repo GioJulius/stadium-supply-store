@@ -32,9 +32,9 @@ try and get it done before monday."
 | --- | --- | --- | --- |
 | Inter Milan | 2 Sep, 6:24–6:37 PM | 76 | imported 2 Sep (34 listings) |
 | Liverpool top-up | 2 Sep, 6:42 PM | 5 | imported 2 Sep |
-| Bayern Munich | 3 Sep, 11:31 AM | 70 | **imported 4 Sep (34 listings)** |
-| France | 4 Sep, 2:28–2:30 PM | 47 | **imported 4 Sep (32 listings)** |
-| Brazil | 4 Sep, 4:47–4:51 PM | 76 | **imported 4 Sep (44 listings)** |
+| Bayern Munich | 3 Sep, 11:31 AM | 70 | imported 4 Sep — 34 listings, live |
+| France | 4 Sep, 2:28–2:30 PM | 47 | imported 4 Sep — 32 listings, live |
+| Brazil | 4 Sep, 4:47–4:51 PM | 76 | imported 4 Sep — 44 listings, live |
 | Supplier-site captures | 4 Sep | 32 (.webp) | PSG and Manchester United, held as reference |
 
 The client captioned each message with the garment type — retro, retro long
@@ -101,3 +101,44 @@ fan long sleeve sits R100 above fan.
 > flagged — and then load the teams that are still thin, working off the
 > exclusion list you gave me (no cropped vests, no reversible jackets, no shorts
 > on their own).
+
+## Where it ended, 4 Sep 2026
+
+Deployed and verified on stadiumsupply.co.za: **437 customer-facing products**,
+up from 324. Bayern 35, France 39, Brazil 48, Inter Milan 34, Liverpool 53,
+Real Madrid 33. Sitemap 446 urls; new product pages serve their own prerendered
+titles.
+
+Scope was deliberately held to **the batches the client actually sent over
+WhatsApp**. The supplier bulk import is prepared but not run — see below.
+
+### The supplier pipeline is ready when you want it
+
+The link the client meant is `ezfashion.x.yupoo.com`, and the scraper,
+classifier, image trimmer and Shopify importer for it already exist in
+`import/`. Three things were fixed to make it safe to run:
+
+- **The client's exclusions are now enforced in the classifier.** 183
+  shorts-sold-alone and 36 cropped jerseys were sitting in the importable pile;
+  they are excluded now, along with the 632 US-sports albums, which turned out
+  never to have been a rule in `classify.py` at all — only in its output file,
+  so any re-run would have quietly let them back in.
+- **`import_supplier.py` was creating invisible products.** It never applied the
+  `Mapped Media` tag the storefront filters on, so a listing would be created,
+  published, and never rendered. Fixed, and the 11 products from the pilot run
+  were back-tagged.
+- **A 12-album pilot was run end to end** to prove the chain — 11 Real Madrid
+  listings, eight photographs each, correct tier and size run.
+
+That leaves **4,399 importable albums** not yet live, at roughly 40 seconds per
+product — about 49 hours of running and 18 GB of downloads, so it wants staging
+across several background batches rather than one pass.
+
+### Still open
+
+- **134 listings carry a single photograph** (44 from this batch where only one
+  photo arrived, 90 from before). The supplier albums are the fix; each one
+  averages 26 photographs.
+- **Retro long sleeve** is priced at the retro tier, R700. Fan long sleeve sits
+  R100 above fan, so this may want R800 — worth one question.
+- **Season labels** on the retros want a confirmation pass with the client.
