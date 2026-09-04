@@ -2545,7 +2545,7 @@
    "South Africa"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-01T22:05:13Z",
+  "updatedAt": "2026-09-04T19:08:44Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/070_01.jpg?v=1787999699"
   },
@@ -13019,7 +13019,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T18:01:12Z",
+  "updatedAt": "2026-09-04T19:06:25Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/216431574_01.jpg?v=1788544871"
   },
@@ -13187,7 +13187,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T18:03:30Z",
+  "updatedAt": "2026-09-04T19:06:24Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/203699927_01.jpg?v=1788545006"
   },
@@ -13327,7 +13327,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T18:05:11Z",
+  "updatedAt": "2026-09-04T19:08:20Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/202932358_01.jpg?v=1788545102"
   },
@@ -13355,7 +13355,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T18:05:29Z",
+  "updatedAt": "2026-09-04T19:09:09Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/208448613_01.jpg?v=1788545123"
   },
@@ -13467,7 +13467,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-04T18:06:54Z",
+  "updatedAt": "2026-09-04T19:08:20Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/211242767_01.jpg?v=1788545211"
   },
@@ -14883,33 +14883,6 @@
     {
      "node": {
       "price": "1000.00",
-      "availableForSale": true
-     }
-    }
-   ]
-  }
- },
- {
-  "handle": "south-africa-gold-home-fan-version",
-  "title": "South Africa Gold Home Fan Version",
-  "description": "The Kappa gold shirt with the black and white banded panels and the SAFA crest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
-  "productType": "Fan Version",
-  "tags": [
-   "Fan Version",
-   "Mapped Media",
-   "South Africa",
-   "supplied-batch-2026-09-04b"
-  ],
-  "status": "ACTIVE",
-  "updatedAt": "2026-09-04T19:05:34Z",
-  "featuredImage": {
-   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/z02.jpg?v=1788548730"
-  },
-  "variants": {
-   "edges": [
-    {
-     "node": {
-      "price": "500.00",
       "availableForSale": true
      }
     }

@@ -1,84 +1,621 @@
 {
   "note": "Second 4 Sep 2026 batch. Three sources, all identified by eye against the live storefront's lead images before anything was created: (a) twelve saved ezfashion supplier album pages plus two loose album saves, covering Aston Villa, Brighton and Crystal Palace — none of those three clubs had a single listing on the store; (b) three loose supplier photographs of the Aston Villa 26/27 home shirt; (c) a 60-photograph WhatsApp export the client sent at 8.44 PM, which turned out to be a full Germany and Spain range plus one South Africa shirt, not more English stock. Photo keys: zN = the Nth photo of the WhatsApp export in timestamp order, aN.k = the kth image of the Nth album folder (alphabetical), LN = the Nth loose file. Files are staged in import/batch-0904b by scripts/stage-0904b.py.",
-  "dedupeNote": "Checked against every Germany and Spain listing already live (11 of them) by comparing full image sets, not titles. Six garments in the WhatsApp export are already on the store and are recorded under heldBack rather than imported. The two English clubs and Aston Villa had nothing to collide with.",
+  "dedupeNote": "Checked against every Germany and Spain listing already live (11 of them) by comparing full image sets, not titles. Six garments in the WhatsApp export are already on the store and are recorded under heldBack rather than imported. The two English clubs and Aston Villa had nothing to collide with. One garment slipped that net: a South Africa shirt in a Germany/Spain export, checked only after the import when the live South Africa count came back higher than expected. Compare a mixed batch against every team it touches, not the teams its filename implies.",
   "priceNote": "Client's standing table: fan R500 (S-4XL), fan long sleeve R600, player R650 (S-2XL), player long sleeve R750, retro R700, kids R450, half-zip training set R850, jacket or windbreaker R1000, training top and shorts R600. Retro long sleeve is R800 in the supplier's own classifier (retro +R100, matching how fan long sleeve sits above fan) — that answers the question left open in client-brief-2026-09-04.md, and no garment in this batch needs it anyway.",
   "seasonNote": "A season is asserted only where the garment dates itself — a sponsor, a competition patch, a crest star count or a design that is unmistakably one year's. Everything else is titled by colourway or by the supplier's own album name.",
   "sizes": {
-    "fan": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
-    "adult": ["S", "M", "L", "XL", "2XL"],
-    "kids": ["2-3", "4-5", "6-7", "8-9", "10-11"]
+    "fan": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "adult": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "kids": [
+      "2-3",
+      "4-5",
+      "6-7",
+      "8-9",
+      "10-11"
+    ]
   },
   "tiers": {
-    "fan":        { "price": "500.00", "sizes": "fan",   "productType": "Fan Version" },
-    "fanLong":    { "price": "600.00", "sizes": "fan",   "productType": "Fan Version" },
-    "player":     { "price": "650.00", "sizes": "adult", "productType": "Player Version" },
-    "playerLong": { "price": "750.00", "sizes": "adult", "productType": "Player Version" },
-    "retro":      { "price": "700.00", "sizes": "adult", "productType": "Retro" },
-    "kids":       { "price": "450.00", "sizes": "kids",  "productType": "Kids Kit" },
-    "halfZip":    { "price": "850.00", "sizes": "adult", "productType": "Half-Zip Training Set" },
-    "jacket":     { "price": "1000.00","sizes": "adult", "productType": "Jacket / Windbreaker" },
-    "trainingSet":{ "price": "600.00", "sizes": "adult", "productType": "Training Set" }
+    "fan": {
+      "price": "500.00",
+      "sizes": "fan",
+      "productType": "Fan Version"
+    },
+    "fanLong": {
+      "price": "600.00",
+      "sizes": "fan",
+      "productType": "Fan Version"
+    },
+    "player": {
+      "price": "650.00",
+      "sizes": "adult",
+      "productType": "Player Version"
+    },
+    "playerLong": {
+      "price": "750.00",
+      "sizes": "adult",
+      "productType": "Player Version"
+    },
+    "retro": {
+      "price": "700.00",
+      "sizes": "adult",
+      "productType": "Retro"
+    },
+    "kids": {
+      "price": "450.00",
+      "sizes": "kids",
+      "productType": "Kids Kit"
+    },
+    "halfZip": {
+      "price": "850.00",
+      "sizes": "adult",
+      "productType": "Half-Zip Training Set"
+    },
+    "jacket": {
+      "price": "1000.00",
+      "sizes": "adult",
+      "productType": "Jacket / Windbreaker"
+    },
+    "trainingSet": {
+      "price": "600.00",
+      "sizes": "adult",
+      "productType": "Training Set"
+    }
   },
-
   "heldBack": [
-    { "photos": ["z4", "z7"], "reason": "Germany 2026/27 away shirt — already live as 'Germany 2026/27 Away Jersey'. Same navy body, same mint trim, same adidas Trefoil and four-star crest." },
-    { "photos": ["z35"], "reason": "Black Germany tracksuit — already live as '2026 World Cup Germany Jacket set'. That listing's own photographs are all swing tags and trouser close-ups, so the match was made on the supplier album name rather than the lead image; worth a second look." },
-    { "photos": ["z39", "z40"], "reason": "Maroon Spain jacket — already live as '2026 World Cup Spain Windbreaker'." },
-    { "photos": ["z42"], "reason": "Maroon Spain jacket and trousers — already live as '2026 World Cup Spain Training Set jacket suit'." },
-    { "photos": ["z43"], "reason": "Navy Spain half-zip set — already live as '2026 World Cup Spain royal blue Half-Zip Training Set'." }
+    {
+      "photos": [
+        "z4",
+        "z7"
+      ],
+      "reason": "Germany 2026/27 away shirt — already live as 'Germany 2026/27 Away Jersey'. Same navy body, same mint trim, same adidas Trefoil and four-star crest."
+    },
+    {
+      "photos": [
+        "z35"
+      ],
+      "reason": "Black Germany tracksuit — already live as '2026 World Cup Germany Jacket set'. That listing's own photographs are all swing tags and trouser close-ups, so the match was made on the supplier album name rather than the lead image; worth a second look."
+    },
+    {
+      "photos": [
+        "z39",
+        "z40"
+      ],
+      "reason": "Maroon Spain jacket — already live as '2026 World Cup Spain Windbreaker'."
+    },
+    {
+      "photos": [
+        "z42"
+      ],
+      "reason": "Maroon Spain jacket and trousers — already live as '2026 World Cup Spain Training Set jacket suit'."
+    },
+    {
+      "photos": [
+        "z43"
+      ],
+      "reason": "Navy Spain half-zip set — already live as '2026 World Cup Spain royal blue Half-Zip Training Set'."
+    },
+    {
+      "photos": [
+        "z2",
+        "z1"
+      ],
+      "reason": "Gold, black and white Kappa Kombat shirt — already live as 'South Africa Retro Goalkeeper Jersey (Kappa Kombat)'. Imported as a duplicate first and withdrawn by scripts/fix-south-africa-duplicate-0904b.mjs, which moved its two photographs onto the surviving listing. Missed on the first pass because the dedupe compared the export against the Germany and Spain listings only, and this shirt was neither."
+    }
   ],
-
   "products": [
-    { "team": "Aston Villa", "title": "Aston Villa 2025/26 Away Fan Version", "tier": "fan", "photos": ["a1.2","a1.3","a1.4","a1.5","a1.1"], "blurb": "The black away shirt with pale blue collar trim, Betano across the chest and the Villans script inside the neck." },
-    { "team": "Aston Villa", "title": "Aston Villa 2025/26 Home Fan Version", "tier": "fan", "photos": ["a2.2","a2.1","a2.3","a2.5","a2.4"], "blurb": "Claret with pale blue sleeves and the 1874 mark on the back of the neck." },
-    { "team": "Aston Villa", "title": "Aston Villa 2025/26 Third Fan Version — Villa Foundation", "tier": "fan", "photos": ["a3.5","a3.1","a3.4","a3.3","a3.2"], "blurb": "The pale marbled third shirt carrying Aston Villa Foundation, printed for the Istanbul final on 20 May 2026." },
-    { "team": "Aston Villa", "title": "Aston Villa 2026/27 Home Fan Version", "tier": "fan", "photos": ["L1","L2","L3"], "blurb": "Claret with a pale blue polo collar and the lion on the chest — front, collar and back." },
-    { "team": "Aston Villa", "title": "Aston Villa 2026/27 Home Player Version", "tier": "player", "photos": ["a8.1","a8.2","a8.4","a8.3"], "blurb": "The slim player cut of the claret home shirt, with the pale blue polo collar." },
-    { "team": "Aston Villa", "title": "Aston Villa 2026/27 Home Long Sleeve Player Version", "tier": "playerLong", "photos": ["a9.1","a9.2","a9.3","a9.4","a9.5"], "blurb": "Long sleeve player cut of the claret home shirt." },
-    { "team": "Aston Villa", "title": "Aston Villa 2026/27 Third Fan Version", "tier": "fan", "photos": ["a10.2","a10.3","a10.5","a10.6","a10.4","a10.9","a10.7","a10.8","a10.10","a10.1"], "blurb": "The pale blue third shirt with the swirled pattern and Visit Rwanda across the chest." },
-    { "team": "Aston Villa", "title": "Aston Villa 2026/27 Home Kids Kit", "tier": "kids", "photos": ["a7.5","a7.2","a7.3","a7.4","a7.6","a7.1"], "blurb": "Claret shirt and pale blue shorts, sold as a set." },
-    { "team": "Aston Villa", "title": "Aston Villa 1993/95 Home Retro Fan Version", "tier": "retro", "photos": ["a12.2","a12.1","a12.4","a12.3"], "blurb": "The asics claret and blue striped shirt with the müller block on the chest." },
-    { "team": "Brighton & Hove Albion", "title": "Brighton & Hove Albion 2025/26 Away Fan Version", "tier": "fan", "photos": ["a4.2","a4.1","a4.3","a4.4"], "blurb": "The lilac away shirt with American Express across the chest and We Are Brighton inside the neck." },
-    { "team": "Brighton & Hove Albion", "title": "Brighton & Hove Albion 2026/27 Home Fan Version", "tier": "fan", "photos": ["a14.1","a14.2","a14.4","a14.5","a14.3"], "blurb": "Blue with white pinstripes, the seagull crest and American Express." },
-    { "team": "Brighton & Hove Albion", "title": "Brighton & Hove Albion 2026/27 Away Player Version", "tier": "player", "photos": ["a11.2","a11.3","a11.4","a11.5","a11.1"], "blurb": "The white away shirt with fine blue pinstripes, in the slim player cut, marked We Are Brighton 1901-2026." },
-    { "team": "Crystal Palace", "title": "Crystal Palace 2025/26 Home Fan Version", "tier": "fan", "photos": ["a6.2","a6.3","a6.1","a6.4"], "blurb": "The red and blue stripes with NET88 across the chest." },
-    { "team": "Crystal Palace", "title": "Crystal Palace 2025/26 Away Fan Version", "tier": "fan", "photos": ["a5.3","a5.4","a5.2","a5.1"], "blurb": "The gold away shirt with the tonal pattern and NET88 across the chest." },
-    { "team": "Crystal Palace", "title": "Crystal Palace 2026/27 Away Fan Version", "tier": "fan", "photos": ["a13.2","a13.3","a13.4","a13.1"], "blurb": "White with the red and blue sash, Macron made." },
-
-    { "team": "Germany", "title": "Germany 2026 Home Long Sleeve Fan Version", "tier": "fanLong", "photos": ["z5","z3"], "blurb": "The white home shirt with the black, red and gold chevron across the chest, in long sleeve." },
-    { "team": "Germany", "title": "Germany 2026/27 Away Long Sleeve Fan Version", "tier": "fanLong", "photos": ["z6","z8"], "blurb": "The navy away shirt with mint trim, in long sleeve." },
-    { "team": "Germany", "title": "Germany 2026 Home Kids Kit", "tier": "kids", "photos": ["z16"], "blurb": "White shirt with the chevron and black shorts, sold as a set." },
-    { "team": "Germany", "title": "Germany 2026/27 Away Kids Kit", "tier": "kids", "photos": ["z15"], "blurb": "Navy shirt and mint shorts, sold as a set." },
-    { "team": "Germany", "title": "Germany 2026 Goalkeeper Fan Version", "tier": "fan", "photos": ["z30"], "blurb": "The pink and purple goalkeeper shirt with the four-star crest." },
-    { "team": "Germany", "title": "Germany 1990 Home Retro Fan Version", "tier": "retro", "photos": ["z14","z36","z11"], "blurb": "The 1990 white shirt with the black, red and gold chevron and a black collar — the adidas Originals reissue." },
-    { "team": "Germany", "title": "Germany 1994 Home Retro Fan Version", "tier": "retro", "photos": ["z10"], "blurb": "The 1994 white shirt with the red, black and gold diamond print across the chest." },
-    { "team": "Germany", "title": "Germany 2014 Away Retro Fan Version", "tier": "retro", "photos": ["z9"], "blurb": "The 2014 black and red hooped away shirt." },
-    { "team": "East Germany", "title": "East Germany 1988 Away Retro Fan Version", "tier": "retro", "photos": ["z12","z13"], "blurb": "The pale blue DDR shirt with the tonal chevron print, front and back." },
-    { "team": "Germany", "title": "Germany Black Leisure T-Shirt Fan Version", "tier": "fan", "photos": ["z32","z31"], "blurb": "Black tee with the red and gold flash on each shoulder and the adidas Originals trefoil." },
-    { "team": "Germany", "title": "Germany Black Training Set", "tier": "trainingSet", "photos": ["z17"], "blurb": "Black training top with red sleeves and matching shorts." },
-    { "team": "Germany", "title": "Germany White Training Set", "tier": "trainingSet", "photos": ["z18"], "blurb": "White training top with red sleeves and black shorts." },
-    { "team": "Germany", "title": "Germany Black Half-Zip Training Set", "tier": "halfZip", "photos": ["z19"], "blurb": "Black half-zip top with the red and gold sleeve flash, and matching trousers." },
-    { "team": "Germany", "title": "Germany White Half-Zip Training Set", "tier": "halfZip", "photos": ["z20"], "blurb": "White half-zip top with the red and gold sleeve flash, and black trousers." },
-    { "team": "Germany", "title": "Germany Black and Red Half-Zip Training Set", "tier": "halfZip", "photos": ["z21"], "blurb": "Black half-zip top with red panels, and black trousers with white stripes." },
-    { "team": "Germany", "title": "Germany 2026 Windbreaker", "tier": "jacket", "photos": ["z26","z22","z23"], "blurb": "Cream windbreaker with gold shoulder flashes and dark red sleeves." },
-    { "team": "Germany", "title": "Germany 1994 Retro Windbreaker", "tier": "jacket", "photos": ["z25","z24"], "blurb": "White windbreaker carrying the 1994 diamond print across the chest and shoulders." },
-    { "team": "Germany", "title": "Germany 1990 Retro Windbreaker", "tier": "jacket", "photos": ["z34","z33"], "blurb": "White windbreaker with the 1990 chevron across the chest, front and back." },
-    { "team": "Germany", "title": "Germany Green Retro Windbreaker", "tier": "jacket", "photos": ["z27","z28","z29"], "blurb": "The green, black, red and gold retro windbreaker — front, back and collar." },
-
-    { "team": "Spain", "title": "Spain 2026 Home Fan Version", "tier": "fan", "photos": ["z55","z52"], "blurb": "The red home shirt with navy raglan sleeves, gold pinstripes and the two-star crest." },
-    { "team": "Spain", "title": "Spain 2026 Home Long Sleeve Fan Version", "tier": "fanLong", "photos": ["z54","z56"], "blurb": "Long sleeve of the red home shirt with the two-star crest." },
-    { "team": "Spain", "title": "Spain 2026 Home Champions Long Sleeve Fan Version", "tier": "fanLong", "photos": ["z38","z37"], "blurb": "The red home shirt in long sleeve, printed CAMPEONES 26 in gold across the back." },
-    { "team": "Spain", "title": "Spain 2026 Away Fan Version", "tier": "fan", "photos": ["z51","z53"], "blurb": "The cream away shirt with dark red and gold trim and the two-star crest." },
-    { "team": "Spain", "title": "Spain 2026 Away Long Sleeve Fan Version", "tier": "fanLong", "photos": ["z49","z60"], "blurb": "Long sleeve of the cream away shirt." },
-    { "team": "Spain", "title": "Spain 2026 Away Kids Kit", "tier": "kids", "photos": ["z50"], "blurb": "Cream shirt and dark red shorts, sold as a set." },
-    { "team": "Spain", "title": "Spain 2026 Away Fan Version — Floral Embroidery", "tier": "fan", "photos": ["z48","z47"], "blurb": "The cream away shirt with the floral embroidery down the chest, shown close up." },
-    { "team": "Spain", "title": "Spain 1994 Home Retro Fan Version", "tier": "retro", "photos": ["z58"], "blurb": "The 1994 red shirt with the navy and gold diamond flash down one side." },
-    { "team": "Spain", "title": "Spain 2010 World Cup Final Retro Fan Version", "tier": "retro", "photos": ["z59"], "blurb": "The navy shirt printed Netherlands Spain, July 11 2010, Johannesburg." },
-    { "team": "Spain", "title": "Spain 2010/12 Away Retro Fan Version", "tier": "retro", "photos": ["z57"], "blurb": "The white away shirt with the red and gold shoulder stripes and the world champions patch." },
-    { "team": "Spain", "title": "Spain Lake Blue Half-Zip Training Set", "tier": "halfZip", "photos": ["z44"], "blurb": "Pale blue half-zip top with navy panels and navy trousers." },
-    { "team": "Spain", "title": "Spain White Retro Tracksuit Set", "tier": "jacket", "photos": ["z41"], "blurb": "Cream track jacket with a dark red collar, and matching dark red trousers." },
-    { "team": "Spain", "title": "Spain Navy Retro Windbreaker", "tier": "jacket", "photos": ["z46","z45"], "blurb": "The navy, red and gold retro windbreaker, front and back." },
-
-    { "team": "South Africa", "title": "South Africa Gold Home Fan Version", "tier": "fan", "photos": ["z2","z1"], "blurb": "The Kappa gold shirt with the black and white banded panels and the SAFA crest." }
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2025/26 Away Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a1.2",
+        "a1.3",
+        "a1.4",
+        "a1.5",
+        "a1.1"
+      ],
+      "blurb": "The black away shirt with pale blue collar trim, Betano across the chest and the Villans script inside the neck."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2025/26 Home Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a2.2",
+        "a2.1",
+        "a2.3",
+        "a2.5",
+        "a2.4"
+      ],
+      "blurb": "Claret with pale blue sleeves and the 1874 mark on the back of the neck."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2025/26 Third Fan Version — Villa Foundation",
+      "tier": "fan",
+      "photos": [
+        "a3.5",
+        "a3.1",
+        "a3.4",
+        "a3.3",
+        "a3.2"
+      ],
+      "blurb": "The pale marbled third shirt carrying Aston Villa Foundation, printed for the Istanbul final on 20 May 2026."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2026/27 Home Fan Version",
+      "tier": "fan",
+      "photos": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "blurb": "Claret with a pale blue polo collar and the lion on the chest — front, collar and back."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2026/27 Home Player Version",
+      "tier": "player",
+      "photos": [
+        "a8.1",
+        "a8.2",
+        "a8.4",
+        "a8.3"
+      ],
+      "blurb": "The slim player cut of the claret home shirt, with the pale blue polo collar."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2026/27 Home Long Sleeve Player Version",
+      "tier": "playerLong",
+      "photos": [
+        "a9.1",
+        "a9.2",
+        "a9.3",
+        "a9.4",
+        "a9.5"
+      ],
+      "blurb": "Long sleeve player cut of the claret home shirt."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2026/27 Third Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a10.2",
+        "a10.3",
+        "a10.5",
+        "a10.6",
+        "a10.4",
+        "a10.9",
+        "a10.7",
+        "a10.8",
+        "a10.10",
+        "a10.1"
+      ],
+      "blurb": "The pale blue third shirt with the swirled pattern and Visit Rwanda across the chest."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 2026/27 Home Kids Kit",
+      "tier": "kids",
+      "photos": [
+        "a7.5",
+        "a7.2",
+        "a7.3",
+        "a7.4",
+        "a7.6",
+        "a7.1"
+      ],
+      "blurb": "Claret shirt and pale blue shorts, sold as a set."
+    },
+    {
+      "team": "Aston Villa",
+      "title": "Aston Villa 1993/95 Home Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "a12.2",
+        "a12.1",
+        "a12.4",
+        "a12.3"
+      ],
+      "blurb": "The asics claret and blue striped shirt with the müller block on the chest."
+    },
+    {
+      "team": "Brighton & Hove Albion",
+      "title": "Brighton & Hove Albion 2025/26 Away Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a4.2",
+        "a4.1",
+        "a4.3",
+        "a4.4"
+      ],
+      "blurb": "The lilac away shirt with American Express across the chest and We Are Brighton inside the neck."
+    },
+    {
+      "team": "Brighton & Hove Albion",
+      "title": "Brighton & Hove Albion 2026/27 Home Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a14.1",
+        "a14.2",
+        "a14.4",
+        "a14.5",
+        "a14.3"
+      ],
+      "blurb": "Blue with white pinstripes, the seagull crest and American Express."
+    },
+    {
+      "team": "Brighton & Hove Albion",
+      "title": "Brighton & Hove Albion 2026/27 Away Player Version",
+      "tier": "player",
+      "photos": [
+        "a11.2",
+        "a11.3",
+        "a11.4",
+        "a11.5",
+        "a11.1"
+      ],
+      "blurb": "The white away shirt with fine blue pinstripes, in the slim player cut, marked We Are Brighton 1901-2026."
+    },
+    {
+      "team": "Crystal Palace",
+      "title": "Crystal Palace 2025/26 Home Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a6.2",
+        "a6.3",
+        "a6.1",
+        "a6.4"
+      ],
+      "blurb": "The red and blue stripes with NET88 across the chest."
+    },
+    {
+      "team": "Crystal Palace",
+      "title": "Crystal Palace 2025/26 Away Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a5.3",
+        "a5.4",
+        "a5.2",
+        "a5.1"
+      ],
+      "blurb": "The gold away shirt with the tonal pattern and NET88 across the chest."
+    },
+    {
+      "team": "Crystal Palace",
+      "title": "Crystal Palace 2026/27 Away Fan Version",
+      "tier": "fan",
+      "photos": [
+        "a13.2",
+        "a13.3",
+        "a13.4",
+        "a13.1"
+      ],
+      "blurb": "White with the red and blue sash, Macron made."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 2026 Home Long Sleeve Fan Version",
+      "tier": "fanLong",
+      "photos": [
+        "z5",
+        "z3"
+      ],
+      "blurb": "The white home shirt with the black, red and gold chevron across the chest, in long sleeve."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 2026/27 Away Long Sleeve Fan Version",
+      "tier": "fanLong",
+      "photos": [
+        "z6",
+        "z8"
+      ],
+      "blurb": "The navy away shirt with mint trim, in long sleeve."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 2026 Home Kids Kit",
+      "tier": "kids",
+      "photos": [
+        "z16"
+      ],
+      "blurb": "White shirt with the chevron and black shorts, sold as a set."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 2026/27 Away Kids Kit",
+      "tier": "kids",
+      "photos": [
+        "z15"
+      ],
+      "blurb": "Navy shirt and mint shorts, sold as a set."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 2026 Goalkeeper Fan Version",
+      "tier": "fan",
+      "photos": [
+        "z30"
+      ],
+      "blurb": "The pink and purple goalkeeper shirt with the four-star crest."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 1990 Home Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "z14",
+        "z36",
+        "z11"
+      ],
+      "blurb": "The 1990 white shirt with the black, red and gold chevron and a black collar — the adidas Originals reissue."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 1994 Home Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "z10"
+      ],
+      "blurb": "The 1994 white shirt with the red, black and gold diamond print across the chest."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 2014 Away Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "z9"
+      ],
+      "blurb": "The 2014 black and red hooped away shirt."
+    },
+    {
+      "team": "East Germany",
+      "title": "East Germany 1988 Away Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "z12",
+        "z13"
+      ],
+      "blurb": "The pale blue DDR shirt with the tonal chevron print, front and back."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany Black Leisure T-Shirt Fan Version",
+      "tier": "fan",
+      "photos": [
+        "z32",
+        "z31"
+      ],
+      "blurb": "Black tee with the red and gold flash on each shoulder and the adidas Originals trefoil."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany Black Training Set",
+      "tier": "trainingSet",
+      "photos": [
+        "z17"
+      ],
+      "blurb": "Black training top with red sleeves and matching shorts."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany White Training Set",
+      "tier": "trainingSet",
+      "photos": [
+        "z18"
+      ],
+      "blurb": "White training top with red sleeves and black shorts."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany Black Half-Zip Training Set",
+      "tier": "halfZip",
+      "photos": [
+        "z19"
+      ],
+      "blurb": "Black half-zip top with the red and gold sleeve flash, and matching trousers."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany White Half-Zip Training Set",
+      "tier": "halfZip",
+      "photos": [
+        "z20"
+      ],
+      "blurb": "White half-zip top with the red and gold sleeve flash, and black trousers."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany Black and Red Half-Zip Training Set",
+      "tier": "halfZip",
+      "photos": [
+        "z21"
+      ],
+      "blurb": "Black half-zip top with red panels, and black trousers with white stripes."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 2026 Windbreaker",
+      "tier": "jacket",
+      "photos": [
+        "z26",
+        "z22",
+        "z23"
+      ],
+      "blurb": "Cream windbreaker with gold shoulder flashes and dark red sleeves."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 1994 Retro Windbreaker",
+      "tier": "jacket",
+      "photos": [
+        "z25",
+        "z24"
+      ],
+      "blurb": "White windbreaker carrying the 1994 diamond print across the chest and shoulders."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany 1990 Retro Windbreaker",
+      "tier": "jacket",
+      "photos": [
+        "z34",
+        "z33"
+      ],
+      "blurb": "White windbreaker with the 1990 chevron across the chest, front and back."
+    },
+    {
+      "team": "Germany",
+      "title": "Germany Green Retro Windbreaker",
+      "tier": "jacket",
+      "photos": [
+        "z27",
+        "z28",
+        "z29"
+      ],
+      "blurb": "The green, black, red and gold retro windbreaker — front, back and collar."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2026 Home Fan Version",
+      "tier": "fan",
+      "photos": [
+        "z55",
+        "z52"
+      ],
+      "blurb": "The red home shirt with navy raglan sleeves, gold pinstripes and the two-star crest."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2026 Home Long Sleeve Fan Version",
+      "tier": "fanLong",
+      "photos": [
+        "z54",
+        "z56"
+      ],
+      "blurb": "Long sleeve of the red home shirt with the two-star crest."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2026 Home Champions Long Sleeve Fan Version",
+      "tier": "fanLong",
+      "photos": [
+        "z38",
+        "z37"
+      ],
+      "blurb": "The red home shirt in long sleeve, printed CAMPEONES 26 in gold across the back."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2026 Away Fan Version",
+      "tier": "fan",
+      "photos": [
+        "z51",
+        "z53"
+      ],
+      "blurb": "The cream away shirt with dark red and gold trim and the two-star crest."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2026 Away Long Sleeve Fan Version",
+      "tier": "fanLong",
+      "photos": [
+        "z49",
+        "z60"
+      ],
+      "blurb": "Long sleeve of the cream away shirt."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2026 Away Kids Kit",
+      "tier": "kids",
+      "photos": [
+        "z50"
+      ],
+      "blurb": "Cream shirt and dark red shorts, sold as a set."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2026 Away Fan Version — Floral Embroidery",
+      "tier": "fan",
+      "photos": [
+        "z48",
+        "z47"
+      ],
+      "blurb": "The cream away shirt with the floral embroidery down the chest, shown close up."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 1994 Home Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "z58"
+      ],
+      "blurb": "The 1994 red shirt with the navy and gold diamond flash down one side."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2010 World Cup Final Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "z59"
+      ],
+      "blurb": "The navy shirt printed Netherlands Spain, July 11 2010, Johannesburg."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain 2010/12 Away Retro Fan Version",
+      "tier": "retro",
+      "photos": [
+        "z57"
+      ],
+      "blurb": "The white away shirt with the red and gold shoulder stripes and the world champions patch."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain Lake Blue Half-Zip Training Set",
+      "tier": "halfZip",
+      "photos": [
+        "z44"
+      ],
+      "blurb": "Pale blue half-zip top with navy panels and navy trousers."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain White Retro Tracksuit Set",
+      "tier": "jacket",
+      "photos": [
+        "z41"
+      ],
+      "blurb": "Cream track jacket with a dark red collar, and matching dark red trousers."
+    },
+    {
+      "team": "Spain",
+      "title": "Spain Navy Retro Windbreaker",
+      "tier": "jacket",
+      "photos": [
+        "z46",
+        "z45"
+      ],
+      "blurb": "The navy, red and gold retro windbreaker, front and back."
+    }
   ]
 }
