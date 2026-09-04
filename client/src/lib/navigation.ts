@@ -63,6 +63,9 @@ export const SHOP_MENU: NavSection[] = [
       {
         label: "Serie A",
         children: [
+          // "Inter Milan" in full, never bare "inter" — that would sweep in
+          // Inter Miami, which lives under Rest of the world.
+          { label: "Inter Milan", q: "inter milan" },
           { label: "Juventus", q: "juventus" },
           { label: "AC Milan", q: "ac milan" },
         ],
@@ -105,10 +108,24 @@ export const SHOP_MENU: NavSection[] = [
     label: "Training & Outerwear",
     children: [
       { label: "Training", q: "training" },
+      { label: "Half-zip sets", q: "half-zip" },
       { label: "Jackets", q: "jacket" },
       { label: "Windbreakers", q: "windbreaker" },
       { label: "Hoodies", q: "hoodie" },
+      { label: "Sweatshirts", q: "sweatshirt" },
       { label: "Tracksuits", q: "tracksuit" },
+    ],
+  },
+  // The client sells each shirt in several cuts, and shoppers ask for them by
+  // name — long sleeve and goalkeeper most often — so each is its own link
+  // rather than something to be found by typing into search.
+  {
+    label: "Shirt Types",
+    children: [
+      { label: "Fan version", q: "fan version" },
+      { label: "Player version", q: "player version" },
+      { label: "Long sleeve", q: "long sleeve" },
+      { label: "Goalkeeper", q: "goalkeeper" },
     ],
   },
   { label: "Kids", href: "/shop?q=kids&label=Kids" },

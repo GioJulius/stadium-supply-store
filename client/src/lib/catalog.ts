@@ -1,6 +1,11 @@
 import type { Product } from "@shared/commerce/types";
 
-export type CatalogFilter = "all" | "fan" | "player" | "retro" | "new";
+/**
+ * The chips on the shop toolbar. Every key but `all` is matched as a substring
+ * of the listing's title, product type and tags together, so a key is the term
+ * the catalogue actually says — "long sleeve", not "longSleeve".
+ */
+export type CatalogFilter = "all" | "fan" | "player" | "retro" | "long sleeve" | "kids" | "training" | "new";
 export type CatalogSortMode = "latest" | "price-asc" | "price-desc" | "name-asc";
 
 /**

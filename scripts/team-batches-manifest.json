@@ -1,0 +1,1187 @@
+{
+  "note": "Bayern Munich, France and Brazil batches supplied by the client over WhatsApp on 3 and 4 Sep 2026, plus the client's brief of 2 Sep: 'from each team there's things missing and more teams ... i need all the teams we sell and products loaded up' and 'not having 1 image alone, more then 1 to show quality'. Photo numbers are 1-based into the chronological list of every WhatsApp photograph saved on 2, 3 and 4 Sep 2026 in media/ (274 files). 1-81 are the Inter Milan and Liverpool batches already imported under the supplied-batch-2026-09-02 tag and are not repeated here.",
+  "photoRange": {
+    "bayern": [
+      82,
+      151
+    ],
+    "france": [
+      152,
+      198
+    ],
+    "brazil": [
+      199,
+      274
+    ]
+  },
+  "priceNote": "Tiers follow the standing table the client's own captions land on and that the 2 Sep import already used: fan R500 (S-4XL), fan long sleeve R600 (S-4XL), player R650 (S-2XL), player long sleeve R750 (S-2XL), retro R700 (S-2XL), hoodie / half-zip / sweatshirt R850, jacket or windbreaker R1000, training set R700 (R600 for a vest set), kids R450. Goalkeeper shirts are priced as the fan tier the client sells them in. Retro long sleeve is not separately listed in the client's table and is priced at the retro tier — flag for confirmation.",
+  "captionNote": "Client captions for these three batches, in order of arrival: 3 Sep — kids set, hoodie, fan version, training set, half zip, fan version long sleeve, retro, windbreaker, player version long sleeve, fan version, kids set, 'All bayern items'. 4 Sep 2:28 PM — windbreaker, fan version long, fan version goalkeeper, fan version long sleeve, fan version, player long sleeve, kids set, training set, retro, retro long sleeve, hoodie, goalkeeper fan version long sleeve. 4 Sep 2:30 PM — player version long sleeve, fan version, kids set. 4 Sep 4:47-4:51 PM — retro, retro long sleeve, windbreaker, fan version, player version, kids sets, fan version long sleeve, training sets, half zip.",
+  "seasonNote": "Seasons are asserted only where the shirt itself carries the design or sponsor that dates it. Where the year is not legible from the photograph the title carries the colourway instead, so nothing on the storefront claims a season the photograph does not support.",
+  "sizes": {
+    "fan": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "adult": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "kids": [
+      "2-3",
+      "4-5",
+      "6-7",
+      "8-9",
+      "10-11"
+    ]
+  },
+  "tiers": {
+    "fan": {
+      "price": "500.00",
+      "sizes": "fan",
+      "productType": "Fan Version"
+    },
+    "fanLong": {
+      "price": "600.00",
+      "sizes": "fan",
+      "productType": "Fan Version"
+    },
+    "player": {
+      "price": "650.00",
+      "sizes": "adult",
+      "productType": "Player Version"
+    },
+    "playerLong": {
+      "price": "750.00",
+      "sizes": "adult",
+      "productType": "Player Version"
+    },
+    "retro": {
+      "price": "700.00",
+      "sizes": "adult",
+      "productType": "Retro"
+    },
+    "hoodie": {
+      "price": "850.00",
+      "sizes": "adult",
+      "productType": "Hoodie"
+    },
+    "sweatshirt": {
+      "price": "850.00",
+      "sizes": "adult",
+      "productType": "Sweatshirt"
+    },
+    "halfZip": {
+      "price": "850.00",
+      "sizes": "adult",
+      "productType": "Half-Zip Training Set"
+    },
+    "jacket": {
+      "price": "1000.00",
+      "sizes": "adult",
+      "productType": "Jacket / Windbreaker"
+    },
+    "tracksuit": {
+      "price": "1000.00",
+      "sizes": "adult",
+      "productType": "Tracksuit"
+    },
+    "training": {
+      "price": "700.00",
+      "sizes": "adult",
+      "productType": "Training Set"
+    },
+    "vest": {
+      "price": "600.00",
+      "sizes": "adult",
+      "productType": "Training Set"
+    },
+    "kids": {
+      "price": "450.00",
+      "sizes": "kids",
+      "productType": "Kids Kit"
+    }
+  },
+  "products": [
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich 2025/26 Away Jersey",
+      "tier": "fan",
+      "photos": [
+        82,
+        83
+      ],
+      "blurb": "The marbled purple and orange away shirt, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Third Jersey (Black Check)",
+      "tier": "fan",
+      "photos": [
+        84,
+        85,
+        86
+      ],
+      "blurb": "The black third shirt with the checked collar trim and the club motto stitched inside the neck."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Third Jersey (Black Check) — Player Version",
+      "tier": "player",
+      "photos": [
+        123,
+        124,
+        125
+      ],
+      "blurb": "The same black third shirt in the tighter player cut, with the woven club monogram."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Home Long Sleeve Jersey (Red)",
+      "tier": "fanLong",
+      "photos": [
+        87,
+        88
+      ],
+      "blurb": "The red home shirt in long sleeve, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Home Kids Kit (Red)",
+      "tier": "kids",
+      "photos": [
+        89
+      ],
+      "blurb": "Shirt and shorts in the red home colours, sized for children."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Full-Zip Tracksuit (Cream)",
+      "tier": "tracksuit",
+      "photos": [
+        90,
+        91
+      ],
+      "blurb": "Cream retro track jacket and matching pants with the orange trim."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Special Edition Jersey (Paint Print)",
+      "tier": "fan",
+      "photos": [
+        92,
+        93
+      ],
+      "blurb": "The special edition shirt in the multicolour paint print, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Home Jersey (Red)",
+      "tier": "fan",
+      "photos": [
+        94,
+        95
+      ],
+      "blurb": "The red home shirt with the white collar, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Home Jersey (Red) — Player Version",
+      "tier": "player",
+      "photos": [
+        96,
+        97
+      ],
+      "blurb": "The red home shirt in the player cut, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Crewneck Sweatshirt (White)",
+      "tier": "sweatshirt",
+      "photos": [
+        98,
+        99
+      ],
+      "blurb": "White retro crewneck with the red and green banding across the chest."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Away Jersey (Sage)",
+      "tier": "fan",
+      "photos": [
+        100
+      ],
+      "blurb": "The sage away shirt with the deep green club crest."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Training Set (Orange)",
+      "tier": "training",
+      "photos": [
+        101,
+        102
+      ],
+      "blurb": "Orange training top with the grey sleeves, and matching shorts."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Half-Zip Training Tracksuit (Coral)",
+      "tier": "halfZip",
+      "photos": [
+        103
+      ],
+      "blurb": "Coral and grey half-zip training top with matching pants."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Long Sleeve Jersey (White)",
+      "tier": "retro",
+      "photos": [
+        104,
+        105
+      ],
+      "blurb": "White retro long sleeve with the navy and red sleeve stripes, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Away Jersey (Opel, Grey)",
+      "tier": "retro",
+      "photos": [
+        106,
+        107
+      ],
+      "blurb": "Grey Opel-era away retro, with a close view of the print."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Third Jersey (Opel, Yellow)",
+      "tier": "retro",
+      "photos": [
+        108,
+        109
+      ],
+      "blurb": "Yellow and green Opel-era retro, with a close view of the print."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Away Jersey (Opel, White)",
+      "tier": "retro",
+      "photos": [
+        110,
+        111
+      ],
+      "blurb": "White Opel-era retro with the blue and red placket, and a close view of the print."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Home Jersey (Opel, Red)",
+      "tier": "retro",
+      "photos": [
+        112,
+        113
+      ],
+      "blurb": "Red Opel-era home retro with the blue shoulder stripes, and a close view of the print."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Third Jersey (Opel, Navy)",
+      "tier": "retro",
+      "photos": [
+        114,
+        115
+      ],
+      "blurb": "Navy Opel-era retro with the red chest band, and a close view of the print."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Home Jersey (T-Mobile, Red)",
+      "tier": "retro",
+      "photos": [
+        116,
+        117
+      ],
+      "blurb": "Red T-Mobile-era home retro, with a close view of the print."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Hoodie (Navy)",
+      "tier": "hoodie",
+      "photos": [
+        118
+      ],
+      "blurb": "Navy hooded top with the embroidered club monogram."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Hoodie (Black)",
+      "tier": "hoodie",
+      "photos": [
+        119
+      ],
+      "blurb": "Black hooded top with the embroidered club monogram."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Training Windbreaker (Orange)",
+      "tier": "jacket",
+      "photos": [
+        120,
+        121
+      ],
+      "blurb": "Orange and grey training windbreaker, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Training Vest & Shorts Set",
+      "tier": "vest",
+      "photos": [
+        122
+      ],
+      "blurb": "Printed training vest with matching shorts."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Retro Track Jacket (Grey/Blue)",
+      "tier": "jacket",
+      "photos": [
+        126,
+        127,
+        128
+      ],
+      "blurb": "Grey retro track jacket with the blue and red panels, front, detail and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Home Long Sleeve Jersey (Red Ikat)",
+      "tier": "fanLong",
+      "photos": [
+        129,
+        130,
+        131
+      ],
+      "blurb": "The red home long sleeve in the ikat print, front, detail and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Goalkeeper Long Sleeve Jersey (White)",
+      "tier": "fanLong",
+      "photos": [
+        132,
+        133,
+        134
+      ],
+      "blurb": "The white goalkeeper long sleeve with the padded shoulders, front, detail and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Home Jersey (Red Ikat)",
+      "tier": "fan",
+      "photos": [
+        135
+      ],
+      "blurb": "The red home shirt in the ikat print."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Goalkeeper Jersey (White)",
+      "tier": "fan",
+      "photos": [
+        136,
+        137
+      ],
+      "blurb": "The white goalkeeper shirt, front and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Goalkeeper Jersey (White) — Player Version",
+      "tier": "player",
+      "photos": [
+        138,
+        139,
+        140,
+        141
+      ],
+      "blurb": "The white goalkeeper shirt in the player cut, with the collar detail and the licence patch."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Third Jersey (White)",
+      "tier": "fan",
+      "photos": [
+        142,
+        143,
+        144
+      ],
+      "blurb": "The white third shirt with the navy collar, front, licence patch and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Third Long Sleeve Jersey (White)",
+      "tier": "fanLong",
+      "photos": [
+        145,
+        146,
+        147
+      ],
+      "blurb": "The white third shirt in long sleeve, front, licence patch and back."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Third Jersey (White) — Player Version",
+      "tier": "player",
+      "photos": [
+        148,
+        149,
+        150
+      ],
+      "blurb": "The white third shirt in the player cut, with the embroidered crest."
+    },
+    {
+      "team": "Bayern Munich",
+      "title": "Bayern Munich Third Kids Kit (White)",
+      "tier": "kids",
+      "photos": [
+        151
+      ],
+      "blurb": "White third shirt and navy shorts, sized for children."
+    },
+    {
+      "team": "France",
+      "title": "France Retro Track Jacket (Navy/White/Red)",
+      "tier": "jacket",
+      "photos": [
+        152,
+        153,
+        154
+      ],
+      "blurb": "Navy retro track jacket with the white and red front panel, shown open and from the back."
+    },
+    {
+      "team": "France",
+      "title": "France Away Long Sleeve Jersey (Mint)",
+      "tier": "fanLong",
+      "photos": [
+        155,
+        156
+      ],
+      "blurb": "The mint away shirt in long sleeve, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Pre-Match Shirt (Pink Star)",
+      "tier": "fan",
+      "photos": [
+        157
+      ],
+      "blurb": "The pink and purple pre-match shirt with the star graphic."
+    },
+    {
+      "team": "France",
+      "title": "France Home Long Sleeve Jersey (Navy)",
+      "tier": "fanLong",
+      "photos": [
+        158,
+        159
+      ],
+      "blurb": "The navy home long sleeve in the woven pattern, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Home Jersey (Navy)",
+      "tier": "fan",
+      "photos": [
+        160
+      ],
+      "blurb": "The navy home shirt with the white collar."
+    },
+    {
+      "team": "France",
+      "title": "France Home Long Sleeve Jersey (Navy) — Player Version",
+      "tier": "playerLong",
+      "photos": [
+        161,
+        162
+      ],
+      "blurb": "The navy home long sleeve in the player cut, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Home Kids Kit (Navy)",
+      "tier": "kids",
+      "photos": [
+        163
+      ],
+      "blurb": "Navy home shirt and white shorts, sized for children."
+    },
+    {
+      "team": "France",
+      "title": "France Hooded Windbreaker (Purple)",
+      "tier": "jacket",
+      "photos": [
+        164,
+        165
+      ],
+      "blurb": "Purple hooded windbreaker with the zipped side pockets, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Hooded Windbreaker (Mint)",
+      "tier": "jacket",
+      "photos": [
+        166,
+        167
+      ],
+      "blurb": "Mint hooded windbreaker with the zipped side pockets, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Training Set (Blue)",
+      "tier": "training",
+      "photos": [
+        168
+      ],
+      "blurb": "Blue training tee with matching shorts."
+    },
+    {
+      "team": "France",
+      "title": "France Training Set (Royal Blue)",
+      "tier": "training",
+      "photos": [
+        169
+      ],
+      "blurb": "Royal blue training tee with the orange trim, and matching shorts."
+    },
+    {
+      "team": "France",
+      "title": "France Training Set (FRANCE Print)",
+      "tier": "training",
+      "photos": [
+        170
+      ],
+      "blurb": "Blue training tee with the FRANCE chest print, and matching shorts."
+    },
+    {
+      "team": "France",
+      "title": "France 2006 Away Retro Jersey (White)",
+      "tier": "retro",
+      "photos": [
+        171,
+        172
+      ],
+      "blurb": "The white 2006 away retro, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France 2006 Home Retro Jersey (Blue)",
+      "tier": "retro",
+      "photos": [
+        173,
+        174
+      ],
+      "blurb": "The blue 2006 home retro, with a close view of the collar."
+    },
+    {
+      "team": "France",
+      "title": "France 1994/96 Home Retro Jersey",
+      "tier": "retro",
+      "photos": [
+        175
+      ],
+      "blurb": "The blue home retro in the diamond print."
+    },
+    {
+      "team": "France",
+      "title": "France 1998 Home Retro Jersey",
+      "tier": "retro",
+      "photos": [
+        176,
+        177
+      ],
+      "blurb": "The blue 1998 World Cup home retro, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France 1998 Away Retro Jersey",
+      "tier": "retro",
+      "photos": [
+        178,
+        179
+      ],
+      "blurb": "The white 1998 World Cup away retro, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France 1996 Away Retro Jersey",
+      "tier": "retro",
+      "photos": [
+        180
+      ],
+      "blurb": "The white away retro with the blue and red chevrons."
+    },
+    {
+      "team": "France",
+      "title": "France 1998 Away Retro Long Sleeve Jersey",
+      "tier": "retro",
+      "photos": [
+        181
+      ],
+      "blurb": "The white 1998 World Cup away retro in long sleeve."
+    },
+    {
+      "team": "France",
+      "title": "France Retro Anthem Track Jacket (Navy)",
+      "tier": "jacket",
+      "photos": [
+        182
+      ],
+      "blurb": "Navy anthem track jacket with the white line print."
+    },
+    {
+      "team": "France",
+      "title": "France Training Hoodie (Blue)",
+      "tier": "hoodie",
+      "photos": [
+        183
+      ],
+      "blurb": "Blue half-zip hooded top with the embroidered cockerel."
+    },
+    {
+      "team": "France",
+      "title": "France Retro Windbreaker (Navy)",
+      "tier": "jacket",
+      "photos": [
+        184
+      ],
+      "blurb": "Navy retro windbreaker with the white sleeve panels."
+    },
+    {
+      "team": "France",
+      "title": "France Training Hoodie (Black)",
+      "tier": "hoodie",
+      "photos": [
+        185
+      ],
+      "blurb": "Black hooded top with the embroidered cockerel."
+    },
+    {
+      "team": "France",
+      "title": "France Training Hoodie (Navy)",
+      "tier": "hoodie",
+      "photos": [
+        186
+      ],
+      "blurb": "Navy hooded top with the embroidered cockerel."
+    },
+    {
+      "team": "France",
+      "title": "France Training Hoodie (Mint)",
+      "tier": "hoodie",
+      "photos": [
+        187
+      ],
+      "blurb": "Mint hooded top with the embroidered cockerel."
+    },
+    {
+      "team": "France",
+      "title": "France Training Hoodie (Cream)",
+      "tier": "hoodie",
+      "photos": [
+        188
+      ],
+      "blurb": "Cream hooded top with the embroidered cockerel."
+    },
+    {
+      "team": "France",
+      "title": "France Goalkeeper Long Sleeve Jersey (Orange)",
+      "tier": "fanLong",
+      "photos": [
+        189,
+        190
+      ],
+      "blurb": "The orange goalkeeper long sleeve, in both graphic treatments."
+    },
+    {
+      "team": "France",
+      "title": "France Home Jersey (Navy) — Player Version",
+      "tier": "player",
+      "photos": [
+        191,
+        194
+      ],
+      "blurb": "The navy home shirt in the player cut, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Away Jersey (Mint)",
+      "tier": "fan",
+      "photos": [
+        193,
+        192
+      ],
+      "blurb": "The mint away shirt, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Away Long Sleeve Jersey (Mint) — Player Version",
+      "tier": "playerLong",
+      "photos": [
+        195,
+        197
+      ],
+      "blurb": "The mint away long sleeve in the player cut, front and back."
+    },
+    {
+      "team": "France",
+      "title": "France Away Jersey (Mint) — Player Version",
+      "tier": "player",
+      "photos": [
+        196
+      ],
+      "blurb": "The mint away shirt in the player cut."
+    },
+    {
+      "team": "France",
+      "title": "France Away Kids Kit (Mint)",
+      "tier": "kids",
+      "photos": [
+        198
+      ],
+      "blurb": "Mint away shirt and matching shorts, sized for children."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Home Jersey (Umbro, CBF Print)",
+      "tier": "retro",
+      "photos": [
+        199,
+        201
+      ],
+      "blurb": "The yellow Umbro-era home retro with the tonal CBF print, in two views."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil 1998 Away Retro Jersey (Blue)",
+      "tier": "retro",
+      "photos": [
+        200
+      ],
+      "blurb": "The blue 1998 away retro."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil 2004 Away Retro Jersey (Blue)",
+      "tier": "retro",
+      "photos": [
+        202,
+        203
+      ],
+      "blurb": "The blue away retro with the white piping, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil 2004 Home Retro Jersey (Yellow)",
+      "tier": "retro",
+      "photos": [
+        204,
+        206
+      ],
+      "blurb": "The yellow home retro with the green trim, and a close view of the collar."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Away Jersey (Total 90, Blue)",
+      "tier": "retro",
+      "photos": [
+        205
+      ],
+      "blurb": "The blue away retro with the Total 90 collar."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Away Jersey (Blue, Printed Sleeve)",
+      "tier": "fan",
+      "photos": [
+        207,
+        209
+      ],
+      "blurb": "The blue away shirt with the printed sleeve panels, and a close view of the collar."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil 2002 Away Retro Jersey (Blue)",
+      "tier": "retro",
+      "photos": [
+        208
+      ],
+      "blurb": "The blue 2002 away retro with the white shoulder panels."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil 2002 Home Retro Jersey (Yellow)",
+      "tier": "retro",
+      "photos": [
+        210,
+        211
+      ],
+      "blurb": "The yellow 2002 home retro with the green side panels, in two views."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil 2006 Home Retro Jersey (Yellow)",
+      "tier": "retro",
+      "photos": [
+        212,
+        214
+      ],
+      "blurb": "The yellow 2006 home retro, and a close view of the collar."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Home Long Sleeve Jersey (Yellow)",
+      "tier": "retro",
+      "photos": [
+        213
+      ],
+      "blurb": "The yellow home retro in long sleeve, with the green cuffs."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil 2010 Home Retro Jersey (Yellow)",
+      "tier": "retro",
+      "photos": [
+        215
+      ],
+      "blurb": "The yellow 2010 home retro with the green V-neck."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Track Jacket (White/Blue)",
+      "tier": "jacket",
+      "photos": [
+        216
+      ],
+      "blurb": "White retro track jacket with the blue sleeve stripes."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Away Jersey (Blue)",
+      "tier": "fan",
+      "photos": [
+        217,
+        218
+      ],
+      "blurb": "The blue away shirt, with a close view of the embroidered crest."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Away Jersey (Navy Print)",
+      "tier": "fan",
+      "photos": [
+        219,
+        220
+      ],
+      "blurb": "The navy away shirt in the printed pattern, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Away Jersey (Navy Print) — Player Version",
+      "tier": "player",
+      "photos": [
+        221
+      ],
+      "blurb": "The navy away shirt in the player cut."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Away Kids Kit (Navy)",
+      "tier": "kids",
+      "photos": [
+        222
+      ],
+      "blurb": "Navy away shirt and black shorts, sized for children."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Home Kids Kit (Yellow)",
+      "tier": "kids",
+      "photos": [
+        223
+      ],
+      "blurb": "Yellow home shirt and blue shorts, sized for children."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Away Long Sleeve Jersey (Navy Print)",
+      "tier": "fanLong",
+      "photos": [
+        224
+      ],
+      "blurb": "The navy away shirt in long sleeve."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Home Jersey (Yellow)",
+      "tier": "fan",
+      "photos": [
+        226,
+        225
+      ],
+      "blurb": "The yellow home shirt, with a close view of the embroidered crest."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Home Jersey (Yellow) — Player Version",
+      "tier": "player",
+      "photos": [
+        228,
+        227
+      ],
+      "blurb": "The yellow home shirt in the player cut, with a close view of the crest."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Hooded Windbreaker (Black)",
+      "tier": "jacket",
+      "photos": [
+        229,
+        231,
+        232
+      ],
+      "blurb": "Black hooded windbreaker in the sponsor colours, shown front, back and open."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Hooded Windbreaker (Cream)",
+      "tier": "jacket",
+      "photos": [
+        230,
+        233,
+        234
+      ],
+      "blurb": "Cream hooded windbreaker in the sponsor colours, shown front, open and from the back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Hooded Windbreaker (Mint)",
+      "tier": "jacket",
+      "photos": [
+        235,
+        238,
+        239
+      ],
+      "blurb": "Mint hooded windbreaker in the sponsor colours, shown front, back and open."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Hooded Windbreaker (Teal)",
+      "tier": "jacket",
+      "photos": [
+        237,
+        236
+      ],
+      "blurb": "Teal hooded windbreaker, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Track Jacket (Black/Red)",
+      "tier": "jacket",
+      "photos": [
+        240,
+        246,
+        247
+      ],
+      "blurb": "Black track jacket with the red panels, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Track Jacket (Blue/Yellow)",
+      "tier": "jacket",
+      "photos": [
+        242,
+        241,
+        243
+      ],
+      "blurb": "Blue track jacket with the yellow panels, front, back and collar."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Hooded Windbreaker (Yellow)",
+      "tier": "jacket",
+      "photos": [
+        245,
+        244
+      ],
+      "blurb": "Yellow hooded windbreaker, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Anthem Jacket (Umbro, White/Blue)",
+      "tier": "jacket",
+      "photos": [
+        248
+      ],
+      "blurb": "The white and blue Umbro retro anthem jacket with the green star."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Track Jacket (Green/Yellow)",
+      "tier": "jacket",
+      "photos": [
+        249,
+        250
+      ],
+      "blurb": "Green track jacket with the yellow chest band, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Anthem Jacket (Umbro, Blue/Green)",
+      "tier": "jacket",
+      "photos": [
+        251
+      ],
+      "blurb": "The blue Umbro retro anthem jacket with the green and yellow star."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Training Top (Yellow)",
+      "tier": "halfZip",
+      "photos": [
+        252,
+        255
+      ],
+      "blurb": "Yellow retro training top with the white sleeve panels, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Training Top (Blue)",
+      "tier": "halfZip",
+      "photos": [
+        254,
+        253
+      ],
+      "blurb": "Blue retro training top with the white sleeve panels, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Training Set (Navy)",
+      "tier": "training",
+      "photos": [
+        256
+      ],
+      "blurb": "Navy training tee with the yellow trim, and matching shorts."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Training Set (Navy)",
+      "tier": "training",
+      "photos": [
+        257
+      ],
+      "blurb": "Navy retro training tee in the sponsor colours, and matching shorts."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Retro Training Set (Blue)",
+      "tier": "training",
+      "photos": [
+        258
+      ],
+      "blurb": "Blue retro training tee in the sponsor colours, and matching shorts."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Training Set (Black)",
+      "tier": "training",
+      "photos": [
+        259
+      ],
+      "blurb": "Black training tee with the yellow trim, and matching shorts."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Training Set with Pants (Black)",
+      "tier": "training",
+      "photos": [
+        260
+      ],
+      "blurb": "Black training tee with matching pants."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Half-Zip Training Tracksuit (Sky Blue)",
+      "tier": "halfZip",
+      "photos": [
+        262,
+        261
+      ],
+      "blurb": "Sky blue half-zip training top with green pants."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Half-Zip Training Tracksuit (Navy)",
+      "tier": "halfZip",
+      "photos": [
+        263,
+        265,
+        267
+      ],
+      "blurb": "Navy half-zip training top with matching pants, in three views."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Half-Zip Training Tracksuit (Black)",
+      "tier": "halfZip",
+      "photos": [
+        264,
+        266
+      ],
+      "blurb": "Black half-zip training top with matching pants, in two views."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Training Shirt (Sky Blue)",
+      "tier": "training",
+      "photos": [
+        268,
+        271
+      ],
+      "blurb": "Sky blue training shirt, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Training Shirt (Black)",
+      "tier": "training",
+      "photos": [
+        269,
+        270
+      ],
+      "blurb": "Black training shirt with the yellow trim, front and back."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Home Long Sleeve Jersey (Yellow)",
+      "tier": "fanLong",
+      "photos": [
+        272
+      ],
+      "blurb": "The yellow home shirt in long sleeve."
+    },
+    {
+      "team": "Brazil",
+      "title": "Brazil Home Jersey (Yellow, Print)",
+      "tier": "fan",
+      "photos": [
+        273,
+        274
+      ],
+      "blurb": "The yellow home shirt with the tonal print, front and back."
+    }
+  ]
+}

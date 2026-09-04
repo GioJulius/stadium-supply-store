@@ -29,6 +29,9 @@ const filters = [
   { label: "Fan version", key: "fan" },
   { label: "Player version", key: "player" },
   { label: "Retro", key: "retro" },
+  { label: "Long sleeve", key: "long sleeve" },
+  { label: "Kids", key: "kids" },
+  { label: "Training", key: "training" },
   { label: "New arrivals", key: "new" },
 ];
 
