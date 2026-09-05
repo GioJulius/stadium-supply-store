@@ -50,7 +50,7 @@
 .hero-section { min-height: min(830px, 100vh); height: max(650px, 100vh); background:#1d82c8; color:#fff; position:relative; overflow:hidden; }.hero-section__image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; transform: scale(1.02); }.hero-section__veil { position:absolute; inset:0; background: linear-gradient(90deg, rgba(3,13,32,.76) 0%, rgba(3,13,32,.24) 50%, rgba(3,13,32,.12) 100%), linear-gradient(0deg, rgba(3,13,32,.47), transparent 44%); }.hero-section__frame { pointer-events:none; position:absolute; inset: 105px 32px 28px; border-left:1px solid rgba(255,255,255,.42); border-right:1px solid rgba(255,255,255,.42); display:flex; justify-content:space-between; }.hero-section__frame span { width:8px; height:8px; background:#fff; border-radius:50%; margin:-4px -4px; }.hero-section__meta { position:absolute; top:105px; left:57px; right:57px; font:10px "DM Mono",monospace; text-transform:uppercase; display:flex; justify-content:space-between; letter-spacing:.08em; }.hero-section__content { position:absolute; left: 7.5vw; bottom:70px; }.hero-section__kicker { font:600 14px/1.05 "Barlow Condensed",sans-serif; letter-spacing:.055em; text-transform:uppercase; margin:0 0 18px; }.hero-section h1, .shop-intro h1, .section-heading h2, .manifesto-section h2, .assurance-section h2, .instagram-section h2 { font:800 clamp(76px, 11.5vw, 178px)/.72 "Barlow Condensed",sans-serif; letter-spacing:-.052em; text-transform:uppercase; margin:0; }.hero-section h1 em, .shop-intro em, .section-heading em, .manifesto-section em, .assurance-section em, .instagram-section em { font-weight:600; }.hero-cta { margin-top:32px; width:215px; border-top:1px solid rgba(255,255,255,.8); padding-top:11px; display:flex; justify-content:space-between; font:11px "DM Mono",monospace; text-transform:uppercase; }.hero-section__side { position:absolute; right:35px; bottom:34px; writing-mode:vertical-rl; transform:rotate(180deg); font:10px "DM Mono",monospace; letter-spacing:.06em; }
 .campaign-video { min-height:550px; position:relative; overflow:hidden; background:#12233d; color:#f8f7f1; }.campaign-video video, .campaign-video img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }.campaign-video__veil { position:absolute; inset:0; background:linear-gradient(90deg,rgba(10,20,39,.78),rgba(10,20,39,.22) 65%,rgba(10,20,39,.4)); }.campaign-video__content { position:relative; z-index:1; min-height:550px; max-width:1600px; margin:auto; padding:42px 7.5vw; display:flex; flex-direction:column; }.campaign-video__content h2 { margin:auto 0 23px; max-width:680px; font:800 clamp(64px,9vw,135px)/.72 "Barlow Condensed",sans-serif; letter-spacing:-.052em; text-transform:uppercase; }.campaign-video__content h2 em { font-weight:600; }.campaign-video__cta { display:flex; align-items:center; justify-content:space-between; gap:16px; width:210px; border-top:1px solid rgba(255,255,255,.8); padding-top:10px; font:10px "DM Mono",monospace; text-transform:uppercase; }
 
-.moving-line { padding:13px 0; color:#f8f7f1; background:#10213c; overflow:hidden; border-bottom:1px solid #f8f7f1; }.moving-line div { display:flex; gap:31px; white-space:nowrap; width:max-content; animation: marquee 24s linear infinite; text-transform:uppercase; font:600 21px/1 "Barlow Condensed",sans-serif; letter-spacing:.03em; }.moving-line i { color:#44a2e9; font-style:normal; }
+.moving-line { padding:13px 0; color:#f8f7f1; background:#10213c; overflow:hidden; border-bottom:1px solid #f8f7f1; }.moving-line div { display:flex; gap:31px; white-space:nowrap; width:max-content; animation: marquee 16s linear infinite; text-transform:uppercase; font:600 21px/1 "Barlow Condensed",sans-serif; letter-spacing:.03em; }.moving-line i { color:#44a2e9; font-style:normal; }
 .section-index, .eyebrow { font: 10px/1.3 "DM Mono", monospace; text-transform: uppercase; letter-spacing:.055em; }
 .latest-section { padding:105px 32px 120px; max-width:1600px; margin:auto; }.section-heading { display:grid; grid-template-columns: 1fr 2fr; margin-bottom:50px; }.section-heading h2 { font-size:clamp(66px, 9.3vw, 145px); }.section-heading > div > p { max-width:250px; margin:23px 0 0; font-size:13px; line-height:1.5; }.latest-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:1px; background:transparent; }.product-card { min-width:0; display:block; background:#f8f7f1; transition:background .2s ease; }.product-card:hover { background:#eef4f7; }.product-card__visual { position:relative; aspect-ratio:.8; overflow:hidden; background:#dce7ec; }.product-card__visual img { width:100%;height:100%;object-fit:cover; transition: transform .46s cubic-bezier(.23,1,.32,1); }.product-card:hover .product-card__visual img { transform:scale(1.045); }.product-card__fallback { height:100%; display:grid;place-items:center;font:700 42px/.78 "Barlow Condensed",sans-serif;text-transform:uppercase;text-align:center; }.product-card__badge,.product-card__price-tag { position:absolute; top:11px; padding:5px 6px; color:#f8f7f1; background:#10213c; font:9px "DM Mono",monospace; text-transform:uppercase; }.product-card__badge { left:11px; }.product-card__price-tag { right:11px; background:#f8f7f1; color:#10213c; }.product-card__quick { position:absolute; left:11px; bottom:11px; transform:translateY(12px); opacity:0; transition:opacity .2s ease,transform .2s ease; padding:7px 8px; background:#1a91dc; color:#fff; font:9px "DM Mono",monospace; text-transform:uppercase; }.product-card:hover .product-card__quick { transform:translateY(0); opacity:1; }.product-card__arrow { position:absolute; right:12px; top:42px; width:30px; height:30px; display:grid; place-items:center; border:1px solid rgba(255,255,255,.7); border-radius:50%; color:#fff; }.product-card__details { padding:14px 13px 18px; min-height:114px; display:flex; justify-content:space-between; gap:10px; }.product-card__details h3 { margin:0; font:600 19px/.95 "Barlow Condensed",sans-serif; text-transform:uppercase; max-width:190px; }.product-card__details strong { font:10px "DM Mono",monospace; font-weight:500; white-space:nowrap; }.outline-cta, .shop-empty button, .shop-empty a { display:flex; align-items:center; justify-content:space-between; gap:15px; border-bottom:1px solid currentColor; padding-bottom:8px; margin:60px 0 0 auto; width:fit-content; background:transparent; border-top:0;border-left:0;border-right:0; font:10px "DM Mono",monospace; text-transform:uppercase; }
 .manifesto-section { min-height:680px; background:#10213c; color:#f8f7f1; position:relative; padding:85px 8vw; display:grid; grid-template-columns: 1fr 2fr; grid-template-rows:auto 1fr; overflow:hidden; }.manifesto-section__number { position:absolute; right:-.03em; top:-.14em; color:rgba(130,186,226,.14); font:900 clamp(280px,48vw,700px)/.7 "Barlow Condensed",sans-serif; }.manifesto-section .eyebrow, .manifesto-section h2, .manifesto-section__copy { z-index:1; }.manifesto-section h2 { align-self:center; font-size:clamp(72px,10vw,148px); }.manifesto-section__copy { align-self:end; max-width:330px; margin-left:auto; font-size:13px; line-height:1.65; }.manifesto-section__copy p { margin:0 0 28px; }.manifesto-section__copy a { border-bottom:1px solid #fff; padding-bottom:7px; font:10px "DM Mono",monospace; text-transform:uppercase; display:inline-flex; align-items:center; gap:8px; }
@@ -642,3 +642,90 @@ body { font-family:"Manrope",Arial,sans-serif; }
 /* The size-guide link sits opposite "Select size" on one row; without this it
    wraps to two lines inside its own box at wide column widths. */
 .size-picker__guide { white-space:nowrap; }
+
+/* ── Legibility and fit pass, 5 Sep 2026 ─────────────────────────────────────
+   Seven issues the client found on a phone. The common cause behind most of
+   them is the same: a flex or grid child that cannot shrink below its content,
+   which on a 390px screen pushes the row wider than the viewport. Because
+   `.store-page` sets `overflow:hidden`, the excess is CLIPPED rather than
+   scrolled — so it reads as "the page falls off the side" instead of as a
+   scrollbar. The fixes below are mostly `min-width:0` and letting rows wrap. */
+
+/* Footer — every one of these is a separate destination, so each gets its own
+   line rather than running together as a paragraph of arrows. Applies at all
+   widths, not just mobile: they read as one run-on sentence on desktop too. */
+.site-footer__meta { display:flex; flex-direction:column; align-items:flex-start; gap:9px; }
+.site-footer__meta p { margin:0 0 4px; }
+.site-footer__meta a { border-bottom:1px solid transparent; }
+.site-footer__meta a:hover { border-bottom-color:currentColor; }
+
+/* A long kit title has to wrap inside its card rather than run under the
+   price. "2026/27 Manchester United Away Long Sleeve Jersey" has no short
+   words in it, so anywhere is the only break that always works. */
+.product-card__details h3 { overflow-wrap:anywhere; }
+
+@media (max-width: 850px) {
+  /* The nav panel was min(490px, 94vw) — on a phone that is the whole screen,
+     so the shop disappears behind it and the club counts have nothing to sit
+     against. Narrower, so it reads as a panel over the page it came from. */
+  /* box-sizing is explicit because the old rule sized the CONTENT box: 94vw
+     plus 32px padding each side came to 430px on a 390px screen, which is
+     what pushed the club counts off the right edge. */
+  .menu-panel__surface { box-sizing:border-box; width:min(340px, 88vw); padding:24px 18px; }
+  .menu-tree__top-link, .menu-tree__toggle { font-size:19px; }
+
+  /* Card: title above the price rather than beside it. At two columns the
+     card is ~180px wide, which is not enough for both on one row — that is
+     the overlap on /shop and on the home page's new arrivals, which share
+     this component. */
+  .product-card__details { flex-direction:column; align-items:stretch; gap:6px; min-height:0; }
+  .product-card__details h3 { max-width:none; font-size:16px; }
+  .product-card__meta {
+    flex-direction:row; align-items:baseline; justify-content:space-between;
+    text-align:left; gap:10px;
+  }
+  .product-card__sizes { text-align:right; }
+
+  /* Footer stops being three columns on a phone. */
+  .site-footer { grid-template-columns:1fr; gap:28px; padding:38px 20px 26px; }
+  .site-footer__legal { grid-column:auto; }
+
+  /* Product page: nothing may be wider than the screen.
+     The size row was the offender — eight 43px buttons plus seven 6px gaps is
+     386px inside a 390px viewport with 17px padding each side. */
+  .size-picker > div { flex-wrap:wrap; }
+  /* The size-guide link had margin-left:auto and nowrap, so on a narrow
+     column it was pushed against the edge and its own label clipped.
+     Give it its own line under the label instead. */
+  .size-picker p { flex-wrap:wrap; gap:6px 10px; }
+  .size-picker__guide { margin-left:0; order:3; flex:0 0 100%; text-align:left; }
+  .product-detail__grid, .product-detail__media, .product-detail__content { min-width:0; }
+  .product-detail__content h1 { overflow-wrap:anywhere; }
+  .product-specs div { gap:16px; align-items:baseline; }
+  .product-specs dd { text-align:right; min-width:0; }
+  .product-purchase { flex-wrap:wrap; gap:9px; }
+  .add-button { min-width:0; }
+  .printing-panel__fields { flex-wrap:wrap; }
+  .printing-panel__fields label, .printing-panel__number { flex:1 1 100% !important; }
+  .version-switch__row .chip { max-width:100%; white-space:normal; text-align:center; }
+
+  /* Cart drawer: a long product title in a grid column that cannot shrink is
+     what pushed the contents sideways out of the panel. */
+  /* Same content-box trap as the nav panel: width:100% plus 17px of padding
+     each side made the panel 34px wider than the screen, and because it is
+     anchored right:0 the overflow hung off the LEFT edge — the bag header
+     and the first column of every line sat outside the phone. */
+  .cart-drawer__surface { box-sizing:border-box; width:100%; max-width:100vw; }
+  .cart-item { grid-template-columns:72px 1fr; gap:11px; }
+  /* The two derived fee lines carry no image, so they must keep the single
+     full-width column set further up. Same specificity as the rule above
+     and later in the file, so without re-asserting it here the fee title
+     is squeezed into the 72px image column and breaks one letter per line. */
+  .cart-item--fee { grid-template-columns:1fr; }
+  .cart-item__content { min-width:0; }
+  .cart-item__content h3 { overflow-wrap:anywhere; font-size:15px; }
+  .cart-item__summary { overflow-wrap:anywhere; }
+  .cart-item__actions { flex-wrap:wrap; gap:12px; row-gap:9px; }
+  .cart-total { gap:12px; }
+  .cart-total span:first-child { min-width:0; }
+}

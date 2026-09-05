@@ -3,7 +3,7 @@ import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
 import { isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
-import { clubOf, isLongSleeve, kitKey, kitSlotOf, KIT_SLOT_LABELS, seasonOf, versionOf, VERSION_LABELS } from "@/lib/facets";
+import { clubOf, isLongSleeve, kitKey, kitSlotOf, KIT_SLOT_LABELS, seasonOf, sortSizes, versionOf, VERSION_LABELS } from "@/lib/facets";
 import {
   BADGE_FEE_AMOUNT,
   BADGE_FEE_LABEL,
@@ -93,7 +93,10 @@ function ProductView({ product }: { product: Product }) {
   const variant = product.variants.find(candidate => candidate.id === selectedVariantId) ?? product.variants[0];
   const image = product.images[selectedImageIndex] ?? product.images[0];
   const { condition } = detailFromTags(product);
-  const sizeOptions = product.options.find(option => option.name.toLowerCase() === "size")?.values ?? [];
+  // Shopify returns the option values in the order they were created, which
+  // on imported products is often alphabetical — "M, L, XL … S" puts small
+  // last. Sort them the way a size run actually reads.
+  const sizeOptions = sortSizes(product.options.find(option => option.name.toLowerCase() === "size")?.values ?? []);
   const selectedSize = variant?.selectedOptions.find(option => option.name.toLowerCase() === "size")?.value;
   const personalisable = isPersonalisable(product);
   const siblings = useSiblingKits(product);
