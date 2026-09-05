@@ -98,6 +98,20 @@ export const BADGE_OPTIONS = [
 export const BADGE_FEE_LABEL = "+R50";
 
 /**
+ * The same two fees as numbers, so the product page can show a running total
+ * in the add-to-bag button.
+ *
+ * These are for DISPLAY ONLY and they are a mirror, not a source: the charge
+ * that is actually taken comes from the Shopify add-on products that
+ * `server/_core/addonFees.ts` reconciles against the cart. If the client
+ * reprices either extra in Shopify, the cart will be right and these two
+ * numbers will be stale — so change them here too, and never compute a total
+ * the shopper pays from them.
+ */
+export const PRINTING_FEE_AMOUNT = 50;
+export const BADGE_FEE_AMOUNT = 50;
+
+/**
  * Where the shop actually talks to people. WhatsApp is the channel the client
  * runs on — the number is the one published in their own Instagram bio — so
  * it is what we point shoppers at when they need a person rather than a page.
