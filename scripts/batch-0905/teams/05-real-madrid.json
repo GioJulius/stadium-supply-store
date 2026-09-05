@@ -1,0 +1,1251 @@
+{
+ "team": "Real Madrid",
+ "slug": "real-madrid",
+ "status": "imported",
+ "block": {
+  "from": "p1",
+  "to": "p76",
+  "count": 76
+ },
+ "notes": {
+  "albums": "Nine albums: an uncaptioned opener (p1-p5), then training set, retro half zip, hoodie and jacket, half zip, full zip, fan version, retro, player version.",
+  "uncaptionedOpener": "p1-p5 carries no caption. Every photograph is a jersey laid out with matching shorts on the supplier's green pitch backdrop, which is how this supplier shoots kids kits, and three of the five hash-match live kids kits at distance 0-2. Read as kids sets.",
+  "kitColours": "The hash matches settle the 2026/27 Real Madrid palette, which the eye alone was getting wrong: AWAY is dark green (p1 kids, p68 player), THIRD is red/pink (p2 kids, p69 player), HOME is white with a green collar and pink shoulder stripes (p31, p33). Named accordingly throughout.",
+  "p65": "Sits inside the retro album but is a modern Emirates 'Fly Better' navy shirt, not a retro. Priced as a retro on the client's caption; FLAG FOR CLIENT.",
+  "p18p19": "The only two photographs in this team that are the same garment - two views of the black hoodie. Everything else is one photograph, one garment."
+ },
+ "garments": [
+  {
+   "id": "rm-01",
+   "photos": [
+    "p1"
+   ],
+   "title": "2026/27 Real Madrid Away Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-real-madrid-away-kids-kit",
+    "dist": 1,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-away-kids-kit"
+  },
+  {
+   "id": "rm-02",
+   "photos": [
+    "p2"
+   ],
+   "title": "2026/27 Real Madrid Third Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 0,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Third Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-third-kids-kit"
+  },
+  {
+   "id": "rm-03",
+   "photos": [
+    "p3"
+   ],
+   "title": "Real Madrid Blue Away Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Royal blue shirt and matching shorts with the white adidas trim and the club crest on the chest. A full kit for younger supporters, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Blue Away Kids Kit - 01.jpg"
+   ],
+   "handle": "real-madrid-blue-away-kids-kit"
+  },
+  {
+   "id": "rm-04",
+   "photos": [
+    "p4"
+   ],
+   "title": "2026/27 Real Madrid Home Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 2,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-home-kids-kit"
+  },
+  {
+   "id": "rm-05",
+   "photos": [
+    "p5"
+   ],
+   "title": "Real Madrid White and Gold Home Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "The classic all-white Madrid home look with gold trim, shirt and shorts together. Sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White and Gold Home Kids Kit - 01.jpg"
+   ],
+   "handle": "real-madrid-white-and-gold-home-kids-kit"
+  },
+  {
+   "id": "rm-06",
+   "photos": [
+    "p6"
+   ],
+   "title": "Real Madrid Navy Training Set",
+   "tier": "trainingSet",
+   "blurb": "Navy training shirt with pale blue side panels and matching shorts, Emirates across the chest. The kit the squad warms up in.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Navy Training Set - 01.jpg"
+   ],
+   "handle": "real-madrid-navy-training-set"
+  },
+  {
+   "id": "rm-07",
+   "photos": [
+    "p7"
+   ],
+   "title": "Real Madrid White Training Set",
+   "tier": "trainingSet",
+   "blurb": "White training shirt with pale blue shoulders and navy shorts. Light, loose and built for a session rather than a match.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White Training Set - 01.jpg"
+   ],
+   "handle": "real-madrid-white-training-set"
+  },
+  {
+   "id": "rm-08",
+   "photos": [
+    "p8"
+   ],
+   "title": "Real Madrid Black Training Set",
+   "tier": "trainingSet",
+   "blurb": "Black training shirt with the three white stripes on the shoulder and matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Black Training Set - 01.jpg"
+   ],
+   "handle": "real-madrid-black-training-set"
+  },
+  {
+   "id": "rm-09",
+   "photos": [
+    "p9"
+   ],
+   "title": "Real Madrid White and Purple Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Sleeveless white training vest with purple shorts, carrying the adidas trefoil and the club crest. Cut for hot weather.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White and Purple Training Vest Set - 01.jpg"
+   ],
+   "handle": "real-madrid-white-and-purple-training-vest-set"
+  },
+  {
+   "id": "rm-10",
+   "photos": [
+    "p10"
+   ],
+   "title": "Real Madrid White and Black Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Sleeveless white training vest with Emirates on the chest and black shorts with purple detailing.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White and Black Training Vest Set - 01.jpg"
+   ],
+   "handle": "real-madrid-white-and-black-training-vest-set"
+  },
+  {
+   "id": "rm-11",
+   "photos": [
+    "p11"
+   ],
+   "title": "Real Madrid Retro Half-Zip Training Top (Fly Emirates, White)",
+   "tier": "retroTop",
+   "blurb": "White quarter-zip training top from the Fly Emirates years, with the green and yellow hem stripe and long sleeves.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Half-Zip Training Top (Fly Emirates, White) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-half-zip-training-top-fly-emirates-white"
+  },
+  {
+   "id": "rm-12",
+   "photos": [
+    "p12"
+   ],
+   "title": "Real Madrid Retro Half-Zip Training Top (bwin, White)",
+   "tier": "retroTop",
+   "blurb": "White half-zip training top from the bwin era, black adidas stripes down the sleeve and a contrast collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Half-Zip Training Top (bwin, White) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-half-zip-training-top-bwin-white"
+  },
+  {
+   "id": "rm-13",
+   "photos": [
+    "p13"
+   ],
+   "title": "Real Madrid Retro Half-Zip Training Top (Siemens Mobile, Black)",
+   "tier": "retroTop",
+   "blurb": "Black half-zip training top carrying the Siemens Mobile wordmark, with pale blue panels on the shoulder.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Half-Zip Training Top (Siemens Mobile, Black) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-half-zip-training-top-siemens-mobile-black"
+  },
+  {
+   "id": "rm-14",
+   "photos": [
+    "p14"
+   ],
+   "title": "Real Madrid Retro Half-Zip Training Top (bwin, Black and Gold)",
+   "tier": "retroTop",
+   "blurb": "Black half-zip training top with gold piping down the arms and bwin across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Half-Zip Training Top (bwin, Black and Gold) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-half-zip-training-top-bwin-black-and-gold"
+  },
+  {
+   "id": "rm-15",
+   "photos": [
+    "p15"
+   ],
+   "title": "Real Madrid Retro Half-Zip Training Top (bwin.com, White and Blue)",
+   "tier": "retroTop",
+   "blurb": "White half-zip training top with a blue sweep across the body and bwin.com on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Half-Zip Training Top (bwin.com, White and Blue) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-half-zip-training-top-bwin-com-white-and-blue"
+  },
+  {
+   "id": "rm-16",
+   "photos": [
+    "p16"
+   ],
+   "title": "Real Madrid Green Training Jacket",
+   "tier": "jacket",
+   "blurb": "Full-zip training jacket in pale green with dark green sleeves and the crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Green Training Jacket - 01.jpg"
+   ],
+   "handle": "real-madrid-green-training-jacket"
+  },
+  {
+   "id": "rm-17",
+   "photos": [
+    "p17"
+   ],
+   "title": "Real Madrid White Training Jacket",
+   "tier": "jacket",
+   "blurb": "White full-zip training jacket with grey shoulder panels and the three stripes down each arm.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White Training Jacket - 01.jpg"
+   ],
+   "handle": "real-madrid-white-training-jacket"
+  },
+  {
+   "id": "rm-18",
+   "photos": [
+    "p18",
+    "p19"
+   ],
+   "title": "Real Madrid Black Hoodie",
+   "tier": "hoodie",
+   "blurb": "Heavy black pullover hoodie with the adidas trefoil and the club crest embroidered on the chest, and a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Black Hoodie - 01.jpg",
+    "Real Madrid Black Hoodie - 02.jpg"
+   ],
+   "handle": "real-madrid-black-hoodie"
+  },
+  {
+   "id": "rm-19",
+   "photos": [
+    "p20"
+   ],
+   "title": "Real Madrid Cream Half-Zip Hoodie",
+   "tier": "hoodie",
+   "blurb": "Cream half-zip hooded top with the trefoil and crest on the chest. Warm without being bulky.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Cream Half-Zip Hoodie - 01.jpg"
+   ],
+   "handle": "real-madrid-cream-half-zip-hoodie"
+  },
+  {
+   "id": "rm-20",
+   "photos": [
+    "p21"
+   ],
+   "title": "Real Madrid Cream Hoodie",
+   "tier": "hoodie",
+   "blurb": "Cream pullover hoodie with black three-stripe detail on the sleeves and the crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Cream Hoodie - 01.jpg"
+   ],
+   "handle": "real-madrid-cream-hoodie"
+  },
+  {
+   "id": "rm-21",
+   "photos": [
+    "p22"
+   ],
+   "title": "Real Madrid Green and Gold Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Green half-zip training top with gold shoulder panels, sold with the matching green and gold tracksuit bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Green and Gold Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "real-madrid-green-and-gold-half-zip-training-set"
+  },
+  {
+   "id": "rm-22",
+   "photos": [
+    "p23"
+   ],
+   "title": "Real Madrid White Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "White half-zip training top with navy chevrons across the chest and the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "why": "The store already carries a '2025/26 Real Madrid Marvel White Half-Zip Training Set' and a '2026/27 Real Madrid Half-Zip Training Set'. No hash match, so probably a different white set, but worth an eye before import."
+   },
+   "files": [
+    "Real Madrid White Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "real-madrid-white-half-zip-training-set"
+  },
+  {
+   "id": "rm-23",
+   "photos": [
+    "p24"
+   ],
+   "title": "Real Madrid Navy Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with pale blue sleeves and cuffs, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Navy Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "real-madrid-navy-half-zip-training-set"
+  },
+  {
+   "id": "rm-24",
+   "photos": [
+    "p25"
+   ],
+   "title": "Real Madrid Blue Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Royal blue full-zip tracksuit, jacket and bottoms, with the three white stripes down the arm and leg.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Blue Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "real-madrid-blue-full-zip-tracksuit"
+  },
+  {
+   "id": "rm-25",
+   "photos": [
+    "p26"
+   ],
+   "title": "Real Madrid White Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "All-white full-zip tracksuit with tonal panelling and the crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "real-madrid-white-full-zip-tracksuit"
+  },
+  {
+   "id": "rm-26",
+   "photos": [
+    "p27"
+   ],
+   "title": "2026/27 Real Madrid Training Jacket Set",
+   "tier": "fullZip",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 0,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Training Jacket Set - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-training-jacket-set"
+  },
+  {
+   "id": "rm-27",
+   "photos": [
+    "p28"
+   ],
+   "title": "Real Madrid White and Gold Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "White full-zip jacket with gold and navy trim, sold with the navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White and Gold Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "real-madrid-white-and-gold-full-zip-tracksuit"
+  },
+  {
+   "id": "rm-28",
+   "photos": [
+    "p29"
+   ],
+   "title": "Real Madrid Y-3 Fourth Fan Version (Orange)",
+   "tier": "fan",
+   "blurb": "The Y-3 collaboration shirt in orange, with the tonal rose print across the body and the Y-3 mark beside the crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Y-3 Fourth Fan Version (Orange) - 01.jpg"
+   ],
+   "handle": "real-madrid-y-3-fourth-fan-version-orange"
+  },
+  {
+   "id": "rm-29",
+   "photos": [
+    "p30"
+   ],
+   "title": "Real Madrid Y-3 Fan Version (Black)",
+   "tier": "fan",
+   "blurb": "The Y-3 collaboration shirt in black with a grey rose print sweeping up from the hem.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Y-3 Fan Version (Black) - 01.jpg"
+   ],
+   "handle": "real-madrid-y-3-fan-version-black"
+  },
+  {
+   "id": "rm-30",
+   "photos": [
+    "p31"
+   ],
+   "title": "2026/27 Real Madrid Home Shirt",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 3,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Home Shirt - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-home-shirt"
+  },
+  {
+   "id": "rm-31",
+   "photos": [
+    "p32"
+   ],
+   "title": "Real Madrid Y-3 Fan Version (Purple)",
+   "tier": "fan",
+   "blurb": "The Y-3 collaboration shirt in deep purple with the tonal rose print.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Y-3 Fan Version (Purple) - 01.jpg"
+   ],
+   "handle": "real-madrid-y-3-fan-version-purple"
+  },
+  {
+   "id": "rm-32",
+   "photos": [
+    "p33"
+   ],
+   "title": "2026/27 Real Madrid Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 1,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "rm-33",
+   "photos": [
+    "p34"
+   ],
+   "title": "Real Madrid Home Long Sleeve Fan Version (White and Gold)",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "White long-sleeved home shirt with gold piping and black three-stripe detail on the shoulder.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Home Long Sleeve Fan Version (White and Gold) - 01.jpg"
+   ],
+   "handle": "real-madrid-home-long-sleeve-fan-version-white-and-gold"
+  },
+  {
+   "id": "rm-34",
+   "photos": [
+    "p35"
+   ],
+   "title": "2026/27 Real Madrid Home Fan Version (Green Collar)",
+   "tier": "fan",
+   "blurb": "The white home shirt with the green ribbed collar and pink cuff trim, in the fan cut.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "why": "Very close to the live '2026/27 Real Madrid Home Shirt' that p31 matched. Two near-identical white home shirts in one album is normal for this supplier (different sleeve trim), but confirm before creating a second listing."
+   },
+   "files": [
+    "2026-27 Real Madrid Home Fan Version (Green Collar) - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-home-fan-version-green-collar"
+  },
+  {
+   "id": "rm-35",
+   "photos": [
+    "p36"
+   ],
+   "title": "Real Madrid Navy Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy shirt with fine white piping around the collar and sleeve, Emirates across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Navy Fan Version - 01.jpg"
+   ],
+   "handle": "real-madrid-navy-fan-version"
+  },
+  {
+   "id": "rm-36",
+   "photos": [
+    "p37"
+   ],
+   "title": "Real Madrid White and Gold Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with a gold sweep through the body and black three-stripe shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid White and Gold Fan Version - 01.jpg"
+   ],
+   "handle": "real-madrid-white-and-gold-fan-version"
+  },
+  {
+   "id": "rm-37",
+   "photos": [
+    "p38"
+   ],
+   "title": "Real Madrid Blue Originals Fan Version",
+   "tier": "fan",
+   "blurb": "Bright blue shirt from the adidas Originals run, trefoil on the chest beside the crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Blue Originals Fan Version - 01.jpg"
+   ],
+   "handle": "real-madrid-blue-originals-fan-version"
+  },
+  {
+   "id": "rm-38",
+   "photos": [
+    "p39"
+   ],
+   "title": "Real Madrid Black Originals Fan Version",
+   "tier": "fan",
+   "blurb": "Black shirt from the adidas Originals run with a white ribbed collar and the trefoil on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Black Originals Fan Version - 01.jpg"
+   ],
+   "handle": "real-madrid-black-originals-fan-version"
+  },
+  {
+   "id": "rm-39",
+   "photos": [
+    "p40"
+   ],
+   "title": "2026/27 Real Madrid Away Shirt",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 0,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Away Shirt - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-away-shirt"
+  },
+  {
+   "id": "rm-40",
+   "photos": [
+    "p41"
+   ],
+   "title": "2026/27 Real Madrid Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "The dark green away shirt with the tonal graphic through the body, in long sleeves and the fan cut.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Real Madrid Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "rm-41",
+   "photos": [
+    "p42"
+   ],
+   "title": "Real Madrid Red Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt with a cream collar and cuffs and a tonal pattern through the body.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Red Fan Version - 01.jpg"
+   ],
+   "handle": "real-madrid-red-fan-version"
+  },
+  {
+   "id": "rm-42",
+   "photos": [
+    "p43"
+   ],
+   "title": "Real Madrid Black and Gold Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with gold Emirates lettering, a gold crest and grey three-stripe shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Black and Gold Fan Version - 01.jpg"
+   ],
+   "handle": "real-madrid-black-and-gold-fan-version"
+  },
+  {
+   "id": "rm-43",
+   "photos": [
+    "p44"
+   ],
+   "title": "Real Madrid Retro Away Jersey (Siemens Mobile, Navy)",
+   "tier": "retro",
+   "blurb": "Navy away shirt from the Siemens Mobile years, pale blue three-stripe shoulders and the embroidered crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (Siemens Mobile, Navy) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-siemens-mobile-navy"
+  },
+  {
+   "id": "rm-44",
+   "photos": [
+    "p45"
+   ],
+   "title": "Real Madrid Retro Third Jersey (Fly Emirates, Teal)",
+   "tier": "retro",
+   "blurb": "Teal third shirt with the darker pixel-block graphic across the front, from the Fly Emirates years.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Third Jersey (Fly Emirates, Teal) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-third-jersey-fly-emirates-teal"
+  },
+  {
+   "id": "rm-45",
+   "photos": [
+    "p46"
+   ],
+   "title": "2008/09 Real Madrid Home Retro Fan Version",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 0,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2008-09 Real Madrid Home Retro Fan Version - 01.jpg"
+   ],
+   "handle": "2008-09-real-madrid-home-retro-fan-version"
+  },
+  {
+   "id": "rm-46",
+   "photos": [
+    "p47"
+   ],
+   "title": "Real Madrid Retro Home Jersey (Teka, White)",
+   "tier": "retro",
+   "blurb": "The white Kelme home shirt with Teka across the chest and the blue patterned sleeves. One of the great nineties Madrid shirts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Home Jersey (Teka, White) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-home-jersey-teka-white"
+  },
+  {
+   "id": "rm-47",
+   "photos": [
+    "p48"
+   ],
+   "title": "Real Madrid Retro Away Jersey (bwin, Dark Green)",
+   "tier": "retro",
+   "blurb": "Dark green away shirt with white three-stripe shoulders and bwin across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (bwin, Dark Green) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-bwin-dark-green"
+  },
+  {
+   "id": "rm-48",
+   "photos": [
+    "p49"
+   ],
+   "title": "Real Madrid Retro Away Jersey (Fly Emirates, Purple)",
+   "tier": "retro",
+   "blurb": "Purple away shirt with a white collar and the Champions League final detailing on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (Fly Emirates, Purple) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-fly-emirates-purple"
+  },
+  {
+   "id": "rm-49",
+   "photos": [
+    "p50"
+   ],
+   "title": "Real Madrid Retro Home Jersey (Fly Emirates, White and Orange)",
+   "tier": "retro",
+   "blurb": "White home shirt with orange piping around the collar and cuffs and black three-stripe shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Home Jersey (Fly Emirates, White and Orange) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-home-jersey-fly-emirates-white-and-orange"
+  },
+  {
+   "id": "rm-50",
+   "photos": [
+    "p51"
+   ],
+   "title": "Real Madrid Retro Away Jersey (Siemens Mobile, Navy and Light Blue)",
+   "tier": "retro",
+   "blurb": "Navy away shirt with pale blue trim on the collar and sleeves, Siemens Mobile across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (Siemens Mobile, Navy and Light Blue) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-siemens-mobile-navy-and-light-blue"
+  },
+  {
+   "id": "rm-51",
+   "photos": [
+    "p52"
+   ],
+   "title": "Real Madrid Retro Away Jersey (bwin, Black and Gold)",
+   "tier": "retro",
+   "blurb": "Black away shirt with gold three-stripe shoulders and gold piping, bwin on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (bwin, Black and Gold) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-bwin-black-and-gold"
+  },
+  {
+   "id": "rm-52",
+   "photos": [
+    "p53"
+   ],
+   "title": "Real Madrid Retro Away Long Sleeve Jersey (Fly Emirates, Pink)",
+   "tier": "retroLong",
+   "blurb": "The pink away shirt with white three-stripe sleeves, in long sleeves.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Long Sleeve Jersey (Fly Emirates, Pink) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-long-sleeve-jersey-fly-emirates-pink"
+  },
+  {
+   "id": "rm-53",
+   "photos": [
+    "p54"
+   ],
+   "title": "Real Madrid Retro Training Jersey (Fly Emirates, Grey)",
+   "tier": "retro",
+   "blurb": "Grey marl training jersey with lime three-stripe shoulders and Fly Emirates across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Training Jersey (Fly Emirates, Grey) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-training-jersey-fly-emirates-grey"
+  },
+  {
+   "id": "rm-54",
+   "photos": [
+    "p55"
+   ],
+   "title": "Real Madrid Retro Home Jersey (Teka, White with Navy Collar)",
+   "tier": "retro",
+   "blurb": "White home shirt with a navy button collar and Teka in blue across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Home Jersey (Teka, White with Navy Collar) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-home-jersey-teka-white-with-navy-collar"
+  },
+  {
+   "id": "rm-55",
+   "photos": [
+    "p56"
+   ],
+   "title": "Real Madrid Retro Away Jersey (Fly Emirates, Black and Lilac)",
+   "tier": "retro",
+   "blurb": "Black away shirt with lilac sleeves and shoulder arcs.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (Fly Emirates, Black and Lilac) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-fly-emirates-black-and-lilac"
+  },
+  {
+   "id": "rm-56",
+   "photos": [
+    "p57"
+   ],
+   "title": "Real Madrid Retro Away Jersey (BenQ Siemens, Purple)",
+   "tier": "retro",
+   "blurb": "Purple away shirt with white sleeve panels and BenQ Siemens across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (BenQ Siemens, Purple) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-benq-siemens-purple"
+  },
+  {
+   "id": "rm-57",
+   "photos": [
+    "p58"
+   ],
+   "title": "Real Madrid Retro Away Jersey (Teka, Black and Gold)",
+   "tier": "retro",
+   "blurb": "Black away shirt with gold trim on the collar, cuffs and hem, Teka across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (Teka, Black and Gold) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-teka-black-and-gold"
+  },
+  {
+   "id": "rm-58",
+   "photos": [
+    "p59"
+   ],
+   "title": "Real Madrid Retro Home Jersey (bwin, White and Gold)",
+   "tier": "retro",
+   "blurb": "White home shirt with a gold-trimmed collar and gold shoulder stripes, bwin on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Home Jersey (bwin, White and Gold) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-home-jersey-bwin-white-and-gold"
+  },
+  {
+   "id": "rm-59",
+   "photos": [
+    "p60"
+   ],
+   "title": "Real Madrid Retro Home Jersey (BenQ Siemens, White)",
+   "tier": "retro",
+   "blurb": "White home shirt with grey three-stripe shoulders, the club shield and BenQ Siemens across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Home Jersey (BenQ Siemens, White) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-home-jersey-benq-siemens-white"
+  },
+  {
+   "id": "rm-60",
+   "photos": [
+    "p61"
+   ],
+   "title": "Real Madrid Retro Away Long Sleeve Jersey (Fly Emirates, Black and Teal)",
+   "tier": "retroLong",
+   "blurb": "Black long-sleeved away shirt with teal three-stripe sleeves and cuffs.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Long Sleeve Jersey (Fly Emirates, Black and Teal) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-long-sleeve-jersey-fly-emirates-black-and-teal"
+  },
+  {
+   "id": "rm-61",
+   "photos": [
+    "p62"
+   ],
+   "title": "Real Madrid Retro Away Jersey (bwin.com, Purple)",
+   "tier": "retro",
+   "blurb": "Deep purple away shirt with white three-stripe shoulders and bwin.com across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (bwin.com, Purple) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-bwin-com-purple"
+  },
+  {
+   "id": "rm-62",
+   "photos": [
+    "p63"
+   ],
+   "title": "Real Madrid Retro Away Jersey (Fly Emirates, Navy and Blue)",
+   "tier": "retro",
+   "blurb": "Navy away shirt with bright blue three-stripe shoulders and a blue collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Retro Away Jersey (Fly Emirates, Navy and Blue) - 01.jpg"
+   ],
+   "handle": "real-madrid-retro-away-jersey-fly-emirates-navy-and-blue"
+  },
+  {
+   "id": "rm-63",
+   "photos": [
+    "p64"
+   ],
+   "title": "2011/12 Real Madrid Home Retro Player Version",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 1,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2011-12 Real Madrid Home Retro Player Version - 01.jpg"
+   ],
+   "handle": "2011-12-real-madrid-home-retro-player-version"
+  },
+  {
+   "id": "rm-64",
+   "photos": [
+    "p65"
+   ],
+   "title": "Real Madrid Navy Fan Version (Fly Better)",
+   "tier": "retro",
+   "flagForClient": "Sent inside the 'retro' album but this is a current Emirates 'Fly Better' navy shirt, not a retro. Priced at the R700 retro tier on the client's own caption - confirm whether it should be the R500 fan tier instead.",
+   "blurb": "Navy shirt with fine white piping through the body and Emirates Fly Better across the chest.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "why": "Modern shirt inside the retro album; check it is not already live under a fan-version title."
+   },
+   "files": [
+    "Real Madrid Navy Fan Version (Fly Better) - 01.jpg"
+   ],
+   "handle": "real-madrid-navy-fan-version-fly-better"
+  },
+  {
+   "id": "rm-65",
+   "photos": [
+    "p66"
+   ],
+   "title": "2026/27 Real Madrid Home Player Version",
+   "tier": "player",
+   "blurb": "The white home shirt with the green collar and pink shoulder stripes, in the slimmer player cut.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "why": "The store carries '2026/27 Real Madrid Home Embroidery Player Version' but no plain home player version. This may be that same shirt under a different name."
+   },
+   "files": [
+    "2026-27 Real Madrid Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-home-player-version"
+  },
+  {
+   "id": "rm-66",
+   "photos": [
+    "p67"
+   ],
+   "title": "2026/27 Real Madrid Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 1,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-home-long-sleeve-player-version"
+  },
+  {
+   "id": "rm-67",
+   "photos": [
+    "p68"
+   ],
+   "title": "2026/27 Real Madrid Away Embroidery Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 0,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Away Embroidery Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-away-embroidery-player-version"
+  },
+  {
+   "id": "rm-68",
+   "photos": [
+    "p69"
+   ],
+   "title": "2026/27 Real Madrid Third Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 1,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Third Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-third-player-version"
+  },
+  {
+   "id": "rm-69",
+   "photos": [
+    "p70"
+   ],
+   "title": "2026/27 Real Madrid Away Long Sleeve Player Version",
+   "tier": "playerLong",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 0,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Away Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-away-long-sleeve-player-version"
+  },
+  {
+   "id": "rm-70",
+   "photos": [
+    "p71"
+   ],
+   "title": "Real Madrid Home Player Version (White and Gold)",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "White home shirt with gold piping through the body, cut close in the player fit.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Home Player Version (White and Gold) - 01.jpg"
+   ],
+   "handle": "real-madrid-home-player-version-white-and-gold"
+  },
+  {
+   "id": "rm-71",
+   "photos": [
+    "p72"
+   ],
+   "title": "Real Madrid Navy Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy shirt with white piping and three-stripe shoulders, in the player cut.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Navy Player Version - 01.jpg"
+   ],
+   "handle": "real-madrid-navy-player-version"
+  },
+  {
+   "id": "rm-72",
+   "photos": [
+    "p73"
+   ],
+   "title": "Real Madrid Navy Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "The navy shirt in long sleeves, player cut, with white three-stripe sleeves.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Navy Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "real-madrid-navy-long-sleeve-player-version"
+  },
+  {
+   "id": "rm-73",
+   "photos": [
+    "p74"
+   ],
+   "title": "Real Madrid Blue Originals Player Version",
+   "tier": "player",
+   "blurb": "The bright blue adidas Originals shirt in the player cut, trefoil beside the crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Blue Originals Player Version - 01.jpg"
+   ],
+   "handle": "real-madrid-blue-originals-player-version"
+  },
+  {
+   "id": "rm-74",
+   "photos": [
+    "p75"
+   ],
+   "title": "Real Madrid Y-3 Fourth Player Version (Orange)",
+   "tier": "player",
+   "blurb": "The orange Y-3 collaboration shirt in the player cut, with the tonal rose print and a dropped hem.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Real Madrid Y-3 Fourth Player Version (Orange) - 01.jpg"
+   ],
+   "handle": "real-madrid-y-3-fourth-player-version-orange"
+  },
+  {
+   "id": "rm-75",
+   "photos": [
+    "p76"
+   ],
+   "title": "2026/27 Real Madrid Away Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "dist": 2,
+    "checkedBy": "hash"
+   },
+   "files": [
+    "2026-27 Real Madrid Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-real-madrid-away-player-version"
+  }
+ ]
+}
