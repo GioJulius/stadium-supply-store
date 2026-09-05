@@ -1,0 +1,873 @@
+{
+ "note": "Wave two of the 4 Sep 2026 10.04 PM WhatsApp export — the five teams wave one deliberately skipped because they already had listings on the store: Portugal, Argentina, England, Italy and the Netherlands. Photo keys are p1..p149 in the export's timestamp order, staged by scripts/stage-0904c.py, and are the same numbers batch-0904c-research.md and unlisted-audit-2026-09-05.md use. 87 products from 115 photographs.",
+ "identificationMethod": "Three passes. (1) The garment-type captions the client sends with each photo, recovered off WhatsApp Web from 9:14 PM on — so Argentina, England, Italy and the Netherlands are caption-confirmed. Portugal's captions (9:10-9:14 PM) are past WhatsApp's history floor and were read from the photographs alone. (2) Contact sheets read by eye, per stadium-supply-rugby-batch: perceptual hashing does not separate garments on a flat backdrop. Fan versus player was settled on the neck label and the crest — DRYCELL/embroidered crest is fan, ULTRAWEAVE or DRI-FIT ADV with a heat-pressed crest is player. (3) A 16x16 dHash of every batch photo against all 327 images on the 44 live Portugal/Argentina/England/Italy/Netherlands listings. That does not group garments, but it does catch the same supplier photograph being reused, and it found five exact reuses.",
+ "dedupeNote": "Dedupe was against every live listing for these five teams, not against titles. Held as already listed: p21 (Portugal home fan — Portugal 2024/25 Home Jersey), p82 (England home fan — England 2024/25 Home Jersey), p43 (Argentina white half-zip set), p55 (Argentina away fan, filigree — the listing filed as Argentina 2010 Away Retro Jersey, which is mislabelled: the photographs show a current adidas Originals shirt with a FIFA 2022 badge), p85/p86/p87/p91/p93/p94/p96/p97 (Italy training set, half-zip, home fan, away fan, two Puma retros, home kids, away long-sleeve player) and p103/p104/p105/p107/p109/p110/p113 (Netherlands home long-sleeve fan, away fan, home kids, away kids, away player, home player, 2008 white away retro). p87, p91, p103, p107 and p115 were confirmed by exact photo reuse (dHash distance 4-7). Merged inside the batch: p66 and p68 are one garment (England 2007/09 home long sleeve) photographed twice, and p15/p16 are the front and back of the Portugal red anthem jacket.",
+ "heldBack": "Five full-zip tracksuits are NOT imported because the client has never priced a full zip — Argentina p40/p41 and Italy p101 (all captioned 'full zip', held out of wave one for the same reason) and Portugal p11/p12, which have no caption but are jacket-and-pants sets. The jacket tier is R1 000 and the training-set tier R600; a full tracksuit sits between them and the call is the client's. Also held: Netherlands p112 and p115, the adult 1988 chevron home and away. The store carries those two only as '1988 Netherlands Home/Away Retro Kids Kit' — but p115 is the SAME photograph as the away kids listing (dHash 5), so listing them again would read as a duplicate rather than an adult size range. Ask the client whether they stock the 1988 chevrons in adult sizes before creating them.",
+ "assumptions": "Two flagged. (1) Portugal p9 and p10 (the Puma white dotted-wave away and the Puma red home) are listed as retros. With no caption they could be a current-range kit; the Puma-era styling and the plain crest read retro. (2) Portugal's fan/player split on p22-p29 is read from the fabric and the neck label, not from the client's word, because that stretch of the thread is unrecoverable. Each wrong call is R150 on one listing.",
+ "priceNote": "The client's own tier table, as applied to the whole catalogue by scripts/apply-client-pricing.mjs. Long sleeve is the client's '+R100 if available', so fan long sleeve is R600, player long sleeve R750 and retro long sleeve R800. The jacket tier (R1 000) is new in this manifest — wave one contained no outerwear — and covers windbreakers, anthem jackets and track tops, matching the f1-outerwear batch.",
+ "seasonNote": "A year is asserted only where the shirt itself carries the design or sponsor that dates it. Where it does not, the listing is titled by colourway or manufacturer era instead of claiming a season the photograph cannot support.",
+ "sizes": {
+  "fan": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL",
+   "3XL",
+   "4XL"
+  ],
+  "adult": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL"
+  ],
+  "kids": [
+   "2-3",
+   "4-5",
+   "6-7",
+   "8-9",
+   "10-11"
+  ]
+ },
+ "tiers": {
+  "fan": {
+   "price": "500.00",
+   "sizes": "fan",
+   "productType": "Fan Version"
+  },
+  "fanLong": {
+   "price": "600.00",
+   "sizes": "fan",
+   "productType": "Fan Version"
+  },
+  "player": {
+   "price": "650.00",
+   "sizes": "adult",
+   "productType": "Player Version"
+  },
+  "playerLong": {
+   "price": "750.00",
+   "sizes": "adult",
+   "productType": "Player Version"
+  },
+  "retro": {
+   "price": "700.00",
+   "sizes": "adult",
+   "productType": "Retro"
+  },
+  "retroLong": {
+   "price": "800.00",
+   "sizes": "adult",
+   "productType": "Retro"
+  },
+  "kids": {
+   "price": "450.00",
+   "sizes": "kids",
+   "productType": "Kids Kit"
+  },
+  "halfZip": {
+   "price": "850.00",
+   "sizes": "adult",
+   "productType": "Half-Zip Training Set"
+  },
+  "trainingSet": {
+   "price": "600.00",
+   "sizes": "adult",
+   "productType": "Training Set"
+  },
+  "jacket": {
+   "price": "1000.00",
+   "sizes": "adult",
+   "productType": "Jacket"
+  }
+ },
+ "products": [
+  {
+   "team": "Portugal",
+   "title": "Portugal 2012/13 Away Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p1"
+   ],
+   "blurb": "The black Nike away with the red and green hooped bands across the chest."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Cream Away Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p2"
+   ],
+   "blurb": "Plain cream Nike away with the gold-outlined crest and nothing else on it."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal 2006/08 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p3"
+   ],
+   "blurb": "Red Nike home with the deep green V-neck and matching sleeve trim."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal 2018/19 Away Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p4"
+   ],
+   "blurb": "White Nike away with the vertical green-and-red flag panel down the front."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal 2020/21 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p5"
+   ],
+   "blurb": "Red home in the crosshatch weave, with the green collar and gold side piping."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal 2008 Away Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p6"
+   ],
+   "blurb": "White Nike away with the navy collar and gold trim through the placket."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal 2010/12 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p7"
+   ],
+   "blurb": "Red home with the wide green band across the chest and the mesh sleeve panels."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal 2016 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p8"
+   ],
+   "blurb": "Red home with the dark red raglan sleeves and green side piping."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Puma Away Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p9"
+   ],
+   "blurb": "White Puma away with the green and red dotted wave printed across the body."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Puma Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p10"
+   ],
+   "blurb": "Red Puma home with the ribbed collar and the shield crest on the chest."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Black Half-Zip Training Set",
+   "tier": "halfZip",
+   "photos": [
+    "p13"
+   ],
+   "blurb": "Black Puma half-zip top with the red shoulder panel, and the matching black pants."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Red Half-Zip Training Set",
+   "tier": "halfZip",
+   "photos": [
+    "p14"
+   ],
+   "blurb": "Red Puma half-zip top with the green side panel, and the matching black pants."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Red Anthem Jacket",
+   "tier": "jacket",
+   "photos": [
+    "p15",
+    "p16"
+   ],
+   "blurb": "Red full-zip anthem jacket with the white and green cuffs and PORTUGAL across the back."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Cream Anthem Jacket",
+   "tier": "jacket",
+   "photos": [
+    "p17"
+   ],
+   "blurb": "Cream full-zip anthem jacket with the red hem band and the green stand collar."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Third Kids Kit",
+   "tier": "kids",
+   "photos": [
+    "p18"
+   ],
+   "blurb": "The black third shirt with the tonal crest print, and the matching shorts."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Away Kids Kit",
+   "tier": "kids",
+   "photos": [
+    "p19"
+   ],
+   "blurb": "The mint and white away shirt with the wave print, and the matching white shorts."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Home Kids Kit",
+   "tier": "kids",
+   "photos": [
+    "p20"
+   ],
+   "blurb": "The red home shirt with the teal collar, and the matching red shorts."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p22"
+   ],
+   "blurb": "The red Puma home in long sleeve. Fan spec - the roomier cut with the embroidered crest and the DRYCELL neck label."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p23"
+   ],
+   "blurb": "The mint and white away with the wave print, in long sleeve. Fan spec, with the embroidered crest."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Home Player Version",
+   "tier": "player",
+   "photos": [
+    "p24"
+   ],
+   "blurb": "The red Puma home. Player spec - the slimmer cut with the dropped hem and the ULTRAWEAVE neck label."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "photos": [
+    "p25"
+   ],
+   "blurb": "The red Puma home in long sleeve, player spec, with the dropped hem and the ULTRAWEAVE label."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Away Player Version",
+   "tier": "player",
+   "photos": [
+    "p26"
+   ],
+   "blurb": "The mint and white away with the wave print. Player spec - dropped hem, ULTRAWEAVE neck label."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Third Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p27"
+   ],
+   "blurb": "The black third with the tonal crest pattern and the gold Puma mark, in long sleeve."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Third Fan Version",
+   "tier": "fan",
+   "photos": [
+    "p28"
+   ],
+   "blurb": "The black third with the tonal crest pattern, the gold Puma mark and the green-and-red collar tipping."
+  },
+  {
+   "team": "Portugal",
+   "title": "Portugal Away Long Sleeve Player Version",
+   "tier": "playerLong",
+   "photos": [
+    "p29"
+   ],
+   "blurb": "The mint and white away in long sleeve, player spec, with the PORTUGAL neck tape and white cuffs."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Home Kids Kit",
+   "tier": "kids",
+   "photos": [
+    "p30"
+   ],
+   "blurb": "The sky and white striped home shirt with the AFA crest, and the matching navy shorts."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Away Kids Kit",
+   "tier": "kids",
+   "photos": [
+    "p31"
+   ],
+   "blurb": "The black away with the blue filigree print, and the matching black shorts."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Navy Training Tee",
+   "tier": "trainingSet",
+   "photos": [
+    "p32"
+   ],
+   "blurb": "Navy adidas training tee with the sky shoulder blocks and the AFA crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Black Training Tee",
+   "tier": "trainingSet",
+   "photos": [
+    "p33"
+   ],
+   "blurb": "Black adidas training tee with the printed hem panel and the world champions badge."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina White Training Tee",
+   "tier": "trainingSet",
+   "photos": [
+    "p34"
+   ],
+   "blurb": "White adidas training tee with the navy sleeve blocks and the AFA crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina White Anthem Jacket",
+   "tier": "jacket",
+   "photos": [
+    "p35"
+   ],
+   "blurb": "White full-zip anthem jacket with the sky panels through the shoulders."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Navy and Sky Windbreaker",
+   "tier": "jacket",
+   "photos": [
+    "p36"
+   ],
+   "blurb": "Navy windbreaker with the sky chevron across the chest and the stand collar."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina White Windbreaker",
+   "tier": "jacket",
+   "photos": [
+    "p37"
+   ],
+   "blurb": "White windbreaker with the sky zip tape and the gold AFA crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Navy Windbreaker",
+   "tier": "jacket",
+   "photos": [
+    "p38"
+   ],
+   "blurb": "Navy windbreaker with the sky shoulder panels and the three stripes down the sleeve."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina adidas Originals Track Top",
+   "tier": "jacket",
+   "photos": [
+    "p39"
+   ],
+   "blurb": "Black adidas Originals track top with the white three stripes and the AFA crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Navy Half-Zip Training Set",
+   "tier": "halfZip",
+   "photos": [
+    "p42"
+   ],
+   "blurb": "Navy half-zip top with the sky sleeve blocks, and the matching navy pants."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Striped Training Set",
+   "tier": "trainingSet",
+   "photos": [
+    "p44"
+   ],
+   "blurb": "The sky and white sunburst training tee with the matching navy shorts."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Navy Training Set",
+   "tier": "trainingSet",
+   "photos": [
+    "p45"
+   ],
+   "blurb": "Navy training tee with the sky sleeve blocks and the matching navy shorts."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Striped Home Long Sleeve Retro Jersey",
+   "tier": "retroLong",
+   "photos": [
+    "p46"
+   ],
+   "blurb": "The sky and white striped home in long sleeve, with the cream collar and the three stripes."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Navy Away Retro Jersey (sky shoulders)",
+   "tier": "retro",
+   "photos": [
+    "p47"
+   ],
+   "blurb": "Navy away retro with the sky shoulder panels and the white piping down the sleeve."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Home Retro Jersey (sky stripes)",
+   "tier": "retro",
+   "photos": [
+    "p48"
+   ],
+   "blurb": "The sky and white striped home retro with the cream placket and the gold AFA crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina 2022 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p49"
+   ],
+   "blurb": "The sky and white striped home with the navy collar and the three stars above the crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Blue Retro Polo Jersey",
+   "tier": "retro",
+   "photos": [
+    "p50"
+   ],
+   "blurb": "Blue adidas polo-collar retro with the tonal diamond pattern through the body."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Navy Away Retro Jersey (sky collar)",
+   "tier": "retro",
+   "photos": [
+    "p51"
+   ],
+   "blurb": "Navy away retro with the sky V-neck and the sky panel down each side."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Home Fan Version",
+   "tier": "fan",
+   "photos": [
+    "p52"
+   ],
+   "blurb": "The sky and white striped home with the navy collar. Fan spec, with the embroidered crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p53"
+   ],
+   "blurb": "The sky and white striped home in long sleeve. Fan spec, with the embroidered crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Home Player Version",
+   "tier": "player",
+   "photos": [
+    "p54"
+   ],
+   "blurb": "The sky and white striped home. Player spec - the slimmer cut with the heat-pressed crest."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p56"
+   ],
+   "blurb": "The black away with the blue filigree print and the adidas Originals trefoil, in long sleeve."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Away Player Version",
+   "tier": "player",
+   "photos": [
+    "p57"
+   ],
+   "blurb": "The black filigree away, player spec - the black ribbed collar and the slimmer cut."
+  },
+  {
+   "team": "Argentina",
+   "title": "Argentina Away Long Sleeve Player Version",
+   "tier": "playerLong",
+   "photos": [
+    "p58"
+   ],
+   "blurb": "The black filigree away in long sleeve, player spec, with the V-neck and the three stripes."
+  },
+  {
+   "team": "England",
+   "title": "England Navy Hooded Windbreaker",
+   "tier": "jacket",
+   "photos": [
+    "p59"
+   ],
+   "blurb": "Navy hooded windbreaker with the zipped side pockets and the Three Lions crest."
+  },
+  {
+   "team": "England",
+   "title": "England Umbro Retro Track Top",
+   "tier": "jacket",
+   "photos": [
+    "p60"
+   ],
+   "blurb": "White Umbro track top with the navy and red taping down the sleeves and ENGLAND on the chest."
+  },
+  {
+   "team": "England",
+   "title": "England White Hooded Windbreaker",
+   "tier": "jacket",
+   "photos": [
+    "p61"
+   ],
+   "blurb": "White Nike hooded windbreaker with the black zip tape and the Three Lions crest."
+  },
+  {
+   "team": "England",
+   "title": "England 1997 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p62"
+   ],
+   "blurb": "White Umbro home with the sky blue collar and UMBRO across the chest."
+  },
+  {
+   "team": "England",
+   "title": "England 2013 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p63"
+   ],
+   "blurb": "White Umbro home with the navy polo collar and the red under-collar tab."
+  },
+  {
+   "team": "England",
+   "title": "England 2002 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p64"
+   ],
+   "blurb": "White home with the red centre stripe running through the crest and down the front."
+  },
+  {
+   "team": "England",
+   "title": "England 1998 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p65"
+   ],
+   "blurb": "White Umbro home with the navy collar and the red and navy side panel."
+  },
+  {
+   "team": "England",
+   "title": "England 2007/09 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p67"
+   ],
+   "blurb": "White Umbro home with the red St George cross over the shoulder and the winged collar."
+  },
+  {
+   "team": "England",
+   "title": "England 2007/09 Home Long Sleeve Retro Jersey",
+   "tier": "retroLong",
+   "photos": [
+    "p66",
+    "p68"
+   ],
+   "blurb": "The same Umbro home with the red St George cross over the shoulder, in long sleeve."
+  },
+  {
+   "team": "England",
+   "title": "England Away Kids Kit",
+   "tier": "kids",
+   "photos": [
+    "p69"
+   ],
+   "blurb": "The red away shirt with the navy side panels, and the matching navy shorts."
+  },
+  {
+   "team": "England",
+   "title": "England Home Kids Kit",
+   "tier": "kids",
+   "photos": [
+    "p70"
+   ],
+   "blurb": "The white home shirt with the navy collar, and the matching white shorts."
+  },
+  {
+   "team": "England",
+   "title": "England Blue Half-Zip Training Set",
+   "tier": "halfZip",
+   "photos": [
+    "p71"
+   ],
+   "blurb": "Light blue Nike half-zip top with the Three Lions crest, and the matching navy pants."
+  },
+  {
+   "team": "England",
+   "title": "England Navy Half-Zip Training Set",
+   "tier": "halfZip",
+   "photos": [
+    "p72"
+   ],
+   "blurb": "Navy Nike half-zip top with the red and grey shoulder taping, and the matching navy pants."
+  },
+  {
+   "team": "England",
+   "title": "England Grey Training Set",
+   "tier": "trainingSet",
+   "photos": [
+    "p74"
+   ],
+   "blurb": "Grey Nike training tee with the Three Lions crest and the matching navy shorts."
+  },
+  {
+   "team": "England",
+   "title": "England Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p73"
+   ],
+   "blurb": "The white Nike home in long sleeve. Fan spec - the embroidered crest and the HAPPY AND GLORIOUS neck tape."
+  },
+  {
+   "team": "England",
+   "title": "England Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "photos": [
+    "p80"
+   ],
+   "blurb": "The white Nike home in long sleeve. Player spec - the heat-pressed crest and the DRI-FIT inner label."
+  },
+  {
+   "team": "England",
+   "title": "England Home Player Version",
+   "tier": "player",
+   "photos": [
+    "p83"
+   ],
+   "blurb": "The white Nike home. Player spec - the heat-pressed crest and the slimmer cut."
+  },
+  {
+   "team": "England",
+   "title": "England Away Fan Version",
+   "tier": "fan",
+   "photos": [
+    "p76"
+   ],
+   "blurb": "The red Nike away with the navy side panels. Fan spec, with the embroidered crest."
+  },
+  {
+   "team": "England",
+   "title": "England Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p75"
+   ],
+   "blurb": "The red Nike away with the navy side panels, in long sleeve. Fan spec."
+  },
+  {
+   "team": "England",
+   "title": "England Away Player Version",
+   "tier": "player",
+   "photos": [
+    "p77"
+   ],
+   "blurb": "The red Nike away, player spec - the slimmer cut with the heat-pressed crest."
+  },
+  {
+   "team": "England",
+   "title": "England Away Long Sleeve Player Version",
+   "tier": "playerLong",
+   "photos": [
+    "p81"
+   ],
+   "blurb": "The red Nike away in long sleeve, player spec, with the tonal pattern through the body."
+  },
+  {
+   "team": "England",
+   "title": "England Stained Glass Special Edition Jersey (white)",
+   "tier": "fan",
+   "photos": [
+    "p78"
+   ],
+   "blurb": "The stained-glass special in the light colourway - the full window print across the front."
+  },
+  {
+   "team": "England",
+   "title": "England Stained Glass Special Edition Jersey (dark)",
+   "tier": "fan",
+   "photos": [
+    "p79"
+   ],
+   "blurb": "The stained-glass special in the dark colourway, with the figures printed across the chest."
+  },
+  {
+   "team": "England",
+   "title": "England Goalkeeper Long Sleeve Jersey",
+   "tier": "fanLong",
+   "photos": [
+    "p84"
+   ],
+   "blurb": "The navy goalkeeper long sleeve with the red, white and blue print through the body and sleeves."
+  },
+  {
+   "team": "Italy",
+   "title": "Italy Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "photos": [
+    "p88"
+   ],
+   "blurb": "The blue adidas home with the chevron weave, in long sleeve. Fan spec, with the embroidered crest."
+  },
+  {
+   "team": "Italy",
+   "title": "Italy Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "photos": [
+    "p89"
+   ],
+   "blurb": "The blue adidas home in long sleeve, player spec - the slimmer cut with the gold three stripes."
+  },
+  {
+   "team": "Italy",
+   "title": "Italy Away Player Version",
+   "tier": "player",
+   "photos": [
+    "p90"
+   ],
+   "blurb": "The white adidas away with the navy collar tipping. Player spec, with the heat-pressed crest."
+  },
+  {
+   "team": "Italy",
+   "title": "Italy 1998 Home Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p92"
+   ],
+   "blurb": "The blue Nike home with the gold-trimmed polo collar and the Coppa Italia badge."
+  },
+  {
+   "team": "Italy",
+   "title": "Italy Puma Home Retro Jersey (light blue)",
+   "tier": "retro",
+   "photos": [
+    "p95"
+   ],
+   "blurb": "Light blue Puma home retro with the darker blue side panels and the four-star crest."
+  },
+  {
+   "team": "Italy",
+   "title": "Italy Puma Home Long Sleeve Retro Jersey (light blue)",
+   "tier": "retroLong",
+   "photos": [
+    "p98"
+   ],
+   "blurb": "The same light blue Puma home retro with the darker side panels, in long sleeve."
+  },
+  {
+   "team": "Netherlands",
+   "title": "Netherlands adidas Originals Long Sleeve Retro Jersey",
+   "tier": "retroLong",
+   "photos": [
+    "p99"
+   ],
+   "blurb": "Orange adidas Originals retro in long sleeve, with the black three stripes and the KNVB lion."
+  },
+  {
+   "team": "Netherlands",
+   "title": "Netherlands adidas Originals Retro Jersey",
+   "tier": "retro",
+   "photos": [
+    "p100"
+   ],
+   "blurb": "Orange adidas Originals retro with the black three stripes on the shoulder and the polo collar."
+  },
+  {
+   "team": "Netherlands",
+   "title": "Netherlands Orange Hooded Windbreaker",
+   "tier": "jacket",
+   "photos": [
+    "p102"
+   ],
+   "blurb": "Orange Nike hooded windbreaker with the black zip tape and the KNVB lion on the chest."
+  },
+  {
+   "team": "Netherlands",
+   "title": "Netherlands Home Fan Version",
+   "tier": "fan",
+   "photos": [
+    "p106"
+   ],
+   "blurb": "The orange Nike home with the black collar and cuffs. Fan spec - the embroidered lion and the mesh sleeve panel."
+  },
+  {
+   "team": "Netherlands",
+   "title": "Netherlands Orange Half-Zip Training Set",
+   "tier": "halfZip",
+   "photos": [
+    "p108"
+   ],
+   "blurb": "Orange Nike half-zip top with the black shoulder taping, and the matching black pants."
+  },
+  {
+   "team": "Netherlands",
+   "title": "Netherlands Black Half-Zip Training Set",
+   "tier": "halfZip",
+   "photos": [
+    "p111"
+   ],
+   "blurb": "Black Nike half-zip top with the orange shoulder flash, and the matching black pants."
+  },
+  {
+   "team": "Netherlands",
+   "title": "Netherlands Goalkeeper Long Sleeve Jersey",
+   "tier": "fanLong",
+   "photos": [
+    "p114"
+   ],
+   "blurb": "The dark goalkeeper long sleeve with the orange flame print and the black star across the chest."
+  }
+ ]
+}
