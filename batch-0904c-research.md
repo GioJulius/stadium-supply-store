@@ -194,7 +194,7 @@ Straight off the client's own tier table, the one recorded in
 | `player version` / `player` | Player | R650 |
 | `player version long sleeve` | Player long sleeve | R750 |
 | `retro` | Retro | R700 |
-| `retro long sleeve` | Retro long sleeve | R700 (open — see below) |
+| `retro long sleeve` | Retro long sleeve | R800 (retro + the long-sleeve R100) |
 | `hoodie` / `half zip` | Hoodie / half zip | R850 |
 | `jacket` / `windbreaker` | Jacket | R1 000 |
 | `training set` | Training set | R700 |
@@ -202,10 +202,12 @@ Straight off the client's own tier table, the one recorded in
 
 Two gaps in that table this batch runs into:
 
-- **`retro long sleeve`** still has no price of its own. It sits at the retro
-  tier, R700, as it has since 4 Sep. Fan long sleeve sits R100 above fan, so
-  R800 is the consistent answer — this is the second time it has come up and it
-  wants one question.
+- **`retro long sleeve` is settled at R800** and needs no question. The client's
+  "+R100 if available" is encoded as a surcharge in
+  `scripts/apply-client-pricing.mjs`, not as a separate tier, and it has been
+  applied to the live catalogue. An earlier draft of this document copied
+  `client-brief-2026-09-04.md`, which was written before that ran, and wrongly
+  listed it as open at R700.
 - **`full zip`** is new here. It appears three times (Argentina #40/#41, Italy
   #101) and it is a jacket-and-pants tracksuit, not a half zip. The jacket tier
   is R1 000 and the training set tier is R700; a full tracksuit is closer to the
@@ -228,8 +230,7 @@ manifest can be written:
    than an assumption.
 3. **Confirm the Portugal fan/player split** on #21–#29, since the captions for
    that stretch are gone.
-4. **Get answers on `retro long sleeve` pricing, `full zip` pricing, and the
-   `all germany` message.**
+4. **Get answers on `full zip` pricing and the `all germany` message.**
 
 ## The message to send the client
 
@@ -238,5 +239,4 @@ manifest can be written:
 > were on the site before. Three quick things: (1) you typed "all germany" in
 > the middle of the Netherlands photos — did a Germany set not send? (2) what
 > should the full-zip tracksuits go for, R1 000 like the jackets or R700 like
-> the training sets? (3) retro long sleeve — R800, the same R100 step you use
-> for fan long sleeve?
+> the training sets?
