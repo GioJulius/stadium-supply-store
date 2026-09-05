@@ -35,6 +35,10 @@ export function isGroup(node: NavNode): node is NavGroup {
 }
 
 export const SHOP_MENU: NavSection[] = [
+  // The whole archive, first in the list — it is the thing most visitors
+  // actually want and it was previously buried under every club and
+  // competition, at the very bottom of the panel.
+  { label: "Shop all", href: "/shop" },
   { label: "Home", href: "/" },
   { label: "2026–2027 Season", href: "/shop?q=2026&label=2026%E2%80%932027%20Season" },
   {
@@ -136,7 +140,6 @@ export const SHOP_MENU: NavSection[] = [
   { label: "Shipping", href: "/shipping" },
   { label: "Contact", href: "/contact" },
   { label: "Reviews", href: "/reviews" },
-  { label: "Shop all", href: "/shop" },
 ];
 
 export function leafHref(leaf: NavLeaf): string {
