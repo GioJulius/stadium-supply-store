@@ -50,7 +50,13 @@ Ten teams, in the order they were sent:
 | 9 | Celtic | #130–#134 | Closes with `celtic` |
 | 10 | Atlético Madrid | #135–#149 | Closes with `athletico madrid` |
 
-**Nine of these ten clubs have no presence on the store at all.** Current depth
+**Five of these ten clubs have no presence on the store at all** — Sporting,
+Al-Nassr, Dortmund, Celtic and Atletico. Checked against the live storefront on
+5 Sep: Italy already has 20 listings and the Netherlands 17, both from the older
+supplier and Instagram import lineage and both mostly retros, so those two are
+top-ups rather than new teams. Portugal (2), Argentina (3) and England (2) are
+thin but not empty. An earlier draft of this line said nine of ten had nothing,
+which was asserted from the batch rather than measured against the store.** Current depth
 after the 4 Sep imports is Liverpool 53, Brazil 48, France 39, Bayern 35, Inter
 Milan 34, Real Madrid 33, Manchester United 31, plus the Aston Villa / Brighton
 / Crystal Palace / Germany / Spain range loaded this evening. Portugal,
