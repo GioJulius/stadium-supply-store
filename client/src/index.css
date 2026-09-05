@@ -494,3 +494,151 @@ body { font-family:"Manrope",Arial,sans-serif; }
 .product-card__badge, .product-card__price-tag { position:static; top:auto; left:auto; right:auto; }
 .product-card__badge { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .product-card__price-tag { flex:0 0 auto; }
+
+/* ── Shop filter rail, product page and cart, redesigned to the 1a wireframe ──
+   Structure follows the wireframe; the type, colour and weight stay on the
+   store's existing system (Barlow Condensed display, DM Mono micro-labels,
+   navy #10213c on cream) so the two redesigned pages do not read as a
+   different site from the rest of the shop. */
+
+/* Layout: rail beside the grid, stacking under 1000px. */
+.shop-layout { display:grid; grid-template-columns:212px 1fr; gap:38px; align-items:start; }
+.shop-results { min-width:0; }
+
+.filter-rail {
+  position:sticky; top:96px; display:flex; flex-direction:column; gap:23px;
+  border-top:1px solid rgba(18,25,44,.3); padding-top:19px;
+}
+.filter-rail__head { display:flex; align-items:center; justify-content:space-between; }
+.filter-rail__close { display:none; }
+.filter-group { border:0; margin:0; padding:0; display:flex; flex-direction:column; gap:9px; }
+.filter-group legend {
+  padding:0; font:10px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.04em;
+}
+.filter-group legend span { opacity:.5; text-transform:none; }
+.filter-group__row { display:flex; flex-wrap:wrap; gap:5px; }
+.filter-group__row--split .chip { flex:1; text-align:center; }
+.filter-group select {
+  appearance:none; width:100%; border:1px solid rgba(18,25,44,.3); background:transparent;
+  padding:8px 10px; font:10px "DM Mono",monospace; text-transform:uppercase; color:inherit; outline:0;
+}
+.filter-group input[type="range"] { width:100%; accent-color:#10213c; }
+.filter-group__scale { display:flex; justify-content:space-between; margin:0; font:9px "DM Mono",monospace; opacity:.55; }
+
+/* One chip style shared by the rail, the version switch and the badge row. */
+.chip {
+  display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid rgba(18,25,44,.3); background:transparent; color:inherit;
+  border-radius:999px; padding:6px 11px; font:10px "DM Mono",monospace; text-transform:uppercase;
+  white-space:nowrap; transition:background .15s, color .15s, border-color .15s;
+}
+.chip:hover:not(:disabled) { border-color:#10213c; }
+.chip.is-on { background:#10213c; border-color:#10213c; color:#f8f7f1; }
+
+.filter-rail__foot { display:flex; align-items:center; justify-content:space-between; gap:12px; padding-top:4px; }
+.filter-rail__apply { display:none; }
+.rail-toggle {
+  display:none; align-items:center; gap:7px; border:1px solid rgba(18,25,44,.3);
+  background:transparent; padding:8px 12px; font:10px "DM Mono",monospace; text-transform:uppercase;
+}
+.rail-toggle__dot { width:6px; height:6px; border-radius:50%; background:#10213c; }
+.rail-scrim { display:none; }
+
+/* The size run on the card — what stops the dead-end click into a kit that
+   does not come in the shopper's size. */
+.product-card__meta { display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex:0 0 auto; text-align:right; }
+.product-card__sizes { font:9px "DM Mono",monospace; text-transform:uppercase; opacity:.55; white-space:nowrap; }
+
+/* ── Product page ── */
+.product-crumbs { display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:29px; }
+.product-crumbs .product-back { margin-bottom:0; }
+.product-crumbs ol {
+  display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none;
+  font:10px "DM Mono",monospace; text-transform:uppercase; opacity:.6;
+}
+.product-crumbs li + li::before { content:"›"; margin-right:7px; }
+
+.product-availability { margin:-24px 0 28px; font:11px "DM Mono",monospace; text-transform:uppercase; opacity:.7; }
+
+.version-switch { margin:0 0 26px; display:flex; flex-direction:column; gap:9px; }
+.version-switch__row { display:flex; flex-wrap:wrap; gap:6px; }
+.version-switch__note { margin:0; font-size:11px; line-height:1.45; opacity:.6; }
+
+/* The printing panel: an open box on the page, not a modal — the wireframe's
+   fix for printing being a surprise step. */
+.printing-panel {
+  border:1px solid rgba(18,25,44,.3); background:rgba(255,255,255,.55);
+  padding:15px 16px 14px; margin:0 0 22px; display:flex; flex-direction:column; gap:12px;
+}
+.printing-panel__head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
+.printing-panel__head h2 {
+  margin:0; font:600 13px "Barlow Condensed",sans-serif; text-transform:uppercase; letter-spacing:.02em;
+}
+.printing-panel__head span { font:10px "DM Mono",monospace; }
+.printing-panel__toggle { display:flex; align-items:center; gap:9px; font-size:12px; }
+.printing-panel__fields { display:flex; gap:9px; }
+.printing-panel__fields label { flex:2; display:flex; flex-direction:column; gap:4px; }
+.printing-panel__number { flex:1 !important; }
+.printing-panel__fields input, .printing-panel__other input, .printing-panel__other select {
+  width:100%; border:1px solid rgba(18,25,44,.3); background:#fff; padding:9px 10px;
+  font:11px "DM Mono",monospace; text-transform:uppercase; color:inherit; outline:0;
+}
+.printing-panel__fields small { font:9px "DM Mono",monospace; opacity:.5; }
+.printing-panel__hint { margin:0; font-size:11px; opacity:.7; }
+.printing-panel__badges { display:flex; flex-direction:column; gap:8px; }
+.printing-panel__badges .eyebrow { display:block; }
+.printing-panel__badge-row { display:flex; flex-wrap:wrap; gap:5px; }
+.printing-panel__other { display:flex; gap:9px; }
+.printing-panel__other label { flex:1; display:flex; flex-direction:column; gap:4px; }
+.printing-panel__terms { margin:0; font:9px "DM Mono",monospace; text-transform:uppercase; opacity:.55; }
+
+/* Printing readback in the thumbnail strip. Deliberately a readback of the
+   text, not a fake composite onto the shirt — see the note in ProductDetail. */
+.print-preview {
+  width:64px; height:64px; flex:none; border:1px solid rgba(18,25,44,.4);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px;
+  background:#10213c; color:#f8f7f1; text-align:center; padding:4px;
+}
+.print-preview__name { font:600 8px "Barlow Condensed",sans-serif; text-transform:uppercase; letter-spacing:.06em; max-width:100%; overflow:hidden; text-overflow:ellipsis; }
+.print-preview__number { font:700 19px/1 "Barlow Condensed",sans-serif; }
+
+.add-button span { font:10px "DM Mono",monospace; }
+
+/* ── Cart drawer ── */
+.cart-item__summary { margin:3px 0 0; font:10px "DM Mono",monospace; text-transform:uppercase; opacity:.6; line-height:1.5; }
+.cart-total--minor { font-size:11px; opacity:.75; }
+.cart-total--minor + .cart-total:not(.cart-total--minor) { border-top:1px dashed rgba(18,25,44,.35); padding-top:9px; margin-top:3px; }
+.cart-drawer__reassure { margin:9px 0 0; text-align:center; font:9px "DM Mono",monospace; text-transform:uppercase; opacity:.5; }
+
+@media (max-width: 1000px) {
+  .shop-layout { grid-template-columns:1fr; gap:0; }
+  .rail-toggle { display:inline-flex; }
+  .filter-rail {
+    position:fixed; inset:0 0 0 auto; width:min(340px,88vw); z-index:60;
+    background:var(--background); border-top:0; border-left:1px solid rgba(18,25,44,.3);
+    padding:22px 20px; overflow-y:auto; transform:translateX(100%);
+    transition:transform .3s cubic-bezier(.4,0,.2,1); gap:20px;
+  }
+  .filter-rail.is-open { transform:translateX(0); }
+  .filter-rail__close { display:inline-flex; }
+  .filter-rail__apply {
+    display:inline-flex; flex:1; justify-content:center; border:0; background:#10213c; color:#f8f7f1;
+    padding:13px 16px; font:10px "DM Mono",monospace; text-transform:uppercase;
+  }
+  .filter-rail__foot { position:sticky; bottom:0; background:var(--background); padding:12px 0 0; }
+  .rail-scrim {
+    display:block; position:fixed; inset:0; z-index:59; border:0; padding:0;
+    background:rgba(18,25,44,.4); opacity:0; pointer-events:none; transition:opacity .3s;
+  }
+  .rail-scrim.is-open { opacity:1; pointer-events:auto; }
+}
+
+@media (max-width: 850px) {
+  .product-crumbs { gap:10px; }
+  .product-availability { margin:-16px 0 22px; }
+  .printing-panel__other { flex-direction:column; }
+}
+
+/* The size-guide link sits opposite "Select size" on one row; without this it
+   wraps to two lines inside its own box at wide column widths. */
+.size-picker__guide { white-space:nowrap; }

@@ -76,18 +76,32 @@ export function filterAndSortProducts(
   query = "",
   exclude = "",
 ): Product[] {
+  const queried = textMatchProducts(products, query, exclude);
+  const matching = filter === "all" ? queried : queried.filter(product => searchableText(product).includes(filter));
+  return sortProducts(matching, sort);
+}
+
+/**
+ * The free-text half of the old combined helper, split out so the shop can
+ * narrow by search term first and then build its filter rail from whatever
+ * survived — the rail's options have to describe the results, not the archive.
+ */
+export function textMatchProducts(products: Product[], query = "", exclude = ""): Product[] {
   const term = query.trim().toLowerCase();
   const without = exclude.trim().toLowerCase();
-  const queried = products.filter(product => {
+  if (!term && !without) return products;
+  return products.filter(product => {
     const text = searchableText(product);
     if (term && !text.includes(term)) return false;
     // "Retro" means retro football; the retro rugby shirts belong to Rugby.
     if (without && text.includes(without)) return false;
     return true;
   });
-  const matching = filter === "all" ? queried : queried.filter(product => searchableText(product).includes(filter));
+}
 
-  return [...matching].sort((a, b) => {
+/** The ordering half of the old combined helper. */
+export function sortProducts(products: Product[], sort: CatalogSortMode): Product[] {
+  return [...products].sort((a, b) => {
     const aPrice = Number(a.priceRange.min.amount);
     const bPrice = Number(b.priceRange.min.amount);
     if (sort === "price-asc") return aPrice - bPrice;
