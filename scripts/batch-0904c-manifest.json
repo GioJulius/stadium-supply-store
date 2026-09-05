@@ -1,0 +1,105 @@
+{
+  "note": "Wave one of the 4 Sep 2026 10.04 PM WhatsApp export (149 photographs, ten teams — see batch-0904c-research.md). This wave covers only the five clubs that had NO listing on the store at all: Atletico Madrid, Sporting CP, Al-Nassr, Borussia Dortmund and Celtic. Photo keys are p1..p149 in the export's timestamp order, staged by scripts/stage-0904c.py, and are the same numbers the research document uses.",
+
+  "identificationMethod": "Every listing here is grouped by three things agreeing. (1) The client captions each photo with its garment type. (2) The export's file timestamps group photos to the SECOND, and the chat's caption order is reliable across seconds — so a second-group bounds which captions can apply to which photos. Within a single second the '(1)'/'(2)' suffix is WhatsApp's download-collision naming, NOT chat order, so it is never used to order anything. (3) The photographs themselves settle what remains. On the two Nike pairs the neck label was decisive and legible: DRI-FIT is the fan version, AERO-FIT the player version — that is how p135/p137 and p138/p139 were assigned, and it agrees independently with the caption order.",
+
+  "dedupeNote": "None of these five clubs has a single listing on the live storefront, verified against the storefront product list on 5 Sep 2026, so there is nothing here to collide with. The one duplicate INSIDE the batch was found by eye: p141 and p148 are the same black Visit Rwanda half-zip set photographed twice at slightly different crops, so they are one listing carrying both photographs rather than two listings. Perceptual hashing is not used — it does not work on flat-lay garment photography against a plain backdrop.",
+
+  "assumptions": "Two fan-versus-player calls could not be resolved and are flagged. In both, the two garments are DIFFERENT kits rather than one kit in two specs, so the choice changes which shirt carries which price. Sporting: the second-group holds p116 (dark green) and p117 (green and white hoops) against captions 'player version, fan version'. Celtic: the second-group holds p131 (dark away) and p132 (hooped home) against 'player, fan'. In both cases the hooped home is listed as the fan version and the darker shirt as the player version, because the home shirt is the higher-volume line. Both are a one-line correction if the client reads them the other way.",
+
+  "priceNote": "The client's own tier table, as applied to the whole catalogue by scripts/apply-client-pricing.mjs. Long sleeve is the client's '+R100 if available', so retro long sleeve is R800 and player long sleeve R750. Training set is R600, matching the 0904b batch; the client's list carries both R600 and R700 wording for training sets and that ambiguity is still open. NOTHING in this wave is a full-zip tracksuit — those are held for wave two because the client has not priced them.",
+
+  "seasonNote": "A season is asserted only where the shirt itself carries the sponsor or design that dates it. Atletico's current home and away both carry Riyadh Air, which has been the sponsor across more than one season, so they are titled by colourway rather than claiming a year the photograph cannot support.",
+
+  "sizes": {
+    "fan": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "adult": ["S", "M", "L", "XL", "2XL"],
+    "kids": ["2-3", "4-5", "6-7", "8-9", "10-11"]
+  },
+
+  "tiers": {
+    "fan": { "price": "500.00", "sizes": "fan", "productType": "Fan Version" },
+    "fanLong": { "price": "600.00", "sizes": "fan", "productType": "Fan Version" },
+    "player": { "price": "650.00", "sizes": "adult", "productType": "Player Version" },
+    "playerLong": { "price": "750.00", "sizes": "adult", "productType": "Player Version" },
+    "retro": { "price": "700.00", "sizes": "adult", "productType": "Retro" },
+    "retroLong": { "price": "800.00", "sizes": "adult", "productType": "Retro" },
+    "kids": { "price": "450.00", "sizes": "kids", "productType": "Kids Kit" },
+    "halfZip": { "price": "850.00", "sizes": "adult", "productType": "Half-Zip Training Set" },
+    "hoodie": { "price": "850.00", "sizes": "adult", "productType": "Hoodie" },
+    "trainingSet": { "price": "600.00", "sizes": "adult", "productType": "Training Set" }
+  },
+
+  "products": [
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Home Player Version", "tier": "player", "photos": ["p135"],
+      "blurb": "The red and white striped home shirt with the deep blue collar and Riyadh Air across the chest. Player spec — the slimmer cut, with the ribbed knit collar and the AERO-FIT neck label." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Home Fan Version", "tier": "fan", "photos": ["p137"],
+      "blurb": "The red and white striped home shirt with the deep blue collar and Riyadh Air across the chest, in the everyday fan cut." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Away Player Version", "tier": "player", "photos": ["p139"],
+      "blurb": "The black away shirt with the tonal geometric print and volt trim. Player spec — slimmer through the body, with the ribbed collar and the AERO-FIT neck label." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Away Fan Version", "tier": "fan", "photos": ["p138"],
+      "blurb": "The black away shirt with the tonal geometric print, volt sleeve trim and the volt crest, in the everyday fan cut." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Away Kids Kit", "tier": "kids", "photos": ["p136"],
+      "blurb": "The black away shirt and matching shorts, with the volt crest on both. Sold as a set." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Volt Half-Zip Training Set", "tier": "halfZip", "photos": ["p140"],
+      "blurb": "The fluorescent volt half-zip training top with Visit Rwanda across the chest, and the matching black pants with the blue stripe down the leg." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Black Half-Zip Training Set", "tier": "halfZip", "photos": ["p141", "p148"],
+      "blurb": "The black half-zip training top with blue shoulder panels and Visit Rwanda across the chest, and the matching black pants with the blue stripe down the leg." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Training Set", "tier": "trainingSet", "photos": ["p147"],
+      "blurb": "The short-sleeved black training shirt with blue shoulder trim and Visit Rwanda across the chest, with matching shorts." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Red Hoodie", "tier": "hoodie", "photos": ["p146"],
+      "blurb": "A heavyweight red pullover hoodie with the gold and black crest at the chest and the swoosh opposite." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Blue Hoodie", "tier": "hoodie", "photos": ["p149"],
+      "blurb": "A heavyweight royal blue pullover hoodie with the gold and black crest at the chest and the swoosh opposite." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Spider-Man 2 Home Retro Jersey", "tier": "retro", "photos": ["p142"],
+      "blurb": "The red and white striped Spider-Man 2 shirt, with the spider across the chest and the gold script at the hem." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Spider-Man 2 Away Retro Jersey", "tier": "retro", "photos": ["p143"],
+      "blurb": "The navy Spider-Man 2 shirt with the web print across the body, the red spider at the centre and the red collar." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Spider-Man 2 Away Retro Long Sleeve Jersey", "tier": "retroLong", "photos": ["p144"],
+      "blurb": "The navy Spider-Man 2 shirt with the web print and the red spider at the centre, in long sleeve with pale blue cuffs." },
+    { "team": "Atletico Madrid", "title": "Atletico Madrid Marbella Retro Jersey", "tier": "retro", "photos": ["p145"],
+      "blurb": "The Puma-era red and white striped shirt with MARBELLA across the chest and the buttoned collar." },
+
+    { "team": "Sporting CP", "title": "Sporting CP Home Fan Version", "tier": "fan", "photos": ["p117"],
+      "blurb": "The green and white hooped home shirt with the white polo collar and Betano across the chest." },
+    { "team": "Sporting CP", "title": "Sporting CP Away Player Version", "tier": "player", "photos": ["p116"],
+      "blurb": "The dark green away shirt with the gold Betano wordmark and the gold crest at the hem." },
+    { "team": "Sporting CP", "title": "Sporting CP OPT Retro Jersey", "tier": "retro", "photos": ["p118"],
+      "blurb": "The Reebok-era green and white hooped shirt with the black and white OPT panel across the chest." },
+    { "team": "Sporting CP", "title": "Sporting CP OPT Retro Long Sleeve Jersey", "tier": "retroLong", "photos": ["p119"],
+      "blurb": "The Reebok-era green and white hooped shirt with the OPT panel across the chest, in long sleeve." },
+
+    { "team": "Al-Nassr", "title": "Al-Nassr Home Player Version", "tier": "player", "photos": ["p120"],
+      "blurb": "The yellow home shirt with the navy and gold patterned collar and cuffs, and HUMAIN across the chest." },
+    { "team": "Al-Nassr", "title": "Al-Nassr Home Kids Kit", "tier": "kids", "photos": ["p121"],
+      "blurb": "The yellow home shirt with the patterned trim and matching navy shorts. Sold as a set." },
+    { "team": "Al-Nassr", "title": "Al-Nassr Away Player Version", "tier": "player", "photos": ["p122"],
+      "blurb": "The navy away shirt with the cream collar and cuffs and the gold HUMAIN wordmark across the chest." },
+    { "team": "Al-Nassr", "title": "Al-Nassr Third Player Version", "tier": "player", "photos": ["p123"],
+      "blurb": "The off-white third shirt with the gold shoulder panels and the tonal crest." },
+
+    { "team": "Borussia Dortmund", "title": "Borussia Dortmund Home Player Version", "tier": "player", "photos": ["p124"],
+      "blurb": "The yellow home shirt with the black and white ribbed collar, the two stars above the crest and Vodafone across the chest." },
+    { "team": "Borussia Dortmund", "title": "Borussia Dortmund Away Player Version", "tier": "player", "photos": ["p125"],
+      "blurb": "The black away shirt with the white polo collar, the yellow crest and Vodafone across the chest." },
+    { "team": "Borussia Dortmund", "title": "Borussia Dortmund Home Kids Kit", "tier": "kids", "photos": ["p126"],
+      "blurb": "The yellow home shirt with the black ribbed collar and matching black shorts. Sold as a set." },
+    { "team": "Borussia Dortmund", "title": "Borussia Dortmund Home Player Version Long Sleeve", "tier": "playerLong", "photos": ["p127"],
+      "blurb": "The yellow home shirt with the black and white ribbed collar and Vodafone across the chest, in long sleeve." },
+    { "team": "Borussia Dortmund", "title": "Borussia Dortmund Die Continentale Retro Jersey", "tier": "retro", "photos": ["p128"],
+      "blurb": "The yellow shirt with the black lightning shoulders and Die Continentale across the chest." },
+    { "team": "Borussia Dortmund", "title": "Borussia Dortmund Third Fan Version", "tier": "fan", "photos": ["p129"],
+      "blurb": "The purple third shirt with the volt V-neck and cuffs, the yellow crest and Vodafone across the chest." },
+
+    { "team": "Celtic", "title": "Celtic Umbro Hooped Retro Jersey", "tier": "retro", "photos": ["p130"],
+      "blurb": "The Umbro-era green and white hooped shirt with the white collar and the 1888 roundel print." },
+    { "team": "Celtic", "title": "Celtic Home Fan Version", "tier": "fan", "photos": ["p132"],
+      "blurb": "The green and white hooped home shirt with the white crew collar, gold crest and dafabet across the chest." },
+    { "team": "Celtic", "title": "Celtic Away Player Version", "tier": "player", "photos": ["p131"],
+      "blurb": "The dark teal and black striped away shirt with the black collar and dafabet across the chest." },
+    { "team": "Celtic", "title": "Celtic Third Fan Version", "tier": "fan", "photos": ["p133"],
+      "blurb": "The cream third shirt with the dark green collar trim, the tonal pattern through the body and dafabet across the chest." },
+    { "team": "Celtic", "title": "Celtic Hoodie", "tier": "hoodie", "photos": ["p134"],
+      "blurb": "A black pullover hoodie with the shamrock at the chest and the three stripes down each sleeve." }
+  ]
+}
