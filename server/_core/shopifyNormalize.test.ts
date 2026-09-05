@@ -27,3 +27,28 @@ describe("orderGalleryImages", () => {
     expect(orderGalleryImages(gallery)).toBe(gallery);
   });
 });
+
+describe("orderGalleryImages and the shape of a size chart", () => {
+  // The client raised this on 5 Sep 2026: several listings led on a close-up
+  // because their `_01` is the garment, not a chart. Charts are non-square.
+  it("keeps a square _01, which is a garment photo and not a chart", () => {
+    const gallery = [
+      { url: `${cdn}/215918880_01.jpg`, width: 1400, height: 1400 },
+      { url: `${cdn}/215918880_02.jpg`, width: 1400, height: 1400 },
+    ];
+    expect(orderGalleryImages(gallery)).toBe(gallery);
+  });
+
+  it("still demotes a wide _01, which is a measurement table", () => {
+    const gallery = [
+      { url: `${cdn}/182235606_01.jpg`, width: 1540, height: 1000 },
+      { url: `${cdn}/182235606_02.jpg`, width: 1400, height: 1400 },
+    ];
+    expect(orderGalleryImages(gallery).map(i => i.url)).toEqual([gallery[1].url, gallery[0].url]);
+  });
+
+  it("falls back to the filename when a caller did not ask for dimensions", () => {
+    const gallery = [{ url: `${cdn}/182235606_01.jpg` }, { url: `${cdn}/182235606_02.jpg` }];
+    expect(orderGalleryImages(gallery).map(i => i.url)).toEqual([gallery[1].url, gallery[0].url]);
+  });
+});

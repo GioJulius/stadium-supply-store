@@ -104,19 +104,36 @@ function normalizeImage(i: RawImage): Image {
 
 /**
  * The supplier ships each gallery as `<batch>_01.jpg` … `<batch>_08.jpg`, and
- * `_01` is always the size chart, not the garment. Shopify keeps that upload
- * order, so left alone every card, hover preview, and product page leads with a
- * measurement table. Demote it: the first real product shot (`_02`) becomes the
- * lead image and the chart moves to the end of the gallery, where a shopper
- * looks for it. Galleries that don't use the supplier naming are untouched.
+ * `_01` is USUALLY the size chart. Shopify keeps that upload order, so left
+ * alone a lot of cards, hover previews and product pages lead with a
+ * measurement table. Demote it: the first real product shot becomes the lead
+ * and the chart moves to the end of the gallery, where a shopper looks for it.
+ *
+ * But not always. On 5 Sep 2026 the client asked why several listings led on a
+ * close-up; on those, `_01` is the whole-garment shot and this rule was burying
+ * it. Measured across all 122 supplier galleries on the store: **size charts
+ * are non-square** — 1.54:1 or 3.76:1 — where every garment photograph is
+ * square. So the filename alone is not enough; the shape decides.
+ *
+ * An image with no dimensions (the cart-line query asks for them, but a caller
+ * need not) falls back to the filename, which is how this behaved before.
  */
 const SIZE_CHART_FILENAME = /\/\d{4,}_0*1\.(?:jpe?g|png|webp)(?:$|\?)/i;
 
-export function orderGalleryImages<T extends { url: string }>(images: T[]): T[] {
+type GalleryImage = { url: string; width?: number | null; height?: number | null };
+
+function isSizeChart(image: GalleryImage): boolean {
+  if (!SIZE_CHART_FILENAME.test(image.url)) return false;
+  if (!image.width || !image.height) return true;
+  const aspect = image.width / image.height;
+  return aspect < 0.95 || aspect > 1.05;
+}
+
+export function orderGalleryImages<T extends GalleryImage>(images: T[]): T[] {
   if (images.length < 2) return images;
-  const charts = images.filter(i => SIZE_CHART_FILENAME.test(i.url));
+  const charts = images.filter(isSizeChart);
   if (charts.length === 0 || charts.length === images.length) return images;
-  return [...images.filter(i => !SIZE_CHART_FILENAME.test(i.url)), ...charts];
+  return [...images.filter(i => !isSizeChart(i)), ...charts];
 }
 
 function normalizeSelectedOption(o: RawSelectedOption): SelectedOption {
