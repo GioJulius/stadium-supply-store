@@ -35,9 +35,17 @@ describe("isPersonalisable", () => {
     expect(isPersonalisable(product("Manchester United 2025/26 Home Shorts", "Shorts", ["Fan Version"]))).toBe(false);
   });
 
-  it("withholds it from player and authentic shirts, which ship in official spec", () => {
-    expect(isPersonalisable(product("Liverpool 2025/26 Home Jersey — Player Version", "Football Jersey", ["Player Version"]))).toBe(false);
-    expect(isPersonalisable(product("Arsenal 2024/25 Home Long Sleeve Authentic Jersey", "Football Jersey", ["Authentic"]))).toBe(false);
+  // The client asked for this on 5 Sep 2026: a player-spec shirt prints exactly
+  // like a fan one, and the product page was offering no printing at all on
+  // them. The same wording test also hid it from every listing titled plainly
+  // as a "Jersey", with neither "fan" nor "player" anywhere in it.
+  it("offers printing on player and authentic shirts", () => {
+    expect(isPersonalisable(product("Liverpool 2025/26 Home Jersey — Player Version", "Football Jersey", ["Player Version"]))).toBe(true);
+    expect(isPersonalisable(product("Arsenal 2024/25 Home Long Sleeve Authentic Jersey", "Football Jersey", ["Authentic"]))).toBe(true);
+  });
+
+  it("offers printing on a shirt that says neither fan nor player", () => {
+    expect(isPersonalisable(product("Manchester City 2025/26 Away Jersey", "Football Jersey", ["Manchester City"]))).toBe(true);
   });
 
   it("withholds it from retro shirts", () => {

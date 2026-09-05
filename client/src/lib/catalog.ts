@@ -121,7 +121,7 @@ export function sortProducts(products: Product[], sort: CatalogSortMode): Produc
  * because the catalogue expresses "fan version" in all three depending on
  * which import lineage a listing came from.
  */
-const NON_SHIRT = /hood|sweatshirt|jacket|windbreaker|tracksuit|training|half-zip|polo|pants|t-shirt|anthem|presentation/i;
+const NON_SHIRT = /hood|sweatshirt|crewneck|jacket|windbreaker|tracksuit|training|half-zip|half zip|polo|pants|t-shirt|tee|anthem|presentation|track top/i;
 
 /**
  * Shorts on their own cannot take a name and number, but a kit or a set that
@@ -145,15 +145,27 @@ export function compareByFreshness(a: Product, b: Product): number {
   return a.title.localeCompare(b.title);
 }
 
+/**
+ * Retro shirts are reproductions of a specific season's printing, so they are
+ * still sold as they come.
+ */
+const NOT_PRINTABLE = /\bretro\b/i;
+
+/**
+ * Any listing that is a shirt takes a name and number, unless it is a retro.
+ *
+ * The test is what the garment IS. An earlier version asked how the listing was
+ * WORDED — it required the words "fan version" and explicitly refused "player
+ * version" — which hid the option on every player-spec shirt and on every
+ * listing titled plainly as a "Jersey". The client raised the player versions
+ * on 5 Sep 2026: the shirt prints the same way whichever spec it is.
+ */
 export function isPersonalisable(product: Product): boolean {
   const haystack = [product.title, product.productType ?? "", ...product.tags].join(" ");
   if (NON_SHIRT.test(haystack)) return false;
   if (isShortsOnly(haystack)) return false;
-  if (/player version|authentic/i.test(haystack)) return false;
-  // Kids kits are sold as sets rather than as "fan version", so they never
-  // matched the wording test below even though the shirt prints the same way.
-  if (/kids|kiddies/i.test(haystack)) return true;
-  return /fan version|fan jersey/i.test(haystack);
+  if (NOT_PRINTABLE.test(haystack)) return false;
+  return true;
 }
 
 /**
