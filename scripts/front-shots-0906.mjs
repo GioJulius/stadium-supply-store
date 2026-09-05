@@ -70,19 +70,29 @@ const PULL = [
   ["2026-27-fc-barcelona-away-kids-kit", 1, "gallery was close-ups only"],
   ["2026-world-cup-france-half-zip-training-set", 19, "back of the top; now the front with the pants"],
   ["2026-world-cup-england-half-zip-training-set", 19, "back of the top; now the front with the pants"],
-  ["2026-27-liverpool-half-zip-training-set", 21, "back of the top; now the front with the pants"],
-  ["2026-27-real-madrid-half-zip-training-set", 21, "back of the top; now the front with the pants"],
+  ["2026-27-liverpool-half-zip-training-set", 16, "back of the top; now the front with the pants"],
+  ["2026-27-real-madrid-half-zip-training-set", 16, "back of the top; now the front with the pants"],
 ];
 
 /** Already own a front shot — it just was not leading. */
 const PROMOTE = [
-  ["aston-villa-2025-26-away-fan-version", "a01_3.jpg", "led on the back collar"],
+  ["aston-villa-2025-26-away-fan-version", "a01_4.jpg", "led on the back"],
   ["paris-saint-germain-2024-25-fourth-jersey-d-doue-14", "010_02_ecde1f8b-8180-41d3-8b19-869f2461c067.jpg", "led on the printed back"],
   ["2025-26-fc-barcelona-hooded-training-set", "212967540_03.jpg", "led on the back of the hood"],
   ["2026-germany-sweatshirt-long-sleeve", "224260090_03.jpg", "led on the back"],
   ["2025-26-fc-barcelona-sweatshirt-long-sleeve", "224260110_03.jpg", "led on the back"],
   ["2026-world-cup-argentina-half-zip-training-set", "p043.jpg", "led on the back of the top"],
   ["2026-world-cup-argentina-windbreaker-set", "231018412_03.jpg", "led on the back"],
+  // Caught on the live storefront after the first pass. On a dark or a densely
+  // patterned garment the back and the front are nearly the same photograph in
+  // a thumbnail — the sponsor, the crest and the zip are the tell, and they
+  // only show at full size. These four are pinned by filename so the lead does
+  // not depend on how orderGalleryImages() happens to sort the gallery: on
+  // three of them the supplier's `_01` IS the front.
+  ["2025-26-ac-milan-half-zip-training-set", "212988310_01.jpg", "the front, with the zip and the eFootball sponsor"],
+  ["2026-italy-home-fan-version", "215918867_01.jpg", "the front, with the crest"],
+  ["2026-italy-home-player-version", "215918880_01.jpg", "the front, with the crest"],
+  ["2026-world-cup-spain-half-zip-training-set-two-star", "247262457_05.jpg", "led on the back of the top"],
 ];
 
 async function gql(query, variables = {}) {

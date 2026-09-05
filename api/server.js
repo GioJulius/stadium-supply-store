@@ -60422,11 +60422,17 @@ function normalizeImage(i) {
   return { url: i.url, altText: i.altText ?? null, width: i.width, height: i.height };
 }
 var SIZE_CHART_FILENAME = /\/\d{4,}_0*1\.(?:jpe?g|png|webp)(?:$|\?)/i;
+function isSizeChart(image) {
+  if (!SIZE_CHART_FILENAME.test(image.url)) return false;
+  if (!image.width || !image.height) return true;
+  const aspect = image.width / image.height;
+  return aspect < 0.95 || aspect > 1.05;
+}
 function orderGalleryImages(images) {
   if (images.length < 2) return images;
-  const charts = images.filter((i) => SIZE_CHART_FILENAME.test(i.url));
+  const charts = images.filter(isSizeChart);
   if (charts.length === 0 || charts.length === images.length) return images;
-  return [...images.filter((i) => !SIZE_CHART_FILENAME.test(i.url)), ...charts];
+  return [...images.filter((i) => !isSizeChart(i)), ...charts];
 }
 function normalizeSelectedOption(o) {
   return { name: o.name, value: o.value };
