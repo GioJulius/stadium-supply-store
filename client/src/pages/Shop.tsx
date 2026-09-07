@@ -55,7 +55,11 @@ function ActiveFilters({ rail, onChange }: { rail: RailState; onChange: (next: R
     });
   }
   if (rail.type) chips.push({ key: "type", label: rail.type, clear: { type: null } });
-  if (rail.version) chips.push({ key: "version", label: VERSION_LABELS[rail.version], clear: { version: null } });
+  // "Retro" is both a version and a category, so a bare label would put two
+  // identical chips side by side with no way to tell which one to remove.
+  if (rail.version) {
+    chips.push({ key: "version", label: `${VERSION_LABELS[rail.version]} version`, clear: { version: null } });
+  }
   for (const size of rail.sizes) {
     chips.push({ key: `size-${size}`, label: size, clear: { sizes: rail.sizes.filter(s => s !== size) } });
   }
