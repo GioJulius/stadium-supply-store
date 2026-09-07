@@ -1206,8 +1206,16 @@
   },
   {
    "t": "22:09",
+   "size": 0,
+   "cap": "Brighton",
+   "team": "Brighton",
+   "skip": false,
+   "photos": []
+  },
+  {
+   "t": "22:09",
    "cap": "player version",
-   "team": "Crystal Palace",
+   "team": "Brighton",
    "size": 2,
    "from": "p389",
    "to": "p390",
@@ -1217,14 +1225,6 @@
    ],
    "firstFileMinute": "22:09",
    "drift": 0
-  },
-  {
-   "t": "22:09",
-   "size": 0,
-   "cap": "Brighton",
-   "team": "Brighton",
-   "skip": false,
-   "photos": []
   },
   {
    "t": "22:10",
@@ -1648,46 +1648,15 @@
   },
   {
    "t": "23:30",
-   "cap": "player version",
-   "team": "Newcastle United",
-   "size": 4,
-   "from": "p507",
-   "to": "p510",
-   "photos": [
-    "p507",
-    "p508",
-    "p509",
-    "p510"
-   ],
-   "firstFileMinute": "23:30",
-   "drift": 0
-  },
-  {
-   "t": "23:30",
-   "cap": "kids set",
-   "team": "Newcastle United",
-   "size": 3,
-   "from": "p511",
-   "to": "p513",
-   "photos": [
-    "p511",
-    "p512",
-    "p513"
-   ],
-   "firstFileMinute": "23:30",
-   "drift": 0
-  },
-  {
-   "t": "23:30",
    "cap": "retro",
    "team": "Newcastle United",
    "size": 3,
-   "from": "p514",
-   "to": "p516",
+   "from": "p507",
+   "to": "p509",
    "photos": [
-    "p514",
-    "p515",
-    "p516"
+    "p507",
+    "p508",
+    "p509"
    ],
    "firstFileMinute": "23:30",
    "drift": 0
@@ -1697,9 +1666,40 @@
    "cap": "windbreaker",
    "team": "Newcastle United",
    "size": 1,
-   "from": "p517",
+   "from": "p510",
+   "to": "p510",
+   "photos": [
+    "p510"
+   ],
+   "firstFileMinute": "23:30",
+   "drift": 0
+  },
+  {
+   "t": "23:30",
+   "cap": "player version",
+   "team": "Newcastle United",
+   "size": 4,
+   "from": "p511",
+   "to": "p514",
+   "photos": [
+    "p511",
+    "p512",
+    "p513",
+    "p514"
+   ],
+   "firstFileMinute": "23:30",
+   "drift": 0
+  },
+  {
+   "t": "23:30",
+   "cap": "kids set",
+   "team": "Newcastle United",
+   "size": 3,
+   "from": "p515",
    "to": "p517",
    "photos": [
+    "p515",
+    "p516",
     "p517"
    ],
    "firstFileMinute": "23:30",
@@ -2003,23 +2003,11 @@
    "t": "23:40",
    "cap": "fan version",
    "team": "Manchester United",
-   "size": 1,
+   "size": 2,
    "from": "p660",
-   "to": "p660",
-   "photos": [
-    "p660"
-   ],
-   "firstFileMinute": "23:40",
-   "drift": 0
-  },
-  {
-   "t": "23:40",
-   "cap": "full zip",
-   "team": "Manchester United",
-   "size": 1,
-   "from": "p661",
    "to": "p661",
    "photos": [
+    "p660",
     "p661"
    ],
    "firstFileMinute": "23:40",
@@ -2027,7 +2015,7 @@
   },
   {
    "t": "23:40",
-   "cap": "half zip",
+   "cap": "full zip",
    "team": "Manchester United",
    "size": 1,
    "from": "p662",
@@ -2040,13 +2028,26 @@
   },
   {
    "t": "23:40",
-   "cap": "training vest set",
+   "cap": "half zip",
    "team": "Manchester United",
    "size": 1,
    "from": "p663",
    "to": "p663",
    "photos": [
     "p663"
+   ],
+   "firstFileMinute": "23:40",
+   "drift": 0
+  },
+  {
+   "t": "23:40",
+   "cap": "training vest set",
+   "team": "Manchester United",
+   "size": 1,
+   "from": "p664",
+   "to": "p664",
+   "photos": [
+    "p664"
    ],
    "firstFileMinute": "23:40",
    "drift": 0
@@ -2500,8 +2501,8 @@
    "team": "Crystal Palace",
    "order": 12,
    "from": "p384",
-   "to": "p390",
-   "count": 7,
+   "to": "p388",
+   "count": 5,
    "captions": [
     {
      "cap": "player version",
@@ -2514,22 +2515,22 @@
      "size": 4,
      "from": "p385",
      "to": "p388"
-    },
-    {
-     "cap": "player version",
-     "size": 2,
-     "from": "p389",
-     "to": "p390"
     }
    ]
   },
   {
    "team": "Brighton",
    "order": 13,
-   "from": "p391",
+   "from": "p389",
    "to": "p395",
-   "count": 5,
+   "count": 7,
    "captions": [
+    {
+     "cap": "player version",
+     "size": 2,
+     "from": "p389",
+     "to": "p390"
+    },
     {
      "cap": "kids set",
      "size": 2,
@@ -2699,27 +2700,27 @@
    "count": 18,
    "captions": [
     {
-     "cap": "player version",
-     "size": 4,
-     "from": "p507",
-     "to": "p510"
-    },
-    {
-     "cap": "kids set",
-     "size": 3,
-     "from": "p511",
-     "to": "p513"
-    },
-    {
      "cap": "retro",
      "size": 3,
-     "from": "p514",
-     "to": "p516"
+     "from": "p507",
+     "to": "p509"
     },
     {
      "cap": "windbreaker",
      "size": 1,
-     "from": "p517",
+     "from": "p510",
+     "to": "p510"
+    },
+    {
+     "cap": "player version",
+     "size": 4,
+     "from": "p511",
+     "to": "p514"
+    },
+    {
+     "cap": "kids set",
+     "size": 3,
+     "from": "p515",
      "to": "p517"
     },
     {
@@ -2740,8 +2741,8 @@
    "team": "Manchester United",
    "order": 18,
    "from": "p525",
-   "to": "p663",
-   "count": 139,
+   "to": "p664",
+   "count": 140,
    "captions": [
     {
      "cap": "retros",
@@ -2805,32 +2806,30 @@
     },
     {
      "cap": "fan version",
-     "size": 1,
+     "size": 2,
      "from": "p660",
-     "to": "p660"
-    },
-    {
-     "cap": "full zip",
-     "size": 1,
-     "from": "p661",
      "to": "p661"
     },
     {
-     "cap": "half zip",
+     "cap": "full zip",
      "size": 1,
      "from": "p662",
      "to": "p662"
     },
     {
-     "cap": "training vest set",
+     "cap": "half zip",
      "size": 1,
      "from": "p663",
      "to": "p663"
+    },
+    {
+     "cap": "training vest set",
+     "size": 1,
+     "from": "p664",
+     "to": "p664"
     }
    ]
   }
  ],
- "leftover": [
-  "p664"
- ]
+ "leftover": []
 }

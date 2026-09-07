@@ -1,0 +1,104 @@
+{
+ "team": "Crystal Palace",
+ "slug": "crystal-palace",
+ "status": "imported",
+ "block": {
+  "from": "p384",
+  "to": "p388",
+  "count": 5
+ },
+ "notes": {
+  "albums": "Two albums: player version (1), fan version (4). The 22:09 'player version' album that the harvest attributed to Crystal Palace is Brighton's - see the Brighton file.",
+  "dedupe": "Three of the five photographs were already on the store and the hash caught all three (p384, p387, p388). p384 arrived inside the PLAYER album but is the identical file to the live 2026/27 AWAY FAN listing, so it is filed as listed rather than created as a player version - an identical file is the same photograph whatever album it was sent in.",
+  "blankShirt": "p386 is the white sash shirt with NO sponsor - the supplier's blank version of the 2026/27 away - so it is titled by colour, as with the Juventus and Nottingham Forest blanks."
+ },
+ "garments": [
+  {
+   "id": "cry-01",
+   "photos": [
+    "p384"
+   ],
+   "title": "2026/27 Crystal Palace Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "crystal-palace-2026-27-away-fan-version",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2026-27 Crystal Palace Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-crystal-palace-away-fan-version"
+  },
+  {
+   "id": "cry-02",
+   "photos": [
+    "p385"
+   ],
+   "title": "2026/27 Crystal Palace Third Fan Version",
+   "tier": "fan",
+   "blurb": "White third shirt with the red and blue centre stripe and the NET88 sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Crystal Palace Third Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-crystal-palace-third-fan-version"
+  },
+  {
+   "id": "cry-03",
+   "photos": [
+    "p386"
+   ],
+   "title": "Crystal Palace White Sash Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with the red and blue diagonal sash and the club crest, worn without a sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Crystal Palace White Sash Fan Version - 01.jpg"
+   ],
+   "handle": "crystal-palace-white-sash-fan-version"
+  },
+  {
+   "id": "cry-04",
+   "photos": [
+    "p387"
+   ],
+   "title": "2025/26 Crystal Palace Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "crystal-palace-2025-26-away-fan-version",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2025-26 Crystal Palace Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-crystal-palace-away-fan-version"
+  },
+  {
+   "id": "cry-05",
+   "photos": [
+    "p388"
+   ],
+   "title": "2025/26 Crystal Palace Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "crystal-palace-2025-26-home-fan-version",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2025-26 Crystal Palace Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-crystal-palace-home-fan-version"
+  }
+ ]
+}

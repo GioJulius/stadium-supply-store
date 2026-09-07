@@ -1,0 +1,209 @@
+{
+ "team": "Aston Villa",
+ "slug": "aston-villa",
+ "status": "imported",
+ "block": {
+  "from": "p396",
+  "to": "p406",
+  "count": 11
+ },
+ "notes": {
+  "albums": "Four albums: retro (1), fan version (5), kids set (1), player version (4).",
+  "dedupe": "NINE of the eleven photographs were already on the store. The hash caught seven of them; the other two (p404, p405) were found by eye against listings the hash had missed, both 2026/27 home player shirts. Villa came in as its own batch on 4 September (supplied-batch-2026-09-04b), which is why. Only two photographs are new, both player-version shirts of kits already listed in the fan cut.",
+  "hashWorkedHere": "This is the one team in the batch where dedupe-0905.py did the whole job. The difference is that the 4 September Villa import used the SAME supplier photographs the client resent on the 5th; everywhere else the client sent fresh photographs of garments we had shot ourselves, which is what defeats a hash."
+ },
+ "garments": [
+  {
+   "id": "avl-01",
+   "photos": [
+    "p396"
+   ],
+   "title": "1993/95 Aston Villa Home Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-1993-95-home-retro-fan-version",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "1993-95 Aston Villa Home Retro - 01.jpg"
+   ],
+   "handle": "1993-95-aston-villa-home-retro"
+  },
+  {
+   "id": "avl-02",
+   "photos": [
+    "p397"
+   ],
+   "title": "2025/26 Aston Villa Third Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2025-26-third-fan-version-villa-foundation",
+    "checkedBy": "hash",
+    "dist": 2
+   },
+   "files": [
+    "2025-26 Aston Villa Third Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-aston-villa-third-fan-version"
+  },
+  {
+   "id": "avl-03",
+   "photos": [
+    "p398"
+   ],
+   "title": "2026/27 Aston Villa Third Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2026-27-third-fan-version",
+    "checkedBy": "hash",
+    "dist": 2
+   },
+   "files": [
+    "2026-27 Aston Villa Third Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-aston-villa-third-fan-version"
+  },
+  {
+   "id": "avl-04",
+   "photos": [
+    "p399"
+   ],
+   "title": "2026/27 Aston Villa Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2026-27-home-fan-version",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2026-27 Aston Villa Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-aston-villa-home-fan-version"
+  },
+  {
+   "id": "avl-05",
+   "photos": [
+    "p400"
+   ],
+   "title": "2025/26 Aston Villa Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2025-26-away-fan-version",
+    "checkedBy": "hash",
+    "dist": 2
+   },
+   "files": [
+    "2025-26 Aston Villa Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-aston-villa-away-fan-version"
+  },
+  {
+   "id": "avl-06",
+   "photos": [
+    "p401"
+   ],
+   "title": "2025/26 Aston Villa Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2025-26-home-fan-version",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2025-26 Aston Villa Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-aston-villa-home-fan-version"
+  },
+  {
+   "id": "avl-07",
+   "photos": [
+    "p402"
+   ],
+   "title": "2026/27 Aston Villa Home Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2026-27-home-kids-kit",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2026-27 Aston Villa Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-aston-villa-home-kids-kit"
+  },
+  {
+   "id": "avl-08",
+   "photos": [
+    "p403"
+   ],
+   "title": "2025/26 Aston Villa Away Player Version",
+   "tier": "player",
+   "blurb": "Black away shirt in the player cut with pale blue shoulder stripes and the Betano sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Aston Villa Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-aston-villa-away-player-version"
+  },
+  {
+   "id": "avl-09",
+   "photos": [
+    "p404"
+   ],
+   "title": "2026/27 Aston Villa Home Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2026-27-home-player-version",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Aston Villa Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-aston-villa-home-player-version"
+  },
+  {
+   "id": "avl-10",
+   "photos": [
+    "p405"
+   ],
+   "title": "2026/27 Aston Villa Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "aston-villa-2026-27-home-long-sleeve-player-version",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Aston Villa Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-aston-villa-home-long-sleeve-player-version"
+  },
+  {
+   "id": "avl-11",
+   "photos": [
+    "p406"
+   ],
+   "title": "2025/26 Aston Villa Home Player Version",
+   "tier": "player",
+   "blurb": "Claret home shirt in the player cut with pale blue sleeves, gold piping and the Betano sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Aston Villa Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-aston-villa-home-player-version"
+  }
+ ]
+}

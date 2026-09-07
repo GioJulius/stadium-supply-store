@@ -1,0 +1,35 @@
+{
+ "team": "Club Brugge",
+ "slug": "club-brugge",
+ "status": "imported",
+ "block": {
+  "from": "p142",
+  "to": "p143",
+  "count": 2
+ },
+ "notes": {
+  "albums": "One album: fan version (2).",
+  "dedupe": "Both photographs are the SAME GARMENT as the live Club Brugge 2025/26 home shirt - the blue and black striped Betsson kit - shot from two distances. They are 17 apart on a dHash, which is a useful reminder that two photographs of one garment can sit far outside any sensible hash threshold. Nothing to create for this team."
+ },
+ "garments": [
+  {
+   "id": "brg-01",
+   "photos": [
+    "p142",
+    "p143"
+   ],
+   "title": "2025/26 Club Brugge Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "club-brugge-2025-26-home-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Club Brugge Home Fan Version - 01.jpg",
+    "2025-26 Club Brugge Home Fan Version - 02.jpg"
+   ],
+   "handle": "2025-26-club-brugge-home-fan-version"
+  }
+ ]
+}

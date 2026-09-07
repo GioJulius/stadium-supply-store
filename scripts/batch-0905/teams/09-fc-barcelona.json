@@ -1,0 +1,1599 @@
+{
+ "team": "FC Barcelona",
+ "slug": "fc-barcelona",
+ "status": "imported",
+ "block": {
+  "from": "p234",
+  "to": "p333",
+  "count": 100
+ },
+ "notes": {
+  "albums": "Nine albums: retros (39), fan version (21), windbreakers jackets and hoodies (9), full zip windbreakers (2), full zip (1), half zip (4), training set (3), kids set (3), player version (18).",
+  "multiPhotoGarments": "Six garments carry more than one photograph. p299 is the front and p302 the back of the red anthem jacket; p303 and p304 are the same grey tech fleece tracksuit on two backdrops; p317 is a close-up of the embroidery on p318; p273 and p286 are the mint third shirt with the Spotify roundel and with the wordmark; p277 and p281 are the same zigzag shirt, one photographed with cup badges on the sleeve. Fronts and full-garment shots lead.",
+  "seasonReading": "Sponsor pins the era: Kappa to 1997, unicef 2006-2011, Qatar Foundation 2011-2013, Qatar Airways 2013-2017, Rakuten 2017-2022, Spotify 2022 onward. Within the Spotify years the goalkeeper shirts, pre-match shirts and special editions cannot be pinned to a season from the garment, so those titles carry a colour rather than a year and are marked seasonConfidence unknown.",
+  "dedupe": "Eight photographs were caught by dHash against the live catalogue; four more by eye against a contact sheet of all 17 live Barcelona listings (p269 the 2016/17 purple away, p284 the 2024/25 black away, p292 the 2025/26 graded home, p333 the 2026/27 purple away player). p275 is the FAN version of that same 2026/27 away and is listed as new.",
+  "clientNote": "The live 2025/26 Third Jersey is the TURQUOISE gradient shirt. The turquoise halved shirts in this batch (p285, p315, p327, p328) are a different kit and are titled by colour."
+ },
+ "garments": [
+  {
+   "id": "fcb-01",
+   "photos": [
+    "p234"
+   ],
+   "title": "1999 FC Barcelona Centenary Home Retro",
+   "tier": "retro",
+   "blurb": "The centenary shirt with the 1899-1999 lettering across the chest, red and blue halves and a blue collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1999 FC Barcelona Centenary Home Retro - 01.jpg"
+   ],
+   "handle": "1999-fc-barcelona-centenary-home-retro"
+  },
+  {
+   "id": "fcb-02",
+   "photos": [
+    "p235"
+   ],
+   "title": "2011/12 FC Barcelona Home Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2011-12-fc-barcelona-home-retro-player-version",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2011-12 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2011-12-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-03",
+   "photos": [
+    "p236"
+   ],
+   "title": "1999 FC Barcelona Centenary Home Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve version of the centenary shirt, halved red and blue with the 1899-1999 lettering.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1999 FC Barcelona Centenary Home Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "1999-fc-barcelona-centenary-home-long-sleeve-retro"
+  },
+  {
+   "id": "fcb-04",
+   "photos": [
+    "p237"
+   ],
+   "title": "FC Barcelona Blue and Red Stripe Home Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Blue and red striped home shirt with red sleeve trim and the club crest on the chest, worn without a sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Blue and Red Stripe Home Retro - 01.jpg"
+   ],
+   "handle": "fc-barcelona-blue-and-red-stripe-home-retro"
+  },
+  {
+   "id": "fcb-05",
+   "photos": [
+    "p238"
+   ],
+   "title": "2013/14 FC Barcelona Away Retro",
+   "tier": "retro",
+   "blurb": "The yellow and red senyera away shirt of 2013/14 with the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2013-14 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2013-14-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-06",
+   "photos": [
+    "p239"
+   ],
+   "title": "1996/97 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "The Kappa home shirt with the repeating Barca monogram through the stripes and a blue collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1996-97 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "1996-97-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-07",
+   "photos": [
+    "p240"
+   ],
+   "title": "2008/09 FC Barcelona Home Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2008-09-fc-barcelona-retro-home-fan-version",
+    "checkedBy": "hash",
+    "dist": 4
+   },
+   "files": [
+    "2008-09 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2008-09-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-08",
+   "photos": [
+    "p241"
+   ],
+   "title": "2013/14 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the graded red and blue stripes and the Qatar Foundation sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2013-14 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2013-14-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-09",
+   "photos": [
+    "p242"
+   ],
+   "title": "2016/17 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the wide red and blue stripes, navy sleeves and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2016-17 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2016-17-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-10",
+   "photos": [
+    "p243"
+   ],
+   "title": "FC Barcelona Neon Yellow Away Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Volt yellow away shirt with a navy collar carrying the senyera stripes and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Neon Yellow Away Retro - 01.jpg"
+   ],
+   "handle": "fc-barcelona-neon-yellow-away-retro"
+  },
+  {
+   "id": "fcb-11",
+   "photos": [
+    "p244"
+   ],
+   "title": "2010/11 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the yellow collar and cuffs and the unicef sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2010-11 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2010-11-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-12",
+   "photos": [
+    "p245"
+   ],
+   "title": "FC Barcelona Red and Blue Yellow Trim Home Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Halved red and blue home shirt with a yellow collar trim and the senyera on the sleeve, worn without a sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Red and Blue Yellow Trim Home Retro - 01.jpg"
+   ],
+   "handle": "fc-barcelona-red-and-blue-yellow-trim-home-retro"
+  },
+  {
+   "id": "fcb-13",
+   "photos": [
+    "p246"
+   ],
+   "title": "FC Barcelona Claret and Blue Stripe Home Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Claret and blue striped home shirt with a red collar and the club crest, worn without a sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Claret and Blue Stripe Home Retro - 01.jpg"
+   ],
+   "handle": "fc-barcelona-claret-and-blue-stripe-home-retro"
+  },
+  {
+   "id": "fcb-14",
+   "photos": [
+    "p247"
+   ],
+   "title": "2009/10 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the narrow red and blue stripes and the unicef sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2009-10 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2009-10-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-15",
+   "photos": [
+    "p248"
+   ],
+   "title": "2010/11 FC Barcelona Away Retro",
+   "tier": "retro",
+   "blurb": "Turquoise away shirt with the navy and claret chest band and the unicef sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2010-11 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2010-11-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-16",
+   "photos": [
+    "p249"
+   ],
+   "title": "2014/15 FC Barcelona Third Retro",
+   "tier": "retro",
+   "blurb": "Volt yellow third shirt with a navy polo collar and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2014-15 FC Barcelona Third Retro - 01.jpg"
+   ],
+   "handle": "2014-15-fc-barcelona-third-retro"
+  },
+  {
+   "id": "fcb-17",
+   "photos": [
+    "p250"
+   ],
+   "title": "2021/22 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the claret and blue stripes broken by a blue block on one side and the Rakuten sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2021-22 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2021-22-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-18",
+   "photos": [
+    "p251"
+   ],
+   "title": "FC Barcelona Black Sleeve Home Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Striped home shirt with black sleeves, a red hem band and a polo collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black Sleeve Home Retro - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-sleeve-home-retro"
+  },
+  {
+   "id": "fcb-19",
+   "photos": [
+    "p252"
+   ],
+   "title": "2008/09 FC Barcelona Champions League Final Home Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2008-09-fc-barcelona-retro-home-fan-version",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2008-09 FC Barcelona Champions League Final Home Retro - 01.jpg"
+   ],
+   "handle": "2008-09-fc-barcelona-champions-league-final-home-retro"
+  },
+  {
+   "id": "fcb-20",
+   "photos": [
+    "p253"
+   ],
+   "title": "2014/15 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the dark navy and claret stripes and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2014-15 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2014-15-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-21",
+   "photos": [
+    "p254"
+   ],
+   "title": "2008/09 FC Barcelona Away Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Yellow long sleeve away shirt with the vertical claret and blue band and the unicef sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2008-09 FC Barcelona Away Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2008-09-fc-barcelona-away-long-sleeve-retro"
+  },
+  {
+   "id": "fcb-22",
+   "photos": [
+    "p255"
+   ],
+   "title": "2009/10 FC Barcelona Away Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "White long sleeve away shirt with fine red and blue pinstripes and a black polo collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2009-10 FC Barcelona Away Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2009-10-fc-barcelona-away-long-sleeve-retro"
+  },
+  {
+   "id": "fcb-23",
+   "photos": [
+    "p256"
+   ],
+   "title": "2014/15 FC Barcelona Home Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve home shirt with the navy and claret stripes and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2014-15 FC Barcelona Home Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2014-15-fc-barcelona-home-long-sleeve-retro"
+  },
+  {
+   "id": "fcb-24",
+   "photos": [
+    "p257"
+   ],
+   "title": "2011 FC Barcelona Champions League Final Home Retro",
+   "tier": "retro",
+   "blurb": "The unicef home shirt carrying the Final London 2011 embroidery under the crest, with a yellow collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2011 FC Barcelona Champions League Final Home Retro - 01.jpg"
+   ],
+   "handle": "2011-fc-barcelona-champions-league-final-home-retro"
+  },
+  {
+   "id": "fcb-25",
+   "photos": [
+    "p258"
+   ],
+   "title": "2010/11 FC Barcelona Home Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve home shirt with the yellow collar and cuffs and the unicef sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2010-11 FC Barcelona Home Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2010-11-fc-barcelona-home-long-sleeve-retro"
+  },
+  {
+   "id": "fcb-26",
+   "photos": [
+    "p259"
+   ],
+   "title": "2007/08 FC Barcelona Away Retro",
+   "tier": "retro",
+   "blurb": "Light blue away shirt split by a darker blue panel, with the unicef sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2007-08 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2007-08-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-27",
+   "photos": [
+    "p260"
+   ],
+   "title": "2011/12 FC Barcelona Away Retro",
+   "tier": "retro",
+   "blurb": "Black away shirt with the gold Qatar Foundation sponsor and gold crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2011-12 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2011-12-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-28",
+   "photos": [
+    "p261"
+   ],
+   "title": "2020/21 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the fine claret and blue stripes, a yellow collar and the Rakuten sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2020-21 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2020-21-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-29",
+   "photos": [
+    "p262"
+   ],
+   "title": "2019/20 FC Barcelona Away Retro",
+   "tier": "retro",
+   "blurb": "Maroon away shirt with the senyera shoulder trim and the Rakuten sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2019-20 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2019-20-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-30",
+   "photos": [
+    "p263"
+   ],
+   "title": "2014/15 FC Barcelona Away Retro",
+   "tier": "retro",
+   "blurb": "Black away shirt with yellow side stripes and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2014-15 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2014-15-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-31",
+   "photos": [
+    "p264"
+   ],
+   "title": "2015/16 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "The hooped home shirt of 2015/16 with a yellow collar and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2015-16 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2015-16-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-32",
+   "photos": [
+    "p265"
+   ],
+   "title": "2011/12 FC Barcelona Third Retro",
+   "tier": "retro",
+   "blurb": "Orange third shirt with the Qatar Foundation sponsor in blue and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2011-12 FC Barcelona Third Retro - 01.jpg"
+   ],
+   "handle": "2011-12-fc-barcelona-third-retro"
+  },
+  {
+   "id": "fcb-33",
+   "photos": [
+    "p266"
+   ],
+   "title": "2020/21 FC Barcelona Away Retro",
+   "tier": "retro",
+   "blurb": "Black away shirt with gold trim on the collar and cuffs and the gold Rakuten sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2020-21 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2020-21-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-34",
+   "photos": [
+    "p267"
+   ],
+   "title": "2018/19 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Home shirt with the narrow claret and blue stripes and the Rakuten sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2018-19 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2018-19-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-35",
+   "photos": [
+    "p268"
+   ],
+   "title": "2018/19 FC Barcelona Third Retro",
+   "tier": "retro",
+   "blurb": "Pink third shirt with the tonal diagonal print and the Rakuten sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2018-19 FC Barcelona Third Retro - 01.jpg"
+   ],
+   "handle": "2018-19-fc-barcelona-third-retro"
+  },
+  {
+   "id": "fcb-36",
+   "photos": [
+    "p269"
+   ],
+   "title": "2016/17 FC Barcelona Away Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "fc-barcelona-2016-17-away-retro-jersey-neymar",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2016-17 FC Barcelona Away Retro - 01.jpg"
+   ],
+   "handle": "2016-17-fc-barcelona-away-retro"
+  },
+  {
+   "id": "fcb-37",
+   "photos": [
+    "p270"
+   ],
+   "title": "2016/17 FC Barcelona Third Retro",
+   "tier": "retro",
+   "blurb": "Turquoise third shirt with the tonal hoops and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2016-17 FC Barcelona Third Retro - 01.jpg"
+   ],
+   "handle": "2016-17-fc-barcelona-third-retro"
+  },
+  {
+   "id": "fcb-38",
+   "photos": [
+    "p271"
+   ],
+   "title": "2019/20 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "The checkerboard home shirt of 2019/20 with a navy collar and the Rakuten sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2019-20 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2019-20-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-39",
+   "photos": [
+    "p272"
+   ],
+   "title": "2022/23 FC Barcelona Home Retro",
+   "tier": "retro",
+   "blurb": "Halved claret and blue home shirt with the Spotify roundel on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2022-23 FC Barcelona Home Retro - 01.jpg"
+   ],
+   "handle": "2022-23-fc-barcelona-home-retro"
+  },
+  {
+   "id": "fcb-40",
+   "photos": [
+    "p273",
+    "p286"
+   ],
+   "title": "2026/27 FC Barcelona Third Fan Version",
+   "tier": "fan",
+   "blurb": "Mint green third shirt with a tonal block print and the Spotify sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 FC Barcelona Third Fan Version - 01.jpg",
+    "2026-27 FC Barcelona Third Fan Version - 02.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-third-fan-version"
+  },
+  {
+   "id": "fcb-41",
+   "photos": [
+    "p274"
+   ],
+   "title": "2025/26 FC Barcelona Away Fan Version",
+   "tier": "fan",
+   "blurb": "Black away shirt with a red side panel on one flank and a blue one on the other, and the Spotify roundel on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 FC Barcelona Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-fc-barcelona-away-fan-version"
+  },
+  {
+   "id": "fcb-42",
+   "photos": [
+    "p275"
+   ],
+   "title": "2026/27 FC Barcelona Away Fan Version",
+   "tier": "fan",
+   "blurb": "Away shirt fading from black at the shoulders to purple at the hem, with the gold Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 FC Barcelona Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-away-fan-version"
+  },
+  {
+   "id": "fcb-43",
+   "photos": [
+    "p276"
+   ],
+   "title": "2026/27 FC Barcelona Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-fc-barcelona-home-fan-version",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2026-27 FC Barcelona Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-home-fan-version"
+  },
+  {
+   "id": "fcb-44",
+   "photos": [
+    "p277",
+    "p281"
+   ],
+   "title": "FC Barcelona Blue and Red Zigzag Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Blue shirt with the red and light blue zigzag flash across the chest and the yellow Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Blue and Red Zigzag Fan Version - 01.jpg",
+    "FC Barcelona Blue and Red Zigzag Fan Version - 02.jpg"
+   ],
+   "handle": "fc-barcelona-blue-and-red-zigzag-fan-version"
+  },
+  {
+   "id": "fcb-45",
+   "photos": [
+    "p278"
+   ],
+   "title": "FC Barcelona Coral Long Sleeve Goalkeeper Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Coral long sleeve goalkeeper shirt with navy outlining across the chest and the Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Coral Long Sleeve Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-coral-long-sleeve-goalkeeper-fan-version"
+  },
+  {
+   "id": "fcb-46",
+   "photos": [
+    "p279"
+   ],
+   "title": "FC Barcelona Cream Long Sleeve Goalkeeper Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream long sleeve goalkeeper shirt with a blue ribbed collar and cuffs and the black Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Cream Long Sleeve Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-cream-long-sleeve-goalkeeper-fan-version"
+  },
+  {
+   "id": "fcb-47",
+   "photos": [
+    "p280"
+   ],
+   "title": "FC Barcelona Purple Goalkeeper Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Purple goalkeeper shirt with a navy collar and the black Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Purple Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-purple-goalkeeper-fan-version"
+  },
+  {
+   "id": "fcb-48",
+   "photos": [
+    "p282"
+   ],
+   "title": "2025/26 FC Barcelona Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve home shirt with the graded claret and blue stripes and the yellow Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 FC Barcelona Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-fc-barcelona-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "fcb-49",
+   "photos": [
+    "p283"
+   ],
+   "title": "2026/27 FC Barcelona Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve away shirt fading from black to purple with the gold Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 FC Barcelona Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "fcb-50",
+   "photos": [
+    "p284"
+   ],
+   "title": "2024/25 FC Barcelona Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "fc-barcelona-2024-25-away-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2024-25 FC Barcelona Away Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-fc-barcelona-away-fan-version"
+  },
+  {
+   "id": "fcb-51",
+   "photos": [
+    "p292"
+   ],
+   "title": "2025/26 FC Barcelona Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "fc-barcelona-2025-26-home-jersey-spotify",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 FC Barcelona Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-fc-barcelona-home-fan-version"
+  },
+  {
+   "id": "fcb-52",
+   "photos": [
+    "p285"
+   ],
+   "title": "FC Barcelona Turquoise Halves Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Turquoise shirt halved in two shades with a navy collar carrying the BARCA lettering and the Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Turquoise Halves Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-turquoise-halves-fan-version"
+  },
+  {
+   "id": "fcb-53",
+   "photos": [
+    "p287"
+   ],
+   "title": "FC Barcelona Coral Goalkeeper Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Coral goalkeeper shirt with a navy collar and cuffs and the navy Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Coral Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-coral-goalkeeper-fan-version"
+  },
+  {
+   "id": "fcb-54",
+   "photos": [
+    "p288"
+   ],
+   "title": "FC Barcelona Home Butterfly Edition Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Striped home shirt with the yellow butterfly motif in place of the usual chest sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Home Butterfly Edition Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-home-butterfly-edition-fan-version"
+  },
+  {
+   "id": "fcb-55",
+   "photos": [
+    "p289"
+   ],
+   "title": "FC Barcelona Red and Blue Halves Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Home shirt halved claret and blue with the Spotify wordmark across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Red and Blue Halves Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-red-and-blue-halves-fan-version"
+  },
+  {
+   "id": "fcb-56",
+   "photos": [
+    "p290"
+   ],
+   "title": "FC Barcelona Black and Purple Pre-Match Shirt",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black pre-match shirt with purple side panels and sleeve trim and the purple Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Purple Pre-Match Shirt - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-purple-pre-match-shirt"
+  },
+  {
+   "id": "fcb-57",
+   "photos": [
+    "p291"
+   ],
+   "title": "FC Barcelona Cream Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt with a blue ribbed collar and cuffs and the black Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Cream Fan Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-cream-fan-version"
+  },
+  {
+   "id": "fcb-58",
+   "photos": [
+    "p293"
+   ],
+   "title": "FC Barcelona Black Eclipse Pre-Match Shirt",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black pre-match shirt with the red eclipse print across the chest and red and blue side panels.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black Eclipse Pre-Match Shirt - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-eclipse-pre-match-shirt"
+  },
+  {
+   "id": "fcb-59",
+   "photos": [
+    "p294"
+   ],
+   "title": "FC Barcelona Black and Blue Windbreaker",
+   "tier": "jacket",
+   "blurb": "Black full-zip windbreaker with blue side panels and blue sleeve stripes and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Blue Windbreaker - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-blue-windbreaker"
+  },
+  {
+   "id": "fcb-60",
+   "photos": [
+    "p295"
+   ],
+   "title": "FC Barcelona Black and Purple Windbreaker",
+   "tier": "jacket",
+   "blurb": "Black full-zip windbreaker with purple side panels and cuffs and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Purple Windbreaker - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-purple-windbreaker"
+  },
+  {
+   "id": "fcb-61",
+   "photos": [
+    "p296"
+   ],
+   "title": "FC Barcelona Black Hooded Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Black pullover hoodie with the Spotify roundel on the chest and a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black Hooded Sweatshirt - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-hooded-sweatshirt"
+  },
+  {
+   "id": "fcb-62",
+   "photos": [
+    "p297"
+   ],
+   "title": "FC Barcelona Navy Hooded Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Navy pullover hoodie with the Spotify roundel on the chest and a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Navy Hooded Sweatshirt - 01.jpg"
+   ],
+   "handle": "fc-barcelona-navy-hooded-sweatshirt"
+  },
+  {
+   "id": "fcb-63",
+   "photos": [
+    "p298"
+   ],
+   "title": "FC Barcelona Blue Track Jacket",
+   "tier": "jacket",
+   "blurb": "Blue full-zip track jacket with claret and blue ribbed cuffs and hem and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Blue Track Jacket - 01.jpg"
+   ],
+   "handle": "fc-barcelona-blue-track-jacket"
+  },
+  {
+   "id": "fcb-64",
+   "photos": [
+    "p299",
+    "p302"
+   ],
+   "title": "FC Barcelona Red and Navy Anthem Jacket",
+   "tier": "jacket",
+   "blurb": "Red full-zip anthem jacket with navy raglan sleeves and side panels and FC BARCELONA across the back collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Red and Navy Anthem Jacket - 01.jpg",
+    "FC Barcelona Red and Navy Anthem Jacket - 02.jpg"
+   ],
+   "handle": "fc-barcelona-red-and-navy-anthem-jacket"
+  },
+  {
+   "id": "fcb-65",
+   "photos": [
+    "p300"
+   ],
+   "title": "2025/26 FC Barcelona Sweatshirt Long Sleeve",
+   "tier": "hoodie",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2025-26-fc-barcelona-sweatshirt-long-sleeve",
+    "checkedBy": "hash",
+    "dist": 2
+   },
+   "files": [
+    "2025-26 FC Barcelona Sweatshirt Long Sleeve - 01.jpg"
+   ],
+   "handle": "2025-26-fc-barcelona-sweatshirt-long-sleeve"
+  },
+  {
+   "id": "fcb-66",
+   "photos": [
+    "p301"
+   ],
+   "title": "FC Barcelona Blue and Red Retro Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Blue crew-neck sweatshirt with claret raglan sleeves, white sleeve flashes and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Blue and Red Retro Sweatshirt - 01.jpg"
+   ],
+   "handle": "fc-barcelona-blue-and-red-retro-sweatshirt"
+  },
+  {
+   "id": "fcb-67",
+   "photos": [
+    "p304",
+    "p303"
+   ],
+   "title": "FC Barcelona Grey Tech Fleece Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Grey full-zip hooded tech fleece jacket with zipped pockets, sold with the matching grey bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Grey Tech Fleece Tracksuit - 01.jpg",
+    "FC Barcelona Grey Tech Fleece Tracksuit - 02.jpg"
+   ],
+   "handle": "fc-barcelona-grey-tech-fleece-tracksuit"
+  },
+  {
+   "id": "fcb-68",
+   "photos": [
+    "p305"
+   ],
+   "title": "FC Barcelona Black and Purple Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Black full-zip track jacket with purple shoulder panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Purple Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-purple-full-zip-tracksuit"
+  },
+  {
+   "id": "fcb-69",
+   "photos": [
+    "p306"
+   ],
+   "title": "FC Barcelona Navy and Purple Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with purple shoulder panels and the Spotify roundel, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Navy and Purple Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "fc-barcelona-navy-and-purple-half-zip-training-set"
+  },
+  {
+   "id": "fcb-70",
+   "photos": [
+    "p307"
+   ],
+   "title": "FC Barcelona Black and Purple Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Black half-zip training top with purple side panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Purple Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-purple-half-zip-training-set"
+  },
+  {
+   "id": "fcb-71",
+   "photos": [
+    "p308"
+   ],
+   "title": "FC Barcelona Purple Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Purple and navy half-zip training top with the Spotify roundel, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Purple Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "fc-barcelona-purple-half-zip-training-set"
+  },
+  {
+   "id": "fcb-72",
+   "photos": [
+    "p309"
+   ],
+   "title": "FC Barcelona Cream Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Cream half-zip training top with pink shoulder panels, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Cream Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "fc-barcelona-cream-half-zip-training-set"
+  },
+  {
+   "id": "fcb-73",
+   "photos": [
+    "p310"
+   ],
+   "title": "FC Barcelona Black and Purple Training Set",
+   "tier": "trainingSet",
+   "blurb": "Black training shirt with purple side panels and the Spotify roundel, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Purple Training Set - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-purple-training-set"
+  },
+  {
+   "id": "fcb-74",
+   "photos": [
+    "p311"
+   ],
+   "title": "FC Barcelona Navy and Orange Training Set",
+   "tier": "trainingSet",
+   "blurb": "Navy training shirt with orange shoulder flashes and the Spotify roundel, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Navy and Orange Training Set - 01.jpg"
+   ],
+   "handle": "fc-barcelona-navy-and-orange-training-set"
+  },
+  {
+   "id": "fcb-75",
+   "photos": [
+    "p312"
+   ],
+   "title": "FC Barcelona Cream Training Set",
+   "tier": "trainingSet",
+   "blurb": "Cream training shirt with pink shoulder panels and the Spotify roundel, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Cream Training Set - 01.jpg"
+   ],
+   "handle": "fc-barcelona-cream-training-set"
+  },
+  {
+   "id": "fcb-76",
+   "photos": [
+    "p313"
+   ],
+   "title": "2026/27 FC Barcelona Home Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-fc-barcelona-home-kids-kit",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2026-27 FC Barcelona Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-home-kids-kit"
+  },
+  {
+   "id": "fcb-77",
+   "photos": [
+    "p314"
+   ],
+   "title": "2026/27 FC Barcelona Away Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-fc-barcelona-away-kids-kit",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2026-27 FC Barcelona Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-away-kids-kit"
+  },
+  {
+   "id": "fcb-78",
+   "photos": [
+    "p315"
+   ],
+   "title": "FC Barcelona Turquoise Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Turquoise shirt halved in two shades with matching turquoise shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Turquoise Kids Kit - 01.jpg"
+   ],
+   "handle": "fc-barcelona-turquoise-kids-kit"
+  },
+  {
+   "id": "fcb-79",
+   "photos": [
+    "p316"
+   ],
+   "title": "2026/27 FC Barcelona Home Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-fc-barcelona-home-player-version",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2026-27 FC Barcelona Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-home-player-version"
+  },
+  {
+   "id": "fcb-80",
+   "photos": [
+    "p318",
+    "p317"
+   ],
+   "title": "FC Barcelona Embroidered Floral Home Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Striped home shirt with the multicoloured floral embroidery across the chest, in the tighter player cut.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Embroidered Floral Home Player Version - 01.jpg",
+    "FC Barcelona Embroidered Floral Home Player Version - 02.jpg"
+   ],
+   "handle": "fc-barcelona-embroidered-floral-home-player-version"
+  },
+  {
+   "id": "fcb-81",
+   "photos": [
+    "p319"
+   ],
+   "title": "2026/27 FC Barcelona Third Player Version",
+   "tier": "player",
+   "blurb": "Mint green third shirt in the player cut with the tonal block print and the Spotify wordmark.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 FC Barcelona Third Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-third-player-version"
+  },
+  {
+   "id": "fcb-82",
+   "photos": [
+    "p320"
+   ],
+   "title": "2025/26 FC Barcelona Away Player Version",
+   "tier": "player",
+   "blurb": "Black away shirt in the player cut with a red side panel on one flank and a blue one on the other.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 FC Barcelona Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-fc-barcelona-away-player-version"
+  },
+  {
+   "id": "fcb-83",
+   "photos": [
+    "p321"
+   ],
+   "title": "FC Barcelona Home Butterfly Edition Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Striped home shirt in the player cut with the yellow butterfly motif on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Home Butterfly Edition Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-home-butterfly-edition-player-version"
+  },
+  {
+   "id": "fcb-84",
+   "photos": [
+    "p322"
+   ],
+   "title": "FC Barcelona Blue and Red Zigzag Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Blue shirt in the player cut with the red and light blue zigzag flash and the yellow Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Blue and Red Zigzag Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-blue-and-red-zigzag-player-version"
+  },
+  {
+   "id": "fcb-85",
+   "photos": [
+    "p323"
+   ],
+   "title": "FC Barcelona Coral Goalkeeper Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Coral goalkeeper shirt in the player cut with navy outlining and a navy collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Coral Goalkeeper Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-coral-goalkeeper-player-version"
+  },
+  {
+   "id": "fcb-86",
+   "photos": [
+    "p324"
+   ],
+   "title": "FC Barcelona Cream Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt in the player cut with a blue ribbed collar and cuffs and the black Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Cream Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-cream-player-version"
+  },
+  {
+   "id": "fcb-87",
+   "photos": [
+    "p325"
+   ],
+   "title": "FC Barcelona Red and Blue Halves Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Home shirt halved claret and blue in the player cut, with the Spotify wordmark across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Red and Blue Halves Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-red-and-blue-halves-player-version"
+  },
+  {
+   "id": "fcb-88",
+   "photos": [
+    "p326"
+   ],
+   "title": "FC Barcelona Black Eclipse Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt in the player cut with the eclipse print across the chest and red and blue side panels.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black Eclipse Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-eclipse-player-version"
+  },
+  {
+   "id": "fcb-89",
+   "photos": [
+    "p327"
+   ],
+   "title": "FC Barcelona Turquoise Halves Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve turquoise shirt halved in two shades, in the player cut, with the navy BARCA collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Turquoise Halves Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-turquoise-halves-long-sleeve-player-version"
+  },
+  {
+   "id": "fcb-90",
+   "photos": [
+    "p328"
+   ],
+   "title": "FC Barcelona Turquoise Halves Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Turquoise shirt halved in two shades in the player cut, with the navy BARCA collar and the Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Turquoise Halves Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-turquoise-halves-player-version"
+  },
+  {
+   "id": "fcb-91",
+   "photos": [
+    "p329"
+   ],
+   "title": "FC Barcelona Peach Goalkeeper Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Peach goalkeeper shirt in the player cut with a coral shoulder panel and the navy Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Peach Goalkeeper Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-peach-goalkeeper-player-version"
+  },
+  {
+   "id": "fcb-92",
+   "photos": [
+    "p330"
+   ],
+   "title": "FC Barcelona Purple Goalkeeper Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Purple goalkeeper shirt in the player cut with a navy collar and sleeves and the yellow Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Purple Goalkeeper Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-purple-goalkeeper-player-version"
+  },
+  {
+   "id": "fcb-93",
+   "photos": [
+    "p331"
+   ],
+   "title": "FC Barcelona Black and Blue Away Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Black away shirt in the player cut with a blue side panel and the red Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Blue Away Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-blue-away-player-version"
+  },
+  {
+   "id": "fcb-94",
+   "photos": [
+    "p332"
+   ],
+   "title": "FC Barcelona Black and Purple Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt in the player cut with purple side panels and the purple Spotify roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "FC Barcelona Black and Purple Player Version - 01.jpg"
+   ],
+   "handle": "fc-barcelona-black-and-purple-player-version"
+  },
+  {
+   "id": "fcb-95",
+   "photos": [
+    "p333"
+   ],
+   "title": "2026/27 FC Barcelona Away Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-fc-barcelona-away-jersey-player-version",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 FC Barcelona Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-fc-barcelona-away-player-version"
+  }
+ ]
+}

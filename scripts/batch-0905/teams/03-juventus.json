@@ -1,0 +1,343 @@
+{
+ "team": "Juventus",
+ "slug": "juventus",
+ "status": "imported",
+ "block": {
+  "from": "p122",
+  "to": "p141",
+  "count": 20
+ },
+ "notes": {
+  "albums": "Four albums: fan version (10), kids set (2), hoodie (2), player version (6). Three of them share the minute 20:14, so the order was checked by eye after the Newcastle reordering - the two photographs carrying shorts are p132 and p133, exactly where the kids album sits, and the two hoodies and six mannequin shots follow in the order the chat gives. This block is correct as harvested.",
+  "dedupe": "Two Juventus products were live and the hash matched neither. p124 matched by eye: it is the live 2025/26 home, the striped shirt with the PINK shoulder trim. The 1997/98 Sony retro is not in this batch. p137 is the player cut of the 2024/25 striped home and went in as new.",
+  "sponsorDating": "Jeep from 2012; the sponsor gained the VISIT DETROIT line in 2024/25, which separates the otherwise identical striped home shirts here: p126 carries plain gold Jeep (2023/24), p131 and p137 carry Jeep Visit Detroit (2024/25).",
+  "noSponsorShirts": "p123 and p125 are the hooped shirt WITHOUT a sponsor - the supplier sells a blank version alongside the sponsored one. They are titled by colour rather than season so they do not collide with the 2026/27 home."
+ },
+ "garments": [
+  {
+   "id": "juv-01",
+   "photos": [
+    "p122"
+   ],
+   "title": "2026/27 Juventus Home Fan Version",
+   "tier": "fan",
+   "blurb": "Black and white hooped home shirt with a black polo collar and the Jeep Visit Detroit sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Juventus Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-juventus-home-fan-version"
+  },
+  {
+   "id": "juv-02",
+   "photos": [
+    "p123"
+   ],
+   "title": "Juventus Black and White Hooped Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black and white hooped shirt with a plain collar and the club monogram, worn without a sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Juventus Black and White Hooped Fan Version - 01.jpg"
+   ],
+   "handle": "juventus-black-and-white-hooped-fan-version"
+  },
+  {
+   "id": "juv-03",
+   "photos": [
+    "p124"
+   ],
+   "title": "2025/26 Juventus Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "juventus-2025-26-home-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Juventus Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-juventus-home-fan-version"
+  },
+  {
+   "id": "juv-04",
+   "photos": [
+    "p125"
+   ],
+   "title": "Juventus Black and White Hooped Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve black and white hooped shirt with a plain collar and the club monogram.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Juventus Black and White Hooped Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "juventus-black-and-white-hooped-long-sleeve-fan-version"
+  },
+  {
+   "id": "juv-05",
+   "photos": [
+    "p126"
+   ],
+   "title": "2023/24 Juventus Home Fan Version",
+   "tier": "fan",
+   "blurb": "Black and white striped home shirt with a white collar and the gold Jeep sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2023-24 Juventus Home Fan Version - 01.jpg"
+   ],
+   "handle": "2023-24-juventus-home-fan-version"
+  },
+  {
+   "id": "juv-06",
+   "photos": [
+    "p127"
+   ],
+   "title": "Juventus White Flame Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with the black flame print across the shoulders and the gold club monogram.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Juventus White Flame Fan Version - 01.jpg"
+   ],
+   "handle": "juventus-white-flame-fan-version"
+  },
+  {
+   "id": "juv-07",
+   "photos": [
+    "p128"
+   ],
+   "title": "2023/24 Juventus Away Fan Version",
+   "tier": "fan",
+   "blurb": "Pink away shirt with black collar and cuff trim and the Jeep Visit Detroit sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2023-24 Juventus Away Fan Version - 01.jpg"
+   ],
+   "handle": "2023-24-juventus-away-fan-version"
+  },
+  {
+   "id": "juv-08",
+   "photos": [
+    "p129"
+   ],
+   "title": "2025/26 Juventus Third Fan Version",
+   "tier": "fan",
+   "blurb": "Black third shirt with the tonal flame print, gold shoulder stripes and the gold Jeep sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Juventus Third Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-juventus-third-fan-version"
+  },
+  {
+   "id": "juv-09",
+   "photos": [
+    "p130"
+   ],
+   "title": "2024/25 Juventus Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve black and white striped home shirt with a white collar and the gold Jeep sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Juventus Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-juventus-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "juv-10",
+   "photos": [
+    "p131"
+   ],
+   "title": "2024/25 Juventus Home Fan Version",
+   "tier": "fan",
+   "blurb": "Black and white striped home shirt with a white collar and the gold Jeep Visit Detroit sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Juventus Home Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-juventus-home-fan-version"
+  },
+  {
+   "id": "juv-11",
+   "photos": [
+    "p132"
+   ],
+   "title": "2023/24 Juventus Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Pink shirt with green collar trim and matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2023-24 Juventus Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2023-24-juventus-away-kids-kit"
+  },
+  {
+   "id": "juv-12",
+   "photos": [
+    "p133"
+   ],
+   "title": "2025/26 Juventus Third Kids Kit",
+   "tier": "kids",
+   "blurb": "Black shirt with the tonal flame print and gold trim, with matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Juventus Third Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-juventus-third-kids-kit"
+  },
+  {
+   "id": "juv-13",
+   "photos": [
+    "p134"
+   ],
+   "title": "Juventus Black Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Black pullover hoodie with a stand collar, the club emblem on the chest and a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Juventus Black Originals Hoodie - 01.jpg"
+   ],
+   "handle": "juventus-black-originals-hoodie"
+  },
+  {
+   "id": "juv-14",
+   "photos": [
+    "p135"
+   ],
+   "title": "Juventus Cream Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Cream pullover hoodie with the trefoil badge, the club emblem on the chest and a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Juventus Cream Originals Hoodie - 01.jpg"
+   ],
+   "handle": "juventus-cream-originals-hoodie"
+  },
+  {
+   "id": "juv-15",
+   "photos": [
+    "p136"
+   ],
+   "title": "2025/26 Juventus Third Player Version",
+   "tier": "player",
+   "blurb": "Black third shirt in the player cut with the tonal flame print and the gold Jeep sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Juventus Third Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-juventus-third-player-version"
+  },
+  {
+   "id": "juv-16",
+   "photos": [
+    "p137"
+   ],
+   "title": "2024/25 Juventus Home Player Version",
+   "tier": "player",
+   "blurb": "Black and white striped home shirt in the player cut with the gold Jeep Visit Detroit sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Juventus Home Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-juventus-home-player-version"
+  },
+  {
+   "id": "juv-17",
+   "photos": [
+    "p138"
+   ],
+   "title": "2023/24 Juventus Away Player Version",
+   "tier": "player",
+   "blurb": "Pink away shirt in the player cut with black trim and the Jeep Visit Detroit sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2023-24 Juventus Away Player Version - 01.jpg"
+   ],
+   "handle": "2023-24-juventus-away-player-version"
+  },
+  {
+   "id": "juv-18",
+   "photos": [
+    "p139"
+   ],
+   "title": "2023/24 Juventus Away Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve pink away shirt in the player cut with black sleeve stripes and the Jeep sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2023-24 Juventus Away Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2023-24-juventus-away-long-sleeve-player-version"
+  },
+  {
+   "id": "juv-19",
+   "photos": [
+    "p140"
+   ],
+   "title": "Juventus Black Tonal Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt in the player cut with a tonal print, white collar trim and the club emblem.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Juventus Black Tonal Player Version - 01.jpg"
+   ],
+   "handle": "juventus-black-tonal-player-version"
+  },
+  {
+   "id": "juv-20",
+   "photos": [
+    "p141"
+   ],
+   "title": "2026/27 Juventus Away Player Version",
+   "tier": "player",
+   "blurb": "Black away shirt in the player cut with the tonal print and the gold Jeep Visit Detroit sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Juventus Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-juventus-away-player-version"
+  }
+ ]
+}

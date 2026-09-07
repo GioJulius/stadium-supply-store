@@ -1,0 +1,763 @@
+{
+ "team": "AC Milan",
+ "slug": "ac-milan",
+ "status": "imported",
+ "block": {
+  "from": "p77",
+  "to": "p121",
+  "count": 45
+ },
+ "notes": {
+  "albums": "Eight albums: fan version (13), kids set (5), retro (9), retro half zip (6), windbreaker and hoodie (2), training set (1), half zip (2), player version (7). One photograph per garment throughout.",
+  "aliasFalsePositive": "dedupe-0905.py matched p119 to 'Inter Milan 2025/26 Third Jersey' at distance 3. That is WRONG and it is a flaw in the club gate: batch.json lists 'milan' as an alias for AC Milan, and 'milan' is a substring of every Inter Milan title, so the whole Inter catalogue is inside AC Milan's gate. p119 carries the AC Milan crest and went in as new. Check any AC Milan hash hit against an INTER title by eye before believing it.",
+  "dedupe": "Four hash hits (p92, p98, p110, p115) plus p104 by eye. p96 looks like the live 2009/10 away but carries the Athens 2007 final embroidery, which the live shirt does not - a different shirt, listed as new. p111 is an adidas bwin track jacket, not the live Puma windbreaker, and p113 is grey camo, not the live green half-zip set.",
+  "leadImagesAreSizeCharts": "SIX of the nine live AC Milan listings lead on a SIZE CHART, and one leads on a fabric close-up: 2005/06 white half-zip, 2006/07 home retro, 2009/10 away retro, 2025/26 sweatshirt, 2025/26 third kids kit, 2025/26 windbreaker and the 2025/26 half-zip set. Every one of them carries 8-9 images with real garment photographs further down. This is exactly the client's standing 'we cannot see the first picture' complaint and it wants a promote-lead-image pass; see stadium-supply-lead-images.",
+  "retroHalfZipPricing": "The 'retro half zip' album is priced at the retroTop tier (R1000), the same call made for Real Madrid's identical album. If the client meant the ordinary R850 half-zip tier, six listings here are R150 over.",
+  "seasonReading": "Sponsor pins the era: OPEL to 2006, bwin 2006-2010, Fly Emirates 2010 onward; Lotto to 1998, adidas 1998-2018, Puma 2018 onward. The Puma-era specials and the OPEL training tops cannot be dated from the garment, so those titles carry a colour and are marked seasonConfidence unknown."
+ },
+ "garments": [
+  {
+   "id": "mil-01",
+   "photos": [
+    "p77"
+   ],
+   "title": "AC Milan Black Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with the tonal diamond print, a black polo collar and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Black Fan Version - 01.jpg"
+   ],
+   "handle": "ac-milan-black-fan-version"
+  },
+  {
+   "id": "mil-02",
+   "photos": [
+    "p78"
+   ],
+   "title": "2025/26 AC Milan Away Fan Version",
+   "tier": "fan",
+   "blurb": "White away shirt with red and black collar and cuff trim and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 AC Milan Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-away-fan-version"
+  },
+  {
+   "id": "mil-03",
+   "photos": [
+    "p79"
+   ],
+   "title": "2025/26 AC Milan Home Fan Version",
+   "tier": "fan",
+   "blurb": "Red and black striped home shirt with white sleeves and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 AC Milan Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-home-fan-version"
+  },
+  {
+   "id": "mil-04",
+   "photos": [
+    "p80"
+   ],
+   "title": "AC Milan Cream Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt with the tonal jacquard print, a black collar and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Cream Fan Version - 01.jpg"
+   ],
+   "handle": "ac-milan-cream-fan-version"
+  },
+  {
+   "id": "mil-05",
+   "photos": [
+    "p81"
+   ],
+   "title": "AC Milan Navy and Teal Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy shirt graded to teal at the hem with gold trim and the gold Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Navy and Teal Fan Version - 01.jpg"
+   ],
+   "handle": "ac-milan-navy-and-teal-fan-version"
+  },
+  {
+   "id": "mil-06",
+   "photos": [
+    "p82"
+   ],
+   "title": "AC Milan Red and Teal Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt graded to teal at the hem with a gold collar and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Red and Teal Fan Version - 01.jpg"
+   ],
+   "handle": "ac-milan-red-and-teal-fan-version"
+  },
+  {
+   "id": "mil-07",
+   "photos": [
+    "p83"
+   ],
+   "title": "2026/27 AC Milan Home Fan Version",
+   "tier": "fan",
+   "blurb": "Red and black striped home shirt with black sleeves, a tonal print and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 AC Milan Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-ac-milan-home-fan-version"
+  },
+  {
+   "id": "mil-08",
+   "photos": [
+    "p84"
+   ],
+   "title": "2025/26 AC Milan Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve white away shirt with red and black cuff trim and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 AC Milan Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "mil-09",
+   "photos": [
+    "p85"
+   ],
+   "title": "2024/25 AC Milan Home Fan Version",
+   "tier": "fan",
+   "blurb": "Red and black striped home shirt with black sleeves and a red and white collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 AC Milan Home Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-ac-milan-home-fan-version"
+  },
+  {
+   "id": "mil-10",
+   "photos": [
+    "p86"
+   ],
+   "title": "AC Milan Red Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve red shirt with black sleeve and side panels and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Red Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "ac-milan-red-long-sleeve-fan-version"
+  },
+  {
+   "id": "mil-11",
+   "photos": [
+    "p87"
+   ],
+   "title": "2025/26 AC Milan Third Fan Version",
+   "tier": "fan",
+   "blurb": "Yellow third shirt with a dark green polo collar, the tonal check print and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 AC Milan Third Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-third-fan-version"
+  },
+  {
+   "id": "mil-12",
+   "photos": [
+    "p88"
+   ],
+   "title": "AC Milan Black and Orange Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with an orange collar and cuffs and the orange Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Black and Orange Fan Version - 01.jpg"
+   ],
+   "handle": "ac-milan-black-and-orange-fan-version"
+  },
+  {
+   "id": "mil-13",
+   "photos": [
+    "p89"
+   ],
+   "title": "2026/27 AC Milan Away Fan Version",
+   "tier": "fan",
+   "blurb": "White away shirt with black and red shoulder panels and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 AC Milan Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-ac-milan-away-fan-version"
+  },
+  {
+   "id": "mil-14",
+   "photos": [
+    "p90"
+   ],
+   "title": "2026/27 AC Milan Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Red and black striped shirt with matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 AC Milan Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-ac-milan-home-kids-kit"
+  },
+  {
+   "id": "mil-15",
+   "photos": [
+    "p91"
+   ],
+   "title": "2026/27 AC Milan Away Kids Kit",
+   "tier": "kids",
+   "blurb": "White shirt with black and red shoulder panels and matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 AC Milan Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-ac-milan-away-kids-kit"
+  },
+  {
+   "id": "mil-16",
+   "photos": [
+    "p92"
+   ],
+   "title": "2025/26 AC Milan Third Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2025-26-ac-milan-third-kids-kit",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2025-26 AC Milan Third Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-third-kids-kit"
+  },
+  {
+   "id": "mil-17",
+   "photos": [
+    "p93"
+   ],
+   "title": "AC Milan Red Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt with black sleeve panels and matching red shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Red Kids Kit - 01.jpg"
+   ],
+   "handle": "ac-milan-red-kids-kit"
+  },
+  {
+   "id": "mil-18",
+   "photos": [
+    "p94"
+   ],
+   "title": "2025/26 AC Milan Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Red and black striped shirt with matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 AC Milan Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-home-kids-kit"
+  },
+  {
+   "id": "mil-19",
+   "photos": [
+    "p95"
+   ],
+   "title": "2002/03 AC Milan Home Retro",
+   "tier": "retro",
+   "blurb": "Red and black striped adidas home shirt with the Opel Meriva sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2002-03 AC Milan Home Retro - 01.jpg"
+   ],
+   "handle": "2002-03-ac-milan-home-retro"
+  },
+  {
+   "id": "mil-20",
+   "photos": [
+    "p96"
+   ],
+   "title": "2007 AC Milan Champions League Final Away Retro",
+   "tier": "retro",
+   "blurb": "White adidas away shirt carrying the Athens 2007 final embroidery and the bwin sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2007 AC Milan Champions League Final Away Retro - 01.jpg"
+   ],
+   "handle": "2007-ac-milan-champions-league-final-away-retro"
+  },
+  {
+   "id": "mil-21",
+   "photos": [
+    "p97"
+   ],
+   "title": "2001/02 AC Milan Home Retro",
+   "tier": "retro",
+   "blurb": "Red and black striped adidas home shirt with a buttoned collar and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2001-02 AC Milan Home Retro - 01.jpg"
+   ],
+   "handle": "2001-02-ac-milan-home-retro"
+  },
+  {
+   "id": "mil-22",
+   "photos": [
+    "p98"
+   ],
+   "title": "2006/07 AC Milan Home Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2006-07-ac-milan-home-retro-fan-version",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2006-07 AC Milan Home Retro - 01.jpg"
+   ],
+   "handle": "2006-07-ac-milan-home-retro"
+  },
+  {
+   "id": "mil-23",
+   "photos": [
+    "p99"
+   ],
+   "title": "2010/11 AC Milan Third Retro",
+   "tier": "retro",
+   "blurb": "Gold adidas third shirt with black side panels and the Fly Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2010-11 AC Milan Third Retro - 01.jpg"
+   ],
+   "handle": "2010-11-ac-milan-third-retro"
+  },
+  {
+   "id": "mil-24",
+   "photos": [
+    "p100"
+   ],
+   "title": "2009/10 AC Milan Home Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve red and black striped home shirt with a white polo collar and the bwin sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2009-10 AC Milan Home Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2009-10-ac-milan-home-long-sleeve-retro"
+  },
+  {
+   "id": "mil-25",
+   "photos": [
+    "p101"
+   ],
+   "title": "2002/03 AC Milan Away Retro",
+   "tier": "retro",
+   "blurb": "White adidas away shirt with red and black collar trim and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2002-03 AC Milan Away Retro - 01.jpg"
+   ],
+   "handle": "2002-03-ac-milan-away-retro"
+  },
+  {
+   "id": "mil-26",
+   "photos": [
+    "p102"
+   ],
+   "title": "2007/08 AC Milan Third Retro",
+   "tier": "retro",
+   "blurb": "Black adidas third shirt with red trim and the bwin sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2007-08 AC Milan Third Retro - 01.jpg"
+   ],
+   "handle": "2007-08-ac-milan-third-retro"
+  },
+  {
+   "id": "mil-27",
+   "photos": [
+    "p103"
+   ],
+   "title": "1995/96 AC Milan Third Retro",
+   "tier": "retro",
+   "blurb": "Blue Lotto third shirt with the patterned lower body and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1995-96 AC Milan Third Retro - 01.jpg"
+   ],
+   "handle": "1995-96-ac-milan-third-retro"
+  },
+  {
+   "id": "mil-28",
+   "photos": [
+    "p104"
+   ],
+   "title": "2005/06 AC Milan White Half-Zip Training Top",
+   "tier": "retroTop",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2005-06-ac-milan-white-half-zip-training-set",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2005-06 AC Milan White Half-Zip Training Top - 01.jpg"
+   ],
+   "handle": "2005-06-ac-milan-white-half-zip-training-top"
+  },
+  {
+   "id": "mil-29",
+   "photos": [
+    "p105"
+   ],
+   "title": "AC Milan Red and White Opel Retro Half-Zip Training Top",
+   "tier": "retroTop",
+   "seasonConfidence": "unknown",
+   "blurb": "Red half-zip retro training top with black and white sleeve stripes and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Red and White Opel Retro Half-Zip Training Top - 01.jpg"
+   ],
+   "handle": "ac-milan-red-and-white-opel-retro-half-zip-training-top"
+  },
+  {
+   "id": "mil-30",
+   "photos": [
+    "p106"
+   ],
+   "title": "AC Milan Black and Red Opel Retro Half-Zip Training Top",
+   "tier": "retroTop",
+   "seasonConfidence": "unknown",
+   "blurb": "Black half-zip retro training top with the red sweep across the sleeves and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Black and Red Opel Retro Half-Zip Training Top - 01.jpg"
+   ],
+   "handle": "ac-milan-black-and-red-opel-retro-half-zip-training-top"
+  },
+  {
+   "id": "mil-31",
+   "photos": [
+    "p107"
+   ],
+   "title": "AC Milan Black and White Opel Retro Half-Zip Training Top",
+   "tier": "retroTop",
+   "seasonConfidence": "unknown",
+   "blurb": "Black half-zip retro training top with red and white sleeve stripes and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Black and White Opel Retro Half-Zip Training Top - 01.jpg"
+   ],
+   "handle": "ac-milan-black-and-white-opel-retro-half-zip-training-top"
+  },
+  {
+   "id": "mil-32",
+   "photos": [
+    "p108"
+   ],
+   "title": "AC Milan Red and Black Opel Retro Half-Zip Training Top",
+   "tier": "retroTop",
+   "seasonConfidence": "unknown",
+   "blurb": "Red half-zip retro training top with black shoulder panels and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Red and Black Opel Retro Half-Zip Training Top - 01.jpg"
+   ],
+   "handle": "ac-milan-red-and-black-opel-retro-half-zip-training-top"
+  },
+  {
+   "id": "mil-33",
+   "photos": [
+    "p109"
+   ],
+   "title": "AC Milan White Opel Retro Half-Zip Training Top",
+   "tier": "retroTop",
+   "seasonConfidence": "unknown",
+   "blurb": "White half-zip retro training top with red sleeve stripes and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan White Opel Retro Half-Zip Training Top - 01.jpg"
+   ],
+   "handle": "ac-milan-white-opel-retro-half-zip-training-top"
+  },
+  {
+   "id": "mil-34",
+   "photos": [
+    "p110"
+   ],
+   "title": "2025/26 AC Milan Sweatshirt Long Sleeve",
+   "tier": "hoodie",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2025-26-ac-milan-sweatshirt-long-sleeve",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2025-26 AC Milan Sweatshirt Long Sleeve - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-sweatshirt-long-sleeve"
+  },
+  {
+   "id": "mil-35",
+   "photos": [
+    "p111"
+   ],
+   "title": "AC Milan Red bwin Retro Track Jacket",
+   "tier": "jacket",
+   "seasonConfidence": "unknown",
+   "blurb": "Red adidas track jacket with the black tonal panel down the front and the bwin sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Red bwin Retro Track Jacket - 01.jpg"
+   ],
+   "handle": "ac-milan-red-bwin-retro-track-jacket"
+  },
+  {
+   "id": "mil-36",
+   "photos": [
+    "p112"
+   ],
+   "title": "AC Milan Grey Camo Training Set",
+   "tier": "trainingSet",
+   "blurb": "Grey training shirt with the tonal camouflage print and red side panels, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Grey Camo Training Set - 01.jpg"
+   ],
+   "handle": "ac-milan-grey-camo-training-set"
+  },
+  {
+   "id": "mil-37",
+   "photos": [
+    "p113"
+   ],
+   "title": "AC Milan Grey Camo Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Grey half-zip training top with the tonal camouflage print and red side panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Grey Camo Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "ac-milan-grey-camo-half-zip-training-set"
+  },
+  {
+   "id": "mil-38",
+   "photos": [
+    "p114"
+   ],
+   "title": "AC Milan Red Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Red half-zip training top with the eFootball print and black shoulder panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Red Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "ac-milan-red-half-zip-training-set"
+  },
+  {
+   "id": "mil-39",
+   "photos": [
+    "p115"
+   ],
+   "title": "2025/26 AC Milan Away Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2025-26-ac-milan-away-player-version1",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2025-26 AC Milan Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-away-player-version"
+  },
+  {
+   "id": "mil-40",
+   "photos": [
+    "p116"
+   ],
+   "title": "2026/27 AC Milan Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve red and black striped home shirt in the player cut with a tonal print.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 AC Milan Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-ac-milan-home-long-sleeve-player-version"
+  },
+  {
+   "id": "mil-41",
+   "photos": [
+    "p117"
+   ],
+   "title": "2026/27 AC Milan Home Player Version",
+   "tier": "player",
+   "blurb": "Red and black striped home shirt in the player cut with black sleeves and a tonal print.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 AC Milan Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-ac-milan-home-player-version"
+  },
+  {
+   "id": "mil-42",
+   "photos": [
+    "p118"
+   ],
+   "title": "2025/26 AC Milan Third Player Version",
+   "tier": "player",
+   "blurb": "Yellow third shirt in the player cut with a dark green polo collar and the tonal check print.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 AC Milan Third Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-ac-milan-third-player-version"
+  },
+  {
+   "id": "mil-43",
+   "photos": [
+    "p119"
+   ],
+   "title": "AC Milan Black and Orange Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt in the player cut with an orange collar and cuffs and the orange Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "AC Milan Black and Orange Player Version - 01.jpg"
+   ],
+   "handle": "ac-milan-black-and-orange-player-version"
+  },
+  {
+   "id": "mil-44",
+   "photos": [
+    "p120"
+   ],
+   "title": "2024/25 AC Milan Home Player Version",
+   "tier": "player",
+   "blurb": "Red and black striped home shirt in the player cut with black sleeves and a red collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 AC Milan Home Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-ac-milan-home-player-version"
+  },
+  {
+   "id": "mil-45",
+   "photos": [
+    "p121"
+   ],
+   "title": "2024/25 AC Milan Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve red and black striped home shirt in the player cut with black sleeves.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 AC Milan Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-ac-milan-home-long-sleeve-player-version"
+  }
+ ]
+}

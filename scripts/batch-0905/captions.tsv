@@ -71,8 +71,8 @@
 22:08	0	crystal palace	TEAM:Crystal Palace
 22:08	1	player version
 22:08	4	fan version
-22:09	2	player version
 22:09	0	Brighton	TEAM:Brighton
+22:09	2	player version
 22:10	2	kids set
 22:10	3	fan version
 22:14	0	Aston Villa	TEAM:Aston Villa
@@ -100,10 +100,10 @@
 22:58	3	kids set
 22:58	12	player version
 23:29	0	newcastle	TEAM:Newcastle United
-23:30	4	player version
-23:30	3	kids set
 23:30	3	retro
 23:30	1	windbreaker
+23:30	4	player version
+23:30	3	kids set
 23:31	1	player version
 23:31	6	fan version
 23:31	0	manchester united	TEAM:Manchester United
@@ -117,7 +117,7 @@
 23:35	22	fan version
 23:36	4	kids sets
 23:36	13	player versions
-23:40	1	fan version
+23:40	2	fan version
 23:40	1	full zip
 23:40	1	half zip
 23:40	1	training vest set

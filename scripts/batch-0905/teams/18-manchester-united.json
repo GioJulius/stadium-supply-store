@@ -1,0 +1,2162 @@
+{
+ "team": "Manchester United",
+ "slug": "manchester-united",
+ "status": "imported",
+ "block": {
+  "from": "p525",
+  "to": "p664",
+  "count": 140
+ },
+ "notes": {
+  "albums": "Fourteen albums: retros (52), windbreaker (7), full zip (7), half zip (3), vest and training set (10), hoodies (8), retro training top R1000 (9), fan version (22), kids sets (4), player versions (13), then a four-garment tail at 23:40.",
+  "tailFix": "The 23:40 tail was captioned fan version / full zip / half zip / training vest set against five files, which left p664 unassigned in the first alignment. By eye p660 AND p661 are both fan-version shirts, so that album holds 2 photographs, not 1; captions.tsv was corrected and align-0905.mjs now assigns all 664 photographs with zero drift and nothing left over.",
+  "multiPhotoGarments": "Five garments carry more than one photograph: the 2011 Champions League final pre-match shirt (p537 and p572 are the same shirt shot twice), the purple full-zip tracksuit (p584, p585), the blue floral originals shirt (p657 plus the p658 close-up) and the three retro training tops, each sent as front, back and a composite. The retro training tops are ordered FRONT first so the shop grid does not lead on the back of the garment.",
+  "duplicatePhoto": "p634 (fan album) and p644 (kids album) are the identical file at dHash distance 0; both are claimed by the 2025/26 home kids kit.",
+  "seasonReading": "Seasons were read off sponsor, manufacturer and collar: SHARP to 2000, Vodafone 2000-2006, AIG 2006-2010, AON 2010-2014, Chevrolet 2014-2021, TeamViewer 2021-2024, Snapdragon 2024 onward. Where the sponsor era does not pin the year the title carries no season and seasonConfidence is unknown.",
+  "liveTitleConflicts": "Two live listings look mis-titled and are worth a look: 'Manchester United 1998/99 Third Retro Jersey (Sharp)' shows the black SHARP VIEWCAM shirt, which is 1993/95 (p565 is that same photograph), and 'Manchester United 1994/96 Home Retro Jersey (Sharp)' shows a white-collared Umbro shirt, which is the 1996/98 kit. Neither is changed here."
+ },
+ "garments": [
+  {
+   "id": "mu-01",
+   "photos": [
+    "p525"
+   ],
+   "title": "2021/22 Manchester United Third Retro",
+   "tier": "retro",
+   "blurb": "Navy shirt with the blue diamond print and the TeamViewer chest sponsor, the adidas third kit of the 2021/22 season.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2021-22 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "2021-22-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-02",
+   "photos": [
+    "p526"
+   ],
+   "title": "2007/08 Manchester United Home Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Red long sleeve Nike home shirt of the double-winning 2007/08 side, with the boxed AIG sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2007-08 Manchester United Home Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2007-08-manchester-united-home-long-sleeve-retro"
+  },
+  {
+   "id": "mu-03",
+   "photos": [
+    "p527"
+   ],
+   "title": "2008/09 Manchester United Away Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Black long sleeve Nike away shirt with red piping on the shoulders and the boxed AIG sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2008-09 Manchester United Away Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2008-09-manchester-united-away-long-sleeve-retro"
+  },
+  {
+   "id": "mu-04",
+   "photos": [
+    "p528"
+   ],
+   "title": "2007/08 Manchester United Home Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-2007-08-home-retro-moscow-final",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2007-08 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2007-08-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-05",
+   "photos": [
+    "p529"
+   ],
+   "title": "2001/02 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "The gold Umbro away shirt with black shoulder panels and the Vodafone sponsor, worn in the 2001/02 season.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2001-02 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "2001-02-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-06",
+   "photos": [
+    "p530"
+   ],
+   "title": "2002/03 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "White Umbro away shirt with a black and red collar and the Vodafone sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2002-03 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "2002-03-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-07",
+   "photos": [
+    "p531"
+   ],
+   "title": "2004/06 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Nike home shirt with white shoulder panels and the Vodafone sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2004-06 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2004-06-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-08",
+   "photos": [
+    "p532"
+   ],
+   "title": "2018/19 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt fading to black hoops at the hem, with the Chevrolet sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2018-19 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2018-19-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-09",
+   "photos": [
+    "p533"
+   ],
+   "title": "2021/22 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "Pale blue and white zigzag away shirt from 2021/22 with the TeamViewer sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2021-22 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "2021-22-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-10",
+   "photos": [
+    "p534"
+   ],
+   "title": "1988/90 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "White adidas away shirt with the three red shoulder stripes and the SHARP sponsor in red.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1988-90 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "1988-90-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-11",
+   "photos": [
+    "p535"
+   ],
+   "title": "1986/88 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "White adidas away shirt with red and black trim on the collar and shoulders and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1986-88 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "1986-88-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-12",
+   "photos": [
+    "p536"
+   ],
+   "title": "1986/88 Manchester United Third Retro",
+   "tier": "retro",
+   "blurb": "Royal blue adidas shirt with red and white shoulder stripes and the SHARP sponsor in white.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1986-88 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "1986-88-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-13",
+   "photos": [
+    "p537",
+    "p572"
+   ],
+   "title": "2011 Manchester United Champions League Final Pre-Match Retro",
+   "tier": "retro",
+   "blurb": "The white Nike pre-match shirt printed for the 2011 Champions League final at Wembley, with red and black shoulder panels and the AON sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2011 Manchester United Champions League Final Pre-Match Retro - 01.jpg",
+    "2011 Manchester United Champions League Final Pre-Match Retro - 02.jpg"
+   ],
+   "handle": "2011-manchester-united-champions-league-final-pre-match-retro"
+  },
+  {
+   "id": "mu-14",
+   "photos": [
+    "p538"
+   ],
+   "title": "1998/99 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "White Umbro away shirt of the treble season with the patterned collar and sleeve trim and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1998-99 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "1998-99-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-15",
+   "photos": [
+    "p539"
+   ],
+   "title": "2021/22 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with the TeamViewer sponsor and the Kohler sleeve badge.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2021-22 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2021-22-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-16",
+   "photos": [
+    "p540"
+   ],
+   "title": "2008/09 Manchester United Third Retro",
+   "tier": "retro",
+   "blurb": "Royal blue Nike shirt with the boxed AIG sponsor, the third kit of the 2008/09 season.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2008-09 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "2008-09-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-17",
+   "photos": [
+    "p541"
+   ],
+   "title": "1999 Manchester United Champions League Final Home Retro",
+   "tier": "retro",
+   "blurb": "The red Umbro home shirt of the 1999 treble season, carrying the Champions League final embroidery above the crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1999 Manchester United Champions League Final Home Retro - 01.jpg"
+   ],
+   "handle": "1999-manchester-united-champions-league-final-home-retro"
+  },
+  {
+   "id": "mu-18",
+   "photos": [
+    "p542"
+   ],
+   "title": "2000/01 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "Navy Umbro away shirt with white hoops, a polo collar and the SHARP digital sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2000-01 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "2000-01-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-19",
+   "photos": [
+    "p543"
+   ],
+   "title": "1998 Manchester United Home Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "1998-manchester-united-home-retro-fan-version",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "1998 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1998-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-20",
+   "photos": [
+    "p544"
+   ],
+   "title": "1998/99 Manchester United Third Retro",
+   "tier": "retro",
+   "blurb": "Black Umbro third shirt with the patterned shoulder taping and the SHARP sponsor in white.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1998-99 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "1998-99-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-21",
+   "photos": [
+    "p545"
+   ],
+   "title": "2004/06 Manchester United Home Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve version of the red Nike Vodafone home shirt, with white shoulder panels and a white cuff trim.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2004-06 Manchester United Home Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2004-06-manchester-united-home-long-sleeve-retro"
+  },
+  {
+   "id": "mu-22",
+   "photos": [
+    "p546"
+   ],
+   "title": "1998/99 Manchester United Third Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve black Umbro third shirt with red and white sleeve taping and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1998-99 Manchester United Third Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "1998-99-manchester-united-third-long-sleeve-retro"
+  },
+  {
+   "id": "mu-23",
+   "photos": [
+    "p547"
+   ],
+   "title": "Manchester United AIG Green Goalkeeper Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Green Nike goalkeeper shirt from the AIG years, with white piping on the shoulders and the boxed sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United AIG Green Goalkeeper Retro - 01.jpg"
+   ],
+   "handle": "manchester-united-aig-green-goalkeeper-retro"
+  },
+  {
+   "id": "mu-24",
+   "photos": [
+    "p548"
+   ],
+   "title": "1988/90 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with a white collar, white shoulder stripes and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1988-90 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1988-90-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-25",
+   "photos": [
+    "p549"
+   ],
+   "title": "1986/88 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with a shadow pattern body, white shoulder stripes and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1986-88 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1986-88-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-26",
+   "photos": [
+    "p550"
+   ],
+   "title": "1984/86 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with a white v-collar, white shoulder stripes and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1984-86 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1984-86-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-27",
+   "photos": [
+    "p551"
+   ],
+   "title": "1984/86 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "White adidas away shirt with red shoulder stripes and the SHARP sponsor in red.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1984-86 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "1984-86-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-28",
+   "photos": [
+    "p552"
+   ],
+   "title": "2008/09 Manchester United Away Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-2008-09-away-retro-jersey-aig",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2008-09 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "2008-09-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-29",
+   "photos": [
+    "p553"
+   ],
+   "title": "1990/92 Manchester United Away Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-1990-92-away-retro-jersey-sharp",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "1990-92 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "1990-92-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-30",
+   "photos": [
+    "p554"
+   ],
+   "title": "1992/94 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Umbro home shirt with the geometric shadow print, a white collar and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1992-94 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1992-94-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-31",
+   "photos": [
+    "p555"
+   ],
+   "title": "Manchester United White and Gold AIG Away Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "White Nike away shirt with gold and black side panels and the boxed AIG sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White and Gold AIG Away Retro - 01.jpg"
+   ],
+   "handle": "manchester-united-white-and-gold-aig-away-retro"
+  },
+  {
+   "id": "mu-32",
+   "photos": [
+    "p556"
+   ],
+   "title": "1994/96 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "White Umbro away shirt with the black and red chest bands and the SHARP VIEWCAM sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1994-96 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "1994-96-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-33",
+   "photos": [
+    "p557"
+   ],
+   "title": "2011/12 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "White Nike away shirt with a red placket trim and the AON sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2011-12 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "2011-12-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-34",
+   "photos": [
+    "p558"
+   ],
+   "title": "1982/84 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with the white v-neck and shoulder stripes and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1982-84 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1982-84-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-35",
+   "photos": [
+    "p559"
+   ],
+   "title": "2000/02 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Umbro home shirt with a black and white collar trim and the Vodafone sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2000-02 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2000-02-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-36",
+   "photos": [
+    "p560"
+   ],
+   "title": "2006/07 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Nike home shirt with gold trim on the collar and sleeves and the boxed AIG sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2006-07 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2006-07-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-37",
+   "photos": [
+    "p561"
+   ],
+   "title": "1996/98 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Umbro home shirt with the patterned sleeves, a white polo collar and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1996-98 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1996-98-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-38",
+   "photos": [
+    "p562"
+   ],
+   "title": "1983 Manchester United FA Cup Final Away Retro",
+   "tier": "retro",
+   "blurb": "White adidas away shirt with black and red pinstripes and the Wembley 1983 embroidery under the crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1983 Manchester United FA Cup Final Away Retro - 01.jpg"
+   ],
+   "handle": "1983-manchester-united-fa-cup-final-away-retro"
+  },
+  {
+   "id": "mu-39",
+   "photos": [
+    "p563"
+   ],
+   "title": "1990/92 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with a white collar, white shoulder stripes and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1990-92 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1990-92-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-40",
+   "photos": [
+    "p564"
+   ],
+   "title": "2008/09 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Nike home shirt of the 2008/09 season with a plain collar and the boxed AIG sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2008-09 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2008-09-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-41",
+   "photos": [
+    "p565"
+   ],
+   "title": "1993/95 Manchester United Away Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-1998-99-third-retro-jersey-sharp",
+    "checkedBy": "eye",
+    "why": "same photograph as the live listing, which is titled 1998/99 Third but shows the black SHARP VIEWCAM shirt"
+   },
+   "files": [
+    "1993-95 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "1993-95-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-42",
+   "photos": [
+    "p566"
+   ],
+   "title": "1994/96 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Umbro home shirt with a black polo collar, the shadow-pattern body and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "matchHandle": "manchester-united-1994-96-home-retro-jersey-sharp",
+    "why": "the live 1994/96 listing shows a WHITE-collared Umbro Sharp shirt, which is the 1996/98 kit; this one has the black collar of the real 1994/96, so either that title is wrong or this is a second shirt",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "1994-96 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "1994-96-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-43",
+   "photos": [
+    "p567"
+   ],
+   "title": "1999/2000 Manchester United Third Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Black Umbro third shirt with lime green piping on the sleeves and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1999-2000 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "1999-2000-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-44",
+   "photos": [
+    "p568"
+   ],
+   "title": "2002/04 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Nike home shirt with black side panels and sleeve blocks and the Vodafone sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2002-04 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2002-04-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-45",
+   "photos": [
+    "p569"
+   ],
+   "title": "2010/11 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red Nike home shirt with a white polo collar and the AON sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2010-11 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2010-11-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-46",
+   "photos": [
+    "p570"
+   ],
+   "title": "2012/13 Manchester United Home Retro",
+   "tier": "retro",
+   "blurb": "Red and black gingham-check Nike home shirt of the 2012/13 title season with the AON sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2012-13 Manchester United Home Retro - 01.jpg"
+   ],
+   "handle": "2012-13-manchester-united-home-retro"
+  },
+  {
+   "id": "mu-47",
+   "photos": [
+    "p571"
+   ],
+   "title": "1992/94 Manchester United Third Retro",
+   "tier": "retro",
+   "blurb": "The green and gold halved Newton Heath third shirt with the SHARP sponsor and a laced collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1992-94 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "1992-94-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-48",
+   "photos": [
+    "p573"
+   ],
+   "title": "Manchester United White AIG Away Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "White Nike away shirt with navy side stripes and the boxed AIG sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White AIG Away Retro - 01.jpg"
+   ],
+   "handle": "manchester-united-white-aig-away-retro"
+  },
+  {
+   "id": "mu-49",
+   "photos": [
+    "p574"
+   ],
+   "title": "1994/96 Manchester United Third Retro",
+   "tier": "retro",
+   "blurb": "Blue and white striped Umbro third shirt with the gold SHARP sponsor and a white collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1994-96 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "1994-96-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-50",
+   "photos": [
+    "p575"
+   ],
+   "title": "1996/97 Manchester United Third Retro",
+   "tier": "retro",
+   "blurb": "Royal blue Umbro third shirt with black and white sleeve flashes and the SHARP sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1996-97 Manchester United Third Retro - 01.jpg"
+   ],
+   "handle": "1996-97-manchester-united-third-retro"
+  },
+  {
+   "id": "mu-51",
+   "photos": [
+    "p576"
+   ],
+   "title": "2005/06 Manchester United Away Retro",
+   "tier": "retro",
+   "blurb": "Blue Nike away shirt with red shoulder and side panels and the Vodafone sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2005-06 Manchester United Away Retro - 01.jpg"
+   ],
+   "handle": "2005-06-manchester-united-away-retro"
+  },
+  {
+   "id": "mu-52",
+   "photos": [
+    "p577"
+   ],
+   "title": "Manchester United Black and Blue Print Windbreaker",
+   "tier": "jacket",
+   "blurb": "Black full-zip windbreaker with a blue and cream painted print across the chest and shoulders and three stripes down the sleeves.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Blue Print Windbreaker - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-blue-print-windbreaker"
+  },
+  {
+   "id": "mu-53",
+   "photos": [
+    "p578"
+   ],
+   "title": "Manchester United White Tezos Windbreaker",
+   "tier": "jacket",
+   "blurb": "White full-zip windbreaker with navy sleeves and maroon side panels, the club crest on the chest and the Tezos sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White Tezos Windbreaker - 01.jpg"
+   ],
+   "handle": "manchester-united-white-tezos-windbreaker"
+  },
+  {
+   "id": "mu-54",
+   "photos": [
+    "p579"
+   ],
+   "title": "Manchester United AIG Red Windbreaker",
+   "tier": "jacket",
+   "blurb": "Red Nike windbreaker with a black shoulder yoke, a stand collar and the boxed AIG sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United AIG Red Windbreaker - 01.jpg"
+   ],
+   "handle": "manchester-united-aig-red-windbreaker"
+  },
+  {
+   "id": "mu-55",
+   "photos": [
+    "p580"
+   ],
+   "title": "Manchester United Purple Track Jacket",
+   "tier": "jacket",
+   "blurb": "Purple full-zip track jacket with white side panels and three white stripes on the shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Purple Track Jacket - 01.jpg"
+   ],
+   "handle": "manchester-united-purple-track-jacket"
+  },
+  {
+   "id": "mu-56",
+   "photos": [
+    "p581"
+   ],
+   "title": "Manchester United White and Purple Track Jacket",
+   "tier": "jacket",
+   "blurb": "Off-white full-zip track jacket with purple side panels and black three-stripe detailing on the shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White and Purple Track Jacket - 01.jpg"
+   ],
+   "handle": "manchester-united-white-and-purple-track-jacket"
+  },
+  {
+   "id": "mu-57",
+   "photos": [
+    "p582"
+   ],
+   "title": "Manchester United AIG Red and Black Windbreaker",
+   "tier": "jacket",
+   "blurb": "Red Nike windbreaker with a black upper chest and collar and the boxed AIG sponsor on the front.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United AIG Red and Black Windbreaker - 01.jpg"
+   ],
+   "handle": "manchester-united-aig-red-and-black-windbreaker"
+  },
+  {
+   "id": "mu-58",
+   "photos": [
+    "p583"
+   ],
+   "title": "Manchester United Black and Cyan Print Windbreaker",
+   "tier": "jacket",
+   "blurb": "Black track jacket with bright blue sleeve stripes and a printed lower body, finished with the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Cyan Print Windbreaker - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-cyan-print-windbreaker"
+  },
+  {
+   "id": "mu-59",
+   "photos": [
+    "p584",
+    "p585"
+   ],
+   "title": "Manchester United Purple Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Purple full-zip track jacket with white shoulder panels and three stripes, sold with the matching purple tracksuit bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Purple Full-Zip Tracksuit - 01.jpg",
+    "Manchester United Purple Full-Zip Tracksuit - 02.jpg"
+   ],
+   "handle": "manchester-united-purple-full-zip-tracksuit"
+  },
+  {
+   "id": "mu-60",
+   "photos": [
+    "p586"
+   ],
+   "title": "2026/27 Manchester United Training Jacket Set",
+   "tier": "fullZip",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-manchester-united-training-jacket-set",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2026-27 Manchester United Training Jacket Set - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-training-jacket-set"
+  },
+  {
+   "id": "mu-61",
+   "photos": [
+    "p587"
+   ],
+   "title": "Manchester United Black and Red Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Black full-zip track jacket with red three-stripe detailing on the shoulders, sold with the matching black and red bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Red Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-red-full-zip-tracksuit"
+  },
+  {
+   "id": "mu-62",
+   "photos": [
+    "p588"
+   ],
+   "title": "Manchester United Blue and Red Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Royal blue full-zip track jacket with red stripes across the shoulders, sold with the matching blue and red bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Blue and Red Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "manchester-united-blue-and-red-full-zip-tracksuit"
+  },
+  {
+   "id": "mu-63",
+   "photos": [
+    "p589"
+   ],
+   "title": "Manchester United Black and White Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Black full-zip track jacket with red and white shoulder stripes, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and White Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-white-full-zip-tracksuit"
+  },
+  {
+   "id": "mu-64",
+   "photos": [
+    "p590"
+   ],
+   "title": "Manchester United Red and Black Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Red full-zip track jacket with black shoulder stripes, sold with the matching black and red bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red and Black Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "manchester-united-red-and-black-full-zip-tracksuit"
+  },
+  {
+   "id": "mu-65",
+   "photos": [
+    "p591"
+   ],
+   "title": "Manchester United White Tezos Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "White half-zip training top with black sleeves and red side panels and the Tezos sponsor, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White Tezos Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-white-tezos-half-zip-training-set"
+  },
+  {
+   "id": "mu-66",
+   "photos": [
+    "p592"
+   ],
+   "title": "Manchester United Red Tezos Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Red half-zip training top with black side panels and the Tezos sponsor, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "matchHandle": "manchester-united-2024-25-half-zip-training-top-tezos",
+    "why": "the live listing is the same top sold on its own; this one comes with the matching bottoms",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "Manchester United Red Tezos Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-red-tezos-half-zip-training-set"
+  },
+  {
+   "id": "mu-67",
+   "photos": [
+    "p593"
+   ],
+   "title": "Manchester United Purple Tezos Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Purple half-zip training top with white side panels and the Tezos sponsor, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Purple Tezos Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-purple-tezos-half-zip-training-set"
+  },
+  {
+   "id": "mu-68",
+   "photos": [
+    "p594"
+   ],
+   "title": "Manchester United Red Training Set",
+   "tier": "trainingSet",
+   "blurb": "Red training shirt with black sleeve and side panels, sold with the matching black and red shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-red-training-set"
+  },
+  {
+   "id": "mu-69",
+   "photos": [
+    "p595"
+   ],
+   "title": "Manchester United Black and Red Training Set",
+   "tier": "trainingSet",
+   "blurb": "Black training shirt with red shoulder stripes and side panels, sold with the matching black and red shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Red Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-red-training-set"
+  },
+  {
+   "id": "mu-70",
+   "photos": [
+    "p596"
+   ],
+   "title": "Manchester United White Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "White sleeveless training vest with red and black side panels, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White Training Vest Set - 01.jpg"
+   ],
+   "handle": "manchester-united-white-training-vest-set"
+  },
+  {
+   "id": "mu-71",
+   "photos": [
+    "p597"
+   ],
+   "title": "Manchester United Black and Blue Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Black sleeveless training vest with blue side panels, sold with the matching black shorts with yellow stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Blue Training Vest Set - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-blue-training-vest-set"
+  },
+  {
+   "id": "mu-72",
+   "photos": [
+    "p598"
+   ],
+   "title": "Manchester United Red Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Red sleeveless training vest with white piping and black side panels, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red Training Vest Set - 01.jpg"
+   ],
+   "handle": "manchester-united-red-training-vest-set"
+  },
+  {
+   "id": "mu-73",
+   "photos": [
+    "p599"
+   ],
+   "title": "Manchester United Black and Yellow Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Black sleeveless training vest with blue side panels and yellow trim, sold with the matching black and blue shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Yellow Training Vest Set - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-yellow-training-vest-set"
+  },
+  {
+   "id": "mu-74",
+   "photos": [
+    "p600"
+   ],
+   "title": "Manchester United White and Red Training Set",
+   "tier": "trainingSet",
+   "blurb": "White training shirt with black shoulder stripes and red side panels, sold with the matching black and red shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White and Red Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-white-and-red-training-set"
+  },
+  {
+   "id": "mu-75",
+   "photos": [
+    "p601"
+   ],
+   "title": "Manchester United Black and Yellow Training Set",
+   "tier": "trainingSet",
+   "blurb": "Black training shirt with yellow shoulder stripes and blue side panels, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Yellow Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-yellow-training-set"
+  },
+  {
+   "id": "mu-76",
+   "photos": [
+    "p602"
+   ],
+   "title": "Manchester United Purple Training Set",
+   "tier": "trainingSet",
+   "blurb": "Purple training shirt with white and black side panels, sold with the matching black and purple shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Purple Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-purple-training-set"
+  },
+  {
+   "id": "mu-77",
+   "photos": [
+    "p603"
+   ],
+   "title": "Manchester United Black Originals Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Black sleeveless vest with a red ribbed collar and the trefoil badge, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black Originals Training Vest Set - 01.jpg"
+   ],
+   "handle": "manchester-united-black-originals-training-vest-set"
+  },
+  {
+   "id": "mu-78",
+   "photos": [
+    "p604"
+   ],
+   "title": "Manchester United Cream Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Cream pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Cream Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-cream-originals-hoodie"
+  },
+  {
+   "id": "mu-79",
+   "photos": [
+    "p605"
+   ],
+   "title": "Manchester United Navy Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Navy pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Navy Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-navy-originals-hoodie"
+  },
+  {
+   "id": "mu-80",
+   "photos": [
+    "p606"
+   ],
+   "title": "Manchester United Blue Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Blue pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Blue Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-blue-originals-hoodie"
+  },
+  {
+   "id": "mu-81",
+   "photos": [
+    "p607"
+   ],
+   "title": "Manchester United Teal Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Teal pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Teal Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-teal-originals-hoodie"
+  },
+  {
+   "id": "mu-82",
+   "photos": [
+    "p608"
+   ],
+   "title": "Manchester United Grey Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Grey pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Grey Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-grey-originals-hoodie"
+  },
+  {
+   "id": "mu-83",
+   "photos": [
+    "p609"
+   ],
+   "title": "Manchester United White Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "White pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-white-originals-hoodie"
+  },
+  {
+   "id": "mu-84",
+   "photos": [
+    "p610"
+   ],
+   "title": "Manchester United Red Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Red pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-red-originals-hoodie"
+  },
+  {
+   "id": "mu-85",
+   "photos": [
+    "p611"
+   ],
+   "title": "Manchester United Black Originals Hoodie",
+   "tier": "hoodie",
+   "blurb": "Black pullover hoodie with the gold trefoil badge on one side of the chest and the club crest on the other, with a kangaroo pocket.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black Originals Hoodie - 01.jpg"
+   ],
+   "handle": "manchester-united-black-originals-hoodie"
+  },
+  {
+   "id": "mu-86",
+   "photos": [
+    "p613",
+    "p612",
+    "p614"
+   ],
+   "title": "1998/99 Manchester United Sharp Retro Training Top",
+   "tier": "retroTop",
+   "blurb": "Black quarter-zip retro training top with red raglan sleeves, the patterned Umbro sleeve taping and the SHARP sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1998-99 Manchester United Sharp Retro Training Top - 01.jpg",
+    "1998-99 Manchester United Sharp Retro Training Top - 02.jpg",
+    "1998-99 Manchester United Sharp Retro Training Top - 03.jpg"
+   ],
+   "handle": "1998-99-manchester-united-sharp-retro-training-top"
+  },
+  {
+   "id": "mu-87",
+   "photos": [
+    "p617",
+    "p616",
+    "p615"
+   ],
+   "title": "Manchester United Black Vodafone Retro Training Top",
+   "tier": "retroTop",
+   "seasonConfidence": "unknown",
+   "blurb": "Black Nike retro training top with white side panels, a stand collar and the Vodafone sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black Vodafone Retro Training Top - 01.jpg",
+    "Manchester United Black Vodafone Retro Training Top - 02.jpg",
+    "Manchester United Black Vodafone Retro Training Top - 03.jpg"
+   ],
+   "handle": "manchester-united-black-vodafone-retro-training-top"
+  },
+  {
+   "id": "mu-88",
+   "photos": [
+    "p618",
+    "p619",
+    "p620"
+   ],
+   "title": "Manchester United Red Vodafone Retro Training Top",
+   "tier": "retroTop",
+   "seasonConfidence": "unknown",
+   "blurb": "Red Nike retro training top with black side panels, a stand collar and the Vodafone sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red Vodafone Retro Training Top - 01.jpg",
+    "Manchester United Red Vodafone Retro Training Top - 02.jpg",
+    "Manchester United Red Vodafone Retro Training Top - 03.jpg"
+   ],
+   "handle": "manchester-united-red-vodafone-retro-training-top"
+  },
+  {
+   "id": "mu-89",
+   "photos": [
+    "p621"
+   ],
+   "title": "Manchester United Red and Orange Home Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Red home shirt with tonal orange side panels and white shoulder stripes, carrying the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "matchHandle": "manchester-united-2025-26-home-jersey-snapdragon",
+    "why": "the store already carries two 2025/26 home listings; this shirt has orange side panels neither of them shows",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "Manchester United Red and Orange Home Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-united-red-and-orange-home-fan-version"
+  },
+  {
+   "id": "mu-90",
+   "photos": [
+    "p622"
+   ],
+   "title": "Manchester United Purple Originals Fan Version",
+   "tier": "fan",
+   "blurb": "Purple originals shirt with a white ribbed collar, green shoulder tipping, the trefoil badge and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Purple Originals Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-united-purple-originals-fan-version"
+  },
+  {
+   "id": "mu-91",
+   "photos": [
+    "p623"
+   ],
+   "title": "Manchester United Red and Black Pre-Match Shirt",
+   "tier": "fan",
+   "blurb": "Red pre-match shirt with black sleeves and side panels and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red and Black Pre-Match Shirt - 01.jpg"
+   ],
+   "handle": "manchester-united-red-and-black-pre-match-shirt"
+  },
+  {
+   "id": "mu-92",
+   "photos": [
+    "p624"
+   ],
+   "title": "2025/26 Manchester United Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Off-white long sleeve away shirt with black and maroon sleeve stripes and the maroon Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "mu-93",
+   "photos": [
+    "p625"
+   ],
+   "title": "2025/26 Manchester United Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Red long sleeve home shirt with black and white shoulder stripes and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "mu-94",
+   "photos": [
+    "p626"
+   ],
+   "title": "2026/27 Manchester United Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-manchester-united-away-long-sleeve-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Manchester United Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "mu-95",
+   "photos": [
+    "p627"
+   ],
+   "title": "Manchester United Black Goalkeeper Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black goalkeeper shirt with a grey shadow print across the body and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-united-black-goalkeeper-fan-version"
+  },
+  {
+   "id": "mu-96",
+   "photos": [
+    "p628"
+   ],
+   "title": "2025/26 Manchester United Third Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-2025-26-third-long-sleeve-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Manchester United Third Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-third-long-sleeve-fan-version"
+  },
+  {
+   "id": "mu-97",
+   "photos": [
+    "p629"
+   ],
+   "title": "Manchester United Red Originals Fan Version",
+   "tier": "fan",
+   "blurb": "Plain red originals shirt with white shoulder stripes, a white ribbed collar and the trefoil badge, worn without a sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red Originals Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-united-red-originals-fan-version"
+  },
+  {
+   "id": "mu-98",
+   "photos": [
+    "p630"
+   ],
+   "title": "2026/27 Manchester United Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Red long sleeve home shirt with white shoulder stripes, a red and white collar and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester United Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "mu-99",
+   "photos": [
+    "p631"
+   ],
+   "title": "2026/27 Manchester United Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-manchester-united-home-womens-shirt",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Manchester United Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-home-fan-version"
+  },
+  {
+   "id": "mu-100",
+   "photos": [
+    "p632"
+   ],
+   "title": "2026/27 Manchester United Away Fan Version",
+   "tier": "fan",
+   "blurb": "Royal blue away shirt with red shoulder stripes, a red and white v-collar and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "matchHandle": "manchester-united-away-26-27",
+    "why": "the live Away 26/27 listing is a legacy single-size R1350 entry with one folded photograph; this is the same kit as a proper fan version",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Manchester United Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-away-fan-version"
+  },
+  {
+   "id": "mu-101",
+   "photos": [
+    "p633"
+   ],
+   "title": "2025/26 Manchester United Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-2025-26-home-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Manchester United Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-home-fan-version"
+  },
+  {
+   "id": "mu-102",
+   "photos": [
+    "p635"
+   ],
+   "title": "Manchester United Mint Green Originals Fan Version",
+   "tier": "fan",
+   "blurb": "Mint green originals shirt with a white ribbed collar, the trefoil badge and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Mint Green Originals Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-united-mint-green-originals-fan-version"
+  },
+  {
+   "id": "mu-103",
+   "photos": [
+    "p636"
+   ],
+   "title": "2024/25 Manchester United Third Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-2024-25-third-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2024-25 Manchester United Third Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-manchester-united-third-fan-version"
+  },
+  {
+   "id": "mu-104",
+   "photos": [
+    "p637"
+   ],
+   "title": "2025/26 Manchester United Third Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-united-2025-26-third-jersey-mbeumo-19",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2025-26 Manchester United Third Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-third-fan-version"
+  },
+  {
+   "id": "mu-105",
+   "photos": [
+    "p638"
+   ],
+   "title": "2024/25 Manchester United Third Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "White long sleeve third shirt with the lilac geometric print and navy shoulder stripes, carrying the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Manchester United Third Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-manchester-united-third-long-sleeve-fan-version"
+  },
+  {
+   "id": "mu-106",
+   "photos": [
+    "p639"
+   ],
+   "title": "Manchester United Blue Checkerboard Originals Fan Version",
+   "tier": "fan",
+   "blurb": "Blue and white checkerboard originals shirt with a black collar, gold trim and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Blue Checkerboard Originals Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-united-blue-checkerboard-originals-fan-version"
+  },
+  {
+   "id": "mu-107",
+   "photos": [
+    "p640"
+   ],
+   "title": "Manchester United Paint Print Pre-Match Shirt",
+   "tier": "fan",
+   "blurb": "Pre-match shirt covered in a blue, cream and black paint-splatter print with light blue shoulder stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Paint Print Pre-Match Shirt - 01.jpg"
+   ],
+   "handle": "manchester-united-paint-print-pre-match-shirt"
+  },
+  {
+   "id": "mu-108",
+   "photos": [
+    "p641"
+   ],
+   "title": "2025/26 Manchester United Away Fan Version",
+   "tier": "fan",
+   "blurb": "Off-white away shirt with black and maroon collar and sleeve trim and the maroon Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-away-fan-version"
+  },
+  {
+   "id": "mu-109",
+   "photos": [
+    "p642"
+   ],
+   "title": "Manchester United Navy Third Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy shirt with a polo collar, a tonal diamond print and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Navy Third Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-united-navy-third-fan-version"
+  },
+  {
+   "id": "mu-110",
+   "photos": [
+    "p660"
+   ],
+   "title": "Manchester United White Diamond Pre-Match Shirt",
+   "tier": "fan",
+   "blurb": "White pre-match shirt with a black and red harlequin diamond print across the chest and shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United White Diamond Pre-Match Shirt - 01.jpg"
+   ],
+   "handle": "manchester-united-white-diamond-pre-match-shirt"
+  },
+  {
+   "id": "mu-111",
+   "photos": [
+    "p661"
+   ],
+   "title": "Manchester United Black Diamond Pre-Match Shirt",
+   "tier": "fan",
+   "blurb": "Black pre-match shirt with a red and white harlequin diamond print across the chest and shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black Diamond Pre-Match Shirt - 01.jpg"
+   ],
+   "handle": "manchester-united-black-diamond-pre-match-shirt"
+  },
+  {
+   "id": "mu-112",
+   "photos": [
+    "p643"
+   ],
+   "title": "2025/26 Manchester United Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Off-white shirt with black and maroon trim and matching shorts, a full away kit for younger supporters sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-away-kids-kit"
+  },
+  {
+   "id": "mu-113",
+   "photos": [
+    "p644",
+    "p634"
+   ],
+   "title": "2025/26 Manchester United Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Red home shirt with black and white shoulder stripes and matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Home Kids Kit - 01.jpg",
+    "2025-26 Manchester United Home Kids Kit - 02.jpg"
+   ],
+   "handle": "2025-26-manchester-united-home-kids-kit"
+  },
+  {
+   "id": "mu-114",
+   "photos": [
+    "p645"
+   ],
+   "title": "2026/27 Manchester United Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Royal blue shirt with red shoulder stripes and matching blue shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester United Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-away-kids-kit"
+  },
+  {
+   "id": "mu-115",
+   "photos": [
+    "p646"
+   ],
+   "title": "2026/27 Manchester United Home Kids Kit",
+   "tier": "kids",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-manchester-united-home-kids-kit",
+    "checkedBy": "hash",
+    "dist": 1
+   },
+   "files": [
+    "2026-27 Manchester United Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-home-kids-kit"
+  },
+  {
+   "id": "mu-116",
+   "photos": [
+    "p647"
+   ],
+   "title": "2026/27 Manchester United Home Player Version",
+   "tier": "player",
+   "blurb": "Red home shirt in the tighter player cut with white shoulder stripes and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester United Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-home-player-version"
+  },
+  {
+   "id": "mu-117",
+   "photos": [
+    "p648"
+   ],
+   "title": "2026/27 Manchester United Away Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Royal blue long sleeve away shirt in the player cut with red sleeve stripes and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester United Away Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-away-long-sleeve-player-version"
+  },
+  {
+   "id": "mu-118",
+   "photos": [
+    "p649"
+   ],
+   "title": "2025/26 Manchester United Away Player Version",
+   "tier": "player",
+   "blurb": "Off-white away shirt in the player cut with black and maroon trim and the maroon Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-away-player-version"
+  },
+  {
+   "id": "mu-119",
+   "photos": [
+    "p650"
+   ],
+   "title": "2026/27 Manchester United Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-manchester-united-home-long-sleeve-player-version",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2026-27 Manchester United Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-home-long-sleeve-player-version"
+  },
+  {
+   "id": "mu-120",
+   "photos": [
+    "p651"
+   ],
+   "title": "2024/25 Manchester United Third Player Version",
+   "tier": "player",
+   "blurb": "White third shirt in the player cut with the lilac geometric print and navy shoulder stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Manchester United Third Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-manchester-united-third-player-version"
+  },
+  {
+   "id": "mu-121",
+   "photos": [
+    "p652"
+   ],
+   "title": "2025/26 Manchester United Home Player Version",
+   "tier": "player",
+   "blurb": "Red home shirt in the player cut with a black collar, black shoulder stripes and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-home-player-version"
+  },
+  {
+   "id": "mu-122",
+   "photos": [
+    "p653"
+   ],
+   "title": "2026/27 Manchester United Away Player Version",
+   "tier": "player",
+   "blurb": "Royal blue away shirt in the player cut with red shoulder stripes and a red and white collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester United Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-united-away-player-version"
+  },
+  {
+   "id": "mu-123",
+   "photos": [
+    "p654"
+   ],
+   "title": "2025/26 Manchester United Third Player Version",
+   "tier": "player",
+   "blurb": "Black third shirt in the player cut with yellow shoulder stripes, the shield crest and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Third Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-third-player-version"
+  },
+  {
+   "id": "mu-124",
+   "photos": [
+    "p655"
+   ],
+   "title": "Manchester United Navy Third Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy shirt in the player cut with a polo collar, a tonal diamond print and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Navy Third Player Version - 01.jpg"
+   ],
+   "handle": "manchester-united-navy-third-player-version"
+  },
+  {
+   "id": "mu-125",
+   "photos": [
+    "p656"
+   ],
+   "title": "2024/25 Manchester United Third Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "White long sleeve third shirt in the player cut with the lilac print and navy shoulder stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Manchester United Third Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-manchester-united-third-long-sleeve-player-version"
+  },
+  {
+   "id": "mu-126",
+   "photos": [
+    "p657",
+    "p658"
+   ],
+   "title": "Manchester United Blue Floral Originals Player Version",
+   "tier": "player",
+   "blurb": "Royal blue originals shirt with embroidered roses across the chest and shoulders, red trim and the Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Blue Floral Originals Player Version - 01.jpg",
+    "Manchester United Blue Floral Originals Player Version - 02.jpg"
+   ],
+   "handle": "manchester-united-blue-floral-originals-player-version"
+  },
+  {
+   "id": "mu-127",
+   "photos": [
+    "p659"
+   ],
+   "title": "2025/26 Manchester United Away Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Off-white long sleeve away shirt in the player cut with maroon collar trim and the maroon Snapdragon sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester United Away Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-united-away-long-sleeve-player-version"
+  },
+  {
+   "id": "mu-128",
+   "photos": [
+    "p662"
+   ],
+   "title": "Manchester United Black and Yellow Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Black full-zip track jacket with yellow shoulder stripes and blue sleeve blocks, sold with the matching black and yellow bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Yellow Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-yellow-full-zip-tracksuit"
+  },
+  {
+   "id": "mu-129",
+   "photos": [
+    "p663"
+   ],
+   "title": "Manchester United Red and Black Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Red half-zip training top with black sleeve and side panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Red and Black Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-united-red-and-black-half-zip-training-set"
+  },
+  {
+   "id": "mu-130",
+   "photos": [
+    "p664"
+   ],
+   "title": "Manchester United Black and Maroon Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Black sleeveless training vest with maroon side panels, sold with the matching black and maroon shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester United Black and Maroon Training Vest Set - 01.jpg"
+   ],
+   "handle": "manchester-united-black-and-maroon-training-vest-set"
+  }
+ ]
+}
