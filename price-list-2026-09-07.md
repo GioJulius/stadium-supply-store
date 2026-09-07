@@ -94,14 +94,37 @@ a half-zip mistyped as a training set at R600 → R850.
 **F1 was left alone.** Its outerwear sits at R1 200 as a tier of its own, set by
 the client in the 1 September batch, and the new list does not contradict it.
 
+## Settled later on 7 Sep, on the evidence of the photographs
+
+Applied by `scripts/apply-price-corrections-0907b.mjs`. Three named products,
+each identified by eye — not a rule. The next vest may well come with shorts.
+
+- **The two rugby training vests are R700** (`Ireland Rugby Training Vest`,
+  `New Zealand All Blacks Training Vest`). Both photographs show a vest on its
+  own, no shorts, so neither the R700 vest-and-shorts set nor anything else on
+  the list covered them. Their R600 was inherited from the rule this list
+  replaced — a vest set used to be R600 — so it had stopped standing for
+  anything. Owner's call: price them as adult rugby, the same flat R700 as a
+  rugby jersey, which is also the tier their S–5XL run belongs to.
+
+- **`Liverpool 2025/26 Training Jersey` is R500**, down from R600. The
+  photograph is a short-sleeve green adidas pre-match shirt sold on its own, and
+  **R600 is the long-sleeve fan price** — it matched nothing. Eleven standalone
+  pre-match and training shirts in the catalogue are now R500, among them
+  Liverpool's own `Pre-Match Shirt (Black Check)`. It survived the main
+  repricing because it predates it: it still carries the pre-August lineage's
+  `Size S-XL` and `Stadium Supply` tags.
+
+  Its `productType` is still `Soccer Fan Version` where the other ten say
+  `Fan Version`. That duplication is catalogue-wide and left alone here — it is
+  a taxonomy job, and it will matter when the navigation filters are built.
+
 ## Still open
 
 - **`Manchester United Away 26/27`** — a legacy single-size listing at R1 350
   that duplicates the proper fan version. It wants deleting, not repricing.
 - **`Stadium Supply Fan Jersey — Drop 20`** at R650 — an own-brand item the list
   does not cover.
-- **Two rugby training vests at R600.** The list prices a *vest and shorts set*
-  at R700; if these are vests on their own, they are not covered.
 - **The plain hooded windbreaker set** (`adidas Black Hooded Full-Zip Tracksuit`)
   is listed at the plain full-zip R850. The list prices a full windbreaker
   tracksuit at R1 200, but that line sits in the club section.
