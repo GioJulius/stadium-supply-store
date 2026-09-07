@@ -3,7 +3,8 @@ import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
 import { isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
-import { clubOf, isLongSleeve, kitKey, kitSlotOf, KIT_SLOT_LABELS, seasonOf, sortSizes, versionOf, VERSION_LABELS } from "@/lib/facets";
+import { isLongSleeve, kitKey, kitSlotOf, KIT_SLOT_LABELS, seasonOf, sortSizes, sportOf, teamOf, versionOf, VERSION_LABELS } from "@/lib/facets";
+import { SPORT_LABELS } from "@/lib/teams";
 import {
   BADGE_FEE_AMOUNT,
   BADGE_FEE_LABEL,
@@ -40,11 +41,15 @@ const NAME_MAX = 12;
  * than inventing a crumb.
  */
 function breadcrumb(product: Product): string[] {
-  const club = clubOf(product);
+  // The sport was a hardcoded "Football" until 8 Sep 2026, so a Springboks
+  // jersey read "Football › South Africa". It comes from the team now.
+  const team = teamOf(product);
   const season = seasonOf(product);
   const slot = kitSlotOf(product);
   const tail = [season, slot ? KIT_SLOT_LABELS[slot] : null].filter(Boolean).join(" ");
-  return ["Football", club, tail || null].filter((crumb): crumb is string => Boolean(crumb));
+  return [SPORT_LABELS[sportOf(product)], team?.label ?? null, tail || null].filter(
+    (crumb): crumb is string => Boolean(crumb)
+  );
 }
 
 /**

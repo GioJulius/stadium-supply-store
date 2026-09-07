@@ -1,9 +1,11 @@
 import { describe, expect, it } from "vitest";
 import type { Product, ProductVariant } from "@shared/commerce/types";
+import { isGroup, SHOP_MENU, type NavLeaf, type NavNode } from "./navigation";
+import { TEAMS_BY_SLUG } from "./teams";
 import {
   applyRail,
-  clubOf,
   collectFacets,
+  countryOf,
   EMPTY_RAIL,
   kitKey,
   kitSlotOf,
@@ -11,6 +13,8 @@ import {
   sizeRangeLabel,
   sizesInStock,
   sortSizes,
+  sportOf,
+  teamOf,
   versionOf,
 } from "./facets";
 
@@ -198,17 +202,86 @@ describe("sortSizes, kids ages", () => {
   });
 });
 
-describe("clubOf", () => {
-  it("names the club from the shop menu's own team list", () => {
-    expect(clubOf(product("Liverpool 2025/26 Third Jersey"))).toBe("Liverpool");
+describe("teamOf", () => {
+  it("names the team", () => {
+    expect(teamOf(product("Liverpool 2025/26 Third Jersey"))?.label).toBe("Liverpool");
   });
 
   it("prefers the longer match, so City is not answered with United", () => {
-    expect(clubOf(product("Manchester City 2025/26 Home Jersey"))).toBe("Manchester City");
-    expect(clubOf(product("Manchester United Away 26/27"))).toBe("Manchester United");
+    expect(teamOf(product("Manchester City 2025/26 Home Jersey"))?.label).toBe("Manchester City");
+    expect(teamOf(product("Manchester United Away 26/27"))?.label).toBe("Manchester United");
   });
 
-  it("returns null rather than inventing a crumb", () => {
-    expect(clubOf(product("Assorted Training Bib"))).toBeNull();
+  it("does not let Aston Villa answer for Aston Martin", () => {
+    expect(teamOf(product("2025/26 Aston Villa Away Player Version"))?.label).toBe("Aston Villa");
+    expect(teamOf(product("Aston Martin Aramco 2026 Team Track Jacket"))?.label).toBe("Aston Martin");
+  });
+
+  it("returns null for stock that belongs to no team", () => {
+    expect(teamOf(product("adidas Black Full-Zip Tracksuit"))).toBeNull();
+  });
+
+  // Two sides are called Chiefs and the store carries both. The football one is
+  // Kaizer Chiefs, listed without its first name; the rugby one always says so.
+  it("tells the two Chiefs apart", () => {
+    expect(teamOf(product("Chiefs 2026/27 Home Jersey"))?.slug).toBe("kaizer-chiefs");
+    expect(teamOf(product("Chiefs Home Rugby Jersey"))?.slug).toBe("chiefs-rugby");
+  });
+});
+
+describe("countryOf", () => {
+  it("answers for a national side", () => {
+    expect(countryOf(product("Brazil 2026 Home Fan Version"))?.label).toBe("Brazil");
+  });
+
+  it("does not call a Spanish club Spain", () => {
+    expect(countryOf(product("Real Madrid 2025/26 Home Jersey"))).toBeNull();
+    expect(teamOf(product("Real Madrid 2025/26 Home Jersey"))?.label).toBe("Real Madrid");
+  });
+});
+
+describe("sportOf", () => {
+  // productType describes the GARMENT, so neither of these says which code it
+  // belongs to. Only the team knows — which is why the registry exists.
+  it("reads the sport off the team when the garment cannot say", () => {
+    expect(sportOf(product("Scuderia Ferrari 2025 Team Hoodie"))).toBe("f1");
+    expect(sportOf(product("New Zealand All Blacks Track Jacket"))).toBe("rugby");
+  });
+
+  it("falls back to the wording for a national side that plays both", () => {
+    expect(sportOf(product("South Africa Springboks Kids Rugby Kit"))).toBe("rugby");
+    expect(sportOf(product("South Africa 2026 Home Fan Version"))).toBe("football");
+  });
+
+  it("defaults to football, so teamless stock is not hidden from every filter", () => {
+    expect(sportOf(product("adidas Black Full-Zip Tracksuit"))).toBe("football");
+  });
+});
+
+describe("the nav menu and the team registry", () => {
+  // Two lists of the same thing drift. The menu's team leaves carry a registry
+  // slug so a link can filter by team instead of by substring; if a slug here
+  // ever stops existing, the link silently filters on nothing.
+  it("resolves every team slug the menu names", () => {
+    const leaves = (function walk(nodes: NavNode[]): NavLeaf[] {
+      return nodes.flatMap(node => (isGroup(node) ? walk(node.children) : [node]));
+    })(SHOP_MENU.flatMap(section => section.children ?? []));
+
+    const named = leaves.filter(leaf => leaf.team);
+    expect(named.length).toBeGreaterThan(25);
+    expect(named.filter(leaf => !TEAMS_BY_SLUG.has(leaf.team!)).map(leaf => leaf.label)).toEqual([]);
+  });
+
+  // A leaf that names a team must find the same products by either route, or
+  // the menu promises a count the page does not deliver.
+  it("agrees with the registry on which team a leaf's own term names", () => {
+    const mismatched = (function walk(nodes: NavNode[]): NavLeaf[] {
+      return nodes.flatMap(node => (isGroup(node) ? walk(node.children) : [node]));
+    })(SHOP_MENU.flatMap(section => section.children ?? []))
+      .filter(leaf => leaf.team)
+      .filter(leaf => teamOf(product(leaf.q))?.slug !== leaf.team)
+      .map(leaf => `${leaf.label} (q="${leaf.q}")`);
+
+    expect(mismatched).toEqual([]);
   });
 });

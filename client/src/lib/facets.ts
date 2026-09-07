@@ -1,5 +1,6 @@
 import type { ProductSummary } from "@shared/commerce/types";
-import { isGroup, SHOP_MENU, type NavLeaf, type NavNode } from "./navigation";
+import { CANONICAL_TYPES } from "./catalog";
+import { TEAM_ENTRIES_BY_TERM_LENGTH, type Sport, type TeamEntry } from "./teams";
 
 /**
  * Facets for the shop filter rail.
@@ -34,8 +35,7 @@ function searchableText(product: ProductSummary): string {
  * both, because a retro shirt sold in fan spec is still shelved as a retro
  * and priced at the retro tier.
  */
-export function versionOf(product: ProductSummary): KitVersion | null {
-  const text = searchableText(product);
+function versionFrom(text: string): KitVersion | null {
   if (/\b(retro|vintage)\b/.test(text)) return "retro";
   if (/\bplayer\b/.test(text)) return "player";
   if (/\bfan\b/.test(text)) return "fan";
@@ -46,14 +46,56 @@ export function versionOf(product: ProductSummary): KitVersion | null {
  * Seasons are written several ways across the imports — "25/26", "2025/26",
  * "2025-26". All three normalise to the two-digit form the client uses when
  * they talk about stock.
+ *
+ * Read from the TITLE alone, not the haystack: a tag like "supplier-220065986"
+ * is a run of digits that a looser test would happily read a season out of.
  */
-export function seasonOf(product: ProductSummary): string | null {
-  const match = /\b(?:20)?(\d{2})\s*[\/-]\s*(?:20)?(\d{2})\b/.exec(product.title);
+function seasonFrom(title: string): string | null {
+  const match = /\b(?:20)?(\d{2})\s*[\/-]\s*(?:20)?(\d{2})\b/.exec(title);
   return match ? `${match[1]}/${match[2]}` : null;
 }
 
-export function kitSlotOf(product: ProductSummary): KitSlot | null {
-  const text = searchableText(product);
+/**
+ * The team a listing belongs to, by longest matching term. A term is only
+ * accepted once the entry's disqualifiers have been checked, which is what keeps
+ * Kaizer Chiefs and the Super Rugby Chiefs apart.
+ */
+function teamFrom(text: string): TeamEntry | null {
+  for (const { term, entry } of TEAM_ENTRIES_BY_TERM_LENGTH) {
+    if (!text.includes(term)) continue;
+    if (entry.not?.some(veto => text.includes(veto))) continue;
+    return entry;
+  }
+  return null;
+}
+
+/**
+ * Which sport a listing belongs to.
+ *
+ * The order matters, and the first rule is why the team registry exists at all:
+ * `productType` describes the GARMENT, so a Ferrari hoodie is a `Hoodie` and the
+ * Springboks kids kit is a `Kids Kit`, and neither says "motorsport" or "rugby"
+ * anywhere in its category. Only the team knows.
+ *
+ * National sides do not declare a sport — Ireland and Scotland are rugby in this
+ * catalogue today and could be football tomorrow — so they fall through to the
+ * garment and then to the wording, which is where "All Blacks" and "Wallabies"
+ * are caught on a track jacket that says nothing else about the code.
+ *
+ * Football is the default because it is the overwhelming bulk of the store, and
+ * because a plain adidas tracksuit belonging to no team is better over-included
+ * in the main sport than hidden from every filter.
+ */
+function sportFrom(text: string, team: TeamEntry | null, productType: string | null): Sport {
+  if (team?.sport) return team.sport;
+  if (productType?.startsWith("Rugby")) return "rugby";
+  if (productType?.startsWith("F1")) return "f1";
+  if (/\brugby\b|\ball blacks\b|\bwallabies\b|\bspringboks\b|\b7s\b/.test(text)) return "rugby";
+  if (/\bf1\b|\bformula\s*1\b|\bgrand prix\b/.test(text)) return "f1";
+  return "football";
+}
+
+function slotFrom(text: string): KitSlot | null {
   if (/\b(goalkeeper|keeper|\bgk\b)/.test(text)) return "goalkeeper";
   if (/\bfourth\b/.test(text)) return "fourth";
   if (/\bthird\b/.test(text)) return "third";
@@ -63,12 +105,83 @@ export function kitSlotOf(product: ProductSummary): KitSlot | null {
 }
 
 /**
+ * Everything derived about one listing, worked out once.
+ *
+ * The shop asks these questions a great many times: `collectFacets` walks the
+ * whole result set to decide what the rail can offer, `applyRail` walks it again
+ * to filter, and the nav menu counts every team leaf against the whole
+ * catalogue. At 1 249 products and five facets that was tolerable; the team
+ * registry that follows is ~60 substring tests per product, and paying that on
+ * every price-slider tick would not be.
+ *
+ * A `WeakMap` keyed on the product object is the right cache here because the
+ * tRPC query hands back stable object identities across renders: the facts
+ * survive every rail interaction and refill only when the catalogue actually
+ * refetches. No eviction policy, no cache key to get wrong, and nothing retained
+ * once the query data is replaced.
+ *
+ * `sizes` is shared rather than copied per call, so treat it as read-only —
+ * every caller today only reads it.
+ */
+export type ProductFacts = {
+  /** title + productType + tags, lowercased — the haystack the rules read. */
+  text: string;
+  version: KitVersion | null;
+  season: string | null;
+  slot: KitSlot | null;
+  sizes: string[];
+  price: number;
+  longSleeve: boolean;
+  team: TeamEntry | null;
+  sport: Sport;
+  /** The canonical category, or null if this listing carries an unknown one. */
+  type: string | null;
+};
+
+const FACTS = new WeakMap<ProductSummary, ProductFacts>();
+
+export function factsOf(product: ProductSummary): ProductFacts {
+  const cached = FACTS.get(product);
+  if (cached) return cached;
+
+  const text = searchableText(product);
+  const team = teamFrom(text);
+  const type = product.productType && CANONICAL_TYPES.has(product.productType) ? product.productType : null;
+  const facts: ProductFacts = {
+    text,
+    version: versionFrom(text),
+    season: seasonFrom(product.title),
+    slot: slotFrom(text),
+    sizes: sizesFrom(product),
+    price: Number(product.priceRange.min.amount),
+    longSleeve: /\blong\s*sleeve[sd]?\b/.test(text),
+    team,
+    sport: sportFrom(text, team, product.productType),
+    type,
+  };
+  FACTS.set(product, facts);
+  return facts;
+}
+
+export function versionOf(product: ProductSummary): KitVersion | null {
+  return factsOf(product).version;
+}
+
+export function seasonOf(product: ProductSummary): string | null {
+  return factsOf(product).season;
+}
+
+export function kitSlotOf(product: ProductSummary): KitSlot | null {
+  return factsOf(product).slot;
+}
+
+/**
  * Sizes a shopper can actually buy right now. Reading the variants rather
  * than the "Size XL" tag matters: the tag records what was imported, the
  * variant records what is still in stock, and the wireframe's promise is
  * "SIZE — in stock only".
  */
-export function sizesInStock(product: ProductSummary): string[] {
+function sizesFrom(product: ProductSummary): string[] {
   const found = new Set<string>();
   for (const variant of product.variants) {
     if (!variant.availableForSale) continue;
@@ -77,6 +190,10 @@ export function sizesInStock(product: ProductSummary): string[] {
     }
   }
   return sortSizes(Array.from(found));
+}
+
+export function sizesInStock(product: ProductSummary): string[] {
+  return factsOf(product).sizes;
 }
 
 /** "Small" / "2xl" / "XXL" all arrive from different imports; show one spelling. */
@@ -129,7 +246,7 @@ export function sizeRangeLabel(sizes: string[]): string {
 }
 
 export function priceOf(product: ProductSummary): number {
-  return Number(product.priceRange.min.amount);
+  return factsOf(product).price;
 }
 
 /**
@@ -156,36 +273,33 @@ export function kitKey(product: ProductSummary): string {
 }
 
 export function isLongSleeve(product: ProductSummary): boolean {
-  return /\blong\s*sleeve[sd]?\b/i.test(searchableText(product));
+  return factsOf(product).longSleeve;
+}
+
+/** The club, nation or constructor a listing belongs to. */
+export function teamOf(product: ProductSummary): TeamEntry | null {
+  return factsOf(product).team;
 }
 
 /**
- * The club or nation a listing belongs to, for the product page breadcrumb.
+ * The nation a listing belongs to, where it belongs to one.
  *
- * `productType` cannot answer this — it holds the pricing category ("Soccer Fan
- * Version"), not the badge. The shop menu already knows every team the store
- * stocks and the free-text term each one is found by, so the breadcrumb reuses
- * that list rather than starting a second, drifting one.
- *
- * The longest matching term wins, so "Manchester City" cannot be answered with
- * "Manchester United"'s entry, and a listing that matches nothing returns null
- * rather than inventing a crumb.
+ * A national side only — Real Madrid is Spanish and is not "Spain". The store
+ * treats the two as one filter dimension, so this is a reading of the team
+ * rather than a facet of its own.
  */
-const TEAM_SECTIONS = new Set(["Club Team", "National Colours"]);
-
-function leavesUnder(nodes: NavNode[]): NavLeaf[] {
-  return nodes.flatMap(node => (isGroup(node) ? leavesUnder(node.children) : [node]));
+export function countryOf(product: ProductSummary): TeamEntry | null {
+  const team = factsOf(product).team;
+  return team?.kind === "country" ? team : null;
 }
 
-const TEAM_LEAVES: NavLeaf[] = SHOP_MENU
-  .filter(section => TEAM_SECTIONS.has(section.label) && section.children)
-  .flatMap(section => leavesUnder(section.children!))
-  .sort((a, b) => b.q.length - a.q.length);
+export function sportOf(product: ProductSummary): Sport {
+  return factsOf(product).sport;
+}
 
-export function clubOf(product: ProductSummary): string | null {
-  const text = searchableText(product);
-  const hit = TEAM_LEAVES.find(leaf => text.includes(leaf.q.toLowerCase()));
-  return hit ? hit.label : null;
+/** The canonical category, or null where a listing carries an unnormalised one. */
+export function productTypeOf(product: ProductSummary): string | null {
+  return factsOf(product).type;
 }
 
 export const VERSION_LABELS: Record<KitVersion, string> = {
@@ -221,17 +335,14 @@ export function collectFacets(products: ProductSummary[]): ShopFacets {
   let priceMax = 0;
 
   for (const product of products) {
-    const version = versionOf(product);
-    if (version) versions.add(version);
-    for (const size of sizesInStock(product)) sizes.add(size);
-    const season = seasonOf(product);
-    if (season) seasons.add(season);
-    const slot = kitSlotOf(product);
-    if (slot) slots.add(slot);
-    const price = priceOf(product);
-    if (Number.isFinite(price)) {
-      priceMin = Math.min(priceMin, price);
-      priceMax = Math.max(priceMax, price);
+    const facts = factsOf(product);
+    if (facts.version) versions.add(facts.version);
+    for (const size of facts.sizes) sizes.add(size);
+    if (facts.season) seasons.add(facts.season);
+    if (facts.slot) slots.add(facts.slot);
+    if (Number.isFinite(facts.price)) {
+      priceMin = Math.min(priceMin, facts.price);
+      priceMax = Math.max(priceMax, facts.price);
     }
   }
 
@@ -267,24 +378,21 @@ export function railIsActive(rail: RailState): boolean {
 
 export function applyRail(products: ProductSummary[], rail: RailState): ProductSummary[] {
   return products.filter(product => {
-    if (rail.version && versionOf(product) !== rail.version) return false;
+    const facts = factsOf(product);
 
-    if (rail.sizes.length) {
-      const available = sizesInStock(product);
-      if (!rail.sizes.some(size => available.includes(size))) return false;
-    }
+    if (rail.version && facts.version !== rail.version) return false;
+
+    if (rail.sizes.length && !rail.sizes.some(size => facts.sizes.includes(size))) return false;
 
     if (rail.season) {
-      const season = seasonOf(product);
-      if (rail.season === "unspecified" ? season !== null : season !== rail.season) return false;
+      if (rail.season === "unspecified" ? facts.season !== null : facts.season !== rail.season) return false;
     }
 
     if (rail.slot) {
-      const slot = kitSlotOf(product);
-      if (rail.slot === "unspecified" ? slot !== null : slot !== rail.slot) return false;
+      if (rail.slot === "unspecified" ? facts.slot !== null : facts.slot !== rail.slot) return false;
     }
 
-    if (rail.maxPrice !== null && priceOf(product) > rail.maxPrice) return false;
+    if (rail.maxPrice !== null && facts.price > rail.maxPrice) return false;
 
     return true;
   });
