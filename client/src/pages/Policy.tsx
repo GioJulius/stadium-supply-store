@@ -3,6 +3,7 @@ import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { POLICIES } from "@/lib/policies";
 import { WHATSAPP_URL } from "@/lib/storeInfo";
 import NotFound from "@/pages/NotFound";
+import { Link } from "wouter";
 
 /**
  * One page for returns, privacy and terms. They share a shape — a heading and a
@@ -28,6 +29,11 @@ export default function Policy({ slug }: { slug: string }) {
             <article key={section.heading} className="policy__section">
               <h2>{section.heading}</h2>
               {section.body.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+              {section.link && (
+                <Link href={section.link.href} className="policy__link">
+                  {section.link.label} <span aria-hidden="true">&#8599;</span>
+                </Link>
+              )}
             </article>
           ))}
           <a className="size-guide__whatsapp" href={WHATSAPP_URL} target="_blank" rel="noreferrer">

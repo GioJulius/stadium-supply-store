@@ -1,6 +1,7 @@
 import { SIZE_NOTES, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { X } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "wouter";
 
 /** The size notes on their own, for embedding in a page. */
 export function SizeGuideContent() {
@@ -52,6 +53,9 @@ export function SizeGuideDialog({ open, onClose }: { open: boolean; onClose: () 
           <button onClick={onClose} className="icon-button" aria-label="Close size guide"><X size={21} /></button>
         </div>
         <SizeGuideContent />
+        <Link href="/size-guide" className="size-guide-dialog__more" onClick={onClose}>
+          See the full measurements <span aria-hidden="true">&#8599;</span>
+        </Link>
       </div>
     </div>
   );

@@ -4,8 +4,8 @@
  * A store cannot launch without these: payment providers ask for them, and in
  * South Africa the ECT Act and the CPA give buyers rights that a shop has to
  * state plainly. Everything here is built from what the client has actually
- * told us — the flat R100 courier rate, The Courier Guy, the 24-hour supplier
- * order, the 10–15 business day lead time, the R50 printing and badge add-ons —
+ * told us — the flat R100 courier rate, The Courier Guy, the Friday 12:00
+ * weekly supplier batch, the 10–15 business day lead time, the R50 printing and badge add-ons —
  * and from the statutory positions those facts sit inside.
  *
  * Two deliberate silences. Nothing claims the kits are officially licensed
@@ -17,7 +17,9 @@
  * only they can make.
  */
 
-export type PolicySection = { heading: string; body: string[] };
+/** `link` renders under the paragraphs — used where a policy leans on another
+ *  page, such as the size guide the returns terms now turn on. */
+export type PolicySection = { heading: string; body: string[]; link?: { href: string; label: string } };
 
 export type Policy = {
   slug: string;
@@ -38,34 +40,42 @@ export const RETURNS: Policy = {
   titleTop: "If it is not",
   titleEm: "right.",
   intro:
-    "We want you in a kit you are happy with. Here is exactly where you stand if something is wrong, and what we need from you to fix it.",
+    "We order in one batch a week, so timing matters here more than at a shop that holds stock. This page says exactly when an order can still be stopped, where you stand on sizes, and what happens if a kit arrives faulty.",
   sections: [
     {
-      heading: "Changed your mind",
+      heading: "Orders go to our supplier every Friday at 12:00",
       body: [
-        "You may cancel an online order within 7 days of receiving it and send the item back for a refund of what you paid for the goods. This is your right under section 44 of the Electronic Communications and Transactions Act, and you do not need to give us a reason.",
-        "The kit must come back unworn, unwashed and with its tags still on. Return delivery is at your cost when you are simply changing your mind, and we refund the item once it reaches us and we have checked it.",
+        "Everything ordered during the week is placed with our supplier in one batch on Friday at 12:00. Until that cut-off your order has not been bought yet, so message us and we will cancel it and refund you in full, no reason needed.",
+        "After the cut-off the kit has been paid for and is on its way to us, and we cannot cancel it or pull it back out of the batch.",
       ],
+    },
+    {
+      heading: "Sizes are chosen by you",
+      body: [
+        "We order exactly the size you select at checkout, so a kit that fits differently to how you hoped is not something we can exchange or refund. Our kits are cut to an Asian sizing standard and run about a size small — please read the size guide before you order, and message us if you are between sizes. We would far rather answer a question than send you the wrong fit.",
+        "If you spot a mistake in your own order, tell us before Friday at 12:00 and we will change it.",
+      ],
+      link: { href: "/size-guide", label: "Read the size guide" },
     },
     {
       heading: "Faulty, damaged or not what you ordered",
       body: [
-        "If a kit arrives faulty, damaged or is not the item you ordered, that one is on us. Tell us within 7 days of delivery and we will arrange and pay for the collection, then replace it or refund you in full — your choice.",
-        "Under section 56 of the Consumer Protection Act you have 6 months from delivery to return goods that turn out to be defective. Fair wear, damage from washing against the care label, or a kit that simply does not fit are not defects.",
+        "If a kit arrives faulty, damaged, or is simply not the item you ordered, that one is on us. Message us as soon as it arrives with clear photographs or a short video showing the problem, and we will replace it or refund you — whichever you would rather.",
+        "Under section 56 of the Consumer Protection Act you have six months from delivery to return goods that turn out to be defective. Fair wear, damage from washing against the care label, and a kit that simply does not fit are not defects.",
+      ],
+    },
+    {
+      heading: "Your right to change your mind",
+      body: [
+        "South African law gives you one right we cannot sign away: under section 44 of the Electronic Communications and Transactions Act you may cancel an online purchase within 7 days of receiving it and send it back for a refund of what you paid for the goods.",
+        "The kit has to come back unworn, unwashed and with its tags on, and the return delivery is at your cost when nothing is wrong with it. This is separate from the Friday cut-off above: the cut-off is about stopping an order before it is bought, this is about sending a delivered parcel back.",
       ],
     },
     {
       heading: "Printed and personalised kits",
       body: [
-        "A shirt printed with your name, number or a competition badge is made to your instruction and cannot be resold, so it cannot be returned for a change of mind. Please check your spelling and number carefully before checkout.",
-        "This does not affect your rights if the kit is faulty, or if we print something other than what you asked for — in that case it is treated as our error and replaced.",
-      ],
-    },
-    {
-      heading: "Cancelling before it ships",
-      body: [
-        "We place your order with our supplier within 24 hours of your payment. If you reach us before that happens, we can usually cancel and refund you in full with nothing further to do.",
-        "After the supplier order is placed, the 7-day right above applies from the day your parcel arrives.",
+        "A shirt printed with your name, number or a competition badge is made to your instruction and cannot be resold, so it falls outside the change-of-mind right above. Please check your spelling and number carefully before you pay.",
+        "This does not affect anything if the kit is faulty, or if we print something other than what you asked for — that is our error and we replace it.",
       ],
     },
     {
@@ -155,7 +165,7 @@ export const TERMS: Policy = {
     {
       heading: "How long it takes",
       body: [
-        "We do not hold stock. Every piece is ordered from our supplier for you, within 24 hours of your payment. Stock usually reaches us in 10 to 15 business days, and your parcel goes out the same week it lands.",
+        "We do not hold stock. Every piece is ordered from our supplier for you, in one batch placed every Friday at 12:00. Stock usually reaches us in 10 to 15 business days from that order, and your parcel goes out the same week it lands.",
         "Those timings are our honest expectation based on how the route normally runs, not a guarantee. International shipping and customs can move them. If your order is running late we will tell you rather than leave you guessing.",
       ],
     },
@@ -175,7 +185,7 @@ export const TERMS: Policy = {
     {
       heading: "Returns",
       body: [
-        "Your cancellation and refund rights are set out in full on our returns page, including the 7-day cooling-off period and what happens if a kit arrives faulty.",
+        "Your cancellation and refund rights are set out in full on our returns page, including the Friday cut-off, the 7-day cooling-off period and what happens if a kit arrives faulty.",
       ],
     },
     {

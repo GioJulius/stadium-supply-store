@@ -78,6 +78,15 @@ function vitePluginManusDebugCollector(): Plugin {
   return {
     name: "manus-debug-collector",
 
+    /**
+     * Dev only. The NODE_ENV check below is not enough on its own: `vite build`
+     * does not set NODE_ENV=production by itself, so the collector's <script>
+     * was being injected into the built index.html while prerender-seo deleted
+     * the file it points at - a 404 on every production page load. `apply`
+     * settles it at the plugin level, whatever the environment says.
+     */
+    apply: "serve",
+
     transformIndexHtml(html) {
       if (process.env.NODE_ENV === "production") {
         return html;
