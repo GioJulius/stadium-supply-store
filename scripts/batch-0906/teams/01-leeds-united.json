@@ -1,0 +1,138 @@
+{
+ "team": "Leeds United",
+ "slug": "leeds-united",
+ "status": "imported",
+ "block": {
+  "from": "p1",
+  "to": "p16",
+  "count": 8
+ },
+ "notes": {
+  "albums": "Five albums: fan version (4), kids set (1), retro (1), players version (1), and a second kids set at 09:11 that arrived inside Ajax's block.",
+  "newTeam": "Leeds United had NO products on the store before this batch.",
+  "crestBeatsTheClock": "p16 is stamped 09:11:40, in the middle of Ajax's run, but it carries the LEEDS UNITED AFC crest - it is the same kids kit as p5 at dHash distance 0, sent a second time. The kids-set album at 09:11 holds one Leeds kit and one Ajax kit, which no cumulative alignment can express, so captions.tsv carries an extra pair of team markers and the block reads p1-p16 with a hole in it. Assign by CREST first, then by the clock.",
+  "seasonReading": "Red Bull has been the shirt sponsor since 2024/25 and adidas the maker since 2020, which dates the modern shirts no further than that. Only the white home is safe to date, so the yellow, blue and striped shirts carry a colour instead. The Strongbow retro is the Nike era, roughly 1998-2000."
+ },
+ "garments": [
+  {
+   "id": "lee-01",
+   "photos": [
+    "p3"
+   ],
+   "title": "2025/26 Leeds United Home Fan Version",
+   "tier": "fan",
+   "blurb": "White home shirt with blue and yellow shoulder trim and the Red Bull sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Leeds United Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-leeds-united-home-fan-version"
+  },
+  {
+   "id": "lee-02",
+   "photos": [
+    "p1"
+   ],
+   "title": "Leeds United White and Blue Stripe Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with fine blue pinstripes, a blue and yellow collar and the Red Bull sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Leeds United White and Blue Stripe Fan Version - 01.jpg"
+   ],
+   "handle": "leeds-united-white-and-blue-stripe-fan-version"
+  },
+  {
+   "id": "lee-03",
+   "photos": [
+    "p4"
+   ],
+   "title": "Leeds United Blue Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Royal blue shirt with yellow shoulder flashes and the yellow Red Bull sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Leeds United Blue Fan Version - 01.jpg"
+   ],
+   "handle": "leeds-united-blue-fan-version"
+  },
+  {
+   "id": "lee-04",
+   "photos": [
+    "p2"
+   ],
+   "title": "Leeds United Yellow Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Yellow shirt with the tonal rose print, a navy collar and cuffs and the navy Red Bull sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Leeds United Yellow Fan Version - 01.jpg"
+   ],
+   "handle": "leeds-united-yellow-fan-version"
+  },
+  {
+   "id": "lee-05",
+   "photos": [
+    "p7"
+   ],
+   "title": "Leeds United Yellow Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Yellow shirt in the tighter player cut with the tonal rose print and the navy Red Bull sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Leeds United Yellow Player Version - 01.jpg"
+   ],
+   "handle": "leeds-united-yellow-player-version"
+  },
+  {
+   "id": "lee-06",
+   "photos": [
+    "p5",
+    "p16"
+   ],
+   "title": "Leeds United Yellow Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Yellow shirt with the tonal rose print and matching navy shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Leeds United Yellow Kids Kit - 01.jpg",
+    "Leeds United Yellow Kids Kit - 02.jpg"
+   ],
+   "handle": "leeds-united-yellow-kids-kit"
+  },
+  {
+   "id": "lee-07",
+   "photos": [
+    "p6"
+   ],
+   "title": "Leeds United Strongbow Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "White Nike retro shirt with a blue and yellow collar trim and the STRONGBOW sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Leeds United Strongbow Retro - 01.jpg"
+   ],
+   "handle": "leeds-united-strongbow-retro"
+  }
+ ]
+}

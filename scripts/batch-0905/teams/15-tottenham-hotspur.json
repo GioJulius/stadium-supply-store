@@ -1,0 +1,523 @@
+{
+ "team": "Tottenham Hotspur",
+ "slug": "tottenham-hotspur",
+ "status": "imported",
+ "block": {
+  "from": "p407",
+  "to": "p438",
+  "count": 32
+ },
+ "notes": {
+  "albums": "Seven albums: retro (6), half zip (2), full zip (1), fan version (12), training set (1), kids set (3), player version (7).",
+  "duplicatePhoto": "p428 (training set album) and p437 (player album) are the SAME FILE at dHash distance 0 - the navy BETMGM training set, sent twice. Both are claimed by the one listing. That is the third team in this batch where the client repeated a photograph across albums; check every block for it.",
+  "dedupe": "Only two Tottenham products were live. p436 matched by hash at distance 0; p438 matched by eye - it is the 2026/27 home shirt with the tonal chevron print, photographed on a mannequin here and on a hanger there. p433 looks similar in a thumbnail but has navy and grey shoulder panels, so it is the 2025/26 home and went in as new. Judge white shirts at full resolution.",
+  "leadImage": "The live 2024/25 player version leads on a SIZE CHART with the garment at index 1; promoted in scripts/lead-image-picks-0906.json. Same fault as the AC Milan block.",
+  "seasonReading": "Sponsor pins the era: HOLSTEN to 1995, MANSION 2006-2010, AIA 2010 onward; Umbro to 2006, Puma 2006-2012, Under Armour 2012-2017, Nike 2017 onward. The wave, purple and cream shirts cannot be dated from the garment and carry a colour instead."
+ },
+ "garments": [
+  {
+   "id": "tot-01",
+   "photos": [
+    "p407"
+   ],
+   "title": "1991/92 Tottenham Hotspur Away Retro",
+   "tier": "retro",
+   "blurb": "Navy Umbro away shirt with the purple tonal print and the HOLSTEN sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1991-92 Tottenham Hotspur Away Retro - 01.jpg"
+   ],
+   "handle": "1991-92-tottenham-hotspur-away-retro"
+  },
+  {
+   "id": "tot-02",
+   "photos": [
+    "p408"
+   ],
+   "title": "1992/94 Tottenham Hotspur Home Retro",
+   "tier": "retro",
+   "blurb": "White Umbro home shirt with a navy buttoned collar and the HOLSTEN sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1992-94 Tottenham Hotspur Home Retro - 01.jpg"
+   ],
+   "handle": "1992-94-tottenham-hotspur-home-retro"
+  },
+  {
+   "id": "tot-03",
+   "photos": [
+    "p409"
+   ],
+   "title": "2008/09 Tottenham Hotspur Home Retro",
+   "tier": "retro",
+   "blurb": "White Puma home shirt with a navy collar trim and the MANSION sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2008-09 Tottenham Hotspur Home Retro - 01.jpg"
+   ],
+   "handle": "2008-09-tottenham-hotspur-home-retro"
+  },
+  {
+   "id": "tot-04",
+   "photos": [
+    "p410"
+   ],
+   "title": "2009/10 Tottenham Hotspur Home Retro",
+   "tier": "retro",
+   "blurb": "White Puma home shirt with navy collar and cuffs and the MANSION.COM sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2009-10 Tottenham Hotspur Home Retro - 01.jpg"
+   ],
+   "handle": "2009-10-tottenham-hotspur-home-retro"
+  },
+  {
+   "id": "tot-05",
+   "photos": [
+    "p411"
+   ],
+   "title": "1990/91 Tottenham Hotspur Home Retro",
+   "tier": "retro",
+   "blurb": "White Umbro home shirt with the navy polo collar, gold trim and the HOLSTEN sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1990-91 Tottenham Hotspur Home Retro - 01.jpg"
+   ],
+   "handle": "1990-91-tottenham-hotspur-home-retro"
+  },
+  {
+   "id": "tot-06",
+   "photos": [
+    "p412"
+   ],
+   "title": "2010/11 Tottenham Hotspur Home Retro",
+   "tier": "retro",
+   "blurb": "White Puma home shirt with the yellow chevron shoulder trim and the MANSION.COM sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2010-11 Tottenham Hotspur Home Retro - 01.jpg"
+   ],
+   "handle": "2010-11-tottenham-hotspur-home-retro"
+  },
+  {
+   "id": "tot-07",
+   "photos": [
+    "p413"
+   ],
+   "title": "Tottenham Hotspur Grey Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Grey half-zip training top with navy sleeves and the BETMGM sponsor, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Tottenham Hotspur Grey Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "tottenham-hotspur-grey-half-zip-training-set"
+  },
+  {
+   "id": "tot-08",
+   "photos": [
+    "p414"
+   ],
+   "title": "Tottenham Hotspur Navy Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with grey shoulder panels and the BETMGM sponsor, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Tottenham Hotspur Navy Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "tottenham-hotspur-navy-half-zip-training-set"
+  },
+  {
+   "id": "tot-09",
+   "photos": [
+    "p415"
+   ],
+   "title": "Tottenham Hotspur Navy Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Navy full-zip track jacket with white shoulder blocks, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Tottenham Hotspur Navy Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "tottenham-hotspur-navy-full-zip-tracksuit"
+  },
+  {
+   "id": "tot-10",
+   "photos": [
+    "p416"
+   ],
+   "title": "2025/26 Tottenham Hotspur Home Fan Version",
+   "tier": "fan",
+   "blurb": "White home shirt with navy and grey shoulder panels and the red AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-home-fan-version"
+  },
+  {
+   "id": "tot-11",
+   "photos": [
+    "p417"
+   ],
+   "title": "2025/26 Tottenham Hotspur Away Fan Version",
+   "tier": "fan",
+   "blurb": "Black away shirt with the tonal grid print and the white AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-away-fan-version"
+  },
+  {
+   "id": "tot-12",
+   "photos": [
+    "p418"
+   ],
+   "title": "2025/26 Tottenham Hotspur Third Fan Version",
+   "tier": "fan",
+   "blurb": "Light blue third shirt with the tonal stripes, yellow collar trim and the navy AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Third Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-third-fan-version"
+  },
+  {
+   "id": "tot-13",
+   "photos": [
+    "p419"
+   ],
+   "title": "2025/26 Tottenham Hotspur Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve white home shirt with navy and grey sleeve panels and the red AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "tot-14",
+   "photos": [
+    "p420"
+   ],
+   "title": "2024/25 Tottenham Hotspur Third Fan Version",
+   "tier": "fan",
+   "blurb": "Yellow third shirt with a navy collar and the navy AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Tottenham Hotspur Third Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-tottenham-hotspur-third-fan-version"
+  },
+  {
+   "id": "tot-15",
+   "photos": [
+    "p421"
+   ],
+   "title": "Tottenham Hotspur Navy Wave Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy shirt with the blue and green wave print across the body and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Tottenham Hotspur Navy Wave Fan Version - 01.jpg"
+   ],
+   "handle": "tottenham-hotspur-navy-wave-fan-version"
+  },
+  {
+   "id": "tot-16",
+   "photos": [
+    "p422"
+   ],
+   "title": "2026/27 Tottenham Hotspur Home Fan Version",
+   "tier": "fan",
+   "blurb": "White home shirt with the tonal chevron print and the AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Tottenham Hotspur Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-tottenham-hotspur-home-fan-version"
+  },
+  {
+   "id": "tot-17",
+   "photos": [
+    "p423"
+   ],
+   "title": "2024/25 Tottenham Hotspur Home Fan Version",
+   "tier": "fan",
+   "blurb": "White home shirt with navy sleeves and the red AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Tottenham Hotspur Home Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-tottenham-hotspur-home-fan-version"
+  },
+  {
+   "id": "tot-18",
+   "photos": [
+    "p424"
+   ],
+   "title": "2024/25 Tottenham Hotspur Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve white home shirt with the red AIA sponsor and a purple sleeve badge.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Tottenham Hotspur Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-tottenham-hotspur-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "tot-19",
+   "photos": [
+    "p425"
+   ],
+   "title": "Tottenham Hotspur Purple Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Purple shirt with the tonal pinstripes and the white AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Tottenham Hotspur Purple Fan Version - 01.jpg"
+   ],
+   "handle": "tottenham-hotspur-purple-fan-version"
+  },
+  {
+   "id": "tot-20",
+   "photos": [
+    "p426"
+   ],
+   "title": "Tottenham Hotspur Cream Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Off-white shirt with navy side panels and the red AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Tottenham Hotspur Cream Fan Version - 01.jpg"
+   ],
+   "handle": "tottenham-hotspur-cream-fan-version"
+  },
+  {
+   "id": "tot-21",
+   "photos": [
+    "p427"
+   ],
+   "title": "2024/25 Tottenham Hotspur Away Fan Version",
+   "tier": "fan",
+   "blurb": "Black away shirt with white collar and sleeve piping and the white AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Tottenham Hotspur Away Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-tottenham-hotspur-away-fan-version"
+  },
+  {
+   "id": "tot-22",
+   "photos": [
+    "p428",
+    "p437"
+   ],
+   "title": "Tottenham Hotspur Navy BETMGM Training Set",
+   "tier": "trainingSet",
+   "blurb": "Navy training shirt with pale blue sleeves and the BETMGM sponsor, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Tottenham Hotspur Navy BETMGM Training Set - 01.jpg",
+    "Tottenham Hotspur Navy BETMGM Training Set - 02.jpg"
+   ],
+   "handle": "tottenham-hotspur-navy-betmgm-training-set"
+  },
+  {
+   "id": "tot-23",
+   "photos": [
+    "p429"
+   ],
+   "title": "2024/25 Tottenham Hotspur Third Kids Kit",
+   "tier": "kids",
+   "blurb": "Yellow shirt with a navy collar and matching yellow shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Tottenham Hotspur Third Kids Kit - 01.jpg"
+   ],
+   "handle": "2024-25-tottenham-hotspur-third-kids-kit"
+  },
+  {
+   "id": "tot-24",
+   "photos": [
+    "p430"
+   ],
+   "title": "2025/26 Tottenham Hotspur Home Kids Kit",
+   "tier": "kids",
+   "blurb": "White shirt with navy and grey shoulder panels and matching navy shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-home-kids-kit"
+  },
+  {
+   "id": "tot-25",
+   "photos": [
+    "p431"
+   ],
+   "title": "2025/26 Tottenham Hotspur Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Black shirt with the tonal grid print and matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-away-kids-kit"
+  },
+  {
+   "id": "tot-26",
+   "photos": [
+    "p432"
+   ],
+   "title": "2025/26 Tottenham Hotspur Third Player Version",
+   "tier": "player",
+   "blurb": "Light blue third shirt in the player cut with the tonal stripes and yellow collar trim.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Third Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-third-player-version"
+  },
+  {
+   "id": "tot-27",
+   "photos": [
+    "p433"
+   ],
+   "title": "2025/26 Tottenham Hotspur Home Player Version",
+   "tier": "player",
+   "blurb": "White home shirt in the player cut with navy and grey shoulder panels and the red AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-home-player-version"
+  },
+  {
+   "id": "tot-28",
+   "photos": [
+    "p434"
+   ],
+   "title": "2025/26 Tottenham Hotspur Away Player Version",
+   "tier": "player",
+   "blurb": "Black away shirt in the player cut with the tonal grid print and the white AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Tottenham Hotspur Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-tottenham-hotspur-away-player-version"
+  },
+  {
+   "id": "tot-29",
+   "photos": [
+    "p435"
+   ],
+   "title": "2024/25 Tottenham Hotspur Third Player Version",
+   "tier": "player",
+   "blurb": "Yellow third shirt in the player cut with a navy collar and the navy AIA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Tottenham Hotspur Third Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-tottenham-hotspur-third-player-version"
+  },
+  {
+   "id": "tot-30",
+   "photos": [
+    "p436"
+   ],
+   "title": "2024/25 Tottenham Hotspur Home Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2024-25-tottenham-hotspur-f-c-player-version",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "2024-25 Tottenham Hotspur Home Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-tottenham-hotspur-home-player-version"
+  },
+  {
+   "id": "tot-31",
+   "photos": [
+    "p438"
+   ],
+   "title": "2026/27 Tottenham Hotspur Home Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "2026-27-tottenham-hotspur-home-jersey-player-version",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Tottenham Hotspur Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-tottenham-hotspur-home-player-version"
+  }
+ ]
+}

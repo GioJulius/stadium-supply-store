@@ -18,8 +18,18 @@ const ENDPOINT = `https://${env.SHOPIFY_STORE_DOMAIN}/admin/api/2025-04/graphql.
 const TOKEN = env.SHOPIFY_ADMIN_API_ACCESS_TOKEN;
 const APPLY = process.argv.includes("--apply");
 
-/** handle -> zero-based index of the photo that should lead the card. */
-const PROMOTIONS = JSON.parse(readFileSync(new URL("./lead-image-picks.json", import.meta.url), "utf8"));
+/** handle -> zero-based index of the photo that should lead the card.
+ *
+ *  The picks file is positional and therefore NOT idempotent: once a run has
+ *  moved image 3 to the front, the indexes below it have shifted and re-running
+ *  the same file promotes the wrong photograph. So each pass gets its own file,
+ *  named for the day it was picked, and old files are never re-run.
+ *      node scripts/promote-lead-image.mjs --picks scripts/lead-image-picks-0906.json --apply
+ */
+const PICKS = process.argv.includes("--picks")
+  ? process.argv[process.argv.indexOf("--picks") + 1]
+  : "scripts/lead-image-picks.json";
+const PROMOTIONS = JSON.parse(readFileSync(PICKS, "utf8"));
 
 async function gql(query, variables = {}) {
   for (let attempt = 0; ; attempt++) {

@@ -1,0 +1,1103 @@
+{
+ "team": "Arsenal",
+ "slug": "arsenal",
+ "status": "imported",
+ "block": {
+  "from": "p439",
+  "to": "p506",
+  "count": 68
+ },
+ "notes": {
+  "albums": "Nine albums: retro (21), hoodies (5), windbreakers (3), full zip (2), half zip (3), vest and training sets (5), fan version (14), kids set (3), player version (12).",
+  "multiPhotoGarments": "p461 and p463 are the SAME FILE at dHash distance 0, sent twice inside the hoodie album; both are claimed by the live blue training hoodie. p501 is a collar close-up of the floral embroidered away shirt in p500.",
+  "dedupe": "dedupe-0905.py again found nothing; all seven matches were made by eye against a contact sheet of the 15 live Arsenal listings. Arsenal is the most heavily duplicated team so far - six of the fourteen fan-version photographs were already on the store.",
+  "tierSplit": "The live listings carry no tier in their titles and their photographs are the FAN cut, so the fan photograph was filed as listed and the matching player-album shirt created with Player Version in the title (2025/26 home, 2025/26 home long sleeve, 2025/26 away, 2024/25 home, 2026/27 away).",
+  "seasonReading": "Sponsor pins the era on the retros: JVC to 1999, Dreamcast 1999-2002, O2 2002-2006, Emirates 2006 onward; Nike 1994-2014, Puma 2014-2019, adidas 2019 onward. Inside the adidas Emirates years the training wear, goalkeeper and special-edition shirts cannot be dated from the garment, so those titles carry a colour and are marked seasonConfidence unknown."
+ },
+ "garments": [
+  {
+   "id": "ars-01",
+   "photos": [
+    "p439"
+   ],
+   "title": "1991/93 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "The bruised banana away shirt, yellow with the black and green zigzag print and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1991-93 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "1991-93-arsenal-away-retro"
+  },
+  {
+   "id": "ars-02",
+   "photos": [
+    "p440"
+   ],
+   "title": "2001/02 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Gold away shirt with navy sleeve trim and the SEGA sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2001-02 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "2001-02-arsenal-away-retro"
+  },
+  {
+   "id": "ars-03",
+   "photos": [
+    "p441"
+   ],
+   "title": "1996/97 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Yellow away shirt with navy sleeves, a buttoned collar and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1996-97 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "1996-97-arsenal-away-retro"
+  },
+  {
+   "id": "ars-04",
+   "photos": [
+    "p442"
+   ],
+   "title": "1994/96 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red home shirt with white sleeves, the navy and red shoulder trim and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1994-96 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "1994-96-arsenal-home-retro"
+  },
+  {
+   "id": "ars-05",
+   "photos": [
+    "p443"
+   ],
+   "title": "2014/15 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red Puma home shirt with white sleeves and the Fly Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2014-15 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "2014-15-arsenal-home-retro"
+  },
+  {
+   "id": "ars-06",
+   "photos": [
+    "p444"
+   ],
+   "title": "1988/90 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Yellow adidas away shirt with navy shoulders and collar and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1988-90 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "1988-90-arsenal-away-retro"
+  },
+  {
+   "id": "ars-07",
+   "photos": [
+    "p445"
+   ],
+   "title": "1995/96 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Two-tone blue away shirt with the lightning print, a buttoned collar and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1995-96 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "1995-96-arsenal-away-retro"
+  },
+  {
+   "id": "ars-08",
+   "photos": [
+    "p446"
+   ],
+   "title": "1997/98 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Yellow away shirt with the navy chest band and collar and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1997-98 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "1997-98-arsenal-away-retro"
+  },
+  {
+   "id": "ars-09",
+   "photos": [
+    "p447"
+   ],
+   "title": "1999/2000 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red home shirt with navy and white shoulder panels and the Dreamcast sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1999-2000 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "1999-2000-arsenal-home-retro"
+  },
+  {
+   "id": "ars-10",
+   "photos": [
+    "p448"
+   ],
+   "title": "2002/03 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Blue away shirt with the graded panel across the chest and the O2 sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2002-03 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "2002-03-arsenal-away-retro"
+  },
+  {
+   "id": "ars-11",
+   "photos": [
+    "p449"
+   ],
+   "title": "1990/92 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with white sleeves, the tonal box print and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1990-92 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "1990-92-arsenal-home-retro"
+  },
+  {
+   "id": "ars-12",
+   "photos": [
+    "p450"
+   ],
+   "title": "1994/95 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red home shirt with white sleeves, the tonal lightning print and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1994-95 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "1994-95-arsenal-home-retro"
+  },
+  {
+   "id": "ars-13",
+   "photos": [
+    "p451"
+   ],
+   "title": "2002/04 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red home shirt with white sleeves and the O2 sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2002-04 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "2002-04-arsenal-home-retro"
+  },
+  {
+   "id": "ars-14",
+   "photos": [
+    "p452"
+   ],
+   "title": "1998/99 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red home shirt with white sleeves, a navy and white collar and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1998-99 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "1998-99-arsenal-home-retro"
+  },
+  {
+   "id": "ars-15",
+   "photos": [
+    "p453"
+   ],
+   "title": "1996/97 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red home shirt with white sleeves, a white collar and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1996-97 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "1996-97-arsenal-home-retro"
+  },
+  {
+   "id": "ars-16",
+   "photos": [
+    "p454"
+   ],
+   "title": "1988/90 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red adidas home shirt with white sleeves, the three-stripe shoulder trim and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1988-90 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "1988-90-arsenal-home-retro"
+  },
+  {
+   "id": "ars-17",
+   "photos": [
+    "p455"
+   ],
+   "title": "1993/94 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Yellow adidas away shirt with the navy diagonal stripes and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1993-94 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "1993-94-arsenal-away-retro"
+  },
+  {
+   "id": "ars-18",
+   "photos": [
+    "p456"
+   ],
+   "title": "2004/05 Arsenal Home Retro",
+   "tier": "retro",
+   "blurb": "Red home shirt with white sleeves, the gold trim of the Invincibles era and the O2 sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2004-05 Arsenal Home Retro - 01.jpg"
+   ],
+   "handle": "2004-05-arsenal-home-retro"
+  },
+  {
+   "id": "ars-19",
+   "photos": [
+    "p457"
+   ],
+   "title": "2006 Arsenal Champions League Final Away Retro",
+   "tier": "retro",
+   "blurb": "Yellow away shirt with a black collar, the Paris 2006 final embroidery and the O2 sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2006 Arsenal Champions League Final Away Retro - 01.jpg"
+   ],
+   "handle": "2006-arsenal-champions-league-final-away-retro"
+  },
+  {
+   "id": "ars-20",
+   "photos": [
+    "p458"
+   ],
+   "title": "1994/95 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Navy away shirt with the tonal lightning print, a pale blue collar and the JVC sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1994-95 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "1994-95-arsenal-away-retro"
+  },
+  {
+   "id": "ars-21",
+   "photos": [
+    "p459"
+   ],
+   "title": "2003/04 Arsenal Away Retro",
+   "tier": "retro",
+   "blurb": "Yellow away shirt with a navy collar and cuffs and the O2 sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2003-04 Arsenal Away Retro - 01.jpg"
+   ],
+   "handle": "2003-04-arsenal-away-retro"
+  },
+  {
+   "id": "ars-22",
+   "photos": [
+    "p460"
+   ],
+   "title": "Arsenal Red Hooded Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Red pullover hoodie with white three-stripe detailing on the sleeves and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Red Hooded Sweatshirt - 01.jpg"
+   ],
+   "handle": "arsenal-red-hooded-sweatshirt"
+  },
+  {
+   "id": "ars-23",
+   "photos": [
+    "p461",
+    "p463"
+   ],
+   "title": "Arsenal 2024/25 Training Hoodie (blue)",
+   "tier": "hoodie",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "arsenal-2024-25-training-hoodie-blue",
+    "checkedBy": "hash",
+    "dist": 0
+   },
+   "files": [
+    "Arsenal 2024-25 Training Hoodie (blue) - 01.jpg",
+    "Arsenal 2024-25 Training Hoodie (blue) - 02.jpg"
+   ],
+   "handle": "arsenal-2024-25-training-hoodie-blue"
+  },
+  {
+   "id": "ars-24",
+   "photos": [
+    "p462"
+   ],
+   "title": "Arsenal Black Hooded Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Black pullover hoodie with white three-stripe detailing on the sleeves and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Black Hooded Sweatshirt - 01.jpg"
+   ],
+   "handle": "arsenal-black-hooded-sweatshirt"
+  },
+  {
+   "id": "ars-25",
+   "photos": [
+    "p464"
+   ],
+   "title": "Arsenal Red and White Crew Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Red crew-neck sweatshirt with white sleeves, blue shoulder blocks and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Red and White Crew Sweatshirt - 01.jpg"
+   ],
+   "handle": "arsenal-red-and-white-crew-sweatshirt"
+  },
+  {
+   "id": "ars-26",
+   "photos": [
+    "p465"
+   ],
+   "title": "Arsenal Teal Track Jacket",
+   "tier": "jacket",
+   "blurb": "Teal full-zip track jacket with a navy collar and sleeves and the Emirates sponsor on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Teal Track Jacket - 01.jpg"
+   ],
+   "handle": "arsenal-teal-track-jacket"
+  },
+  {
+   "id": "ars-27",
+   "photos": [
+    "p466"
+   ],
+   "title": "Arsenal White Track Jacket",
+   "tier": "jacket",
+   "blurb": "White full-zip track jacket with navy side panels and black three-stripe detailing on the shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal White Track Jacket - 01.jpg"
+   ],
+   "handle": "arsenal-white-track-jacket"
+  },
+  {
+   "id": "ars-28",
+   "photos": [
+    "p467"
+   ],
+   "title": "Arsenal Red and Navy Originals Track Jacket",
+   "tier": "jacket",
+   "blurb": "Red originals track jacket with navy raglan sleeves, white stripes and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Red and Navy Originals Track Jacket - 01.jpg"
+   ],
+   "handle": "arsenal-red-and-navy-originals-track-jacket"
+  },
+  {
+   "id": "ars-29",
+   "photos": [
+    "p468"
+   ],
+   "title": "Arsenal Burgundy Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Burgundy full-zip track jacket with white three-stripe sleeves, sold with the matching burgundy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Burgundy Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "arsenal-burgundy-full-zip-tracksuit"
+  },
+  {
+   "id": "ars-30",
+   "photos": [
+    "p469"
+   ],
+   "title": "Arsenal Navy Hooded Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Navy hooded full-zip jacket with the originals cannon on the chest, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Navy Hooded Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "arsenal-navy-hooded-full-zip-tracksuit"
+  },
+  {
+   "id": "ars-31",
+   "photos": [
+    "p470"
+   ],
+   "title": "Arsenal White and Red Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "White half-zip training top with red shoulders and black sleeves, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "uncertain",
+    "matchHandle": "arsenal-2024-25-half-zip-training-top",
+    "why": "the live listing is a white and red half-zip top sold on its own and with NAVY sleeves; this one has black sleeves and comes with bottoms",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "Arsenal White and Red Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "arsenal-white-and-red-half-zip-training-set"
+  },
+  {
+   "id": "ars-32",
+   "photos": [
+    "p471"
+   ],
+   "title": "Arsenal Navy and White Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "White half-zip training top with navy shoulders and sleeves, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Navy and White Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "arsenal-navy-and-white-half-zip-training-set"
+  },
+  {
+   "id": "ars-33",
+   "photos": [
+    "p472"
+   ],
+   "title": "Arsenal Navy and Teal Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with a teal chest panel, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Navy and Teal Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "arsenal-navy-and-teal-half-zip-training-set"
+  },
+  {
+   "id": "ars-34",
+   "photos": [
+    "p473"
+   ],
+   "title": "Arsenal Red and Green Print Training Set",
+   "tier": "trainingSet",
+   "blurb": "Training shirt in the red and green marbled print with the Emirates sponsor, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Red and Green Print Training Set - 01.jpg"
+   ],
+   "handle": "arsenal-red-and-green-print-training-set"
+  },
+  {
+   "id": "ars-35",
+   "photos": [
+    "p474"
+   ],
+   "title": "Arsenal Red and Green Print Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Sleeveless training vest in the red and green marbled print, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Red and Green Print Training Vest Set - 01.jpg"
+   ],
+   "handle": "arsenal-red-and-green-print-training-vest-set"
+  },
+  {
+   "id": "ars-36",
+   "photos": [
+    "p475"
+   ],
+   "title": "Arsenal Rainbow Print Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Sleeveless training vest in the multicoloured flame print, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Rainbow Print Training Vest Set - 01.jpg"
+   ],
+   "handle": "arsenal-rainbow-print-training-vest-set"
+  },
+  {
+   "id": "ars-37",
+   "photos": [
+    "p476"
+   ],
+   "title": "Arsenal Red and Grey Training Set",
+   "tier": "trainingSet",
+   "blurb": "Red training shirt with grey side panels and the Emirates sponsor, sold with the matching grey shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Red and Grey Training Set - 01.jpg"
+   ],
+   "handle": "arsenal-red-and-grey-training-set"
+  },
+  {
+   "id": "ars-38",
+   "photos": [
+    "p477"
+   ],
+   "title": "Arsenal White and Navy Training Set",
+   "tier": "trainingSet",
+   "blurb": "Pale blue training shirt with navy sleeves and side panels, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal White and Navy Training Set - 01.jpg"
+   ],
+   "handle": "arsenal-white-and-navy-training-set"
+  },
+  {
+   "id": "ars-39",
+   "photos": [
+    "p478"
+   ],
+   "title": "2025/26 Arsenal Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "arsenal-2025-26-away-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Arsenal Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-away-fan-version"
+  },
+  {
+   "id": "ars-40",
+   "photos": [
+    "p479"
+   ],
+   "title": "Arsenal Blue and Red Zigzag Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Blue shirt with the tonal zigzag print, red shoulder stripes and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Blue and Red Zigzag Fan Version - 01.jpg"
+   ],
+   "handle": "arsenal-blue-and-red-zigzag-fan-version"
+  },
+  {
+   "id": "ars-41",
+   "photos": [
+    "p480"
+   ],
+   "title": "2025/26 Arsenal Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "arsenal-2025-26-home-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Arsenal Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-home-fan-version"
+  },
+  {
+   "id": "ars-42",
+   "photos": [
+    "p481"
+   ],
+   "title": "Arsenal Blue and Red Zigzag Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve blue shirt with the tonal zigzag print, red sleeve stripes and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Blue and Red Zigzag Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "arsenal-blue-and-red-zigzag-long-sleeve-fan-version"
+  },
+  {
+   "id": "ars-43",
+   "photos": [
+    "p482"
+   ],
+   "title": "2025/26 Arsenal Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "arsenal-2025-26-away-long-sleeve-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Arsenal Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "ars-44",
+   "photos": [
+    "p483"
+   ],
+   "title": "2025/26 Arsenal Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "arsenal-2025-26-home-long-sleeve-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Arsenal Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "ars-45",
+   "photos": [
+    "p484"
+   ],
+   "title": "2024/25 Arsenal Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "arsenal-2024-25-home-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2024-25 Arsenal Home Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-arsenal-home-fan-version"
+  },
+  {
+   "id": "ars-46",
+   "photos": [
+    "p485"
+   ],
+   "title": "2026/27 Arsenal Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "arsenal-2026-27-away-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Arsenal Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-arsenal-away-fan-version"
+  },
+  {
+   "id": "ars-47",
+   "photos": [
+    "p486"
+   ],
+   "title": "2026/27 Arsenal Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve navy away shirt with the tonal chevron print, yellow and red trim and the yellow Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Arsenal Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-arsenal-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "ars-48",
+   "photos": [
+    "p487"
+   ],
+   "title": "Arsenal Cream Away Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve cream shirt with navy and maroon shoulder stripes and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Cream Away Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "arsenal-cream-away-long-sleeve-fan-version"
+  },
+  {
+   "id": "ars-49",
+   "photos": [
+    "p488"
+   ],
+   "title": "Arsenal Cream Away Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt with navy and maroon collar and sleeve trim and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Cream Away Fan Version - 01.jpg"
+   ],
+   "handle": "arsenal-cream-away-fan-version"
+  },
+  {
+   "id": "ars-50",
+   "photos": [
+    "p489"
+   ],
+   "title": "Arsenal Lilac Goalkeeper Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Pale blue and lilac goalkeeper shirt with the swept tonal print and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Lilac Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "arsenal-lilac-goalkeeper-fan-version"
+  },
+  {
+   "id": "ars-51",
+   "photos": [
+    "p490"
+   ],
+   "title": "Arsenal Pale Yellow Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Pale yellow shirt with red shoulder stripes and the red Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Pale Yellow Fan Version - 01.jpg"
+   ],
+   "handle": "arsenal-pale-yellow-fan-version"
+  },
+  {
+   "id": "ars-52",
+   "photos": [
+    "p491"
+   ],
+   "title": "Arsenal Red and White Panel Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt with white sleeves, a navy side panel and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Red and White Panel Fan Version - 01.jpg"
+   ],
+   "handle": "arsenal-red-and-white-panel-fan-version"
+  },
+  {
+   "id": "ars-53",
+   "photos": [
+    "p492"
+   ],
+   "title": "Arsenal Cream Away Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt with navy and maroon trim and matching navy shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Cream Away Kids Kit - 01.jpg"
+   ],
+   "handle": "arsenal-cream-away-kids-kit"
+  },
+  {
+   "id": "ars-54",
+   "photos": [
+    "p493"
+   ],
+   "title": "2026/27 Arsenal Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Navy shirt with yellow and red trim and matching navy shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Arsenal Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-arsenal-away-kids-kit"
+  },
+  {
+   "id": "ars-55",
+   "photos": [
+    "p494"
+   ],
+   "title": "2025/26 Arsenal Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Red shirt with white sleeves and matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Arsenal Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-home-kids-kit"
+  },
+  {
+   "id": "ars-56",
+   "photos": [
+    "p495"
+   ],
+   "title": "2025/26 Arsenal Home Player Version",
+   "tier": "player",
+   "blurb": "Red home shirt in the tighter player cut with white sleeves and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Arsenal Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-home-player-version"
+  },
+  {
+   "id": "ars-57",
+   "photos": [
+    "p496"
+   ],
+   "title": "Arsenal Blue and Red Zigzag Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Blue shirt in the player cut with the tonal zigzag print and red shoulder stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Blue and Red Zigzag Player Version - 01.jpg"
+   ],
+   "handle": "arsenal-blue-and-red-zigzag-player-version"
+  },
+  {
+   "id": "ars-58",
+   "photos": [
+    "p497"
+   ],
+   "title": "2025/26 Arsenal Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve red home shirt in the player cut with white sleeves and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Arsenal Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-home-long-sleeve-player-version"
+  },
+  {
+   "id": "ars-59",
+   "photos": [
+    "p498"
+   ],
+   "title": "Arsenal Blue and Red Zigzag Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve blue shirt in the player cut with the tonal zigzag print and red sleeve stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Blue and Red Zigzag Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "arsenal-blue-and-red-zigzag-long-sleeve-player-version"
+  },
+  {
+   "id": "ars-60",
+   "photos": [
+    "p499"
+   ],
+   "title": "2025/26 Arsenal Away Player Version",
+   "tier": "player",
+   "blurb": "Cream away shirt in the player cut with the maroon polo collar and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Arsenal Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-arsenal-away-player-version"
+  },
+  {
+   "id": "ars-61",
+   "photos": [
+    "p500",
+    "p501"
+   ],
+   "title": "Arsenal Floral Embroidered Away Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream away shirt in the player cut with the red and green floral embroidery across the chest and shoulder.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Floral Embroidered Away Player Version - 01.jpg",
+    "Arsenal Floral Embroidered Away Player Version - 02.jpg"
+   ],
+   "handle": "arsenal-floral-embroidered-away-player-version"
+  },
+  {
+   "id": "ars-62",
+   "photos": [
+    "p502"
+   ],
+   "title": "2024/25 Arsenal Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve red home shirt in the player cut with white sleeves and maroon trim.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Arsenal Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-arsenal-home-long-sleeve-player-version"
+  },
+  {
+   "id": "ars-63",
+   "photos": [
+    "p503"
+   ],
+   "title": "2024/25 Arsenal Home Player Version",
+   "tier": "player",
+   "blurb": "Red home shirt in the player cut with white sleeves and maroon collar trim.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Arsenal Home Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-arsenal-home-player-version"
+  },
+  {
+   "id": "ars-64",
+   "photos": [
+    "p504"
+   ],
+   "title": "Arsenal Cream Away Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt in the player cut with navy and maroon shoulder stripes and the Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Cream Away Player Version - 01.jpg"
+   ],
+   "handle": "arsenal-cream-away-player-version"
+  },
+  {
+   "id": "ars-65",
+   "photos": [
+    "p505"
+   ],
+   "title": "Arsenal Navy Floral Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve navy shirt in the player cut with the floral embroidery, yellow trim and the yellow Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Arsenal Navy Floral Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "arsenal-navy-floral-long-sleeve-player-version"
+  },
+  {
+   "id": "ars-66",
+   "photos": [
+    "p506"
+   ],
+   "title": "2026/27 Arsenal Away Player Version",
+   "tier": "player",
+   "blurb": "Navy away shirt in the player cut with the tonal chevron print and yellow and red trim.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Arsenal Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-arsenal-away-player-version"
+  }
+ ]
+}

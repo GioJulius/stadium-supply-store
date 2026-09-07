@@ -1,0 +1,83 @@
+{
+ "team": "Sao Paulo",
+ "slug": "sao-paulo",
+ "status": "imported",
+ "block": {
+  "from": "p144",
+  "to": "p147",
+  "count": 4
+ },
+ "notes": {
+  "albums": "Two albums: fan version (2), retro (2).",
+  "dedupe": "The store carried NO Sao Paulo products at all, so nothing could be a duplicate.",
+  "seasonReading": "Sao Paulo is Brasileirao, so the store convention of a single calendar year applies, as it does for Inter Miami. SUPERBET with New Balance dates the current pair to 2025. The two MOTOROLA shirts are Penalty-era and cannot be pinned to a year from the garment, so they carry the sponsor instead."
+ },
+ "garments": [
+  {
+   "id": "spa-01",
+   "photos": [
+    "p144"
+   ],
+   "title": "2025 Sao Paulo Away Fan Version",
+   "tier": "fan",
+   "blurb": "White away shirt with the red and black chest bands and the SUPERBET sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025 Sao Paulo Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-sao-paulo-away-fan-version"
+  },
+  {
+   "id": "spa-02",
+   "photos": [
+    "p145"
+   ],
+   "title": "2025 Sao Paulo Home Fan Version",
+   "tier": "fan",
+   "blurb": "Red, white and black striped home shirt with a cream collar and the SUPERBET sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025 Sao Paulo Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-sao-paulo-home-fan-version"
+  },
+  {
+   "id": "spa-03",
+   "photos": [
+    "p146"
+   ],
+   "title": "Sao Paulo Motorola Away Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "White Penalty away shirt with the red and black chest bands and the MOTOROLA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Sao Paulo Motorola Away Retro - 01.jpg"
+   ],
+   "handle": "sao-paulo-motorola-away-retro"
+  },
+  {
+   "id": "spa-04",
+   "photos": [
+    "p147"
+   ],
+   "title": "Sao Paulo Motorola Home Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Red, white and black striped Penalty home shirt with the MOTOROLA sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Sao Paulo Motorola Home Retro - 01.jpg"
+   ],
+   "handle": "sao-paulo-motorola-home-retro"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "team": "Galatasaray",
+ "slug": "galatasaray",
+ "status": "imported",
+ "block": {
+  "from": "p148",
+  "to": "p150",
+  "count": 3
+ },
+ "notes": {
+  "albums": "One album: fan versions (3).",
+  "dedupe": "Five Galatasaray products were live and none of them is in this batch. The live 2025/26 home is the ORANGE and red halved shirt; p148 is yellow with a red collar and p149 is red with yellow sleeves, which is the 2026/27 pair. The live away is white and the live third dark red, neither of which appears here.",
+  "leadImage": "The live 2025/26 home fan version and away fan version both lead on a SIZE CHART with the garment at index 1. Promoted in scripts/lead-image-picks-0906d.json."
+ },
+ "garments": [
+  {
+   "id": "gal-01",
+   "photos": [
+    "p148"
+   ],
+   "title": "2026/27 Galatasaray Home Fan Version",
+   "tier": "fan",
+   "blurb": "Yellow home shirt with a red polo collar and red sleeve trim and the PASIFIK HOLDING sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Galatasaray Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-galatasaray-home-fan-version"
+  },
+  {
+   "id": "gal-02",
+   "photos": [
+    "p149"
+   ],
+   "title": "2026/27 Galatasaray Away Fan Version",
+   "tier": "fan",
+   "blurb": "Red away shirt with yellow sleeves and a yellow polo collar and the PASIFIK HOLDING sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Galatasaray Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-galatasaray-away-fan-version"
+  },
+  {
+   "id": "gal-03",
+   "photos": [
+    "p150"
+   ],
+   "title": "Galatasaray Black SOCAR Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with a purple collar and cuffs and the white SOCAR sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Galatasaray Black SOCAR Fan Version - 01.jpg"
+   ],
+   "handle": "galatasaray-black-socar-fan-version"
+  }
+ ]
+}

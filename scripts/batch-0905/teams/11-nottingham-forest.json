@@ -1,0 +1,117 @@
+{
+ "team": "Nottingham Forest",
+ "slug": "nottingham-forest",
+ "status": "imported",
+ "block": {
+  "from": "p378",
+  "to": "p383",
+  "count": 6
+ },
+ "notes": {
+  "albums": "Two albums: retro (1), fan version (5).",
+  "dedupe": "p383 is the live 2025/26 away (Bally's), matched by eye - the hash found nothing again.",
+  "emptyListing": "The live '2025/26 Nottingham Forest FC Away Fan Version' is ACTIVE with ZERO images and is the same white Bally's away as the 8-image listing it sits beside. It is a duplicate that shows an empty card in the shop grid. FLAG FOR CLIENT - it wants deleting or merging, not another photograph.",
+  "blankShirt": "p379 carries no sponsor at all - the supplier's blank pre-match version of the red home shirt - so it is titled by colour, the same treatment given to the blank Juventus hooped shirts."
+ },
+ "garments": [
+  {
+   "id": "nfo-01",
+   "photos": [
+    "p378"
+   ],
+   "title": "1992/94 Nottingham Forest Home Retro",
+   "tier": "retro",
+   "blurb": "Red Umbro home shirt with black shoulder panels, the white chest band and the Labatt's sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1992-94 Nottingham Forest Home Retro - 01.jpg"
+   ],
+   "handle": "1992-94-nottingham-forest-home-retro"
+  },
+  {
+   "id": "nfo-02",
+   "photos": [
+    "p379"
+   ],
+   "title": "Nottingham Forest Red Pre-Match Shirt",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt with the tonal cloud print and white shoulder stripes, worn without a sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nottingham Forest Red Pre-Match Shirt - 01.jpg"
+   ],
+   "handle": "nottingham-forest-red-pre-match-shirt"
+  },
+  {
+   "id": "nfo-03",
+   "photos": [
+    "p380"
+   ],
+   "title": "Nottingham Forest Teal Originals Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Teal originals shirt with red collar and shoulder stripes, the trefoil badge and the club crest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nottingham Forest Teal Originals Fan Version - 01.jpg"
+   ],
+   "handle": "nottingham-forest-teal-originals-fan-version"
+  },
+  {
+   "id": "nfo-04",
+   "photos": [
+    "p381"
+   ],
+   "title": "2025/26 Nottingham Forest Home Fan Version",
+   "tier": "fan",
+   "blurb": "Red home shirt with white shoulder stripes and the Bally's sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Nottingham Forest Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-nottingham-forest-home-fan-version"
+  },
+  {
+   "id": "nfo-05",
+   "photos": [
+    "p382"
+   ],
+   "title": "2025/26 Nottingham Forest Third Fan Version",
+   "tier": "fan",
+   "blurb": "Navy third shirt with the tonal print, orange collar and stripes and the orange Bally's sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Nottingham Forest Third Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-nottingham-forest-third-fan-version"
+  },
+  {
+   "id": "nfo-06",
+   "photos": [
+    "p383"
+   ],
+   "title": "2025/26 Nottingham Forest Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "nottingham-forest-2025-26-away-jersey-ballys",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Nottingham Forest Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-nottingham-forest-away-fan-version"
+  }
+ ]
+}

@@ -5,6 +5,7 @@ import Contact from "@/pages/Contact";
 import Reviews from "@/pages/Reviews";
 import HowItWorks from "@/pages/HowItWorks";
 import Shipping from "@/pages/Shipping";
+import SizeGuide from "@/pages/SizeGuide";
 import NotFound from "@/pages/NotFound";
 import Policy from "@/pages/Policy";
 import ProductDetail from "@/pages/ProductDetail";
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/shop" component={Shop} />
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/shipping" component={Shipping} />
+      <Route path="/size-guide" component={SizeGuide} />
       <Route path="/contact" component={Contact} />
       <Route path="/reviews" component={Reviews} />
       <Route path="/product/:handle" component={ProductDetail} />

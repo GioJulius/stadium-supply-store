@@ -1,0 +1,740 @@
+{
+ "team": "Manchester City",
+ "slug": "manchester-city",
+ "status": "imported",
+ "block": {
+  "from": "p334",
+  "to": "p377",
+  "count": 44
+ },
+ "notes": {
+  "albums": "Seven albums: retro (9), half zip (4), hoodie (1), training set (2), player version (14), kids set (3), fan version (11). One photograph per garment throughout - nothing to group.",
+  "dedupe": "Only four Manchester City products were live before this batch and dedupe-0905.py matched none of them. Two matched by eye: the 2025/26 home and the 2025/26 away, both filed against their fan photograph, with the player-album shirts of the same kits created as Player Versions.",
+  "notADuplicate": "The live 2026/27 Goalkeeper Jersey is BRIGHT TEAL with a honeycomb print. The green keeper shirts here (p356, p369) are dark forest green with a different print - a different kit, listed as new.",
+  "playerAlbumRetro": "p362 is the 2013/14 Nike home shirt but the client sent it inside the player-version album, so it is priced at the player tier and titled Player Version. The same kit also appears in the retro album as p342 at the retro tier - that is the client's own split, not an error.",
+  "seasonReading": "Sponsor pins the era: Brother to 1999, EIDOS 1999-2002, Thomas Cook 2007-2009, Etihad Airways 2009 onward; Kappa to 2003, Umbro 2009-2013, Nike 2013-2019, Puma 2019 onward. The Asahi training wear, the goalkeeper shirts and the special-edition prints cannot be dated from the garment, so those titles carry a colour and are marked seasonConfidence unknown."
+ },
+ "garments": [
+  {
+   "id": "mci-01",
+   "photos": [
+    "p334"
+   ],
+   "title": "2013/14 Manchester City Away Retro",
+   "tier": "retro",
+   "blurb": "Black Nike away shirt with a tonal print and the gold Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2013-14 Manchester City Away Retro - 01.jpg"
+   ],
+   "handle": "2013-14-manchester-city-away-retro"
+  },
+  {
+   "id": "mci-02",
+   "photos": [
+    "p335"
+   ],
+   "title": "2008/09 Manchester City Home Retro",
+   "tier": "retro",
+   "blurb": "Sky blue home shirt with navy piping and the Thomas Cook sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2008-09 Manchester City Home Retro - 01.jpg"
+   ],
+   "handle": "2008-09-manchester-city-home-retro"
+  },
+  {
+   "id": "mci-03",
+   "photos": [
+    "p336"
+   ],
+   "title": "2008/09 Manchester City Away Retro",
+   "tier": "retro",
+   "blurb": "Black and maroon striped away shirt with a yellow crest trim and the Thomas Cook sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2008-09 Manchester City Away Retro - 01.jpg"
+   ],
+   "handle": "2008-09-manchester-city-away-retro"
+  },
+  {
+   "id": "mci-04",
+   "photos": [
+    "p337"
+   ],
+   "title": "1998/99 Manchester City Away Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve white Kappa away shirt with navy sleeves, the maroon chest band and the Brother sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1998-99 Manchester City Away Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "1998-99-manchester-city-away-long-sleeve-retro"
+  },
+  {
+   "id": "mci-05",
+   "photos": [
+    "p338"
+   ],
+   "title": "1997/98 Manchester City Home Retro",
+   "tier": "retro",
+   "blurb": "Sky blue Kappa home shirt with the navy patterned shoulders and the Brother sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1997-98 Manchester City Home Retro - 01.jpg"
+   ],
+   "handle": "1997-98-manchester-city-home-retro"
+  },
+  {
+   "id": "mci-06",
+   "photos": [
+    "p339"
+   ],
+   "title": "2012/13 Manchester City Away Retro",
+   "tier": "retro",
+   "blurb": "Maroon Umbro away shirt with a v-neck collar and the gold Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2012-13 Manchester City Away Retro - 01.jpg"
+   ],
+   "handle": "2012-13-manchester-city-away-retro"
+  },
+  {
+   "id": "mci-07",
+   "photos": [
+    "p340"
+   ],
+   "title": "1998/99 Manchester City Away Retro",
+   "tier": "retro",
+   "blurb": "White Kappa away shirt with navy patterned shoulders, the maroon chest band and the Brother sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1998-99 Manchester City Away Retro - 01.jpg"
+   ],
+   "handle": "1998-99-manchester-city-away-retro"
+  },
+  {
+   "id": "mci-08",
+   "photos": [
+    "p341"
+   ],
+   "title": "1999/2000 Manchester City Home Retro",
+   "tier": "retro",
+   "blurb": "Sky blue home shirt with a navy and white collar and the EIDOS sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1999-2000 Manchester City Home Retro - 01.jpg"
+   ],
+   "handle": "1999-2000-manchester-city-home-retro"
+  },
+  {
+   "id": "mci-09",
+   "photos": [
+    "p342"
+   ],
+   "title": "2013/14 Manchester City Home Retro",
+   "tier": "retro",
+   "blurb": "Sky blue Nike home shirt with a white collar and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2013-14 Manchester City Home Retro - 01.jpg"
+   ],
+   "handle": "2013-14-manchester-city-home-retro"
+  },
+  {
+   "id": "mci-10",
+   "photos": [
+    "p343"
+   ],
+   "title": "Manchester City Sky Blue Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Sky blue half-zip training top with the tonal print and the Asahi sponsor, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Sky Blue Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-city-sky-blue-half-zip-training-set"
+  },
+  {
+   "id": "mci-11",
+   "photos": [
+    "p344"
+   ],
+   "title": "Manchester City Light Blue Print Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Light blue half-zip training top with the tonal camouflage print, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Light Blue Print Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-city-light-blue-print-half-zip-training-set"
+  },
+  {
+   "id": "mci-12",
+   "photos": [
+    "p345"
+   ],
+   "title": "Manchester City Black Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Black half-zip training top with the Asahi sponsor and the club crest, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-city-black-half-zip-training-set"
+  },
+  {
+   "id": "mci-13",
+   "photos": [
+    "p346"
+   ],
+   "title": "Manchester City Black and Grey Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Black half-zip training top with grey side panels and the Asahi sponsor, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black and Grey Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "manchester-city-black-and-grey-half-zip-training-set"
+  },
+  {
+   "id": "mci-14",
+   "photos": [
+    "p347"
+   ],
+   "title": "Manchester City Sky and White Crew Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Sky blue crew-neck sweatshirt with white sleeves, black shoulder blocks and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Sky and White Crew Sweatshirt - 01.jpg"
+   ],
+   "handle": "manchester-city-sky-and-white-crew-sweatshirt"
+  },
+  {
+   "id": "mci-15",
+   "photos": [
+    "p348"
+   ],
+   "title": "Manchester City Sky Blue Training Set",
+   "tier": "trainingSet",
+   "blurb": "Sky blue training shirt with the tonal print and the Asahi sponsor, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Sky Blue Training Set - 01.jpg"
+   ],
+   "handle": "manchester-city-sky-blue-training-set"
+  },
+  {
+   "id": "mci-16",
+   "photos": [
+    "p349"
+   ],
+   "title": "Manchester City Black Training Set",
+   "tier": "trainingSet",
+   "blurb": "Black training shirt with grey side panels and the Asahi sponsor, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black Training Set - 01.jpg"
+   ],
+   "handle": "manchester-city-black-training-set"
+  },
+  {
+   "id": "mci-17",
+   "photos": [
+    "p350"
+   ],
+   "title": "2026/27 Manchester City Home Player Version",
+   "tier": "player",
+   "blurb": "Sky blue home shirt in the tighter player cut with the white diagonal sash and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester City Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-city-home-player-version"
+  },
+  {
+   "id": "mci-18",
+   "photos": [
+    "p351"
+   ],
+   "title": "Manchester City Cream and Teal Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt in the player cut with teal sleeves, coral trim and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Cream and Teal Player Version - 01.jpg"
+   ],
+   "handle": "manchester-city-cream-and-teal-player-version"
+  },
+  {
+   "id": "mci-19",
+   "photos": [
+    "p352"
+   ],
+   "title": "2025/26 Manchester City Away Player Version",
+   "tier": "player",
+   "blurb": "Black away shirt in the player cut with a white-trimmed polo collar and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester City Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-city-away-player-version"
+  },
+  {
+   "id": "mci-20",
+   "photos": [
+    "p353"
+   ],
+   "title": "2026/27 Manchester City Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve sky blue home shirt in the player cut with the white diagonal sash.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester City Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-city-home-long-sleeve-player-version"
+  },
+  {
+   "id": "mci-21",
+   "photos": [
+    "p354"
+   ],
+   "title": "Manchester City Grey and Volt Goalkeeper Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Grey goalkeeper shirt in the player cut with volt sleeves and collar and the volt Etihad sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Grey and Volt Goalkeeper Player Version - 01.jpg"
+   ],
+   "handle": "manchester-city-grey-and-volt-goalkeeper-player-version"
+  },
+  {
+   "id": "mci-22",
+   "photos": [
+    "p355"
+   ],
+   "title": "Manchester City White Sash Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve white shirt in the player cut with the red and black diagonal sash.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City White Sash Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "manchester-city-white-sash-long-sleeve-player-version"
+  },
+  {
+   "id": "mci-23",
+   "photos": [
+    "p356"
+   ],
+   "title": "Manchester City Dark Green Goalkeeper Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Dark green goalkeeper shirt in the player cut with the tonal geometric print and a volt collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Dark Green Goalkeeper Player Version - 01.jpg"
+   ],
+   "handle": "manchester-city-dark-green-goalkeeper-player-version"
+  },
+  {
+   "id": "mci-24",
+   "photos": [
+    "p357"
+   ],
+   "title": "2025/26 Manchester City Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve sky blue home shirt in the player cut, graded to white at the hem.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester City Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-city-home-long-sleeve-player-version"
+  },
+  {
+   "id": "mci-25",
+   "photos": [
+    "p358"
+   ],
+   "title": "2025/26 Manchester City Home Player Version",
+   "tier": "player",
+   "blurb": "Sky blue home shirt in the player cut, graded to white at the hem, with the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester City Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-city-home-player-version"
+  },
+  {
+   "id": "mci-26",
+   "photos": [
+    "p359"
+   ],
+   "title": "Manchester City Black and Gold Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve black shirt in the player cut with gold collar and cuffs and the gold Etihad sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black and Gold Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "manchester-city-black-and-gold-long-sleeve-player-version"
+  },
+  {
+   "id": "mci-27",
+   "photos": [
+    "p360"
+   ],
+   "title": "Manchester City Black and Gold Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt in the player cut with gold collar and sleeve trim and the gold Etihad sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black and Gold Player Version - 01.jpg"
+   ],
+   "handle": "manchester-city-black-and-gold-player-version"
+  },
+  {
+   "id": "mci-28",
+   "photos": [
+    "p361"
+   ],
+   "title": "Manchester City White and Blue Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve white shirt in the player cut with the blue centre stripe and the Etihad sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City White and Blue Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "manchester-city-white-and-blue-long-sleeve-player-version"
+  },
+  {
+   "id": "mci-29",
+   "photos": [
+    "p362"
+   ],
+   "title": "2013/14 Manchester City Home Player Version",
+   "tier": "player",
+   "blurb": "Sky blue Nike home shirt in the player cut with a white collar and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2013-14 Manchester City Home Player Version - 01.jpg"
+   ],
+   "handle": "2013-14-manchester-city-home-player-version"
+  },
+  {
+   "id": "mci-30",
+   "photos": [
+    "p363"
+   ],
+   "title": "2026/27 Manchester City Third Player Version",
+   "tier": "player",
+   "blurb": "White third shirt in the player cut with the blue centre stripe and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester City Third Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-city-third-player-version"
+  },
+  {
+   "id": "mci-31",
+   "photos": [
+    "p364"
+   ],
+   "title": "2025/26 Manchester City Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Sky blue shirt graded to white with matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Manchester City Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-city-home-kids-kit"
+  },
+  {
+   "id": "mci-32",
+   "photos": [
+    "p365"
+   ],
+   "title": "2026/27 Manchester City Third Kids Kit",
+   "tier": "kids",
+   "blurb": "White shirt with the blue centre stripe and matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester City Third Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-city-third-kids-kit"
+  },
+  {
+   "id": "mci-33",
+   "photos": [
+    "p366"
+   ],
+   "title": "Manchester City Black and Gold Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with gold collar and cuffs and matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black and Gold Kids Kit - 01.jpg"
+   ],
+   "handle": "manchester-city-black-and-gold-kids-kit"
+  },
+  {
+   "id": "mci-34",
+   "photos": [
+    "p367"
+   ],
+   "title": "2026/27 Manchester City Third Fan Version",
+   "tier": "fan",
+   "blurb": "White third shirt with the blue centre stripe and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester City Third Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-city-third-fan-version"
+  },
+  {
+   "id": "mci-35",
+   "photos": [
+    "p368"
+   ],
+   "title": "Manchester City White Dragon Print Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with the tonal dragon print across the body and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City White Dragon Print Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-city-white-dragon-print-fan-version"
+  },
+  {
+   "id": "mci-36",
+   "photos": [
+    "p369"
+   ],
+   "title": "Manchester City Dark Green Goalkeeper Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Dark green goalkeeper shirt with the tonal geometric print and a volt collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Dark Green Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-city-dark-green-goalkeeper-fan-version"
+  },
+  {
+   "id": "mci-37",
+   "photos": [
+    "p370"
+   ],
+   "title": "2025/26 Manchester City Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-city-2025-26-home-jersey-etihad",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Manchester City Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-city-home-fan-version"
+  },
+  {
+   "id": "mci-38",
+   "photos": [
+    "p371"
+   ],
+   "title": "Manchester City Black and Gold Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with gold collar and sleeve trim, a tonal print and the gold Etihad sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black and Gold Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-city-black-and-gold-fan-version"
+  },
+  {
+   "id": "mci-39",
+   "photos": [
+    "p372"
+   ],
+   "title": "Manchester City Grey and Volt Goalkeeper Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Grey goalkeeper shirt with volt sleeves and collar and the volt Etihad sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Grey and Volt Goalkeeper Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-city-grey-and-volt-goalkeeper-fan-version"
+  },
+  {
+   "id": "mci-40",
+   "photos": [
+    "p373"
+   ],
+   "title": "Manchester City Marble Print Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream shirt with the black marbled print across the body and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Marble Print Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-city-marble-print-fan-version"
+  },
+  {
+   "id": "mci-41",
+   "photos": [
+    "p374"
+   ],
+   "title": "Manchester City Black Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Long sleeve black shirt with a white-trimmed collar and the gold Etihad sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City Black Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-city-black-long-sleeve-fan-version"
+  },
+  {
+   "id": "mci-42",
+   "photos": [
+    "p375"
+   ],
+   "title": "Manchester City White Sash Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with the red and black diagonal sash and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Manchester City White Sash Fan Version - 01.jpg"
+   ],
+   "handle": "manchester-city-white-sash-fan-version"
+  },
+  {
+   "id": "mci-43",
+   "photos": [
+    "p376"
+   ],
+   "title": "2026/27 Manchester City Home Fan Version",
+   "tier": "fan",
+   "blurb": "Sky blue home shirt with the white diagonal sash and the Etihad Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Manchester City Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-manchester-city-home-fan-version"
+  },
+  {
+   "id": "mci-44",
+   "photos": [
+    "p377"
+   ],
+   "title": "2025/26 Manchester City Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "manchester-city-2025-26-away-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025-26 Manchester City Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-manchester-city-away-fan-version"
+  }
+ ]
+}

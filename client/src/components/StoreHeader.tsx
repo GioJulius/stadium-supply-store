@@ -215,6 +215,7 @@ export function StoreFooter() {
         <Link href="/how-it-works">How it works ↗</Link>
         <Link href="/reviews">Read our reviews ↗</Link>
         <Link href="/shipping">Shipping ↗</Link>
+        <Link href="/size-guide">Size guide ↗</Link>
         <Link href="/returns">Returns &amp; refunds ↗</Link>
         <Link href="/privacy">Privacy ↗</Link>
         <Link href="/terms">Terms ↗</Link>

@@ -1,0 +1,277 @@
+{
+ "team": "Inter Miami",
+ "slug": "inter-miami",
+ "status": "imported",
+ "block": {
+  "from": "p151",
+  "to": "p166",
+  "count": 16
+ },
+ "notes": {
+  "albums": "Five albums: player version (5), fan version (6), half zip (1), training set (1), kids set (3). Three albums share the minute 20:52; the order checks out - the half-zip photograph is the only one with bottoms and the kids photographs are the only ones with shorts.",
+  "seasonsAreCALENDARYears": "Inter Miami is MLS, so the store's existing listings use a single calendar year (2025 Home Jersey), not a split season. The titles here follow that: 2025 and 2026 for the first-team kits. The light blue third is the exception - the live kids listing calls it 2025/26, so the third shirts keep that form.",
+  "dedupe": "Three Inter Miami products were live and the hash matched none. One match by eye: p158 is the live 2025 home. Its player cut (p152) went in as new, the same tier split used for PSG, Arsenal and Manchester City. The live Polkadot away long sleeve is not in this batch, and the live light blue kids kit is a different garment from the three kids kits here.",
+  "leadImage": "The live 2025/26 Third Kids Kit leads on a SIZE CHART with the garment at index 1 - the third team in a row with this fault. Promoted in scripts/lead-image-picks-0906c.json."
+ },
+ "garments": [
+  {
+   "id": "mia-01",
+   "photos": [
+    "p151"
+   ],
+   "title": "2025/26 Inter Miami Third Player Version",
+   "tier": "player",
+   "blurb": "Light blue third shirt in the player cut with pink shoulder stripes and the white Royal Caribbean crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Inter Miami Third Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-inter-miami-third-player-version"
+  },
+  {
+   "id": "mia-02",
+   "photos": [
+    "p152"
+   ],
+   "title": "2025 Inter Miami Home Player Version",
+   "tier": "player",
+   "blurb": "Pink home shirt in the player cut with black shoulder stripes and the black Royal Caribbean crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025 Inter Miami Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-inter-miami-home-player-version"
+  },
+  {
+   "id": "mia-03",
+   "photos": [
+    "p153"
+   ],
+   "title": "2026 Inter Miami Away Player Version",
+   "tier": "player",
+   "blurb": "Black away shirt in the player cut with a polo collar, pink shoulder stripes and the pink crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026 Inter Miami Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-inter-miami-away-player-version"
+  },
+  {
+   "id": "mia-04",
+   "photos": [
+    "p154"
+   ],
+   "title": "2026 Inter Miami Home Player Version",
+   "tier": "player",
+   "blurb": "Pink home shirt in the player cut with the tonal stripes and black shoulder trim.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026 Inter Miami Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-inter-miami-home-player-version"
+  },
+  {
+   "id": "mia-05",
+   "photos": [
+    "p155"
+   ],
+   "title": "2025 Inter Miami Away Player Version",
+   "tier": "player",
+   "blurb": "Black away shirt in the player cut with pink shoulder stripes and the pink crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025 Inter Miami Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-inter-miami-away-player-version"
+  },
+  {
+   "id": "mia-06",
+   "photos": [
+    "p156"
+   ],
+   "title": "2025/26 Inter Miami Third Fan Version",
+   "tier": "fan",
+   "blurb": "Light blue third shirt with pink and coral collar trim and the white Royal Caribbean crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Inter Miami Third Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-inter-miami-third-fan-version"
+  },
+  {
+   "id": "mia-07",
+   "photos": [
+    "p157"
+   ],
+   "title": "Inter Miami White Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with the tonal geometric print, black and mint collar trim and the pink crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Inter Miami White Fan Version - 01.jpg"
+   ],
+   "handle": "inter-miami-white-fan-version"
+  },
+  {
+   "id": "mia-08",
+   "photos": [
+    "p158"
+   ],
+   "title": "2025 Inter Miami Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "inter-miami-2025-home-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2025 Inter Miami Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-inter-miami-home-fan-version"
+  },
+  {
+   "id": "mia-09",
+   "photos": [
+    "p159"
+   ],
+   "title": "2026 Inter Miami Away Fan Version",
+   "tier": "fan",
+   "blurb": "Black away shirt with a polo collar, pink shoulder stripes and the pink Royal Caribbean crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026 Inter Miami Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-inter-miami-away-fan-version"
+  },
+  {
+   "id": "mia-10",
+   "photos": [
+    "p160"
+   ],
+   "title": "2025 Inter Miami Away Fan Version",
+   "tier": "fan",
+   "blurb": "Black away shirt with the charcoal centre panel and the pink Royal Caribbean crown.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025 Inter Miami Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-inter-miami-away-fan-version"
+  },
+  {
+   "id": "mia-11",
+   "photos": [
+    "p161"
+   ],
+   "title": "Inter Miami Pink Training Shirt",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Pink training shirt with black shoulder panels and the ERGO NEXT sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Inter Miami Pink Training Shirt - 01.jpg"
+   ],
+   "handle": "inter-miami-pink-training-shirt"
+  },
+  {
+   "id": "mia-12",
+   "photos": [
+    "p162"
+   ],
+   "title": "Inter Miami Black and White Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Black half-zip training top with white shoulder panels and the ERGO NEXT sponsor, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Inter Miami Black and White Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "inter-miami-black-and-white-half-zip-training-set"
+  },
+  {
+   "id": "mia-13",
+   "photos": [
+    "p163"
+   ],
+   "title": "Inter Miami Pink ERGO Training Set",
+   "tier": "trainingSet",
+   "blurb": "Pink training shirt with black shoulder panels and the ERGO NEXT sponsor, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Inter Miami Pink ERGO Training Set - 01.jpg"
+   ],
+   "handle": "inter-miami-pink-ergo-training-set"
+  },
+  {
+   "id": "mia-14",
+   "photos": [
+    "p164"
+   ],
+   "title": "2026 Inter Miami Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Black shirt with a polo collar and the pink crown, with matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026 Inter Miami Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-inter-miami-away-kids-kit"
+  },
+  {
+   "id": "mia-15",
+   "photos": [
+    "p165"
+   ],
+   "title": "2026 Inter Miami Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Pink shirt with the tonal stripes and matching pink shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026 Inter Miami Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-inter-miami-home-kids-kit"
+  },
+  {
+   "id": "mia-16",
+   "photos": [
+    "p166"
+   ],
+   "title": "2025 Inter Miami Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Black shirt with the charcoal centre panel and matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025 Inter Miami Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-inter-miami-away-kids-kit"
+  }
+ ]
+}

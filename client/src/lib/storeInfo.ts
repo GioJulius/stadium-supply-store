@@ -23,7 +23,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     number: "02",
     title: "We order",
     body: [
-      "Your order is placed with the supplier within 24 hours of payment being received.",
+      "Orders are placed with our supplier in one batch every Friday at 12:00, so anything paid for during the week goes on that Friday's order.",
       "From there it usually takes 10–15 business days to reach us, which covers international shipping and importation.",
     ],
   },
@@ -144,7 +144,7 @@ export const SHIPPING_NOTES: SizeNote[] = [
   },
   {
     title: "How long it takes",
-    body: "We order from our supplier within 24 hours of your payment. Stock usually reaches us in 10-15 business days, then your parcel goes out the same week it lands.",
+    body: "We place one order with our supplier every Friday at 12:00. Stock usually reaches us 10-15 business days after that, then your parcel goes out the same week it lands.",
   },
   {
     title: "Where we ship",

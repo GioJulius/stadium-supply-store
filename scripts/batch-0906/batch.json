@@ -1,0 +1,133 @@
+{
+ "batch": "2026-09-06",
+ "batchTag": "supplied-batch-2026-09-06",
+ "note": "The client's WhatsApp export of the morning of 6 Sep 2026 - 36 photographs sent 09:10-09:12 covering two clubs that were new to the store (Leeds United, Ajax) and an unbranded tracksuit range.",
+ "identificationMethod": "The client sends a bare team name as a text message immediately before each team's block, then one album per garment type with a one-word caption ('retro', 'fan version', 'player version', 'kids set', 'half zip', 'full zip', 'hoodie', 'training set', 'windbreaker'). Captions were read off WhatsApp Web on 6 Sep 2026 and aligned to the export cumulatively — see scripts/align-0905.mjs, which bound all 664 photographs to a caption and a team with zero drift across 101 albums. The garment itself (club, season, kit slot, sleeve length) is then read by eye off contact sheets; the caption supplies only the tier and the team.",
+ "photoPolicy": "One photograph per listing, the same owner-approved exception as the 5 Sep batch.",
+ "sizes": {
+  "fan": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL",
+   "3XL",
+   "4XL"
+  ],
+  "adult": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL"
+  ],
+  "kids": [
+   "2-3",
+   "4-5",
+   "6-7",
+   "8-9",
+   "10-11"
+  ]
+ },
+ "tiers": {
+  "fan": {
+   "price": "500.00",
+   "sizes": "fan",
+   "productType": "Fan Version"
+  },
+  "fanLong": {
+   "price": "600.00",
+   "sizes": "fan",
+   "productType": "Fan Version"
+  },
+  "player": {
+   "price": "650.00",
+   "sizes": "adult",
+   "productType": "Player Version"
+  },
+  "playerLong": {
+   "price": "750.00",
+   "sizes": "adult",
+   "productType": "Player Version"
+  },
+  "retro": {
+   "price": "700.00",
+   "sizes": "adult",
+   "productType": "Retro"
+  },
+  "retroLong": {
+   "price": "800.00",
+   "sizes": "adult",
+   "productType": "Retro"
+  },
+  "kids": {
+   "price": "450.00",
+   "sizes": "kids",
+   "productType": "Kids Kit"
+  },
+  "halfZip": {
+   "price": "850.00",
+   "sizes": "adult",
+   "productType": "Half-Zip Training Set"
+  },
+  "hoodie": {
+   "price": "850.00",
+   "sizes": "adult",
+   "productType": "Hoodie"
+  },
+  "trainingSet": {
+   "price": "600.00",
+   "sizes": "adult",
+   "productType": "Training Set"
+  },
+  "fullZip": {
+   "price": "1000.00",
+   "sizes": "adult",
+   "productType": "Jacket / Windbreaker"
+  },
+  "jacket": {
+   "price": "1000.00",
+   "sizes": "adult",
+   "productType": "Jacket / Windbreaker"
+  },
+  "retroTop": {
+   "price": "1000.00",
+   "sizes": "adult",
+   "productType": "Half-Zip Training Set"
+  },
+  "plainHalfZip": {
+   "price": "700.00",
+   "sizes": "adult",
+   "productType": "Plain Tracksuit"
+  },
+  "plainFullZip": {
+   "price": "850.00",
+   "sizes": "adult",
+   "productType": "Plain Tracksuit"
+  }
+ },
+ "tierNotes": {
+  "retroTop": "The client priced this themselves at 23:34 — 'retro training top R1000'. Real Madrid's 19:20 album is captioned 'retro half zip' with no price; a retro half-zip IS a retro training top, so it is priced at R1000 here too. FLAG FOR CLIENT — if they meant the ordinary R850 half-zip tier, five Real Madrid listings are R150 over.",
+  "fullZip": "'Full-zip tracksuit / jacket or windbreaker only' is R1000 on the client's 27 Aug list. A full windbreaker tracksuit or Chinese New Year jacket is R1200 and is NOT covered by this tier — check the garment before using it.",
+  "trainingSet": "The 27 Aug price list carries both 'training top and shorts R600' and 'adults sets top and shorts training R700' and the client has never resolved which applies. R600 is used here, consistent with the rest of the catalogue.",
+  "plainTracksuits": "The client's 7 Sep price list separates PLAIN adidas/Nike tracksuits from club ones: plain half zip R700 and plain full zip R850, against R850 and R1000 for a club set. It also settles the older ambiguity - an adults club training or vest set is R700, and R600 is the plain adidas/Nike training top and shorts."
+ },
+ "teamAliases": {
+  "Leeds United": [
+   "leeds united",
+   "leeds"
+  ],
+  "Ajax": [
+   "ajax"
+  ],
+  "Unbranded Tracksuits": [
+   "unbranded tracksuits"
+  ]
+ },
+ "order": [
+  "Leeds United",
+  "Ajax",
+  "Unbranded Tracksuits"
+ ],
+ "orderNote": "Two new clubs first; the unbranded tracksuits are held pending a price and a decision on how they are sold."
+}

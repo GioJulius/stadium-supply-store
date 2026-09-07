@@ -1,0 +1,134 @@
+{
+ "team": "Brighton",
+ "slug": "brighton",
+ "status": "imported",
+ "block": {
+  "from": "p389",
+  "to": "p395",
+  "count": 7
+ },
+ "notes": {
+  "albums": "Three albums: player version (2), kids set (2), fan version (3).",
+  "captionOrderFix": "The 22:09 'player version' album was harvested BEFORE the Brighton team marker and so was attributed to Crystal Palace. The garments settle it - p389 and p390 carry the Brighton crest and the American Express sponsor. captions.tsv was reordered so the Brighton marker precedes that album and align-0905.mjs re-run: 664 assigned, zero drift, nothing left over. This is the second reordering in this batch (see Newcastle), and both were caused by messages sharing one minute.",
+  "dedupe": "Two hash hits, p393 and p394. The store titles this club 'Brighton & Hove Albion' while the batch calls it Brighton; the club gate matched anyway because 'brighton' is a substring of the full name."
+ },
+ "garments": [
+  {
+   "id": "bri-01",
+   "photos": [
+    "p389"
+   ],
+   "title": "2026/27 Brighton & Hove Albion Away Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "brighton-and-hove-albion-2026-27-away-player-version",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2026-27 Brighton & Hove Albion Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-brighton-hove-albion-away-player-version"
+  },
+  {
+   "id": "bri-02",
+   "photos": [
+    "p390"
+   ],
+   "title": "2026/27 Brighton & Hove Albion Home Player Version",
+   "tier": "player",
+   "blurb": "Blue home shirt in the player cut with the tonal pinstripes and the American Express sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Brighton & Hove Albion Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-brighton-hove-albion-home-player-version"
+  },
+  {
+   "id": "bri-03",
+   "photos": [
+    "p391"
+   ],
+   "title": "2026/27 Brighton & Hove Albion Away Kids Kit",
+   "tier": "kids",
+   "blurb": "White shirt with blue pinstripes and matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Brighton & Hove Albion Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-brighton-hove-albion-away-kids-kit"
+  },
+  {
+   "id": "bri-04",
+   "photos": [
+    "p392"
+   ],
+   "title": "2026/27 Brighton & Hove Albion Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Blue shirt with the tonal pinstripes and matching blue shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Brighton & Hove Albion Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-brighton-hove-albion-home-kids-kit"
+  },
+  {
+   "id": "bri-05",
+   "photos": [
+    "p393"
+   ],
+   "title": "2026/27 Brighton & Hove Albion Home Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "brighton-and-hove-albion-2026-27-home-fan-version",
+    "checkedBy": "hash",
+    "dist": 2
+   },
+   "files": [
+    "2026-27 Brighton & Hove Albion Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-brighton-hove-albion-home-fan-version"
+  },
+  {
+   "id": "bri-06",
+   "photos": [
+    "p394"
+   ],
+   "title": "2025/26 Brighton & Hove Albion Away Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "brighton-and-hove-albion-2025-26-away-fan-version",
+    "checkedBy": "hash",
+    "dist": 2
+   },
+   "files": [
+    "2025-26 Brighton & Hove Albion Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-brighton-hove-albion-away-fan-version"
+  },
+  {
+   "id": "bri-07",
+   "photos": [
+    "p395"
+   ],
+   "title": "2026/27 Brighton & Hove Albion Away Fan Version",
+   "tier": "fan",
+   "blurb": "White away shirt with the blue pinstripes and the American Express sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Brighton & Hove Albion Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-brighton-hove-albion-away-fan-version"
+  }
+ ]
+}

@@ -1,0 +1,1087 @@
+{
+ "team": "PSG",
+ "slug": "psg",
+ "status": "imported",
+ "block": {
+  "from": "p167",
+  "to": "p233",
+  "count": 67
+ },
+ "notes": {
+  "albums": "Eight albums: retro (14), windbreaker and jacket (3), full zip (1), half zip (10), training and vest set (6), player version (12), kids sets (6), fan versions (15).",
+  "multiPhotoGarments": "Two garments carry two photographs. p220 and p221 are the same 2025/26 home fan shirt shot twice, and p183 (jacket album) and p223 (fan album) are the same navy Fly Emirates retro sweatshirt.",
+  "dedupe": "dedupe-0905.py found NOTHING for PSG — the client's photographs of this team are all different files from the ones we uploaded. All seven matches were made by eye against a contact sheet of the 11 live Paris Saint-Germain listings. Treat a zero-hit hash report as 'look harder', never as 'all new'.",
+  "liveHandlesAreStale": "Two live listings are both titled '2018/19 Fourth Retro Jersey - Neymar 10 (Jordan)' while their handles read paris-saint-germain-2023-24-away-jersey-neymar-10 and -2023-24-home-jersey-jordan. They were retitled at some point and the handles never followed, so match on the PHOTOGRAPH, not on the handle.",
+  "tierSplit": "Where a live listing carries no tier in its title and the batch holds the same kit in both cuts, the closest photograph was filed as listed and the other cut created with its tier in the title: the 2024/25 fourth pinstripe (fan filed, player created) and the 2024/25 fourth camo (player filed, fan created).",
+  "seasonReading": "Sponsor pins the era: OPEL to 2002, THOMSON 2002-2006, Fly Emirates 2006-2019, ALL Accor 2019-2022, Qatar Airways 2022 onward. Inside the Qatar Airways years the training tops, wing-print shirts and one-off colourways cannot be dated from the garment, so those titles carry a colour and are marked seasonConfidence unknown."
+ },
+ "garments": [
+  {
+   "id": "psg-01",
+   "photos": [
+    "p167"
+   ],
+   "title": "1997/98 Paris Saint-Germain Away Retro",
+   "tier": "retro",
+   "blurb": "White and grey away shirt with the sweeping tonal panels and the OPEL sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1997-98 Paris Saint-Germain Away Retro - 01.jpg"
+   ],
+   "handle": "1997-98-paris-saint-germain-away-retro"
+  },
+  {
+   "id": "psg-02",
+   "photos": [
+    "p168"
+   ],
+   "title": "2019/20 Paris Saint-Germain Third Retro",
+   "tier": "retro",
+   "blurb": "White third shirt with a polo collar, the navy and red centre stripe and the ALL Accor sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2019-20 Paris Saint-Germain Third Retro - 01.jpg"
+   ],
+   "handle": "2019-20-paris-saint-germain-third-retro"
+  },
+  {
+   "id": "psg-03",
+   "photos": [
+    "p169"
+   ],
+   "title": "1995/96 Paris Saint-Germain Home Retro",
+   "tier": "retro",
+   "blurb": "Blue home shirt with the wide red centre band, a buttoned collar and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1995-96 Paris Saint-Germain Home Retro - 01.jpg"
+   ],
+   "handle": "1995-96-paris-saint-germain-home-retro"
+  },
+  {
+   "id": "psg-04",
+   "photos": [
+    "p170"
+   ],
+   "title": "2001/02 Paris Saint-Germain Home Retro",
+   "tier": "retro",
+   "blurb": "Navy home shirt with the red centre band, the white chevron collar and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2001-02 Paris Saint-Germain Home Retro - 01.jpg"
+   ],
+   "handle": "2001-02-paris-saint-germain-home-retro"
+  },
+  {
+   "id": "psg-05",
+   "photos": [
+    "p171"
+   ],
+   "title": "1996/97 Paris Saint-Germain Home Retro",
+   "tier": "retro",
+   "blurb": "Blue home shirt with the red centre band edged in white and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1996-97 Paris Saint-Germain Home Retro - 01.jpg"
+   ],
+   "handle": "1996-97-paris-saint-germain-home-retro"
+  },
+  {
+   "id": "psg-06",
+   "photos": [
+    "p172"
+   ],
+   "title": "2021/22 Paris Saint-Germain Away Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "paris-saint-germain-2021-22-away-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2021-22 Paris Saint-Germain Away Retro - 01.jpg"
+   ],
+   "handle": "2021-22-paris-saint-germain-away-retro"
+  },
+  {
+   "id": "psg-07",
+   "photos": [
+    "p173"
+   ],
+   "title": "2003/04 Paris Saint-Germain Home Retro",
+   "tier": "retro",
+   "blurb": "Navy home shirt with the red centre stripe piped in white and the THOMSON sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2003-04 Paris Saint-Germain Home Retro - 01.jpg"
+   ],
+   "handle": "2003-04-paris-saint-germain-home-retro"
+  },
+  {
+   "id": "psg-08",
+   "photos": [
+    "p174"
+   ],
+   "title": "2001/02 Paris Saint-Germain Home Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve navy home shirt with the red centre band, white chevron collar and the OPEL sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2001-02 Paris Saint-Germain Home Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2001-02-paris-saint-germain-home-long-sleeve-retro"
+  },
+  {
+   "id": "psg-09",
+   "photos": [
+    "p175"
+   ],
+   "title": "2018/19 Paris Saint-Germain Away Retro",
+   "tier": "retro",
+   "blurb": "White Jordan away shirt with the grey centre stripe and the Fly Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2018-19 Paris Saint-Germain Away Retro - 01.jpg"
+   ],
+   "handle": "2018-19-paris-saint-germain-away-retro"
+  },
+  {
+   "id": "psg-10",
+   "photos": [
+    "p176"
+   ],
+   "title": "2018/19 Paris Saint-Germain Away Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve white Jordan away shirt with the grey centre stripe and the Fly Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2018-19 Paris Saint-Germain Away Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2018-19-paris-saint-germain-away-long-sleeve-retro"
+  },
+  {
+   "id": "psg-11",
+   "photos": [
+    "p177"
+   ],
+   "title": "2018/19 Paris Saint-Germain Fourth Retro",
+   "tier": "retro",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "paris-saint-germain-2023-24-away-jersey-neymar-10",
+    "checkedBy": "eye",
+    "why": "the live listing is this black Jordan shirt printed Neymar 10; its handle is left over from an earlier kit"
+   },
+   "files": [
+    "2018-19 Paris Saint-Germain Fourth Retro - 01.jpg"
+   ],
+   "handle": "2018-19-paris-saint-germain-fourth-retro"
+  },
+  {
+   "id": "psg-12",
+   "photos": [
+    "p178"
+   ],
+   "title": "2018/19 Paris Saint-Germain Fourth Long Sleeve Retro",
+   "tier": "retroLong",
+   "blurb": "Long sleeve black Jordan shirt with the grey centre stripe and the Fly Emirates sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2018-19 Paris Saint-Germain Fourth Long Sleeve Retro - 01.jpg"
+   ],
+   "handle": "2018-19-paris-saint-germain-fourth-long-sleeve-retro"
+  },
+  {
+   "id": "psg-13",
+   "photos": [
+    "p179"
+   ],
+   "title": "2020/21 Paris Saint-Germain Fourth Retro",
+   "tier": "retro",
+   "blurb": "The pink and purple Jordan fourth shirt with the tie-dye print and the ALL Accor sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2020-21 Paris Saint-Germain Fourth Retro - 01.jpg"
+   ],
+   "handle": "2020-21-paris-saint-germain-fourth-retro"
+  },
+  {
+   "id": "psg-14",
+   "photos": [
+    "p180"
+   ],
+   "title": "2019/20 Paris Saint-Germain Fourth Retro",
+   "tier": "retro",
+   "blurb": "Black Jordan fourth shirt with the blue, white and red centre stripe and the ALL Accor sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2019-20 Paris Saint-Germain Fourth Retro - 01.jpg"
+   ],
+   "handle": "2019-20-paris-saint-germain-fourth-retro"
+  },
+  {
+   "id": "psg-15",
+   "photos": [
+    "p181"
+   ],
+   "title": "Paris Saint-Germain White and Navy Track Jacket",
+   "tier": "jacket",
+   "blurb": "White full-zip track jacket with a navy shoulder yoke and red cuffs and hem, with the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain White and Navy Track Jacket - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-white-and-navy-track-jacket"
+  },
+  {
+   "id": "psg-16",
+   "photos": [
+    "p182"
+   ],
+   "title": "Paris Saint-Germain Jordan Wings Track Jacket",
+   "tier": "jacket",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "paris-saint-germain-jordan-wings-track-jacket",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "Paris Saint-Germain Jordan Wings Track Jacket - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-jordan-wings-track-jacket"
+  },
+  {
+   "id": "psg-17",
+   "photos": [
+    "p183",
+    "p223"
+   ],
+   "title": "Paris Saint-Germain Fly Emirates Retro Sweatshirt",
+   "tier": "hoodie",
+   "blurb": "Navy crew-neck sweatshirt with the red centre band and the Fly Emirates sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Fly Emirates Retro Sweatshirt - 01.jpg",
+    "Paris Saint-Germain Fly Emirates Retro Sweatshirt - 02.jpg"
+   ],
+   "handle": "paris-saint-germain-fly-emirates-retro-sweatshirt"
+  },
+  {
+   "id": "psg-18",
+   "photos": [
+    "p184"
+   ],
+   "title": "Paris Saint-Germain Navy and Light Blue Full-Zip Tracksuit",
+   "tier": "fullZip",
+   "blurb": "Navy full-zip track jacket with light blue sleeves, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy and Light Blue Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-and-light-blue-full-zip-tracksuit"
+  },
+  {
+   "id": "psg-19",
+   "photos": [
+    "p185"
+   ],
+   "title": "Paris Saint-Germain White Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "White half-zip training top with a blue shoulder flash and the Qatar Airways sponsor, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain White Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-white-half-zip-training-set"
+  },
+  {
+   "id": "psg-20",
+   "photos": [
+    "p186"
+   ],
+   "title": "Paris Saint-Germain Navy Wings Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with the white wing print across the shoulders, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy Wings Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-wings-half-zip-training-set"
+  },
+  {
+   "id": "psg-21",
+   "photos": [
+    "p187"
+   ],
+   "title": "Paris Saint-Germain Black and White Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Black half-zip training top with a white shoulder flash and the Qatar Airways sponsor, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Black and White Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-black-and-white-half-zip-training-set"
+  },
+  {
+   "id": "psg-22",
+   "photos": [
+    "p188"
+   ],
+   "title": "Paris Saint-Germain Black Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Black half-zip training top with a white sweep across the chest and the club crest, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Black Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-black-half-zip-training-set"
+  },
+  {
+   "id": "psg-23",
+   "photos": [
+    "p189"
+   ],
+   "title": "Paris Saint-Germain Navy and Grey Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with grey shoulder panels, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy and Grey Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-and-grey-half-zip-training-set"
+  },
+  {
+   "id": "psg-24",
+   "photos": [
+    "p190"
+   ],
+   "title": "Paris Saint-Germain Blue and Grey Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Blue half-zip training top with grey sleeves and a royal blue shoulder flash, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Blue and Grey Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-blue-and-grey-half-zip-training-set"
+  },
+  {
+   "id": "psg-25",
+   "photos": [
+    "p191"
+   ],
+   "title": "Paris Saint-Germain Blue Wings Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Royal blue half-zip training top with the white wing print on the shoulders, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Blue Wings Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-blue-wings-half-zip-training-set"
+  },
+  {
+   "id": "psg-26",
+   "photos": [
+    "p192"
+   ],
+   "title": "Paris Saint-Germain Navy and White Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with white shoulder flashes and the Qatar Airways sponsor, sold with the matching navy PARIS bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy and White Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-and-white-half-zip-training-set"
+  },
+  {
+   "id": "psg-27",
+   "photos": [
+    "p193"
+   ],
+   "title": "Paris Saint-Germain Navy Paris Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Navy half-zip training top with white shoulder panels and PARIS on the chest, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy Paris Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-paris-half-zip-training-set"
+  },
+  {
+   "id": "psg-28",
+   "photos": [
+    "p194"
+   ],
+   "title": "Paris Saint-Germain Red Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Red half-zip training top with white shoulder panels and the Qatar Airways sponsor, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Red Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-red-half-zip-training-set"
+  },
+  {
+   "id": "psg-29",
+   "photos": [
+    "p195"
+   ],
+   "title": "Paris Saint-Germain Red Training Set",
+   "tier": "trainingSet",
+   "blurb": "Red training shirt with white shoulder panels and the Qatar Airways sponsor, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Red Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-red-training-set"
+  },
+  {
+   "id": "psg-30",
+   "photos": [
+    "p196"
+   ],
+   "title": "Paris Saint-Germain Black Training Set",
+   "tier": "trainingSet",
+   "blurb": "Black training shirt with a white shoulder sweep and the Qatar Airways sponsor, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Black Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-black-training-set"
+  },
+  {
+   "id": "psg-31",
+   "photos": [
+    "p197"
+   ],
+   "title": "Paris Saint-Germain Blue and Grey Training Set",
+   "tier": "trainingSet",
+   "blurb": "Blue training shirt with grey shoulder panels and the Qatar Airways sponsor, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Blue and Grey Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-blue-and-grey-training-set"
+  },
+  {
+   "id": "psg-32",
+   "photos": [
+    "p198"
+   ],
+   "title": "Paris Saint-Germain White Training Set",
+   "tier": "trainingSet",
+   "blurb": "White training shirt with a blue shoulder flash and the Qatar Airways sponsor, sold with the matching black shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain White Training Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-white-training-set"
+  },
+  {
+   "id": "psg-33",
+   "photos": [
+    "p199"
+   ],
+   "title": "Paris Saint-Germain Slate Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Slate blue sleeveless training vest with the Qatar Airways sponsor, sold with the matching slate shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Slate Training Vest Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-slate-training-vest-set"
+  },
+  {
+   "id": "psg-34",
+   "photos": [
+    "p200"
+   ],
+   "title": "Paris Saint-Germain Blue and Red Training Vest Set",
+   "tier": "trainingSet",
+   "blurb": "Sleeveless training vest graded from blue to red with the Qatar Airways sponsor, sold with the matching navy shorts.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Blue and Red Training Vest Set - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-blue-and-red-training-vest-set"
+  },
+  {
+   "id": "psg-35",
+   "photos": [
+    "p201"
+   ],
+   "title": "2025/26 Paris Saint-Germain Away Player Version",
+   "tier": "player",
+   "blurb": "White away shirt in the player cut with the navy and red brushstroke down the front and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Paris Saint-Germain Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-paris-saint-germain-away-player-version"
+  },
+  {
+   "id": "psg-36",
+   "photos": [
+    "p202"
+   ],
+   "title": "Paris Saint-Germain Navy Home Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy home shirt in the player cut with the red centre band edged in white and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy Home Player Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-home-player-version"
+  },
+  {
+   "id": "psg-37",
+   "photos": [
+    "p203"
+   ],
+   "title": "2024/25 Paris Saint-Germain Home Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "paris-saint-germain-2024-25-home-jersey",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Home Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-home-player-version"
+  },
+  {
+   "id": "psg-38",
+   "photos": [
+    "p204"
+   ],
+   "title": "Paris Saint-Germain White Centre Stripe Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "White long sleeve shirt in the player cut with the blue and red striped centre band.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain White Centre Stripe Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-white-centre-stripe-long-sleeve-player-version"
+  },
+  {
+   "id": "psg-39",
+   "photos": [
+    "p205"
+   ],
+   "title": "2025/26 Paris Saint-Germain Home Player Version",
+   "tier": "player",
+   "blurb": "Blue home shirt in the player cut with the wide red centre band edged in white and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Paris Saint-Germain Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-paris-saint-germain-home-player-version"
+  },
+  {
+   "id": "psg-40",
+   "photos": [
+    "p206"
+   ],
+   "title": "Paris Saint-Germain White Centre Stripe Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt in the player cut with the blue and red striped centre band and a navy collar.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain White Centre Stripe Player Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-white-centre-stripe-player-version"
+  },
+  {
+   "id": "psg-41",
+   "photos": [
+    "p207"
+   ],
+   "title": "2024/25 Paris Saint-Germain Fourth Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "paris-saint-germain-2024-25-fourth-jersey-jordan-camo",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Fourth Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-fourth-player-version"
+  },
+  {
+   "id": "psg-42",
+   "photos": [
+    "p208"
+   ],
+   "title": "2024/25 Paris Saint-Germain Fourth Pinstripe Player Version",
+   "tier": "player",
+   "blurb": "Black Jordan fourth shirt in the player cut with the tonal pinstripes and a thin red centre line.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Fourth Pinstripe Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-fourth-pinstripe-player-version"
+  },
+  {
+   "id": "psg-43",
+   "photos": [
+    "p209"
+   ],
+   "title": "Paris Saint-Germain Navy Brushed Stripe Home Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy home shirt in the player cut with the brushed red centre stripe and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy Brushed Stripe Home Player Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-brushed-stripe-home-player-version"
+  },
+  {
+   "id": "psg-44",
+   "photos": [
+    "p210"
+   ],
+   "title": "Paris Saint-Germain Red Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt in the player cut with a royal blue collar and shoulder trim and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Red Player Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-red-player-version"
+  },
+  {
+   "id": "psg-45",
+   "photos": [
+    "p211"
+   ],
+   "title": "Paris Saint-Germain Wings Long Sleeve Player Version",
+   "tier": "playerLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Blue long sleeve shirt in the player cut with the white wing print across the shoulders.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Wings Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-wings-long-sleeve-player-version"
+  },
+  {
+   "id": "psg-46",
+   "photos": [
+    "p212"
+   ],
+   "title": "2024/25 Paris Saint-Germain Away Player Version",
+   "tier": "player",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "paris-saint-germain-2024-25-away-jersey-doue-14",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Away Player Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-away-player-version"
+  },
+  {
+   "id": "psg-47",
+   "photos": [
+    "p213"
+   ],
+   "title": "Paris Saint-Germain Navy Home Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy shirt with the red centre band and matching navy shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Navy Home Kids Kit - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-navy-home-kids-kit"
+  },
+  {
+   "id": "psg-48",
+   "photos": [
+    "p214"
+   ],
+   "title": "2025/26 Paris Saint-Germain Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Blue shirt with the wide red centre band and matching blue shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Paris Saint-Germain Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-paris-saint-germain-home-kids-kit"
+  },
+  {
+   "id": "psg-49",
+   "photos": [
+    "p215"
+   ],
+   "title": "Paris Saint-Germain White Away Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with the blue and red centre band and matching white shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain White Away Kids Kit - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-white-away-kids-kit"
+  },
+  {
+   "id": "psg-50",
+   "photos": [
+    "p216"
+   ],
+   "title": "Paris Saint-Germain Black Marbled Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with the marbled gold print and matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Black Marbled Kids Kit - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-black-marbled-kids-kit"
+  },
+  {
+   "id": "psg-51",
+   "photos": [
+    "p217"
+   ],
+   "title": "2024/25 Paris Saint-Germain Fourth Kids Kit",
+   "tier": "kids",
+   "blurb": "Black Jordan shirt with the tonal pinstripes and matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Fourth Kids Kit - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-fourth-kids-kit"
+  },
+  {
+   "id": "psg-52",
+   "photos": [
+    "p218"
+   ],
+   "title": "Paris Saint-Germain Red Kids Kit",
+   "tier": "kids",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt with a royal blue collar and matching red shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Red Kids Kit - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-red-kids-kit"
+  },
+  {
+   "id": "psg-53",
+   "photos": [
+    "p219"
+   ],
+   "title": "2025/26 Paris Saint-Germain Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Blue long sleeve home shirt with the wide red centre band edged in white and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Paris Saint-Germain Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-paris-saint-germain-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "psg-54",
+   "photos": [
+    "p220",
+    "p221"
+   ],
+   "title": "2025/26 Paris Saint-Germain Home Fan Version",
+   "tier": "fan",
+   "blurb": "Blue home shirt with the wide red centre band edged in white and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Paris Saint-Germain Home Fan Version - 01.jpg",
+    "2025-26 Paris Saint-Germain Home Fan Version - 02.jpg"
+   ],
+   "handle": "2025-26-paris-saint-germain-home-fan-version"
+  },
+  {
+   "id": "psg-55",
+   "photos": [
+    "p222"
+   ],
+   "title": "2024/25 Paris Saint-Germain Fourth Fan Version",
+   "tier": "fan",
+   "blurb": "Black Jordan fourth shirt with the marbled gold and green print and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Fourth Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-fourth-fan-version"
+  },
+  {
+   "id": "psg-56",
+   "photos": [
+    "p224"
+   ],
+   "title": "2024/25 Paris Saint-Germain Fourth Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve black Jordan shirt with the marbled gold and green print and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Fourth Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-fourth-long-sleeve-fan-version"
+  },
+  {
+   "id": "psg-57",
+   "photos": [
+    "p225"
+   ],
+   "title": "2024/25 Paris Saint-Germain Fourth Pinstripe Fan Version",
+   "tier": "fan",
+   "dedupe": {
+    "verdict": "listed",
+    "matchHandle": "paris-saint-germain-2024-25-fourth-jersey-jordan",
+    "checkedBy": "eye"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Fourth Pinstripe Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-fourth-pinstripe-fan-version"
+  },
+  {
+   "id": "psg-58",
+   "photos": [
+    "p226"
+   ],
+   "title": "Paris Saint-Germain Red Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Red shirt with a royal blue collar and shoulder trim and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Red Fan Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-red-fan-version"
+  },
+  {
+   "id": "psg-59",
+   "photos": [
+    "p227"
+   ],
+   "title": "Paris Saint-Germain Red Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "seasonConfidence": "unknown",
+   "blurb": "Red long sleeve shirt with a royal blue collar and cuffs and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Red Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-red-long-sleeve-fan-version"
+  },
+  {
+   "id": "psg-60",
+   "photos": [
+    "p228"
+   ],
+   "title": "2024/25 Paris Saint-Germain Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Navy long sleeve home shirt with the red diamond-patterned centre band and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "psg-61",
+   "photos": [
+    "p229"
+   ],
+   "title": "Paris Saint-Germain White Wings Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "White shirt with the navy wing print across the shoulders and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain White Wings Fan Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-white-wings-fan-version"
+  },
+  {
+   "id": "psg-62",
+   "photos": [
+    "p230"
+   ],
+   "title": "Paris Saint-Germain Black Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black shirt with a tonal print across the body and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Black Fan Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-black-fan-version"
+  },
+  {
+   "id": "psg-63",
+   "photos": [
+    "p231"
+   ],
+   "title": "2024/25 Paris Saint-Germain Home Fan Version",
+   "tier": "fan",
+   "blurb": "Navy home shirt with the red diamond-patterned centre band and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Paris Saint-Germain Home Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-paris-saint-germain-home-fan-version"
+  },
+  {
+   "id": "psg-64",
+   "photos": [
+    "p232"
+   ],
+   "title": "Paris Saint-Germain Blue Wings Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Royal blue shirt with the white wing print across the shoulders and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Blue Wings Fan Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-blue-wings-fan-version"
+  },
+  {
+   "id": "psg-65",
+   "photos": [
+    "p233"
+   ],
+   "title": "Paris Saint-Germain Blue Wings Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Royal blue long sleeve shirt with the white wing print across the shoulders and the Qatar Airways sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Paris Saint-Germain Blue Wings Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "paris-saint-germain-blue-wings-long-sleeve-fan-version"
+  }
+ ]
+}

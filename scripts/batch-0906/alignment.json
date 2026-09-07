@@ -1,0 +1,344 @@
+{
+ "messages": [
+  {
+   "t": "09:10",
+   "size": 0,
+   "cap": "Leeds united",
+   "team": "Leeds United",
+   "skip": false,
+   "photos": []
+  },
+  {
+   "t": "09:10",
+   "cap": "fan version",
+   "team": "Leeds United",
+   "size": 4,
+   "from": "p1",
+   "to": "p4",
+   "photos": [
+    "p1",
+    "p2",
+    "p3",
+    "p4"
+   ],
+   "firstFileMinute": "09:10",
+   "drift": 0
+  },
+  {
+   "t": "09:10",
+   "cap": "kids set",
+   "team": "Leeds United",
+   "size": 1,
+   "from": "p5",
+   "to": "p5",
+   "photos": [
+    "p5"
+   ],
+   "firstFileMinute": "09:10",
+   "drift": 0
+  },
+  {
+   "t": "09:10",
+   "cap": "retro",
+   "team": "Leeds United",
+   "size": 1,
+   "from": "p6",
+   "to": "p6",
+   "photos": [
+    "p6"
+   ],
+   "firstFileMinute": "09:10",
+   "drift": 0
+  },
+  {
+   "t": "09:10",
+   "cap": "players version",
+   "team": "Leeds United",
+   "size": 1,
+   "from": "p7",
+   "to": "p7",
+   "photos": [
+    "p7"
+   ],
+   "firstFileMinute": "09:10",
+   "drift": 0
+  },
+  {
+   "t": "09:10",
+   "size": 0,
+   "cap": "Ajax",
+   "team": "Ajax",
+   "skip": false,
+   "photos": []
+  },
+  {
+   "t": "09:11",
+   "cap": "",
+   "team": "Ajax",
+   "size": 1,
+   "from": "p8",
+   "to": "p8",
+   "photos": [
+    "p8"
+   ],
+   "firstFileMinute": "09:11",
+   "drift": 0
+  },
+  {
+   "t": "09:11",
+   "cap": "player version",
+   "team": "Ajax",
+   "size": 1,
+   "from": "p9",
+   "to": "p9",
+   "photos": [
+    "p9"
+   ],
+   "firstFileMinute": "09:11",
+   "drift": 0
+  },
+  {
+   "t": "09:11",
+   "cap": "retro",
+   "team": "Ajax",
+   "size": 4,
+   "from": "p10",
+   "to": "p13",
+   "photos": [
+    "p10",
+    "p11",
+    "p12",
+    "p13"
+   ],
+   "firstFileMinute": "09:11",
+   "drift": 0
+  },
+  {
+   "t": "09:11",
+   "cap": "fan version",
+   "team": "Ajax",
+   "size": 2,
+   "from": "p14",
+   "to": "p15",
+   "photos": [
+    "p14",
+    "p15"
+   ],
+   "firstFileMinute": "09:11",
+   "drift": 0
+  },
+  {
+   "t": "09:11",
+   "size": 0,
+   "cap": "leeds kids set (same album, Leeds crest)",
+   "team": "Leeds United",
+   "skip": false,
+   "photos": []
+  },
+  {
+   "t": "09:11",
+   "cap": "kids set",
+   "team": "Leeds United",
+   "size": 1,
+   "from": "p16",
+   "to": "p16",
+   "photos": [
+    "p16"
+   ],
+   "firstFileMinute": "09:11",
+   "drift": 0
+  },
+  {
+   "t": "09:11",
+   "size": 0,
+   "cap": "back to ajax (same album)",
+   "team": "Ajax",
+   "skip": false,
+   "photos": []
+  },
+  {
+   "t": "09:11",
+   "cap": "kids set",
+   "team": "Ajax",
+   "size": 1,
+   "from": "p17",
+   "to": "p17",
+   "photos": [
+    "p17"
+   ],
+   "firstFileMinute": "09:11",
+   "drift": 0
+  },
+  {
+   "t": "09:11",
+   "cap": "half zip",
+   "team": "Ajax",
+   "size": 1,
+   "from": "p18",
+   "to": "p18",
+   "photos": [
+    "p18"
+   ],
+   "firstFileMinute": "09:11",
+   "drift": 0
+  },
+  {
+   "t": "09:11",
+   "size": 0,
+   "cap": "Tracksuits :",
+   "team": "Unbranded Tracksuits",
+   "skip": false,
+   "photos": []
+  },
+  {
+   "t": "09:12",
+   "cap": "half zip",
+   "team": "Unbranded Tracksuits",
+   "size": 6,
+   "from": "p19",
+   "to": "p24",
+   "photos": [
+    "p19",
+    "p20",
+    "p21",
+    "p22",
+    "p23",
+    "p24"
+   ],
+   "firstFileMinute": "09:12",
+   "drift": 0
+  },
+  {
+   "t": "09:12",
+   "cap": "full zip",
+   "team": "Unbranded Tracksuits",
+   "size": 12,
+   "from": "p25",
+   "to": "p36",
+   "photos": [
+    "p25",
+    "p26",
+    "p27",
+    "p28",
+    "p29",
+    "p30",
+    "p31",
+    "p32",
+    "p33",
+    "p34",
+    "p35",
+    "p36"
+   ],
+   "firstFileMinute": "09:12",
+   "drift": 0
+  }
+ ],
+ "teams": [
+  {
+   "team": "Leeds United",
+   "order": 1,
+   "from": "p1",
+   "to": "p16",
+   "count": 8,
+   "captions": [
+    {
+     "cap": "fan version",
+     "size": 4,
+     "from": "p1",
+     "to": "p4"
+    },
+    {
+     "cap": "kids set",
+     "size": 1,
+     "from": "p5",
+     "to": "p5"
+    },
+    {
+     "cap": "retro",
+     "size": 1,
+     "from": "p6",
+     "to": "p6"
+    },
+    {
+     "cap": "players version",
+     "size": 1,
+     "from": "p7",
+     "to": "p7"
+    },
+    {
+     "cap": "kids set",
+     "size": 1,
+     "from": "p16",
+     "to": "p16"
+    }
+   ]
+  },
+  {
+   "team": "Ajax",
+   "order": 2,
+   "from": "p8",
+   "to": "p18",
+   "count": 10,
+   "captions": [
+    {
+     "cap": "",
+     "size": 1,
+     "from": "p8",
+     "to": "p8"
+    },
+    {
+     "cap": "player version",
+     "size": 1,
+     "from": "p9",
+     "to": "p9"
+    },
+    {
+     "cap": "retro",
+     "size": 4,
+     "from": "p10",
+     "to": "p13"
+    },
+    {
+     "cap": "fan version",
+     "size": 2,
+     "from": "p14",
+     "to": "p15"
+    },
+    {
+     "cap": "kids set",
+     "size": 1,
+     "from": "p17",
+     "to": "p17"
+    },
+    {
+     "cap": "half zip",
+     "size": 1,
+     "from": "p18",
+     "to": "p18"
+    }
+   ]
+  },
+  {
+   "team": "Unbranded Tracksuits",
+   "order": 3,
+   "from": "p19",
+   "to": "p36",
+   "count": 18,
+   "captions": [
+    {
+     "cap": "half zip",
+     "size": 6,
+     "from": "p19",
+     "to": "p24"
+    },
+    {
+     "cap": "full zip",
+     "size": 12,
+     "from": "p25",
+     "to": "p36"
+    }
+   ]
+  }
+ ],
+ "leftover": []
+}

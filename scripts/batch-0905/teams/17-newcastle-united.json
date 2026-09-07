@@ -1,0 +1,306 @@
+{
+ "team": "Newcastle United",
+ "slug": "newcastle-united",
+ "status": "imported",
+ "block": {
+  "from": "p507",
+  "to": "p524",
+  "count": 18
+ },
+ "albumOrderFix": "The four 23:30 messages were harvested in the WRONG ORDER. The chat gave player(4), kids(3), retro(3), windbreaker(1); the photographs say retro(3), windbreaker(1), player(4), kids(3). The tell is the shorts - a kids set is the only album whose photographs show a shirt AND shorts, and the only three such photographs are p515-p517, which the old order handed to 'retro'. captions.tsv was reordered and align-0905.mjs re-run: still 664 assigned, zero drift, nothing left over. All four messages share the minute 23:30, and within-minute order is the one thing the harvester reconstructs rather than reads (smallest offsetTop), so it is exactly where this fails. Check any minute that carries several albums.",
+ "notes": {
+  "albums": "Six albums after the reorder: retro (3), windbreaker (1), player version (4), kids set (3), player version (1), fan version (6).",
+  "dedupe": "The store carried NO Newcastle United products at all before this batch, so nothing could be a duplicate. All 18 are new.",
+  "seasonReading": "The sponsor dates these precisely: Newcastle Brown Ale to 2000, northern rock 2003-2012, Sela 2023-2026, KNOX Hydrate from 2026/27. Every garment here is datable, so no title needed a colour fallback."
+ },
+ "garments": [
+  {
+   "id": "new-01",
+   "photos": [
+    "p507"
+   ],
+   "title": "1995/96 Newcastle United Away Retro",
+   "tier": "retro",
+   "blurb": "The maroon and blue hooped adidas away shirt with the Newcastle Brown Ale roundel on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1995-96 Newcastle United Away Retro - 01.jpg"
+   ],
+   "handle": "1995-96-newcastle-united-away-retro"
+  },
+  {
+   "id": "new-02",
+   "photos": [
+    "p508"
+   ],
+   "title": "1993/95 Newcastle United Third Retro",
+   "tier": "retro",
+   "blurb": "Grey adidas third shirt with the black and white chest bands and the Newcastle Brown Ale roundel.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "1993-95 Newcastle United Third Retro - 01.jpg"
+   ],
+   "handle": "1993-95-newcastle-united-third-retro"
+  },
+  {
+   "id": "new-03",
+   "photos": [
+    "p509"
+   ],
+   "title": "2007/08 Newcastle United Away Retro",
+   "tier": "retro",
+   "blurb": "Navy adidas away shirt with the white hem trim and the northern rock sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2007-08 Newcastle United Away Retro - 01.jpg"
+   ],
+   "handle": "2007-08-newcastle-united-away-retro"
+  },
+  {
+   "id": "new-04",
+   "photos": [
+    "p510"
+   ],
+   "title": "Newcastle United Black Track Jacket",
+   "tier": "jacket",
+   "blurb": "Black full-zip track jacket with white side panels and the club crest on the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Newcastle United Black Track Jacket - 01.jpg"
+   ],
+   "handle": "newcastle-united-black-track-jacket"
+  },
+  {
+   "id": "new-05",
+   "photos": [
+    "p511"
+   ],
+   "title": "2026/27 Newcastle United Home Long Sleeve Player Version",
+   "tier": "playerLong",
+   "blurb": "Long sleeve black and white striped home shirt in the player cut with pale blue shoulder stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Home Long Sleeve Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-home-long-sleeve-player-version"
+  },
+  {
+   "id": "new-06",
+   "photos": [
+    "p512"
+   ],
+   "title": "2025/26 Newcastle United Away Player Version",
+   "tier": "player",
+   "blurb": "Navy away shirt in the player cut with orange trim and the orange Sela sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Newcastle United Away Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-newcastle-united-away-player-version"
+  },
+  {
+   "id": "new-07",
+   "photos": [
+    "p513"
+   ],
+   "title": "2025/26 Newcastle United Home Player Version",
+   "tier": "player",
+   "blurb": "Black and white striped home shirt in the player cut with a white collar and the Sela sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Newcastle United Home Player Version - 01.jpg"
+   ],
+   "handle": "2025-26-newcastle-united-home-player-version"
+  },
+  {
+   "id": "new-08",
+   "photos": [
+    "p514"
+   ],
+   "title": "2026/27 Newcastle United Home Player Version",
+   "tier": "player",
+   "blurb": "Black and white striped home shirt in the player cut with pale blue collar and shoulder stripes.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Home Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-home-player-version"
+  },
+  {
+   "id": "new-09",
+   "photos": [
+    "p515"
+   ],
+   "title": "2025/26 Newcastle United Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Navy shirt with orange trim and the Sela sponsor, with matching navy shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Newcastle United Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2025-26-newcastle-united-away-kids-kit"
+  },
+  {
+   "id": "new-10",
+   "photos": [
+    "p516"
+   ],
+   "title": "2026/27 Newcastle United Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Navy shirt with the tonal print and the KNOX Hydrate sponsor, with matching navy shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-away-kids-kit"
+  },
+  {
+   "id": "new-11",
+   "photos": [
+    "p517"
+   ],
+   "title": "2026/27 Newcastle United Home Kids Kit",
+   "tier": "kids",
+   "blurb": "Black and white striped shirt with matching black shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Home Kids Kit - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-home-kids-kit"
+  },
+  {
+   "id": "new-12",
+   "photos": [
+    "p518"
+   ],
+   "title": "2026/27 Newcastle United Away Player Version",
+   "tier": "player",
+   "blurb": "Navy away shirt in the player cut with the tonal brick print, pale blue trim and the KNOX Hydrate sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Away Player Version - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-away-player-version"
+  },
+  {
+   "id": "new-13",
+   "photos": [
+    "p519"
+   ],
+   "title": "2026/27 Newcastle United Home Long Sleeve Fan Version",
+   "tier": "fanLong",
+   "blurb": "Long sleeve black and white striped home shirt with pale blue shoulder stripes and the KNOX Hydrate sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Home Long Sleeve Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-home-long-sleeve-fan-version"
+  },
+  {
+   "id": "new-14",
+   "photos": [
+    "p520"
+   ],
+   "title": "2025/26 Newcastle United Away Fan Version",
+   "tier": "fan",
+   "blurb": "Royal blue away shirt with orange trim and the orange Sela sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Newcastle United Away Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-newcastle-united-away-fan-version"
+  },
+  {
+   "id": "new-15",
+   "photos": [
+    "p521"
+   ],
+   "title": "2026/27 Newcastle United Home Fan Version",
+   "tier": "fan",
+   "blurb": "Black and white striped home shirt with pale blue collar trim and the KNOX Hydrate sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Home Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-home-fan-version"
+  },
+  {
+   "id": "new-16",
+   "photos": [
+    "p522"
+   ],
+   "title": "2025/26 Newcastle United Home Fan Version",
+   "tier": "fan",
+   "blurb": "Black and white striped home shirt with a pale blue collar and the Sela sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Newcastle United Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-newcastle-united-home-fan-version"
+  },
+  {
+   "id": "new-17",
+   "photos": [
+    "p523"
+   ],
+   "title": "2026/27 Newcastle United Away Fan Version",
+   "tier": "fan",
+   "blurb": "Navy away shirt with the tonal brick print, pale blue trim and the KNOX Hydrate sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Away Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-away-fan-version"
+  },
+  {
+   "id": "new-18",
+   "photos": [
+    "p524"
+   ],
+   "title": "2026/27 Newcastle United Third Fan Version",
+   "tier": "fan",
+   "blurb": "Lilac third shirt with a purple collar and the KNOX Hydrate sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2026-27 Newcastle United Third Fan Version - 01.jpg"
+   ],
+   "handle": "2026-27-newcastle-united-third-fan-version"
+  }
+ ]
+}
