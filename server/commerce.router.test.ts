@@ -98,10 +98,12 @@ describe("commerce.products", () => {
       { url: "https://img/1.jpg", altText: null, width: 800, height: 1000 },
     ]);
     expect(product.priceRange.min.amount).toBe("385.00");
-    expect(product.variants[0].id).toBe(rawVariant.id);
-    expect(product.variants[0].selectedOptions).toEqual([
-      { name: "Title", value: "Default Title" },
-    ]);
+    // A grid asks "can I buy this, and in what size" — and nothing else of a
+    // variant. The id, price and title stay behind on the detail query.
+    expect(product.variants[0]).toEqual({
+      availableForSale: true,
+      selectedOptions: [{ name: "Title", value: "Default Title" }],
+    });
 
     // The shape must not contain raw GraphQL edges/nodes — that would mean the
     // normalization layer leaked. Stringify and assert.
@@ -114,6 +116,35 @@ describe("commerce.products", () => {
     expect((init as RequestInit).headers).toMatchObject({
       "X-Shopify-Storefront-Access-Token": "test-token",
     });
+  });
+
+  // The whole catalogue travels on this response — 1 249 products in September
+  // 2026 — so the list must not carry anything a card cannot render. Dropping
+  // these four took the payload from 3.4 MB to about 1.3 MB.
+  it("leaves the detail-page-only fields off the list", async () => {
+    ok({ products: { edges: [{ node: rawProduct }] } });
+
+    const caller = appRouter.createCaller(makeCtx());
+    const [product] = await caller.commerce.products.list();
+
+    for (const field of ["description", "descriptionHtml", "options"]) {
+      expect(product, `${field} belongs to the detail query, not the grid`).not.toHaveProperty(field);
+    }
+    for (const field of ["id", "title", "price", "compareAtPrice"]) {
+      expect(product.variants[0], `variant ${field} is dead weight in a grid`).not.toHaveProperty(field);
+    }
+  });
+
+  it("still returns the full product, variant ids and all, by handle", async () => {
+    ok({ productByHandle: rawProduct });
+
+    const caller = appRouter.createCaller(makeCtx());
+    const product = await caller.commerce.products.byHandle({ handle: "aria" });
+
+    expect(product.descriptionHtml).toBe(rawProduct.descriptionHtml);
+    expect(product.options).toEqual(rawProduct.options);
+    expect(product.variants[0].id).toBe(rawVariant.id);
+    expect(product.variants[0].price.amount).toBe(rawVariant.price.amount);
   });
 
   it("maps a missing handle to a NOT_FOUND TRPCError", async () => {

@@ -1,4 +1,4 @@
-import type { Product } from "@shared/commerce/types";
+import type { ProductSummary } from "@shared/commerce/types";
 import { isGroup, SHOP_MENU, type NavLeaf, type NavNode } from "./navigation";
 
 /**
@@ -24,7 +24,7 @@ export type KitSlot = "home" | "away" | "third" | "fourth" | "goalkeeper";
 /** The order sizes are shown in, smallest first. Anything unrecognised sorts last. */
 const SIZE_ORDER = ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"];
 
-function searchableText(product: Product): string {
+function searchableText(product: ProductSummary): string {
   return [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase();
 }
 
@@ -34,7 +34,7 @@ function searchableText(product: Product): string {
  * both, because a retro shirt sold in fan spec is still shelved as a retro
  * and priced at the retro tier.
  */
-export function versionOf(product: Product): KitVersion | null {
+export function versionOf(product: ProductSummary): KitVersion | null {
   const text = searchableText(product);
   if (/\b(retro|vintage)\b/.test(text)) return "retro";
   if (/\bplayer\b/.test(text)) return "player";
@@ -47,12 +47,12 @@ export function versionOf(product: Product): KitVersion | null {
  * "2025-26". All three normalise to the two-digit form the client uses when
  * they talk about stock.
  */
-export function seasonOf(product: Product): string | null {
+export function seasonOf(product: ProductSummary): string | null {
   const match = /\b(?:20)?(\d{2})\s*[\/-]\s*(?:20)?(\d{2})\b/.exec(product.title);
   return match ? `${match[1]}/${match[2]}` : null;
 }
 
-export function kitSlotOf(product: Product): KitSlot | null {
+export function kitSlotOf(product: ProductSummary): KitSlot | null {
   const text = searchableText(product);
   if (/\b(goalkeeper|keeper|\bgk\b)/.test(text)) return "goalkeeper";
   if (/\bfourth\b/.test(text)) return "fourth";
@@ -68,7 +68,7 @@ export function kitSlotOf(product: Product): KitSlot | null {
  * variant records what is still in stock, and the wireframe's promise is
  * "SIZE — in stock only".
  */
-export function sizesInStock(product: Product): string[] {
+export function sizesInStock(product: ProductSummary): string[] {
   const found = new Set<string>();
   for (const variant of product.variants) {
     if (!variant.availableForSale) continue;
@@ -128,7 +128,7 @@ export function sizeRangeLabel(sizes: string[]): string {
   return `${sizes[0]}–${sizes[sizes.length - 1]}`;
 }
 
-export function priceOf(product: Product): number {
+export function priceOf(product: ProductSummary): number {
   return Number(product.priceRange.min.amount);
 }
 
@@ -142,7 +142,7 @@ export function priceOf(product: Product): number {
  * page shows the switcher only where a sibling actually exists rather than
  * implying every kit comes in three versions.
  */
-export function kitKey(product: Product): string {
+export function kitKey(product: ProductSummary): string {
   return product.title
     .toLowerCase()
     .replace(/\((?:fan|player|authentic)[^)]*\)/g, " ")
@@ -155,7 +155,7 @@ export function kitKey(product: Product): string {
     .trim();
 }
 
-export function isLongSleeve(product: Product): boolean {
+export function isLongSleeve(product: ProductSummary): boolean {
   return /\blong\s*sleeve[sd]?\b/i.test(searchableText(product));
 }
 
@@ -182,7 +182,7 @@ const TEAM_LEAVES: NavLeaf[] = SHOP_MENU
   .flatMap(section => leavesUnder(section.children!))
   .sort((a, b) => b.q.length - a.q.length);
 
-export function clubOf(product: Product): string | null {
+export function clubOf(product: ProductSummary): string | null {
   const text = searchableText(product);
   const hit = TEAM_LEAVES.find(leaf => text.includes(leaf.q.toLowerCase()));
   return hit ? hit.label : null;
@@ -212,7 +212,7 @@ export type ShopFacets = {
 };
 
 /** What the rail can offer for a given set of products. */
-export function collectFacets(products: Product[]): ShopFacets {
+export function collectFacets(products: ProductSummary[]): ShopFacets {
   const versions = new Set<KitVersion>();
   const sizes = new Set<string>();
   const seasons = new Set<string>();
@@ -265,7 +265,7 @@ export function railIsActive(rail: RailState): boolean {
   return Boolean(rail.version || rail.sizes.length || rail.season || rail.slot || rail.maxPrice !== null);
 }
 
-export function applyRail(products: Product[], rail: RailState): Product[] {
+export function applyRail(products: ProductSummary[], rail: RailState): ProductSummary[] {
   return products.filter(product => {
     if (rail.version && versionOf(product) !== rail.version) return false;
 

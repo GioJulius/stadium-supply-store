@@ -1,4 +1,4 @@
-import type { Product } from "@shared/commerce/types";
+import type { ProductSummary } from "@shared/commerce/types";
 
 /**
  * The chips on the shop toolbar. Every key but `all` is matched as a substring
@@ -40,7 +40,7 @@ const CUSTOMER_FACING_BASELINE_HANDLES = new Set([
  * reconciled to a supplied asset. Generic drops from 07 onward are covered by
  * the reconciliation register; the two named records below have confirmed media.
  */
-export function isCustomerFacingMappedProduct(product: Product): boolean {
+export function isCustomerFacingMappedProduct(product: ProductSummary): boolean {
   return CUSTOMER_FACING_BASELINE_HANDLES.has(product.handle) || product.tags.includes("Editable Drop") || product.tags.includes("Mapped Media");
 }
 
@@ -49,7 +49,7 @@ export function isCustomerFacingMappedProduct(product: Product): boolean {
  * carries it depends on the import lineage the listing came from — so every
  * catalogue search reads all three as one string.
  */
-function searchableText(product: Product): string {
+function searchableText(product: ProductSummary): string {
   return [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase();
 }
 
@@ -59,7 +59,7 @@ function searchableText(product: Product): string {
  * day or two of the client posting it, so it stands in for "newest release"
  * closely enough to order a shop by.
  */
-function publishedTime(product: Product): number {
+function publishedTime(product: ProductSummary): number {
   const t = product.publishedAt ? Date.parse(product.publishedAt) : NaN;
   return Number.isNaN(t) ? 0 : t;
 }
@@ -71,7 +71,7 @@ function publishedTime(product: Product): number {
  * nothing on the page says where a photograph came from, because that is our
  * business and not the shopper's.
  */
-function isInstagramSourced(product: Product): boolean {
+function isInstagramSourced(product: ProductSummary): boolean {
   return product.tags.some(tag => /^ig-post-|^ig-drop-|^instagram/i.test(tag));
 }
 
@@ -81,12 +81,12 @@ function isInstagramSourced(product: Product): boolean {
  * compose, so "Arsenal" + "Retro" narrows rather than replaces.
  */
 export function filterAndSortProducts(
-  products: Product[],
+  products: ProductSummary[],
   filter: CatalogFilter,
   sort: CatalogSortMode,
   query = "",
   exclude = "",
-): Product[] {
+): ProductSummary[] {
   const queried = textMatchProducts(products, query, exclude);
   const matching = filter === "all" ? queried : queried.filter(product => searchableText(product).includes(filter));
   return sortProducts(matching, sort);
@@ -97,7 +97,7 @@ export function filterAndSortProducts(
  * narrow by search term first and then build its filter rail from whatever
  * survived — the rail's options have to describe the results, not the archive.
  */
-export function textMatchProducts(products: Product[], query = "", exclude = ""): Product[] {
+export function textMatchProducts(products: ProductSummary[], query = "", exclude = ""): ProductSummary[] {
   const term = query.trim().toLowerCase();
   const without = exclude.trim().toLowerCase();
   if (!term && !without) return products;
@@ -111,7 +111,7 @@ export function textMatchProducts(products: Product[], query = "", exclude = "")
 }
 
 /** The ordering half of the old combined helper. */
-export function sortProducts(products: Product[], sort: CatalogSortMode): Product[] {
+export function sortProducts(products: ProductSummary[], sort: CatalogSortMode): ProductSummary[] {
   return [...products].sort((a, b) => {
     const aPrice = Number(a.priceRange.min.amount);
     const bPrice = Number(b.priceRange.min.amount);
@@ -148,7 +148,7 @@ function isShortsOnly(haystack: string): boolean {
  * else, and newest first within each. Used by the shop grid and by the home
  * page's latest drop, so both agree on what "new" means.
  */
-export function compareByFreshness(a: Product, b: Product): number {
+export function compareByFreshness(a: ProductSummary, b: ProductSummary): number {
   const bySource = Number(isInstagramSourced(b)) - Number(isInstagramSourced(a));
   if (bySource !== 0) return bySource;
   const byDate = publishedTime(b) - publishedTime(a);
@@ -171,7 +171,7 @@ const NOT_PRINTABLE = /\bretro\b/i;
  * listing titled plainly as a "Jersey". The client raised the player versions
  * on 5 Sep 2026: the shirt prints the same way whichever spec it is.
  */
-export function isPersonalisable(product: Product): boolean {
+export function isPersonalisable(product: ProductSummary): boolean {
   const haystack = [product.title, product.productType ?? "", ...product.tags].join(" ");
   if (NON_SHIRT.test(haystack)) return false;
   if (isShortsOnly(haystack)) return false;
