@@ -60966,7 +60966,10 @@ var commerceRouter = router({
   products: router({
     list: publicProcedure.input(
       external_exports.object({
-        first: external_exports.number().int().min(1).max(1e3).optional(),
+        // Must stay >= STOREFRONT_CATALOG_FETCH_LIMIT in client/src/lib/catalog.ts.
+        // The storefront sends that constant verbatim, so a lower max here
+        // rejects the request rather than trimming it.
+        first: external_exports.number().int().min(1).max(5e3).optional(),
         collectionHandle: external_exports.string().min(1).optional()
       }).optional()
     ).query(async ({ input }) => {

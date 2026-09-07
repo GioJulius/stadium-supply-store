@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { TRPCError } from "@trpc/server";
 import type { TrpcContext } from "./_core/context";
 import { appRouter } from "./routers";
+import { STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
 
 type AuthenticatedUser = NonNullable<TrpcContext["user"]>;
 
@@ -67,6 +68,23 @@ const rawProduct = {
 };
 
 describe("commerce.products", () => {
+  // The storefront sends STOREFRONT_CATALOG_FETCH_LIMIT verbatim from
+  // client/src/lib/catalog.ts. If this input `max` ever drops below it the
+  // whole shop 500s on its first query, so pin the two together.
+  it("accepts the exact `first` the storefront asks for", async () => {
+    ok({
+      products: {
+        pageInfo: { hasNextPage: false, endCursor: null },
+        edges: [{ node: rawProduct }],
+      },
+    });
+
+    const caller = appRouter.createCaller(makeCtx());
+    await expect(
+      caller.commerce.products.list({ first: STOREFRONT_CATALOG_FETCH_LIMIT })
+    ).resolves.toHaveLength(1);
+  });
+
   it("normalizes the Storefront response into backend-agnostic Product shapes", async () => {
     ok({ products: { edges: [{ node: rawProduct }] } });
 

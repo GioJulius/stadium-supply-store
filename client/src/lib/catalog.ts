@@ -11,10 +11,21 @@ export type CatalogSortMode = "latest" | "price-asc" | "price-desc" | "name-asc"
 /**
  * How many products to pull for the storefront. This is NOT Shopify's page size
  * — the server pages through the Storefront API 250 at a time — it is a ceiling
- * so a runaway catalogue cannot land unbounded on a phone. Raise it as the
- * catalogue grows; the catalogue passed 250 on 2 Sep 2026.
+ * so a runaway catalogue cannot land unbounded on a phone.
+ *
+ * The ceiling truncates *silently*: the server sorts by TITLE, so whatever sits
+ * past it simply stops existing for browse, search and the filter chips, while
+ * its own product page and its sitemap entry carry on working. That is how it
+ * failed twice. The catalogue passed 250 on 2 Sep 2026, and passed the 1000 it
+ * was raised to on 6 Sep — for a day the shop showed 999 of 1 249 kits and the
+ * whole alphabetical tail from Manchester United onward was unreachable.
+ *
+ * So keep real headroom, not a value that merely clears today's count, and keep
+ * the two live guards that now watch it: the ceiling check in
+ * `server/shopify.smoke.test.ts`, and `server/routers/commerce.ts`, whose input
+ * `max` must never be lower than this number or the request is rejected outright.
  */
-export const STOREFRONT_CATALOG_FETCH_LIMIT = 1000;
+export const STOREFRONT_CATALOG_FETCH_LIMIT = 5000;
 
 /** Products per page in the shop grid. */
 export const SHOP_PAGE_SIZE = 48;
