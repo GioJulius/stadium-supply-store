@@ -1,16 +1,26 @@
 /**
- * Extends products to the size ranges the client specified on 27 Aug 2026.
+ * Extends every product to the size run its category sells in.
  *
- * Fan shirts sell S-4XL, player and retro S-2XL, rugby S-5XL, and everything
- * else S-2XL. An early import batch created products with S-XL only, so those
- * listings have been turning away every shopper above an XL — on a catalogue
- * whose supplier stocks up to 5XL.
+ * An early import batch created products with S-XL only, so those listings were
+ * turning away every shopper above an XL on a catalogue whose supplier stocks up
+ * to 5XL. New variants inherit the product's existing price and are created with
+ * inventory untracked like the rest of the catalogue, so they are immediately
+ * purchasable.
  *
- * New variants inherit the product's existing price, which is correct now that
- * `apply-client-pricing.mjs` has run, and are created with inventory untracked
- * like the rest of the catalogue so they are immediately purchasable.
+ * Idempotent: only missing sizes are created, never removed. Against a correct
+ * catalogue a dry run prints nothing, which is the test.
  *
- * Idempotent: only missing sizes are created.
+ * THE RUNS COME FROM `shared/commerce/taxonomy.json`, NOT FROM THIS FILE. That
+ * matters because this script silently stopped working once before: it matched
+ * the productType strings "Soccer Fan Version" and "Football Jersey", and when
+ * scripts/normalise-product-types.mjs collapsed 28 category names into 17 on
+ * 7 Sep 2026 those strings ceased to exist. Nothing errored — every fan shirt
+ * simply fell through to the S-2XL default and would have quietly lost its 3XL
+ * and 4XL on the next sweep. Reading the same file the live smoke test pins
+ * means a future rename breaks loudly, in a test, instead of here in silence.
+ *
+ * Sizes are the client's 7 September 2026 list, which supersedes the 27 August
+ * one this script was originally written against.
  *
  * Usage: node scripts/apply-client-sizing.mjs [--apply] [--limit N]
  */
@@ -28,19 +38,35 @@ const TOKEN = env.SHOPIFY_ADMIN_API_ACCESS_TOKEN;
 const APPLY = process.argv.includes("--apply");
 const LIMIT = Number(process.argv[process.argv.indexOf("--limit") + 1]) || Infinity;
 
-const FAN = ["S", "M", "L", "XL", "2XL", "3XL", "4XL"];
-const STANDARD = ["S", "M", "L", "XL", "2XL"];
-const RUGBY = ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"];
+const taxonomy = JSON.parse(
+  readFileSync(new URL("../shared/commerce/taxonomy.json", import.meta.url), "utf8"),
+);
 
+/** Types this file has never heard of, counted so the run can report them. */
+const unknownTypes = new Map();
+
+/**
+ * The run this product should carry, or null to leave it alone.
+ *
+ * Null covers two cases the sweep must not touch: kids sizes are ages set per
+ * product from the batch manifest, and Service products (the printing and badge
+ * fees) carry no size at all.
+ *
+ * An UNKNOWN type also returns null rather than falling back to a default. A
+ * type this file has never heard of is an unnormalised import, and guessing
+ * S-2XL at it is how the old version of this script would have quietly stripped
+ * the fan run down. The live smoke test fails on exactly that condition, so the
+ * fix is to normalise the catalogue, not to widen the guess here.
+ */
 function wantedSizes(product) {
   const type = product.productType || "";
-  if (type === "Kids Kit") return null; // age sizes, set at import
-  if (type === "Rugby Jersey" || type === "Rugby Vest") return RUGBY;
-  if (type === "Soccer Fan Version" || type === "Soccer Fan Version Long Sleeve") return FAN;
-  if (type === "Football Jersey" && !product.tags.includes("Player Version") && !product.tags.includes("Retro")) return FAN;
-  return STANDARD;
+  const entry = taxonomy.types[type];
+  if (!entry) {
+    unknownTypes.set(type, (unknownTypes.get(type) ?? 0) + 1);
+    return null;
+  }
+  return entry.sizes ? taxonomy.sizeRuns[entry.sizes] : null;
 }
-
 async function gql(query, variables = {}) {
   for (let attempt = 0; ; attempt++) {
     const res = await fetch(ENDPOINT, {
@@ -109,3 +135,13 @@ for (const product of visible) {
 }
 
 console.log(`\n${APPLY ? "applied" : "dry run"}: ${extended} products extended (${added} variants added), ${ok} already complete, ${skipped} not sized`);
+
+if (unknownTypes.size) {
+  console.log("");
+  console.log(`${unknownTypes.size} productType(s) not in shared/commerce/taxonomy.json — left untouched:`);
+  for (const [type, n] of [...unknownTypes].sort((a, b) => b[1] - a[1])) {
+    console.log(`  ${String(n).padStart(4)}  ${type || "(none)"}`);
+  }
+  console.log("Normalise them with scripts/normalise-product-types.mjs, or add the");
+  console.log("category to that file if the store genuinely sells something new.");
+}

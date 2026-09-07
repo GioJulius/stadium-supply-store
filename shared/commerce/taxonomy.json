@@ -1,0 +1,56 @@
+{
+  "$comment": [
+    "The canonical product categories, and the size run each one sells in.",
+    "",
+    "One file because they are one decision. A category is the thing the price",
+    "list names, the thing the card badge and the PDP eyebrow show, and the thing",
+    "that determines which sizes a listing carries — and those had drifted apart",
+    "before. The catalogue was imported in several lineages that each invented",
+    "their own wording, so the same category was live under as many as four names",
+    "until 7 Sep 2026; scripts/normalise-product-types.mjs collapsed 28 into 17.",
+    "",
+    "JSON rather than TypeScript because the offline scripts are plain Node .mjs",
+    "and cannot import a .ts module. Both sides read this: client/src/lib/catalog.ts",
+    "exports CANONICAL_TYPES and SIZE_RUNS from it for the app and the live smoke",
+    "test, and scripts/apply-client-sizing.mjs reads it directly.",
+    "",
+    "Adding a category is a deliberate act. The live smoke test in",
+    "server/shopify.smoke.test.ts fails on any productType that is not in this",
+    "file, which is what stops an importer reintroducing a spelling.",
+    "",
+    "Size runs are the client's 7 September 2026 price list, which supersedes the",
+    "27 August one."
+  ],
+
+  "sizeRuns": {
+    "fan": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "adult": ["S", "M", "L", "XL", "2XL"],
+    "rugby": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
+  },
+
+  "$sizeRunsComment": [
+    "Kids sizes are ages (2-3 … 10-11) and are set per product at import time from",
+    "the batch manifest, so a category whose run is null is never swept by",
+    "apply-client-sizing.mjs. Service products carry no size at all."
+  ],
+
+  "types": {
+    "Fan Version": { "sizes": "fan" },
+    "Player Version": { "sizes": "adult" },
+    "Retro": { "sizes": "adult" },
+    "Kids Kit": { "sizes": null },
+    "Training Set": { "sizes": "adult" },
+    "Half-Zip Training Set": { "sizes": "adult" },
+    "Half-Zip Training Top": { "sizes": "adult" },
+    "Hoodie": { "sizes": "adult" },
+    "Sweatshirt": { "sizes": "adult" },
+    "Jacket / Windbreaker": { "sizes": "adult" },
+    "Tracksuit": { "sizes": "adult" },
+    "Plain Tracksuit": { "sizes": "adult" },
+    "Rugby Jersey": { "sizes": "rugby" },
+    "Rugby Vest": { "sizes": "rugby" },
+    "F1 Jersey": { "sizes": "adult" },
+    "F1 Jacket": { "sizes": "adult" },
+    "Service": { "sizes": null }
+  }
+}

@@ -216,6 +216,74 @@ describe("commerce.cart", () => {
     });
   });
 
+  // Both extras cost R50, and reconcileAddonFees bills any line that claims one,
+  // so the garment has to be checked server-side. isPersonalisable used to live
+  // only in client code, where it decides whether to OFFER the option — a
+  // crafted request could attach printing to a retro and be charged for work the
+  // print shop cannot do.
+  it("refuses printing on a garment that cannot take it", async () => {
+    ok({
+      nodes: [
+        {
+          id: rawVariant.id,
+          product: { title: "1994 Brazil Home Retro", productType: "Retro", tags: ["Retro"] },
+        },
+      ],
+    });
+
+    const caller = appRouter.createCaller(makeCtx());
+    await expect(
+      caller.commerce.cart.create({
+        lines: [{ variantId: rawVariant.id, quantity: 1, personalisation: { name: "PELE", number: "10" } }],
+      })
+    ).rejects.toMatchObject({
+      code: "BAD_REQUEST",
+      message: expect.stringContaining("cannot be printed"),
+    });
+
+    // Refused before the cart was ever created: the lookup is the only call.
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
+  it("refuses a badge on a garment that cannot take one", async () => {
+    ok({
+      nodes: [
+        {
+          id: rawVariant.id,
+          product: { title: "Arsenal Training Hoodie", productType: "Hoodie", tags: ["Hoodie"] },
+        },
+      ],
+    });
+
+    const caller = appRouter.createCaller(makeCtx());
+    await expect(
+      caller.commerce.cart.create({
+        lines: [{ variantId: rawVariant.id, quantity: 1, badge: true, badgeChoice: "Premier League" }],
+      })
+    ).rejects.toMatchObject({ code: "BAD_REQUEST" });
+  });
+
+  // A plain line asks for nothing, so it must not pay for the lookup either.
+  it("does not look a variant up when no line asks for an extra", async () => {
+    ok({
+      cartCreate: {
+        cart: {
+          id: "gid://shopify/Cart/1",
+          checkoutUrl: "https://shop/checkout",
+          totalQuantity: 1,
+          cost: { subtotalAmount: { amount: "385.00", currencyCode: "ZAR" }, totalAmount: { amount: "385.00", currencyCode: "ZAR" } },
+          lines: { edges: [] },
+        },
+        userErrors: [],
+      },
+    });
+
+    const caller = appRouter.createCaller(makeCtx());
+    await caller.commerce.cart.create({ lines: [{ variantId: rawVariant.id, quantity: 1 }] });
+
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
   it("maps Shopify userErrors onto a BAD_REQUEST TRPCError", async () => {
     ok({
       cartCreate: {
