@@ -2,11 +2,13 @@ import {
   EMPTY_RAIL,
   KIT_SLOT_LABELS,
   railIsActive,
+  TYPE_GROUPS,
   VERSION_LABELS,
   type KitSlot,
   type RailState,
   type ShopFacets,
 } from "@/lib/facets";
+import { SPORT_LABELS } from "@/lib/teams";
 import { X } from "lucide-react";
 
 /**
@@ -62,6 +64,29 @@ export function FilterRail({
           <button type="button" className="icon-button filter-rail__close" onClick={onClose} aria-label="Close filters"><X size={19} /></button>
         </div>
 
+        {/*
+          Sport is a "where am I", not a "narrow it down", so it only appears
+          when the shopper is somewhere that spans more than one — the whole
+          archive, or a search. Arriving from the Rugby menu link, or from a
+          team that plays one code, it stays out of the way.
+        */}
+        {facets.sports.length > 1 ? (
+          <fieldset className="filter-group">
+            <legend>Sport</legend>
+            <div className="filter-group__row filter-group__row--split">
+              {facets.sports.map(sport => (
+                <button
+                  key={sport}
+                  type="button"
+                  className={rail.sport === sport ? "chip is-on" : "chip"}
+                  aria-pressed={rail.sport === sport}
+                  onClick={() => onChange({ ...rail, sport: rail.sport === sport ? null : sport })}
+                >{SPORT_LABELS[sport]}</button>
+              ))}
+            </div>
+          </fieldset>
+        ) : null}
+
         {facets.versions.length > 1 ? (
           <fieldset className="filter-group">
             <legend>Version</legend>
@@ -93,6 +118,38 @@ export function FilterRail({
                 >{size}</button>
               ))}
             </div>
+          </fieldset>
+        ) : null}
+
+        {facets.types.length > 1 ? (
+          <fieldset className="filter-group">
+            <legend>Product type</legend>
+            <select
+              value={rail.type ?? ""}
+              onChange={event => onChange({ ...rail, type: event.target.value || null })}
+              aria-label="Product type"
+            >
+              <option value="">Anything</option>
+              {TYPE_GROUPS.map(group => {
+                const available = group.types.filter(type => facets.types.includes(type));
+                if (!available.length) return null;
+                return (
+                  <optgroup key={group.label} label={group.label}>
+                    {available.map(type => <option key={type} value={type}>{type}</option>)}
+                  </optgroup>
+                );
+              })}
+              {/* A category no group claims still has to be reachable. */}
+              {(() => {
+                const grouped = new Set(TYPE_GROUPS.flatMap(group => group.types));
+                const rest = facets.types.filter(type => !grouped.has(type));
+                return rest.length ? (
+                  <optgroup label="Other">
+                    {rest.map(type => <option key={type} value={type}>{type}</option>)}
+                  </optgroup>
+                ) : null;
+              })()}
+            </select>
           </fieldset>
         ) : null}
 
