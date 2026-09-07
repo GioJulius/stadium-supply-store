@@ -1,0 +1,309 @@
+{
+ "team": "Unbranded Tracksuits",
+ "slug": "unbranded-tracksuits",
+ "status": "imported",
+ "block": {
+  "from": "p19",
+  "to": "p36",
+  "count": 18
+ },
+ "notes": {
+  "whatTheseAre": "Plain adidas and Nike training wear with NO club crest - the range the client's 09:11 text 'Tracksuits :' was introducing. Held on 6 Sep pending a price; the 7 Sep price list settles it: plain half zip R700, plain full zip R850, sizes S-2XL.",
+  "pricingIsNotTheClubTier": "A club half-zip is R850 and a club full-zip R1000. These are R150 cheaper in both cuts because they carry no badge. Do not let a later batch collapse the two.",
+  "duplicatePhoto": "p32 and p33 are the same file at dHash distance 0, so eighteen photographs make seventeen garments.",
+  "hoodedWindbreaker": "p26 is a hooded WINDBREAKER set. The client's list prices a full windbreaker tracksuit at R1200, but that line sits in the club section; the plain range only gives half zip and full zip. It is listed at the plain full-zip R850 - FLAG FOR CLIENT."
+ },
+ "garments": [
+  {
+   "id": "trk-01",
+   "photos": [
+    "p19"
+   ],
+   "title": "adidas Blue Half-Zip Tracksuit",
+   "tier": "plainHalfZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Royal blue half-zip training top with light blue shoulder panels, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Blue Half-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-blue-half-zip-tracksuit"
+  },
+  {
+   "id": "trk-02",
+   "photos": [
+    "p20"
+   ],
+   "title": "adidas Navy and Lime Half-Zip Tracksuit",
+   "tier": "plainHalfZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy half-zip training top with lime shoulder stripes, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Navy and Lime Half-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-navy-and-lime-half-zip-tracksuit"
+  },
+  {
+   "id": "trk-03",
+   "photos": [
+    "p21"
+   ],
+   "title": "adidas White Half-Zip Tracksuit",
+   "tier": "plainHalfZip",
+   "seasonConfidence": "unknown",
+   "blurb": "White half-zip training top with black shoulder stripes, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas White Half-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-white-half-zip-tracksuit"
+  },
+  {
+   "id": "trk-04",
+   "photos": [
+    "p22"
+   ],
+   "title": "adidas Black and White Half-Zip Tracksuit",
+   "tier": "plainHalfZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black half-zip training top with white shoulder panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Black and White Half-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-black-and-white-half-zip-tracksuit"
+  },
+  {
+   "id": "trk-05",
+   "photos": [
+    "p23"
+   ],
+   "title": "Nike Blue Half-Zip Tracksuit",
+   "tier": "plainHalfZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Royal blue half-zip training top with a navy collar and white side panels, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nike Blue Half-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "nike-blue-half-zip-tracksuit"
+  },
+  {
+   "id": "trk-06",
+   "photos": [
+    "p24"
+   ],
+   "title": "Nike Black Half-Zip Tracksuit",
+   "tier": "plainHalfZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black half-zip training top with a white collar trim and side panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nike Black Half-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "nike-black-half-zip-tracksuit"
+  },
+  {
+   "id": "trk-07",
+   "photos": [
+    "p25"
+   ],
+   "title": "adidas Cream Originals Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Cream full-zip track jacket with tonal three-stripe sleeves and a trefoil badge, sold with the matching cream bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Cream Originals Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-cream-originals-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-08",
+   "photos": [
+    "p26"
+   ],
+   "title": "adidas Black Hooded Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black hooded full-zip windbreaker with white side panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Black Hooded Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-black-hooded-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-09",
+   "photos": [
+    "p27"
+   ],
+   "title": "adidas Black Originals Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black full-zip track jacket with white three-stripe sleeves and a trefoil badge, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Black Originals Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-black-originals-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-10",
+   "photos": [
+    "p28"
+   ],
+   "title": "adidas Black Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black full-zip track jacket with white shoulder stripes and zipped pockets, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Black Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-black-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-11",
+   "photos": [
+    "p29"
+   ],
+   "title": "adidas Red Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Red full-zip track jacket with navy shoulder panels and white piping, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Red Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-red-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-12",
+   "photos": [
+    "p30"
+   ],
+   "title": "Nike Black and Grey Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black full-zip track jacket with grey and white shoulder panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nike Black and Grey Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "nike-black-and-grey-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-13",
+   "photos": [
+    "p31"
+   ],
+   "title": "Nike White and Blue Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "White full-zip track jacket with a royal blue chest band, sold with the matching blue bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nike White and Blue Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "nike-white-and-blue-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-14",
+   "photos": [
+    "p32",
+    "p33"
+   ],
+   "title": "Nike Red and Navy Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Red and navy full-zip track jacket with a white chest flash, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nike Red and Navy Full-Zip Tracksuit - 01.jpg",
+    "Nike Red and Navy Full-Zip Tracksuit - 02.jpg"
+   ],
+   "handle": "nike-red-and-navy-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-15",
+   "photos": [
+    "p34"
+   ],
+   "title": "Nike Black Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black full-zip track jacket with white piping down the sleeves, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nike Black Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "nike-black-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-16",
+   "photos": [
+    "p35"
+   ],
+   "title": "Nike Navy and Red Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Navy full-zip track jacket with a red shoulder yoke and white flash, sold with the matching navy bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Nike Navy and Red Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "nike-navy-and-red-full-zip-tracksuit"
+  },
+  {
+   "id": "trk-17",
+   "photos": [
+    "p36"
+   ],
+   "title": "adidas Black and White Full-Zip Tracksuit",
+   "tier": "plainFullZip",
+   "seasonConfidence": "unknown",
+   "blurb": "Black full-zip track jacket with white shoulder stripes and side panels, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "adidas Black and White Full-Zip Tracksuit - 01.jpg"
+   ],
+   "handle": "adidas-black-and-white-full-zip-tracksuit"
+  }
+ ]
+}

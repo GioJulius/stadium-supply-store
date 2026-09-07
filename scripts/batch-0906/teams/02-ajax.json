@@ -1,0 +1,182 @@
+{
+ "team": "Ajax",
+ "slug": "ajax",
+ "status": "imported",
+ "block": {
+  "from": "p8",
+  "to": "p18",
+  "count": 10
+ },
+ "notes": {
+  "albums": "Six albums: an uncaptioned opener (1), player version (1), retro (4), fan version (2), kids set (1) and half zip (1).",
+  "newTeam": "Ajax had NO products on the store before this batch.",
+  "retroAlbum": "The client's 'retro' album holds two ABN AMRO shirts, which are genuinely retro, and the two Bob Marley Three Little Birds thirds, which are 2021/22 and 2023/24. They are priced at the retro tier because that is the album the client put them in - flag it if they meant otherwise.",
+  "seasonReading": "Ziggo has sponsored Ajax since 2015 and ABN AMRO before it, which separates the retros cleanly. Within the Ziggo years the home is always red and white halves and the 2024/25 away was cream, so those date themselves; the light blue away and the black and gold third carry a colour instead."
+ },
+ "garments": [
+  {
+   "id": "ajx-01",
+   "photos": [
+    "p8"
+   ],
+   "title": "2025/26 Ajax Home Fan Version",
+   "tier": "fan",
+   "blurb": "The red and white halved home shirt with a white collar and the Ziggo sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2025-26 Ajax Home Fan Version - 01.jpg"
+   ],
+   "handle": "2025-26-ajax-home-fan-version"
+  },
+  {
+   "id": "ajx-02",
+   "photos": [
+    "p9"
+   ],
+   "title": "Ajax Light Blue Away Player Version",
+   "tier": "player",
+   "seasonConfidence": "unknown",
+   "blurb": "Pale blue away shirt in the player cut with a navy collar and shoulder stripes and the Ziggo sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Ajax Light Blue Away Player Version - 01.jpg"
+   ],
+   "handle": "ajax-light-blue-away-player-version"
+  },
+  {
+   "id": "ajx-03",
+   "photos": [
+    "p10"
+   ],
+   "title": "Ajax Bob Marley Third Retro",
+   "tier": "retro",
+   "blurb": "The black Three Little Birds third shirt with the red, gold and green trim and the hand-drawn Marley artwork.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Ajax Bob Marley Third Retro - 01.jpg"
+   ],
+   "handle": "ajax-bob-marley-third-retro"
+  },
+  {
+   "id": "ajx-04",
+   "photos": [
+    "p11"
+   ],
+   "title": "Ajax Bob Marley White Third Retro",
+   "tier": "retro",
+   "blurb": "The white Three Little Birds shirt with the red, gold and green trim and the hand-drawn Marley artwork.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Ajax Bob Marley White Third Retro - 01.jpg"
+   ],
+   "handle": "ajax-bob-marley-white-third-retro"
+  },
+  {
+   "id": "ajx-05",
+   "photos": [
+    "p12"
+   ],
+   "title": "Ajax ABN AMRO Blue Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Teal blue Umbro retro shirt with a white collar and the ABN AMRO sponsor across the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Ajax ABN AMRO Blue Retro - 01.jpg"
+   ],
+   "handle": "ajax-abn-amro-blue-retro"
+  },
+  {
+   "id": "ajx-06",
+   "photos": [
+    "p13"
+   ],
+   "title": "Ajax ABN AMRO Yellow and Navy Retro",
+   "tier": "retro",
+   "seasonConfidence": "unknown",
+   "blurb": "Yellow and navy halved retro shirt with the white ABN AMRO sponsor down the chest.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Ajax ABN AMRO Yellow and Navy Retro - 01.jpg"
+   ],
+   "handle": "ajax-abn-amro-yellow-and-navy-retro"
+  },
+  {
+   "id": "ajx-07",
+   "photos": [
+    "p14"
+   ],
+   "title": "2024/25 Ajax Away Fan Version",
+   "tier": "fan",
+   "blurb": "Cream away shirt with a maroon and blue polo collar and the blue Ziggo sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Ajax Away Fan Version - 01.jpg"
+   ],
+   "handle": "2024-25-ajax-away-fan-version"
+  },
+  {
+   "id": "ajx-08",
+   "photos": [
+    "p15"
+   ],
+   "title": "Ajax Black and Gold Third Fan Version",
+   "tier": "fan",
+   "seasonConfidence": "unknown",
+   "blurb": "Black third shirt with gold trim, tonal hoops and the gold Ziggo sponsor.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Ajax Black and Gold Third Fan Version - 01.jpg"
+   ],
+   "handle": "ajax-black-and-gold-third-fan-version"
+  },
+  {
+   "id": "ajx-09",
+   "photos": [
+    "p17"
+   ],
+   "title": "2024/25 Ajax Away Kids Kit",
+   "tier": "kids",
+   "blurb": "Cream shirt with maroon and blue trim and matching cream shorts, sized 2-3 through 10-11.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "2024-25 Ajax Away Kids Kit - 01.jpg"
+   ],
+   "handle": "2024-25-ajax-away-kids-kit"
+  },
+  {
+   "id": "ajx-10",
+   "photos": [
+    "p18"
+   ],
+   "title": "Ajax Black Half-Zip Training Set",
+   "tier": "halfZip",
+   "blurb": "Black half-zip training top with red side panels and the club crest, sold with the matching black bottoms.",
+   "dedupe": {
+    "verdict": "new"
+   },
+   "files": [
+    "Ajax Black Half-Zip Training Set - 01.jpg"
+   ],
+   "handle": "ajax-black-half-zip-training-set"
+  }
+ ]
+}
