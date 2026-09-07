@@ -46,13 +46,33 @@ export type ProductVariant = {
   selectedOptions: SelectedOption[];
 };
 
-export type Product = {
+/**
+ * What a variant contributes to a grid: whether you can buy it, and in which
+ * size. No id, price or title — a card never sells, it only links.
+ */
+export type VariantAvailability = {
+  availableForSale: boolean;
+  selectedOptions: SelectedOption[];
+};
+
+/**
+ * A product as the shop grid, the nav tree and the sibling-kit strip need it.
+ *
+ * This exists because those four screens ask for the WHOLE catalogue in one
+ * query — 1 249 products in September 2026 — and a full `Product` carries a
+ * lot they never read. The description fields and the variant ids, prices and
+ * titles were 61% of that response and not one of them reaches a card.
+ *
+ * Everything a `Product` has, a `ProductSummary` has too, so anything written
+ * against the summary also accepts the full product from `byHandle`. Add a
+ * field here only if a grid genuinely renders it; the detail page has its own
+ * query and is the right place for the rest.
+ */
+export type ProductSummary = {
   id: string;
   /** URL-friendly slug used as the route param on PDP. */
   handle: string;
   title: string;
-  description: string;
-  descriptionHtml: string;
   productType: string | null;
   vendor: string | null;
   tags: string[];
@@ -61,6 +81,13 @@ export type Product = {
   images: Image[];
   /** Min / max across all variants — useful for "from $X" pricing. */
   priceRange: { min: Money; max: Money };
+  /** Enough to answer "which sizes can I buy right now", nothing more. */
+  variants: VariantAvailability[];
+};
+
+export type Product = Omit<ProductSummary, "variants"> & {
+  description: string;
+  descriptionHtml: string;
   /** Available option dimensions (e.g. Size, Color) for the variant picker. */
   options: ProductOption[];
   variants: ProductVariant[];

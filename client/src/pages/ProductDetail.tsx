@@ -14,7 +14,7 @@ import {
 } from "@/lib/storeInfo";
 import { formatMoney } from "@/lib/format";
 import { trpc } from "@/lib/trpc";
-import type { Product } from "@shared/commerce/types";
+import type { Product, ProductSummary } from "@shared/commerce/types";
 import { ArrowLeft, LoaderCircle, Minus, Plus } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
@@ -71,7 +71,7 @@ function useSiblingKits(product: Product) {
 }
 
 /** "Fan", or "Fan · long sleeve" when that is what separates it from the sibling. */
-function siblingLabel(product: Product): string {
+function siblingLabel(product: ProductSummary): string {
   const version = versionOf(product);
   const base = version ? VERSION_LABELS[version] : "Other";
   return isLongSleeve(product) ? `${base} · long sleeve` : base;

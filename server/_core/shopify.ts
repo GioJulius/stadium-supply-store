@@ -18,14 +18,16 @@
  */
 
 import { TRPCError } from "@trpc/server";
-import type { Cart, Collection, Product } from "@shared/commerce/types";
+import type { Cart, Collection, Product, ProductSummary } from "@shared/commerce/types";
 import {
   type RawCart,
   type RawCollection,
   type RawProduct,
+  type RawProductSummary,
   normalizeCart,
   normalizeCollection,
   normalizeProduct,
+  normalizeProductSummary,
 } from "./shopifyNormalize";
 
 // ---------------------------------------------------------------------------
@@ -214,6 +216,38 @@ const PRODUCT_FRAGMENT = /* GraphQL */ `
   }
 `;
 
+/**
+ * The grid fragment. Deliberately smaller than `ProductFields`: no
+ * `description`, no `descriptionHtml`, no `options`, and variants reduced to
+ * availability and size. Those four made up most of a 3.4 MB catalogue
+ * response that no card ever read — see `ProductSummary` in
+ * shared/commerce/types.ts. Anything a card needs to render belongs here;
+ * anything only the detail page shows belongs in `ProductFields`.
+ */
+const PRODUCT_SUMMARY_FRAGMENT = /* GraphQL */ `
+  ${MONEY_FRAGMENT}
+  ${IMAGE_FRAGMENT}
+  fragment ProductSummaryFields on Product {
+    id
+    title
+    handle
+    productType
+    vendor
+    tags
+    publishedAt
+    priceRange {
+      minVariantPrice { ...MoneyFields }
+      maxVariantPrice { ...MoneyFields }
+    }
+    images(first: 8) {
+      edges { node { ...ImageFields } }
+    }
+    variants(first: 25) {
+      edges { node { availableForSale selectedOptions { name value } } }
+    }
+  }
+`;
+
 const COLLECTION_FRAGMENT = /* GraphQL */ `
   ${IMAGE_FRAGMENT}
   fragment CollectionFields on Collection {
@@ -278,47 +312,51 @@ export type ListProductsOptions = {
 /** Shopify's Storefront API refuses a page larger than 250. */
 const PAGE_SIZE = 250;
 
+/**
+ * Every product the storefront browses, as `ProductSummary` — the grid shape.
+ * The detail page takes the full `Product` from `getProductByHandle`.
+ */
 export async function listProducts(
   options: ListProductsOptions = {}
-): Promise<Product[]> {
+): Promise<ProductSummary[]> {
   const first = options.first ?? Infinity;
 
   if (options.collectionHandle) {
     const data = await storefrontFetch<{
-      collection: { products: Edges<RawProduct> } | null;
+      collection: { products: Edges<RawProductSummary> } | null;
     }>(
-      `${PRODUCT_FRAGMENT}
+      `${PRODUCT_SUMMARY_FRAGMENT}
        query productsByCollection($handle: String!, $first: Int!) {
          collection(handle: $handle) {
            products(first: $first) {
-             edges { node { ...ProductFields } }
+             edges { node { ...ProductSummaryFields } }
            }
          }
        }`,
       { handle: options.collectionHandle, first: Math.min(PAGE_SIZE, first) }
     );
     if (!data.collection) return [];
-    return data.collection.products.edges.map(e => normalizeProduct(e.node));
+    return data.collection.products.edges.map(e => normalizeProductSummary(e.node));
   }
 
   // The Storefront API caps a page at 250. The catalogue passed that in Sep 2026,
   // so an unpaginated query silently dropped every product past the 250th title.
   // Walk the cursor until Shopify says there is no more, or until `first` is met.
-  const out: Product[] = [];
+  const out: ProductSummary[] = [];
   let cursor: string | null = null;
   do {
     const page: number = Math.min(PAGE_SIZE, first - out.length);
-    const data: { products: Paged<RawProduct> } = await storefrontFetch<{ products: Paged<RawProduct> }>(
-      `${PRODUCT_FRAGMENT}
+    const data: { products: Paged<RawProductSummary> } = await storefrontFetch<{ products: Paged<RawProductSummary> }>(
+      `${PRODUCT_SUMMARY_FRAGMENT}
        query listProducts($first: Int!, $cursor: String) {
          products(first: $first, after: $cursor, sortKey: TITLE) {
            pageInfo { hasNextPage endCursor }
-           edges { node { ...ProductFields } }
+           edges { node { ...ProductSummaryFields } }
          }
        }`,
       { first: page, cursor }
     );
-    out.push(...data.products.edges.map(e => normalizeProduct(e.node)));
+    out.push(...data.products.edges.map(e => normalizeProductSummary(e.node)));
     const info = data.products.pageInfo;
     cursor = info?.hasNextPage ? info.endCursor : null;
   } while (cursor && out.length < first);

@@ -60450,6 +60450,29 @@ function normalizeVariant(v) {
     selectedOptions: (v.selectedOptions ?? []).map(normalizeSelectedOption)
   };
 }
+function normalizeVariantAvailability(v) {
+  return {
+    availableForSale: v.availableForSale,
+    selectedOptions: (v.selectedOptions ?? []).map(normalizeSelectedOption)
+  };
+}
+function normalizeProductSummary(p) {
+  return {
+    id: p.id,
+    handle: p.handle,
+    title: p.title,
+    productType: p.productType || null,
+    vendor: p.vendor || null,
+    tags: p.tags ?? [],
+    publishedAt: p.publishedAt ?? null,
+    images: orderGalleryImages(p.images.edges.map((e) => normalizeImage(e.node))),
+    priceRange: {
+      min: normalizeMoney(p.priceRange.minVariantPrice),
+      max: normalizeMoney(p.priceRange.maxVariantPrice)
+    },
+    variants: p.variants.edges.map((e) => normalizeVariantAvailability(e.node))
+  };
+}
 function normalizeProduct(p) {
   return {
     id: p.id,
@@ -60666,6 +60689,32 @@ var PRODUCT_FRAGMENT = (
   }
 `
 );
+var PRODUCT_SUMMARY_FRAGMENT = (
+  /* GraphQL */
+  `
+  ${MONEY_FRAGMENT}
+  ${IMAGE_FRAGMENT}
+  fragment ProductSummaryFields on Product {
+    id
+    title
+    handle
+    productType
+    vendor
+    tags
+    publishedAt
+    priceRange {
+      minVariantPrice { ...MoneyFields }
+      maxVariantPrice { ...MoneyFields }
+    }
+    images(first: 8) {
+      edges { node { ...ImageFields } }
+    }
+    variants(first: 25) {
+      edges { node { availableForSale selectedOptions { name value } } }
+    }
+  }
+`
+);
 var COLLECTION_FRAGMENT = (
   /* GraphQL */
   `
@@ -60723,34 +60772,34 @@ async function listProducts(options = {}) {
   const first = options.first ?? Infinity;
   if (options.collectionHandle) {
     const data = await storefrontFetch(
-      `${PRODUCT_FRAGMENT}
+      `${PRODUCT_SUMMARY_FRAGMENT}
        query productsByCollection($handle: String!, $first: Int!) {
          collection(handle: $handle) {
            products(first: $first) {
-             edges { node { ...ProductFields } }
+             edges { node { ...ProductSummaryFields } }
            }
          }
        }`,
       { handle: options.collectionHandle, first: Math.min(PAGE_SIZE, first) }
     );
     if (!data.collection) return [];
-    return data.collection.products.edges.map((e) => normalizeProduct(e.node));
+    return data.collection.products.edges.map((e) => normalizeProductSummary(e.node));
   }
   const out = [];
   let cursor = null;
   do {
     const page = Math.min(PAGE_SIZE, first - out.length);
     const data = await storefrontFetch(
-      `${PRODUCT_FRAGMENT}
+      `${PRODUCT_SUMMARY_FRAGMENT}
        query listProducts($first: Int!, $cursor: String) {
          products(first: $first, after: $cursor, sortKey: TITLE) {
            pageInfo { hasNextPage endCursor }
-           edges { node { ...ProductFields } }
+           edges { node { ...ProductSummaryFields } }
          }
        }`,
       { first: page, cursor }
     );
-    out.push(...data.products.edges.map((e) => normalizeProduct(e.node)));
+    out.push(...data.products.edges.map((e) => normalizeProductSummary(e.node)));
     const info = data.products.pageInfo;
     cursor = info?.hasNextPage ? info.endCursor : null;
   } while (cursor && out.length < first);

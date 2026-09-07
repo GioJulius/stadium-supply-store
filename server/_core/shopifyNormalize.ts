@@ -22,8 +22,10 @@ import type {
   Money,
   Product,
   ProductOption,
+  ProductSummary,
   ProductVariant,
   SelectedOption,
+  VariantAvailability,
 } from "@shared/commerce/types";
 
 // ---- Raw Shopify shapes (kept private to this file) ----
@@ -41,6 +43,25 @@ type RawVariant = {
   price: RawMoney;
   compareAtPrice: RawMoney | null;
   selectedOptions: RawSelectedOption[];
+};
+
+type RawVariantAvailability = {
+  availableForSale: boolean;
+  selectedOptions: RawSelectedOption[];
+};
+
+/** Exactly the fields `ProductSummaryFields` in shopify.ts asks for. */
+export type RawProductSummary = {
+  id: string;
+  title: string;
+  handle: string;
+  productType: string | null;
+  vendor: string | null;
+  tags: string[];
+  publishedAt: string | null;
+  priceRange: { minVariantPrice: RawMoney; maxVariantPrice: RawMoney };
+  images: Edges<RawImage>;
+  variants: Edges<RawVariantAvailability>;
 };
 
 export type RawProduct = {
@@ -152,6 +173,36 @@ function normalizeVariant(v: RawVariant): ProductVariant {
     compareAtPrice: v.compareAtPrice ? normalizeMoney(v.compareAtPrice) : null,
     availableForSale: v.availableForSale,
     selectedOptions: (v.selectedOptions ?? []).map(normalizeSelectedOption),
+  };
+}
+
+function normalizeVariantAvailability(v: RawVariantAvailability): VariantAvailability {
+  return {
+    availableForSale: v.availableForSale,
+    selectedOptions: (v.selectedOptions ?? []).map(normalizeSelectedOption),
+  };
+}
+
+/**
+ * The grid shape. Same gallery ordering as the full product — the `_01` size
+ * chart has to be demoted here too, or every card in the shop leads with a
+ * measurements table instead of the shirt.
+ */
+export function normalizeProductSummary(p: RawProductSummary): ProductSummary {
+  return {
+    id: p.id,
+    handle: p.handle,
+    title: p.title,
+    productType: p.productType || null,
+    vendor: p.vendor || null,
+    tags: p.tags ?? [],
+    publishedAt: p.publishedAt ?? null,
+    images: orderGalleryImages(p.images.edges.map(e => normalizeImage(e.node))),
+    priceRange: {
+      min: normalizeMoney(p.priceRange.minVariantPrice),
+      max: normalizeMoney(p.priceRange.maxVariantPrice),
+    },
+    variants: p.variants.edges.map(e => normalizeVariantAvailability(e.node)),
   };
 }
 

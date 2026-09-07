@@ -1,4 +1,4 @@
-import type { Product } from "@shared/commerce/types";
+import type { ProductSummary } from "@shared/commerce/types";
 import { formatMoney } from "@/lib/format";
 import { sizeRangeLabel, sizesInStock, versionOf, VERSION_LABELS } from "@/lib/facets";
 import { ArrowUpRight } from "lucide-react";
@@ -10,7 +10,7 @@ import { Link } from "wouter";
  * otherwise identical photographs of the same kit; condition and product type
  * stand in for the listings that never said.
  */
-function productBadge(product: Product) {
+function productBadge(product: ProductSummary) {
   const version = versionOf(product);
   if (version) return VERSION_LABELS[version];
   if (product.tags.some(tag => tag.toLowerCase().includes("new"))) return "New arrival";
@@ -18,7 +18,7 @@ function productBadge(product: Product) {
   return product.productType || "Curated piece";
 }
 
-export function ProductCard({ product, featured = false }: { product: Product; featured?: boolean }) {
+export function ProductCard({ product, featured = false }: { product: ProductSummary; featured?: boolean }) {
   const image = product.images[0];
   const alternateImage = product.images[1];
   const minPrice = product.priceRange.min;
