@@ -1,4 +1,26 @@
 import type { ProductSummary } from "@shared/commerce/types";
+import taxonomy from "@shared/commerce/taxonomy.json";
+
+// Printing rules live in shared/ so the server enforces the same test the UI
+// offers — the answer is worth R50 a line. Re-exported here because every
+// existing call site imports it from this module.
+export { isPersonalisable } from "@shared/commerce/personalisation";
+
+/**
+ * The canonical product categories, from `shared/commerce/taxonomy.json`.
+ *
+ * `productType` is the eyebrow on the product page and the fallback badge on
+ * every card, and the catalogue once carried four spellings of the same shelf,
+ * so the set is pinned rather than inferred. The live smoke test in
+ * `server/shopify.smoke.test.ts` fails on any customer-facing product whose type
+ * is not in here, and `scripts/apply-client-sizing.mjs` reads the same file for
+ * the size run each category sells in — so a new category has to be added there
+ * once, deliberately, instead of arriving as whatever an importer typed.
+ */
+export const CANONICAL_TYPES: ReadonlySet<string> = new Set(Object.keys(taxonomy.types));
+
+/** The size run each category sells in — `null` where sizes are set per product. */
+export const SIZE_RUNS: Readonly<Record<string, readonly string[]>> = taxonomy.sizeRuns;
 
 /**
  * The chips on the shop toolbar. Every key but `all` is matched as a substring
@@ -123,27 +145,6 @@ export function sortProducts(products: ProductSummary[], sort: CatalogSortMode):
 }
 
 /**
- * Fan-version shirts can be printed with the buyer's own name and number for
- * R50, charged as its own cart line — see `server/_core/printingFee.ts`.
- * Player and authentic versions are excluded — those ship in the official
- * player spec — as is anything that isn't a shirt (tracksuits, jackets,
- * hoodies, polos, and shorts sold on their own). Kids kits DO print — the set
- * includes a shirt. Matching is on the title, productType and tags together,
- * because the catalogue expresses "fan version" in all three depending on
- * which import lineage a listing came from.
- */
-const NON_SHIRT = /hood|sweatshirt|crewneck|jacket|windbreaker|tracksuit|training|half-zip|half zip|polo|pants|t-shirt|tee|anthem|presentation|track top/i;
-
-/**
- * Shorts on their own cannot take a name and number, but a kit or a set that
- * includes shorts can, because the shirt in it prints like any other. Two
- * plain tests rather than one lookahead regex, because the intent is the point.
- */
-function isShortsOnly(haystack: string): boolean {
-  return /shorts/i.test(haystack) && !/\b(kit|set)\b/i.test(haystack);
-}
-
-/**
  * The default order: the client's own Instagram stock first, then everything
  * else, and newest first within each. Used by the shop grid and by the home
  * page's latest drop, so both agree on what "new" means.
@@ -154,29 +155,6 @@ export function compareByFreshness(a: ProductSummary, b: ProductSummary): number
   const byDate = publishedTime(b) - publishedTime(a);
   if (byDate !== 0) return byDate;
   return a.title.localeCompare(b.title);
-}
-
-/**
- * Retro shirts are reproductions of a specific season's printing, so they are
- * still sold as they come.
- */
-const NOT_PRINTABLE = /\bretro\b/i;
-
-/**
- * Any listing that is a shirt takes a name and number, unless it is a retro.
- *
- * The test is what the garment IS. An earlier version asked how the listing was
- * WORDED — it required the words "fan version" and explicitly refused "player
- * version" — which hid the option on every player-spec shirt and on every
- * listing titled plainly as a "Jersey". The client raised the player versions
- * on 5 Sep 2026: the shirt prints the same way whichever spec it is.
- */
-export function isPersonalisable(product: ProductSummary): boolean {
-  const haystack = [product.title, product.productType ?? "", ...product.tags].join(" ");
-  if (NON_SHIRT.test(haystack)) return false;
-  if (isShortsOnly(haystack)) return false;
-  if (NOT_PRINTABLE.test(haystack)) return false;
-  return true;
 }
 
 /**

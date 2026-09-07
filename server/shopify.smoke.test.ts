@@ -18,7 +18,7 @@
 
 import { describe, expect, it } from "vitest";
 import { isShopifyConfigured, listProducts } from "./_core/shopify";
-import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
+import { CANONICAL_TYPES, isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
 
 const configured = isShopifyConfigured();
 
@@ -58,45 +58,22 @@ describe.skipIf(!configured)("shopify smoke (live)", () => {
     }
   );
 
-  // The storefront asks for STOREFRONT_CATALOG_FETCH_LIMIT products and renders
-  // whatever comes back. Shopify sorts by TITLE, so once the catalogue passes
-  // that ceiling the alphabetical tail disappears from the shop grid, the search
-  // and the filter chips with no error anywhere — product pages and the sitemap
-  // keep working, which is exactly what makes it hard to notice. It has happened
-  // twice: at 250 on 2 Sep 2026, and at 1000 on 6 Sep with 1 249 products live.
+  // One name per category, pinned in shared/commerce/taxonomy.json. The
+  // catalogue was imported in several lineages that each invented their own
+  // wording, and by September 2026 the same category was live under as many as
+  // four names — "Soccer Retro", "Soccer Retro/Vintage" and "Retro";
+  // "Windbreaker or jacket", "Jacket" and "Jacket / Windbreaker".
+  // `productType` is the eyebrow on the product page and the fallback badge on
+  // every card, so that showed; it would show more once a type filter is built
+  // over these values.
   //
-  // Fetch the catalogue unbounded (omitting `first` pages until Shopify stops)
-  // and fail while there is still room to raise the ceiling calmly.
-  // One name per category. The catalogue was imported in several lineages that
-  // each invented their own wording, and by September 2026 the same category
-  // was live under as many as four names — "Soccer Retro", "Soccer
-  // Retro/Vintage" and "Retro"; "Windbreaker or jacket", "Jacket" and
-  // "Jacket / Windbreaker". `productType` is the eyebrow on the product page
-  // and the fallback badge on every card, so that showed; it would show more
-  // once a type filter is built over these values.
+  // The list lives in that JSON rather than here because the offline sizing
+  // sweep reads it too — a category and the sizes it sells in are one decision,
+  // and they had drifted apart before.
   //
-  // A NEW name here is not necessarily wrong — the store will sell a category
-  // it does not sell today. It has to be a decision, though, not a spelling an
-  // importer happened to use, so add it to this list deliberately.
-  const CANONICAL_TYPES = new Set([
-    "Fan Version",
-    "Player Version",
-    "Retro",
-    "Kids Kit",
-    "Training Set",
-    "Half-Zip Training Set",
-    "Half-Zip Training Top",
-    "Hoodie",
-    "Sweatshirt",
-    "Jacket / Windbreaker",
-    "Tracksuit",
-    "Plain Tracksuit",
-    "Rugby Jersey",
-    "Rugby Vest",
-    "F1 Jersey",
-    "F1 Jacket",
-    "Service",
-  ]);
+  // A NEW name is not necessarily wrong: the store will sell a category it does
+  // not sell today. It has to be a decision, though, not a spelling an importer
+  // happened to use, so add it to that file deliberately.
 
   it(
     "gives every customer-facing product a canonical productType",
@@ -122,6 +99,15 @@ describe.skipIf(!configured)("shopify smoke (live)", () => {
     }
   );
 
+  // The storefront asks for STOREFRONT_CATALOG_FETCH_LIMIT products and renders
+  // whatever comes back. Shopify sorts by TITLE, so once the catalogue passes
+  // that ceiling the alphabetical tail disappears from the shop grid, the search
+  // and the filter chips with no error anywhere — product pages and the sitemap
+  // keep working, which is exactly what makes it hard to notice. It has happened
+  // twice: at 250 on 2 Sep 2026, and at 1000 on 6 Sep with 1 249 products live.
+  //
+  // Fetch the catalogue unbounded (omitting `first` pages until Shopify stops)
+  // and fail while there is still room to raise the ceiling calmly.
   it(
     "has headroom under the storefront fetch ceiling",
     { timeout: 120_000 },

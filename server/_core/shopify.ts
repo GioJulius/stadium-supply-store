@@ -19,6 +19,7 @@
 
 import { TRPCError } from "@trpc/server";
 import type { Cart, Collection, Product, ProductSummary } from "@shared/commerce/types";
+import type { PrintableFacts } from "@shared/commerce/personalisation";
 import {
   type RawCart,
   type RawCollection,
@@ -378,6 +379,55 @@ export async function getProductByHandle(handle: string): Promise<Product> {
     });
   }
   return normalizeProduct(data.productByHandle);
+}
+
+/**
+ * What the given variants belong to, keyed by variant id — just enough of each
+ * product to answer `isPersonalisable`.
+ *
+ * The cart routes need this because a personalisation claim is worth R50: the
+ * fee reconciler bills any line that carries one, so the server has to know what
+ * the garment actually is rather than take the client's word for it. One
+ * `nodes` call covers a whole cart, so adding to the bag stays a single
+ * round-trip against Shopify.
+ *
+ * A variant that Shopify does not return is simply absent from the map. The
+ * caller decides what that means — the cart mutation is about to fail on the
+ * same id anyway.
+ */
+export async function printableFactsByVariant(
+  variantIds: string[]
+): Promise<Map<string, PrintableFacts>> {
+  const ids = Array.from(new Set(variantIds));
+  if (!ids.length) return new Map();
+
+  const data = await storefrontFetch<{
+    nodes: Array<
+      | { id: string; product: { title: string; productType: string | null; tags: string[] } }
+      | null
+    >;
+  }>(
+    `query variantProducts($ids: [ID!]!) {
+       nodes(ids: $ids) {
+         ... on ProductVariant {
+           id
+           product { title productType tags }
+         }
+       }
+     }`,
+    { ids }
+  );
+
+  const out = new Map<string, PrintableFacts>();
+  for (const node of data.nodes ?? []) {
+    if (!node?.product) continue;
+    out.set(node.id, {
+      title: node.product.title,
+      productType: node.product.productType || null,
+      tags: node.product.tags ?? [],
+    });
+  }
+  return out;
 }
 
 export async function listCollections(first: number = 10): Promise<Collection[]> {

@@ -60821,6 +60821,31 @@ async function getProductByHandle(handle) {
   }
   return normalizeProduct(data.productByHandle);
 }
+async function printableFactsByVariant(variantIds2) {
+  const ids = Array.from(new Set(variantIds2));
+  if (!ids.length) return /* @__PURE__ */ new Map();
+  const data = await storefrontFetch(
+    `query variantProducts($ids: [ID!]!) {
+       nodes(ids: $ids) {
+         ... on ProductVariant {
+           id
+           product { title productType tags }
+         }
+       }
+     }`,
+    { ids }
+  );
+  const out = /* @__PURE__ */ new Map();
+  for (const node of data.nodes ?? []) {
+    if (!node?.product) continue;
+    out.set(node.id, {
+      title: node.product.title,
+      productType: node.product.productType || null,
+      tags: node.product.tags ?? []
+    });
+  }
+  return out;
+}
 async function listCollections(first = 10) {
   const data = await storefrontFetch(
     `${COLLECTION_FRAGMENT}
@@ -60929,6 +60954,20 @@ async function removeCartLines(cartId, lineIds) {
   return unwrapCart(data.cartLinesRemove, "cartLinesRemove");
 }
 
+// shared/commerce/personalisation.ts
+var NON_SHIRT = /hood|sweatshirt|crewneck|jacket|windbreaker|tracksuit|training|half-zip|half zip|polo|pants|t-shirt|tee|anthem|presentation|track top/i;
+var NOT_PRINTABLE = /\bretro\b/i;
+function isShortsOnly(haystack) {
+  return /shorts/i.test(haystack) && !/\b(kit|set)\b/i.test(haystack);
+}
+function isPersonalisable(product) {
+  const haystack = [product.title, product.productType ?? "", ...product.tags].join(" ");
+  if (NON_SHIRT.test(haystack)) return false;
+  if (isShortsOnly(haystack)) return false;
+  if (NOT_PRINTABLE.test(haystack)) return false;
+  return true;
+}
+
 // server/_core/addonFees.ts
 var PRINTING_FEE_HANDLE = "name-number-printing";
 var BADGE_FEE_HANDLE = "competition-badge";
@@ -61001,6 +61040,19 @@ function toLineAttributes(line) {
   if (line.badge && line.badgeChoice) attributes.push({ key: BADGE_CHOICE_KEY, value: line.badgeChoice });
   return attributes.length ? attributes : void 0;
 }
+async function assertLinesArePrintable(lines) {
+  const wanting = lines.filter((line) => line.personalisation || line.badge);
+  if (!wanting.length) return;
+  const facts = await printableFactsByVariant(wanting.map((line) => line.variantId));
+  for (const line of wanting) {
+    const product = facts.get(line.variantId);
+    if (!product || isPersonalisable(product)) continue;
+    throw new TRPCError({
+      code: "BAD_REQUEST",
+      message: `"${product.title}" cannot be printed or badged`
+    });
+  }
+}
 var toCartLine = (line) => ({
   variantId: line.variantId,
   quantity: line.quantity,
@@ -61038,6 +61090,7 @@ var commerceRouter = router({
   }),
   cart: router({
     create: publicProcedure.input(external_exports.object({ lines: external_exports.array(cartLineInputSchema).min(1).max(50) })).mutation(async ({ input }) => {
+      await assertLinesArePrintable(input.lines);
       return reconcileAddonFees(await createCart(input.lines.map(toCartLine)));
     }),
     get: publicProcedure.input(external_exports.object({ cartId: external_exports.string().min(1) })).query(async ({ input }) => {
@@ -61049,6 +61102,7 @@ var commerceRouter = router({
         lines: external_exports.array(cartLineInputSchema).min(1).max(50)
       })
     ).mutation(async ({ input }) => {
+      await assertLinesArePrintable(input.lines);
       return reconcileAddonFees(await addCartLines(input.cartId, input.lines.map(toCartLine)));
     }),
     updateLines: publicProcedure.input(

@@ -8,6 +8,7 @@
  */
 
 import { z } from "zod";
+import { TRPCError } from "@trpc/server";
 import {
   addCartLines,
   createCart,
@@ -16,9 +17,11 @@ import {
   getProductByHandle,
   listCollections,
   listProducts,
+  printableFactsByVariant,
   removeCartLines,
   updateCartLines,
 } from "../_core/shopify";
+import { isPersonalisable } from "@shared/commerce/personalisation";
 import {
   PERSONALISATION_NAME_KEY,
   PERSONALISATION_NUMBER_KEY,
@@ -74,6 +77,36 @@ function toLineAttributes(line: z.infer<typeof cartLineInputSchema>) {
   return attributes.length ? attributes : undefined;
 }
 
+/**
+ * Refuse printing and badges on garments that cannot take them.
+ *
+ * The schema above validates the SHAPE of a personalisation — the charset, the
+ * length, the squad number — but said nothing about the garment, and both extras
+ * are worth R50: `reconcileAddonFees` adds a paid fee line for every line that
+ * claims one. Until 8 Sep 2026 a crafted request could therefore attach printing
+ * to a retro shirt or a pair of shorts and be billed for work the print shop
+ * cannot do. `isPersonalisable` had lived only in client code, where it decides
+ * whether to OFFER the option — which is a UI concern, not a control.
+ *
+ * One lookup covers the whole cart. A variant Shopify does not return is left to
+ * the cart mutation that follows, which fails on the same id with a better
+ * message than anything this could invent.
+ */
+async function assertLinesArePrintable(lines: Array<z.infer<typeof cartLineInputSchema>>) {
+  const wanting = lines.filter(line => line.personalisation || line.badge);
+  if (!wanting.length) return;
+
+  const facts = await printableFactsByVariant(wanting.map(line => line.variantId));
+  for (const line of wanting) {
+    const product = facts.get(line.variantId);
+    if (!product || isPersonalisable(product)) continue;
+    throw new TRPCError({
+      code: "BAD_REQUEST",
+      message: `"${product.title}" cannot be printed or badged`,
+    });
+  }
+}
+
 const toCartLine = (line: z.infer<typeof cartLineInputSchema>) => ({
   variantId: line.variantId,
   quantity: line.quantity,
@@ -125,6 +158,7 @@ export const commerceRouter = router({
     create: publicProcedure
       .input(z.object({ lines: z.array(cartLineInputSchema).min(1).max(50) }))
       .mutation(async ({ input }) => {
+        await assertLinesArePrintable(input.lines);
         return reconcileAddonFees(await createCart(input.lines.map(toCartLine)));
       }),
     get: publicProcedure
@@ -140,6 +174,7 @@ export const commerceRouter = router({
         })
       )
       .mutation(async ({ input }) => {
+        await assertLinesArePrintable(input.lines);
         return reconcileAddonFees(await addCartLines(input.cartId, input.lines.map(toCartLine)));
       }),
     updateLines: publicProcedure
