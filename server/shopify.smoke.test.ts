@@ -18,7 +18,7 @@
 
 import { describe, expect, it } from "vitest";
 import { isShopifyConfigured, listProducts } from "./_core/shopify";
-import { STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
+import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
 
 const configured = isShopifyConfigured();
 
@@ -67,6 +67,61 @@ describe.skipIf(!configured)("shopify smoke (live)", () => {
   //
   // Fetch the catalogue unbounded (omitting `first` pages until Shopify stops)
   // and fail while there is still room to raise the ceiling calmly.
+  // One name per category. The catalogue was imported in several lineages that
+  // each invented their own wording, and by September 2026 the same category
+  // was live under as many as four names — "Soccer Retro", "Soccer
+  // Retro/Vintage" and "Retro"; "Windbreaker or jacket", "Jacket" and
+  // "Jacket / Windbreaker". `productType` is the eyebrow on the product page
+  // and the fallback badge on every card, so that showed; it would show more
+  // once a type filter is built over these values.
+  //
+  // A NEW name here is not necessarily wrong — the store will sell a category
+  // it does not sell today. It has to be a decision, though, not a spelling an
+  // importer happened to use, so add it to this list deliberately.
+  const CANONICAL_TYPES = new Set([
+    "Fan Version",
+    "Player Version",
+    "Retro",
+    "Kids Kit",
+    "Training Set",
+    "Half-Zip Training Set",
+    "Half-Zip Training Top",
+    "Hoodie",
+    "Sweatshirt",
+    "Jacket / Windbreaker",
+    "Tracksuit",
+    "Plain Tracksuit",
+    "Rugby Jersey",
+    "Rugby Vest",
+    "F1 Jersey",
+    "F1 Jacket",
+    "Service",
+  ]);
+
+  it(
+    "gives every customer-facing product a canonical productType",
+    { timeout: 120_000 },
+    async () => {
+      const all = await listProducts();
+      const facing = all.filter(isCustomerFacingMappedProduct);
+      const offenders = new Map<string, string[]>();
+      for (const p of facing) {
+        const type = p.productType ?? "(none)";
+        if (CANONICAL_TYPES.has(type)) continue;
+        offenders.set(type, [...(offenders.get(type) ?? []), p.handle].slice(0, 5));
+      }
+
+      expect(
+        [...offenders.keys()],
+        `Off-taxonomy productType(s) on customer-facing products:\n` +
+          [...offenders].map(([t, hs]) => `  "${t}" — e.g. ${hs.join(", ")}`).join("\n") +
+          `\nEither map it onto an existing category in ` +
+          `scripts/normalise-product-types.mjs and re-run it, or add it to ` +
+          `CANONICAL_TYPES here if the store genuinely sells a new category.`
+      ).toEqual([]);
+    }
+  );
+
   it(
     "has headroom under the storefront fetch ceiling",
     { timeout: 120_000 },
