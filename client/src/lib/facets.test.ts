@@ -285,3 +285,51 @@ describe("the nav menu and the team registry", () => {
     expect(mismatched).toEqual([]);
   });
 });
+
+describe("applyRail — the dimensions added for the category filters", () => {
+  const catalogue = [
+    product("Liverpool 2025/26 Home Fan Version"),
+    product("Scuderia Ferrari 2025 Team Hoodie"),
+    product("New Zealand All Blacks Home Rugby Jersey"),
+    product("adidas Black Full-Zip Tracksuit"),
+  ];
+
+  it("filters by sport", () => {
+    const rugby = applyRail(catalogue, { ...EMPTY_RAIL, sport: "rugby" });
+    expect(rugby.map(p => p.title)).toEqual(["New Zealand All Blacks Home Rugby Jersey"]);
+  });
+
+  it("filters by team slug", () => {
+    const reds = applyRail(catalogue, { ...EMPTY_RAIL, team: "liverpool" });
+    expect(reds.map(p => p.title)).toEqual(["Liverpool 2025/26 Home Fan Version"]);
+  });
+
+  // The plain stock that belongs to no club has to stay reachable, or a shopper
+  // who touches the team filter can never get back to it.
+  it("filters to the stock that has no team at all", () => {
+    const plain = applyRail(catalogue, { ...EMPTY_RAIL, team: "unspecified" });
+    expect(plain.map(p => p.title)).toEqual(["adidas Black Full-Zip Tracksuit"]);
+  });
+
+  it("filters by canonical product type", () => {
+    const typed = [
+      { ...product("Liverpool Home Fan Version"), productType: "Fan Version" },
+      { ...product("Liverpool Training Hoodie"), productType: "Hoodie" },
+    ];
+    expect(applyRail(typed, { ...EMPTY_RAIL, type: "Hoodie" }).map(p => p.title)).toEqual([
+      "Liverpool Training Hoodie",
+    ]);
+  });
+
+  it("composes with the filters that were already there", () => {
+    const both = applyRail(catalogue, { ...EMPTY_RAIL, sport: "football", version: "fan" });
+    expect(both.map(p => p.title)).toEqual(["Liverpool 2025/26 Home Fan Version"]);
+  });
+
+  it("offers only the sports and teams present in the results", () => {
+    const facets = collectFacets(catalogue);
+    expect(facets.sports).toEqual(["football", "rugby", "f1"]);
+    // Sorted by label, so Scuderia Ferrari comes last however its slug reads.
+    expect(facets.teams.map(t => t.label)).toEqual(["Liverpool", "New Zealand", "Scuderia Ferrari"]);
+  });
+});

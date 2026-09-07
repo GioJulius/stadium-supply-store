@@ -6,9 +6,12 @@ import {
   applyRail,
   collectFacets,
   EMPTY_RAIL,
+  KIT_SLOT_LABELS,
   railIsActive,
+  VERSION_LABELS,
   type RailState,
 } from "@/lib/facets";
+import { SPORT_LABELS, TEAMS_BY_SLUG } from "@/lib/teams";
 import { isCustomerFacingMappedProduct, SHOP_PAGE_SIZE, sortProducts, STOREFRONT_CATALOG_FETCH_LIMIT, textMatchProducts, type CatalogSortMode } from "@/lib/catalog";
 import { trpc } from "@/lib/trpc";
 import { ArrowDownUp, ChevronLeft, ChevronRight, LoaderCircle, SlidersHorizontal, X } from "lucide-react";
@@ -29,6 +32,75 @@ function pageNumbers(current: number, total: number): Array<number | "gap"> {
   if (around[around.length - 1] < total - 1) out.push("gap");
   out.push(total);
   return out;
+}
+
+/**
+ * What is currently filtering the archive, as chips that remove themselves.
+ *
+ * The rail holds eight dimensions now, and on a phone it is a sheet that closes
+ * over what it did — without this the shopper is left looking at 40 kits with no
+ * indication of why it is not 1 247, and "Clear all" is behind a button. Each
+ * chip drops exactly one filter, which is also the fastest way back out of a
+ * dead end.
+ */
+function ActiveFilters({ rail, onChange }: { rail: RailState; onChange: (next: RailState) => void }) {
+  const chips: Array<{ key: string; label: string; clear: Partial<RailState> }> = [];
+
+  if (rail.sport) chips.push({ key: "sport", label: SPORT_LABELS[rail.sport], clear: { sport: null } });
+  if (rail.team) {
+    chips.push({
+      key: "team",
+      label: rail.team === "unspecified" ? "No team" : TEAMS_BY_SLUG.get(rail.team)?.label ?? rail.team,
+      clear: { team: null },
+    });
+  }
+  if (rail.type) chips.push({ key: "type", label: rail.type, clear: { type: null } });
+  // "Retro" is both a version and a category, so a bare label would put two
+  // identical chips side by side with no way to tell which one to remove.
+  if (rail.version) {
+    chips.push({ key: "version", label: `${VERSION_LABELS[rail.version]} version`, clear: { version: null } });
+  }
+  for (const size of rail.sizes) {
+    chips.push({ key: `size-${size}`, label: size, clear: { sizes: rail.sizes.filter(s => s !== size) } });
+  }
+  if (rail.season) {
+    chips.push({
+      key: "season",
+      label: rail.season === "unspecified" ? "No season" : rail.season,
+      clear: { season: null },
+    });
+  }
+  if (rail.slot) {
+    chips.push({
+      key: "slot",
+      label: rail.slot === "unspecified" ? "No kit slot" : KIT_SLOT_LABELS[rail.slot],
+      clear: { slot: null },
+    });
+  }
+  if (rail.maxPrice !== null) {
+    chips.push({ key: "price", label: `Up to R${rail.maxPrice}`, clear: { maxPrice: null } });
+  }
+
+  if (!chips.length) return null;
+
+  return (
+    <div className="active-filters" aria-label="Filters applied">
+      {chips.map(chip => (
+        <button
+          key={chip.key}
+          type="button"
+          className="active-filters__chip"
+          onClick={() => onChange({ ...rail, ...chip.clear })}
+          aria-label={`Remove filter: ${chip.label}`}
+        >
+          {chip.label} <X size={12} aria-hidden="true" />
+        </button>
+      ))}
+      {chips.length > 1 ? (
+        <button type="button" className="text-link" onClick={() => onChange(EMPTY_RAIL)}>Clear all</button>
+      ) : null}
+    </div>
+  );
 }
 
 export default function Shop() {
@@ -119,6 +191,8 @@ export default function Shop() {
             />
 
             <div className="shop-results">
+              <ActiveFilters rail={rail} onChange={setRail} />
+
               <div className="shop-toolbar">
                 <p>
                   {heading} — {String(filteredProducts.length).padStart(2, "0")} {filteredProducts.length === 1 ? "kit" : "kits"}

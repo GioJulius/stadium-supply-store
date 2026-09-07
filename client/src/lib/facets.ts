@@ -316,11 +316,32 @@ export const KIT_SLOT_LABELS: Record<KitSlot, string> = {
   goalkeeper: "Goalkeeper",
 };
 
+/**
+ * The categories, grouped the way a shopper thinks about them rather than the
+ * way the price list is ordered. Sixteen entries in one flat select is a wall;
+ * four short groups is a menu. Anything not named here still filters, it just
+ * lands under "Other".
+ */
+export const TYPE_GROUPS: Array<{ label: string; types: string[] }> = [
+  { label: "Shirts", types: ["Fan Version", "Player Version", "Retro"] },
+  { label: "Kids", types: ["Kids Kit"] },
+  {
+    label: "Training",
+    types: ["Training Set", "Half-Zip Training Set", "Half-Zip Training Top", "Tracksuit", "Plain Tracksuit"],
+  },
+  { label: "Outerwear", types: ["Jacket / Windbreaker", "Hoodie", "Sweatshirt"] },
+  { label: "Rugby", types: ["Rugby Jersey", "Rugby Vest"] },
+  { label: "Formula 1", types: ["F1 Jersey", "F1 Jacket"] },
+];
+
 export type ShopFacets = {
   versions: KitVersion[];
   sizes: string[];
   seasons: string[];
   slots: KitSlot[];
+  sports: Sport[];
+  teams: TeamEntry[];
+  types: string[];
   priceMin: number;
   priceMax: number;
 };
@@ -331,6 +352,9 @@ export function collectFacets(products: ProductSummary[]): ShopFacets {
   const sizes = new Set<string>();
   const seasons = new Set<string>();
   const slots = new Set<KitSlot>();
+  const sports = new Set<Sport>();
+  const teams = new Map<string, TeamEntry>();
+  const types = new Set<string>();
   let priceMin = Infinity;
   let priceMax = 0;
 
@@ -340,6 +364,9 @@ export function collectFacets(products: ProductSummary[]): ShopFacets {
     for (const size of facts.sizes) sizes.add(size);
     if (facts.season) seasons.add(facts.season);
     if (facts.slot) slots.add(facts.slot);
+    sports.add(facts.sport);
+    if (facts.team) teams.set(facts.team.slug, facts.team);
+    if (facts.type) types.add(facts.type);
     if (Number.isFinite(facts.price)) {
       priceMin = Math.min(priceMin, facts.price);
       priceMax = Math.max(priceMax, facts.price);
@@ -352,6 +379,12 @@ export function collectFacets(products: ProductSummary[]): ShopFacets {
     // Newest season first — "26/27" above "25/26".
     seasons: Array.from(seasons).sort((a, b) => b.localeCompare(a)),
     slots: (["home", "away", "third", "fourth", "goalkeeper"] as KitSlot[]).filter(s => slots.has(s)),
+    sports: (["football", "rugby", "f1"] as Sport[]).filter(s => sports.has(s)),
+    teams: Array.from(teams.values()).sort((a, b) => a.label.localeCompare(b.label)),
+    // Grouped order, so the select reads the same way every time.
+    types: TYPE_GROUPS.flatMap(group => group.types)
+      .filter(type => types.has(type))
+      .concat(Array.from(types).filter(type => !TYPE_GROUPS.some(g => g.types.includes(type))).sort()),
     priceMin: Number.isFinite(priceMin) ? Math.floor(priceMin) : 0,
     priceMax: Math.ceil(priceMax) || 0,
   };
@@ -367,13 +400,36 @@ export type RailState = {
   sizes: string[];
   season: string | "unspecified" | null;
   slot: KitSlot | "unspecified" | null;
+  sport: Sport | null;
+  /** A `TEAM_REGISTRY` slug, or `"unspecified"` for stock with no team at all. */
+  team: string | "unspecified" | null;
+  /** A canonical `productType`. */
+  type: string | null;
   maxPrice: number | null;
 };
 
-export const EMPTY_RAIL: RailState = { version: null, sizes: [], season: null, slot: null, maxPrice: null };
+export const EMPTY_RAIL: RailState = {
+  version: null,
+  sizes: [],
+  season: null,
+  slot: null,
+  sport: null,
+  team: null,
+  type: null,
+  maxPrice: null,
+};
 
 export function railIsActive(rail: RailState): boolean {
-  return Boolean(rail.version || rail.sizes.length || rail.season || rail.slot || rail.maxPrice !== null);
+  return Boolean(
+    rail.version ||
+      rail.sizes.length ||
+      rail.season ||
+      rail.slot ||
+      rail.sport ||
+      rail.team ||
+      rail.type ||
+      rail.maxPrice !== null
+  );
 }
 
 export function applyRail(products: ProductSummary[], rail: RailState): ProductSummary[] {
@@ -391,6 +447,15 @@ export function applyRail(products: ProductSummary[], rail: RailState): ProductS
     if (rail.slot) {
       if (rail.slot === "unspecified" ? facts.slot !== null : facts.slot !== rail.slot) return false;
     }
+
+    if (rail.sport && facts.sport !== rail.sport) return false;
+
+    if (rail.team) {
+      const slug = facts.team?.slug ?? null;
+      if (rail.team === "unspecified" ? slug !== null : slug !== rail.team) return false;
+    }
+
+    if (rail.type && facts.type !== rail.type) return false;
 
     if (rail.maxPrice !== null && facts.price > rail.maxPrice) return false;
 

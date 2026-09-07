@@ -544,6 +544,23 @@ body { font-family:"Manrope",Arial,sans-serif; }
 .rail-toggle__dot { width:6px; height:6px; border-radius:50%; background:#10213c; }
 .rail-scrim { display:none; }
 
+/* The filters currently applied, as chips that remove themselves.
+
+   The rail holds eight dimensions and on a phone it is a sheet that closes over
+   what it did, so without this the shopper sees 40 kits and no reason why it is
+   not 1 247. Each chip drops one filter; "Clear all" only appears once there is
+   more than one thing to clear. */
+.active-filters { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:16px; }
+.active-filters__chip {
+  display:inline-flex; align-items:center; gap:6px;
+  border:1px solid #10213c; background:#10213c; color:#f8f7f1;
+  border-radius:999px; padding:6px 10px; font:10px "DM Mono",monospace; text-transform:uppercase;
+  white-space:nowrap; cursor:pointer; transition:opacity .15s;
+}
+.active-filters__chip:hover { opacity:.78; }
+.active-filters__chip svg { opacity:.7; }
+.active-filters .text-link { font:10px "DM Mono",monospace; text-transform:uppercase; }
+
 /* The size run on the card — what stops the dead-end click into a kit that
    does not come in the shopper's size. */
 .product-card__meta { display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex:0 0 auto; text-align:right; }
