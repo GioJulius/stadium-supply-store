@@ -19,6 +19,16 @@ export type NavLeaf = {
   q: string;
   /** Term that disqualifies a match — "Retro" means retro football, not retro rugby. */
   not?: string;
+  /**
+   * The `TEAM_REGISTRY` slug this leaf names, where it names a team.
+   *
+   * The menu and the registry are two lists of the same thing, and two lists of
+   * the same thing drift. This is the join between them: a test asserts every
+   * slug here exists, and it is what lets a menu link filter by team rather than
+   * by substring — a link that promises "Arsenal 24" and a page that shows 19
+   * is the failure mode being designed out.
+   */
+  team?: string;
 };
 export type NavGroup = { label: string; children: (NavLeaf | NavGroup)[] };
 export type NavNode = NavLeaf | NavGroup;
@@ -47,44 +57,44 @@ export const SHOP_MENU: NavSection[] = [
       {
         label: "Premier League",
         children: [
-          { label: "Manchester United", q: "manchester united" },
-          { label: "Liverpool", q: "liverpool" },
-          { label: "Arsenal", q: "arsenal" },
-          { label: "Chelsea", q: "chelsea" },
-          { label: "Tottenham Hotspur", q: "tottenham" },
-          { label: "Manchester City", q: "manchester city" },
-          { label: "Aston Villa", q: "aston villa" },
-          { label: "Brighton", q: "brighton" },
-          { label: "Crystal Palace", q: "crystal palace" },
-          { label: "Nottingham Forest", q: "nottingham" },
+          { label: "Manchester United", q: "manchester united", team: "manchester-united" },
+          { label: "Liverpool", q: "liverpool", team: "liverpool" },
+          { label: "Arsenal", q: "arsenal", team: "arsenal" },
+          { label: "Chelsea", q: "chelsea", team: "chelsea" },
+          { label: "Tottenham Hotspur", q: "tottenham", team: "tottenham-hotspur" },
+          { label: "Manchester City", q: "manchester city", team: "manchester-city" },
+          { label: "Aston Villa", q: "aston villa", team: "aston-villa" },
+          { label: "Brighton", q: "brighton", team: "brighton" },
+          { label: "Crystal Palace", q: "crystal palace", team: "crystal-palace" },
+          { label: "Nottingham Forest", q: "nottingham", team: "nottingham-forest" },
         ],
       },
       {
         label: "LaLiga",
         children: [
-          { label: "Real Madrid", q: "real madrid" },
-          { label: "FC Barcelona", q: "barcelona" },
+          { label: "Real Madrid", q: "real madrid", team: "real-madrid" },
+          { label: "FC Barcelona", q: "barcelona", team: "fc-barcelona" },
         ],
       },
-      { label: "Ligue 1", children: [{ label: "Paris Saint-Germain", q: "paris saint-germain" }] },
+      { label: "Ligue 1", children: [{ label: "Paris Saint-Germain", q: "paris saint-germain", team: "paris-saint-germain" }] },
       {
         label: "Serie A",
         children: [
           // "Inter Milan" in full, never bare "inter" — that would sweep in
           // Inter Miami, which lives under Rest of the world.
-          { label: "Inter Milan", q: "inter milan" },
-          { label: "Juventus", q: "juventus" },
-          { label: "AC Milan", q: "ac milan" },
+          { label: "Inter Milan", q: "inter milan", team: "inter-milan" },
+          { label: "Juventus", q: "juventus", team: "juventus" },
+          { label: "AC Milan", q: "ac milan", team: "ac-milan" },
         ],
       },
-      { label: "Bundesliga", children: [{ label: "Bayern Munich", q: "bayern" }] },
+      { label: "Bundesliga", children: [{ label: "Bayern Munich", q: "bayern", team: "bayern-munich" }] },
       {
         label: "Rest of the world",
         children: [
-          { label: "Inter Miami", q: "inter miami" },
-          { label: "Club Brugge", q: "brugge" },
-          { label: "Galatasaray", q: "galatasaray" },
-          { label: "Orlando Pirates", q: "orlando pirates" },
+          { label: "Inter Miami", q: "inter miami", team: "inter-miami" },
+          { label: "Club Brugge", q: "brugge", team: "club-brugge" },
+          { label: "Galatasaray", q: "galatasaray", team: "galatasaray" },
+          { label: "Orlando Pirates", q: "orlando pirates", team: "orlando-pirates" },
         ],
       },
     ],
@@ -92,16 +102,16 @@ export const SHOP_MENU: NavSection[] = [
   {
     label: "National Colours",
     children: [
-      { label: "France", q: "france" },
-      { label: "South Africa", q: "south africa" },
-      { label: "Brazil", q: "brazil" },
-      { label: "Germany", q: "germany" },
-      { label: "Spain", q: "spain" },
-      { label: "Portugal", q: "portugal" },
-      { label: "Argentina", q: "argentina" },
-      { label: "England", q: "england" },
-      { label: "Italy", q: "italy" },
-      { label: "Netherlands", q: "netherlands" },
+      { label: "France", q: "france", team: "france" },
+      { label: "South Africa", q: "south africa", team: "south-africa" },
+      { label: "Brazil", q: "brazil", team: "brazil" },
+      { label: "Germany", q: "germany", team: "germany" },
+      { label: "Spain", q: "spain", team: "spain" },
+      { label: "Portugal", q: "portugal", team: "portugal" },
+      { label: "Argentina", q: "argentina", team: "argentina" },
+      { label: "England", q: "england", team: "england" },
+      { label: "Italy", q: "italy", team: "italy" },
+      { label: "Netherlands", q: "netherlands", team: "netherlands" },
       { label: "World Cup", q: "world cup" },
     ],
   },
