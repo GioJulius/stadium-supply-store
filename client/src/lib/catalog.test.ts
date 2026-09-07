@@ -42,8 +42,13 @@ describe("filterAndSortProducts", () => {
     expect(isCustomerFacingMappedProduct(products[0])).toBe(false);
   });
 
-  it("asks for more than one Shopify page, so the catalogue is not truncated at 250", () => {
-    expect(STOREFRONT_CATALOG_FETCH_LIMIT).toBeGreaterThan(250);
+  // A ceiling below the catalogue does not error, it truncates: the server sorts
+  // by TITLE, so the alphabetical tail silently vanishes from browse and search.
+  // 250 caught it on 2 Sep, 1000 caught it again on 6 Sep at 1 249 products.
+  // The live count is asserted against this number in server/shopify.smoke.test.ts;
+  // this case only holds the line on headroom for the weekly batches.
+  it("keeps room for several more batches above the September 2026 catalogue", () => {
+    expect(STOREFRONT_CATALOG_FETCH_LIMIT).toBeGreaterThanOrEqual(2500);
   });
 });
 

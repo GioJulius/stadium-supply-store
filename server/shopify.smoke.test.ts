@@ -18,6 +18,7 @@
 
 import { describe, expect, it } from "vitest";
 import { isShopifyConfigured, listProducts } from "./_core/shopify";
+import { STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
 
 const configured = isShopifyConfigured();
 
@@ -54,6 +55,44 @@ describe.skipIf(!configured)("shopify smoke (live)", () => {
         usable,
         "No product had all three of: title, first image URL, and price > 0"
       ).toBeTruthy();
+    }
+  );
+
+  // The storefront asks for STOREFRONT_CATALOG_FETCH_LIMIT products and renders
+  // whatever comes back. Shopify sorts by TITLE, so once the catalogue passes
+  // that ceiling the alphabetical tail disappears from the shop grid, the search
+  // and the filter chips with no error anywhere — product pages and the sitemap
+  // keep working, which is exactly what makes it hard to notice. It has happened
+  // twice: at 250 on 2 Sep 2026, and at 1000 on 6 Sep with 1 249 products live.
+  //
+  // Fetch the catalogue unbounded (omitting `first` pages until Shopify stops)
+  // and fail while there is still room to raise the ceiling calmly.
+  it(
+    "has headroom under the storefront fetch ceiling",
+    { timeout: 120_000 },
+    async () => {
+      const all = await listProducts();
+      const headroom = STOREFRONT_CATALOG_FETCH_LIMIT - all.length;
+
+      // eslint-disable-next-line no-console
+      console.log(
+        `[shopify smoke] catalogue ${all.length} / ceiling ${STOREFRONT_CATALOG_FETCH_LIMIT} (${headroom} to spare)`
+      );
+
+      expect(
+        all.length,
+        `The catalogue is ${all.length} products and the storefront only fetches ` +
+          `${STOREFRONT_CATALOG_FETCH_LIMIT}. Everything past that is invisible in ` +
+          `browse and search. Raise STOREFRONT_CATALOG_FETCH_LIMIT in ` +
+          `client/src/lib/catalog.ts and the input max in server/routers/commerce.ts.`
+      ).toBeLessThanOrEqual(STOREFRONT_CATALOG_FETCH_LIMIT);
+
+      expect(
+        headroom,
+        `Only ${headroom} products of headroom left under the ceiling. A weekly ` +
+          `batch runs to several hundred, so raise the ceiling now rather than ` +
+          `after the next import silently hides the tail of the alphabet.`
+      ).toBeGreaterThanOrEqual(500);
     }
   );
 });

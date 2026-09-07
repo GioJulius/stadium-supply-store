@@ -92,7 +92,10 @@ export const commerceRouter = router({
       .input(
         z
           .object({
-            first: z.number().int().min(1).max(1000).optional(),
+            // Must stay >= STOREFRONT_CATALOG_FETCH_LIMIT in client/src/lib/catalog.ts.
+            // The storefront sends that constant verbatim, so a lower max here
+            // rejects the request rather than trimming it.
+            first: z.number().int().min(1).max(5000).optional(),
             collectionHandle: z.string().min(1).optional(),
           })
           .optional()
