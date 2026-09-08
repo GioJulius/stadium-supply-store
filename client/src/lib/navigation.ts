@@ -14,6 +14,9 @@
  * a stale promise.
  */
 
+import { EMPTY_RAIL } from "./facets";
+import { EMPTY_SHOP_QUERY, shopHref, type ShopQuery } from "./shopUrl";
+
 export type NavLeaf = {
   label: string;
   q: string;
@@ -152,7 +155,39 @@ export const SHOP_MENU: NavSection[] = [
   { label: "Reviews", href: "/reviews" },
 ];
 
+/**
+ * The view a menu leaf opens.
+ *
+ * A leaf that names a team filters by team; everything else still searches by
+ * free text. That split is measured, not assumed. Against the live catalogue
+ * all 31 team leaves return exactly the same products either way, so the facet
+ * is a free upgrade — a precise, shareable URL for identical results.
+ *
+ * The category leaves are deliberately NOT converted. `type=` is an exact match
+ * on the canonical category, and the substring is the more useful question for
+ * these: "Sweatshirts" finds 14 listings by text and only 2 by type, and
+ * "Hoodies" loses the Red Bull zip hoodie that is filed as a jacket. A shopper
+ * looking for a hoodie means the zip hoodie too, so the stricter filter would
+ * be the worse menu.
+ *
+ * One function so the link and the count beside it cannot disagree — a menu
+ * that promises "Arsenal 24" next to a page showing 19 is the failure mode.
+ */
+export function leafQuery(leaf: NavLeaf): Partial<ShopQuery> {
+  if (leaf.team) {
+    return { label: leaf.label, rail: { ...EMPTY_RAIL, team: leaf.team } };
+  }
+  return { label: leaf.label, q: leaf.q, not: leaf.not ?? "" };
+}
+
+/**
+ * A leaf's identity for tallies. The search term is no longer unique enough on
+ * its own now that a leaf can filter by team instead of by text.
+ */
+export function leafKey(leaf: NavLeaf): string {
+  return leaf.team ? `team:${leaf.team}` : `q:${leaf.q}|${leaf.not ?? ""}`;
+}
+
 export function leafHref(leaf: NavLeaf): string {
-  const not = leaf.not ? `&not=${encodeURIComponent(leaf.not)}` : "";
-  return `/shop?q=${encodeURIComponent(leaf.q)}${not}&label=${encodeURIComponent(leaf.label)}`;
+  return shopHref(EMPTY_SHOP_QUERY, leafQuery(leaf));
 }

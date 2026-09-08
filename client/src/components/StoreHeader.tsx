@@ -1,6 +1,7 @@
 import { useCart } from "@/contexts/CartContext";
-import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
-import { isGroup, leafHref, SHOP_MENU, type NavNode } from "@/lib/navigation";
+import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT, textMatchProducts } from "@/lib/catalog";
+import { applyRail, EMPTY_RAIL } from "@/lib/facets";
+import { isGroup, leafHref, leafKey, leafQuery, SHOP_MENU, type NavNode } from "@/lib/navigation";
 import { INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { trpc } from "@/lib/trpc";
 import { Menu, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
@@ -27,7 +28,7 @@ function MenuBranch({ node, depth, counts, onNavigate }: { node: NavNode; depth:
   const [open, setOpen] = useState(false);
 
   if (!isGroup(node)) {
-    const count = counts.get(node.q);
+    const count = counts.get(leafKey(node));
     return (
       <Link href={leafHref(node)} className="menu-tree__leaf" style={{ paddingLeft: `${depth * 18}px` }} onClick={onNavigate}>
         {node.label}
@@ -107,15 +108,21 @@ export function StoreHeader() {
     { first: STOREFRONT_CATALOG_FETCH_LIMIT },
     { enabled: menuOpen },
   );
+  // The number beside a link is counted the same way the link itself filters —
+  // through `leafQuery`, the one description of where a leaf goes. It used to
+  // be a second, private substring test living here, which was fine only for as
+  // long as every leaf was a substring search; the team leaves now filter by
+  // team, and a menu promising "Arsenal 24" beside a page showing 19 is exactly
+  // what two implementations of the same question produce.
   const counts = useMemo(() => {
     const tally = new Map<string, number>();
     if (!products.length) return tally;
-    const haystacks = products
-      .filter(isCustomerFacingMappedProduct)
-      .map(product => [product.title, product.productType ?? "", ...product.tags].join(" ").toLowerCase());
+    const facing = products.filter(isCustomerFacingMappedProduct);
     const walk = (nodes: NavNode[]) => nodes.forEach(node => {
-      if (isGroup(node)) walk(node.children);
-      else tally.set(node.q, haystacks.filter(text => text.includes(node.q) && !(node.not && text.includes(node.not))).length);
+      if (isGroup(node)) return walk(node.children);
+      const query = leafQuery(node);
+      const searched = textMatchProducts(facing, query.q ?? "", query.not ?? "");
+      tally.set(leafKey(node), applyRail(searched, query.rail ?? EMPTY_RAIL).length);
     });
     SHOP_MENU.forEach(section => section.children && walk(section.children));
     return tally;
