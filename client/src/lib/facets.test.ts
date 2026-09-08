@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 import type { Product, ProductVariant } from "@shared/commerce/types";
-import { isGroup, SHOP_MENU, type NavLeaf, type NavNode } from "./navigation";
+import { isGroup, leafHref, leafQuery, SHOP_MENU, type NavLeaf, type NavNode } from "./navigation";
 import { TEAMS_BY_SLUG } from "./teams";
+import { textMatchProducts } from "./catalog";
 import {
   applyRail,
   collectFacets,
@@ -331,5 +332,49 @@ describe("applyRail — the dimensions added for the category filters", () => {
     expect(facets.sports).toEqual(["football", "rugby", "f1"]);
     // Sorted by label, so Scuderia Ferrari comes last however its slug reads.
     expect(facets.teams.map(t => t.label)).toEqual(["Liverpool", "New Zealand", "Scuderia Ferrari"]);
+  });
+});
+
+describe("menu links", () => {
+  const leafFor = (label: string): NavLeaf => {
+    const found = (function walk(nodes: NavNode[]): NavLeaf[] {
+      return nodes.flatMap(node => (isGroup(node) ? walk(node.children) : [node]));
+    })(SHOP_MENU.flatMap(section => section.children ?? [])).find(leaf => leaf.label === label);
+    if (!found) throw new Error(`no menu leaf labelled ${label}`);
+    return found;
+  };
+
+  it("filters by team where the leaf names one", () => {
+    expect(leafHref(leafFor("Arsenal"))).toBe("/shop?label=Arsenal&team=arsenal");
+  });
+
+  it("keeps searching by text where the leaf is not a team", () => {
+    // Measured, not assumed: "Sweatshirts" finds 14 listings by text and only 2
+    // by canonical type, so the substring is the better question here.
+    expect(leafHref(leafFor("Sweatshirts"))).toBe("/shop?q=sweatshirt&label=Sweatshirts");
+  });
+
+  it("carries a disqualifying term through", () => {
+    const leaf: NavLeaf = { label: "Retro", q: "retro", not: "rugby" };
+    expect(leafHref(leaf)).toContain("not=rugby");
+  });
+
+  // The count beside a link and the page it opens are the same question, so
+  // they read it from the same place. A menu promising "Arsenal 24" beside a
+  // page showing 19 is what two implementations of one question produce.
+  it("counts a leaf the same way the leaf filters", () => {
+    const catalogue = [
+      product("Arsenal 2025/26 Home Fan Version", "500.00", [], ["Arsenal", "Mapped Media"]),
+      product("Arsenal Training Hoodie", "850.00", [], ["Arsenal", "Mapped Media"]),
+      product("Liverpool 2025/26 Home Fan Version", "500.00", [], ["Liverpool", "Mapped Media"]),
+    ];
+    const leaf = leafFor("Arsenal");
+    const query = leafQuery(leaf);
+    const counted = applyRail(
+      textMatchProducts(catalogue, query.q ?? "", query.not ?? ""),
+      query.rail ?? EMPTY_RAIL,
+    );
+    expect(counted).toHaveLength(2);
+    expect(counted.every(p => teamOf(p)?.slug === "arsenal")).toBe(true);
   });
 });
