@@ -1,5 +1,75 @@
 # Project TODO
 
+Status page for the Stadium Supply storefront. Last reviewed **8 September 2026**.
+
+Live at **stadiumsupply.co.za**, 1 249 customer-facing products, selling.
+Checkout is Shopify-hosted and works; card processing is the one thing still
+waiting, and it is waiting on the client rather than on code.
+
+The 175 completed items from the build are kept at the bottom, unchanged, as the
+record of how the store got here. Everything above that line is what is actually
+outstanding.
+
+---
+
+## Blocked on the client
+
+### Payfast — card processing
+Nothing here is a code task. Checkout hands off to Shopify today and takes no
+card. The merchant signup was created against the mistyped address
+`stadiumcustomers@gmail.com` (the correct one is `stadiumscustomers@gmail.com`)
+before activation, and recovery runs through Payfast Merchant Support to change
+the primary email — see `payfast-email-recovery.md`. **Do not create or access
+the mistyped mailbox.** The account is the client's and stays theirs.
+
+- [ ] Chase Payfast Merchant Support to move the signup to the corrected address and resend verification.
+- [ ] Resume activation once the client confirms the corrected mailbox is verified.
+- [ ] Collect the Merchant ID, Merchant Key and any passphrase through owner-controlled entry — never pasted into a chat.
+- [ ] Install and activate Payfast through Shopify Payments.
+- [ ] Verify a non-purchasing checkout reaches a payment step, without submitting an order or entering card details.
+
+### Questions for the next WhatsApp batch
+Each of these is a pricing or naming decision that is the client's to make, not
+one to infer. Collected 7–8 September.
+
+- [ ] **The plain hooded windbreaker set** (`adidas Black Hooded Full-Zip Tracksuit`) is listed at the plain full-zip R850. The 7 Sep list prices a full windbreaker tracksuit at R1 200, but that line sits in the club section. Which applies to a plain one?
+- [ ] **`Tracksuit` (R1 000, club) vs `Plain Tracksuit` (R700/R850, unbranded).** Different tiers and different products, but the two names sit side by side in the shop and read as near-identical. Worth renaming one — their call.
+- [ ] **Rugby measurements.** `sizeCharts.ts` carries fan, player and kids charts only, so the 30 rugby products sized S–5XL have no size guide at all.
+- [ ] **`Stadium Supply Fan Jersey — Drop 20`** at R650 — own-brand, and no price list covers it.
+- [ ] **Is a bare "Chiefs" jersey Kaizer Chiefs?** `Chiefs 2026/27 Home Jersey` carries no rugby marking, so it is filed as Kaizer Chiefs football while `Chiefs Home Rugby Jersey` goes to the Super Rugby side. It is the one team identification that was inferred rather than read off the listing.
+- [ ] **The 833 single-photo listings**, if the client ever wants to close that gap. No tooling can: none of them carries a supplier album to pull from, they all came from WhatsApp batches at one photo per garment. It needs more photographs from the client.
+
+---
+
+## Engineering follow-ups
+
+Neither is urgent and neither is broken; both are known and deliberate.
+
+- [ ] **The shop pulls the whole catalogue in one request** — about 1.56 MB raw, 94 KB gzipped, roughly 3 s. Halved on 7 Sep by splitting `ProductSummary` from `Product`. Trimming further means dropping images from the grid query, which cannot be done while `ProductCard` shows an image count the Storefront API has no total for. Real pagination is the answer if the catalogue keeps growing.
+- [ ] **Facet options are collected before the rail is applied**, so a combination like Rugby + F1 Jersey is reachable and returns nothing. All six dimensions behave this way, and collecting after the rail would make options vanish as they are clicked. The empty state and the filter pills make it recoverable. The fix is per-dimension collection — each dimension excluding its own filter — which is a change to all six at once.
+
+---
+
+## Done since the go-live, with what proves it
+
+The catalogue work of 5–8 September, kept here because it is what the completed
+list below does not cover.
+
+- [x] **Every price on the client's 7 September list.** 76 repriced, plus three the list did not cover, settled from the product photographs: two rugby vests R600 → R700 and the Liverpool pre-match shirt R600 → R500. See `price-list-2026-09-07.md`.
+- [x] **Size runs.** Verified against the live catalogue rather than assumed: 1 166 products already carry the correct run, 0 short, 82 correctly not swept (kids ages, service products). `scripts/apply-client-sizing.mjs` now reads `shared/commerce/taxonomy.json` so a category rename cannot silently break it again.
+- [x] **Product-type taxonomy.** 28 names collapsed to 17 canonical ones across both `productType` and the tags; 249 products rewritten. A live smoke test pins the set.
+- [x] **Team, country, sport and product-type filters.** Rail gained sport and product type; the URL carries every filter so a view can be shared and survives Back; menu links filter by `team=` and their counts come from the link itself. PRs #8–#12.
+- [x] **Customisation.** Badge (R50) and name and number (R50) are live on eligible products and reconciled server-side. Long sleeve stays a separate listing, which is how the store is already priced — the price list calls it an add-on but the catalogue has always sold it as its own product.
+- [x] **The server now checks a garment can be printed before charging for it.** A crafted request could attach the R50 printing fee to a retro shirt; production accepted it and priced it at R750. Closed 8 Sep.
+- [x] **The shop shows the whole catalogue.** A fixed 1 000-product fetch had been hiding 249 listings — the whole alphabetical tail from Manchester United onward — from browse and search since 6 Sep.
+- [x] **Retired the legacy `Manchester United Away 26/27`** — R1 350, one size, published only to the dead Manus channel. Archived rather than deleted, so it can come back if it is ever wanted: `scripts/retire-legacy-manutd-away.mjs`.
+
+---
+
+## Completed during the build
+
+Kept verbatim as the record of the original delivery.
+
 - [x] Review supplied visual reference and establish the premium editorial design system.
 - [x] Upload the supplied Stadium Supply hero image to project-managed static storage.
 - [x] Wire the Shopify commerce router and environment exports into the app host.
@@ -172,19 +242,6 @@
 - [x] Publish the owner-approved remaining customer-facing Stadium Supply products to Shopify Online Store and verify the resulting channel assignments.
 - [x] Remove the owner-authorized Shopify storefront password without changing catalog, payment, shipping, or domain settings.
 - [x] Verify that the native Shopify Online Store is publicly reachable after password removal.
-- [ ] Inspect Shopify payment-provider status, checkout eligibility, and any prerequisites for live card processing.
-- [ ] Configure available non-sensitive payment settings and document any owner-only identity, banking, or verification requirements.
-- [ ] Verify a non-purchasing checkout flow reaches a payment step without submitting an order or entering sensitive payment data.
-- [ ] Recover the Payfast merchant signup from the incorrect verification address without accessing or creating the mistyped Gmail account.
-- [ ] Resume Payfast activation and non-purchasing checkout validation after the client confirms the corrected email is verified.
-- [ ] Collect the Payfast Merchant ID, Merchant Key, and any provider-required passphrase through owner-controlled entry, without sharing secrets in chat.
-- [ ] Install and activate Payfast through Shopify Payments, then verify the payment option in a non-purchasing checkout flow.
-- [ ] Audit every active product against the client’s revised pricing matrix, eligible size range, and product-type taxonomy.
-- [ ] Update soccer Fan, Player, Retro, Kiddies, Rugby, F1, training, tracksuit, jacket, hoodie, and adult-set prices according to the supplied client matrix.
-- [ ] Extend product size options according to the client’s product-specific size ranges without removing currently sellable variants.
-- [ ] Add team, country, sport, and product-type navigation filters comparable to the client’s referenced category structure.
-- [ ] Add optional customer customization choices for eligible products: badge, name and number, and long sleeve where available.
-- [ ] Verify revised prices, size options, category discovery, customization selections, cart totals, and payment-ready checkout behavior without completing a purchase.
 - [x] Create a private GitHub repository and push the Stadium Supply project source with sensitive/generated files excluded.
 - [x] Verify the pushed repository contents and report the private repository URL.
 - [x] Change the Stadium Supply GitHub repository visibility from private to public and verify the result.
