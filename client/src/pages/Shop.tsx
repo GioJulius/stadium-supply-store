@@ -112,12 +112,18 @@ export default function Shop() {
   // filtered view can be shared, linked to from the menu, and survives a reload
   // — and Back undoes one filter instead of leaving the shop altogether.
   //
-  // The menu navigates by free-text term (`q`) and carries the wording it used
-  // (`label`) so the heading reads back the club the visitor actually clicked.
+  // A menu link carries the wording it used (`label`) whether it navigates by
+  // free-text term or by team, so the heading reads back what was clicked.
   const [searchParams] = useSearchParams();
   const shopQuery = useMemo(() => parseShopParams(searchParams), [searchParams]);
   const { q: query, not: exclude, rail, sort: sortMode } = shopQuery;
+  // The wording the visitor arrived by. A menu link carries `label` whether it
+  // navigates by search term or by team, so the heading keys off the LABEL, not
+  // off `q` — keying off `q` was fine only while every menu link was a text
+  // search, and it left the team links reading "Football, collected." instead of
+  // the club that was actually clicked.
   const queryLabel = shopQuery.label || query;
+  const named = Boolean(queryLabel);
   const [, navigate] = useLocation();
 
   const update = (patch: Partial<ShopQuery>) => navigate(shopHref(shopQuery, patch));
@@ -163,7 +169,7 @@ export default function Shop() {
     gridTop.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [currentPage]);
 
-  const heading = query ? queryLabel : "The archive";
+  const heading = named ? queryLabel : "The archive";
 
   return (
     <div className="store-page store-page--light">
@@ -171,7 +177,7 @@ export default function Shop() {
       <main>
         <section className="shop-intro">
           <p className="section-index">02 / The archive</p>
-          {query ? (
+          {named ? (
             <>
               <h1>{queryLabel},<br /><em>collected.</em></h1>
               <Link href="/shop" className="shop-intro__clear">Clear filter <X size={14} /></Link>
