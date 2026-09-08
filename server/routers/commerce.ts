@@ -21,7 +21,7 @@ import {
   removeCartLines,
   updateCartLines,
 } from "../_core/shopify";
-import { isPersonalisable } from "@shared/commerce/personalisation";
+import { isBadgeable, isPersonalisable } from "@shared/commerce/personalisation";
 import {
   PERSONALISATION_NAME_KEY,
   PERSONALISATION_NUMBER_KEY,
@@ -84,9 +84,12 @@ function toLineAttributes(line: z.infer<typeof cartLineInputSchema>) {
  * length, the squad number — but said nothing about the garment, and both extras
  * are worth R50: `reconcileAddonFees` adds a paid fee line for every line that
  * claims one. Until 8 Sep 2026 a crafted request could therefore attach printing
- * to a retro shirt or a pair of shorts and be billed for work the print shop
- * cannot do. `isPersonalisable` had lived only in client code, where it decides
- * whether to OFFER the option — which is a UI concern, not a control.
+ * to a pair of shorts and be billed for work the print shop cannot do. The rule
+ * had lived only in client code, where it decides whether to OFFER the option —
+ * which is a UI concern, not a control.
+ *
+ * The two extras are checked separately because a retro shirt takes one and not
+ * the other: a name and number, but no current competition badge.
  *
  * One lookup covers the whole cart. A variant Shopify does not return is left to
  * the cart mutation that follows, which fails on the same id with a better
@@ -99,11 +102,19 @@ async function assertLinesArePrintable(lines: Array<z.infer<typeof cartLineInput
   const facts = await printableFactsByVariant(wanting.map(line => line.variantId));
   for (const line of wanting) {
     const product = facts.get(line.variantId);
-    if (!product || isPersonalisable(product)) continue;
-    throw new TRPCError({
-      code: "BAD_REQUEST",
-      message: `"${product.title}" cannot be printed or badged`,
-    });
+    if (!product) continue;
+    if (line.personalisation && !isPersonalisable(product)) {
+      throw new TRPCError({
+        code: "BAD_REQUEST",
+        message: `"${product.title}" cannot be printed`,
+      });
+    }
+    if (line.badge && !isBadgeable(product)) {
+      throw new TRPCError({
+        code: "BAD_REQUEST",
+        message: `"${product.title}" cannot take a competition badge`,
+      });
+    }
   }
 }
 

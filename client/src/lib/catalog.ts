@@ -1,10 +1,10 @@
 import type { ProductSummary } from "@shared/commerce/types";
 import taxonomy from "@shared/commerce/taxonomy.json";
 
-// Printing rules live in shared/ so the server enforces the same test the UI
-// offers — the answer is worth R50 a line. Re-exported here because every
-// existing call site imports it from this module.
-export { isPersonalisable } from "@shared/commerce/personalisation";
+// Printing and badge rules live in shared/ so the server enforces the same test
+// the UI offers — each answer is worth R50 a line. Re-exported here because
+// every existing call site imports them from this module.
+export { isBadgeable, isPersonalisable } from "@shared/commerce/personalisation";
 
 /**
  * The canonical product categories, from `shared/commerce/taxonomy.json`.
