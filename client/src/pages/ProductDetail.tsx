@@ -2,7 +2,7 @@ import { CartDrawer } from "@/components/CartDrawer";
 import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
-import { isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
+import { isBadgeable, isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
 import { isLongSleeve, kitKey, kitSlotOf, KIT_SLOT_LABELS, seasonOf, sortSizes, sportOf, teamOf, versionOf, VERSION_LABELS } from "@/lib/facets";
 import { SPORT_LABELS } from "@/lib/teams";
 import {
@@ -104,6 +104,9 @@ function ProductView({ product }: { product: Product }) {
   const sizeOptions = sortSizes(product.options.find(option => option.name.toLowerCase() === "size")?.values ?? []);
   const selectedSize = variant?.selectedOptions.find(option => option.name.toLowerCase() === "size")?.value;
   const personalisable = isPersonalisable(product);
+  // A retro prints a name and number like any other shirt, but the badges on
+  // offer are the current competition patches, which no retro season wore.
+  const badgeable = isBadgeable(product);
   const siblings = useSiblingKits(product);
   const currentVersion = versionOf(product);
 
@@ -127,7 +130,7 @@ function ProductView({ product }: { product: Product }) {
   // What the button says it will cost. Display only — the cart is recomputed
   // server-side after every mutation, and that is the number that gets paid.
   const unitPrice = Number(variant?.price.amount ?? product.priceRange.min.amount);
-  const extras = (personalisation ? PRINTING_FEE_AMOUNT : 0) + (personalisable && wantsBadge ? BADGE_FEE_AMOUNT : 0);
+  const extras = (personalisation ? PRINTING_FEE_AMOUNT : 0) + (badgeable && wantsBadge ? BADGE_FEE_AMOUNT : 0);
   const runningTotal = (unitPrice + extras) * quantity;
   const currency = variant?.price.currencyCode ?? product.priceRange.min.currencyCode;
 
@@ -271,7 +274,7 @@ function ProductView({ product }: { product: Product }) {
                 <p className="printing-panel__hint">Add a name or a number, or untick to take the shirt as it comes.</p>
               )}
 
-              <div className="printing-panel__badges">
+              {badgeable && <div className="printing-panel__badges">
                 <span className="eyebrow">Competition badge <b>{BADGE_FEE_LABEL}</b></span>
                 <div className="printing-panel__badge-row">
                   <button
@@ -326,7 +329,7 @@ function ProductView({ product }: { product: Product }) {
                     </label>
                   </div>
                 )}
-              </div>
+              </div>}
 
               <p className="printing-panel__terms">Printed kits are made to order and cannot be returned.</p>
             </div>
@@ -341,7 +344,7 @@ function ProductView({ product }: { product: Product }) {
             <button
               className="add-button"
               disabled={!variant?.availableForSale || loading}
-              onClick={() => variant && addItem(variant.id, quantity, personalisation, wantsBadge, badgeSelection)}
+              onClick={() => variant && addItem(variant.id, quantity, personalisation, badgeable && wantsBadge, badgeSelection)}
             >
               {variant?.availableForSale
                 ? <>Add to bag <span>{formatMoney({ amount: runningTotal.toFixed(2), currencyCode: currency })}</span></>

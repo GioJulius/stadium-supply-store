@@ -217,16 +217,16 @@ describe("commerce.cart", () => {
   });
 
   // Both extras cost R50, and reconcileAddonFees bills any line that claims one,
-  // so the garment has to be checked server-side. isPersonalisable used to live
-  // only in client code, where it decides whether to OFFER the option — a
-  // crafted request could attach printing to a retro and be charged for work the
-  // print shop cannot do.
+  // so the garment has to be checked server-side. The rule used to live only in
+  // client code, where it decides whether to OFFER the option — a crafted
+  // request could attach printing to a pair of shorts and be charged for work
+  // the print shop cannot do.
   it("refuses printing on a garment that cannot take it", async () => {
     ok({
       nodes: [
         {
           id: rawVariant.id,
-          product: { title: "1994 Brazil Home Retro", productType: "Retro", tags: ["Retro"] },
+          product: { title: "Manchester United 2025/26 Home Shorts", productType: "Shorts", tags: ["Fan Version"] },
         },
       ],
     });
@@ -261,6 +261,51 @@ describe("commerce.cart", () => {
         lines: [{ variantId: rawVariant.id, quantity: 1, badge: true, badgeChoice: "Premier League" }],
       })
     ).rejects.toMatchObject({ code: "BAD_REQUEST" });
+  });
+
+  // The two extras parted company on 8 Sep 2026, when the client asked for
+  // printing on retros. A retro takes a name and number; it takes no badge,
+  // because every badge on offer is the current competition patch.
+  it("prints a retro but refuses it a badge", async () => {
+    const retro = {
+      nodes: [
+        {
+          id: rawVariant.id,
+          product: { title: "1994 Brazil Home Retro", productType: "Retro", tags: ["Retro"] },
+        },
+      ],
+    };
+
+    ok(retro);
+    ok({
+      cartCreate: {
+        cart: {
+          id: "gid://shopify/Cart/1",
+          checkoutUrl: "https://shop/checkout",
+          totalQuantity: 1,
+          cost: { subtotalAmount: { amount: "435.00", currencyCode: "ZAR" }, totalAmount: { amount: "435.00", currencyCode: "ZAR" } },
+          lines: { edges: [] },
+        },
+        userErrors: [],
+      },
+    });
+
+    const caller = appRouter.createCaller(makeCtx());
+    await expect(
+      caller.commerce.cart.create({
+        lines: [{ variantId: rawVariant.id, quantity: 1, personalisation: { name: "ROMARIO", number: "11" } }],
+      })
+    ).resolves.toMatchObject({ id: "gid://shopify/Cart/1" });
+
+    ok(retro);
+    await expect(
+      caller.commerce.cart.create({
+        lines: [{ variantId: rawVariant.id, quantity: 1, badge: true, badgeChoice: "Premier League" }],
+      })
+    ).rejects.toMatchObject({
+      code: "BAD_REQUEST",
+      message: expect.stringContaining("competition badge"),
+    });
   });
 
   // A plain line asks for nothing, so it must not pay for the lookup either.

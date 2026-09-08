@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Product } from "@shared/commerce/types";
-import { isPersonalisable } from "./catalog";
+import { isBadgeable, isPersonalisable } from "./catalog";
 
 const product = (title: string, productType: string, tags: string[]): Product => ({
   id: title,
@@ -48,8 +48,11 @@ describe("isPersonalisable", () => {
     expect(isPersonalisable(product("Manchester City 2025/26 Away Jersey", "Football Jersey", ["Manchester City"]))).toBe(true);
   });
 
-  it("withholds it from retro shirts", () => {
-    expect(isPersonalisable(product("Juventus 1997/98 Home Retro Jersey", "Soccer Retro", ["Soccer Retro"]))).toBe(false);
+  // Retro shirts were refused printing until the client asked for it on 8 Sep
+  // 2026. A reissued shirt is bought to have a period name put on the back.
+  it("offers printing on retro shirts", () => {
+    expect(isPersonalisable(product("Juventus 1997/98 Home Retro Jersey", "Soccer Retro", ["Soccer Retro"]))).toBe(true);
+    expect(isPersonalisable(product("Portugal 2006 Retro Jersey", "Soccer Retro", ["Retro"]))).toBe(true);
   });
 
   it("withholds it from anything that is not a shirt", () => {
@@ -63,5 +66,24 @@ describe("isPersonalisable", () => {
     for (const [title, type, tags] of cases) {
       expect(isPersonalisable(product(title, type, tags)), title).toBe(false);
     }
+  });
+});
+
+// The badge is the other R50 extra, and it splits from printing on retros only:
+// every badge on offer is the CURRENT competition patch.
+describe("isBadgeable", () => {
+  it("offers a badge on the shirts that take printing", () => {
+    expect(isBadgeable(product("Liverpool 2025/26 Home Jersey", "Football Jersey", ["Fan Version"]))).toBe(true);
+    expect(isBadgeable(product("2026/27 Real Madrid Home Kids Kit", "Kids Kit", ["Kiddies soccer set"]))).toBe(true);
+  });
+
+  it("withholds it from retro shirts, which print but take no current badge", () => {
+    expect(isBadgeable(product("Juventus 1997/98 Home Retro Jersey", "Soccer Retro", ["Soccer Retro"]))).toBe(false);
+    expect(isBadgeable(product("Italy 1998 Retro Jersey (Fan Version)", "Football Jersey", ["Retro"]))).toBe(false);
+  });
+
+  it("withholds it from anything that cannot be printed either", () => {
+    expect(isBadgeable(product("Manchester United 2025/26 Home Shorts", "Shorts", ["Fan Version"]))).toBe(false);
+    expect(isBadgeable(product("Arsenal 2024/25 Training Hoodie", "Hoodie", ["Fan Version"]))).toBe(false);
   });
 });
