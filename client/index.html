@@ -14,6 +14,24 @@
     <meta name="theme-color" content="#12192c" />
 
     <!--
+      A club crest: the store's initial in Akira Expanded, the header lockup's
+      own face, on a cream shield over the navy the theme colour already names.
+      The stacked "Stadium / Supply" wordmark is unreadable at 16px — two lines
+      of a very wide face leave each letter eight pixels tall — so the mark
+      carries the S alone.
+
+      favicon.svg draws the letter as an outline rather than setting it in
+      type, so nothing here depends on the .otf loading. The .ico carries 16,
+      32 and 48, and its 16 is drawn to its own slightly heavier geometry: at
+      that size the shield's margin and the S's counter cannot both survive a
+      straight downscale of the 512.
+    -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!--
       Almost every visit to this store starts as a link pasted into WhatsApp,
       Instagram or TikTok, and none of those scrapers run JavaScript. Whatever
       sits here is the whole preview, so it is filled in statically and then
