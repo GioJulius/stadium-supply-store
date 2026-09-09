@@ -7,10 +7,11 @@
  * files both under football. Sport comes from the team, and once the team is
  * known, country and sport both fall out for free.
  *
- * It is a superset of the team leaves in `navigation.ts`. Those 32 terms resolve
- * about 89% of the catalogue; the rest is the rugby unions and F1 constructors
- * the menu never listed, plus the clubs added by later batches. The nav leaves
- * carry a `team` slug pointing here so the two lists cannot drift apart.
+ * It is a superset of the team leaves in `navigation.ts`. Those 40 terms resolve
+ * about 94% of the catalogue; the rest is the rugby unions and F1 constructors
+ * the menu never lists by name, because Rugby and Formula 1 are single links
+ * rather than club lists. The nav leaves carry a `team` slug pointing here so
+ * the two lists cannot drift apart.
  *
  * MATCHING IS BY SUBSTRING over the title, productType and tags together,
  * longest term first, so "Manchester City" cannot be answered by "Manchester

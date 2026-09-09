@@ -70,6 +70,8 @@ export const SHOP_MENU: NavSection[] = [
           { label: "Brighton", q: "brighton", team: "brighton" },
           { label: "Crystal Palace", q: "crystal palace", team: "crystal-palace" },
           { label: "Nottingham Forest", q: "nottingham", team: "nottingham-forest" },
+          { label: "Newcastle United", q: "newcastle united", team: "newcastle-united" },
+          { label: "Leeds United", q: "leeds united", team: "leeds-united" },
         ],
       },
       {
@@ -77,6 +79,7 @@ export const SHOP_MENU: NavSection[] = [
         children: [
           { label: "Real Madrid", q: "real madrid", team: "real-madrid" },
           { label: "FC Barcelona", q: "barcelona", team: "fc-barcelona" },
+          { label: "Atlético Madrid", q: "atletico madrid", team: "atletico-madrid" },
         ],
       },
       { label: "Ligue 1", children: [{ label: "Paris Saint-Germain", q: "paris saint-germain", team: "paris-saint-germain" }] },
@@ -90,11 +93,25 @@ export const SHOP_MENU: NavSection[] = [
           { label: "AC Milan", q: "ac milan", team: "ac-milan" },
         ],
       },
-      { label: "Bundesliga", children: [{ label: "Bayern Munich", q: "bayern", team: "bayern-munich" }] },
+      {
+        label: "Bundesliga",
+        children: [
+          { label: "Bayern Munich", q: "bayern", team: "bayern-munich" },
+          { label: "Borussia Dortmund", q: "borussia dortmund", team: "borussia-dortmund" },
+        ],
+      },
+      // Everything outside the big five leagues, however big the club — Club
+      // Brugge set that precedent and Ajax, Celtic and Sporting follow it,
+      // rather than each earning a one-line league of its own.
       {
         label: "Rest of the world",
         children: [
+          { label: "Ajax", q: "ajax", team: "ajax" },
           { label: "Inter Miami", q: "inter miami", team: "inter-miami" },
+          { label: "Celtic", q: "celtic", team: "celtic" },
+          { label: "Sporting CP", q: "sporting cp", team: "sporting-cp" },
+          { label: "São Paulo", q: "sao paulo", team: "sao-paulo" },
+          { label: "Al-Nassr", q: "al-nassr", team: "al-nassr" },
           { label: "Club Brugge", q: "brugge", team: "club-brugge" },
           { label: "Galatasaray", q: "galatasaray", team: "galatasaray" },
           { label: "Orlando Pirates", q: "orlando pirates", team: "orlando-pirates" },
@@ -124,6 +141,10 @@ export const SHOP_MENU: NavSection[] = [
   { label: "Retro Football", href: "/shop?q=retro&not=rugby&label=Retro%20Football" },
   { label: "Rugby", href: "/shop?q=rugby&label=Rugby" },
   { label: "Formula 1", href: "/shop?q=f1&label=Formula%201" },
+  // Tracksuits are asked for by name the way retro and rugby are, so they get a
+  // link at the top level as well as their place in the garment list below. The
+  // two links carry the same query, so the counts can never disagree.
+  { label: "Tracksuits", href: "/shop?q=tracksuit&label=Tracksuits" },
   {
     label: "Training & Outerwear",
     children: [
