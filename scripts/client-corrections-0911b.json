@@ -1,0 +1,94 @@
+{
+  "_": [
+    "The client's WhatsApp corrections of 11 Sep 2026, 13:26-13:39.",
+    "",
+    "These are the items held back on 10 Sep as unresolved (see",
+    "client-corrections-2026-09-11.md, the rows marked ? and !!). The client",
+    "re-sent every one of them today as a reply to their own original",
+    "screenshot, which is what settles them. The owner then listed the 27",
+    "product urls explicitly. Reasoning per line is in",
+    "client-corrections-2026-09-11b.md.",
+    "",
+    "Two Manchester United listings are in this file that the owner did NOT",
+    "list — 2025-26-manchester-united-away-player-version and",
+    "-away-kids-kit. They are marked `inferred`. Without them the rotation",
+    "collides: 2024/25 Third Player becomes 2025/26 Away Player, which is a",
+    "name those two still hold. They are the same cream shirt as the rest of",
+    "the family and carry the same caption.",
+    "",
+    "Four titles needed a parenthetical to stay unique, because the listing",
+    "the client is renaming onto a season is NOT the shirt already sold under",
+    "that name — verified on a contact sheet (.dupcheck/0911b/):",
+    "  AC Milan home player + home LS player: the 24/25 pair are solid black",
+    "    stripes with the scudetto star; the 26/27 pair already live are the",
+    "    tonal-patterned stripes with the MS sleeve badge.",
+    "  Juventus away: the 23/24 trio are the PINK kit; the 26/27 away player",
+    "    already live is the black 'Visit Detroit' shirt.",
+    "  Real Madrid: the listing called '2024/25 Third' is the same white shirt",
+    "    with the teal collar and maroon shoulder stripes as",
+    "    '2026/27 Real Madrid Home Fan Version (Green Collar)' — so it becomes",
+    "    that shirt's player version, and the suffix comes from its own sibling",
+    "    rather than being invented."
+  ],
+
+  "retitle": [
+    { "handle": "brazil-2024-25-home-jersey", "title": "Brazil 2026 Home Jersey", "said": "2026 home" },
+    { "handle": "brazil-2024-25-away-jersey-jordan", "title": "Brazil 2026 Away Jersey (Jordan)", "said": "2026 away" },
+    { "handle": "brazil-2025-away-jersey-neymar-10-cwc", "title": "Brazil 2026 Home Jersey - Neymar 10", "said": "2026 home" },
+    { "handle": "portugal-2024-25-home-jersey-ronaldo-7", "title": "Portugal 2026 Home Jersey - Ronaldo 7", "said": "these are also 2026 home" },
+    { "handle": "portugal-2024-25-home-jersey", "title": "Portugal 2026 Home Jersey", "said": "these are also 2026 home" },
+    { "handle": "netherlands-2024-25-away-jersey", "title": "Netherlands 2026 Home Jersey", "said": "this is 2026 home" },
+    { "handle": "england-2024-25-home-jersey", "title": "England 2026 Home Jersey", "said": "2026" },
+    { "handle": "south-africa-2024-25-home-jersey-safa", "title": "South Africa 2026 Home Jersey (SAFA) Player Version", "said": "2026" },
+    { "handle": "france-2024-25-away-jersey-mint", "title": "France 2026 World Cup Away Jersey (mint)", "said": "2026 worldcup away" },
+    { "handle": "italy-2023-24-away-jersey", "title": "Italy 2026 Home Jersey", "said": "this is 2026 home" },
+
+    { "handle": "2025-inter-miami-home-player-version", "title": "2026 Inter Miami Home Player Version", "said": "2026" },
+    { "handle": "2026-inter-miami-home-player-version", "title": "2025 Inter Miami Home Player Version", "said": "2025" },
+
+    { "handle": "2024-25-ac-milan-home-player-version", "title": "2026/27 AC Milan Home Player Version (Solid Stripes)", "said": "26/27 season" },
+    { "handle": "2024-25-ac-milan-home-long-sleeve-player-version", "title": "2026/27 AC Milan Home Long Sleeve Player Version (Solid Stripes)", "said": "26/27 season" },
+
+    { "handle": "2023-24-juventus-away-player-version", "title": "2026/27 Juventus Away Player Version (Pink)", "said": "26/27 season" },
+    { "handle": "2023-24-juventus-away-long-sleeve-player-version", "title": "2026/27 Juventus Away Long Sleeve Player Version (Pink)", "said": "26/27 season" },
+    { "handle": "2023-24-juventus-away-kids-kit", "title": "2026/27 Juventus Away Kids Kit (Pink)", "said": "26/27" },
+
+    { "handle": "fc-barcelona-2024-25-home-jersey-spotify", "title": "FC Barcelona 2026/27 Home Jersey (Spotify)", "said": "26/27 home" },
+    { "handle": "2025-26-nottingham-forest-home-fan-version", "title": "2026/27 Nottingham Forest Home Fan Version", "said": "26/27 season" },
+
+    { "handle": "2025-26-manchester-united-away-long-sleeve-player-version", "title": "2026/27 Manchester United Third Long Sleeve Player Version", "said": "26/27" },
+    { "handle": "2025-26-manchester-united-away-fan-version", "title": "2026/27 Manchester United Third Fan Version", "said": "26/27 third kit" },
+    { "handle": "2025-26-manchester-united-away-long-sleeve-fan-version", "title": "2026/27 Manchester United Third Long Sleeve Fan Version", "said": "26/27 third kit" },
+    { "handle": "2025-26-manchester-united-away-player-version", "title": "2026/27 Manchester United Third Player Version", "said": "26/27 third kit", "inferred": true },
+    { "handle": "2025-26-manchester-united-away-kids-kit", "title": "2026/27 Manchester United Third Kids Kit", "said": "26/27 third kit", "inferred": true },
+    { "handle": "2024-25-manchester-united-third-long-sleeve-player-version", "title": "2025/26 Manchester United Away Long Sleeve Player Version", "said": "25/26 away" },
+    { "handle": "2024-25-manchester-united-third-player-version", "title": "2025/26 Manchester United Away Player Version", "said": "25/26 away jersey" },
+    { "handle": "2024-25-manchester-united-third-long-sleeve-fan-version", "title": "2025/26 Manchester United Away Long Sleeve Fan Version", "said": "25/26 away" }
+  ],
+
+  "reclass": [
+    {
+      "handle": "real-madrid-2024-25-third-jersey",
+      "title": "2026/27 Real Madrid Home Player Version (Green Collar)",
+      "productType": "Player Version",
+      "tagOut": "Fan Version",
+      "tagIn": "Player Version",
+      "price": "650.00",
+      "said": "26/27 home / player version this one"
+    },
+    {
+      "handle": "argentina-2010-away-retro-jersey-filigree",
+      "title": "Argentina 2026 Away Jersey (filigree)",
+      "productType": "Fan Version",
+      "tagOut": "Retro",
+      "tagIn": "Fan Version",
+      "price": "500.00",
+      "said": "2026 as well away"
+    }
+  ],
+
+  "questions": [
+    "Argentina (filigree) was priced as a retro at R700. Dropped to R500, the fan-version tier, because it is no longer a retro. Its size run is still the retro/adult run (S-2XL) rather than the fan run — confirm before the next sizing sweep.",
+    "The four parenthetical suffixes — AC Milan (Solid Stripes) x2, Juventus (Pink) x3, Real Madrid (Green Collar) — are ours, not the client's. They exist only so two genuinely different shirts do not end up with one name."
+  ]
+}
