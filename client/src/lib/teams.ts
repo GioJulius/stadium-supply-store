@@ -132,6 +132,14 @@ export const TEAM_REGISTRY: TeamEntry[] = [
   { slug: "haas-f1", label: "Haas", kind: "club", sport: "f1", terms: ["haas"] },
   { slug: "audi-f1", label: "Audi", kind: "club", sport: "f1", terms: ["audi"] },
   { slug: "cadillac-f1", label: "Cadillac", kind: "club", sport: "f1", terms: ["cadillac"] },
+  // Raced as BMW Sauber 2006-2009. "bmw sauber" in full: the vintage jackets
+  // carry Petronas, which is also Mercedes-AMG's sponsor and its longer term
+  // would otherwise win the scan.
+  { slug: "bmw-sauber", label: "BMW Sauber", kind: "club", sport: "f1", terms: ["bmw sauber", "bmw"] },
+  // Porsche is sports-car racing, not Formula 1. It sits here because the store
+  // sells its one listing inside the F1 jacket range and the sport facet has no
+  // other home for a single motorsport garment.
+  { slug: "porsche", label: "Porsche", kind: "club", sport: "f1", terms: ["porsche"] },
 ];
 
 /**
