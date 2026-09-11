@@ -1,0 +1,27 @@
+{
+ "batch": "2026-09-10",
+ "batchTag": "supplied-batch-2026-09-10",
+ "note": "The 30 photographs the client sent at 23:10 on 10 Sep 2026 under 'Please add these items' — five album messages and 25 singles. See batch-0910-record.md for the caption-to-photo mapping and import/batch-0910-raw/_files.json for the p1-p30 keys.",
+ "photoPolicy": "Every photograph the client sent is used. Five garments were shot twice (front/back or set/close-up) and become ONE listing with two images, not two listings — p10+p11, p12+p13, p15+p16, p29+p30.",
+ "sizes": {
+  "fan": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+  "adult": ["S", "M", "L", "XL", "2XL"],
+  "rugby": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
+ },
+ "tiers": {
+  "fan": { "price": "500.00", "sizes": "fan", "productType": "Fan Version" },
+  "retro": { "price": "700.00", "sizes": "adult", "productType": "Retro" },
+  "retroLong": { "price": "800.00", "sizes": "adult", "productType": "Retro" },
+  "halfZip": { "price": "850.00", "sizes": "adult", "productType": "Half-Zip Training Set" },
+  "fullZip": { "price": "1000.00", "sizes": "adult", "productType": "Jacket / Windbreaker" },
+  "jacket": { "price": "1000.00", "sizes": "adult", "productType": "Jacket / Windbreaker" },
+  "windbreakerSet": { "price": "1200.00", "sizes": "adult", "productType": "Jacket / Windbreaker" },
+  "f1Jacket": { "price": "1300.00", "sizes": "adult", "productType": "F1 Jacket" }
+ },
+ "tierNotes": {
+  "f1Jacket": "The client's own caption: 'F1 jackets R1300'. This is ABOVE the R1 200 F1 jacket line on the 7 Sep price list, and above the seven existing F1 outerwear listings — the owner confirmed on 11 Sep that those stay at R1 200. These nine are vintage-style embroidered racing bombers, a different garment from the modern team-issue softshells already listed. Do not 'correct' them down.",
+  "windbreakerSet": "A full WINDBREAKER tracksuit is R1 200 on the 7 Sep list; a plain full-zip knit tracksuit is R1 000. The caption distinguishes them ('full zip psg' vs 'full zip windbreaker psg') and so does the fabric in the photograph. Check both before choosing.",
+  "jacket": "'Windbreaker jacket, or jacket only' is R1 000 — p25 and p27 arrived with no bottoms in frame and are priced as jackets.",
+  "fan": "p12/p13 is a single pre-match shirt sold on its own, so it takes the R500 standalone pre-match price, not the R700 training-set price. Eleven other pre-match shirts in the catalogue are already at R500."
+ }
+}

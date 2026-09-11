@@ -1,0 +1,297 @@
+{
+ "batch": "2026-09-10",
+ "status": "imported",
+ "identification": "Garments read by eye off contact sheets in .dupcheck/0910/ (scripts/contact-sheets-0910.py). Every one was then checked against the live catalogue by eye on sheets of live LEAD photographs (.dupcheck/0910/live-*.jpg, built by .dupcheck/0910/live-sheet.py) — never by title match. Seasons and product names were researched where the garment is a real, datable kit; where it is a generic replica tracksuit the catalogue's own colour-descriptive convention is used instead of inventing a season.",
+ "garments": [
+  {
+   "id": "f1-01",
+   "keys": [
+    "p1"
+   ],
+   "team": "Scuderia Ferrari",
+   "tier": "f1Jacket",
+   "title": "Scuderia Ferrari Vintage F1 Racing Jacket (Red, Black and White)",
+   "blurb": "Red body with a black yoke and white sleeves, the Ferrari wordmark across the chest on a white block. Embroidered Shell, UPS and Bridgestone patches, F-1 badges on both sleeves and the Scuderia Ferrari shield at the shoulder, with a stand collar and ribbed cuffs and hem.",
+   "context": "Cut in the padded bomber shape Formula 1 teams wore in the paddock through the Bridgestone years, with the sponsor row embroidered rather than printed."
+  },
+  {
+   "id": "f1-02",
+   "keys": [
+    "p2"
+   ],
+   "team": "Scuderia Ferrari",
+   "tier": "f1Jacket",
+   "title": "Scuderia Ferrari Vintage F1 Racing Jacket (Red)",
+   "blurb": "All-red bomber with the Ferrari wordmark on a black and white chest band. Shell, UPS and Bridgestone embroidery, F-1 and prancing horse badges on both sleeves, stand collar, ribbed cuffs and hem.",
+   "context": "The plainest of the Ferrari colourways — the one that reads as team kit rather than a fashion piece."
+  },
+  {
+   "id": "f1-03",
+   "keys": [
+    "p3"
+   ],
+   "team": "BMW Sauber",
+   "tier": "f1Jacket",
+   "title": "BMW Sauber Petronas Vintage F1 Racing Jacket (Navy)",
+   "blurb": "Navy bomber with PETRONAS across the chest, the BMW roundel and two M Power flashes, Bell on the left chest and Credit Suisse on the collar. Embroidered throughout, with a stand collar and ribbed cuffs and hem.",
+   "context": "BMW Sauber ran in Formula 1 from 2006 to 2009 with Petronas and Credit Suisse as its headline sponsors, which is the livery this jacket carries."
+  },
+  {
+   "id": "f1-04",
+   "keys": [
+    "p4"
+   ],
+   "team": "Scuderia Ferrari",
+   "tier": "f1Jacket",
+   "title": "Scuderia Ferrari Vintage F1 Racing Jacket (White)",
+   "blurb": "White bomber with a deep red chest band carrying the Ferrari wordmark. Shell, UPS and Scuderia Ferrari embroidery, F-1 badges on both sleeves, black piping along the shoulders, stand collar and ribbed cuffs.",
+   "context": "Cut in the padded bomber shape Formula 1 teams wore in the paddock through the Bridgestone years, with the sponsor row embroidered rather than printed."
+  },
+  {
+   "id": "f1-05",
+   "keys": [
+    "p5"
+   ],
+   "team": "Scuderia Ferrari",
+   "tier": "f1Jacket",
+   "title": "Scuderia Ferrari Vintage F1 Racing Jacket (Black)",
+   "blurb": "Black bomber with a red and white chest band under the Ferrari wordmark. Shell, UPS and Bridgestone embroidery, F-1 and prancing horse badges on both sleeves, stand collar and ribbed cuffs and hem.",
+   "context": "Cut in the padded bomber shape Formula 1 teams wore in the paddock through the Bridgestone years, with the sponsor row embroidered rather than printed."
+  },
+  {
+   "id": "f1-06",
+   "keys": [
+    "p6"
+   ],
+   "team": "Scuderia Ferrari",
+   "tier": "f1Jacket",
+   "title": "Scuderia Ferrari Vintage F1 Racing Jacket (Pink)",
+   "blurb": "Pink bomber with the Ferrari wordmark on a white and black chest block. Shell, UPS and Scuderia Ferrari embroidery, F-1 badges on both sleeves, stand collar and ribbed cuffs and hem.",
+   "context": "The same embroidered racing bomber in a colourway Ferrari never raced — made for wearing, not for the pit wall."
+  },
+  {
+   "id": "f1-07",
+   "keys": [
+    "p7"
+   ],
+   "team": "BMW Sauber",
+   "tier": "f1Jacket",
+   "title": "BMW Sauber Petronas Vintage F1 Racing Jacket (Black)",
+   "blurb": "Black bomber with PETRONAS across the chest, the BMW roundel, two M Power flashes and white piping running over the shoulders. Bell on the left chest, embroidered throughout, stand collar and ribbed cuffs and hem.",
+   "context": "BMW Sauber ran in Formula 1 from 2006 to 2009 with Petronas and Credit Suisse as its headline sponsors, which is the livery this jacket carries."
+  },
+  {
+   "id": "f1-08",
+   "keys": [
+    "p8"
+   ],
+   "team": "Porsche",
+   "tier": "f1Jacket",
+   "title": "Porsche Motorsport Vintage Racing Jacket (Grey)",
+   "blurb": "Charcoal grey bomber with PORSCHE in yellow across the chest and down both sleeves, the Porsche crest on the right chest and Sparco, Toyo Tires and Accelerate Motorsport embroidery. Yellow piping over the shoulders, stand collar, ribbed cuffs and hem.",
+   "context": "The one jacket in this drop from sports-car racing rather than Formula 1 — Porsche Motorsport livery, cut in the same padded bomber shape."
+  },
+  {
+   "id": "f1-09",
+   "keys": [
+    "p9"
+   ],
+   "team": "Red Bull Racing",
+   "tier": "f1Jacket",
+   "title": "Infiniti Red Bull Racing Vintage F1 Jacket (Navy)",
+   "blurb": "Navy bomber carrying the full Red Bull Racing sponsor row in embroidery — the charging bulls on the chest, Infiniti beneath them, and Pirelli, Total, Geox, Rauch, Pepe Jeans, Casio and FXDD across the chest and sleeves. Stand collar, ribbed cuffs and hem.",
+   "context": "Infiniti was Red Bull Racing's title partner from 2013 to 2015, the back half of the team's four-championship run, and that is the livery reproduced here."
+  },
+  {
+   "id": "psg-01",
+   "keys": [
+    "p11",
+    "p10"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "retro",
+   "title": "2017/18 Paris Saint-Germain Home Retro",
+   "blurb": "Navy home shirt with dark burgundy raglan sleeves and the thin red centre stripe, Fly Emirates in white across the chest and the round PSG crest on the left breast. Short sleeve.",
+   "context": "The 2017/18 home shirt — Nike's narrowest reading of the Hechter stripe, and the kit Neymar and Mbappe arrived in."
+  },
+  {
+   "id": "psg-02",
+   "keys": [
+    "p17"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "retroLong",
+   "title": "2017/18 Paris Saint-Germain Home Long Sleeve Retro",
+   "blurb": "The 2017/18 navy home shirt in long sleeve — burgundy raglan sleeves, thin red centre stripe, Fly Emirates in white and the round PSG crest.",
+   "context": "The 2017/18 home shirt — Nike's narrowest reading of the Hechter stripe, and the kit Neymar and Mbappe arrived in."
+  },
+  {
+   "id": "psg-03",
+   "keys": [
+    "p13",
+    "p12"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "fan",
+   "title": "Paris Saint-Germain 2025/26 Night Edition Pre-Match Shirt (Jordan)",
+   "blurb": "Pale grey pre-match shirt with a tonal all-over graphic of repeating circular and geometric forms, a black ribbed collar and Qatar Airways in black across the chest. Jumpman on one chest, the PSG crest on the other, and a large arched PARIS wordmark across the upper back.",
+   "context": "The Jordan Brand Night Edition pre-match top, worn in the warm-up before Ligue 1 and European nights. Sold on its own, without shorts."
+  },
+  {
+   "id": "psg-04",
+   "keys": [
+    "p23"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "fullZip",
+   "title": "Paris Saint-Germain Navy and White Full-Zip Tracksuit",
+   "blurb": "Navy knit full-zip track jacket with white shoulder panels running into the sleeve, the Nike swoosh on one chest and the PSG crest on the other. Matching navy pants with a white hip panel and the crest on the thigh.",
+   "context": "The anthem cut — worn on the walk out, not in training."
+  },
+  {
+   "id": "psg-05",
+   "keys": [
+    "p22"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "windbreakerSet",
+   "title": "Paris Saint-Germain Blue and Red Windbreaker Tracksuit",
+   "blurb": "Royal blue woven windbreaker jacket with a red right sleeve and shoulder, the swoosh on one chest and the PSG crest on the other, worn with navy woven pants carrying the crest on the thigh. Lightweight shell fabric, full-length zip, stand collar.",
+   "context": "A woven shell, not a knit tracksuit — the layer that goes over everything else on a cold night."
+  },
+  {
+   "id": "psg-06",
+   "keys": [
+    "p25"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "jacket",
+   "title": "Paris Saint-Germain Blue Windbreaker Jacket",
+   "blurb": "Royal blue woven windbreaker with a red centre zip, a red panel down the right sleeve and PARIS printed down the left hem. Swoosh on one chest, PSG crest on the other, stand collar and side pockets.",
+   "context": "Sold as the jacket on its own — no bottoms."
+  },
+  {
+   "id": "psg-07",
+   "keys": [
+    "p26"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "windbreakerSet",
+   "title": "Paris Saint-Germain Black Jordan Windbreaker Tracksuit",
+   "blurb": "All-black woven Jordan set — full-zip jacket with white piping curving across the chest and down the sleeves, the Jumpman on one chest and the PSG crest on the other, with matching black pants carrying the Jumpman on the thigh.",
+   "context": "The Jordan Brand side of the PSG wardrobe, in the shell fabric rather than the knit."
+  },
+  {
+   "id": "psg-08",
+   "keys": [
+    "p28"
+   ],
+   "team": "Paris Saint-Germain",
+   "tier": "halfZip",
+   "title": "Paris Saint-Germain Black and Coral Half-Zip Training Set",
+   "blurb": "Black half-zip training top with coral shoulder flashes and collar trim, Qatar Airways across the chest and the PSG crest above it. Matching black pants with a coral stripe down the hip and the crest on the thigh.",
+   "context": "The half-zip is the top the squad actually trains in — pull-on, no full placket."
+  },
+  {
+   "id": "mufc-01",
+   "keys": [
+    "p14"
+   ],
+   "team": "Manchester United",
+   "tier": "windbreakerSet",
+   "title": "Manchester United Red Windbreaker Tracksuit",
+   "blurb": "Red woven adidas windbreaker with white three stripes down each sleeve and the United crest on the chest, worn with black pants carrying white three stripes down the leg. Full-length zip, stand collar, side pockets.",
+   "context": "A woven shell set rather than a knit tracksuit — the training-ground top layer."
+  },
+  {
+   "id": "fcb-01",
+   "keys": [
+    "p16",
+    "p15"
+   ],
+   "team": "FC Barcelona",
+   "tier": "fullZip",
+   "title": "FC Barcelona Maroon and Navy Full-Zip Tracksuit",
+   "blurb": "Maroon full-zip jacket with navy sleeve panels, a gold Nike swoosh on one chest and the Barcelona crest on the other, and gold trim along the shoulder. Navy pants with maroon and gold detailing down the leg.",
+   "context": "Club colours read back through the tracksuit rather than the shirt — maroon body, navy sleeves, gold on both."
+  },
+  {
+   "id": "lfc-01",
+   "keys": [
+    "p18"
+   ],
+   "team": "Liverpool",
+   "tier": "halfZip",
+   "title": "Liverpool Shankly Gates Half-Zip Training Set",
+   "blurb": "Black half-zip training top covered in a deep red ironwork pattern, with AXA across the chest, the adidas logo on one shoulder and the Liverbird crest on the other. Matching black pants with red three stripes down one leg and the Liverbird on the thigh.",
+   "context": "The graphic is the Shankly Gates — the wrought-iron gates at the Anfield entrance — repeated across the body."
+  },
+  {
+   "id": "lfc-02",
+   "keys": [
+    "p19"
+   ],
+   "team": "Liverpool",
+   "tier": "fullZip",
+   "title": "Liverpool Originals Full-Zip Tracksuit (Teal and Black)",
+   "blurb": "Teal full-zip track jacket with black shoulders and white chevron stripes across the chest, the adidas wordmark on one side and the round Liverpool crest on the other. Black pants with the crest on the thigh.",
+   "context": "Cut from the adidas Originals side of the Liverpool range, which reaches back to the club's late-1980s crest and colours rather than the current kit."
+  },
+  {
+   "id": "lfc-03",
+   "keys": [
+    "p20"
+   ],
+   "team": "Liverpool",
+   "tier": "fullZip",
+   "title": "Liverpool Originals Full-Zip Tracksuit (Black and Cream)",
+   "blurb": "Black full-zip track jacket with cream three stripes over the shoulders, the adidas trefoil on one chest and the Liverbird with L.F.C. beneath it on the other. Black pants with cream three stripes down the leg and the Liverbird on the thigh.",
+   "context": "Cut from the adidas Originals side of the Liverpool range, which reaches back to the club's late-1980s crest and colours rather than the current kit."
+  },
+  {
+   "id": "ars-01",
+   "keys": [
+    "p21"
+   ],
+   "team": "Arsenal",
+   "tier": "fullZip",
+   "title": "Arsenal Originals Full-Zip Tracksuit (Red)",
+   "blurb": "Red full-zip track jacket with white stripes running over the shoulders, the adidas trefoil on one chest and the Arsenal cannon on the other, finished with a woven label at the hem. Red pants with white stripes down the leg and the cannon on the thigh.",
+   "context": "The adidas Originals cut — trefoil rather than performance logo, and the cannon on its own without the Emirates wordmark."
+  },
+  {
+   "id": "rma-01",
+   "keys": [
+    "p24"
+   ],
+   "team": "Real Madrid",
+   "tier": "windbreakerSet",
+   "title": "Real Madrid Navy and Grey Windbreaker Tracksuit",
+   "blurb": "Navy woven adidas windbreaker with pale grey lower sleeves and white three stripes on the shoulder, the Real Madrid crest on the chest. Matching navy pants with grey cuffs and white three stripes down the hip.",
+   "context": "A woven shell set rather than a knit tracksuit — the training-ground top layer."
+  },
+  {
+   "id": "mci-01",
+   "keys": [
+    "p27"
+   ],
+   "team": "Manchester City",
+   "tier": "jacket",
+   "title": "Manchester City Grey Windbreaker Jacket",
+   "blurb": "Charcoal grey woven Puma windbreaker with white piping curving down the body, a patterned tape running the length of both sleeves, and the Puma KING cat and the City crest picked out in neon yellow on the chest. Stand collar, ribbed cuffs and hem.",
+   "context": "Sold as the jacket on its own — no bottoms."
+  }
+ ],
+ "updates": [
+  {
+   "id": "boks-01",
+   "keys": [
+    "p30",
+    "p29"
+   ],
+   "handle": "south-africa-springboks-home-rugby-jersey",
+   "retitle": "South Africa 2026 Springboks Home Rugby Jersey",
+   "why": "NOT a new listing. p30 is the same shirt as the live South Africa Springboks Home Rugby Jersey — same gold V-collar with the white pinstripe, same gold sleeve panels, same FNB roundel and the same 2026 Tour Edition line above it, photographed against the same white wall on the same wooden hanger. That listing carries a single photograph and no back view; p30 (front) and p29 (back, Pick n Pay) are appended to it instead. It is distinct from the live South Africa 2025/26 Springboks Home Rugby Jersey, which has a serrated gold collar trim and plain green sleeves. The client captioned the album 'springboks 2026 home kit', which is where the retitle comes from — the listing had no season at all."
+  }
+ ]
+}
