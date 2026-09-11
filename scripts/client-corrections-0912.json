@@ -1,0 +1,55 @@
+{
+  "_": [
+    "The client's WhatsApp corrections of 11 Sep 2026, sent as three product",
+    "urls with a season/slot against each. Reasoning per line is in",
+    "client-corrections-2026-09-12.md.",
+    "",
+    "All three are retitles only — every one is already a Fan Version at the",
+    "R500 fan tier with the Fan Version tag, so nothing reclasses.",
+    "",
+    "Two of the three needed a parenthetical, because the listing the client",
+    "is moving onto a season is NOT the shirt already selling under that",
+    "name. Verified on a contact sheet (.dupcheck/0912/juventus.png,",
+    "mu.png), never by title match:",
+    "  Juventus away fan: this is the PINK Jeep/Visit Detroit shirt, the",
+    "    fourth piece of the kit whose player, long-sleeve player and kids",
+    "    kit already read '2026/27 Juventus Away ... (Pink)'. It was the item",
+    "    left open on 11 Sep. The plain '2026/27 Juventus Away Player",
+    "    Version' is the BLACK Visit Detroit shirt and keeps its name.",
+    "  Juventus home fan: this is the WIDE-stripe shirt with the gold Jeep",
+    "    and no Visit Detroit. The live '2026/27 Juventus Home Fan Version'",
+    "    is a genuinely different shirt — narrow stripes with Visit Detroit",
+    "    under the Jeep. Both are real, so the one being moved takes the",
+    "    suffix. This is the Juventus home clash held back on 10 Sep.",
+    "",
+    "The Manchester United line needs no suffix and is the ninth listing of",
+    "the rotation applied on 11 Sep. It is the same white Snapdragon shirt",
+    "with the navy stripes and the lilac geometric print as",
+    "2024-25-manchester-united-third-player-version and",
+    "-third-long-sleeve-fan-version, which became '2025/26 Manchester United",
+    "Away Player Version' and '... Away Long Sleeve Fan Version'. That family",
+    "had no short-sleeve fan version; this is it, and the slot was vacant."
+  ],
+  "retitle": [
+    {
+      "handle": "manchester-united-2024-25-third-jersey",
+      "title": "2025/26 Manchester United Away Fan Version",
+      "said": "this needs to be 25/26 away"
+    },
+    {
+      "handle": "2023-24-juventus-away-fan-version",
+      "title": "2026/27 Juventus Away Fan Version (Pink)",
+      "said": "26/27 season"
+    },
+    {
+      "handle": "2023-24-juventus-home-fan-version",
+      "title": "2026/27 Juventus Home Fan Version (Wide Stripes)",
+      "said": "26/27 season"
+    }
+  ],
+  "reclass": [],
+  "questions": [
+    "Juventus home: two different striped shirts now both read 2026/27 Home Fan Version — the wide-stripe one (no Visit Detroit) is suffixed '(Wide Stripes)'. Confirm the live narrow-stripe Visit Detroit shirt keeps the plain name, or say which season it should move to.",
+    "Manchester United: the 25/26 Away family now has fan, player, long-sleeve fan and long-sleeve player. There is no 25/26 Away kids kit — say if one should be listed."
+  ]
+}
