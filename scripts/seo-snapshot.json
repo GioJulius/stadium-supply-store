@@ -11,8 +11,8 @@
    "New Arrival",
    "Size XL"
   ],
-  "status": "ACTIVE",
-  "updatedAt": "2026-08-27T07:25:51Z",
+  "status": "ARCHIVED",
+  "updatedAt": "2026-09-08T08:29:28Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/gHGerUFJTzthOzIe.jpg?v=1787772347"
   },
@@ -41,7 +41,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:10:57Z",
+  "updatedAt": "2026-09-08T09:11:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-manchester-united-2025-26-third-jersey-mbeumo-19.jpg?v=1788647095"
   },
@@ -70,7 +70,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:10:58Z",
+  "updatedAt": "2026-09-08T09:11:03Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/001_01.jpg?v=1787999928"
   },
@@ -87,17 +87,17 @@
  },
  {
   "handle": "liverpool-2025-26-third-jersey",
-  "title": "Liverpool 2025/26 Third Jersey",
+  "title": "Liverpool 2025/26 Third Shirt (Player Version)",
   "description": "The fan version: the everyday cut, a little roomier through the body, and the one most people wear off the pitch.Available Small through 4XL.Add your own name and number for R50, and a competition badge for R50 — both at checkout.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
-  "productType": "Fan Version",
+  "productType": "Player Version",
   "tags": [
-   "Fan Version",
    "Mapped Media",
+   "Player Version",
    "Size S-XL",
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:10:58Z",
+  "updatedAt": "2026-09-11T09:54:56Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/rpjOBsmujyPLYMTd.jpg?v=1787786563"
   },
@@ -105,7 +105,7 @@
    "edges": [
     {
      "node": {
-      "price": "500.00",
+      "price": "650.00",
       "availableForSale": true
      }
     }
@@ -125,7 +125,7 @@
    "New Arrival"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:10:59Z",
+  "updatedAt": "2026-09-08T09:11:07Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/HrCBsafqeKnThwAF.webp?v=1787777071"
   },
@@ -154,7 +154,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:00Z",
+  "updatedAt": "2026-09-08T09:11:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/006_01.jpg?v=1787999938"
   },
@@ -183,7 +183,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:01Z",
+  "updatedAt": "2026-09-08T09:11:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/007_01.jpg?v=1787999942"
   },
@@ -210,7 +210,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:01Z",
+  "updatedAt": "2026-09-08T09:11:05Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/mDHwAWMjHpJKXuXP.webp?v=1787777285"
   },
@@ -239,7 +239,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:02Z",
+  "updatedAt": "2026-09-08T09:11:06Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/015_01.jpg?v=1787999946"
   },
@@ -266,7 +266,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:02Z",
+  "updatedAt": "2026-09-08T09:11:07Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/010_02_ecde1f8b-8180-41d3-8b19-869f2461c067.jpg?v=1788256924"
   },
@@ -320,7 +320,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:03Z",
+  "updatedAt": "2026-09-08T09:11:08Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/hkoyDEasqMuYFDHj.jpg?v=1787778864"
   },
@@ -347,7 +347,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:04Z",
+  "updatedAt": "2026-09-08T09:11:10Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/rhfWbGMoDTXyiwHL.webp?v=1787779125"
   },
@@ -374,7 +374,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:05Z",
+  "updatedAt": "2026-09-08T09:11:09Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/jZbBgNKQrmtANxus.webp?v=1787779588"
   },
@@ -401,7 +401,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:05Z",
+  "updatedAt": "2026-09-08T09:11:10Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/cAyPstGKPSGmeXBx.jpg?v=1787780083"
   },
@@ -428,7 +428,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:06Z",
+  "updatedAt": "2026-09-08T09:11:11Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/qcJoeRAWEqOREFtk.jpg?v=1787780276"
   },
@@ -455,7 +455,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:07Z",
+  "updatedAt": "2026-09-08T09:11:13Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/IsJvzBudWixAtYnq.webp?v=1787780357"
   },
@@ -484,7 +484,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:08Z",
+  "updatedAt": "2026-09-08T09:11:15Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/050_01.jpg?v=1787999955"
   },
@@ -511,7 +511,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:08Z",
+  "updatedAt": "2026-09-08T09:11:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/TTilJecIMNQIUxBL.jpg?v=1787781190"
   },
@@ -540,7 +540,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:09Z",
+  "updatedAt": "2026-09-08T09:11:16Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-real-madrid-2024-25-home-jersey-bellingham-5.jpg?v=1788647091"
   },
@@ -557,7 +557,7 @@
  },
  {
   "handle": "manchester-city-2024-25-training-tracksuit",
-  "title": "Manchester City 2024/25 Training Tracksuit",
+  "title": "Manchester City 2025/26 Training Tracksuit",
   "description": "Outerwear from the training range — worn on the touchline rather than the pitch.Available Small through 2XL.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Jacket / Windbreaker",
   "tags": [
@@ -569,7 +569,7 @@
    "Training"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-01T22:07:54Z",
+  "updatedAt": "2026-09-11T09:54:39Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/sIILLDopCmsUVNzg.jpg?v=1787781566"
   },
@@ -596,7 +596,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:10Z",
+  "updatedAt": "2026-09-08T09:11:13Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/yechWhZbLoLWCzqH.jpg?v=1787781779"
   },
@@ -613,7 +613,7 @@
  },
  {
   "handle": "paris-saint-germain-2024-25-home-jersey",
-  "title": "Paris Saint-Germain 2024/25 Home Jersey",
+  "title": "Paris Saint-Germain 2025/26 Home Jersey",
   "description": "The fan version: the everyday cut, a little roomier through the body, and the one most people wear off the pitch.Available Medium through 4XL.Add your own name and number for R50, and a competition badge for R50 — both at checkout.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Fan Version",
   "tags": [
@@ -625,7 +625,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:10Z",
+  "updatedAt": "2026-09-11T09:54:43Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/004_01.jpg?v=1787999934"
   },
@@ -652,7 +652,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:11Z",
+  "updatedAt": "2026-09-08T09:11:17Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/xCCowBLMnxwnnjsE.jpg?v=1787785953"
   },
@@ -681,7 +681,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:12Z",
+  "updatedAt": "2026-09-08T09:11:15Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/071_01.jpg?v=1787999965"
   },
@@ -739,7 +739,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:12Z",
+  "updatedAt": "2026-09-08T09:11:17Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/XkvjXlCMUvkLGVGO.jpg?v=1787787383"
   },
@@ -756,18 +756,18 @@
  },
  {
   "handle": "liverpool-2026-27-home-jersey",
-  "title": "Liverpool 2026/27 Home Jersey — Player Version",
+  "title": "Liverpool 2026/27 Home Shirt (Fan Version)",
   "description": "The player version: the tighter, lighter match spec the squad wears, cut close through the chest and sleeve.Available Small through 2XL.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
-  "productType": "Player Version",
+  "productType": "Fan Version",
   "tags": [
+   "Fan Version",
    "Liverpool",
    "Mapped Media",
-   "Player Version",
    "Size S-XL",
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:13Z",
+  "updatedAt": "2026-09-11T09:54:57Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/HJMjWuGsoPzHSPYq.jpg?v=1787787724"
   },
@@ -775,7 +775,7 @@
    "edges": [
     {
      "node": {
-      "price": "650.00",
+      "price": "500.00",
       "availableForSale": true
      }
     }
@@ -784,7 +784,7 @@
  },
  {
   "handle": "liverpool-2025-26-training-jersey",
-  "title": "Liverpool 2025/26 Training Jersey",
+  "title": "Liverpool 2025/26 Goalkeeper Jersey (Teal)",
   "description": "The fan version: the everyday cut, a little roomier through the body, and the one most people wear off the pitch.Available Small through 4XL.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Fan Version",
   "tags": [
@@ -796,7 +796,7 @@
    "Training"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:14Z",
+  "updatedAt": "2026-09-11T09:54:58Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/spHmHMQNxofuhskr.jpg?v=1787787830"
   },
@@ -824,7 +824,7 @@
    "Stadium Supply"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:15Z",
+  "updatedAt": "2026-09-08T09:11:18Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/GXUoWNXuWZABRgYi.jpg?v=1787787923"
   },
@@ -841,18 +841,18 @@
  },
  {
   "handle": "real-madrid-2025-26-home-jersey-ucl-badge",
-  "title": "Real Madrid 2025/26 Home Jersey (UCL badge)",
+  "title": "Real Madrid 2025/26 Home Jersey (UCL badge) — Player Version",
   "description": "The fan version: the everyday cut, a little roomier through the body, and the one most people wear off the pitch.Available Small through 4XL.Add your own name and number for R50, and a competition badge for R50 — both at checkout.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
-  "productType": "Fan Version",
+  "productType": "Player Version",
   "tags": [
-   "Fan Version",
    "ig-post-002",
    "instagram-stock",
    "Mapped Media",
+   "Player Version",
    "Real Madrid"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:15Z",
+  "updatedAt": "2026-09-11T09:55:01Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/002_01.jpg?v=1787999184"
   },
@@ -860,7 +860,7 @@
    "edges": [
     {
      "node": {
-      "price": "500.00",
+      "price": "650.00",
       "availableForSale": true
      }
     }
@@ -880,7 +880,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:16Z",
+  "updatedAt": "2026-09-08T09:11:20Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/003_01.jpg?v=1787999196"
   },
@@ -908,7 +908,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:17Z",
+  "updatedAt": "2026-09-08T09:11:23Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/005_01.jpg?v=1787999203"
   },
@@ -936,7 +936,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:18Z",
+  "updatedAt": "2026-09-08T09:11:22Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/008_01.jpg?v=1787999210"
   },
@@ -964,7 +964,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:18Z",
+  "updatedAt": "2026-09-08T09:11:24Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/009_01.jpg?v=1787999216"
   },
@@ -986,7 +986,7 @@
   "productType": "Player Version",
   "tags": [],
   "status": "DRAFT",
-  "updatedAt": "2026-09-07T21:11:19Z",
+  "updatedAt": "2026-09-08T09:11:24Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/010_01.jpg?v=1787999226"
   },
@@ -1008,7 +1008,7 @@
   "productType": "Player Version",
   "tags": [],
   "status": "DRAFT",
-  "updatedAt": "2026-09-07T21:11:20Z",
+  "updatedAt": "2026-09-08T09:11:31Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/011_01.jpg?v=1787999232"
   },
@@ -1036,7 +1036,7 @@
    "Portugal"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:20Z",
+  "updatedAt": "2026-09-08T09:11:25Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/012_01.jpg?v=1787999239"
   },
@@ -1064,7 +1064,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:21Z",
+  "updatedAt": "2026-09-08T09:11:26Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/013_01.jpg?v=1787999249"
   },
@@ -1092,7 +1092,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:22Z",
+  "updatedAt": "2026-09-08T09:11:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/014_01.jpg?v=1787999256"
   },
@@ -1120,7 +1120,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:23Z",
+  "updatedAt": "2026-09-08T09:11:31Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/016_01.jpg?v=1787999265"
   },
@@ -1176,7 +1176,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:23Z",
+  "updatedAt": "2026-09-08T09:11:28Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/018_01.jpg?v=1787999281"
   },
@@ -1204,7 +1204,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:24Z",
+  "updatedAt": "2026-09-08T09:11:32Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/019_01.jpg?v=1787999291"
   },
@@ -1232,7 +1232,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:25Z",
+  "updatedAt": "2026-09-08T09:11:29Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/020_01.jpg?v=1787999297"
   },
@@ -1249,18 +1249,18 @@
  },
  {
   "handle": "liverpool-2025-26-home-long-sleeve-jersey",
-  "title": "Liverpool 2025/26 Home Long Sleeve Jersey",
+  "title": "Liverpool 2025/26 Home Long Sleeve Shirt (Player Version)",
   "description": "The long-sleeve fan version: the everyday cut, a little roomier through the body, with full sleeves.Available Small through 4XL.Add your own name and number for R50, and a competition badge for R50 — both at checkout.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
-  "productType": "Fan Version",
+  "productType": "Player Version",
   "tags": [
-   "Fan Version",
    "ig-post-021",
    "instagram-stock",
    "Liverpool",
-   "Mapped Media"
+   "Mapped Media",
+   "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:25Z",
+  "updatedAt": "2026-09-11T09:54:55Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/021_01.jpg?v=1787999308"
   },
@@ -1268,7 +1268,7 @@
    "edges": [
     {
      "node": {
-      "price": "600.00",
+      "price": "750.00",
       "availableForSale": true
      }
     }
@@ -1288,7 +1288,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:26Z",
+  "updatedAt": "2026-09-08T09:11:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/022_01.jpg?v=1787999316"
   },
@@ -1316,7 +1316,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:27Z",
+  "updatedAt": "2026-09-08T09:11:31Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/023_01.jpg?v=1787999324"
   },
@@ -1344,7 +1344,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:28Z",
+  "updatedAt": "2026-09-08T09:11:34Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/024_01.jpg?v=1787999330"
   },
@@ -1372,7 +1372,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:28Z",
+  "updatedAt": "2026-09-08T09:11:32Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/025_01.jpg?v=1787999341"
   },
@@ -1400,7 +1400,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:29Z",
+  "updatedAt": "2026-09-08T09:11:37Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/026_01.jpg?v=1787999347"
   },
@@ -1428,7 +1428,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:30Z",
+  "updatedAt": "2026-09-08T09:11:38Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/027_01.jpg?v=1787999354"
   },
@@ -1456,7 +1456,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:31Z",
+  "updatedAt": "2026-09-08T09:11:38Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/028_01.jpg?v=1787999364"
   },
@@ -1483,7 +1483,7 @@
    "Training Set"
   ],
   "status": "DRAFT",
-  "updatedAt": "2026-09-07T21:11:31Z",
+  "updatedAt": "2026-09-08T09:11:37Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/029_01.jpg?v=1787999371"
   },
@@ -1511,7 +1511,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:32Z",
+  "updatedAt": "2026-09-08T09:11:38Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/030_01.jpg?v=1787999377"
   },
@@ -1539,7 +1539,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:33Z",
+  "updatedAt": "2026-09-08T09:11:39Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/031_01.jpg?v=1787999388"
   },
@@ -1567,7 +1567,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:33Z",
+  "updatedAt": "2026-09-08T09:11:38Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/032_01.jpg?v=1787999396"
   },
@@ -1595,7 +1595,7 @@
    "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:34Z",
+  "updatedAt": "2026-09-08T09:11:41Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/033_01.jpg?v=1787999406"
   },
@@ -1623,7 +1623,7 @@
    "Portugal"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:35Z",
+  "updatedAt": "2026-09-08T09:11:40Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/034_01.jpg?v=1787999422"
   },
@@ -1651,7 +1651,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:35Z",
+  "updatedAt": "2026-09-08T09:11:43Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/035_01.jpg?v=1787999436"
   },
@@ -1679,7 +1679,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:36Z",
+  "updatedAt": "2026-09-08T09:11:47Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/036_01.jpg?v=1787999442"
   },
@@ -1707,7 +1707,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:37Z",
+  "updatedAt": "2026-09-08T09:11:43Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/037_01.jpg?v=1787999448"
   },
@@ -1735,7 +1735,7 @@
    "Netherlands"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:38Z",
+  "updatedAt": "2026-09-08T09:11:45Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/038_01.jpg?v=1787999455"
   },
@@ -1763,7 +1763,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:38Z",
+  "updatedAt": "2026-09-08T09:11:43Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/040_01.jpg?v=1787999464"
   },
@@ -1819,7 +1819,7 @@
    "Paris Saint-Germain"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:39Z",
+  "updatedAt": "2026-09-08T09:11:46Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/042_01.jpg?v=1787999479"
   },
@@ -1847,7 +1847,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:40Z",
+  "updatedAt": "2026-09-08T09:11:47Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/043_01.jpg?v=1787999491"
   },
@@ -1875,7 +1875,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:41Z",
+  "updatedAt": "2026-09-08T09:11:55Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/044_01.jpg?v=1787999499"
   },
@@ -1892,18 +1892,18 @@
  },
  {
   "handle": "liverpool-2013-14-away-retro-jersey-green",
-  "title": "Liverpool 2013/14 Away Retro Jersey (green)",
+  "title": "Liverpool Away Jersey (Green) — Salah 11",
   "description": "A retro reissue of a shirt that has been out of production for years — the season, the sponsor and the cut as they were.Available Small through 2XL.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
-  "productType": "Retro",
+  "productType": "Fan Version",
   "tags": [
+   "Fan Version",
    "ig-post-045",
    "instagram-stock",
    "Liverpool",
-   "Mapped Media",
-   "Retro"
+   "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:41Z",
+  "updatedAt": "2026-09-11T09:54:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/045_01.jpg?v=1787999506"
   },
@@ -1911,7 +1911,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "500.00",
       "availableForSale": true
      }
     }
@@ -1959,7 +1959,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:42Z",
+  "updatedAt": "2026-09-08T09:11:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/047_01.jpg?v=1787999521"
   },
@@ -1987,7 +1987,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:43Z",
+  "updatedAt": "2026-09-08T09:11:49Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/048_02.jpg?v=1787999530"
   },
@@ -2043,7 +2043,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:43Z",
+  "updatedAt": "2026-09-08T09:11:53Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/051_01.jpg?v=1787999546"
   },
@@ -2071,7 +2071,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:44Z",
+  "updatedAt": "2026-09-08T09:11:49Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/052_01.jpg?v=1787999555"
   },
@@ -2127,7 +2127,7 @@
    "South Africa"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:45Z",
+  "updatedAt": "2026-09-08T09:11:50Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/055_01.jpg?v=1787999571"
   },
@@ -2211,7 +2211,7 @@
    "Paris Saint-Germain"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:45Z",
+  "updatedAt": "2026-09-08T09:11:51Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/058_01.jpg?v=1787999594"
   },
@@ -2239,7 +2239,7 @@
    "South Africa"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:46Z",
+  "updatedAt": "2026-09-08T09:11:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/059_02.jpg?v=1787999606"
   },
@@ -2317,7 +2317,7 @@
   "productType": "Retro",
   "tags": [],
   "status": "DRAFT",
-  "updatedAt": "2026-09-07T21:11:47Z",
+  "updatedAt": "2026-09-08T09:11:52Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/062_01.jpg?v=1787999628"
   },
@@ -2334,7 +2334,7 @@
  },
  {
   "handle": "nottingham-forest-2025-26-away-jersey-ballys",
-  "title": "Nottingham Forest 2025/26 Away Jersey (Bally's)",
+  "title": "Nottingham Forest 2026/27 Away Jersey (Bally's)",
   "description": "The fan version: the everyday cut, a little roomier through the body, and the one most people wear off the pitch.Available Small through 4XL.Add your own name and number for R50, and a competition badge for R50 — both at checkout.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Fan Version",
   "tags": [
@@ -2345,7 +2345,7 @@
    "Nottingham Forest"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:47Z",
+  "updatedAt": "2026-09-11T09:54:39Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/063_01.jpg?v=1787999637"
   },
@@ -2373,7 +2373,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:48Z",
+  "updatedAt": "2026-09-08T09:11:53Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/064_01.jpg?v=1787999645"
   },
@@ -2401,7 +2401,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:49Z",
+  "updatedAt": "2026-09-08T09:11:53Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/065_01.jpg?v=1787999654"
   },
@@ -2457,7 +2457,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:49Z",
+  "updatedAt": "2026-09-08T09:11:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/067_01.jpg?v=1787999675"
   },
@@ -2541,7 +2541,7 @@
    "South Africa"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:50Z",
+  "updatedAt": "2026-09-08T09:11:59Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/070_01.jpg?v=1787999699"
   },
@@ -2569,7 +2569,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:51Z",
+  "updatedAt": "2026-09-08T09:11:57Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/072_01.jpg?v=1787999707"
   },
@@ -2597,7 +2597,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:52Z",
+  "updatedAt": "2026-09-08T09:12:00Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/073_01.jpg?v=1787999715"
   },
@@ -2625,7 +2625,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:52Z",
+  "updatedAt": "2026-09-08T09:11:58Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/074_01.jpg?v=1787999723"
   },
@@ -2653,7 +2653,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:53Z",
+  "updatedAt": "2026-09-08T09:12:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/075_01.jpg?v=1787999732"
   },
@@ -2681,7 +2681,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:54Z",
+  "updatedAt": "2026-09-08T09:12:05Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/076_01.jpg?v=1787999739"
   },
@@ -2726,7 +2726,7 @@
  },
  {
   "handle": "arsenal-2024-25-track-jacket-blue",
-  "title": "Arsenal 2024/25 Track Jacket (blue)",
+  "title": "Arsenal 2025/26 Track Jacket (blue)",
   "description": "Outerwear from the training range — worn on the touchline rather than the pitch.Available Small through 2XL.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Jacket / Windbreaker",
   "tags": [
@@ -2737,7 +2737,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-01T22:58:33Z",
+  "updatedAt": "2026-09-11T09:54:29Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/078_01.jpg?v=1787999755"
   },
@@ -2754,7 +2754,7 @@
  },
  {
   "handle": "arsenal-2024-25-training-hoodie-blue",
-  "title": "Arsenal 2024/25 Training Hoodie (blue)",
+  "title": "Arsenal 2025/26 Training Hoodie (blue)",
   "description": "From the training range: a heavier layer for the walk to the ground.Available Small through 2XL.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Hoodie",
   "tags": [
@@ -2765,7 +2765,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-01T23:09:29Z",
+  "updatedAt": "2026-09-11T09:54:28Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/079_01.jpg?v=1787999764"
   },
@@ -2782,7 +2782,7 @@
  },
  {
   "handle": "arsenal-2024-25-half-zip-training-top",
-  "title": "Arsenal 2024/25 Half-Zip Training Top",
+  "title": "Arsenal 2025/26 Half-Zip Training Top",
   "description": "A half-zip training top, the piece the squad warms up in.Available Small through 2XL.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Half-Zip Training Top",
   "tags": [
@@ -2793,7 +2793,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-01T23:05:49Z",
+  "updatedAt": "2026-09-11T09:54:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/080_01.jpg?v=1787999773"
   },
@@ -2905,7 +2905,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:54Z",
+  "updatedAt": "2026-09-08T09:12:01Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/084_01.jpg?v=1787999810"
   },
@@ -2933,7 +2933,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:55Z",
+  "updatedAt": "2026-09-08T09:12:05Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/085_01.jpg?v=1787999818"
   },
@@ -2989,7 +2989,7 @@
    "Real Madrid"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:56Z",
+  "updatedAt": "2026-09-08T09:12:00Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/088_01.jpg?v=1787999833"
   },
@@ -3016,8 +3016,8 @@
    "Manchester United",
    "Mapped Media"
   ],
-  "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:57Z",
+  "status": "ARCHIVED",
+  "updatedAt": "2026-09-11T09:54:22Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/089_01.jpg?v=1787999844"
   },
@@ -3045,7 +3045,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:57Z",
+  "updatedAt": "2026-09-08T09:12:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/090_01.jpg?v=1787999854"
   },
@@ -3062,7 +3062,7 @@
  },
  {
   "handle": "manchester-city-2025-26-home-jersey-etihad",
-  "title": "Manchester City 2025/26 Home Jersey (Etihad)",
+  "title": "Manchester City 2026/27 Home Jersey (Etihad)",
   "description": "The fan version: the everyday cut, a little roomier through the body, and the one most people wear off the pitch.Available Small through 4XL.Add your own name and number for R50, and a competition badge for R50 — both at checkout.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
   "productType": "Fan Version",
   "tags": [
@@ -3073,7 +3073,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:58Z",
+  "updatedAt": "2026-09-11T09:54:34Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/091_01.jpg?v=1787999863"
   },
@@ -3101,7 +3101,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:59Z",
+  "updatedAt": "2026-09-08T09:12:02Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/092_01.jpg?v=1787999876"
   },
@@ -3118,18 +3118,18 @@
  },
  {
   "handle": "arsenal-2025-26-home-long-sleeve-jersey",
-  "title": "Arsenal 2025/26 Home Long Sleeve Jersey",
+  "title": "2026/27 Arsenal Home Long Sleeve Player Version",
   "description": "The long-sleeve fan version: the everyday cut, a little roomier through the body, with full sleeves.Available Small through 4XL.Add your own name and number for R50, and a competition badge for R50 — both at checkout.We order every piece from our supplier once your payment lands. Stock usually reaches us in 10–15 business days, then ships to your door for a flat R100 anywhere in South Africa.",
-  "productType": "Fan Version",
+  "productType": "Player Version",
   "tags": [
    "Arsenal",
-   "Fan Version",
    "ig-post-093",
    "instagram-stock",
-   "Mapped Media"
+   "Mapped Media",
+   "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:11:59Z",
+  "updatedAt": "2026-09-11T09:55:00Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/093_01.jpg?v=1787999886"
   },
@@ -3137,7 +3137,7 @@
    "edges": [
     {
      "node": {
-      "price": "600.00",
+      "price": "750.00",
       "availableForSale": true
      }
     }
@@ -3157,7 +3157,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:00Z",
+  "updatedAt": "2026-09-08T09:12:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/094_01.jpg?v=1787999895"
   },
@@ -3241,7 +3241,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:01Z",
+  "updatedAt": "2026-09-08T09:12:07Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2025-26-manchester-united-chinese-knot-long-sleeve-fan-version.jpg?v=1788647130"
   },
@@ -3269,7 +3269,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:02Z",
+  "updatedAt": "2026-09-08T09:12:06Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2025-26-real-madrid-chinese-knot-long-sleeve-fan-version.jpg?v=1788647123"
   },
@@ -3353,7 +3353,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:04Z",
+  "updatedAt": "2026-09-08T09:12:08Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/222923902_02.jpg?v=1788002186"
   },
@@ -3633,7 +3633,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:05Z",
+  "updatedAt": "2026-09-08T09:12:11Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-real-madrid-half-zip-training-set_7adda15e-fe75-4ae8-b125-8abe6a7f717f.jpg?v=1788648147"
   },
@@ -3661,7 +3661,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:06Z",
+  "updatedAt": "2026-09-08T09:12:17Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-liverpool-half-zip-training-set_9b30cfb2-0d0f-405d-8045-fcc7b387eb30.jpg?v=1788648143"
   },
@@ -3689,7 +3689,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:06Z",
+  "updatedAt": "2026-09-08T09:12:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/247262457_05.jpg?v=1788002426"
   },
@@ -3717,7 +3717,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:07Z",
+  "updatedAt": "2026-09-08T09:12:12Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p043.jpg?v=1788626884"
   },
@@ -3745,7 +3745,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:08Z",
+  "updatedAt": "2026-09-08T09:12:12Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-world-cup-england-half-zip-training-set.jpg?v=1788647179"
   },
@@ -3773,7 +3773,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:08Z",
+  "updatedAt": "2026-09-08T09:12:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-world-cup-france-half-zip-training-set.jpg?v=1788647174"
   },
@@ -4137,7 +4137,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:13Z",
+  "updatedAt": "2026-09-08T09:12:19Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-fc-barcelona-home-fan-version.jpg?v=1788647167"
   },
@@ -4165,7 +4165,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:14Z",
+  "updatedAt": "2026-09-08T09:12:22Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-manchester-united-home-womens-shirt.jpg?v=1788647163"
   },
@@ -4193,7 +4193,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:15Z",
+  "updatedAt": "2026-09-08T09:12:19Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-liverpool-home-womens-shirt.jpg?v=1788647159"
   },
@@ -4221,7 +4221,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:15Z",
+  "updatedAt": "2026-09-08T09:12:19Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/239340942_02.jpg?v=1788002815"
   },
@@ -4249,7 +4249,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:16Z",
+  "updatedAt": "2026-09-08T09:12:20Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/235030913_02.jpg?v=1788002835"
   },
@@ -4277,7 +4277,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:17Z",
+  "updatedAt": "2026-09-08T09:12:23Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/235030833_02.jpg?v=1788002858"
   },
@@ -4305,7 +4305,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:17Z",
+  "updatedAt": "2026-09-08T09:12:26Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-fc-barcelona-home-player-version.jpg?v=1788647155"
   },
@@ -4333,7 +4333,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:18Z",
+  "updatedAt": "2026-09-08T09:12:28Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-fc-barcelona-home-long-sleeve-player-version.jpg?v=1788647150"
   },
@@ -4361,7 +4361,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:19Z",
+  "updatedAt": "2026-09-08T09:12:23Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-liverpool-home-long-sleeve-player-version.jpg?v=1788647146"
   },
@@ -4389,7 +4389,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:19Z",
+  "updatedAt": "2026-09-08T09:12:24Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-27-real-madrid-home-long-sleeve-player-version.jpg?v=1788647142"
   },
@@ -4417,7 +4417,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:20Z",
+  "updatedAt": "2026-09-08T09:12:24Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/239341657_02.jpg?v=1788002971"
   },
@@ -4445,7 +4445,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:21Z",
+  "updatedAt": "2026-09-08T09:12:25Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/239341604_02.jpg?v=1788002994"
   },
@@ -4473,7 +4473,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:22Z",
+  "updatedAt": "2026-09-08T09:12:26Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182235669_02.jpg?v=1788003015"
   },
@@ -4501,7 +4501,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:23Z",
+  "updatedAt": "2026-09-08T09:12:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182235658_02.jpg?v=1788003038"
   },
@@ -4529,7 +4529,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:23Z",
+  "updatedAt": "2026-09-08T09:12:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182235606_02.jpg?v=1788003062"
   },
@@ -4557,7 +4557,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:24Z",
+  "updatedAt": "2026-09-08T09:12:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/172011543_02.jpg?v=1788003084"
   },
@@ -4585,7 +4585,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:25Z",
+  "updatedAt": "2026-09-08T09:12:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/169014572_02.jpg?v=1788003104"
   },
@@ -4613,7 +4613,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:26Z",
+  "updatedAt": "2026-09-08T09:12:31Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/164644416_05.jpg?v=1788003121"
   },
@@ -4641,7 +4641,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:26Z",
+  "updatedAt": "2026-09-08T09:12:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/221483838_06.jpg?v=1788003139"
   },
@@ -4669,7 +4669,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:27Z",
+  "updatedAt": "2026-09-08T09:12:35Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-world-cup-france-training-set-fan-version.jpg?v=1788647138"
   },
@@ -4697,7 +4697,7 @@
    "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:28Z",
+  "updatedAt": "2026-09-08T09:12:33Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/222924162_02.jpg?v=1788003183"
   },
@@ -4725,7 +4725,7 @@
    "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:29Z",
+  "updatedAt": "2026-09-08T09:12:34Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/221483834_06.jpg?v=1788003200"
   },
@@ -4753,7 +4753,7 @@
    "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:30Z",
+  "updatedAt": "2026-09-08T09:12:33Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/220065986_02.jpg?v=1788003224"
   },
@@ -4781,7 +4781,7 @@
    "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:30Z",
+  "updatedAt": "2026-09-08T09:12:38Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/220065948_02.jpg?v=1788003244"
   },
@@ -5758,7 +5758,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:36Z",
+  "updatedAt": "2026-09-08T09:12:44Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/stadium.supply_1788134368_3975481441472703471_49256365526.jpg?v=1788200628"
   },
@@ -5786,7 +5786,7 @@
    "Real Madrid"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:37Z",
+  "updatedAt": "2026-09-08T09:12:42Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/stadium.supply_1788134445_3975482178185416489_49256365526.jpg?v=1788200638"
   },
@@ -5814,7 +5814,7 @@
    "Tottenham"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:37Z",
+  "updatedAt": "2026-09-08T09:12:46Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/stadium.supply_1788134482_3975482444456633387_49256365526.jpg?v=1788200645"
   },
@@ -5842,7 +5842,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:38Z",
+  "updatedAt": "2026-09-08T09:12:42Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/stadium.supply_1788134514_3975482745817318677_49256365526.jpg?v=1788200653"
   },
@@ -5870,7 +5870,7 @@
    "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:39Z",
+  "updatedAt": "2026-09-08T09:12:43Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/stadium.supply_1788134737_3975484663645948406_49256365526.jpg?v=1788200666"
   },
@@ -5898,7 +5898,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:40Z",
+  "updatedAt": "2026-09-08T09:12:44Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/stadium.supply_1788134787_3975484991162505918_49256365526.jpg?v=1788200673"
   },
@@ -6170,7 +6170,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:40Z",
+  "updatedAt": "2026-09-08T09:12:45Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.32_PM.jpg?v=1788297725"
   },
@@ -6224,7 +6224,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:42Z",
+  "updatedAt": "2026-09-08T09:12:48Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.35_PM.jpg?v=1788297737"
   },
@@ -6332,7 +6332,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:42Z",
+  "updatedAt": "2026-09-08T09:12:47Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.38_PM__1.jpg?v=1788297758"
   },
@@ -6359,7 +6359,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:43Z",
+  "updatedAt": "2026-09-08T09:12:47Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.38_PM__2.jpg?v=1788297764"
   },
@@ -6386,7 +6386,7 @@
    "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:44Z",
+  "updatedAt": "2026-09-08T09:12:49Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.38_PM.jpg?v=1788297773"
   },
@@ -6413,9 +6413,9 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:45Z",
+  "updatedAt": "2026-09-11T09:57:46Z",
   "featuredImage": {
-   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.39_PM__1.jpg?v=1788297780"
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.39_PM__2_01d8b49b-007b-4fbe-9c63-94ae364a0fc3.jpg?v=1789120510"
   },
   "variants": {
    "edges": [
@@ -6440,9 +6440,9 @@
    "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:45Z",
+  "updatedAt": "2026-09-11T09:57:46Z",
   "featuredImage": {
-   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.39_PM__2.jpg?v=1788297785"
+   "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.39_PM__1_b253adab-01b9-410e-9381-dac4b3a92f06.jpg?v=1789120509"
   },
   "variants": {
    "edges": [
@@ -6467,7 +6467,7 @@
    "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:46Z",
+  "updatedAt": "2026-09-08T09:12:51Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.39_PM.jpg?v=1788297789"
   },
@@ -6494,7 +6494,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:47Z",
+  "updatedAt": "2026-09-08T09:12:52Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.40_PM__1.jpg?v=1788297795"
   },
@@ -6521,7 +6521,7 @@
    "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:47Z",
+  "updatedAt": "2026-09-08T09:12:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.40_PM__2.jpg?v=1788297801"
   },
@@ -6548,7 +6548,7 @@
    "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:48Z",
+  "updatedAt": "2026-09-08T09:12:53Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.40_PM.jpg?v=1788297805"
   },
@@ -6575,7 +6575,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:49Z",
+  "updatedAt": "2026-09-08T09:12:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.41_PM__1.jpg?v=1788297810"
   },
@@ -6602,7 +6602,7 @@
    "Player Version"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:49Z",
+  "updatedAt": "2026-09-08T09:12:56Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.42_PM__3.jpg?v=1788297815"
   },
@@ -6629,7 +6629,7 @@
    "Mapped Media"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:50Z",
+  "updatedAt": "2026-09-08T09:12:59Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.44_PM__2.jpg?v=1788297820"
   },
@@ -6656,7 +6656,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:51Z",
+  "updatedAt": "2026-09-08T09:12:58Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.44_PM.jpg?v=1788297825"
   },
@@ -6683,7 +6683,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:52Z",
+  "updatedAt": "2026-09-08T09:12:59Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.45_PM__1.jpg?v=1788297829"
   },
@@ -6710,7 +6710,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:52Z",
+  "updatedAt": "2026-09-08T09:12:57Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.45_PM__2.jpg?v=1788297834"
   },
@@ -6737,7 +6737,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:53Z",
+  "updatedAt": "2026-09-08T09:12:57Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.45_PM.jpg?v=1788297838"
   },
@@ -6764,7 +6764,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:54Z",
+  "updatedAt": "2026-09-08T09:12:58Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.46_PM__1.jpg?v=1788297843"
   },
@@ -6791,7 +6791,7 @@
    "Retro"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:54Z",
+  "updatedAt": "2026-09-08T09:13:05Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-01_at_10.00.46_PM__2.jpg?v=1788297847"
   },
@@ -8941,7 +8941,7 @@
  },
  {
   "handle": "bayern-munich-2025-26-away-jersey",
-  "title": "Bayern Munich 2025/26 Away Jersey",
+  "title": "Bayern Munich 2026/27 Third Jersey (Navy Print)",
   "description": "The marbled purple and orange away shirt, front and back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -8951,7 +8951,7 @@
    "supplied-batch-2026-09-04"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-05T05:13:07Z",
+  "updatedAt": "2026-09-11T09:54:23Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-03_at_11.31.28_AM.jpg?v=1788536185"
   },
@@ -9643,7 +9643,7 @@
  },
  {
   "handle": "bayern-munich-goalkeeper-long-sleeve-jersey-white",
-  "title": "Bayern Munich Goalkeeper Long Sleeve Jersey (White)",
+  "title": "Bayern Munich 2025/26 Away Long Sleeve Jersey (White)",
   "description": "The white goalkeeper long sleeve with the padded shoulders, front, detail and back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -9653,7 +9653,7 @@
    "supplied-batch-2026-09-04"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-05T05:01:46Z",
+  "updatedAt": "2026-09-11T09:55:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-03_at_11.31.59_AM.jpg?v=1788536345"
   },
@@ -9697,7 +9697,7 @@
  },
  {
   "handle": "bayern-munich-goalkeeper-jersey-white",
-  "title": "Bayern Munich Goalkeeper Jersey (White)",
+  "title": "Bayern Munich 2025/26 Away Jersey (White)",
   "description": "The white goalkeeper shirt, front and back.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -9707,7 +9707,7 @@
    "supplied-batch-2026-09-04"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-05T05:07:47Z",
+  "updatedAt": "2026-09-11T09:55:03Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-03_at_11.32.00_AM__1.jpg?v=1788536355"
   },
@@ -9724,7 +9724,7 @@
  },
  {
   "handle": "bayern-munich-goalkeeper-jersey-white-player-version",
-  "title": "Bayern Munich Goalkeeper Jersey (White) — Player Version",
+  "title": "Bayern Munich 2025/26 Away Jersey (White) — Player Version",
   "description": "The white goalkeeper shirt in the player cut, with the collar detail and the licence patch.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -9734,7 +9734,7 @@
    "supplied-batch-2026-09-04"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-05T04:23:15Z",
+  "updatedAt": "2026-09-11T09:55:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-03_at_11.32.02_AM.jpg?v=1788536366"
   },
@@ -11543,7 +11543,7 @@
    "supplied-batch-2026-09-04"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:55Z",
+  "updatedAt": "2026-09-08T09:12:59Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-04_at_4.50.12_PM.jpg?v=1788536696"
   },
@@ -11570,7 +11570,7 @@
    "supplied-batch-2026-09-04"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:56Z",
+  "updatedAt": "2026-09-08T09:13:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/WhatsApp_Image_2026-09-04_at_4.50.12_PM__2.jpg?v=1788536700"
   },
@@ -11922,7 +11922,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:57Z",
+  "updatedAt": "2026-09-08T09:13:05Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/252322756_02.jpg?v=1788537483"
   },
@@ -11950,7 +11950,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:57Z",
+  "updatedAt": "2026-09-08T09:13:06Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/251843384_01.jpg?v=1788537504"
   },
@@ -11978,7 +11978,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:58Z",
+  "updatedAt": "2026-09-08T09:13:03Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/251437261_01.jpg?v=1788537526"
   },
@@ -12006,7 +12006,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:12:59Z",
+  "updatedAt": "2026-09-08T09:13:03Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/251436981_01.jpg?v=1788537548"
   },
@@ -12034,7 +12034,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:00Z",
+  "updatedAt": "2026-09-08T09:13:03Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/250247874_01.jpg?v=1788537570"
   },
@@ -12062,7 +12062,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:00Z",
+  "updatedAt": "2026-09-08T09:13:05Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/249718268_01.jpg?v=1788537592"
   },
@@ -12090,7 +12090,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:01Z",
+  "updatedAt": "2026-09-08T09:13:06Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/249717753_01.jpg?v=1788537615"
   },
@@ -12118,7 +12118,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:02Z",
+  "updatedAt": "2026-09-08T09:13:05Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248415182_01.jpg?v=1788537637"
   },
@@ -12146,7 +12146,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:02Z",
+  "updatedAt": "2026-09-08T09:13:06Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248415056_01.jpg?v=1788537659"
   },
@@ -12174,7 +12174,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:03Z",
+  "updatedAt": "2026-09-08T09:13:07Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248415001_01.jpg?v=1788537681"
   },
@@ -12202,7 +12202,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:04Z",
+  "updatedAt": "2026-09-08T09:13:07Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/248414899_01.jpg?v=1788537702"
   },
@@ -12230,7 +12230,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:05Z",
+  "updatedAt": "2026-09-08T09:13:10Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/212988582_02.jpg?v=1788544259"
   },
@@ -12258,7 +12258,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:05Z",
+  "updatedAt": "2026-09-08T09:13:10Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182233927_02.jpg?v=1788544280"
   },
@@ -12286,7 +12286,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:06Z",
+  "updatedAt": "2026-09-08T09:13:21Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182233845_02.jpg?v=1788544302"
   },
@@ -12314,7 +12314,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:07Z",
+  "updatedAt": "2026-09-08T09:13:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/186947267_02.jpg?v=1788544324"
   },
@@ -12342,7 +12342,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:07Z",
+  "updatedAt": "2026-09-08T09:13:11Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/186947273_02.jpg?v=1788544346"
   },
@@ -12370,7 +12370,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:08Z",
+  "updatedAt": "2026-09-08T09:13:13Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/182235655_02.jpg?v=1788544368"
   },
@@ -12398,7 +12398,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:09Z",
+  "updatedAt": "2026-09-08T09:13:16Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181809510_02.jpg?v=1788544391"
   },
@@ -12426,7 +12426,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:10Z",
+  "updatedAt": "2026-09-08T09:13:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/180881148_02.jpg?v=1788544412"
   },
@@ -12454,7 +12454,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:10Z",
+  "updatedAt": "2026-09-08T09:13:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181945778_02.jpg?v=1788544436"
   },
@@ -12482,7 +12482,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:11Z",
+  "updatedAt": "2026-09-08T09:13:16Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/186947276_02.jpg?v=1788544459"
   },
@@ -12510,7 +12510,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:12Z",
+  "updatedAt": "2026-09-08T09:13:17Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181809572_02.jpg?v=1788544481"
   },
@@ -12538,7 +12538,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:13Z",
+  "updatedAt": "2026-09-08T09:13:18Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/200246886_02.jpg?v=1788544504"
   },
@@ -12566,7 +12566,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:14Z",
+  "updatedAt": "2026-09-08T09:13:19Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/195725487_02.jpg?v=1788544532"
   },
@@ -12594,7 +12594,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:14Z",
+  "updatedAt": "2026-09-08T09:13:18Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/162684643_04.jpg?v=1788544558"
   },
@@ -12622,7 +12622,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:15Z",
+  "updatedAt": "2026-09-08T09:13:19Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/162679048_03.jpg?v=1788544586"
   },
@@ -12650,7 +12650,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:16Z",
+  "updatedAt": "2026-09-08T09:13:22Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p104.jpg?v=1788626865"
   },
@@ -12678,7 +12678,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:17Z",
+  "updatedAt": "2026-09-08T09:13:24Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2026-world-cup-netherlands-away-kids-kit-lead.jpg?v=1788626897"
   },
@@ -12706,7 +12706,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:17Z",
+  "updatedAt": "2026-09-08T09:13:23Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p109.jpg?v=1788626871"
   },
@@ -12734,7 +12734,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:18Z",
+  "updatedAt": "2026-09-08T09:13:22Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/239341630_02.jpg?v=1788544666"
   },
@@ -12762,7 +12762,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:19Z",
+  "updatedAt": "2026-09-08T09:13:25Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/235397757_07.jpg?v=1788544683"
   },
@@ -12790,7 +12790,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:19Z",
+  "updatedAt": "2026-09-08T09:13:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p105.jpg?v=1788626868"
   },
@@ -12818,7 +12818,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:20Z",
+  "updatedAt": "2026-09-08T09:13:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/240045173_02.jpg?v=1788544725"
   },
@@ -12846,7 +12846,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:21Z",
+  "updatedAt": "2026-09-08T09:13:26Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p110.jpg?v=1788626874"
   },
@@ -12874,7 +12874,7 @@
    "World Cup"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:22Z",
+  "updatedAt": "2026-09-08T09:13:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/236765269_02.jpg?v=1788544766"
   },
@@ -12902,7 +12902,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:22Z",
+  "updatedAt": "2026-09-08T09:13:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p097.jpg?v=1788626862"
   },
@@ -12930,7 +12930,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:23Z",
+  "updatedAt": "2026-09-08T09:13:28Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2026-italy-half-zip-training-set.jpg?v=1788647105"
   },
@@ -12958,7 +12958,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:24Z",
+  "updatedAt": "2026-09-08T09:13:29Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/216429288_02.jpg?v=1788544828"
   },
@@ -12986,7 +12986,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:25Z",
+  "updatedAt": "2026-09-08T09:13:33Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215918867_01.jpg?v=1788544850"
   },
@@ -13014,7 +13014,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:26Z",
+  "updatedAt": "2026-09-08T09:13:29Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/216431574_02.jpg?v=1788544871"
   },
@@ -13042,7 +13042,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:26Z",
+  "updatedAt": "2026-09-08T09:13:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215918880_01.jpg?v=1788544894"
   },
@@ -13070,7 +13070,7 @@
    "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:27Z",
+  "updatedAt": "2026-09-08T09:13:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/219350792_02.jpg?v=1788544917"
   },
@@ -13098,7 +13098,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:28Z",
+  "updatedAt": "2026-09-08T09:13:33Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/181393547_02.jpg?v=1788544940"
   },
@@ -13126,7 +13126,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:28Z",
+  "updatedAt": "2026-09-08T09:13:34Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/169014250_02.jpg?v=1788544962"
   },
@@ -13154,7 +13154,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:29Z",
+  "updatedAt": "2026-09-08T09:13:39Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/166371543_02.jpg?v=1788544984"
   },
@@ -13182,7 +13182,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:30Z",
+  "updatedAt": "2026-09-08T09:13:33Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/front-2025-26-ac-milan-away-player-version1.jpg?v=1788647100"
   },
@@ -13210,7 +13210,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:30Z",
+  "updatedAt": "2026-09-08T09:13:37Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/212988310_01.jpg?v=1788545020"
   },
@@ -13266,7 +13266,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:31Z",
+  "updatedAt": "2026-09-08T09:13:36Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/209464466_03.jpg?v=1788545060"
   },
@@ -13294,7 +13294,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:32Z",
+  "updatedAt": "2026-09-08T09:13:37Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215393739_02.jpg?v=1788545080"
   },
@@ -13322,7 +13322,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:33Z",
+  "updatedAt": "2026-09-08T09:13:39Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/202932358_02.jpg?v=1788545103"
   },
@@ -13350,7 +13350,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:33Z",
+  "updatedAt": "2026-09-08T09:13:39Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/208448613_02.jpg?v=1788545123"
   },
@@ -13378,7 +13378,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:34Z",
+  "updatedAt": "2026-09-08T09:13:40Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/202932345_02.jpg?v=1788545145"
   },
@@ -13406,7 +13406,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:35Z",
+  "updatedAt": "2026-09-08T09:13:43Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26-galatasaray-s-k-third-fan-version-lead.jpg?v=1788626893"
   },
@@ -13434,7 +13434,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:35Z",
+  "updatedAt": "2026-09-08T09:13:42Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/190101246_02.jpg?v=1788545189"
   },
@@ -13462,7 +13462,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:36Z",
+  "updatedAt": "2026-09-08T09:13:40Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/211242767_02.jpg?v=1788545211"
   },
@@ -13490,7 +13490,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:37Z",
+  "updatedAt": "2026-09-08T09:13:42Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/220066154_02.jpg?v=1788545231"
   },
@@ -13546,7 +13546,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:38Z",
+  "updatedAt": "2026-09-08T09:13:41Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215393797_02.jpg?v=1788545269"
   },
@@ -13574,7 +13574,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:38Z",
+  "updatedAt": "2026-09-08T09:13:42Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/215393807_02.jpg?v=1788545290"
   },
@@ -13602,7 +13602,7 @@
    "supplier-stock"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:39Z",
+  "updatedAt": "2026-09-08T09:13:41Z",
   "featuredImage": null,
   "variants": {
    "edges": [
@@ -16111,7 +16111,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:40Z",
+  "updatedAt": "2026-09-08T09:13:44Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p015.jpg?v=1788622176"
   },
@@ -16138,7 +16138,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:41Z",
+  "updatedAt": "2026-09-08T09:13:48Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p017.jpg?v=1788622184"
   },
@@ -16597,7 +16597,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:42Z",
+  "updatedAt": "2026-09-08T09:13:47Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p035.jpg?v=1788622358"
   },
@@ -16624,7 +16624,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:43Z",
+  "updatedAt": "2026-09-08T09:13:49Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p036.jpg?v=1788622367"
   },
@@ -16651,7 +16651,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:43Z",
+  "updatedAt": "2026-09-08T09:13:51Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p037.jpg?v=1788622378"
   },
@@ -16678,7 +16678,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:44Z",
+  "updatedAt": "2026-09-08T09:13:50Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p038.jpg?v=1788622383"
   },
@@ -16705,7 +16705,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:45Z",
+  "updatedAt": "2026-09-08T09:13:49Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p039.jpg?v=1788622388"
   },
@@ -17137,7 +17137,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:46Z",
+  "updatedAt": "2026-09-08T09:14:01Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p059.jpg?v=1788622527"
   },
@@ -17164,7 +17164,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:46Z",
+  "updatedAt": "2026-09-08T09:13:53Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p060.jpg?v=1788622539"
   },
@@ -17191,7 +17191,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:47Z",
+  "updatedAt": "2026-09-08T09:13:55Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p061.jpg?v=1788622548"
   },
@@ -18001,7 +18001,7 @@
    "supplied-batch-2026-09-04c-w2"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:48Z",
+  "updatedAt": "2026-09-08T09:13:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/p102.jpg?v=1788622773"
   },
@@ -18325,7 +18325,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:49Z",
+  "updatedAt": "2026-09-08T09:13:54Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Real_Madrid_Retro_Half-Zip_Training_Top__Fly_Emirates__White__-_01.jpg?v=1788651638"
   },
@@ -18352,7 +18352,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:49Z",
+  "updatedAt": "2026-09-08T09:13:55Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Real_Madrid_Retro_Half-Zip_Training_Top__bwin__White__-_01.jpg?v=1788651642"
   },
@@ -18379,7 +18379,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:50Z",
+  "updatedAt": "2026-09-08T09:13:55Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Real_Madrid_Retro_Half-Zip_Training_Top__Siemens_Mobile__Black__-_01.jpg?v=1788651645"
   },
@@ -18406,7 +18406,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:51Z",
+  "updatedAt": "2026-09-08T09:13:56Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Real_Madrid_Retro_Half-Zip_Training_Top__bwin__Black_and_Gold__-_01.jpg?v=1788651648"
   },
@@ -18433,7 +18433,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:51Z",
+  "updatedAt": "2026-09-08T09:13:57Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Real_Madrid_Retro_Half-Zip_Training_Top__bwin.com__White_and_Blue__-_01.jpg?v=1788651652"
   },
@@ -21916,7 +21916,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:52Z",
+  "updatedAt": "2026-09-08T09:13:59Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/1998-99_Manchester_United_Sharp_Retro_Training_Top_-_01.jpg?v=1788696810"
   },
@@ -21943,7 +21943,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:53Z",
+  "updatedAt": "2026-09-08T09:14:07Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Manchester_United_Black_Vodafone_Retro_Training_Top_-_01.jpg?v=1788696815"
   },
@@ -21970,7 +21970,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:54Z",
+  "updatedAt": "2026-09-08T09:13:59Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Manchester_United_Red_Vodafone_Retro_Training_Top_-_01.jpg?v=1788696819"
   },
@@ -23823,17 +23823,17 @@
  },
  {
   "handle": "2022-23-fc-barcelona-home-retro",
-  "title": "2022/23 FC Barcelona Home Retro",
+  "title": "2024/25 FC Barcelona Home Fan Version",
   "description": "Halved claret and blue home shirt with the Spotify roundel on the chest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
-  "productType": "Retro",
+  "productType": "Fan Version",
   "tags": [
+   "Fan Version",
    "FC Barcelona",
    "Mapped Media",
-   "Retro",
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:39:25Z",
+  "updatedAt": "2026-09-11T09:55:02Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2022-23_FC_Barcelona_Home_Retro_-_01.jpg?v=1788698354"
   },
@@ -23841,7 +23841,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "500.00",
       "availableForSale": true
      }
     }
@@ -23877,7 +23877,7 @@
  },
  {
   "handle": "2025-26-fc-barcelona-away-fan-version",
-  "title": "2025/26 FC Barcelona Away Fan Version",
+  "title": "2024/25 FC Barcelona Away Fan Version",
   "description": "Black away shirt with a red side panel on one flank and a blue one on the other, and the Spotify roundel on the chest.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -23887,7 +23887,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:40:00Z",
+  "updatedAt": "2026-09-11T09:54:41Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_FC_Barcelona_Away_Fan_Version_-_01.jpg?v=1788698363"
   },
@@ -24795,7 +24795,7 @@
  },
  {
   "handle": "2025-26-fc-barcelona-away-player-version",
-  "title": "2025/26 FC Barcelona Away Player Version",
+  "title": "2024/25 FC Barcelona Away Player Version",
   "description": "Black away shirt in the player cut with a red side panel on one flank and a blue one on the other.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -24805,7 +24805,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:41:46Z",
+  "updatedAt": "2026-09-11T09:54:40Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_FC_Barcelona_Away_Player_Version_-_01.jpg?v=1788698499"
   },
@@ -25038,17 +25038,17 @@
  },
  {
   "handle": "fc-barcelona-peach-goalkeeper-player-version",
-  "title": "FC Barcelona Peach Goalkeeper Player Version",
+  "title": "FC Barcelona Peach Training Shirt",
   "description": "Peach goalkeeper shirt in the player cut with a coral shoulder panel and the navy Spotify roundel.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
-  "productType": "Player Version",
+  "productType": "Training Set",
   "tags": [
    "FC Barcelona",
    "Mapped Media",
-   "Player Version",
-   "supplied-batch-2026-09-05"
+   "supplied-batch-2026-09-05",
+   "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:42:22Z",
+  "updatedAt": "2026-09-11T09:55:06Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/FC_Barcelona_Peach_Goalkeeper_Player_Version_-_01.jpg?v=1788698534"
   },
@@ -25056,7 +25056,7 @@
    "edges": [
     {
      "node": {
-      "price": "650.00",
+      "price": "700.00",
       "availableForSale": true
      }
     }
@@ -25065,17 +25065,17 @@
  },
  {
   "handle": "fc-barcelona-purple-goalkeeper-player-version",
-  "title": "FC Barcelona Purple Goalkeeper Player Version",
+  "title": "FC Barcelona Purple Training Shirt",
   "description": "Purple goalkeeper shirt in the player cut with a navy collar and sleeves and the yellow Spotify roundel.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
-  "productType": "Player Version",
+  "productType": "Training Set",
   "tags": [
    "FC Barcelona",
    "Mapped Media",
-   "Player Version",
-   "supplied-batch-2026-09-05"
+   "supplied-batch-2026-09-05",
+   "Training Set"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:42:21Z",
+  "updatedAt": "2026-09-11T09:55:07Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/FC_Barcelona_Purple_Goalkeeper_Player_Version_-_01.jpg?v=1788698538"
   },
@@ -25083,7 +25083,7 @@
    "edges": [
     {
      "node": {
-      "price": "650.00",
+      "price": "700.00",
       "availableForSale": true
      }
     }
@@ -26118,7 +26118,7 @@
  },
  {
   "handle": "2024-25-paris-saint-germain-fourth-pinstripe-player-version",
-  "title": "2024/25 Paris Saint-Germain Fourth Pinstripe Player Version",
+  "title": "2025/26 Paris Saint-Germain Fourth Pinstripe Player Version",
   "description": "Black Jordan fourth shirt in the player cut with the tonal pinstripes and a thin red centre line.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -26128,7 +26128,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:52:31Z",
+  "updatedAt": "2026-09-11T09:54:47Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Paris_Saint-Germain_Fourth_Pinstripe_Player_Version_-_01.jpg?v=1788699116"
   },
@@ -26253,7 +26253,7 @@
  },
  {
   "handle": "2025-26-paris-saint-germain-home-kids-kit",
-  "title": "2025/26 Paris Saint-Germain Home Kids Kit",
+  "title": "2026/27 Paris Saint-Germain Home Kids Kit",
   "description": "Blue shirt with the wide red centre band and matching blue shorts, sized 2-3 through 10-11.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Kids Kit",
   "tags": [
@@ -26263,7 +26263,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:52:59Z",
+  "updatedAt": "2026-09-11T09:54:48Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Paris_Saint-Germain_Home_Kids_Kit_-_01.jpg?v=1788699137"
   },
@@ -26334,7 +26334,7 @@
  },
  {
   "handle": "2024-25-paris-saint-germain-fourth-kids-kit",
-  "title": "2024/25 Paris Saint-Germain Fourth Kids Kit",
+  "title": "2025/26 Paris Saint-Germain Fourth Kids Kit",
   "description": "Black Jordan shirt with the tonal pinstripes and matching black shorts, sized 2-3 through 10-11.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Kids Kit",
   "tags": [
@@ -26344,7 +26344,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:52:57Z",
+  "updatedAt": "2026-09-11T09:54:47Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Paris_Saint-Germain_Fourth_Kids_Kit_-_01.jpg?v=1788699149"
   },
@@ -26388,7 +26388,7 @@
  },
  {
   "handle": "2025-26-paris-saint-germain-home-long-sleeve-fan-version",
-  "title": "2025/26 Paris Saint-Germain Home Long Sleeve Fan Version",
+  "title": "2026/27 Paris Saint-Germain Home Long Sleeve Fan Version",
   "description": "Blue long sleeve home shirt with the wide red centre band edged in white and the Qatar Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -26398,7 +26398,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:53:02Z",
+  "updatedAt": "2026-09-11T09:54:42Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Paris_Saint-Germain_Home_Long_Sleeve_Fan_Version_-_01.jpg?v=1788699157"
   },
@@ -26415,7 +26415,7 @@
  },
  {
   "handle": "2025-26-paris-saint-germain-home-fan-version",
-  "title": "2025/26 Paris Saint-Germain Home Fan Version",
+  "title": "2026/27 Paris Saint-Germain Home Fan Version",
   "description": "Blue home shirt with the wide red centre band edged in white and the Qatar Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -26425,7 +26425,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:53:08Z",
+  "updatedAt": "2026-09-11T09:54:42Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Paris_Saint-Germain_Home_Fan_Version_-_01.jpg?v=1788699163"
   },
@@ -26442,7 +26442,7 @@
  },
  {
   "handle": "2024-25-paris-saint-germain-fourth-fan-version",
-  "title": "2024/25 Paris Saint-Germain Fourth Fan Version",
+  "title": "2025/26 Paris Saint-Germain Fourth Fan Version",
   "description": "Black Jordan fourth shirt with the marbled gold and green print and the Qatar Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -26452,7 +26452,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:53:42Z",
+  "updatedAt": "2026-09-11T09:54:46Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Paris_Saint-Germain_Fourth_Fan_Version_-_01.jpg?v=1788699167"
   },
@@ -26469,7 +26469,7 @@
  },
  {
   "handle": "2024-25-paris-saint-germain-fourth-long-sleeve-fan-version",
-  "title": "2024/25 Paris Saint-Germain Fourth Long Sleeve Fan Version",
+  "title": "2025/26 Paris Saint-Germain Fourth Long Sleeve Fan Version",
   "description": "Long sleeve black Jordan shirt with the marbled gold and green print and the Qatar Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -26479,7 +26479,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:53:21Z",
+  "updatedAt": "2026-09-11T09:54:45Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Paris_Saint-Germain_Fourth_Long_Sleeve_Fan_Version_-_01.jpg?v=1788699171"
   },
@@ -26550,7 +26550,7 @@
  },
  {
   "handle": "2024-25-paris-saint-germain-home-long-sleeve-fan-version",
-  "title": "2024/25 Paris Saint-Germain Home Long Sleeve Fan Version",
+  "title": "2025/26 Paris Saint-Germain Home Long Sleeve Fan Version",
   "description": "Navy long sleeve home shirt with the red diamond-patterned centre band and the Qatar Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -26560,7 +26560,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:53:20Z",
+  "updatedAt": "2026-09-11T09:54:44Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Paris_Saint-Germain_Home_Long_Sleeve_Fan_Version_-_01.jpg?v=1788699183"
   },
@@ -26631,7 +26631,7 @@
  },
  {
   "handle": "2024-25-paris-saint-germain-home-fan-version",
-  "title": "2024/25 Paris Saint-Germain Home Fan Version",
+  "title": "2025/26 Paris Saint-Germain Home Fan Version",
   "description": "Navy home shirt with the red diamond-patterned centre band and the Qatar Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -26641,7 +26641,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T00:54:19Z",
+  "updatedAt": "2026-09-11T09:54:45Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Paris_Saint-Germain_Home_Fan_Version_-_01.jpg?v=1788699195"
   },
@@ -27792,7 +27792,7 @@
  },
  {
   "handle": "arsenal-cream-away-long-sleeve-fan-version",
-  "title": "Arsenal Cream Away Long Sleeve Fan Version",
+  "title": "2025/26 Arsenal Third Long Sleeve Fan Version",
   "description": "Long sleeve cream shirt with navy and maroon shoulder stripes and the Emirates sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -27802,7 +27802,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:03:45Z",
+  "updatedAt": "2026-09-11T09:54:25Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Arsenal_Cream_Away_Long_Sleeve_Fan_Version_-_01.jpg?v=1788699822"
   },
@@ -27819,7 +27819,7 @@
  },
  {
   "handle": "arsenal-cream-away-fan-version",
-  "title": "Arsenal Cream Away Fan Version",
+  "title": "2025/26 Arsenal Third Fan Version",
   "description": "Cream shirt with navy and maroon collar and sleeve trim and the Emirates sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -27829,7 +27829,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:03:52Z",
+  "updatedAt": "2026-09-11T09:54:25Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Arsenal_Cream_Away_Fan_Version_-_01.jpg?v=1788699826"
   },
@@ -27927,7 +27927,7 @@
  },
  {
   "handle": "arsenal-cream-away-kids-kit",
-  "title": "Arsenal Cream Away Kids Kit",
+  "title": "2025/26 Arsenal Third Kids Kit",
   "description": "Cream shirt with navy and maroon trim and matching navy shorts, sized 2-3 through 10-11.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Kids Kit",
   "tags": [
@@ -27937,7 +27937,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:04:06Z",
+  "updatedAt": "2026-09-11T09:54:27Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Arsenal_Cream_Away_Kids_Kit_-_01.jpg?v=1788699842"
   },
@@ -27981,7 +27981,7 @@
  },
  {
   "handle": "2025-26-arsenal-home-kids-kit",
-  "title": "2025/26 Arsenal Home Kids Kit",
+  "title": "2026/27 Arsenal Home Kids Kit",
   "description": "Red shirt with white sleeves and matching white shorts, sized 2-3 through 10-11.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Kids Kit",
   "tags": [
@@ -27991,7 +27991,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:04:20Z",
+  "updatedAt": "2026-09-11T09:54:23Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Arsenal_Home_Kids_Kit_-_01.jpg?v=1788699849"
   },
@@ -28116,7 +28116,7 @@
  },
  {
   "handle": "2025-26-arsenal-away-player-version",
-  "title": "2025/26 Arsenal Away Player Version",
+  "title": "2025/26 Arsenal Third Player Version",
   "description": "Cream away shirt in the player cut with the maroon polo collar and the Emirates sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -28126,7 +28126,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:04:45Z",
+  "updatedAt": "2026-09-11T09:54:24Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Arsenal_Away_Player_Version_-_01.jpg?v=1788699869"
   },
@@ -28224,7 +28224,7 @@
  },
  {
   "handle": "arsenal-cream-away-player-version",
-  "title": "Arsenal Cream Away Player Version",
+  "title": "2025/26 Arsenal Third Player Version (Cream)",
   "description": "Cream shirt in the player cut with navy and maroon shoulder stripes and the Emirates sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -28234,7 +28234,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:04:52Z",
+  "updatedAt": "2026-09-11T09:54:26Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Arsenal_Cream_Away_Player_Version_-_01.jpg?v=1788699887"
   },
@@ -28737,7 +28737,7 @@
  },
  {
   "handle": "2026-27-manchester-city-home-player-version",
-  "title": "2026/27 Manchester City Home Player Version",
+  "title": "2025/26 Manchester City Home Player Version",
   "description": "Sky blue home shirt in the tighter player cut with the white diagonal sash and the Etihad Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -28747,7 +28747,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:14:12Z",
+  "updatedAt": "2026-09-11T09:54:36Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2026-27_Manchester_City_Home_Player_Version_-_01.jpg?v=1788700448"
   },
@@ -28818,7 +28818,7 @@
  },
  {
   "handle": "2026-27-manchester-city-home-long-sleeve-player-version",
-  "title": "2026/27 Manchester City Home Long Sleeve Player Version",
+  "title": "2025/26 Manchester City Home Long Sleeve Player Version",
   "description": "Long sleeve sky blue home shirt in the player cut with the white diagonal sash.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -28828,7 +28828,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:14:24Z",
+  "updatedAt": "2026-09-11T09:54:37Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2026-27_Manchester_City_Home_Long_Sleeve_Player_Version_-_01.jpg?v=1788700460"
   },
@@ -28926,7 +28926,7 @@
  },
  {
   "handle": "2025-26-manchester-city-home-long-sleeve-player-version",
-  "title": "2025/26 Manchester City Home Long Sleeve Player Version",
+  "title": "2026/27 Manchester City Home Long Sleeve Player Version",
   "description": "Long sleeve sky blue home shirt in the player cut, graded to white at the hem.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -28936,7 +28936,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:14:40Z",
+  "updatedAt": "2026-09-11T09:54:36Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Manchester_City_Home_Long_Sleeve_Player_Version_-_01.jpg?v=1788700477"
   },
@@ -28953,7 +28953,7 @@
  },
  {
   "handle": "2025-26-manchester-city-home-player-version",
-  "title": "2025/26 Manchester City Home Player Version",
+  "title": "2026/27 Manchester City Home Player Version",
   "description": "Sky blue home shirt in the player cut, graded to white at the hem, with the Etihad Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -28963,7 +28963,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:15:02Z",
+  "updatedAt": "2026-09-11T09:54:35Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Manchester_City_Home_Player_Version_-_01.jpg?v=1788700480"
   },
@@ -29115,7 +29115,7 @@
  },
  {
   "handle": "2025-26-manchester-city-home-kids-kit",
-  "title": "2025/26 Manchester City Home Kids Kit",
+  "title": "2026/27 Manchester City Home Kids Kit",
   "description": "Sky blue shirt graded to white with matching white shorts, sized 2-3 through 10-11.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Kids Kit",
   "tags": [
@@ -29125,7 +29125,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:15:10Z",
+  "updatedAt": "2026-09-11T09:54:38Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Manchester_City_Home_Kids_Kit_-_01.jpg?v=1788700506"
   },
@@ -29412,7 +29412,7 @@
  },
  {
   "handle": "2026-27-manchester-city-home-fan-version",
-  "title": "2026/27 Manchester City Home Fan Version",
+  "title": "2025/26 Manchester City Home Fan Version",
   "description": "Sky blue home shirt with the white diagonal sash and the Etihad Airways sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -29422,7 +29422,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T01:15:57Z",
+  "updatedAt": "2026-09-11T09:54:34Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2026-27_Manchester_City_Home_Fan_Version_-_01.jpg?v=1788700550"
   },
@@ -30124,7 +30124,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:54Z",
+  "updatedAt": "2026-09-08T09:13:59Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/AC_Milan_Red_and_White_Opel_Retro_Half-Zip_Training_Top_-_01.jpg?v=1788701506"
   },
@@ -30151,7 +30151,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:55Z",
+  "updatedAt": "2026-09-08T09:14:01Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/AC_Milan_Black_and_Red_Opel_Retro_Half-Zip_Training_Top_-_01.jpg?v=1788701510"
   },
@@ -30178,7 +30178,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:56Z",
+  "updatedAt": "2026-09-08T09:14:03Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/AC_Milan_Black_and_White_Opel_Retro_Half-Zip_Training_Top_-_01.jpg?v=1788701513"
   },
@@ -30205,7 +30205,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:57Z",
+  "updatedAt": "2026-09-08T09:14:04Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/AC_Milan_Red_and_Black_Opel_Retro_Half-Zip_Training_Top_-_01.jpg?v=1788701516"
   },
@@ -30232,7 +30232,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T21:13:58Z",
+  "updatedAt": "2026-09-08T09:14:02Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/AC_Milan_White_Opel_Retro_Half-Zip_Training_Top_-_01.jpg?v=1788701519"
   },
@@ -30816,7 +30816,7 @@
  },
  {
   "handle": "2025-26-tottenham-hotspur-third-fan-version",
-  "title": "2025/26 Tottenham Hotspur Third Fan Version",
+  "title": "2024/25 Tottenham Hotspur Away Fan Version",
   "description": "Light blue third shirt with the tonal stripes, yellow collar trim and the navy AIA sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -30826,7 +30826,7 @@
    "Tottenham Hotspur"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T03:06:45Z",
+  "updatedAt": "2026-09-11T09:54:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Tottenham_Hotspur_Third_Fan_Version_-_01.jpg?v=1788707201"
   },
@@ -30870,7 +30870,7 @@
  },
  {
   "handle": "2024-25-tottenham-hotspur-third-fan-version",
-  "title": "2024/25 Tottenham Hotspur Third Fan Version",
+  "title": "2025/26 Tottenham Hotspur Third Fan Version",
   "description": "Yellow third shirt with a navy collar and the navy AIA sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -30880,7 +30880,7 @@
    "Tottenham Hotspur"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T03:06:52Z",
+  "updatedAt": "2026-09-11T09:54:29Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Tottenham_Hotspur_Third_Fan_Version_-_01.jpg?v=1788707208"
   },
@@ -30978,7 +30978,7 @@
  },
  {
   "handle": "2024-25-tottenham-hotspur-home-long-sleeve-fan-version",
-  "title": "2024/25 Tottenham Hotspur Home Long Sleeve Fan Version",
+  "title": "2026/27 Tottenham Hotspur Home Long Sleeve Fan Version",
   "description": "Long sleeve white home shirt with the red AIA sponsor and a purple sleeve badge.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -30988,7 +30988,7 @@
    "Tottenham Hotspur"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T03:07:07Z",
+  "updatedAt": "2026-09-11T09:54:33Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Tottenham_Hotspur_Home_Long_Sleeve_Fan_Version_-_01.jpg?v=1788707224"
   },
@@ -31059,7 +31059,7 @@
  },
  {
   "handle": "2024-25-tottenham-hotspur-away-fan-version",
-  "title": "2024/25 Tottenham Hotspur Away Fan Version",
+  "title": "2026/27 Tottenham Hotspur Away Fan Version",
   "description": "Black away shirt with white collar and sleeve piping and the white AIA sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -31069,7 +31069,7 @@
    "Tottenham Hotspur"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T03:07:23Z",
+  "updatedAt": "2026-09-11T09:54:32Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Tottenham_Hotspur_Away_Fan_Version_-_01.jpg?v=1788707236"
   },
@@ -31113,7 +31113,7 @@
  },
  {
   "handle": "2024-25-tottenham-hotspur-third-kids-kit",
-  "title": "2024/25 Tottenham Hotspur Third Kids Kit",
+  "title": "2025/26 Tottenham Hotspur Third Kids Kit",
   "description": "Yellow shirt with a navy collar and matching yellow shorts, sized 2-3 through 10-11.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Kids Kit",
   "tags": [
@@ -31123,7 +31123,7 @@
    "Tottenham Hotspur"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T03:07:29Z",
+  "updatedAt": "2026-09-11T09:54:32Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Tottenham_Hotspur_Third_Kids_Kit_-_01.jpg?v=1788707246"
   },
@@ -31194,7 +31194,7 @@
  },
  {
   "handle": "2025-26-tottenham-hotspur-third-player-version",
-  "title": "2025/26 Tottenham Hotspur Third Player Version",
+  "title": "2024/25 Tottenham Hotspur Away Player Version",
   "description": "Light blue third shirt in the player cut with the tonal stripes and yellow collar trim.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -31204,7 +31204,7 @@
    "Tottenham Hotspur"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T03:07:41Z",
+  "updatedAt": "2026-09-11T09:54:31Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Tottenham_Hotspur_Third_Player_Version_-_01.jpg?v=1788707257"
   },
@@ -31275,7 +31275,7 @@
  },
  {
   "handle": "2024-25-tottenham-hotspur-third-player-version",
-  "title": "2024/25 Tottenham Hotspur Third Player Version",
+  "title": "2025/26 Tottenham Hotspur Third Player Version",
   "description": "Yellow third shirt in the player cut with a navy collar and the navy AIA sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -31285,7 +31285,7 @@
    "Tottenham Hotspur"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T03:07:56Z",
+  "updatedAt": "2026-09-11T09:54:30Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Tottenham_Hotspur_Third_Player_Version_-_01.jpg?v=1788707269"
   },
@@ -31788,7 +31788,7 @@
  },
  {
   "handle": "2026-27-juventus-home-fan-version",
-  "title": "2026/27 Juventus Home Fan Version",
+  "title": "2025/26 Juventus Home Fan Version",
   "description": "Black and white hooped home shirt with a black polo collar and the Jeep Visit Detroit sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -31798,7 +31798,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T04:38:31Z",
+  "updatedAt": "2026-09-11T09:54:49Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2026-27_Juventus_Home_Fan_Version_-_01.jpg?v=1788712705"
   },
@@ -31950,7 +31950,7 @@
  },
  {
   "handle": "2025-26-juventus-third-fan-version",
-  "title": "2025/26 Juventus Third Fan Version",
+  "title": "2026/27 Juventus Third Fan Version",
   "description": "Black third shirt with the tonal flame print, gold shoulder stripes and the gold Jeep sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -31960,7 +31960,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T04:38:58Z",
+  "updatedAt": "2026-09-11T09:54:52Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Juventus_Third_Fan_Version_-_01.jpg?v=1788712726"
   },
@@ -31977,7 +31977,7 @@
  },
  {
   "handle": "2024-25-juventus-home-long-sleeve-fan-version",
-  "title": "2024/25 Juventus Home Long Sleeve Fan Version",
+  "title": "2026/27 Juventus Home Long Sleeve Fan Version",
   "description": "Long sleeve black and white striped home shirt with a white collar and the gold Jeep sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -31987,7 +31987,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T04:38:54Z",
+  "updatedAt": "2026-09-11T09:54:50Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Juventus_Home_Long_Sleeve_Fan_Version_-_01.jpg?v=1788712730"
   },
@@ -32004,7 +32004,7 @@
  },
  {
   "handle": "2024-25-juventus-home-fan-version",
-  "title": "2024/25 Juventus Home Fan Version",
+  "title": "2026/27 Juventus Home Fan Version",
   "description": "Black and white striped home shirt with a white collar and the gold Jeep Visit Detroit sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -32014,7 +32014,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T04:38:58Z",
+  "updatedAt": "2026-09-11T09:54:49Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Juventus_Home_Fan_Version_-_01.jpg?v=1788712733"
   },
@@ -32058,7 +32058,7 @@
  },
  {
   "handle": "2025-26-juventus-third-kids-kit",
-  "title": "2025/26 Juventus Third Kids Kit",
+  "title": "2026/27 Juventus Third Kids Kit",
   "description": "Black shirt with the tonal flame print and gold trim, with matching black shorts, sized 2-3 through 10-11.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Kids Kit",
   "tags": [
@@ -32068,7 +32068,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T04:39:04Z",
+  "updatedAt": "2026-09-11T09:54:52Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Juventus_Third_Kids_Kit_-_01.jpg?v=1788712740"
   },
@@ -32139,7 +32139,7 @@
  },
  {
   "handle": "2025-26-juventus-third-player-version",
-  "title": "2025/26 Juventus Third Player Version",
+  "title": "2026/27 Juventus Third Player Version",
   "description": "Black third shirt in the player cut with the tonal flame print and the gold Jeep sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -32149,7 +32149,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T04:39:18Z",
+  "updatedAt": "2026-09-11T09:54:51Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Juventus_Third_Player_Version_-_01.jpg?v=1788712751"
   },
@@ -32166,7 +32166,7 @@
  },
  {
   "handle": "2024-25-juventus-home-player-version",
-  "title": "2024/25 Juventus Home Player Version",
+  "title": "2026/27 Juventus Home Player Version",
   "description": "Black and white striped home shirt in the player cut with the gold Jeep Visit Detroit sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Player Version",
   "tags": [
@@ -32176,7 +32176,7 @@
    "supplied-batch-2026-09-05"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T04:39:18Z",
+  "updatedAt": "2026-09-11T09:54:50Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2024-25_Juventus_Home_Player_Version_-_01.jpg?v=1788712754"
   },
@@ -33435,7 +33435,7 @@
  },
  {
   "handle": "2025-26-ajax-home-fan-version",
-  "title": "2025/26 Ajax Home Fan Version",
+  "title": "2026/27 Ajax Home Fan Version",
   "description": "The red and white halved home shirt with a white collar and the Ziggo sponsor.Imported to order from our supplier. Sizes run small — see the size guide before choosing.",
   "productType": "Fan Version",
   "tags": [
@@ -33445,7 +33445,7 @@
    "supplied-batch-2026-09-06"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T07:32:13Z",
+  "updatedAt": "2026-09-11T09:54:41Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/2025-26_Ajax_Home_Fan_Version_-_01.jpg?v=1788723127"
   },
@@ -33715,7 +33715,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:36Z",
+  "updatedAt": "2026-09-11T09:55:10Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Blue_Half-Zip_Tracksuit_-_01.jpg?v=1788739409"
   },
@@ -33723,7 +33723,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "850.00",
       "availableForSale": true
      }
     }
@@ -33742,7 +33742,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:41Z",
+  "updatedAt": "2026-09-11T09:55:10Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Navy_and_Lime_Half-Zip_Tracksuit_-_01.jpg?v=1788739413"
   },
@@ -33750,7 +33750,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "850.00",
       "availableForSale": true
      }
     }
@@ -33769,7 +33769,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:43Z",
+  "updatedAt": "2026-09-11T09:55:11Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_White_Half-Zip_Tracksuit_-_01.jpg?v=1788739417"
   },
@@ -33777,7 +33777,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "850.00",
       "availableForSale": true
      }
     }
@@ -33796,7 +33796,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:44Z",
+  "updatedAt": "2026-09-11T09:55:12Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Black_and_White_Half-Zip_Tracksuit_-_01.jpg?v=1788739421"
   },
@@ -33804,7 +33804,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "850.00",
       "availableForSale": true
      }
     }
@@ -33823,7 +33823,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:51Z",
+  "updatedAt": "2026-09-11T09:55:12Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Nike_Blue_Half-Zip_Tracksuit_-_01.jpg?v=1788739424"
   },
@@ -33831,7 +33831,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "850.00",
       "availableForSale": true
      }
     }
@@ -33850,7 +33850,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:55Z",
+  "updatedAt": "2026-09-11T09:55:13Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Nike_Black_Half-Zip_Tracksuit_-_01.jpg?v=1788739428"
   },
@@ -33858,7 +33858,7 @@
    "edges": [
     {
      "node": {
-      "price": "700.00",
+      "price": "850.00",
       "availableForSale": true
      }
     }
@@ -33877,7 +33877,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:57Z",
+  "updatedAt": "2026-09-11T09:55:13Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Cream_Originals_Full-Zip_Tracksuit_-_01.jpg?v=1788739432"
   },
@@ -33885,7 +33885,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -33904,7 +33904,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:03:59Z",
+  "updatedAt": "2026-09-11T09:55:14Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Black_Hooded_Full-Zip_Tracksuit_-_01.jpg?v=1788739435"
   },
@@ -33912,7 +33912,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -33931,7 +33931,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:03Z",
+  "updatedAt": "2026-09-11T09:55:15Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Black_Originals_Full-Zip_Tracksuit_-_01.jpg?v=1788739438"
   },
@@ -33939,7 +33939,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -33958,7 +33958,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:07Z",
+  "updatedAt": "2026-09-11T09:55:15Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Black_Full-Zip_Tracksuit_-_01.jpg?v=1788739442"
   },
@@ -33966,7 +33966,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -33985,7 +33985,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:14Z",
+  "updatedAt": "2026-09-11T09:55:16Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Red_Full-Zip_Tracksuit_-_01.jpg?v=1788739445"
   },
@@ -33993,7 +33993,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -34012,7 +34012,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:15Z",
+  "updatedAt": "2026-09-11T09:55:17Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Nike_Black_and_Grey_Full-Zip_Tracksuit_-_01.jpg?v=1788739449"
   },
@@ -34020,7 +34020,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -34039,7 +34039,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:17Z",
+  "updatedAt": "2026-09-11T09:55:17Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Nike_White_and_Blue_Full-Zip_Tracksuit_-_01.jpg?v=1788739453"
   },
@@ -34047,7 +34047,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -34066,7 +34066,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:23Z",
+  "updatedAt": "2026-09-11T09:55:18Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Nike_Red_and_Navy_Full-Zip_Tracksuit_-_01.jpg?v=1788739459"
   },
@@ -34074,7 +34074,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -34093,7 +34093,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:30Z",
+  "updatedAt": "2026-09-11T09:55:19Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Nike_Black_Full-Zip_Tracksuit_-_01.jpg?v=1788739462"
   },
@@ -34101,7 +34101,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -34120,7 +34120,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:33Z",
+  "updatedAt": "2026-09-11T09:55:20Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/Nike_Navy_and_Red_Full-Zip_Tracksuit_-_01.jpg?v=1788739466"
   },
@@ -34128,7 +34128,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }
@@ -34147,7 +34147,7 @@
    "Unbranded Tracksuits"
   ],
   "status": "ACTIVE",
-  "updatedAt": "2026-09-07T12:04:39Z",
+  "updatedAt": "2026-09-11T09:55:20Z",
   "featuredImage": {
    "url": "https://cdn.shopify.com/s/files/1/0841/4127/7399/files/adidas_Black_and_White_Full-Zip_Tracksuit_-_01.jpg?v=1788739469"
   },
@@ -34155,7 +34155,7 @@
    "edges": [
     {
      "node": {
-      "price": "850.00",
+      "price": "1000.00",
       "availableForSale": true
      }
     }

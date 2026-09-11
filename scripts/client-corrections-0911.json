@@ -1,0 +1,405 @@
+{
+  "_": [
+    "The client's WhatsApp corrections of 10 Sep 2026, resolved to handles.",
+    "Every target was confirmed BY EYE against a contact sheet of the live lead",
+    "images (.dupcheck/0911/) before it was written down — titles alone collide.",
+    "",
+    "ops:",
+    "  archive   take the listing off every channel (reversible; never delete)",
+    "  retitle   title only. Season lives in the TITLE and nowhere else — tags",
+    "            carry team + version, not season — so a reseason is one field.",
+    "  reclass   title + productType + version tag + price. Fan<->Player moves",
+    "            the price tier, so the three travel together or the catalogue",
+    "            lies about what it is selling.",
+    "  swapMedia exchange the photographs of two listings that were shot onto",
+    "            each other's product.",
+    "  reprice   variants only.",
+    "",
+    "`inferred: true` marks a change the client did not caption but that their",
+    "caption forces: when they move kit A onto kit B's season, B has to vacate",
+    "or the store carries two listings with one name. These are called out",
+    "separately in the report rather than buried."
+  ],
+  "archive": [
+    {
+      "handle": "manchester-united-2025-26-home-jersey-snapdragon",
+      "why": "\"remove this one and rather put the website's new kit as the shirt sponsor changed for this season\". The 26/27 home is already listed (fan, player, LS, kids)."
+    }
+  ],
+  "swapMedia": [
+    {
+      "a": "liverpool-2026-27-away-long-sleeve-shirt-player-version",
+      "b": "liverpool-2026-27-away-long-sleeve-shirt-fan-version",
+      "why": "\"you swapped fan and player on this one\". Prices and titles are right; the photographs are on the wrong products."
+    }
+  ],
+  "reclass": [
+    {
+      "handle": "liverpool-2013-14-away-retro-jersey-green",
+      "title": "Liverpool Away Jersey (Green) — Salah 11",
+      "productType": "Fan Version",
+      "price": "500.00",
+      "tagOut": "Retro",
+      "tagIn": "Fan Version",
+      "why": "\"this is a normal fan version\" — not a retro. Price follows the tier."
+    },
+    {
+      "handle": "liverpool-2025-26-home-long-sleeve-jersey",
+      "title": "Liverpool 2025/26 Home Long Sleeve Shirt (Player Version)",
+      "productType": "Player Version",
+      "price": "750.00",
+      "tagOut": "Fan Version",
+      "tagIn": "Player Version",
+      "why": "\"this is player\""
+    },
+    {
+      "handle": "liverpool-2025-26-third-jersey",
+      "title": "Liverpool 2025/26 Third Shirt (Player Version)",
+      "productType": "Player Version",
+      "price": "650.00",
+      "tagOut": "Fan Version",
+      "tagIn": "Player Version",
+      "why": "\"this is player version\""
+    },
+    {
+      "handle": "liverpool-2026-27-home-jersey",
+      "title": "Liverpool 2026/27 Home Shirt (Fan Version)",
+      "productType": "Fan Version",
+      "price": "500.00",
+      "tagOut": "Player Version",
+      "tagIn": "Fan Version",
+      "why": "\"this is fan version\""
+    },
+    {
+      "handle": "liverpool-2025-26-training-jersey",
+      "title": "Liverpool 2025/26 Goalkeeper Jersey (Teal)",
+      "productType": "Fan Version",
+      "why": "\"this is a goalkeeper kit\" — it was filed as a training jersey."
+    },
+    {
+      "handle": "arsenal-2025-26-home-long-sleeve-jersey",
+      "title": "2026/27 Arsenal Home Long Sleeve Player Version",
+      "productType": "Player Version",
+      "price": "750.00",
+      "tagOut": "Fan Version",
+      "tagIn": "Player Version",
+      "why": "\"this is player version and it's 26/27 home jersey\" — both corrections at once."
+    },
+    {
+      "handle": "real-madrid-2025-26-home-jersey-ucl-badge",
+      "title": "Real Madrid 2025/26 Home Jersey (UCL badge) — Player Version",
+      "productType": "Player Version",
+      "price": "650.00",
+      "tagOut": "Fan Version",
+      "tagIn": "Player Version",
+      "why": "\"this is player version\""
+    },
+    {
+      "handle": "2022-23-fc-barcelona-home-retro",
+      "title": "2024/25 FC Barcelona Home Fan Version",
+      "productType": "Fan Version",
+      "price": "500.00",
+      "tagOut": "Retro",
+      "tagIn": "Fan Version",
+      "why": "\"24/25 home\" — not a retro. Price follows the tier."
+    },
+    {
+      "handle": "bayern-munich-goalkeeper-jersey-white",
+      "title": "Bayern Munich 2025/26 Away Jersey (White)",
+      "why": "\"away kit 25/26\" / \"these are 25/26 away\" — the white marbled shirt is the away kit, not a goalkeeper jersey. Depends on bayern-munich-2025-26-away-jersey vacating the name."
+    },
+    {
+      "handle": "bayern-munich-goalkeeper-jersey-white-player-version",
+      "title": "Bayern Munich 2025/26 Away Jersey (White) — Player Version",
+      "why": "same garment, player version."
+    },
+    {
+      "handle": "bayern-munich-goalkeeper-long-sleeve-jersey-white",
+      "title": "Bayern Munich 2025/26 Away Long Sleeve Jersey (White)",
+      "why": "same garment, long sleeve.",
+      "inferred": true
+    },
+    {
+      "handle": "fc-barcelona-peach-goalkeeper-player-version",
+      "title": "FC Barcelona Peach Training Shirt",
+      "productType": "Training Set",
+      "price": "700.00",
+      "tagOut": "Player Version",
+      "tagIn": "Training Set",
+      "why": "\"training kit\" — filed as a goalkeeper player version."
+    },
+    {
+      "handle": "fc-barcelona-purple-goalkeeper-player-version",
+      "title": "FC Barcelona Purple Training Shirt",
+      "productType": "Training Set",
+      "price": "700.00",
+      "tagOut": "Player Version",
+      "tagIn": "Training Set",
+      "why": "\"training kit\""
+    }
+  ],
+  "retitle": [
+    {
+      "handle": "bayern-munich-2025-26-away-jersey",
+      "title": "Bayern Munich 2026/27 Third Jersey (Navy Print)",
+      "why": "\"26/27 third\" — and this frees \"2025/26 Away\" for the white marbled shirt."
+    },
+    {
+      "handle": "2025-26-arsenal-home-kids-kit",
+      "title": "2026/27 Arsenal Home Kids Kit",
+      "why": "\"this is 26/27 home\""
+    },
+    {
+      "handle": "2025-26-arsenal-away-player-version",
+      "title": "2025/26 Arsenal Third Player Version",
+      "why": "\"this is a third kit\" / \"25/26 third\""
+    },
+    {
+      "handle": "arsenal-cream-away-fan-version",
+      "title": "2025/26 Arsenal Third Fan Version",
+      "why": "\"those two crème brown is 25/26 third\""
+    },
+    {
+      "handle": "arsenal-cream-away-long-sleeve-fan-version",
+      "title": "2025/26 Arsenal Third Long Sleeve Fan Version",
+      "why": "\"those two crème brown is 25/26 third\""
+    },
+    {
+      "handle": "arsenal-cream-away-player-version",
+      "title": "2025/26 Arsenal Third Player Version (Cream)",
+      "why": "same cream kit, player version",
+      "inferred": true
+    },
+    {
+      "handle": "arsenal-cream-away-kids-kit",
+      "title": "2025/26 Arsenal Third Kids Kit",
+      "why": "same cream kit, kids",
+      "inferred": true
+    },
+    {
+      "handle": "arsenal-2024-25-half-zip-training-top",
+      "title": "Arsenal 2025/26 Half-Zip Training Top",
+      "why": "\"these are 25/26 training items\""
+    },
+    {
+      "handle": "arsenal-2024-25-training-hoodie-blue",
+      "title": "Arsenal 2025/26 Training Hoodie (blue)",
+      "why": "\"these are 25/26 training items\""
+    },
+    {
+      "handle": "arsenal-2024-25-track-jacket-blue",
+      "title": "Arsenal 2025/26 Track Jacket (blue)",
+      "why": "\"these are 25/26 training items\""
+    },
+    {
+      "handle": "2024-25-tottenham-hotspur-third-fan-version",
+      "title": "2025/26 Tottenham Hotspur Third Fan Version",
+      "why": "\"25/26 third\" — the yellow kit"
+    },
+    {
+      "handle": "2025-26-tottenham-hotspur-third-fan-version",
+      "title": "2024/25 Tottenham Hotspur Away Fan Version",
+      "why": "\"24/25 away\" — the light-blue kit. Swaps with the line above."
+    },
+    {
+      "handle": "2024-25-tottenham-hotspur-third-player-version",
+      "title": "2025/26 Tottenham Hotspur Third Player Version",
+      "why": "\"25/26 third kit\""
+    },
+    {
+      "handle": "2025-26-tottenham-hotspur-third-player-version",
+      "title": "2024/25 Tottenham Hotspur Away Player Version",
+      "why": "\"24/25 away\""
+    },
+    {
+      "handle": "2024-25-tottenham-hotspur-third-kids-kit",
+      "title": "2025/26 Tottenham Hotspur Third Kids Kit",
+      "why": "\"25/26 third\""
+    },
+    {
+      "handle": "2024-25-tottenham-hotspur-away-fan-version",
+      "title": "2026/27 Tottenham Hotspur Away Fan Version",
+      "why": "\"26/27 away\" — the black kit"
+    },
+    {
+      "handle": "2024-25-tottenham-hotspur-home-long-sleeve-fan-version",
+      "title": "2026/27 Tottenham Hotspur Home Long Sleeve Fan Version",
+      "why": "\"26/27 home\""
+    },
+    {
+      "handle": "manchester-city-2025-26-home-jersey-etihad",
+      "title": "Manchester City 2026/27 Home Jersey (Etihad)",
+      "why": "\"26/27 home\""
+    },
+    {
+      "handle": "2026-27-manchester-city-home-fan-version",
+      "title": "2025/26 Manchester City Home Fan Version",
+      "why": "the sash kit is 25/26 — forced by the player/LS corrections below",
+      "inferred": true
+    },
+    {
+      "handle": "2025-26-manchester-city-home-player-version",
+      "title": "2026/27 Manchester City Home Player Version",
+      "why": "\"26/27 season\" — the fade kit"
+    },
+    {
+      "handle": "2026-27-manchester-city-home-player-version",
+      "title": "2025/26 Manchester City Home Player Version",
+      "why": "the sash kit is 25/26",
+      "inferred": true
+    },
+    {
+      "handle": "2025-26-manchester-city-home-long-sleeve-player-version",
+      "title": "2026/27 Manchester City Home Long Sleeve Player Version",
+      "why": "\"26/27 season\""
+    },
+    {
+      "handle": "2026-27-manchester-city-home-long-sleeve-player-version",
+      "title": "2025/26 Manchester City Home Long Sleeve Player Version",
+      "why": "\"25/26 season\""
+    },
+    {
+      "handle": "2025-26-manchester-city-home-kids-kit",
+      "title": "2026/27 Manchester City Home Kids Kit",
+      "why": "\"26/27 home\""
+    },
+    {
+      "handle": "manchester-city-2024-25-training-tracksuit",
+      "title": "Manchester City 2025/26 Training Tracksuit",
+      "why": "\"25/26 tracksuit\""
+    },
+    {
+      "handle": "nottingham-forest-2025-26-away-jersey-ballys",
+      "title": "Nottingham Forest 2026/27 Away Jersey (Bally's)",
+      "why": "\"26/27 season\""
+    },
+    {
+      "handle": "2025-26-fc-barcelona-away-player-version",
+      "title": "2024/25 FC Barcelona Away Player Version",
+      "why": "\"24/25 season\""
+    },
+    {
+      "handle": "2025-26-fc-barcelona-away-fan-version",
+      "title": "2024/25 FC Barcelona Away Fan Version",
+      "why": "\"24/25 away\""
+    },
+    {
+      "handle": "2025-26-ajax-home-fan-version",
+      "title": "2026/27 Ajax Home Fan Version",
+      "why": "\"26/27 home\""
+    },
+    {
+      "handle": "2025-26-paris-saint-germain-home-fan-version",
+      "title": "2026/27 Paris Saint-Germain Home Fan Version",
+      "why": "\"26/27 home\" — frees 25/26 for the 24/25 listings"
+    },
+    {
+      "handle": "2025-26-paris-saint-germain-home-long-sleeve-fan-version",
+      "title": "2026/27 Paris Saint-Germain Home Long Sleeve Fan Version",
+      "why": "\"26/27 home\"",
+      "inferred": true
+    },
+    {
+      "handle": "paris-saint-germain-2024-25-home-jersey",
+      "title": "Paris Saint-Germain 2025/26 Home Jersey",
+      "why": "\"25/26 home\""
+    },
+    {
+      "handle": "2024-25-paris-saint-germain-home-long-sleeve-fan-version",
+      "title": "2025/26 Paris Saint-Germain Home Long Sleeve Fan Version",
+      "why": "\"25/26 home\""
+    },
+    {
+      "handle": "2024-25-paris-saint-germain-home-fan-version",
+      "title": "2025/26 Paris Saint-Germain Home Fan Version",
+      "why": "same kit as the LS above",
+      "inferred": true
+    },
+    {
+      "handle": "2024-25-paris-saint-germain-fourth-long-sleeve-fan-version",
+      "title": "2025/26 Paris Saint-Germain Fourth Long Sleeve Fan Version",
+      "why": "\"25/26\""
+    },
+    {
+      "handle": "2024-25-paris-saint-germain-fourth-fan-version",
+      "title": "2025/26 Paris Saint-Germain Fourth Fan Version",
+      "why": "\"25/26\""
+    },
+    {
+      "handle": "2024-25-paris-saint-germain-fourth-kids-kit",
+      "title": "2025/26 Paris Saint-Germain Fourth Kids Kit",
+      "why": "\"25/26 season\""
+    },
+    {
+      "handle": "2024-25-paris-saint-germain-fourth-pinstripe-player-version",
+      "title": "2025/26 Paris Saint-Germain Fourth Pinstripe Player Version",
+      "why": "\"25/26 season\""
+    },
+    {
+      "handle": "2025-26-paris-saint-germain-home-kids-kit",
+      "title": "2026/27 Paris Saint-Germain Home Kids Kit",
+      "why": "\"26/27 home\""
+    },
+    {
+      "handle": "2026-27-juventus-home-fan-version",
+      "title": "2025/26 Juventus Home Fan Version",
+      "why": "\"25/26\" — the hooped polo"
+    },
+    {
+      "handle": "2024-25-juventus-home-fan-version",
+      "title": "2026/27 Juventus Home Fan Version",
+      "why": "\"26/27 season\" — takes the name the hooped polo vacates"
+    },
+    {
+      "handle": "2024-25-juventus-home-long-sleeve-fan-version",
+      "title": "2026/27 Juventus Home Long Sleeve Fan Version",
+      "why": "\"26/27 season\""
+    },
+    {
+      "handle": "2024-25-juventus-home-player-version",
+      "title": "2026/27 Juventus Home Player Version",
+      "why": "\"26/27\""
+    },
+    {
+      "handle": "2025-26-juventus-third-player-version",
+      "title": "2026/27 Juventus Third Player Version",
+      "why": "\"26/27\""
+    },
+    {
+      "handle": "2025-26-juventus-third-fan-version",
+      "title": "2026/27 Juventus Third Fan Version",
+      "why": "\"26/27\""
+    },
+    {
+      "handle": "2025-26-juventus-third-kids-kit",
+      "title": "2026/27 Juventus Third Kids Kit",
+      "why": "\"26/27\""
+    }
+  ],
+  "reprice": [
+    {
+      "match": "Plain Tracksuit",
+      "contains": "Half-Zip",
+      "price": "850.00",
+      "why": "\"also these tracksuits, half zip R850\" — was R700"
+    },
+    {
+      "match": "Plain Tracksuit",
+      "contains": "Full-Zip",
+      "price": "1000.00",
+      "why": "\"full zip R1000\" — was R850"
+    }
+  ],
+  "questions": [
+    "INTER MIAMI — the same salmon-pink home shirt is captioned \"2026\" in one screenshot and \"2025\" in the next. `2025 Inter Miami Home Player Version` and `2026 Inter Miami Home Player Version` are both live and are different garments (solid vs striped). Which is which?",
+    "LIVERPOOL PRE-MATCH (Black Check) — \"this is a third kit\", but no season given. Which one?",
+    "LIVERPOOL 25/26 AWAY LONG SLEEVE — \"player version\", but `liverpool-2025-26-away-long-sleeve-shirt-player-version` is already live at R750. Is the R600 fan listing a duplicate to archive, or a genuinely different shirt?",
+    "REAL MADRID — `Real Madrid 2024/25 Third Jersey` is, on the photographs, the same white/maroon-collar shirt as `2026/27 Real Madrid Home Shirt`. Renaming it makes two listings of one kit. Archive the older one?",
+    "FC BARCELONA — `FC Barcelona 2024/25 Home Jersey (Spotify)` → \"26/27 home\" collides with `2026/27 FC Barcelona Home Fan Version`. Same shirt, or two?",
+    "MANCHESTER UNITED — nine corrections rotate away/third across 24/25, 25/26 and 26/27 and I cannot close the chain from the captions alone without creating duplicates. Held back entirely.",
+    "NATIONAL SIDES — England, Netherlands, Italy, Argentina, Portugal, Brazil, France and South Africa are all \"this is the 2026 kit\", but each country already carries a `2026 World Cup ...` or unseasoned listing. These read as duplicate listings of one garment rather than renames. Held back.",
+    "AC MILAN home player — the client says `2024/25 AC Milan Home Player Version` is the 26/27 kit, but `2026/27 AC Milan Home Player Version` is already live and the photographs show a DIFFERENT shirt (patterned black stripes + MS sleeve badge vs plain black stripes). Both the short- and long-sleeve pairs clash. Which of the two is the real 26/27 home?",
+    "JUVENTUS away — the client says the pink `2023/24 Juventus Away` kit (fan, player, LS player, kids) is 26/27, but `2026/27 Juventus Away Player Version` is already live and is a completely different shirt (black, Jeep 'Visit Detroit'). The whole pink away group is held so it does not end up split across two seasons. Which one is the 26/27 away?",
+    "JUVENTUS home — the client's \"26/27\" caption covered a grid holding two DIFFERENT home shirts: `2024/25 Juventus Home Fan Version` (thin stripes, Jeep 'Visit Detroit') and `2023/24 Juventus Home Fan Version` (wide stripes, no Detroit). Only one can be the 26/27 home. I moved the Visit Detroit one and held the other. Which is right?"
+  ]
+}
