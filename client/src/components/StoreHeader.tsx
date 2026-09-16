@@ -1,3 +1,4 @@
+import FooterSection5 from "@/components/ui/footer-section-5";
 import { useCart } from "@/contexts/CartContext";
 import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT, textMatchProducts } from "@/lib/catalog";
 import { applyRail, EMPTY_RAIL } from "@/lib/facets";
@@ -213,24 +214,7 @@ export function StoreHeader() {
   );
 }
 
+/** The shared site footer; the component itself lives in ui/footer-section-5. */
 export function StoreFooter() {
-  return (
-    <footer className="site-footer">
-      <div className="site-footer__brand">Stadium<br />Supply</div>
-      <div className="site-footer__meta">
-        <p>Curated football culture<br />from every era.</p>
-        <Link href="/how-it-works">How it works ↗</Link>
-        <Link href="/reviews">Read our reviews ↗</Link>
-        <Link href="/shipping">Shipping ↗</Link>
-        <Link href="/size-guide">Size guide ↗</Link>
-        <Link href="/returns">Returns &amp; refunds ↗</Link>
-        <Link href="/privacy">Privacy ↗</Link>
-        <Link href="/terms">Terms ↗</Link>
-        <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a>
-        <a href={TIKTOK_URL} target="_blank" rel="noreferrer">TikTok @stadium_supply ↗</a>
-        <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram @stadium.supply ↗</a>
-      </div>
-      <div className="site-footer__legal">© {new Date().getFullYear()} Stadium Supply<br />All rights reserved.</div>
-    </footer>
-  );
+  return <FooterSection5 />;
 }

@@ -775,3 +775,37 @@ body { font-family:"Manrope",Arial,sans-serif; }
 }
 .size-guide-dialog__more { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:14px; padding:15px 26px; background:#12192c; color:#f8f7f1; font:400 10px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.06em; }
 .policy__link { display:inline-flex; align-items:center; gap:8px; margin-top:2px; padding-bottom:4px; border-bottom:1px solid rgba(18,25,44,.55); font:400 10px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.06em; }
+
+/* ---- Footer (ui/footer-section-5) ----------------------------------------
+   Outlined wordmark on the cream page, then a navy panel textured by a
+   fluted-glass WebGL shader. The wordmark tucks behind the panel's top edge. */
+.ss-footer { position:relative; overflow:hidden; background:var(--background,#f8f7f1); color:#f8f7f1; }
+.ss-footer__wordmark { position:relative; z-index:0; display:flex; justify-content:center; padding:96px 16px 0; margin-bottom:-.14em; font:900 clamp(40px,7.6vw,150px)/.8 var(--font-stadium); letter-spacing:-.05em; text-transform:uppercase; white-space:nowrap; color:transparent; -webkit-text-stroke:1px rgba(16,33,60,.45); user-select:none; }
+.ss-footer__panel { position:relative; z-index:1; background:#10213c; min-height:400px; }
+.ss-footer__shader { position:absolute; inset:0; pointer-events:none; }
+.ss-footer__content { position:relative; z-index:1; max-width:1600px; margin:0 auto; padding:88px 32px 40px; display:flex; justify-content:space-between; gap:48px; }
+.ss-footer__intro { display:flex; flex-direction:column; justify-content:space-between; gap:48px; max-width:380px; }
+.ss-footer__crest { display:block; width:44px; height:44px; margin-bottom:22px; }
+.ss-footer__tagline { margin:0; max-width:14em; font:400 clamp(18px,1.7vw,24px)/1.05 var(--font-stadium); text-wrap:balance; letter-spacing:-.05em; text-transform:uppercase; }
+.ss-footer__socials { display:flex; gap:18px; margin-bottom:14px; }
+.ss-footer__socials a { display:grid; place-items:center; width:26px; height:26px; opacity:.85; transition:opacity .18s ease; }
+.ss-footer__socials a:hover { opacity:1; }
+.ss-footer__socials svg { width:24px; height:24px; }
+.ss-footer__legal { margin:0; font-size:12px; opacity:.65; }
+.ss-footer__columns { display:flex; gap:clamp(40px,7vw,112px); }
+.ss-footer__column h3 { margin:0 0 20px; font:400 13px/1 var(--font-stadium); letter-spacing:-.02em; text-transform:uppercase; }
+.ss-footer__column ul { list-style:none; margin:0; padding:0; display:grid; gap:13px; }
+.ss-footer__column a { font-size:14px; font-weight:500; color:rgba(248,247,241,.7); transition:color .18s ease; white-space:nowrap; }
+.ss-footer__column a:hover { color:#f8f7f1; }
+.ss-footer a:focus-visible { outline:2px solid #f8f7f1; outline-offset:3px; }
+@media (max-width:1000px) {
+  .ss-footer__content { flex-direction:column; padding:64px 20px 32px; }
+  .ss-footer__intro { display:contents; }
+  .ss-footer__columns { order:1; }
+  .ss-footer__bottom { order:2; }
+}
+@media (max-width:850px) {
+  .ss-footer__wordmark { padding-top:64px; font-size:clamp(22px,7.4vw,60px); }
+  .ss-footer__content { gap:44px; }
+  .ss-footer__columns { flex-wrap:wrap; gap:36px 48px; }
+}
