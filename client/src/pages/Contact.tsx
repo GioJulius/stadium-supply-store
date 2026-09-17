@@ -1,6 +1,6 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
-import { EMAIL_ADDRESS, INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
+import { COMPANY, EMAIL_ADDRESS, INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
 
@@ -41,6 +41,16 @@ export default function Contact() {
               <span>{channel.cta} <ArrowUpRight size={16} /></span>
             </a>
           ))}
+        </section>
+
+        <section className="company-details" aria-label="Company details">
+          <p className="section-index">Company details</p>
+          <dl>
+            <div><dt>Legal entity</dt><dd>{COMPANY.legalName}</dd></div>
+            <div><dt>Trading as</dt><dd>{COMPANY.tradingName}</dd></div>
+            <div><dt>Registration no.</dt><dd>{COMPANY.registrationNumber}</dd></div>
+            <div><dt>Address</dt><dd>{COMPANY.address}</dd></div>
+          </dl>
         </section>
 
         <section className="instagram-section">

@@ -122,6 +122,20 @@ export const INSTAGRAM_URL = "https://www.instagram.com/stadium.supply/";
 export const TIKTOK_URL = "https://www.tiktok.com/@stadium_supply";
 /** Published on the TikTok profile, for people who would rather write than chat. */
 export const EMAIL_ADDRESS = "stadiumsupply@outlook.com";
+
+/**
+ * The legal entity behind the shop, as the client gave it from the CIPC record.
+ * The ECT Act (s43) requires an online seller to publish these, and payment
+ * providers match them against the merchant application. VAT number deliberately
+ * absent: the number supplied starts with 9, which is an income tax reference
+ * format, not VAT (VAT numbers start with 4) — do not publish it as VAT.
+ */
+export const COMPANY = {
+  legalName: "Stadium Supply (Pty) Ltd",
+  tradingName: "Stadium Supply",
+  registrationNumber: "2026/342617/07",
+  address: "10 Denneboom Street, Kariega, 6241, Eastern Cape, South Africa",
+} as const;
 /** The shop's "reviews" story highlight — real buyers, in their own words. */
 export const REVIEWS_URL = "https://www.instagram.com/stories/highlights/17856584361642350/";
 
