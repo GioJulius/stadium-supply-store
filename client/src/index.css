@@ -789,3 +789,8 @@ body { font-family:"Manrope",Arial,sans-serif; }
   .ss-footer__content { gap:44px; }
   .ss-footer__columns { flex-wrap:wrap; gap:36px 48px; }
 }
+
+.hero-section__disclosure { margin:14px 0 22px; max-width:340px; font:11px/1.5 "DM Mono",monospace; text-transform:uppercase; letter-spacing:.02em; }
+.product-replica { font-weight:600; }
+.cart-drawer__footer > p.cart-drawer__replica { margin:12px 0 10px; opacity:.8; }
+.cart-drawer__replica a { text-decoration:underline; }

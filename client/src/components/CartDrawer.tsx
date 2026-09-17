@@ -119,6 +119,9 @@ export function CartDrawer() {
             <span>Total</span>
             <strong>{items.length ? formatMoney({ amount: estimatedTotal.toFixed(2), currencyCode }) : "—"}</strong>
           </div>
+          <p className="cart-drawer__replica">
+            All kits are replicas, not official club merchandise. By checking out you agree to our <Link href="/terms" onClick={closeCart}>terms</Link>.
+          </p>
           <button className="checkout-button" disabled={!items.length || loading} onClick={proceedToCheckout}>Secure checkout <span>↗</span></button>
           <p className="cart-drawer__reassure">Or keep shopping — nothing is lost.</p>
         </div>
