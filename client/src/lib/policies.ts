@@ -8,9 +8,10 @@
  * weekly supplier batch, the 10–15 business day lead time, the R50 printing and badge add-ons —
  * and from the statutory positions those facts sit inside.
  *
- * Two deliberate silences. Nothing claims the kits are officially licensed
- * merchandise, because the catalogue cannot support that. Nothing mentions VAT,
- * because whether the client is registered is not ours to assume.
+ * The kits are disclosed as replicas in so many words, in the terms and on every
+ * product page — payment providers read the site before approving it, and a
+ * shopper should never have to infer it. Nothing mentions VAT, because whether
+ * the client is registered is not ours to assume.
  *
  * THIS COPY NEEDS THE CLIENT'S SIGN-OFF BEFORE LAUNCH. It is an honest, careful
  * draft, not legal advice, and the refund turnaround in particular is a promise
@@ -163,6 +164,15 @@ export const TERMS: Policy = {
       ],
     },
     {
+      heading: "How you can pay",
+      body: [
+        "Payment is taken on Shopify's secure checkout. The payment methods available to you are shown there before you confirm your order.",
+        "If you pay by EFT or bank deposit, use your order number as the payment reference. Your order is confirmed once the money reflects in our business account, and it goes on the next Friday supplier order after that.",
+        "Card payments are processed by our payment provider on their own secure, PCI-DSS compliant platform. We never see or store your card details.",
+        "All transactions are in South African rand (ZAR).",
+      ],
+    },
+    {
       heading: "How long it takes",
       body: [
         "We do not hold stock. Every piece is ordered from our supplier for you, in one batch placed every Friday at 12:00. Stock usually reaches us in 10 to 15 business days from that order, and your parcel goes out the same week it lands.",
@@ -172,6 +182,7 @@ export const TERMS: Policy = {
     {
       heading: "The kits themselves",
       body: [
+        "Our kits are replicas — stadium and fan versions made by independent manufacturers, not official club, national-team or brand merchandise. They are not licensed by, endorsed by, or affiliated with any club, federation, league or kit manufacturer, and team names and crests are used only to describe which kit a replica is. By ordering, you confirm that you understand you are buying a replica.",
         "We describe every kit as accurately as we can — the club, the season, and whether it is a fan version, a player version or a retro reissue. Colours can read slightly differently between a screen and daylight.",
         "Sizing follows our supplier's cut, which runs closer to the body than South African high-street sizing. Our size guide is there to help you choose, and we would rather answer a question before you order than process a return after.",
       ],
