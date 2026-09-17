@@ -64,9 +64,9 @@ function clip(text, max) {
 
 const STATIC_ROUTES = [
   { path: "/", title: "Stadium Supply — Football, collected.",
-    description: "Football, rugby and F1 kits delivered anywhere in South Africa for a flat R100. Fan, player and retro versions, S to 5XL, with name, number and badge printing.", priority: "1.0" },
+    description: "Replica football, rugby and F1 kits delivered anywhere in South Africa for a flat R100. Fan, player and retro versions, S to 5XL, with name, number and badge printing.", priority: "1.0" },
   { path: "/shop", title: "Shop all kits",
-    description: "Every kit in stock — football, rugby and F1. Fan, player and retro versions from S to 5XL, delivered anywhere in South Africa for R100.", priority: "0.9" },
+    description: "Every replica kit — football, rugby and F1. Fan, player and retro versions from S to 5XL, delivered anywhere in South Africa for R100.", priority: "0.9" },
   { path: "/how-it-works", title: "How it works",
     description: "We order every piece from our supplier once your payment lands. Stock reaches us in 10–15 business days, then ships straight to your door.", priority: "0.7" },
   { path: "/shipping", title: "Shipping & delivery",
@@ -202,12 +202,14 @@ for (const p of live) {
   const image = p.featuredImage?.url || SHARE_CARD;
   writeRoute(`/product/${p.handle}`, render({
     title: `${p.title} | Stadium Supply`,
-    description: p.description || `${p.title} from Stadium Supply, delivered anywhere in South Africa for a flat R100.`,
+    // "Replica" leads every product's search and share description: Google and
+    // WhatsApp previews show this text to people who never reach the page.
+    description: `Replica. ${p.description || `${p.title} from Stadium Supply, delivered anywhere in South Africa for a flat R100.`}`,
     url, image, type: "product",
     jsonLd: {
       "@context": "https://schema.org", "@type": "Product",
       name: p.title, image: [image],
-      description: clip(p.description || p.title, 400),
+      description: clip(`Replica, not official club merchandise. ${p.description || p.title}`, 400),
       category: p.productType || undefined,
       brand: { "@type": "Brand", name: "Stadium Supply" },
       offers: {

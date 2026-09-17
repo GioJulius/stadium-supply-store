@@ -164,10 +164,11 @@ export default function Home() {
           )}
           <div className="hero-section__veil" />
           <div className="hero-section__frame" aria-hidden="true"><span /><span /><span /><span /></div>
-          <div className="hero-section__meta"><p>001 / SS-26</p><p>Curated sport culture</p></div>
+          <div className="hero-section__meta"><p>001 / SS-26</p><p>Replica kits / SA</p></div>
           <div className="hero-section__content scroll-reveal scroll-reveal--hero" data-scroll-reveal>
             <p className="hero-section__kicker">From the stands<br />to the streets</p>
             <h1>Wear the<br /><em>game.</em></h1>
+            <p className="hero-section__disclosure">Replica football, rugby and F1 kits, delivered anywhere in SA.</p>
             <Link href="/shop" className="hero-cta"><span>Shop new arrivals</span><ArrowDownRight size={22} /></Link>
           </div>
           <p className="hero-section__side">Football archive / 2026</p>
@@ -186,7 +187,7 @@ export default function Home() {
         <section className="moving-line" aria-label="Brand message"><div><span>Football lives here</span><i>✦</i><span>Rare shirts, real stories</span><i>✦</i><span>Stadium Supply</span><i>✦</i><span>Football lives here</span></div></section>
 
         <section className="latest-section">
-          <div className="section-heading scroll-reveal" data-scroll-reveal><p className="section-index">01 / Latest drop</p><div><h2>New<br /><em>arrivals.</em></h2><p>Selected pieces, ready for their next chapter.</p></div></div>
+          <div className="section-heading scroll-reveal" data-scroll-reveal><p className="section-index">01 / Latest drop</p><div><h2>New<br /><em>arrivals.</em></h2><p>The latest replica kits, ordered for you every Friday.</p></div></div>
           {isLoading ? <div className="product-loading product-loading--compact"><LoaderCircle className="spin" size={23} /> Loading pieces</div> : latest.length ? <div className="latest-grid">{latest.map((product, index) => <ProductCard key={product.id} product={product} featured={index === 0} />)}</div> : <div className="shop-empty"><p>The next drop is being prepared.</p><Link href="/shop">Visit the archive</Link></div>}
           <Link href="/shop" className="outline-cta">View the archive <ArrowUpRight size={17} /></Link>
         </section>
@@ -206,11 +207,11 @@ export default function Home() {
         </section>
 
         <section className="assurance-section">
-          <div className="assurance-section__heading"><p className="section-index">04 / Our standard</p><h2>Keep it<br /><em>authentic.</em></h2></div>
+          <div className="assurance-section__heading"><p className="section-index">04 / Our standard</p><h2>Replica kits,<br /><em>done properly.</em></h2></div>
           <div className="assurance-list">
-            <article><Check size={18} /><h3>Curated condition</h3><p>Clear grading and honest detail, piece by piece.</p></article>
-            <article><Check size={18} /><h3>Global sourcing</h3><p>Original sport culture found across eras and borders.</p></article>
-            <article><Check size={18} /><h3>Made to be worn</h3><p>For the terraces, the streets, and everywhere in between.</p></article>
+            <article><Check size={18} /><h3>Said plainly</h3><p>Every kit is a replica, not official club merchandise, and every listing says whether it is a fan, player or retro version.</p></article>
+            <article><Check size={18} /><h3>Ordered for you</h3><p>We place one order with our supplier every Friday, and it reaches you 10–15 business days later.</p></article>
+            <article><Check size={18} /><h3>Made yours</h3><p>Add a name, number or competition badge for R50 each, printed exactly as you type it.</p></article>
           </div>
         </section>
 

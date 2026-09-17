@@ -22,8 +22,7 @@ import { Link, useRoute } from "wouter";
 
 function detailFromTags(product: Product) {
   const size = product.tags.find(tag => tag.toLowerCase().startsWith("size "))?.replace(/^size\s*/i, "") ?? "One size";
-  const condition = product.tags.find(tag => tag.toLowerCase().includes("condition")) ?? "Curated condition";
-  return { size, condition };
+  return { size };
 }
 
 /**
@@ -97,7 +96,6 @@ function ProductView({ product }: { product: Product }) {
 
   const variant = product.variants.find(candidate => candidate.id === selectedVariantId) ?? product.variants[0];
   const image = product.images[selectedImageIndex] ?? product.images[0];
-  const { condition } = detailFromTags(product);
   // Shopify returns the option values in the order they were created, which
   // on imported products is often alphabetical — "M, L, XL … S" puts small
   // last. Sort them the way a size run actually reads.
@@ -181,7 +179,7 @@ function ProductView({ product }: { product: Product }) {
           <h1>{product.title}</h1>
           <p className="product-price">{formatMoney(variant?.price ?? product.priceRange.min)}</p>
           <p className="product-availability">
-            {variant?.availableForSale ? "In stock" : "Sold out"} · flat {SHIPPING_RATE} delivery anywhere in SA
+            <strong className="product-replica">Replica</strong> · {variant?.availableForSale ? "In stock" : "Sold out"} · flat {SHIPPING_RATE} delivery anywhere in SA
           </p>
 
           {siblings.length ? (
@@ -354,12 +352,11 @@ function ProductView({ product }: { product: Product }) {
 
           {descriptionParagraphs.length
             ? descriptionParagraphs.map(paragraph => <p key={paragraph} className="product-description">{paragraph}</p>)
-            : <p className="product-description">A carefully sourced piece from the Stadium Supply archive.</p>}
+            : <p className="product-description">A replica kit, ordered from our supplier for you once your payment lands.</p>}
 
           <dl className="product-specs">
-            <div><dt>Condition</dt><dd>{condition}</dd></div>
             <div><dt>Delivery</dt><dd>Flat {SHIPPING_RATE}, door to door</dd></div>
-            <div><dt>Source</dt><dd>Imported</dd></div>
+            <div><dt>Source</dt><dd>Made to order by our supplier</dd></div>
             <div><dt>Authenticity</dt><dd>Replica, not official club merchandise · <Link href="/terms">Terms</Link></dd></div>
           </dl>
         </section>

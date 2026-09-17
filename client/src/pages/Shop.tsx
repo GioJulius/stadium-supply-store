@@ -185,7 +185,7 @@ export default function Shop() {
           ) : (
             <>
               <h1>Football,<br /><em>collected.</em></h1>
-              <p>Rare shirts, cult classics, and contemporary drops selected for the way they carry the game beyond matchday.</p>
+              <p>Replica football, rugby and F1 kits in fan, player and retro versions. All kits are replicas, not official club merchandise.</p>
             </>
           )}
         </section>
