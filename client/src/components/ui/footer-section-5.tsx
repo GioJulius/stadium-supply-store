@@ -1,4 +1,4 @@
-import { INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
+import { COMPANY, INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
 import { FlutedGlass } from "@paper-design/shaders-react";
 import { MessageCircle } from "lucide-react";
 import { Link } from "wouter";
@@ -114,7 +114,11 @@ export default function FooterSection5() {
                   <TikTokIcon />
                 </a>
               </div>
-              <p className="ss-footer__legal">© {new Date().getFullYear()} Stadium Supply. All rights reserved.</p>
+              <p className="ss-footer__legal">
+                © {new Date().getFullYear()} {COMPANY.legalName}. All rights reserved.
+                <br />
+                Reg. {COMPANY.registrationNumber} · {COMPANY.address}
+              </p>
             </div>
           </div>
 

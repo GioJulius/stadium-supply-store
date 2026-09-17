@@ -32,6 +32,8 @@ export type Policy = {
   sections: PolicySection[];
 };
 
+import { COMPANY, EMAIL_ADDRESS } from "@/lib/storeInfo";
+
 const CONTACT_LINE =
   "The fastest way to reach us is WhatsApp on 068 830 7605. You can also email stadiumsupply@outlook.com or message us on Instagram or TikTok.";
 
@@ -204,6 +206,15 @@ export const TERMS: Policy = {
       body: [
         "These terms are governed by the law of the Republic of South Africa. Nothing here takes away rights the Consumer Protection Act or the Electronic Communications and Transactions Act give you.",
         CONTACT_LINE,
+      ],
+    },
+    {
+      heading: "Company details",
+      body: [
+        `This website is operated by ${COMPANY.legalName}, trading as ${COMPANY.tradingName}, which takes full responsibility for every sale, customer support and delivery.`,
+        `Legal entity: ${COMPANY.legalName}. Trading name: ${COMPANY.tradingName}. Registration number: ${COMPANY.registrationNumber}.`,
+        `Physical address: ${COMPANY.address}.`,
+        `Email: ${EMAIL_ADDRESS}. WhatsApp: 068 830 7605. Country: South Africa. Transaction currency: South African rand (ZAR).`,
       ],
     },
   ],
