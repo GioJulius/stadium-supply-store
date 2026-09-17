@@ -126,8 +126,9 @@ export const EMAIL_ADDRESS = "stadiumsupply@outlook.com";
 /**
  * The legal entity behind the shop, as the client gave it from the CIPC record.
  * The ECT Act (s43) requires an online seller to publish these, and payment
- * providers match them against the merchant application. Checked against the
- * COR14.3 certificate (registered 29 Apr 2026). No VAT number: 9802779190 on that
+ * providers match them against the merchant application. Postal code is 6241,
+ * which is what both Standard Bank documents carry and what the owner confirmed;
+ * the COR14.3 certificate says 6229 for the same street. No VAT number: 9802779190 on that
  * certificate is labelled "TAX Number" — the income tax reference — and a VAT
  * number (issued by SARS, starts with 4) has not been supplied.
  */
@@ -135,7 +136,7 @@ export const COMPANY = {
   legalName: "Stadium Supply (Pty) Ltd",
   tradingName: "Stadium Supply",
   registrationNumber: "2026/342617/07",
-  address: "10 Denneboom Street, Kariega, 6229, Eastern Cape, South Africa",
+  address: "10 Denneboom Street, Thomas Gamble, Kariega, Eastern Cape, 6241, South Africa",
 } as const;
 /** The shop's "reviews" story highlight — real buyers, in their own words. */
 export const REVIEWS_URL = "https://www.instagram.com/stories/highlights/17856584361642350/";
