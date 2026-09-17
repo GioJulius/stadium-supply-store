@@ -360,6 +360,7 @@ function ProductView({ product }: { product: Product }) {
             <div><dt>Condition</dt><dd>{condition}</dd></div>
             <div><dt>Delivery</dt><dd>Flat {SHIPPING_RATE}, door to door</dd></div>
             <div><dt>Source</dt><dd>Imported</dd></div>
+            <div><dt>Authenticity</dt><dd>Replica, not official club merchandise · <Link href="/terms">Terms</Link></dd></div>
           </dl>
         </section>
       </div>
