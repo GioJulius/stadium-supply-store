@@ -91,7 +91,7 @@ export const RETURNS: Policy = {
     {
       heading: "Getting your money back",
       body: [
-        "Refunds go back to the method you paid with. Once we have approved a return we process the refund on our side promptly; how quickly it appears then depends on your bank or card issuer.",
+        "Refunds go back to the method you paid with. Once we have approved a return we process the refund on our side promptly; how quickly it appears then depends on your bank.",
         "The original R100 delivery charge is refunded too when the fault was ours.",
       ],
     },
@@ -110,7 +110,7 @@ export const PRIVACY: Policy = {
       heading: "What we collect",
       body: [
         "Your name, delivery address, email address and phone number, so we can take your order and get the parcel to you. Alongside that we keep the order itself: the items, sizes, and any name, number or badge you asked us to print.",
-        "We never see or store your card details. Payment is handled entirely by our payment provider on their own secure checkout.",
+        "We never see or store your banking details. Payment is handled entirely by our payment provider on their own secure page, and your internet banking login is entered with them, never with us.",
       ],
     },
     {
@@ -170,7 +170,7 @@ export const TERMS: Policy = {
       body: [
         "Payment is taken on Shopify's secure checkout. The payment methods available to you are shown there before you confirm your order.",
         "If you pay by EFT or bank deposit, use your order number as the payment reference. Your order is confirmed once the money reflects in our business account, and it goes on the next Friday supplier order after that.",
-        "Card payments are processed by our payment provider on their own secure, PCI-DSS compliant platform. We never see or store your card details.",
+        "Paying by bank is instant. You pick your bank on Ozow's secure page, log in to your own internet banking there, and approve the payment. Your order is confirmed the moment it clears. Your banking login is entered with your bank through Ozow and is never seen by us.",
         "All transactions are in South African rand (ZAR).",
       ],
     },
