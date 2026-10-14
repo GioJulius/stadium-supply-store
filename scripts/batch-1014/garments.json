@@ -1,0 +1,40 @@
+{
+ "batch": "2026-10-14",
+ "batchTag": "supplied-batch-2026-10-14",
+ "note": "One garment, sent by the client on WhatsApp at 20:58 with the caption 'could you possible post this kit. available small to 2xl / R550 / Argentina 2026 Farewell Kit'. Two photographs, front and back of the same shirt — ONE listing with two images. Caption screenshot kept at import/batch-1014-raw/caption-1.png.",
+ "pricing": "R550 is the client's own price for this shirt and is a tier of its own: it sits between the standing fan version (R500, S-4XL) and player version (R650, S-2XL) of the 7 Sep price list. The S-2XL size run is the client's too. Both come straight from the caption — do not 'correct' either to a standing tier.",
+ "dedupe": "Checked by eye against contact sheets of the lead photograph of all 28 live Argentina listings. No match: nothing live carries the Messi M mark, and no other Argentina shirt is a plain sky body with one broad white centre stripe. Clear to create.",
+ "sizes": {
+  "special": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL"
+  ]
+ },
+ "tiers": {
+  "farewell": {
+   "price": "550.00",
+   "sizes": "special",
+   "productType": "Fan Version"
+  }
+ },
+ "garments": [
+  {
+   "id": "g1",
+   "title": "Argentina 2026 Messi Farewell Kit",
+   "handle": "argentina-2026-messi-farewell-kit",
+   "team": "Argentina",
+   "tier": "farewell",
+   "keys": [
+    "p1",
+    "p2"
+   ],
+   "blurb": "A sky blue short-sleeve shirt with one broad white stripe down the centre front and back, a sunburst of fine horizontal lines fanning out from it. The AFA crest sits on the right of the chest with three stars above it, the Messi M mark opposite, and the ribbed collar and cuffs are navy edged in gold.",
+   "context": "The Argentina 2026 Farewell Kit is a special edition marking Lionel Messi's final international appearance for Argentina, which is why it carries his own mark alongside the national crest rather than a sponsor."
+  }
+ ],
+ "updates": [],
+ "status": "imported"
+}
