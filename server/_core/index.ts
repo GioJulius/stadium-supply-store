@@ -7,6 +7,7 @@ import { registerOAuthRoutes } from "./oauth";
 import { registerStorageProxy } from "./storageProxy";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
+import { fetchProductPageRaw } from "./shopify";
 import { serveStatic, setupVite } from "./vite";
 
 function isPortAvailable(port: number): Promise<boolean> {
@@ -36,6 +37,11 @@ async function startServer() {
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   registerStorageProxy(app);
   registerOAuthRoutes(app);
+  app.get("/api/catalog-page", async (req, res) => {
+    const after = typeof req.query.after === "string" ? req.query.after : null;
+    const page = await fetchProductPageRaw(after);
+    res.status(page.status).type("application/json").send(await page.text());
+  });
   // tRPC API
   app.use(
     "/api/trpc",

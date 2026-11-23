@@ -2,7 +2,8 @@ import { CartDrawer } from "@/components/CartDrawer";
 import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
-import { isBadgeable, isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
+import { isBadgeable, isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom } from "@/lib/catalog";
+import { useCatalog } from "@/lib/useCatalog";
 import { isLongSleeve, kitKey, kitSlotOf, KIT_SLOT_LABELS, seasonOf, sortSizes, sportOf, teamOf, versionOf, VERSION_LABELS } from "@/lib/facets";
 import { SPORT_LABELS } from "@/lib/teams";
 import {
@@ -63,7 +64,7 @@ function breadcrumb(product: Product): string[] {
 function useSiblingKits(product: Product) {
   // Same query key as the shop grid, so arriving from /shop costs nothing and
   // a cold landing resolves in the background without blocking the page.
-  const { data: products = [] } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_FETCH_LIMIT });
+  const { data: products = [] } = useCatalog();
   return useMemo(() => {
     const key = kitKey(product);
     if (!key) return [];

@@ -1,9 +1,9 @@
 import { CartDrawer } from "@/components/CartDrawer";
 import { ProductCard } from "@/components/ProductCard";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
-import { compareByFreshness, isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
+import { compareByFreshness, isCustomerFacingMappedProduct } from "@/lib/catalog";
+import { useCatalog } from "@/lib/useCatalog";
 import { STORY_TILES } from "@/lib/storyTiles";
-import { trpc } from "@/lib/trpc";
 import { ArrowDownRight, ArrowUpRight, Check, Instagram, LoaderCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
@@ -131,7 +131,7 @@ function useScrollReveals() {
 }
 
 export default function Home() {
-  const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_FETCH_LIMIT });
+  const { data: products = [], isLoading } = useCatalog();
   const mappedProducts = products.filter(isCustomerFacingMappedProduct);
   // "Latest drop" has to actually be the latest: the client's own Instagram
   // stock first, newest first within it.

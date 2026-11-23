@@ -12,8 +12,8 @@ import {
   type RailState,
 } from "@/lib/facets";
 import { SPORT_LABELS, TEAMS_BY_SLUG } from "@/lib/teams";
-import { isCustomerFacingMappedProduct, SHOP_PAGE_SIZE, sortProducts, STOREFRONT_CATALOG_FETCH_LIMIT, textMatchProducts, type CatalogSortMode } from "@/lib/catalog";
-import { trpc } from "@/lib/trpc";
+import { isCustomerFacingMappedProduct, SHOP_PAGE_SIZE, sortProducts, textMatchProducts, type CatalogSortMode } from "@/lib/catalog";
+import { useCatalog } from "@/lib/useCatalog";
 import { parseShopParams, shopHref, type ShopQuery } from "@/lib/shopUrl";
 import { ArrowDownUp, ChevronLeft, ChevronRight, LoaderCircle, SlidersHorizontal, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -105,7 +105,7 @@ function ActiveFilters({ rail, onChange }: { rail: RailState; onChange: (next: R
 }
 
 export default function Shop() {
-  const { data: products = [], isLoading } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_FETCH_LIMIT });
+  const { data: products = [], isLoading } = useCatalog();
   const [railOpen, setRailOpen] = useState(false);
 
   // Filters, sort and page live in the URL rather than in component state, so a
