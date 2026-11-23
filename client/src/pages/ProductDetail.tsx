@@ -2,7 +2,8 @@ import { CartDrawer } from "@/components/CartDrawer";
 import { SizeGuideDialog } from "@/components/SizeGuide";
 import { StoreFooter, StoreHeader } from "@/components/StoreHeader";
 import { useCart } from "@/contexts/CartContext";
-import { isBadgeable, isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom, STOREFRONT_CATALOG_FETCH_LIMIT } from "@/lib/catalog";
+import { isBadgeable, isCustomerFacingMappedProduct, isPersonalisable, paragraphsFrom } from "@/lib/catalog";
+import { useCatalog } from "@/lib/useCatalog";
 import { isLongSleeve, kitKey, kitSlotOf, KIT_SLOT_LABELS, seasonOf, sortSizes, sportOf, teamOf, versionOf, VERSION_LABELS } from "@/lib/facets";
 import { SPORT_LABELS } from "@/lib/teams";
 import {
@@ -14,6 +15,7 @@ import {
   SHIPPING_RATE,
 } from "@/lib/storeInfo";
 import { formatMoney } from "@/lib/format";
+import { pairDealFor } from "@shared/commerce/promo";
 import { trpc } from "@/lib/trpc";
 import type { Product, ProductSummary } from "@shared/commerce/types";
 import { ArrowLeft, LoaderCircle, Minus, Plus } from "lucide-react";
@@ -63,7 +65,7 @@ function breadcrumb(product: Product): string[] {
 function useSiblingKits(product: Product) {
   // Same query key as the shop grid, so arriving from /shop costs nothing and
   // a cold landing resolves in the background without blocking the page.
-  const { data: products = [] } = trpc.commerce.products.list.useQuery({ first: STOREFRONT_CATALOG_FETCH_LIMIT });
+  const { data: products = [] } = useCatalog();
   return useMemo(() => {
     const key = kitKey(product);
     if (!key) return [];
@@ -178,6 +180,12 @@ function ProductView({ product }: { product: Product }) {
           <p className="eyebrow">{product.vendor || "Stadium Supply"} / {product.productType || "Football kit"}</p>
           <h1>{product.title}</h1>
           <p className="product-price">{formatMoney(variant?.price ?? product.priceRange.min)}</p>
+          {(() => {
+            const deal = pairDealFor(product.productType);
+            return deal ? (
+              <p className="product-deal">Deal: any 2 {deal.label} for {deal.pairPrice}. Mix teams. Taken off in your bag, until Monday 30 Nov.</p>
+            ) : null;
+          })()}
           <p className="product-availability">
             <strong className="product-replica">Replica</strong> · {variant?.availableForSale ? "In stock" : "Sold out"} · flat {SHIPPING_RATE} delivery anywhere in SA
           </p>

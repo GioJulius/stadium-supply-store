@@ -1,10 +1,11 @@
 import FooterSection5 from "@/components/ui/footer-section-5";
 import { useCart } from "@/contexts/CartContext";
-import { isCustomerFacingMappedProduct, STOREFRONT_CATALOG_FETCH_LIMIT, textMatchProducts } from "@/lib/catalog";
+import { isCustomerFacingMappedProduct, textMatchProducts } from "@/lib/catalog";
+import { useCatalog } from "@/lib/useCatalog";
 import { applyRail, EMPTY_RAIL } from "@/lib/facets";
 import { isGroup, leafHref, leafKey, leafQuery, SHOP_MENU, type NavNode } from "@/lib/navigation";
 import { INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
-import { trpc } from "@/lib/trpc";
+import { pairDealLive } from "@shared/commerce/promo";
 import { Menu, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
@@ -105,10 +106,7 @@ export function StoreHeader() {
   // The same cached catalogue query the shop pages use, so counting the menu
   // costs no extra request. Only fetched once the drawer has been opened —
   // an untouched menu shouldn't pull 250 products on every first paint.
-  const { data: products = [] } = trpc.commerce.products.list.useQuery(
-    { first: STOREFRONT_CATALOG_FETCH_LIMIT },
-    { enabled: menuOpen },
-  );
+  const { data: products = [] } = useCatalog({ enabled: menuOpen });
   // The number beside a link is counted the same way the link itself filters —
   // through `leafQuery`, the one description of where a leaf goes. It used to
   // be a second, private substring test living here, which was fine only for as
@@ -148,6 +146,11 @@ export function StoreHeader() {
 
   return (
     <>
+      {pairDealLive() ? (
+        <Link href="/shop?version=fan" className="deal-strip">
+          <span>Any 2 fan versions R900</span><i>✦</i><span>Any 2 player versions R1 200</span><i>✦</i><span>Until Monday 30 Nov</span>
+        </Link>
+      ) : null}
       <header className={`site-header ${isHome ? "site-header--home" : ""}`}>
         <div className="site-header__inner">
           <button className="header-control header-control--menu" onClick={() => setMenuOpen(true)} aria-label="Open menu">

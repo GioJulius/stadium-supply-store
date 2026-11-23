@@ -313,6 +313,45 @@ export type ListProductsOptions = {
 /** Shopify's Storefront API refuses a page larger than 250. */
 const PAGE_SIZE = 250;
 
+const LIST_PRODUCTS_QUERY = `${PRODUCT_SUMMARY_FRAGMENT}
+  query listProducts($first: Int!, $cursor: String) {
+    products(first: $first, after: $cursor, sortKey: TITLE) {
+      pageInfo { hasNextPage endCursor }
+      edges { node { ...ProductSummaryFields } }
+    }
+  }`;
+
+/**
+ * One page of the catalogue, Shopify's response body passed through UNPARSED.
+ *
+ * This exists for the Cloudflare free plan's 10 ms CPU limit. Building the
+ * whole 1 274-product catalogue on the server (parse + normalise + superjson)
+ * costs ~170 ms, so `commerce.products.list` dies with error 1102 and /shop
+ * shows "00 kits". The browser walks these pages itself and normalises with
+ * the same `normalizeProductSummary` (see client/src/lib/useCatalog.ts), so
+ * the server only moves bytes. Body shape: `{ data: { products: Paged<RawProductSummary> } }`.
+ */
+export async function fetchProductPageRaw(cursor: string | null): Promise<Response> {
+  if (!isShopifyConfigured()) {
+    return new Response('{"errors":[{"message":"Shopify Storefront API is not configured"}]}', {
+      status: 503,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+  const upstream = await fetch(shopifyStorefrontEndpoint(), {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Shopify-Storefront-Access-Token": getShopifyStorefrontToken(),
+    },
+    body: JSON.stringify({ query: LIST_PRODUCTS_QUERY, variables: { first: PAGE_SIZE, cursor } }),
+  });
+  return new Response(upstream.body, {
+    status: upstream.ok ? 200 : 502,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
 /**
  * Every product the storefront browses, as `ProductSummary` — the grid shape.
  * The detail page takes the full `Product` from `getProductByHandle`.
@@ -348,13 +387,7 @@ export async function listProducts(
   do {
     const page: number = Math.min(PAGE_SIZE, first - out.length);
     const data: { products: Paged<RawProductSummary> } = await storefrontFetch<{ products: Paged<RawProductSummary> }>(
-      `${PRODUCT_SUMMARY_FRAGMENT}
-       query listProducts($first: Int!, $cursor: String) {
-         products(first: $first, after: $cursor, sortKey: TITLE) {
-           pageInfo { hasNextPage endCursor }
-           edges { node { ...ProductSummaryFields } }
-         }
-       }`,
+      LIST_PRODUCTS_QUERY,
       { first: page, cursor }
     );
     out.push(...data.products.edges.map(e => normalizeProductSummary(e.node)));

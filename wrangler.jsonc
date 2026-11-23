@@ -1,0 +1,21 @@
+{
+  // Static SPA + prerendered SEO pages from dist/public; only /api/* wakes the Worker.
+  // Build: npm run build:cf   Deploy: wrangler deploy
+  // Secret: wrangler secret put SHOPIFY_STOREFRONT_API_ACCESS_TOKEN
+  "name": "stadium-supply-store",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "server/cloudflareWorker.ts",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "stadiumsupply.co.za/*", "zone_name": "stadiumsupply.co.za" },
+    { "pattern": "www.stadiumsupply.co.za/*", "zone_name": "stadiumsupply.co.za" }
+  ],
+  "vars": { "SHOPIFY_STORE_DOMAIN": "stadiumshop-eg3a4ach-blossom-phoenix-ics08fyw.myshopify.com" },
+  "assets": {
+    "directory": "./dist/public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  }
+}

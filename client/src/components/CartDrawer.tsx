@@ -45,6 +45,10 @@ export function CartDrawer() {
   const subtotal = cart ? Number(cart.subtotal.amount) : 0;
   const currencyCode = cart?.subtotal.currencyCode ?? "ZAR";
   const estimatedTotal = subtotal + (items.length ? SHIPPING_AMOUNT : 0);
+  // Shopify's automatic "2 for" discounts come back already taken off the line
+  // totals and the subtotal, so the drawer's figures are right as they stand.
+  // This only says out loud what was saved, by comparing list price to charge.
+  const savings = items.reduce((sum, item) => sum + Math.max(0, Number(item.unitPrice.amount) * item.quantity - Number(item.lineTotal.amount)), 0);
 
   return (
     <aside className={`cart-drawer ${isOpen ? "cart-drawer--open" : ""}`} aria-hidden={!isOpen}>
@@ -84,7 +88,12 @@ export function CartDrawer() {
                     <h3>{item.productTitle}</h3>
                     {itemSummary(item) ? <p className="cart-item__summary">{itemSummary(item)}</p> : null}
                   </div>
-                  <strong>{formatMoney(item.lineTotal)}</strong>
+                  <strong>
+                    {Number(item.lineTotal.amount) < Number(item.unitPrice.amount) * item.quantity ? (
+                      <s className="cart-item__was">{formatMoney({ amount: (Number(item.unitPrice.amount) * item.quantity).toFixed(2), currencyCode: item.unitPrice.currencyCode })}</s>
+                    ) : null}
+                    {formatMoney(item.lineTotal)}
+                  </strong>
                   <div className="cart-item__actions">
                     <div className="quantity-control" aria-label={`Quantity for ${item.productTitle}`}>
                       <button disabled={loading} onClick={() => updateQuantity(item.lineId, Math.max(0, item.quantity - 1))} aria-label="Decrease quantity"><Minus size={13} /></button>
@@ -110,6 +119,9 @@ export function CartDrawer() {
             Delivery is priced here rather than sprung at the end of checkout —
             the whole point of the flat R100 is that it can be said up front.
           */}
+          {savings > 0 ? (
+            <div className="cart-total cart-total--minor cart-total--deal"><span>2-for deal saving</span><span>−{formatMoney({ amount: savings.toFixed(2), currencyCode })}</span></div>
+          ) : null}
           <div className="cart-total cart-total--minor"><span>Subtotal</span><span>{cart ? formatMoney(cart.subtotal) : "—"}</span></div>
           <div className="cart-total cart-total--minor">
             <span>Delivery, anywhere in SA</span>
