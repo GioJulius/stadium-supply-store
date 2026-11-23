@@ -5,6 +5,7 @@ import { useCatalog } from "@/lib/useCatalog";
 import { applyRail, EMPTY_RAIL } from "@/lib/facets";
 import { isGroup, leafHref, leafKey, leafQuery, SHOP_MENU, type NavNode } from "@/lib/navigation";
 import { INSTAGRAM_URL, TIKTOK_URL, WHATSAPP_URL } from "@/lib/storeInfo";
+import { pairDealLive } from "@shared/commerce/promo";
 import { Menu, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
@@ -145,6 +146,11 @@ export function StoreHeader() {
 
   return (
     <>
+      {pairDealLive() ? (
+        <Link href="/shop?version=fan" className="deal-strip">
+          <span>Any 2 fan versions R900</span><i>✦</i><span>Any 2 player versions R1 200</span><i>✦</i><span>Until Monday 30 Nov</span>
+        </Link>
+      ) : null}
       <header className={`site-header ${isHome ? "site-header--home" : ""}`}>
         <div className="site-header__inner">
           <button className="header-control header-control--menu" onClick={() => setMenuOpen(true)} aria-label="Open menu">

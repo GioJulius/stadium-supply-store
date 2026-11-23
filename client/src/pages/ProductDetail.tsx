@@ -15,6 +15,7 @@ import {
   SHIPPING_RATE,
 } from "@/lib/storeInfo";
 import { formatMoney } from "@/lib/format";
+import { pairDealFor } from "@shared/commerce/promo";
 import { trpc } from "@/lib/trpc";
 import type { Product, ProductSummary } from "@shared/commerce/types";
 import { ArrowLeft, LoaderCircle, Minus, Plus } from "lucide-react";
@@ -179,6 +180,12 @@ function ProductView({ product }: { product: Product }) {
           <p className="eyebrow">{product.vendor || "Stadium Supply"} / {product.productType || "Football kit"}</p>
           <h1>{product.title}</h1>
           <p className="product-price">{formatMoney(variant?.price ?? product.priceRange.min)}</p>
+          {(() => {
+            const deal = pairDealFor(product.productType);
+            return deal ? (
+              <p className="product-deal">Deal: any 2 {deal.label} for {deal.pairPrice}. Mix teams. Taken off in your bag, until Monday 30 Nov.</p>
+            ) : null;
+          })()}
           <p className="product-availability">
             <strong className="product-replica">Replica</strong> · {variant?.availableForSale ? "In stock" : "Sold out"} · flat {SHIPPING_RATE} delivery anywhere in SA
           </p>

@@ -794,3 +794,11 @@ body { font-family:"Manrope",Arial,sans-serif; }
 .product-replica { font-weight:600; }
 .cart-drawer__footer > p.cart-drawer__replica { margin:12px 0 10px; opacity:.8; }
 .cart-drawer__replica a { text-decoration:underline; }
+
+/* "2 for" deal, 23–30 Nov 2026 — see shared/commerce/promo.ts */
+.deal-strip { display:flex; justify-content:center; flex-wrap:wrap; gap:6px 16px; padding:9px 16px; background:#10213c; color:#f8f7f1; font:600 15px/1.1 "Barlow Condensed",sans-serif; text-transform:uppercase; letter-spacing:.03em; text-align:center; position:relative; z-index:21; }
+.deal-strip i { color:#44a2e9; font-style:normal; }
+.product-deal { margin:-18px 0 26px; padding:10px 12px; border-left:3px solid #44a2e9; background:#e9f1f6; font-size:13px; line-height:1.45; max-width:430px; }
+.cart-item__was { display:block; opacity:.5; font-size:9px; }
+.cart-total--deal { color:#1d6fb3; opacity:1; }
+@media (max-width: 850px) { .deal-strip { font-size:13px; gap:4px 10px; } .deal-strip i:last-of-type { display:none; } }
